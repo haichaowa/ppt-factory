@@ -96,6 +96,15 @@ ppt-generator/
 
 格式：`<type>: <中文描述>`，type 包括 feature/bugfix/refactor/docs/style/perf/test/chore/ci。详见 `.claude/commit-convention.md`。
 
+### `<v-clicks>` 会把所有直接子元素当作动画目标
+
+`<v-clicks>` 会逐个动画显示每个直接子元素。如果箭头 `→` 等非交互元素也是 `<v-clicks>` 的子元素，它们会被当作动画目标出现/消失。**必须改用显式 `v-click` + `:class` 控制具体元素的动画**，把始终可见的元素（如箭头）放在 `<v-clicks>` 之外。
+
+### 代码块（```）不能嵌在 HTML 卡片内再跟其他 HTML 元素
+
+在 Slidev 中，当代码块（` ``` `）嵌套在 HTML `<div>` 内部时，代码块后面紧接的 HTML 元素（如 `<div>` 提示文字）无法正常渲染。**解决方案**：把提示文字移到卡片外部，作为独立的 `<div>` 放在 grid 容器之后。
+
 ## 表情包资源
 
 - 表情包目录：`/Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master`
+- 使用原则：表情包必须与内容融合，嵌入卡片内部或与文字并排展示。禁止用 `absolute` 定位贴在角落当装饰贴纸。

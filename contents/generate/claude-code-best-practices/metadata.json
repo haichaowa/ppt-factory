@@ -1,0 +1,21 @@
+{
+  "topic": "claude-code-best-practices",
+  "title": "Claude Code 最佳实践",
+  "subtitle": "从配置环境到跨并行会话扩展",
+  "audience": "开发者培训",
+  "duration": "40min",
+  "targetPages": 33,
+  "theme": "glow",
+  "sections": [
+    { "id": "intro", "title": "认识 Claude Code", "pages": 3 },
+    { "id": "verify", "title": "给 Claude 验证能力", "pages": 3 },
+    { "id": "workflow", "title": "探索 → 规划 → 编码", "pages": 3 },
+    { "id": "context", "title": "精确的上下文", "pages": 3 },
+    { "id": "config", "title": "配置你的环境", "pages": 6 },
+    { "id": "communicate", "title": "有效沟通", "pages": 2 },
+    { "id": "session", "title": "会话管理", "pages": 4 },
+    { "id": "automate", "title": "自动化和扩展", "pages": 3 },
+    { "id": "pitfalls", "title": "避坑指南", "pages": 2 },
+    { "id": "closing", "title": "总结", "pages": 2 }
+  ]
+}
