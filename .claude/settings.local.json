@@ -30,7 +30,8 @@
       "Bash(gh api:*)",
       "Bash(pkill -f \"slidev\")",
       "Bash(lsof -nP -iTCP:3030)",
-      "Bash(xxd)"
+      "Bash(xxd)",
+      "Bash(awk '{print $9}')"
     ]
   }
 }
