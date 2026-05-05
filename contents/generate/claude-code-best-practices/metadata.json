@@ -1,21 +1,41 @@
 {
   "topic": "claude-code-best-practices",
   "title": "Claude Code 最佳实践",
-  "subtitle": "从配置环境到跨并行会话扩展",
-  "audience": "开发者培训",
-  "duration": "40min",
-  "targetPages": 33,
+  "subtitle": "从配置环境到并行扩展，掌握代理式编码的核心模式",
+  "audience": "有一定开发经验的工程师，希望高效使用 Claude Code 进行日常开发",
+  "duration": "25min",
+  "targetPages": 26,
   "theme": "glow",
   "sections": [
-    { "id": "intro", "title": "认识 Claude Code", "pages": 3 },
-    { "id": "verify", "title": "给 Claude 验证能力", "pages": 3 },
-    { "id": "workflow", "title": "探索 → 规划 → 编码", "pages": 3 },
-    { "id": "context", "title": "精确的上下文", "pages": 3 },
-    { "id": "config", "title": "配置你的环境", "pages": 6 },
-    { "id": "communicate", "title": "有效沟通", "pages": 2 },
-    { "id": "session", "title": "会话管理", "pages": 4 },
-    { "id": "automate", "title": "自动化和扩展", "pages": 3 },
-    { "id": "pitfalls", "title": "避坑指南", "pages": 2 },
-    { "id": "closing", "title": "总结", "pages": 2 }
+    {
+      "title": "认知基础",
+      "pages": 3,
+      "description": "理解 Claude Code 的代理式本质与 Context Window 核心约束"
+    },
+    {
+      "title": "工作流优化",
+      "pages": 4,
+      "description": "验证驱动开发与探索-规划-编码四阶段工作流"
+    },
+    {
+      "title": "提示工程",
+      "pages": 3,
+      "description": "精准提示的编写策略与丰富的上下文输入方式"
+    },
+    {
+      "title": "环境配置",
+      "pages": 4,
+      "description": "CLAUDE.md 编写规范与六大扩展机制（权限、CLI、MCP、Hooks、Skills、Subagents）"
+    },
+    {
+      "title": "会话管理",
+      "pages": 5,
+      "description": "快速纠正、Context 管理、Subagent 调查、检查点回溯与会话恢复"
+    },
+    {
+      "title": "自动化与扩展",
+      "pages": 4,
+      "description": "非交互模式、并行会话、跨文件扇出与 Auto Mode"
+    }
   ]
 }

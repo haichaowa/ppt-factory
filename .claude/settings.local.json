@@ -36,7 +36,10 @@
       "Bash(cp /Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master/024Programmer_程序员BQB/程序员00045-吓得我代码都出BUG了.gif /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public/scared-bug.gif)",
       "Bash(cp /Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master/024Programmer_程序员BQB/程序员00046-呦写bug呢.png /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public/bug-hey.png)",
       "Bash(cp /Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master/024Programmer_程序员BQB/程序员00029-快下班了这有个小BUG修完再走.gif /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public/fix-bug.gif)",
-      "Bash(cp /Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master/010Cat_是喵星人啦🐱BQB/是喵星人啦00004-震惊猫.gif /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public/shocked-cat.gif)"
+      "Bash(cp /Users/wanghaichao/develop/VsCodeProject/ChineseBQB-master/010Cat_是喵星人啦🐱BQB/是喵星人啦00004-震惊猫.gif /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public/shocked-cat.gif)",
+      "Bash(mkdir -p /Users/wanghaichao/develop/VsCodeProject/ppt-generator/contents/generate/claude-code-best-practices)",
+      "Bash(mkdir -p /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/public)",
+      "Bash(mkdir -p /Users/wanghaichao/develop/VsCodeProject/ppt-generator/artifact/2026-05-04-claude-code-best-practices/setup)"
     ]
   }
 }
