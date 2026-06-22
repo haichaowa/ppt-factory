@@ -55,12 +55,37 @@ color: blue
 
 ## 页面数量规划
 
-| 演讲时长 | 推荐页数 | 说明 |
-|---------|---------|------|
-| 3-5 分钟 | 6-10 页 | 短分享，内容精简 |
-| 5-10 分钟 | 8-15 页 | 中等长度，适当展开 |
-| 10-20 分钟 | 15-25 页 | 深入讲解 |
-| 20-40 分钟 | 25-45 页 | 完整演讲 |
+| 演讲时长 | 推荐页数 | 说明 | 模块化 |
+|---------|---------|------|--------|
+| 3-5 分钟 | 6-10 页 | 短分享，内容精简 | 单文件 |
+| 5-10 分钟 | 8-15 页 | 中等长度，适当展开 | 单文件 |
+| 10-20 分钟 | 15-25 页 | 深入讲解 | 单文件 |
+| 20-40 分钟 | 25-45 页 | 完整演讲 | **>25 页时模块化** |
+
+### 长演讲模块化（targetPages > 25）
+
+当目标页数 > 25 时，**必须采用模块化结构**（详见 [modular-slides.md](../../ppt-skills/slidev-ppt-generator/references/shared/modular-slides.md)）：
+
+1. **outline.md 按章节分组**：每章对应一个 section 文件
+2. **metadata.json 标注 `modular: true`**，并在 sections 数组中指定每章的文件名
+3. **章节命名规范**：`{两位数序号}-{kebab-case-标题}.md`（如 `00-cover.md` / `03-solution.md` / `99-end.md`）
+
+示例 metadata.json：
+```json
+{
+  "targetPages": 40,
+  "modular": true,
+  "sections": [
+    { "title": "封面", "pages": 1, "file": "00-cover.md" },
+    { "title": "引言", "pages": 4, "file": "01-intro.md" },
+    { "title": "核心方案", "pages": 8, "file": "02-solution.md" },
+    { "title": "深入讲解", "pages": 10, "file": "03-deep-dive.md" },
+    { "title": "案例演示", "pages": 6, "file": "04-demo.md" },
+    { "title": "结果总结", "pages": 8, "file": "05-summary.md" },
+    { "title": "结束页", "pages": 3, "file": "99-end.md" }
+  ]
+}
+```
 
 ---
 

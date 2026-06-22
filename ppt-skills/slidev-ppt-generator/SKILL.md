@@ -96,6 +96,37 @@ Agent 完成后，检查 `contents/generate/{slug}/` 下是否已生成 `metadat
 6. 复制 `assets/templates/default/` 模板文件，叠加 `assets/themes/{theme}/` 主题文件（`global-bottom.vue`、`uno.config.ts`、`style.css`）
 7. **项目目录命名规则**：`artifact/{YYYY-MM-DD}-{主题名称}/`，例如 `artifact/2026-03-28-docker-slides/`
 
+### 长演讲模块化模式（targetPages > 25 时启用）
+
+当 metadata.json 的 `targetPages > 25` 时，**必须采用模块化拆分**（详见 [modular-slides.md](references/shared/modular-slides.md)）：
+
+```
+artifact/{YYYY-MM-DD}-{slug}/
+├── slides.md              # 主文件（仅含 headmatter + <Src /> 引用）
+├── sections/              # 章节文件
+│   ├── 00-cover.md
+│   ├── 01-intro.md
+│   ├── 02-core-concept.md
+│   └── 99-end.md
+└── ...
+```
+
+主文件使用 Slidev 原生的 `<Src src="..." />` 组件引用外部 Markdown：
+
+```markdown
+---
+layout: center
+... (全局 headmatter)
+---
+
+<Src src="./sections/00-cover.md" />
+
+---
+<Src src="./sections/01-intro.md" />
+```
+
+Agent 在 outline.md 中应按章节分组，并在 metadata.json 标注 `modular: true`。
+
 ### 步骤 4：验证输出
 
 三级验证，确保生成质量：
