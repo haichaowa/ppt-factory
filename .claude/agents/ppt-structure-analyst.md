@@ -17,11 +17,21 @@ color: blue
 
 - 原始材料：`contents/ori/{topic-slug}/main.md`
 - 元数据（可选参考）：`contents/ori/{topic-slug}/README.md`
+- 图片附件：`contents/ori/{topic-slug}/assets/figures/`（学术论文的 Figure）
 - 输出路径：`contents/generate/{topic-slug}/metadata.json` 和 `contents/generate/{topic-slug}/outline.md`
 - 生成技能定义：`ppt-skills/slidev-ppt-generator/SKILL.md`
-- 主题参考：`ppt-skills/slidev-ppt-generator/references/themes/glow/`
+- 主题参考：`ppt-skills/slidev-ppt-generator/references/themes/{theme}/`
+- 多模态输入管线：`ppt-skills/slidev-ppt-generator/references/shared/input-pipeline.md`
 
 在开始分析之前，先读取原始材料文件。如果用户指定了 topic-slug，在 `contents/ori/{topic-slug}/` 下查找。
+
+### 多模态输入处理
+
+用户的原始材料可能是从 PDF / 图片 / 网页 / 视频中提取的。注意：
+
+1. **检查 assets/figures/**：若存在图片，说明原始材料含 Figure（学术论文常见）
+2. **识别 `<!-- source: xxx -->` 标注**：说明原始材料是多来源合并的
+3. **Figure 引用**：在 outline.md 中遇到 Figure 描述时，标注 `figureEmbed: true` 并指定图片路径，**保留原图不重画**
 
 ---
 
@@ -154,6 +164,7 @@ color: blue
 - 天然具有对比/递进/并列关系的内容
 - 适合用图表、流程图、架构图呈现的信息
 - 原始材料中需要**完整保留**的关键段落、数据、示例和论证
+- **Figure 引用**（学术论文）：检查 `contents/ori/{slug}/assets/figures/` 是否有原图，若有在 outline.md 中标注 `figureEmbed: true`，**禁止重画 / 拉伸**，保持原始比例
 
 ### 步骤 2：结构规划
 

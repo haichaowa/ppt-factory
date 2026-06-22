@@ -68,6 +68,24 @@ contents/ori/ (原始材料) → [ppt-structure-analyst agent] → contents/gene
 
 **topic-slug 命名规范**：小写英文，连字符分隔，如 `claude-code-best-practices`、`k8s-intro`
 
+#### 多模态输入支持（详见 [input-pipeline.md](references/shared/input-pipeline.md)）
+
+用户可提供以下任一形式：
+
+| 输入形式 | 处理工具 |
+|---------|---------|
+| 文本类（`.md` / `.txt` / `.docx`） | 直接复制 / `pandoc` 转换 |
+| PDF 类（`.pdf`） | `marker-pdf`（保留 Figure）/ `pdftotext` / Claude vision |
+| 图片类（`.png` / `.jpg`） | Claude vision / GPT-4o vision 提取文字 |
+| 网页类（URL） | `defuddle` 技能 / `WebFetch` 抓取 |
+| 视频类（`.mp4`） | Claude video understanding |
+| 组合输入 | 多来源合并到 main.md，用 `<!-- source: xxx -->` 分隔 |
+
+**学术论文的 Figure 处理**（关键）：
+- 提取图片到 `contents/ori/{slug}/assets/figures/`
+- outline.md 中标注 `figureEmbed: true` 的页使用原图
+- **不重画 / 不拉伸**，按原始比例嵌入（用 `object-contain` 而非 `object-cover`）
+
 ### 步骤 2：内容结构化（委托 ppt-structure-analyst）
 
 **必须显式调用 `ppt-structure-analyst` agent 完成本步骤**，由 agent 负责：读取原始材料、分析结构、规划叙事、生成中间产物。

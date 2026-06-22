@@ -37,7 +37,13 @@
 - 当 `targetPages > 25`，采用模块化拆分
 - 详见 [modular-slides.md](../shared/modular-slides.md)
 
-### 7. 项目目录命名
+### 7. Figure 复制（学术论文场景）
+- 若 outline.md 有 `figureEmbed: true` 标注
+- 从 `contents/ori/{slug}/assets/figures/` 复制原图到 `artifact/{date}-{slug}/public/figures/`
+- **不重画 / 不拉伸 / 不裁切**，用 `object-contain` 保持原始比例
+- 详见 [input-pipeline.md Figure 处理规则](../shared/input-pipeline.md#figure-处理规则学术资料)
+
+### 8. 项目目录命名
 - 格式：`artifact/{YYYY-MM-DD}-{topic-name}/`
 - 示例：`artifact/2026-03-28-docker-slides/`
 

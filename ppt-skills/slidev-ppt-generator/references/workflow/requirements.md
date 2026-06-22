@@ -35,15 +35,23 @@
 
 ---
 
-## 多模态输入支持（见 references/shared/input-pipeline.md）
+## 多模态输入支持（详见 [input-pipeline.md](../shared/input-pipeline.md)）
 
-| 输入形式 | 处理方式 |
+| 输入形式 | 处理工具 |
 |---------|---------|
-| 文本类（`.md` / `.txt` / `.docx`） | 直接复制到 `contents/ori/{slug}/main.md` |
-| PDF 类（`.pdf`） | 使用 marker-pdf / pdftotext 提取文本，保留 Figure |
-| 图片类（`.png` / `.jpg`） | 使用视觉 LLM 提取内容（Claude vision / GPT-4o vision） |
-| 网页类（URL） | 使用 WebFetch / defuddle 技能抓取 |
-| 组合输入 | 多种来源合并到 main.md，标注 `<!-- source: xxx -->` 分隔 |
+| 文本类（`.md` / `.txt` / `.docx`） | 直接复制 / `pandoc` 转换 |
+| PDF 类（`.pdf`） | `marker-pdf`（保留 Figure）/ `pdftotext` / Claude vision |
+| 图片类（`.png` / `.jpg`） | Claude vision / GPT-4o vision 提取文字 |
+| 网页类（URL） | `defuddle` 技能 / `WebFetch` 抓取 |
+| 视频类（`.mp4`） | Claude video understanding |
+| 组合输入 | 多来源合并到 main.md，用 `<!-- source: xxx -->` 分隔 |
+
+### Figure 处理（学术论文）
+
+- **提取**：使用 `marker-pdf` 自动提取 PDF 中的 Figure 到 `assets/figures/`
+- **保留**：outline.md 中标注 `figureEmbed: true` 的页使用原图
+- **原则**：不重画 / 不拉伸 / 不裁切 —— 用 `object-contain` 保持原始纵横比
+- **复制路径**：生成时从 `contents/ori/{slug}/assets/figures/` 复制到 `artifact/{date}-{slug}/public/figures/`
 
 ---
 
