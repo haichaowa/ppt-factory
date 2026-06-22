@@ -1,15 +1,49 @@
 ---
 name: slidev-ppt-generator
 description: 从用户需求生成专业的Slidev演示文稿，使用Markdown语法、Vue组件、代码高亮、动画效果。适用于技术分享、会议演讲、代码演示、教程培训等场景。
+compatible_agents:
+  - claude-code
+  - codex
+  - opencode
+  - openclaw
+  - trae
 ---
 
 # Slidev PPT 生成器
 
-基于 Slidev 框架 + Glow 主题，将用户需求转化为具有动态发光效果、卡片式布局、毛玻璃质感的 Web 演示文稿。
+基于 Slidev 框架 + 5 主题矩阵（glow / minimal / bold / dark-pro / neon），将用户需求转化为专业的 Web 演示文稿。
 
 ## 适用场景
 
-技术分享、会议演讲、代码演示、教程培训、产品介绍、项目汇报
+技术分享、会议演讲、代码演示、教程培训、产品介绍、项目汇报、学术答辩、企业季度 review、创意分享。
+
+## 文档导航（模块化）
+
+本 SKILL 是入口编排。详细内容在 `references/` 下按职责拆分：
+
+### 工作流（4 步）
+- [步骤 1：需求收集](references/workflow/requirements.md) — 必问参数、topic-slug 规范、多模态输入
+- [步骤 2：内容结构化](references/workflow/structure.md) — 委托 ppt-structure-analyst agent、验收检查清单
+- [步骤 3：生成项目](references/workflow/generate.md) — 7 步生成流程、5 主题 Headmatter、Pattern 映射
+- [步骤 4：验证输出](references/workflow/verify.md) — 三级验证 + Build 失败速查
+
+### 语法与失败模式
+- [syntax-rules.md](references/syntax-rules.md) — 14 条 UnoCSS/Syntax 硬规则（所有踩坑汇总）
+- [failure-modes.md](references/failure-modes.md) — 8 类失败模式目录（FM-01 ~ FM-08）
+- [content-rules.md](references/content-rules.md) — 内容组织规则 + 第八节硬性设计约束（C-01 ~ C-08）
+
+### 通用参考
+- [Slidev 布局参考](references/shared/layout-reference.md) — 内置布局模板
+- [组件参考](references/shared/component-reference.md) — v-click、Link、Toc 等组件
+- [长演讲模块化](references/shared/modular-slides.md) — >25 页的模块化拆分
+- [多模态输入管线](references/shared/input-pipeline.md) — PDF / 图片 / URL 处理
+
+### 主题专属（5 主题矩阵）
+- [Glow](references/themes/glow/) — 技术分享（slide-patterns + theme-config + example-slides）
+- [Minimal](references/themes/minimal/) — 学术答辩 / 咨询报告
+- [Bold](references/themes/bold/) — 产品发布 / Keynote
+- [Dark-Pro](references/themes/dark-pro/) — 企业汇报 / 季度 review
+- [Neon](references/themes/neon/) — 创意分享 / 赛博朋克
 
 ## 内容管道
 
