@@ -1,0 +1,110 @@
+:root {
+  --slidev-code-padding: 10px 14px;
+  --slidev-code-background: #f7f7f8 !important;
+}
+
+.light #slide-content {
+  background-color: #ffffff !important;
+}
+
+#slide-content {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif SC', 'Source Han Serif SC', Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.slidev-vclick-target {
+  transition: opacity 400ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-out-leave-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.5) ease-out;
+}
+
+.fade-out-enter-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.6) ease-in;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.4);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
+
+.slidev-code {
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+.slidev-code .line.diff.add {
+  background-color: #dcfce7;
+}
+
+.slidev-code .line.diff.remove {
+  background-color: #fee2e2;
+}
+
+.footnotes-sep {
+  display: none;
+}
+
+.footnotes > .footnotes-list {
+  margin-top: 12px;
+  opacity: 0.8;
+  font-size: 12px;
+  color: #555;
+}
+
+.footnotes > .footnotes-list p {
+  margin: 0;
+}
+
+.markdown-magic-link {
+  display: inline-flex;
+  align-items: center;
+  transform: translateY(6px);
+  line-height: 100%;
+  color: #1a1a1a;
+  --uno: gap-1 transition rounded px1 py1 mx--0.5 important-border-0;
+}
+
+.markdown-magic-link:hover {
+  background: #f0f0f0;
+}
+
+.markdown-magic-link-image {
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2px;
+}
+
+.minimal-divider {
+  width: 60px;
+  height: 2px;
+  background-color: #1a1a1a;
+  margin: 1.5rem 0;
+}
+
+.minimal-quote {
+  border-left: 3px solid #1a1a1a;
+  padding-left: 1rem;
+  color: #555;
+  font-style: italic;
+}

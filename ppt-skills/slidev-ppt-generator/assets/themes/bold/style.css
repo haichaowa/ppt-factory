@@ -1,0 +1,113 @@
+:root {
+  --slidev-code-padding: 12px 16px;
+  --slidev-code-background: #1a1a1a !important;
+}
+
+#slide-content {
+  font-family: 'Inter', 'PingFang SC', 'Source Han Sans SC', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Inter', 'PingFang SC', 'Source Han Sans SC', system-ui, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.slidev-vclick-target {
+  transition:
+    opacity 500ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
+.fade-out-leave-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.4) ease-out;
+}
+
+.fade-out-enter-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.6) cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: calc(var(--slidev-transition-duration) * 0.3);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+}
+
+.slidev-code {
+  border: 2px solid #fff2;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
+
+.bold-stroke-text {
+  -webkit-text-stroke: 3px currentColor;
+  color: transparent;
+  paint-order: stroke;
+}
+
+.bold-gradient-text {
+  background: linear-gradient(135deg, #f97316, #ec4899, #8b5cf6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bold-card {
+  border-radius: 16px;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.12),
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.dark .bold-card {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.5),
+    0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes bold-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(249, 115, 22, 0.7);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 0 20px rgba(249, 115, 22, 0);
+  }
+}
+
+.animate-bold-pulse {
+  animation: bold-pulse 2s infinite;
+}
+
+@keyframes bold-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-bold-float {
+  animation: bold-float 3s ease-in-out infinite;
+}

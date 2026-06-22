@@ -1,0 +1,134 @@
+:root {
+  --slidev-code-padding: 10px 14px;
+  --slidev-code-background: #0f172a !important;
+}
+
+.dark #slide-content {
+  background-color: #0f172a !important;
+}
+
+#slide-content {
+  font-family: 'Inter', 'PingFang SC', 'Source Han Sans SC', system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', 'PingFang SC', 'Source Han Sans SC', system-ui, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: #f1f5f9;
+}
+
+.slidev-vclick-target {
+  transition: opacity 400ms ease;
+}
+
+.slidev-vclick-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.fade-out-leave-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.5) ease-out;
+}
+
+.fade-out-enter-active {
+  transition: opacity calc(var(--slidev-transition-duration) * 0.7) ease-in;
+  transition-delay: calc(var(--slidev-transition-duration) * 0.4);
+}
+
+.fade-out-enter-from,
+.fade-out-leave-to {
+  opacity: 0;
+}
+
+.slidev-code {
+  border: 1px solid #1e293b;
+  border-radius: 6px;
+  background: #0f172a;
+}
+
+.slidev-code .line {
+  transition: opacity 200ms ease;
+}
+
+.slidev-code .line.diff.add {
+  background-color: rgba(16, 185, 129, 0.15);
+}
+
+.slidev-code .line.diff.remove {
+  background-color: rgba(239, 68, 68, 0.15);
+}
+
+.dark-pro-card {
+  background: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+}
+
+.dark-pro-card-accent {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 3px solid #3b82f6;
+  border-radius: 4px;
+  padding-left: 1rem;
+}
+
+.dark-pro-divider {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(148, 163, 184, 0.3), transparent);
+  margin: 1.5rem 0;
+}
+
+.dark-pro-badge {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.dark-pro-badge-success {
+  background: rgba(16, 185, 129, 0.15);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.dark-pro-badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.dark-pro-badge-danger {
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+.dark-pro-metric {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+
+@keyframes dark-pro-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.dark-pro-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(148, 163, 184, 0.1) 50%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: dark-pro-shimmer 2s linear infinite;
+}

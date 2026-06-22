@@ -55,11 +55,12 @@ Agent 完成后，检查 `contents/generate/{slug}/` 下是否已生成 `metadat
 ### 步骤 3：生成项目
 
 1. 读取 `contents/generate/{slug}/outline.md` 和 `contents/generate/{slug}/metadata.json` 作为输入
-2. 读取主题专属的模式参考（`ppt-structure-analyst` 已在 outline.md 中标注了每页的 pattern）
-3. 读取主题配置 `references/themes/{theme}/theme-config.md`
-4. 按照 Slidev 语法生成 `slides.md` 文件，**必须使用 Glow 主题**
-5. 复制 `assets/templates/default/` 模板文件，叠加 `assets/themes/glow/` 主题文件
-6. **项目目录命名规则**：`artifact/{YYYY-MM-DD}-{主题名称}/`，例如 `artifact/2026-03-28-docker-slides/`
+2. 根据 metadata.json 的 `theme` 字段确定主题（默认 `glow`，详见下方"主题选择矩阵"）
+3. 读取主题专属的模式参考：`references/themes/{theme}/slide-patterns.md`（`ppt-structure-analyst` 已在 outline.md 中标注了每页的 pattern）
+4. 读取主题配置 `references/themes/{theme}/theme-config.md`
+5. 按照 Slidev 语法生成 `slides.md` 文件，**使用对应主题的 headmatter 和 pattern**
+6. 复制 `assets/templates/default/` 模板文件，叠加 `assets/themes/{theme}/` 主题文件（`global-bottom.vue`、`uno.config.ts`、`style.css`）
+7. **项目目录命名规则**：`artifact/{YYYY-MM-DD}-{主题名称}/`，例如 `artifact/2026-03-28-docker-slides/`
 
 ### 步骤 4：验证输出
 
@@ -1048,39 +1049,70 @@ pnpm run export       # 导出 PDF
 主题通过**文件覆盖**实现：
 
 1. 以 `default` 模板为基础生成所有文件
-2. 如选择 `glow` 主题（**默认推荐**），用 `assets/themes/glow/` 下的同名文件覆盖默认文件
+2. 根据内容场景选择主题（见下方"主题选择矩阵"），用 `assets/themes/{theme}/` 下的同名文件覆盖默认文件
+3. 读取 `references/themes/{theme}/theme-config.md` 和 `slide-patterns.md` 获取主题专属配置和布局模式
 
-### 可用主题
+### 可用主题（5 主题矩阵）
 
-| 主题 | 说明 |
-|------|------|
-| `default` | 简洁默认，无特殊效果 |
-| `glow` | 动态发光背景效果（**推荐默认使用**），支持 `glow`/`glowOpacity`/`glowHue`/`glowSeed` frontmatter 属性 |
+| 主题 | 说明 | 适用场景 |
+|------|------|---------|
+| `glow` | 动态发光多边形背景 + 毛玻璃卡片 + 深色基调（**默认推荐**） | 技术分享、开发者大会 |
+| `minimal` | 白底 + 衬线字体 + 无动效，学术克制 | 学术答辩、咨询报告、论文汇报 |
+| `bold` | 大字号 + 强对比 + 渐变背景，Keynote 风 | 产品发布、主题演讲、商业提案 |
+| `dark-pro` | 深蓝灰 + 细网格 + 数据导向，企业稳重 | 企业汇报、季度 review、战略汇报 |
+| `neon` | 霓虹光效 + 赛博网格 + 故障美学 | 创意分享、黑客马拉松、设计相关 |
+
+### 主题选择矩阵
+
+根据**受众 + 内容类型 + 场合**选择主题：
+
+| 受众 | 内容类型 | 推荐主题 | 推荐密度 |
+|------|---------|---------|---------|
+| 开发者 / 技术人员 | 技术分享、代码演示 | `glow` | medium-high |
+| 学者 / 研究人员 | 论文答辩、研究报告 | `minimal` | low |
+| 高管 / 决策者 | 战略汇报、业务复盘 | `dark-pro` | medium |
+| 客户 / 大众 | 产品发布、商业提案 | `bold` | low |
+| 设计师 / 创意从业者 | 创意分享、设计展示 | `neon` | medium |
+| 企业内部团队 | 季度 review、项目汇报 | `dark-pro` | medium-high |
+| 学生 / 入门者 | 教程、培训 | `glow` | medium |
+
+**若用户未明确指定，默认使用 `glow`**，并由 `ppt-structure-analyst` agent 根据 metadata.json 的 `theme` 字段决定。
 
 ### 扩展新主题
 
-在 `assets/themes/{theme-name}/` 下放入覆盖文件（`global-bottom.vue`、`uno.config.ts`、`style.css`），用户即可在生成时选择该主题。
+在 `assets/themes/{theme-name}/` 下放入覆盖文件（`global-bottom.vue`、`uno.config.ts`、`style.css`），并在 `references/themes/{theme-name}/` 下创建 `theme-config.md` 和 `slide-patterns.md`。
 
 ## 模板文件
 
 生成项目时参考以下模板文件：
 
-| 文件 | 路径 |
-|------|------|
-| package.json | `assets/templates/default/package.json` |
-| UnoCSS 配置 | `assets/templates/default/uno.config.ts`（或 `assets/themes/glow/uno.config.ts`） |
-| 自定义样式 | `assets/templates/default/style.css`（或 `assets/themes/glow/style.css`） |
-| 代码高亮 | `assets/templates/default/setup/shiki.ts` |
-| Glow 背景 | `assets/themes/glow/global-bottom.vue`（仅 glow 主题） |
+| 文件 | 默认路径 | 主题专属覆盖路径 |
+|------|---------|----------------|
+| package.json | `assets/templates/default/package.json` | — |
+| UnoCSS 配置 | `assets/templates/default/uno.config.ts` | `assets/themes/{theme}/uno.config.ts` |
+| 自定义样式 | `assets/templates/default/style.css` | `assets/themes/{theme}/style.css` |
+| 代码高亮 | `assets/templates/default/setup/shiki.ts` | — |
+| 背景效果组件 | — | `assets/themes/{theme}/global-bottom.vue`（minimal 为空组件） |
 
 ## 参考文档
 
-- [内容规则](references/content-rules.md) — 核心原则、页面数量、内容→布局映射、检查清单
+### 通用
+- [内容规则](references/content-rules.md) — 核心原则、页面数量、内容→布局映射、**第八节硬性设计约束**
+- [Slidev 布局参考](references/shared/layout-reference.md) — 内置布局模板和 headmatter 配置
+- [组件参考](references/shared/component-reference.md) — v-click、Link、Toc 等组件用法
+
+### 主题专属
 - [Glow 布局模式](references/themes/glow/slide-patterns.md) — Glow 主题高级组合布局模板
 - [Glow 完整示例](references/themes/glow/example-slides.md) — 可运行的 Glow 主题 slides.md
 - [Glow 主题配置](references/themes/glow/theme-config.md) — Glow 专属配置和设计约束
-- [Slidev 布局参考](references/shared/layout-reference.md) — 内置布局模板和 headmatter 配置
-- [组件参考](references/shared/component-reference.md) — v-click、Link、Toc 等组件用法
+- [Minimal 布局模式](references/themes/minimal/slide-patterns.md) — 学术/咨询场景布局
+- [Minimal 主题配置](references/themes/minimal/theme-config.md) — 白底衬线极简约束
+- [Bold 布局模式](references/themes/bold/slide-patterns.md) — 产品发布/Keynote 风布局
+- [Bold 主题配置](references/themes/bold/theme-config.md) — 大字号强对比配置
+- [Dark-Pro 布局模式](references/themes/dark-pro/slide-patterns.md) — 企业汇报/数据看板布局
+- [Dark-Pro 主题配置](references/themes/dark-pro/theme-config.md) — 深蓝灰稳重风格
+- [Neon 布局模式](references/themes/neon/slide-patterns.md) — 赛博朋克/创意分享布局
+- [Neon 主题配置](references/themes/neon/theme-config.md) — 霓虹光效故障美学
 
 ## 使用示例
 
