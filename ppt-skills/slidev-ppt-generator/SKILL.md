@@ -71,6 +71,8 @@ Agent 完成后，检查 `contents/generate/{slug}/` 下是否已生成 `metadat
 - 代码块有语言标识
 
 **Level 2：生成后语法检查（对 slides.md）**
+
+语法正确性：
 - 无裸属性中的 `/`（必须 `class="..."`）
 - 所有代码块有语言标识
 - frontmatter `---` 配对正确
@@ -78,6 +80,18 @@ Agent 完成后，检查 `contents/generate/{slug}/` 下是否已生成 `metadat
 - 超过 15 行的代码块有 `maxHeight`
 - 无空幻灯片（frontmatter 后无内容）
 - 必需 headmatter 键齐全（layout, highlighter, css, colorSchema, glowSeed）
+
+设计护栏（详见 [content-rules.md 第八节](references/content-rules.md#八硬性设计约束验证阶段强制检查)）：
+- [ ] **C-01**：每页要点数 ≤ 6
+- [ ] **C-02**：每页中文字数 ≤ 50（正文）
+- [ ] **C-03**：正文字号 ≥ `text-lg`（18pt），标题 ≥ `text-3xl`（30pt）
+- [ ] **C-04**：正文与背景对比度 ≥ 4.5:1（WCAG AA）
+- [ ] **C-05**：单页元素总数 ≤ 6
+- [ ] **C-06**：标题为断言式（含动词或数字，非"关于 X 的介绍"）
+- [ ] **C-07**：代码块行数 ≤ 15 或已设 `maxHeight`
+- [ ] **C-08**：卡片网格 ≤ 3×3
+
+任一约束超限时**必须修复后重新 build**，修复策略见 content-rules.md §8.3 自动拆页规则。
 
 **Level 3：Build 验证（最终）**
 ```bash
