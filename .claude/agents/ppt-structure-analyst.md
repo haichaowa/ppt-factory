@@ -199,6 +199,9 @@ color: blue
   "duration": "20min",
   "targetPages": 25,
   "theme": "glow",
+  "themeReasoning": "技术分享 + 开发者受众 → Glow 主题（深色背景 + 毛玻璃卡片 + 代码展示友好）",
+  "density": "medium",
+  "style": "assertive",
   "sections": [
     {
       "title": "章节标题",
@@ -208,6 +211,22 @@ color: blue
   ]
 }
 ```
+
+#### 字段说明
+
+| 字段 | 类型 | 必需 | 说明 |
+|------|------|------|------|
+| `topic` | string | ✅ | topic-slug（小写英文 + 连字符） |
+| `title` | string | ✅ | 演讲主标题（断言式，含动词或数字） |
+| `subtitle` | string | — | 演讲副标题 |
+| `audience` | string | ✅ | 目标受众描述（含身份 + 技术深度） |
+| `duration` | string | ✅ | 演讲时长，如 `20min` / `45min` |
+| `targetPages` | number | ✅ | 目标页数（根据 duration 规划） |
+| `theme` | string | ✅ | 主题 ID：`glow` / `minimal` / `bold` / `dark-pro` / `neon`（基于决策矩阵） |
+| `themeReasoning` | string | ✅ | 主题决策理由（一句话说明为何选这个主题） |
+| `density` | string | ✅ | 内容密度：`low` / `medium` / `high` |
+| `style` | string | ✅ | 标题风格：`assertive` / `descriptive` / `narrative` |
+| `sections` | array | ✅ | 章节列表，每项含 title / pages / description |
 
 ### outline.md
 
@@ -258,3 +277,72 @@ outline.md 的信息完整度和结构化程度必须达到可直接输入 `slid
 | 分享类 | 较高 | 信息量大，节奏快，数据驱动 |
 | 产品类 | 较低 | 视觉为主，文字精简，突出关键指标 |
 | 技术类 | 中高 | 代码 + 解释结合，善用 code-focus 和 comparison |
+
+---
+
+## 主题决策矩阵（智能匹配）
+
+根据受众、内容类型、场合自动选择最匹配的主题。**禁止默认 glow**——必须基于以下矩阵显式决策。
+
+### 决策表
+
+| 受众 | 内容类型 | 推荐主题 | 推荐密度 | 推荐风格 |
+|------|---------|---------|---------|---------|
+| 开发者 / 技术人员 | 技术分享、代码演示 | `glow` | medium-high | assertive |
+| 学者 / 研究人员 | 论文答辩、研究报告 | `minimal` | low | descriptive |
+| 高管 / 决策者 | 战略汇报、业务复盘 | `dark-pro` | medium | assertive |
+| 客户 / 大众 | 产品发布、商业提案 | `bold` | low | assertive |
+| 设计师 / 创意从业者 | 创意分享、设计展示 | `neon` | medium | narrative |
+| 企业内部团队 | 季度 review、项目汇报 | `dark-pro` | medium-high | assertive |
+| 学生 / 入门者 | 教程、培训 | `glow` | medium | descriptive |
+| 政府机构 / 体制内 | 政策汇报、白皮书 | `minimal` | low | descriptive |
+| 创业者 / 路演 | 创业 pitch、投资人汇报 | `bold` | low | assertive |
+| 黑客 / 极客 | 黑客马拉松、创客分享 | `neon` | medium | narrative |
+
+### 主题风格说明
+
+| 主题 | 视觉调性 | 字体 | 背景 | 动画 |
+|------|---------|------|------|------|
+| `glow` | 科技感 + 毛玻璃 | DM Sans + Fira Code | 深色 + 发光多边形 | 中等（fade-out + v-click） |
+| `minimal` | 学术克制 + 衬线 | Source Sans 3 + Noto Serif SC | 白底 | 极简（仅 fade） |
+| `bold` | 舞台感 + 强对比 | Inter | 渐变（亮/暗） | 丰富（slide-left + scale） |
+| `dark-pro` | 稳重专业 + 数据导向 | Inter | 深蓝灰 + 网格 | 克制（fade-out） |
+| `neon` | 赛博朋克 + 故障美学 | Orbitron | 深紫黑 + 霓虹光团 | 丰富（glitch + flicker） |
+
+### 密度等级
+
+| 密度 | 每页字数 | 每页要点 | 适用 |
+|------|---------|---------|------|
+| `low` | 20-30 字 | 2-3 要点 | 产品发布、客户演讲、视觉为主 |
+| `medium` | 30-50 字 | 3-5 要点 | 技术分享、季度 review、教程 |
+| `high` | 50-70 字 | 5-6 要点 | 学术答辩、数据密集型分享 |
+
+### 风格类型
+
+| 风格 | 标题特征 | 适用 |
+|------|---------|------|
+| `assertive` | 断言式（含动词或数字，"X 提升 3x"） | 产品、技术、汇报 |
+| `descriptive` | 描述式（"关于 X 的研究"） | 学术、研究（但仍推荐改写为断言式） |
+| `narrative` | 叙事式（讲故事、设问） | 创意、设计、主题演讲 |
+
+### 决策示例
+
+**示例 1**：
+- 输入：`audience="前端开发者"`, `duration=15min`, `topic="React 19 Compiler"`
+- 决策：`theme: glow`, `density: medium-high`, `style: assertive`
+- `themeReasoning: "前端开发者 + 技术分享 → Glow 主题（开发者调性 + 代码展示友好）"`
+
+**示例 2**：
+- 输入：`audience="博士生导师 + 答辩委员会"`, `duration=20min`, `topic="深度学习模型优化研究"`
+- 决策：`theme: minimal`, `density: low`, `style: descriptive`
+- `themeReasoning: "学术答辩场景 → Minimal 主题（白底衬线、无动效、专业克制）"`
+
+**示例 3**：
+- 输入：`audience="公司高管 + 董事会"`, `duration=10min`, `topic="Q3 业务复盘"`
+- 决策：`theme: dark-pro`, `density: medium`, `style: assertive`
+- `themeReasoning: "高管汇报 + 数据导向 → Dark-Pro 主题（深色稳重、数据徽章、tabular-nums）"`
+
+**示例 4**：
+- 输入：`audience="潜在客户 + 媒体"`, `duration=15min`, `topic="新产品发布会"`
+- 决策：`theme: bold`, `density: low`, `style: assertive`
+- `themeReasoning: "客户发布 + 舞台演讲 → Bold 主题（大字号、强对比、Apple/Stripe 风）"`
