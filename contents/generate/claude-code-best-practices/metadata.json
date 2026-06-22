@@ -1,41 +1,66 @@
 {
   "topic": "claude-code-best-practices",
   "title": "Claude Code 最佳实践",
-  "subtitle": "从配置环境到并行扩展，掌握代理式编码的核心模式",
-  "audience": "有一定开发经验的工程师，希望高效使用 Claude Code 进行日常开发",
-  "duration": "25min",
-  "targetPages": 26,
+  "subtitle": "从入门到高效，掌握 AI 编程助手的正确打开方式",
+  "audience": "初级开发者（刚接触 Claude Code，需要从基础概念讲起）",
+  "duration": "40min",
+  "targetPages": 49,
   "theme": "glow",
   "sections": [
     {
-      "title": "认知基础",
-      "pages": 3,
-      "description": "理解 Claude Code 的代理式本质与 Context Window 核心约束"
+      "title": "封面",
+      "pages": 1,
+      "description": "演示标题与副标题"
     },
     {
-      "title": "工作流优化",
+      "title": "认识 Claude Code",
       "pages": 4,
-      "description": "验证驱动开发与探索-规划-编码四阶段工作流"
+      "description": "什么是 Claude Code、与传统 AI 助手的区别、核心工作原理、最重要的约束——context window"
     },
     {
-      "title": "提示工程",
-      "pages": 3,
-      "description": "精准提示的编写策略与丰富的上下文输入方式"
-    },
-    {
-      "title": "环境配置",
+      "title": "核心原则：让 Claude 验证自己",
       "pages": 4,
-      "description": "CLAUDE.md 编写规范与六大扩展机制（权限、CLI、MCP、Hooks、Skills、Subagents）"
+      "description": "为什么验证是最高杠杆的事、三种验证策略对比、验证方式不止测试"
+    },
+    {
+      "title": "标准工作流",
+      "pages": 6,
+      "description": "探索→规划→实现→提交四阶段工作流、Plan Mode 使用场景、何时跳过规划"
+    },
+    {
+      "title": "写出好提示",
+      "pages": 5,
+      "description": "四种提示优化策略、限定范围与参考模式对比示例、丰富内容交付方式"
+    },
+    {
+      "title": "配置你的环境",
+      "pages": 11,
+      "description": "CLAUDE.md 编写与放置、权限管理、CLI 工具、MCP 服务器、Hooks、Skills、Subagents、扩展能力一览"
+    },
+    {
+      "title": "有效沟通",
+      "pages": 3,
+      "description": "问对问题、让 Claude 采访你"
     },
     {
       "title": "会话管理",
-      "pages": 5,
-      "description": "快速纠正、Context 管理、Subagent 调查、检查点回溯与会话恢复"
+      "pages": 6,
+      "description": "及时纠偏、context 管理工具箱、检查点回溯、恢复对话"
     },
     {
       "title": "自动化与扩展",
-      "pages": 4,
-      "description": "非交互模式、并行会话、跨文件扇出与 Auto Mode"
+      "pages": 3,
+      "description": "非交互模式、并行会话与扇出"
+    },
+    {
+      "title": "常见陷阱与总结",
+      "pages": 5,
+      "description": "五大失败模式及修复方法、培养直觉、关键要点回顾、学习资源"
+    },
+    {
+      "title": "结束",
+      "pages": 1,
+      "description": "致谢与讨论"
     }
   ]
 }

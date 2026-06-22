@@ -14,14 +14,14 @@ description: 从用户需求生成专业的Slidev演示文稿，使用Markdown�
 ## 内容管道
 
 ```
-contents/ori/ (原始材料) → [可选联网补充] → contents/generate/ (结构化内容) → artifact/ (演示文稿)
+contents/ori/ (原始材料) → [ppt-structure-analyst agent] → contents/generate/ (outline.md + metadata.json) → artifact/ (演示文稿)
 ```
 
 - **ori/**：用户提供的原始材料（文件、URL、粘贴内容），每个主题一个目录
-- **generate/**：经过结构化处理的中间产物（metadata.json + outline.md + content.md）
+- **generate/**：由 `ppt-structure-analyst` agent 生成的结构化中间产物（metadata.json + outline.md）
 - **artifact/**：最终生成的 Slidev 演示文稿项目
 
-## 六步工作流程
+## 四步工作流程
 
 ### 步骤 1：需求收集 + 内容摄取
 
@@ -34,50 +34,41 @@ contents/ori/ (原始材料) → [可选联网补充] → contents/generate/ (�
 
 **topic-slug 命名规范**：小写英文，连字符分隔，如 `claude-code-best-practices`、`k8s-intro`
 
-### 步骤 2：内容结构化
+### 步骤 2：内容结构化（委托 ppt-structure-analyst）
 
-读取 `contents/ori/{slug}/main.md`，按照 `references/content-rules.md` 规则组织内容。
+**必须显式调用 `ppt-structure-analyst` agent 完成本步骤**，由 agent 负责：读取原始材料、分析结构、规划叙事、生成中间产物。
 
-产出三个文件到 `contents/generate/{slug}/`：
+**调用方式**：使用 Agent 工具，`subagent_type` 设为 `ppt-structure-analyst`，传入以下上下文：
+- topic-slug（步骤 1 确定）
+- 受众、时长、特殊需求（步骤 1 收集）
+- 原始材料路径：`contents/ori/{slug}/main.md`
+
+Agent 产出两个文件到 `contents/generate/{slug}/`：
 
 1. **metadata.json** — 生成参数（受众、时长、目标页数、主题选择、section 列表）
-2. **outline.md** — 幻灯片结构大纲（每页标题、布局类型、核心要点）
-3. **content.md** — 完整内容，使用注释标记 slide 元数据：`<!-- slide: type | layout: xxx | glowSeed: n -->`
+2. **outline.md** — 幻灯片结构大纲（每页标题、布局 pattern、核心内容、布局细节）
 
-核心原则：一页一观点、金字塔原则、少即是多（每页不超过 50 字）
+Agent 完成后，检查 `contents/generate/{slug}/` 下是否已生成 `metadata.json` 和 `outline.md`。若缺失或质量不足，补充完善。
 
-| 演讲时长 | 推荐页数 |
-|---------|---------|
-| 5-10 分钟 | 8-12 页 |
-| 10-20 分钟 | 12-20 页 |
-| 20-40 分钟 | 20-35 页 |
+**注意**：此步骤不再由 skill 自行执行内容结构化，而是完全委托给 agent。skill 的职责是收集需求、调用 agent、验收产出。
 
-### 步骤 3：布局映射
+### 步骤 3：生成项目
 
-根据内容特征选择合适的布局（见下方映射表）。
+1. 读取 `contents/generate/{slug}/outline.md` 和 `contents/generate/{slug}/metadata.json` 作为输入
+2. 读取主题专属的模式参考（`ppt-structure-analyst` 已在 outline.md 中标注了每页的 pattern）
+3. 读取主题配置 `references/themes/{theme}/theme-config.md`
+4. 按照 Slidev 语法生成 `slides.md` 文件，**必须使用 Glow 主题**
+5. 复制 `assets/templates/default/` 模板文件，叠加 `assets/themes/glow/` 主题文件
+6. **项目目录命名规则**：`artifact/{YYYY-MM-DD}-{主题名称}/`，例如 `artifact/2026-03-28-docker-slides/`
 
-读取主题专属的模式参考：
-- Glow 主题：`references/themes/glow/slide-patterns.md`
-- 通用布局：`references/shared/layout-reference.md`
-- 主题配置：`references/themes/glow/theme-config.md`
-
-### 步骤 4：生成项目
-
-1. 读取 `contents/generate/{slug}/content.md` 作为输入
-2. 读取主题配置 `references/themes/{theme}/theme-config.md`
-3. 按照 Slidev 语法生成 `slides.md` 文件，**必须使用 Glow 主题**
-4. 复制 `assets/templates/default/` 模板文件，叠加 `assets/themes/glow/` 主题文件
-5. **项目目录命名规则**：`artifact/{YYYY-MM-DD}-{主题名称}/`，例如 `artifact/2026-03-28-docker-slides/`
-
-### 步骤 5：验证输出
+### 步骤 4：验证输出
 
 三级验证，确保生成质量：
 
-**Level 1：生成前检查（对 content.md）**
+**Level 1：生成前检查（对 outline.md）**
 - 页面数量与 metadata.json 目标一致
-- 每页有布局标记
+- 每页有 pattern 标注
 - 代码块有语言标识
-- 每页文字量 ≤ 50 字
 
 **Level 2：生成后语法检查（对 slides.md）**
 - 无裸属性中的 `/`（必须 `class="..."`）
@@ -1084,7 +1075,6 @@ pnpm run export       # 导出 PDF
 **执行步骤**：
 
 1. 确认需求：10 分钟技术分享，面向有 Vue 2 基础的开发者
-2. 规划结构：约 12 页
-3. 选择布局：cover → section → content → code → two-cols → end
-4. 使用 Glow 主题生成 Markdown 文件（包含 glowSeed、动画、卡片式布局）
-5. 验证代码高亮和动画效果
+2. 调用 `ppt-structure-analyst` agent，传入 topic-slug、受众、时长，生成 `metadata.json` + `outline.md`
+3. 根据 outline.md 生成 slides.md，使用 Glow 主题（glowSeed、动画、卡片式布局）
+4. 验证代码高亮和动画效果

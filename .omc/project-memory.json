@@ -1,0 +1,231 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1782102387810,
+  "projectRoot": "/Users/wanghaichao/develop/VsCodeProject/ppt-generator",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vite",
+        "version": "6.4.1",
+        "category": "build"
+      },
+      {
+        "name": "vue",
+        "version": "3.5.22",
+        "category": "frontend"
+      }
+    ],
+    "packageManager": "pnpm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {
+      "cleanup:dist": "rimraf --glob dist",
+      "packages:build": "pnpm cleanup:dist && pnpm -r --filter=./artifact/* run build",
+      "packages:export": "pnpm -r --filter=./artifact/* run export"
+    }
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": true,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": {
+      "defaultBranch": "master",
+      "branchingStrategy": null
+    }
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "artifact": {
+      "path": "artifact",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1782102387790,
+      "keyFiles": []
+    },
+    "contents": {
+      "path": "contents",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1782102387790,
+      "keyFiles": [
+        "README.md"
+      ]
+    },
+    "images": {
+      "path": "images",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1782102387793,
+      "keyFiles": []
+    },
+    "ppt-skills": {
+      "path": "ppt-skills",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1782102387793,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "",
+      "accessCount": 4,
+      "lastAccessed": 1782102413446,
+      "type": "directory"
+    },
+    {
+      "path": "slidev-ai-projects.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103333321,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/SKILL.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103333376,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/themes/glow/theme-config.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103347450,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/themes/glow/slide-patterns.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103347469,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/themes/glow/example-slides.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103347529,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/templates/default/package.json",
+      "accessCount": 2,
+      "lastAccessed": 1782103347536,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/content-rules.md",
+      "accessCount": 2,
+      "lastAccessed": 1782103347577,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/themes/glow/global-bottom.vue",
+      "accessCount": 2,
+      "lastAccessed": 1782103347641,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 2,
+      "lastAccessed": 1782103347651,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/themes/glow/uno.config.ts",
+      "accessCount": 2,
+      "lastAccessed": 1782103347701,
+      "type": "file"
+    },
+    {
+      "path": "contents/README.md",
+      "accessCount": 1,
+      "lastAccessed": 1782102424470,
+      "type": "file"
+    },
+    {
+      "path": "README.md",
+      "accessCount": 1,
+      "lastAccessed": 1782102424575,
+      "type": "file"
+    },
+    {
+      "path": "contents/generate/claude-code-best-practices/metadata.json",
+      "accessCount": 1,
+      "lastAccessed": 1782102437143,
+      "type": "file"
+    },
+    {
+      "path": "contents/generate/claude-code-best-practices/outline.md",
+      "accessCount": 1,
+      "lastAccessed": 1782102437197,
+      "type": "file"
+    },
+    {
+      "path": "artifact/2026-05-05-claude-code-best-practices/slides.md",
+      "accessCount": 1,
+      "lastAccessed": 1782102458198,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/shared/component-reference.md",
+      "accessCount": 1,
+      "lastAccessed": 1782103347414,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/templates/default/setup/shiki.ts",
+      "accessCount": 1,
+      "lastAccessed": 1782103347462,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/templates/default/style.css",
+      "accessCount": 1,
+      "lastAccessed": 1782103347483,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/templates/default/uno.config.ts",
+      "accessCount": 1,
+      "lastAccessed": 1782103347504,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/references/shared/layout-reference.md",
+      "accessCount": 1,
+      "lastAccessed": 1782103347521,
+      "type": "file"
+    },
+    {
+      "path": "ppt-skills/slidev-ppt-generator/assets/themes/glow/style.css",
+      "accessCount": 1,
+      "lastAccessed": 1782103347672,
+      "type": "file"
+    },
+    {
+      "path": "optimization-report.md",
+      "accessCount": 1,
+      "lastAccessed": 1782103542609,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}
