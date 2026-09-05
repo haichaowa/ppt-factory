@@ -1,0 +1,23 @@
+/* theme:minimal-light — 极简白：浅底深字，正式场合、打印友好 */
+:root {
+  --stage-w: 1280px; --stage-h: 720px;
+  --bg: #fafaf8;
+  --bg-soft: rgba(36, 86, 214, 0.06);
+  --fg: #1c1c22;
+  --fg-dim: #5c5c66;                       /* 对比度 ≈ 5.9:1，满足 AA */
+  --accent: #2456d6;                       /* 深蓝，浅底对比 ≈ 5.5:1 */
+  --accent-2: #c2410c;                     /* 赭橙 */
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, 'JetBrains Mono', monospace;
+  --line-height-title: 1.25; --line-height-body: 1.6;
+  --card-bg: #ffffff;
+  --card-border: #e3e1d8;
+  --card-radius: 10px;
+  --card-blur: none;
+}
+
+/* 极简背景：纯色 + 顶部极淡的冷色渐变 */
+.stage {
+  background: linear-gradient(180deg, rgba(36, 86, 214, 0.04), transparent 30%), #fafaf8;
+}

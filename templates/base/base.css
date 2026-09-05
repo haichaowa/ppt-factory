@@ -1,0 +1,81 @@
+/* base:v1 — 舞台缩放 / 幻灯片 chrome / 排版阶梯 / 打印。逐字复制，禁止修改。
+   约定：pattern 若需覆盖本文件对 .slide 的设置，必须用 .slide.pat-xxx 复合选择器（后加载者胜出） */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* 安全默认值（deck 装配时，主题变量注入点整文件内联并覆盖这些值） */
+  --stage-w: 1280px; --stage-h: 720px;
+  --bg: #101014; --bg-soft: rgba(255, 255, 255, 0.06);
+  --fg: #f2f2f5; --fg-dim: #a5a5b5;
+  --accent: #8b7cf8; --accent-2: #4fd1c5;
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, 'JetBrains Mono', monospace;
+  --line-height-title: 1.25; --line-height-body: 1.6;
+  --card-bg: rgba(255, 255, 255, 0.05); --card-border: rgba(255, 255, 255, 0.16);
+  --card-radius: 12px; --card-blur: none;
+}
+
+html, body { height: 100%; background: var(--bg); overflow: hidden; }
+
+/* 舞台：固定 16:9 逻辑尺寸，runtime 按窗口等比缩放居中 */
+.stage {
+  position: absolute; top: 50%; left: 50%;
+  width: var(--stage-w); height: var(--stage-h);
+  transform: translate(-50%, -50%);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: var(--line-height-body);
+}
+
+/* 幻灯片：统一 flex 纵向布局，内容自上而下；居中型模式只改 justify-content */
+.slide {
+  display: none;
+  width: 100%; height: 100%;
+  padding: 64px 80px;
+  overflow: hidden;
+}
+.slide.active { display: flex; flex-direction: column; animation: slide-in .35s ease both; }
+@keyframes slide-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* 排版阶梯：px 显式声明（跨平台中文字体度量差异是溢出主因，禁止 rem/em 相对链） */
+h1, h2, h3 { font-family: var(--font-display); line-height: var(--line-height-title); }
+h1 { font-size: 64px; }
+h2 { font-size: 40px; }
+h3 { font-size: 26px; }
+p, li { font-size: 22px; }
+.small { font-size: 18px; }
+.caption { font-size: 15px; color: var(--fg-dim); }
+.dim { color: var(--fg-dim); }
+.accent { color: var(--accent); }
+strong, b { color: var(--accent); font-weight: 700; }
+ul, ol { list-style: none; padding: 0; }
+a { color: var(--accent-2); text-decoration: none; }
+code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-soft); padding: .1em .4em; border-radius: 4px; }
+
+/* fragment 渐进：未揭示半透明下移，揭示后归位 */
+.fragment { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
+.fragment.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fragment { transition: none; }
+  .slide.active { animation: none; }
+}
+
+/* 打印：每页恰好一张 16:9；fragment 呈最终状态；深色主题需在打印对话框勾选"背景图形" */
+@page { size: 1280px 720px; margin: 0; }
+@media print {
+  html, body { overflow: visible; background: #fff; }
+  .stage { position: static; transform: none !important; width: 1280px; height: auto; }
+  .slide {
+    display: flex !important; flex-direction: column;
+    width: 1280px; height: 720px;
+    page-break-after: always; break-after: page;
+    animation: none;
+  }
+  .fragment { opacity: 1 !important; transform: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}

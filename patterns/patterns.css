@@ -1,0 +1,116 @@
+/* patterns:v1 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
+   约定：需覆盖 base.css 对 .slide 设置的模式，用 .slide.pat-xxx 复合选择器（后加载者胜出） */
+
+/* ---------- 共用卡片（视觉由主题变量驱动，此处只有结构） ---------- */
+.pat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  backdrop-filter: var(--card-blur);
+}
+
+/* ---------- cover 封面 ---------- */
+.slide.pat-cover { justify-content: center; gap: 18px; }
+.pat-cover-kicker { font-size: 19px; letter-spacing: .35em; color: var(--accent-2); text-transform: uppercase; }
+.pat-cover-sub { font-size: 26px; color: var(--fg-dim); max-width: 30em; }
+.pat-cover-meta { margin-top: 40px; font-size: 18px; color: var(--fg-dim); }
+
+/* ---------- section 章节分隔 ---------- */
+.slide.pat-section { justify-content: center; align-items: center; gap: 16px; text-align: center; }
+.pat-section-no { font-size: 22px; color: var(--accent-2); letter-spacing: .3em; font-family: var(--font-mono); }
+.slide.pat-section h1 { font-size: 72px; }
+
+/* ---------- bullets 要点列表 ---------- */
+.pat-bullets { gap: 30px; justify-content: center; }
+.pat-bullets ul { counter-reset: pt; display: grid; gap: 24px; }
+.pat-bullets li { counter-increment: pt; position: relative; padding-left: 64px; font-size: 25px; line-height: var(--line-height-body); }
+.pat-bullets li::before {
+  content: counter(pt, decimal-leading-zero);
+  position: absolute; left: 0; top: .28em;
+  font-family: var(--font-mono); font-size: 19px; color: var(--accent);
+}
+.pat-bullets li b { display: block; font-size: 27px; }
+.pat-bullets li .pat-sub { display: block; font-size: 19px; color: var(--fg-dim); margin-top: 2px; }
+
+/* ---------- two-col 双栏对比 ---------- */
+.pat-two-col { gap: 0; }
+.pat-two-col-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 36px; flex: 1; min-height: 0; }
+.pat-two-col-card { padding: 36px; display: flex; flex-direction: column; gap: 18px; }
+.pat-two-col-tag { font-size: 15px; letter-spacing: .25em; color: var(--accent-2); }
+.pat-two-col-card ul { display: grid; gap: 14px; font-size: 20px; }
+.pat-two-col-card ul li { position: relative; padding-left: 24px; }
+.pat-two-col-card ul li::before { content: '·'; position: absolute; left: 4px; color: var(--accent); font-weight: 700; }
+
+/* ---------- metrics 大数字指标 ---------- */
+.pat-metrics { gap: 0; }
+.pat-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px; margin-top: 44px; }
+.pat-metric { padding: 34px 30px; }
+.pat-metric-num { font-family: var(--font-display); font-size: 68px; line-height: 1.1; color: var(--accent); white-space: nowrap; }
+.pat-metric-num small { font-size: 30px; margin-left: 2px; }
+.pat-metric-label { margin-top: 10px; font-size: 19px; color: var(--fg-dim); }
+
+/* ---------- timeline 纵向时间线 ---------- */
+.pat-timeline { gap: 0; }
+.pat-timeline .pat-tl-list { margin-top: 36px; }
+.pat-tl-item { position: relative; padding: 0 0 26px 46px; }
+.pat-tl-item::before { content: ''; position: absolute; left: 9px; top: 12px; bottom: -6px; width: 2px; background: var(--card-border); }
+.pat-tl-item:last-child { padding-bottom: 0; }
+.pat-tl-item:last-child::before { display: none; }
+.pat-tl-item::after { content: ''; position: absolute; left: 3px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
+.pat-tl-time { font-family: var(--font-mono); font-size: 16px; color: var(--accent-2); }
+.pat-tl-item h3 { font-size: 23px; margin-top: 2px; }
+.pat-tl-item p { font-size: 18px; color: var(--fg-dim); margin-top: 2px; }
+
+/* ---------- steps 横向步骤 ---------- */
+.pat-steps { gap: 0; }
+.pat-steps-row { display: flex; align-items: stretch; margin-top: 44px; }
+.pat-step { flex: 1; padding: 30px 22px; text-align: center; display: flex; flex-direction: column; gap: 10px; }
+.pat-step-no { font-family: var(--font-mono); font-size: 17px; color: var(--accent-2); }
+.pat-step b { font-size: 22px; }
+.pat-step p { font-size: 16px; color: var(--fg-dim); }
+.pat-step-arrow { align-self: center; color: var(--fg-dim); font-size: 26px; padding: 0 12px; }
+
+/* ---------- quote 引用 ---------- */
+.slide.pat-quote { justify-content: center; }
+.pat-quote blockquote {
+  font-family: var(--font-display);
+  font-size: 46px; line-height: var(--line-height-title);
+  border-left: 4px solid var(--accent);
+  padding-left: 36px;
+  max-width: 22em;
+}
+.pat-quote cite { display: block; margin-top: 28px; font-size: 20px; font-style: normal; color: var(--fg-dim); padding-left: 40px; }
+
+/* ---------- code 代码展示 ---------- */
+.pat-code { gap: 26px; }
+.pat-code pre {
+  background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--card-radius);
+  backdrop-filter: var(--card-blur);
+  padding: 28px 32px; overflow: auto;
+  font-family: var(--font-mono); font-size: 19px; line-height: 1.6;
+}
+.pat-code pre code { background: none; padding: 0; font-size: inherit; }
+.pat-code .hl { font-style: normal; color: var(--accent); font-weight: 700; }   /* 行内高亮标记 */
+.pat-code pre .fragment { display: block; }                                     /* 代码按行块渐进 */
+
+/* ---------- table 表格 ---------- */
+.pat-table { gap: 0; }
+.pat-table table { width: 100%; border-collapse: collapse; margin-top: 36px; font-size: 20px; }
+.pat-table th { text-align: left; font-family: var(--font-display); font-size: 17px; letter-spacing: .08em; color: var(--accent-2); padding: 14px 18px; border-bottom: 2px solid var(--card-border); }
+.pat-table td { padding: 15px 18px; border-bottom: 1px solid var(--card-border); }
+.pat-table tr.fragment.visible td { color: var(--fg); }
+.pat-table .caption { margin-top: 18px; }
+
+/* ---------- image-text 图文混排 ---------- */
+.slide.pat-image-text { flex-direction: row; align-items: center; gap: 48px; }
+.pat-image-text .pat-it-media { flex: 0 0 44%; max-width: 44%; }
+.pat-image-text .pat-it-media img, .pat-image-text .pat-it-media svg { width: 100%; border-radius: var(--card-radius); border: 1px solid var(--card-border); display: block; }
+.pat-image-text .pat-it-body { flex: 1; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.pat-image-text li { font-size: 20px; }
+
+/* ---------- end 结尾 ---------- */
+.slide.pat-end { justify-content: center; align-items: center; gap: 18px; text-align: center; }
+.slide.pat-end h1 { font-size: 56px; }
+.pat-end-links { display: flex; gap: 36px; font-size: 18px; color: var(--fg-dim); }
+.pat-end-qr { margin-top: 20px; }
+.pat-end-qr img { width: 170px; height: 170px; border-radius: var(--card-radius); background: #fff; padding: 10px; }

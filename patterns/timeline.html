@@ -1,0 +1,26 @@
+<!-- ============================================================
+  pattern: timeline — 纵向时间线（演进/版本/历史）
+  槽位：页标题、3-5 个节点（时间 + 标题 + 一句说明）
+  变体：节点超过 5 个时说明该拆章节，不要硬塞
+  依赖：patterns.css → .pat-timeline
+============================================================ -->
+<section class="slide pat-timeline">
+  <h2><!-- SLOT: 标题，如 演进路线 --></h2>
+  <div class="pat-tl-list">
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time"><!-- SLOT: 时间 1，如 2026-03 --></div>
+      <h3><!-- SLOT: 节点 1 标题 --></h3>
+      <p><!-- SLOT: 节点 1 说明 --></p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time"><!-- SLOT: 时间 2 --></div>
+      <h3><!-- SLOT: 节点 2 标题 --></h3>
+      <p><!-- SLOT: 节点 2 说明 --></p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time"><!-- SLOT: 时间 3 --></div>
+      <h3><!-- SLOT: 节点 3 标题 --></h3>
+      <p><!-- SLOT: 节点 3 说明 --></p>
+    </div>
+  </div>
+</section>

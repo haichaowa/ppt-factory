@@ -1,0 +1,23 @@
+<!-- ============================================================
+  pattern: bullets — 要点列表（观点 + 3-5 论据）
+  槽位：页标题（写成观点句）、要点关键词 + 说明（3-5 条）
+  变体：逐条渐进加 class="fragment"；不需要关键词加粗时删 <b>
+  依赖：patterns.css → .pat-bullets
+============================================================ -->
+<section class="slide pat-bullets">
+  <h2><!-- SLOT: 页标题，写成观点句 --></h2>
+  <ul>
+    <li class="fragment">
+      <b><!-- SLOT: 要点 1 关键词 --></b>
+      <span class="pat-sub"><!-- SLOT: 要点 1 说明 --></span>
+    </li>
+    <li class="fragment">
+      <b><!-- SLOT: 要点 2 关键词 --></b>
+      <span class="pat-sub"><!-- SLOT: 要点 2 说明 --></span>
+    </li>
+    <li class="fragment">
+      <b><!-- SLOT: 要点 3 关键词 --></b>
+      <span class="pat-sub"><!-- SLOT: 要点 3 说明 --></span>
+    </li>
+  </ul>
+</section>

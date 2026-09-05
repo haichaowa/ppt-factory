@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- skeleton:v1 — deck 骨架。装配起点：逐字复制本文件，再按 docs/WORKFLOW.md 第 4 步内联各块与内容 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><!-- SLOT: 演讲标题 --></title>
+<style>
+/* ============================================================
+   theme:xxx — 主题变量注入点（整文件内联 templates/base/themes/{所选}.css）
+   ============================================================ */
+
+/* ============================================================
+   base:v1 — 基础样式（整文件内联 templates/base/base.css）
+   ============================================================ */
+
+/* ============================================================
+   patterns:v1 — 模式样式（整文件内联 patterns/patterns.css）
+   ============================================================ */
+</style>
+</head>
+<body>
+<div class="stage">
+
+  <!-- ====== 示例封面页：装配时替换为 patterns/cover.html ====== -->
+  <section class="slide pat-cover">
+    <div class="pat-cover-kicker"><!-- SLOT: 眉题（可删） --></div>
+    <h1><!-- SLOT: 主标题 --></h1>
+    <p class="pat-cover-sub"><!-- SLOT: 副标题，一句话说清价值 --></p>
+    <div class="pat-cover-meta"><!-- SLOT: 演讲人 · 日期 --></div>
+  </section>
+
+  <!-- ====== 示例内容页：装配时按大纲逐页替换为 pattern 片段 ====== -->
+  <section class="slide">
+    <h2><!-- SLOT: 页标题（观点句） --></h2>
+    <ul style="margin-top: 32px; display: grid; gap: 20px;">
+      <li class="fragment"><!-- SLOT: 要点 1 --></li>
+      <li class="fragment"><!-- SLOT: 要点 2 --></li>
+      <li class="fragment"><!-- SLOT: 要点 3 --></li>
+    </ul>
+  </section>
+
+  <!-- ====== 示例结尾页：装配时替换为 patterns/end.html ====== -->
+  <section class="slide pat-end">
+    <h1><!-- SLOT: 致谢语 --></h1>
+    <p class="dim"><!-- SLOT: 联系方式 / 仓库地址 --></p>
+  </section>
+
+</div>
+<script>
+/* ============================================================
+   runtime:v1 — 运行时（整文件内联 templates/base/runtime.js）
+   ============================================================ */
+</script>
+</body>
+</html>

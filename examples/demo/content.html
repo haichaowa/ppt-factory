@@ -1,0 +1,273 @@
+<!-- ============================================================
+  examples/demo — 内容层：14 页，按已确认大纲组装
+  每页 = patterns/ 对应片段逐字复制 + 仅填充 SLOT 槽位
+============================================================ -->
+
+<!-- 1 · cover -->
+<section class="slide pat-cover">
+  <div class="pat-cover-kicker">PPT GENERATOR · OPEN SOURCE</div>
+  <h1>AI Native 的模板化 PPT 生成器</h1>
+  <p class="pat-cover-sub">智能体 + 确定性前端资产，产出零依赖单文件 HTML 演示文稿</p>
+  <div class="pat-cover-meta">ppt-generator · 2026-09</div>
+</section>
+
+<!-- 2 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">01</div>
+  <h1>为什么要推倒重来</h1>
+</section>
+
+<!-- 3 · bullets -->
+<section class="slide pat-bullets">
+  <h2>旧方案的三类痛点，全部源自框架本身</h2>
+  <ul>
+    <li class="fragment">
+      <b>构建链重</b>
+      <span class="pat-sub">每个演示都要 node_modules 与构建步骤，断网即废</span>
+    </li>
+    <li class="fragment">
+      <b>框架陷阱多</b>
+      <span class="pat-sub">UnoCSS 裸属性、Vue 编译限制，踩坑记录写满整页文档</span>
+    </li>
+    <li class="fragment">
+      <b>产物不独立</b>
+      <span class="pat-sub">deck 依赖运行环境，无法直接分享、投放、归档</span>
+    </li>
+  </ul>
+</section>
+
+<!-- 4 · two-col -->
+<section class="slide pat-two-col">
+  <h2>Slidev 方案 vs 单文件 HTML 方案</h2>
+  <div class="pat-two-col-grid">
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag">旧 · SLIDEV</div>
+      <h3>框架驱动</h3>
+      <ul>
+        <li>Markdown → 构建 → 渲染</li>
+        <li>部署依赖 Node 环境</li>
+        <li>框架升级牵动全部旧稿</li>
+      </ul>
+    </div>
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag">新 · SINGLE FILE</div>
+      <h3>资产驱动</h3>
+      <ul>
+        <li>逐字装配即产物</li>
+        <li>双击即放，微信直发</li>
+        <li>模板演进不追旧稿（冻结快照）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · metrics -->
+<section class="slide pat-metrics">
+  <h2>一次重构的数字</h2>
+  <div class="pat-metrics-grid">
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">1.17<small>万行</small></div>
+      <div class="pat-metric-label">删除的旧实现</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">412<small>行</small></div>
+      <div class="pat-metric-label">新增架构文档</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">0<small>依赖</small></div>
+      <div class="pat-metric-label">npm 与构建链</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">12<small>种</small></div>
+      <div class="pat-metric-label">布局模式</div>
+    </div>
+  </div>
+  <p class="caption">来源：git log 2a0fa65（2026-09-01，31 个文件变更）</p>
+</section>
+
+<!-- 6 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">02</div>
+  <h1>新架构：三层分离</h1>
+</section>
+
+<!-- 7 · quote -->
+<section class="slide pat-quote">
+  <blockquote>
+    智能放调用方，确定性放仓库。
+  </blockquote>
+  <cite>— ppt-generator 架构原则</cite>
+</section>
+
+<!-- 8 · image-text（内联 SVG 架构图） -->
+<section class="slide pat-image-text">
+  <div class="pat-it-media">
+    <svg viewBox="0 0 500 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'PingFang SC','Microsoft YaHei',sans-serif">
+      <rect x="120" y="10" width="260" height="56" rx="10" fill="rgba(139,124,248,0.14)" stroke="#8b7cf8"/>
+      <text x="250" y="44" text-anchor="middle" fill="#f0eefc" font-size="19">智能体 · Claude / Codex</text>
+      <line x1="250" y1="66" x2="250" y2="100" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,108 243,96 257,96" fill="#8b7cf8"/>
+      <rect x="90" y="110" width="320" height="56" rx="10" fill="rgba(79,209,197,0.12)" stroke="#4fd1c5"/>
+      <text x="250" y="144" text-anchor="middle" fill="#f0eefc" font-size="19">docs/WORKFLOW.md 权威流程</text>
+      <line x1="250" y1="166" x2="250" y2="200" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,208 243,196 257,196" fill="#8b7cf8"/>
+      <rect x="20" y="210" width="150" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="95" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">templates/base</text>
+      <text x="95" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">骨架 · 样式 · 运行时</text>
+      <rect x="185" y="210" width="130" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="250" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">patterns</text>
+      <text x="250" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">12 种布局模式</text>
+      <rect x="330" y="210" width="150" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="405" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">themes</text>
+      <text x="405" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">CSS 变量主题</text>
+      <line x1="250" y1="282" x2="250" y2="316" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,324 243,312 257,312" fill="#8b7cf8"/>
+      <rect x="90" y="326" width="150" height="56" rx="10" fill="rgba(79,209,197,0.10)" stroke="#4fd1c5"/>
+      <text x="165" y="360" text-anchor="middle" fill="#f0eefc" font-size="16">decks 产物</text>
+      <rect x="260" y="326" width="150" height="56" rx="10" fill="rgba(79,209,197,0.10)" stroke="#4fd1c5"/>
+      <text x="335" y="360" text-anchor="middle" fill="#f0eefc" font-size="16">examples 金样</text>
+    </svg>
+  </div>
+  <div class="pat-it-body">
+    <h2>三层职责，一张图</h2>
+    <p class="dim">内容理解交给模型，确定性沉淀进仓库</p>
+    <ul>
+      <li class="fragment"><b>接口层薄</b> —— 入口只指向一份权威流程</li>
+      <li class="fragment"><b>引擎层稳</b> —— 模板与模式逐字复制，禁止即兴</li>
+      <li class="fragment"><b>产物层冻结</b> —— deck 即快照，直改不重组</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9 · table -->
+<section class="slide pat-table">
+  <h2>向成熟项目借了什么</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>项目</th>
+        <th>借鉴点</th>
+        <th>落点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="fragment">
+        <td>reveal.js</td>
+        <td>固定舞台 + 等比缩放</td>
+        <td>16:9 舞台模型</td>
+      </tr>
+      <tr class="fragment">
+        <td>PPTAgent</td>
+        <td>大纲先行 + 反思质检</td>
+        <td>工作流确认关卡</td>
+      </tr>
+      <tr class="fragment">
+        <td>PPTist</td>
+        <td>幻灯片类型分类学</td>
+        <td>12 种模式清单</td>
+      </tr>
+      <tr class="fragment">
+        <td>presentation-builder</td>
+        <td>零依赖 + 反 slop</td>
+        <td>单文件形态</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="caption">来源：本仓库重构方案档案（2026-09）</p>
+</section>
+
+<!-- 10 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">03</div>
+  <h1>生成工作流</h1>
+</section>
+
+<!-- 11 · steps -->
+<section class="slide pat-steps">
+  <h2>从一句话到一份 deck</h2>
+  <div class="pat-steps-row">
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">01</div>
+      <b>读教训</b>
+      <p>LESSONS.md 避免重蹈</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">02</div>
+      <b>澄清需求</b>
+      <p>一次问全五个问题</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">03</div>
+      <b>大纲确认</b>
+      <p>用户点头才动手</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">04</div>
+      <b>逐字组装</b>
+      <p>只填槽位，零发挥</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">05</div>
+      <b>QA 交付</b>
+      <p>清单打勾才放行</p>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · code -->
+<section class="slide pat-code">
+  <h2>装配的核心：版本围栏 + 槽位</h2>
+  <pre><code><span class="fragment"><em class="hl">&lt;style&gt;</em></span>
+<span class="fragment">  <em class="hl">/* theme:dark-glow */</em> … 变量组</span>
+<span class="fragment">  <em class="hl">/* base:v1 */</em> … 整文件内联</span>
+<span class="fragment"><em class="hl">&lt;/style&gt;</em></span>
+<span class="fragment">&lt;section class="slide pat-cover"&gt;</span>
+<span class="fragment">  &lt;h1&gt;<em class="hl">&lt;!-- SLOT: 主标题 --&gt;</em>&lt;/h1&gt;</span>
+<span class="fragment">&lt;/section&gt;</span></code></pre>
+  <p class="pat-code-note dim fragment">逐字复制 + 只填槽位 —— AI 没有发挥空间，质量由仓库保证</p>
+</section>
+
+<!-- 13 · timeline -->
+<section class="slide pat-timeline">
+  <h2>演进路线</h2>
+  <div class="pat-tl-list">
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">2026-03</div>
+      <h3>旧项目诞生</h3>
+      <p>Slidev + UnoCSS + Vue 方案上线</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">2026-09-01</div>
+      <h3>推倒重构</h3>
+      <p>架构与规范落地（commit 2a0fa65）</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">今天</div>
+      <h3>P0 引擎就位</h3>
+      <p>runtime / 主题 / 模式全部入库</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">下一步 · P1</div>
+      <h3>金样 + 真实使用</h3>
+      <p>examples/demo 验收，LESSONS 开始沉淀</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">未来 · P2</div>
+      <h3>扩展</h3>
+      <p>图表模式、新主题、AI API 驱动器</p>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · end -->
+<section class="slide pat-end">
+  <h1>谢谢</h1>
+  <div class="pat-end-links">
+    <span>github.com/haichaowa/ppt-generator</span>
+    <span>docs/WORKFLOW.md</span>
+  </div>
+</section>

@@ -1,0 +1,37 @@
+<!-- ============================================================
+  pattern: table — 表格（参数/Benchmark/清单对比）
+  槽位：页标题、表头 3-4 列、数据行 3-6 行、数据出处（必填）
+  用法：行级渐进 —— <tr class="fragment">
+  铁律：数据必须有出处；无出处不用本模式
+  依赖：patterns.css → .pat-table
+============================================================ -->
+<section class="slide pat-table">
+  <h2><!-- SLOT: 标题 --></h2>
+  <table>
+    <thead>
+      <tr>
+        <th><!-- SLOT: 列 1 表头 --></th>
+        <th><!-- SLOT: 列 2 表头 --></th>
+        <th><!-- SLOT: 列 3 表头 --></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="fragment">
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+      </tr>
+      <tr class="fragment">
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+      </tr>
+      <tr class="fragment">
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+        <td><!-- SLOT: 单元格 --></td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="caption"><!-- SLOT: 数据出处（必填） --></p>
+</section>

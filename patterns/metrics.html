@@ -1,0 +1,25 @@
+<!-- ============================================================
+  pattern: metrics — 大数字指标（关键数据/成绩）
+  槽位：页标题、2-4 个数字（含单位）、数字说明、数据出处（必填）
+  铁律：每个数字必须有出处，出处写在 caption；无出处不用本模式
+  铁律：数字 ≤4 位（68px 字号下超过即溢出卡片），大数改用 万/亿 单位（如 11670 → 1.17万）
+  依赖：patterns.css → .pat-metrics
+============================================================ -->
+<section class="slide pat-metrics">
+  <h2><!-- SLOT: 标题，如 重构成果 --></h2>
+  <div class="pat-metrics-grid">
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num"><!-- SLOT: 数字 1 --><small><!-- 单位 --></small></div>
+      <div class="pat-metric-label"><!-- SLOT: 数字 1 说明 --></div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num"><!-- SLOT: 数字 2 --><small><!-- 单位 --></small></div>
+      <div class="pat-metric-label"><!-- SLOT: 数字 2 说明 --></div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num"><!-- SLOT: 数字 3 --><small><!-- 单位 --></small></div>
+      <div class="pat-metric-label"><!-- SLOT: 数字 3 说明 --></div>
+    </div>
+  </div>
+  <p class="caption"><!-- SLOT: 数据出处（必填），如 来源：git log 2a0fa65 --></p>
+</section>

@@ -1,0 +1,26 @@
+/* theme:dark-glow — 深空发光：深色基调 + 双光晕渐变背景 + 毛玻璃卡片（承接旧 Glow 审美） */
+:root {
+  --stage-w: 1280px; --stage-h: 720px;
+  --bg: #0b0a16;
+  --bg-soft: rgba(139, 124, 248, 0.10);
+  --fg: #f0eefc;
+  --fg-dim: #a8a3c9;                       /* 对比度 ≈ 7:1，满足 AA */
+  --accent: #8b7cf8;                       /* 主 violet */
+  --accent-2: #4fd1c5;                     /* 辅 teal */
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, 'JetBrains Mono', monospace;
+  --line-height-title: 1.25; --line-height-body: 1.6;
+  --card-bg: rgba(20, 17, 38, 0.55);       /* 毛玻璃卡片底 */
+  --card-border: rgba(139, 124, 248, 0.35);
+  --card-radius: 12px;
+  --card-blur: blur(6px);
+}
+
+/* 深空发光背景：右上 violet 光晕 + 左下 teal 光晕，纯 CSS，无 JS 无图片 */
+.stage {
+  background:
+    radial-gradient(900px 520px at 82% -10%, rgba(139, 124, 248, 0.28), transparent 60%),
+    radial-gradient(760px 460px at 8% 110%, rgba(79, 209, 197, 0.16), transparent 60%),
+    #0b0a16;
+}

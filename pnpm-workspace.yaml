@@ -1,6 +1,0 @@
-packages:
-  - artifact/**
-onlyBuiltDependencies:
-  - esbuild
-  - playwright-chromium
-  - vue-demi

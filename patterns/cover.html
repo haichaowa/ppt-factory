@@ -1,0 +1,12 @@
+<!-- ============================================================
+  pattern: cover — 封面页
+  槽位：眉题（可删整行）、主标题、副标题、演讲人·日期
+  变体：需居中时在 section 上加 style="align-items:center;text-align:center"
+  依赖：patterns.css → .pat-cover
+============================================================ -->
+<section class="slide pat-cover">
+  <div class="pat-cover-kicker"><!-- SLOT: 眉题，如 OPEN SOURCE · 2026 --></div>
+  <h1><!-- SLOT: 主标题 --></h1>
+  <p class="pat-cover-sub"><!-- SLOT: 副标题，一句话说清价值 --></p>
+  <div class="pat-cover-meta"><!-- SLOT: 演讲人 · 日期 --></div>
+</section>

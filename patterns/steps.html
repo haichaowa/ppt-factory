@@ -1,0 +1,28 @@
+<!-- ============================================================
+  pattern: steps — 横向步骤流程（步骤/管道/工作流）
+  槽位：页标题、3-5 个步骤（编号 + 名称 + 一句说明）
+  变体：步骤 >5 个时改用两行或拆页，不要缩小字号硬塞
+  依赖：patterns.css → .pat-steps
+============================================================ -->
+<section class="slide pat-steps">
+  <h2><!-- SLOT: 标题，如 生成流程 --></h2>
+  <div class="pat-steps-row">
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no"><!-- SLOT: 步骤编号，如 01 --></div>
+      <b><!-- SLOT: 步骤名 1 --></b>
+      <p><!-- SLOT: 步骤 1 说明 --></p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no"><!-- SLOT: 步骤编号，如 02 --></div>
+      <b><!-- SLOT: 步骤名 2 --></b>
+      <p><!-- SLOT: 步骤 2 说明 --></p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no"><!-- SLOT: 步骤编号，如 03 --></div>
+      <b><!-- SLOT: 步骤名 3 --></b>
+      <p><!-- SLOT: 步骤 3 说明 --></p>
+    </div>
+  </div>
+</section>

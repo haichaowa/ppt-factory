@@ -1,0 +1,19 @@
+<!-- ============================================================
+  pattern: image-text — 图文混排（截图/示意图 + 说明）
+  槽位：图片（base64 data-URI，单图 ≤200KB，或内联 SVG）、标题、说明、要点
+  变体：图在右侧时在 section 上加 style="flex-direction:row-reverse"
+  依赖：patterns.css → .pat-image-text
+============================================================ -->
+<section class="slide pat-image-text">
+  <div class="pat-it-media">
+    <!-- SLOT: 图片 <img src="data:image/png;base64,…"> 或内联 <svg> -->
+  </div>
+  <div class="pat-it-body">
+    <h2><!-- SLOT: 标题 --></h2>
+    <p class="dim"><!-- SLOT: 一句话说明 --></p>
+    <ul>
+      <li class="fragment"><!-- SLOT: 要点 1 --></li>
+      <li class="fragment"><!-- SLOT: 要点 2 --></li>
+    </ul>
+  </div>
+</section>

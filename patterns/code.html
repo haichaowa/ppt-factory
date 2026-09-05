@@ -1,0 +1,22 @@
+<!-- ============================================================
+  pattern: code — 代码展示
+  槽位：页标题、代码、讲解注释（可选）
+  用法：
+    行内高亮   —— 用 <em class="hl">…</em> 包住关键词
+    分段渐进   —— 用 <span class="fragment">…</span> 包住行块
+    转义       —— 代码中的 < > & 必须写成 &lt; &gt; &amp;
+  依赖：patterns.css → .pat-code
+============================================================ -->
+<section class="slide pat-code">
+  <h2><!-- SLOT: 标题，说明这段代码看什么 --></h2>
+  <pre><code><!-- SLOT: 代码（注意转义与高亮标记） --></code></pre>
+  <p class="pat-code-note fragment dim"><!-- SLOT: 讲解注释（可选） --></p>
+</section>
+<section class="slide pat-code">
+  <h2>示例：装配后的样子</h2>
+  <pre><code><span class="fragment"><em class="hl">section</em> class="slide pat-cover"</span>
+<span class="fragment">  <em class="hl">&lt;h1&gt;</em>&lt;!-- SLOT: 主标题 --&gt;<em class="hl">&lt;/h1&gt;</em></span>
+<span class="fragment">  <em class="hl">&lt;p</em> class="pat-cover-sub"<em class="hl">&gt;</em>副标题<em class="hl">&lt;/p&gt;</em></span>
+<span class="fragment"><em class="hl">&lt;/section&gt;</em></span></code></pre>
+  <p class="pat-code-note dim fragment">fragment 按行块揭示，hl 标记讲述重点</p>
+</section>

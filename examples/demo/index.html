@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<!-- skeleton:v1 — deck 骨架。装配起点：逐字复制本文件，再按 docs/WORKFLOW.md 第 4 步内联各块与内容 -->
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ppt-generator — AI Native 模板化 PPT 生成器</title>
+<style>
+/* ============================================================
+   theme:dark-glow —（整文件内联 templates/base/themes/dark-glow.css）
+   ============================================================ */
+/* theme:dark-glow — 深空发光：深色基调 + 双光晕渐变背景 + 毛玻璃卡片（承接旧 Glow 审美） */
+:root {
+  --stage-w: 1280px; --stage-h: 720px;
+  --bg: #0b0a16;
+  --bg-soft: rgba(139, 124, 248, 0.10);
+  --fg: #f0eefc;
+  --fg-dim: #a8a3c9;                       /* 对比度 ≈ 7:1，满足 AA */
+  --accent: #8b7cf8;                       /* 主 violet */
+  --accent-2: #4fd1c5;                     /* 辅 teal */
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, 'JetBrains Mono', monospace;
+  --line-height-title: 1.25; --line-height-body: 1.6;
+  --card-bg: rgba(20, 17, 38, 0.55);       /* 毛玻璃卡片底 */
+  --card-border: rgba(139, 124, 248, 0.35);
+  --card-radius: 12px;
+  --card-blur: blur(6px);
+}
+
+/* 深空发光背景：右上 violet 光晕 + 左下 teal 光晕，纯 CSS，无 JS 无图片 */
+.stage {
+  background:
+    radial-gradient(900px 520px at 82% -10%, rgba(139, 124, 248, 0.28), transparent 60%),
+    radial-gradient(760px 460px at 8% 110%, rgba(79, 209, 197, 0.16), transparent 60%),
+    #0b0a16;
+}
+
+/* ============================================================
+   base:v1 —（整文件内联 templates/base/base.css）
+   ============================================================ */
+/* base:v1 — 舞台缩放 / 幻灯片 chrome / 排版阶梯 / 打印。逐字复制，禁止修改。
+   约定：pattern 若需覆盖本文件对 .slide 的设置，必须用 .slide.pat-xxx 复合选择器（后加载者胜出） */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  /* 安全默认值（deck 装配时，主题变量注入点整文件内联并覆盖这些值） */
+  --stage-w: 1280px; --stage-h: 720px;
+  --bg: #101014; --bg-soft: rgba(255, 255, 255, 0.06);
+  --fg: #f2f2f5; --fg-dim: #a5a5b5;
+  --accent: #8b7cf8; --accent-2: #4fd1c5;
+  --font-display: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-body: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+  --font-mono: 'Cascadia Code', Consolas, 'JetBrains Mono', monospace;
+  --line-height-title: 1.25; --line-height-body: 1.6;
+  --card-bg: rgba(255, 255, 255, 0.05); --card-border: rgba(255, 255, 255, 0.16);
+  --card-radius: 12px; --card-blur: none;
+}
+
+html, body { height: 100%; background: var(--bg); overflow: hidden; }
+
+/* 舞台：固定 16:9 逻辑尺寸，runtime 按窗口等比缩放居中 */
+.stage {
+  position: absolute; top: 50%; left: 50%;
+  width: var(--stage-w); height: var(--stage-h);
+  transform: translate(-50%, -50%);
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 22px;
+  line-height: var(--line-height-body);
+}
+
+/* 幻灯片：统一 flex 纵向布局，内容自上而下；居中型模式只改 justify-content */
+.slide {
+  display: none;
+  width: 100%; height: 100%;
+  padding: 64px 80px;
+  overflow: hidden;
+}
+.slide.active { display: flex; flex-direction: column; animation: slide-in .35s ease both; }
+@keyframes slide-in { from { opacity: 0; } to { opacity: 1; } }
+
+/* 排版阶梯：px 显式声明（跨平台中文字体度量差异是溢出主因，禁止 rem/em 相对链） */
+h1, h2, h3 { font-family: var(--font-display); line-height: var(--line-height-title); }
+h1 { font-size: 64px; }
+h2 { font-size: 40px; }
+h3 { font-size: 26px; }
+p, li { font-size: 22px; }
+.small { font-size: 18px; }
+.caption { font-size: 15px; color: var(--fg-dim); }
+.dim { color: var(--fg-dim); }
+.accent { color: var(--accent); }
+strong, b { color: var(--accent); font-weight: 700; }
+ul, ol { list-style: none; padding: 0; }
+a { color: var(--accent-2); text-decoration: none; }
+code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-soft); padding: .1em .4em; border-radius: 4px; }
+
+/* fragment 渐进：未揭示半透明下移，揭示后归位 */
+.fragment { opacity: 0; transform: translateY(14px); transition: opacity .45s ease, transform .45s ease; }
+.fragment.visible { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fragment { transition: none; }
+  .slide.active { animation: none; }
+}
+
+/* 打印：每页恰好一张 16:9；fragment 呈最终状态；深色主题需在打印对话框勾选"背景图形" */
+@page { size: 1280px 720px; margin: 0; }
+@media print {
+  html, body { overflow: visible; background: #fff; }
+  .stage { position: static; transform: none !important; width: 1280px; height: auto; }
+  .slide {
+    display: flex !important; flex-direction: column;
+    width: 1280px; height: 720px;
+    page-break-after: always; break-after: page;
+    animation: none;
+  }
+  .fragment { opacity: 1 !important; transform: none !important; }
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+
+/* ============================================================
+   patterns:v1 —（整文件内联 patterns/patterns.css）
+   ============================================================ */
+/* patterns:v1 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
+   约定：需覆盖 base.css 对 .slide 设置的模式，用 .slide.pat-xxx 复合选择器（后加载者胜出） */
+
+/* ---------- 共用卡片（视觉由主题变量驱动，此处只有结构） ---------- */
+.pat-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  backdrop-filter: var(--card-blur);
+}
+
+/* ---------- cover 封面 ---------- */
+.slide.pat-cover { justify-content: center; gap: 18px; }
+.pat-cover-kicker { font-size: 19px; letter-spacing: .35em; color: var(--accent-2); text-transform: uppercase; }
+.pat-cover-sub { font-size: 26px; color: var(--fg-dim); max-width: 30em; }
+.pat-cover-meta { margin-top: 40px; font-size: 18px; color: var(--fg-dim); }
+
+/* ---------- section 章节分隔 ---------- */
+.slide.pat-section { justify-content: center; align-items: center; gap: 16px; text-align: center; }
+.pat-section-no { font-size: 22px; color: var(--accent-2); letter-spacing: .3em; font-family: var(--font-mono); }
+.slide.pat-section h1 { font-size: 72px; }
+
+/* ---------- bullets 要点列表 ---------- */
+.pat-bullets { gap: 30px; justify-content: center; }
+.pat-bullets ul { counter-reset: pt; display: grid; gap: 24px; }
+.pat-bullets li { counter-increment: pt; position: relative; padding-left: 64px; font-size: 25px; line-height: var(--line-height-body); }
+.pat-bullets li::before {
+  content: counter(pt, decimal-leading-zero);
+  position: absolute; left: 0; top: .28em;
+  font-family: var(--font-mono); font-size: 19px; color: var(--accent);
+}
+.pat-bullets li b { display: block; font-size: 27px; }
+.pat-bullets li .pat-sub { display: block; font-size: 19px; color: var(--fg-dim); margin-top: 2px; }
+
+/* ---------- two-col 双栏对比 ---------- */
+.pat-two-col { gap: 0; }
+.pat-two-col-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 36px; flex: 1; min-height: 0; }
+.pat-two-col-card { padding: 36px; display: flex; flex-direction: column; gap: 18px; }
+.pat-two-col-tag { font-size: 15px; letter-spacing: .25em; color: var(--accent-2); }
+.pat-two-col-card ul { display: grid; gap: 14px; font-size: 20px; }
+.pat-two-col-card ul li { position: relative; padding-left: 24px; }
+.pat-two-col-card ul li::before { content: '·'; position: absolute; left: 4px; color: var(--accent); font-weight: 700; }
+
+/* ---------- metrics 大数字指标 ---------- */
+.pat-metrics { gap: 0; }
+.pat-metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 28px; margin-top: 44px; }
+.pat-metric { padding: 34px 30px; }
+.pat-metric-num { font-family: var(--font-display); font-size: 68px; line-height: 1.1; color: var(--accent); white-space: nowrap; }
+.pat-metric-num small { font-size: 30px; margin-left: 2px; }
+.pat-metric-label { margin-top: 10px; font-size: 19px; color: var(--fg-dim); }
+
+/* ---------- timeline 纵向时间线 ---------- */
+.pat-timeline { gap: 0; }
+.pat-timeline .pat-tl-list { margin-top: 36px; }
+.pat-tl-item { position: relative; padding: 0 0 26px 46px; }
+.pat-tl-item::before { content: ''; position: absolute; left: 9px; top: 12px; bottom: -6px; width: 2px; background: var(--card-border); }
+.pat-tl-item:last-child { padding-bottom: 0; }
+.pat-tl-item:last-child::before { display: none; }
+.pat-tl-item::after { content: ''; position: absolute; left: 3px; top: 8px; width: 14px; height: 14px; border-radius: 50%; background: var(--accent); }
+.pat-tl-time { font-family: var(--font-mono); font-size: 16px; color: var(--accent-2); }
+.pat-tl-item h3 { font-size: 23px; margin-top: 2px; }
+.pat-tl-item p { font-size: 18px; color: var(--fg-dim); margin-top: 2px; }
+
+/* ---------- steps 横向步骤 ---------- */
+.pat-steps { gap: 0; }
+.pat-steps-row { display: flex; align-items: stretch; margin-top: 44px; }
+.pat-step { flex: 1; padding: 30px 22px; text-align: center; display: flex; flex-direction: column; gap: 10px; }
+.pat-step-no { font-family: var(--font-mono); font-size: 17px; color: var(--accent-2); }
+.pat-step b { font-size: 22px; }
+.pat-step p { font-size: 16px; color: var(--fg-dim); }
+.pat-step-arrow { align-self: center; color: var(--fg-dim); font-size: 26px; padding: 0 12px; }
+
+/* ---------- quote 引用 ---------- */
+.slide.pat-quote { justify-content: center; }
+.pat-quote blockquote {
+  font-family: var(--font-display);
+  font-size: 46px; line-height: var(--line-height-title);
+  border-left: 4px solid var(--accent);
+  padding-left: 36px;
+  max-width: 22em;
+}
+.pat-quote cite { display: block; margin-top: 28px; font-size: 20px; font-style: normal; color: var(--fg-dim); padding-left: 40px; }
+
+/* ---------- code 代码展示 ---------- */
+.pat-code { gap: 26px; }
+.pat-code pre {
+  background: var(--card-bg); border: 1px solid var(--card-border); border-radius: var(--card-radius);
+  backdrop-filter: var(--card-blur);
+  padding: 28px 32px; overflow: auto;
+  font-family: var(--font-mono); font-size: 19px; line-height: 1.6;
+}
+.pat-code pre code { background: none; padding: 0; font-size: inherit; }
+.pat-code .hl { font-style: normal; color: var(--accent); font-weight: 700; }   /* 行内高亮标记 */
+.pat-code pre .fragment { display: block; }                                     /* 代码按行块渐进 */
+
+/* ---------- table 表格 ---------- */
+.pat-table { gap: 0; }
+.pat-table table { width: 100%; border-collapse: collapse; margin-top: 36px; font-size: 20px; }
+.pat-table th { text-align: left; font-family: var(--font-display); font-size: 17px; letter-spacing: .08em; color: var(--accent-2); padding: 14px 18px; border-bottom: 2px solid var(--card-border); }
+.pat-table td { padding: 15px 18px; border-bottom: 1px solid var(--card-border); }
+.pat-table tr.fragment.visible td { color: var(--fg); }
+.pat-table .caption { margin-top: 18px; }
+
+/* ---------- image-text 图文混排 ---------- */
+.slide.pat-image-text { flex-direction: row; align-items: center; gap: 48px; }
+.pat-image-text .pat-it-media { flex: 0 0 44%; max-width: 44%; }
+.pat-image-text .pat-it-media img, .pat-image-text .pat-it-media svg { width: 100%; border-radius: var(--card-radius); border: 1px solid var(--card-border); display: block; }
+.pat-image-text .pat-it-body { flex: 1; display: flex; flex-direction: column; gap: 18px; min-width: 0; }
+.pat-image-text li { font-size: 20px; }
+
+/* ---------- end 结尾 ---------- */
+.slide.pat-end { justify-content: center; align-items: center; gap: 18px; text-align: center; }
+.slide.pat-end h1 { font-size: 56px; }
+.pat-end-links { display: flex; gap: 36px; font-size: 18px; color: var(--fg-dim); }
+.pat-end-qr { margin-top: 20px; }
+.pat-end-qr img { width: 170px; height: 170px; border-radius: var(--card-radius); background: #fff; padding: 10px; }
+</style>
+</head>
+<body>
+<div class="stage">
+<!-- ============================================================
+  examples/demo — 内容层：14 页，按已确认大纲组装
+  每页 = patterns/ 对应片段逐字复制 + 仅填充 SLOT 槽位
+============================================================ -->
+
+<!-- 1 · cover -->
+<section class="slide pat-cover">
+  <div class="pat-cover-kicker">PPT GENERATOR · OPEN SOURCE</div>
+  <h1>AI Native 的模板化 PPT 生成器</h1>
+  <p class="pat-cover-sub">智能体 + 确定性前端资产，产出零依赖单文件 HTML 演示文稿</p>
+  <div class="pat-cover-meta">ppt-generator · 2026-09</div>
+</section>
+
+<!-- 2 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">01</div>
+  <h1>为什么要推倒重来</h1>
+</section>
+
+<!-- 3 · bullets -->
+<section class="slide pat-bullets">
+  <h2>旧方案的三类痛点，全部源自框架本身</h2>
+  <ul>
+    <li class="fragment">
+      <b>构建链重</b>
+      <span class="pat-sub">每个演示都要 node_modules 与构建步骤，断网即废</span>
+    </li>
+    <li class="fragment">
+      <b>框架陷阱多</b>
+      <span class="pat-sub">UnoCSS 裸属性、Vue 编译限制，踩坑记录写满整页文档</span>
+    </li>
+    <li class="fragment">
+      <b>产物不独立</b>
+      <span class="pat-sub">deck 依赖运行环境，无法直接分享、投放、归档</span>
+    </li>
+  </ul>
+</section>
+
+<!-- 4 · two-col -->
+<section class="slide pat-two-col">
+  <h2>Slidev 方案 vs 单文件 HTML 方案</h2>
+  <div class="pat-two-col-grid">
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag">旧 · SLIDEV</div>
+      <h3>框架驱动</h3>
+      <ul>
+        <li>Markdown → 构建 → 渲染</li>
+        <li>部署依赖 Node 环境</li>
+        <li>框架升级牵动全部旧稿</li>
+      </ul>
+    </div>
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag">新 · SINGLE FILE</div>
+      <h3>资产驱动</h3>
+      <ul>
+        <li>逐字装配即产物</li>
+        <li>双击即放，微信直发</li>
+        <li>模板演进不追旧稿（冻结快照）</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 5 · metrics -->
+<section class="slide pat-metrics">
+  <h2>一次重构的数字</h2>
+  <div class="pat-metrics-grid">
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">1.17<small>万行</small></div>
+      <div class="pat-metric-label">删除的旧实现</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">412<small>行</small></div>
+      <div class="pat-metric-label">新增架构文档</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">0<small>依赖</small></div>
+      <div class="pat-metric-label">npm 与构建链</div>
+    </div>
+    <div class="pat-card pat-metric fragment">
+      <div class="pat-metric-num">12<small>种</small></div>
+      <div class="pat-metric-label">布局模式</div>
+    </div>
+  </div>
+  <p class="caption">来源：git log 2a0fa65（2026-09-01，31 个文件变更）</p>
+</section>
+
+<!-- 6 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">02</div>
+  <h1>新架构：三层分离</h1>
+</section>
+
+<!-- 7 · quote -->
+<section class="slide pat-quote">
+  <blockquote>
+    智能放调用方，确定性放仓库。
+  </blockquote>
+  <cite>— ppt-generator 架构原则</cite>
+</section>
+
+<!-- 8 · image-text（内联 SVG 架构图） -->
+<section class="slide pat-image-text">
+  <div class="pat-it-media">
+    <svg viewBox="0 0 500 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'PingFang SC','Microsoft YaHei',sans-serif">
+      <rect x="120" y="10" width="260" height="56" rx="10" fill="rgba(139,124,248,0.14)" stroke="#8b7cf8"/>
+      <text x="250" y="44" text-anchor="middle" fill="#f0eefc" font-size="19">智能体 · Claude / Codex</text>
+      <line x1="250" y1="66" x2="250" y2="100" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,108 243,96 257,96" fill="#8b7cf8"/>
+      <rect x="90" y="110" width="320" height="56" rx="10" fill="rgba(79,209,197,0.12)" stroke="#4fd1c5"/>
+      <text x="250" y="144" text-anchor="middle" fill="#f0eefc" font-size="19">docs/WORKFLOW.md 权威流程</text>
+      <line x1="250" y1="166" x2="250" y2="200" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,208 243,196 257,196" fill="#8b7cf8"/>
+      <rect x="20" y="210" width="150" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="95" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">templates/base</text>
+      <text x="95" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">骨架 · 样式 · 运行时</text>
+      <rect x="185" y="210" width="130" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="250" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">patterns</text>
+      <text x="250" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">12 种布局模式</text>
+      <rect x="330" y="210" width="150" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
+      <text x="405" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">themes</text>
+      <text x="405" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">CSS 变量主题</text>
+      <line x1="250" y1="282" x2="250" y2="316" stroke="#8b7cf8" stroke-width="2"/>
+      <polygon points="250,324 243,312 257,312" fill="#8b7cf8"/>
+      <rect x="90" y="326" width="150" height="56" rx="10" fill="rgba(79,209,197,0.10)" stroke="#4fd1c5"/>
+      <text x="165" y="360" text-anchor="middle" fill="#f0eefc" font-size="16">decks 产物</text>
+      <rect x="260" y="326" width="150" height="56" rx="10" fill="rgba(79,209,197,0.10)" stroke="#4fd1c5"/>
+      <text x="335" y="360" text-anchor="middle" fill="#f0eefc" font-size="16">examples 金样</text>
+    </svg>
+  </div>
+  <div class="pat-it-body">
+    <h2>三层职责，一张图</h2>
+    <p class="dim">内容理解交给模型，确定性沉淀进仓库</p>
+    <ul>
+      <li class="fragment"><b>接口层薄</b> —— 入口只指向一份权威流程</li>
+      <li class="fragment"><b>引擎层稳</b> —— 模板与模式逐字复制，禁止即兴</li>
+      <li class="fragment"><b>产物层冻结</b> —— deck 即快照，直改不重组</li>
+    </ul>
+  </div>
+</section>
+
+<!-- 9 · table -->
+<section class="slide pat-table">
+  <h2>向成熟项目借了什么</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>项目</th>
+        <th>借鉴点</th>
+        <th>落点</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="fragment">
+        <td>reveal.js</td>
+        <td>固定舞台 + 等比缩放</td>
+        <td>16:9 舞台模型</td>
+      </tr>
+      <tr class="fragment">
+        <td>PPTAgent</td>
+        <td>大纲先行 + 反思质检</td>
+        <td>工作流确认关卡</td>
+      </tr>
+      <tr class="fragment">
+        <td>PPTist</td>
+        <td>幻灯片类型分类学</td>
+        <td>12 种模式清单</td>
+      </tr>
+      <tr class="fragment">
+        <td>presentation-builder</td>
+        <td>零依赖 + 反 slop</td>
+        <td>单文件形态</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="caption">来源：本仓库重构方案档案（2026-09）</p>
+</section>
+
+<!-- 10 · section -->
+<section class="slide pat-section">
+  <div class="pat-section-no">03</div>
+  <h1>生成工作流</h1>
+</section>
+
+<!-- 11 · steps -->
+<section class="slide pat-steps">
+  <h2>从一句话到一份 deck</h2>
+  <div class="pat-steps-row">
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">01</div>
+      <b>读教训</b>
+      <p>LESSONS.md 避免重蹈</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">02</div>
+      <b>澄清需求</b>
+      <p>一次问全五个问题</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">03</div>
+      <b>大纲确认</b>
+      <p>用户点头才动手</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">04</div>
+      <b>逐字组装</b>
+      <p>只填槽位，零发挥</p>
+    </div>
+    <div class="pat-step-arrow">→</div>
+    <div class="pat-card pat-step fragment">
+      <div class="pat-step-no">05</div>
+      <b>QA 交付</b>
+      <p>清单打勾才放行</p>
+    </div>
+  </div>
+</section>
+
+<!-- 12 · code -->
+<section class="slide pat-code">
+  <h2>装配的核心：版本围栏 + 槽位</h2>
+  <pre><code><span class="fragment"><em class="hl">&lt;style&gt;</em></span>
+<span class="fragment">  <em class="hl">/* theme:dark-glow */</em> … 变量组</span>
+<span class="fragment">  <em class="hl">/* base:v1 */</em> … 整文件内联</span>
+<span class="fragment"><em class="hl">&lt;/style&gt;</em></span>
+<span class="fragment">&lt;section class="slide pat-cover"&gt;</span>
+<span class="fragment">  &lt;h1&gt;<em class="hl">&lt;!-- SLOT: 主标题 --&gt;</em>&lt;/h1&gt;</span>
+<span class="fragment">&lt;/section&gt;</span></code></pre>
+  <p class="pat-code-note dim fragment">逐字复制 + 只填槽位 —— AI 没有发挥空间，质量由仓库保证</p>
+</section>
+
+<!-- 13 · timeline -->
+<section class="slide pat-timeline">
+  <h2>演进路线</h2>
+  <div class="pat-tl-list">
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">2026-03</div>
+      <h3>旧项目诞生</h3>
+      <p>Slidev + UnoCSS + Vue 方案上线</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">2026-09-01</div>
+      <h3>推倒重构</h3>
+      <p>架构与规范落地（commit 2a0fa65）</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">今天</div>
+      <h3>P0 引擎就位</h3>
+      <p>runtime / 主题 / 模式全部入库</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">下一步 · P1</div>
+      <h3>金样 + 真实使用</h3>
+      <p>examples/demo 验收，LESSONS 开始沉淀</p>
+    </div>
+    <div class="pat-tl-item fragment">
+      <div class="pat-tl-time">未来 · P2</div>
+      <h3>扩展</h3>
+      <p>图表模式、新主题、AI API 驱动器</p>
+    </div>
+  </div>
+</section>
+
+<!-- 14 · end -->
+<section class="slide pat-end">
+  <h1>谢谢</h1>
+  <div class="pat-end-links">
+    <span>github.com/haichaowa/ppt-generator</span>
+    <span>docs/WORKFLOW.md</span>
+  </div>
+</section>
+
+</div>
+<script>
+/* runtime:v1 —（整文件内联 templates/base/runtime.js）*/
+/* runtime:v1 — deck 运行时核心。逐字复制，禁止修改；升级走 docs/WORKFLOW.md 手术流程。
+   功能：等比缩放 / 键盘+点击翻页 / fragment 渐进 / #/页码 深链 / ?qa=1 溢出检查 */
+(() => {
+  'use strict';
+  const stage = document.querySelector('.stage');
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  if (!stage || !slides.length) return;
+  const total = slides.length;
+  let cur = 0;   // 当前页索引
+  let frag = 0;  // 当前页已揭示的 fragment 数
+
+  /* 1. 窗口等比缩放（reveal.js 模型：固定舞台，整体 scale） */
+  const fit = () => {
+    const s = Math.min(innerWidth / stage.offsetWidth, innerHeight / stage.offsetHeight);
+    stage.style.transform = `translate(-50%, -50%) scale(${s})`;
+  };
+
+  /* 2. 渲染：切换 active 页 + 揭示 fragment（回看历史页时全部显示） */
+  const fragsOf = i => slides[i].querySelectorAll('.fragment');
+  const apply = () => {
+    slides.forEach((el, i) => {
+      el.classList.toggle('active', i === cur);
+      const fs = fragsOf(i);
+      const upto = i < cur ? fs.length : frag;
+      fs.forEach((f, k) => f.classList.toggle('visible', k < upto));
+    });
+    history.replaceState(null, '', '#/' + (cur + 1));
+  };
+  const go = (i, allFrag = false) => {
+    cur = Math.max(0, Math.min(total - 1, i));
+    frag = allFrag ? fragsOf(cur).length : 0;
+    apply();
+  };
+
+  /* 3. 步进：当前页 fragment 未完 → 揭示下一个；已完 → 翻页 */
+  const next = () => (frag < fragsOf(cur).length) ? (frag++, apply()) : go(cur + 1);
+  const prev = () => (frag > 0) ? (frag--, apply()) : go(cur - 1, true);
+
+  /* 4. 键盘：←→/空格/PageUp·Down（翻页笔）/Home/End/F 全屏 */
+  addEventListener('keydown', e => {
+    if (e.target.closest('input,textarea,select')) return;
+    const k = e.key;
+    if (k === 'ArrowRight' || k === 'ArrowDown' || k === ' ' || k === 'PageDown') { e.preventDefault(); next(); }
+    else if (k === 'ArrowLeft' || k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); prev(); }
+    else if (k === 'Home') go(0);
+    else if (k === 'End') go(total - 1, true);
+    else if ((k === 'f' || k === 'F') && !e.ctrlKey && !e.metaKey && !e.altKey)
+      document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+  });
+
+  /* 5. 鼠标点击翻页：左侧 8% 区域后退，其余前进（a/button 不触发） */
+  addEventListener('click', e => {
+    if (e.target.closest('a,button')) return;
+    e.clientX > innerWidth * 0.08 ? next() : prev();
+  });
+
+  /* 6. hash 深链：#/3 直达第 3 页 */
+  const fromHash = () => {
+    const m = location.hash.match(/^#\/(\d+)/);
+    if (m) cur = Math.max(0, Math.min(total - 1, +m[1] - 1));
+    frag = 0;
+    apply();
+  };
+
+  /* 7. ?qa=1 溢出检查：任一页内容超出 1280×720 即描红 + 控制台告警 */
+  const qa = new URLSearchParams(location.search).get('qa') === '1';
+  const qaCheck = () => slides.forEach((el, i) => {
+    const over = el.scrollHeight > el.clientHeight + 1 || el.scrollWidth > el.clientWidth + 1;
+    el.style.outline = qa && over ? '3px solid red' : '';
+    if (qa && over) console.warn(`QA: 第 ${i + 1} 页溢出`);
+  });
+
+  addEventListener('resize', () => { fit(); if (qa) qaCheck(); });
+  addEventListener('load', () => { if (qa) qaCheck(); });
+  fromHash();
+  fit();
+  if (qa) qaCheck();
+})();
+</script>
+</body>
+</html>

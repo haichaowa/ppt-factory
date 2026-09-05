@@ -1,0 +1,29 @@
+<!-- ============================================================
+  pattern: two-col — 双栏对比（方案 A vs 方案 B / 优点 vs 缺点）
+  槽位：页标题、左右两卡的标签与要点（各 3-4 条）
+  变体：右卡代表"推荐方案"时，其标签写"推荐"并在 <b> 上保持强调色
+  依赖：patterns.css → .pat-two-col
+============================================================ -->
+<section class="slide pat-two-col">
+  <h2><!-- SLOT: 对比标题，如 方案 A vs 方案 B --></h2>
+  <div class="pat-two-col-grid">
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag"><!-- SLOT: 左卡标签，如 旧方案 --></div>
+      <h3><!-- SLOT: 左卡标题 --></h3>
+      <ul>
+        <li><!-- SLOT: 左卡要点 1 --></li>
+        <li><!-- SLOT: 左卡要点 2 --></li>
+        <li><!-- SLOT: 左卡要点 3 --></li>
+      </ul>
+    </div>
+    <div class="pat-card pat-two-col-card fragment">
+      <div class="pat-two-col-tag"><!-- SLOT: 右卡标签，如 新方案 --></div>
+      <h3><!-- SLOT: 右卡标题 --></h3>
+      <ul>
+        <li><!-- SLOT: 右卡要点 1 --></li>
+        <li><!-- SLOT: 右卡要点 2 --></li>
+        <li><!-- SLOT: 右卡要点 3 --></li>
+      </ul>
+    </div>
+  </div>
+</section>

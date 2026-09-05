@@ -1,86 +1,44 @@
-# PPT Generator
+# ppt-generator
 
-基于 [Slidev](https://sli.dev/) 的演示文稿生成器，使用 Markdown + Vue 3 + UnoCSS 编写幻灯片，支持 Glow 发光主题、代码高亮、动画效果。
+AI Native 的模板化 PPT 生成系统：前沿智能体（Claude Code / Codex / …）+ 本仓库的确定性前端资产 → **零依赖单文件 HTML 演示文稿**。
 
-## 快速开始
+产物特性：双击即放、断网可用、微信可直接发送、Ctrl+P 导出 PDF、固定 16:9（1280×720）等比缩放适配任意屏幕。
 
-### 环境要求
+## 架构理念
 
-- Node.js >= 18
-- pnpm（`npm install -g pnpm`）
+**智能放调用方，确定性放仓库。**
 
-### 安装依赖
+- 内容理解、内容→模式映射等智能工作交给智能体——模型进步，生成质量免费升级
+- 模板、模式库、主题、设计规范、QA 规则沉淀在本仓库——可人工精修、可长期迭代
 
-```bash
-# 在项目根目录安装共享依赖
-pnpm install
-```
-
-### 运行一个 PPT
-
-```bash
-# 进入某个演示文稿目录
-    cd artifact/2026-03-28-airi-intro
-
-# 启动开发服务器（自动打开浏览器）
-pnpm run dev
-```
-
-启动后浏览器会自动打开 `http://localhost:3030`，修改 `slides.md` 保存后页面自动热更新。
-
-### 导出 PDF
-
-```bash
-cd artifact/2026-03-28-airi-intro
-pnpm run export
-```
-
-导出的 PDF 文件会生成在当前目录下。
-
-### 构建为静态站点
-
-```bash
-cd artifact/2026-03-28-airi-intro
-pnpm run build
-```
-
-构建产物输出到 `dist/` 目录，可直接部署到任意静态托管服务。
-
-## 项目结构
+## 目录结构
 
 ```
 ppt-generator/
-├── artifact/                    # 生成的演示文稿（每个子目录是一个独立的 Slidev 项目）
-│   ├── 2026-03-28-airi-intro/
-│   │   ├── slides.md            # 幻灯片内容（主文件）
-│   │   ├── package.json         # 项目配置（dev/build/export 脚本）
-│   │   ├── uno.config.ts        # UnoCSS 配置
-│   │   ├── style.css            # 自定义样式
-│   │   ├── global-bottom.vue    # Glow 主题背景组件
-│   │   ├── public/              # 图片、视频等静态资源
-│   │   └── setup/               # Shiki 代码高亮等配置
-│   └── ...
-├── ppt-skills/slidev-ppt-generator/   # PPT 生成器 Skill 定义
-│   ├── SKILL.md                 # 核心生成逻辑和规范
-│   └── references/              # 内容规则、布局模板、示例
-├── package.json                 # Monorepo 根配置
-└── pnpm-workspace.yaml
+├── templates/base/        # deck 引擎资产：skeleton.html + base.css + runtime.js
+│   └── themes/            # 主题 = 单文件 CSS 变量组（dark-glow、minimal-light）
+├── patterns/              # 布局模式库：12 种模式片段 + patterns.css + 速查表
+├── decks/                 # 生成产物（{YYYY-MM-DD}-{slug}/index.html，冻结快照）
+├── examples/              # 金样（curated 质量锚点，兼回归基线）
+├── docs/                  # WORKFLOW（权威流程）/ DESIGN / CONTENT-RULES / LESSONS
+├── .claude/skills/deck/   # Claude Code 的 skill 入口（薄接口）
+├── CLAUDE.md / AGENTS.md  # 智能体入口（指向 docs/WORKFLOW.md）
+└── README.md
 ```
 
-## 可用的演示文稿
+## 快速上手
 
-| 目录 | 主题 |
-|------|------|
-| `artifact/2026-03-28-airi-intro` | Airi 项目介绍 |
-| `artifact/2026-03-28-mcp-intro` | MCP 协议介绍 |
-| `artifact/2026-04-01-react-tic-tac-toe` | React 井字棋教程 |
-| `artifact/2026-04-04-langchain-tools` | LangChain Tools 讲解 |
-| `artifact/2026-04-05-langchain-short-term-memory` | LangChain 短期记忆机制 |
-| `artifact/k8s-presentation` | Kubernetes 演讲 |
+- **让 AI 生成 PPT**：在本仓库打开 Claude Code（或读 AGENTS.md 的智能体），说"帮我生成一个关于 X 的 PPT"，流程会走 `docs/WORKFLOW.md`（大纲确认 → 组装 → QA）
+- **人工开发模板**：从各目录 README 开始，每个目录写明了职责、文件规范、行数预算和扩展方式
+- **人工修改 deck**：直接编辑 `decks/{name}/index.html`（deck 是冻结快照，禁止回源重组装）
 
-## 技术栈
+## 项目状态
 
-- [Slidev](https://sli.dev/) — Markdown 驱动的演示文稿框架
-- [UnoCSS](https://unocss.dev/) — 原子化 CSS 引擎
-- [Vue 3](https://vuejs.org/) — 组件和动画
-- [Shiki](https://shiki.style/) — 代码语法高亮
+| 阶段 | 内容 | 状态 |
+|------|------|------|
+| 架构落地 | 目录结构 + 全部规范文档（本仓库当前状态） | ✅ |
+| P0 | runtime.js / base.css / skeleton.html / 主题 / patterns 实现 | ⏳ 逐轮迭代 |
+| P1 | examples/demo 金样 + 首个真实使用周期 | 待启动 |
+| P2 | 扩展主题与模式、AI API 驱动器、视觉 QA 工具 | 路线图 |
+
+技术选型依据（reveal.js 的固定舞台缩放模型、presenton/PPTAgent 的大纲先行工作流等）与设计决策记录见 `docs/`。
