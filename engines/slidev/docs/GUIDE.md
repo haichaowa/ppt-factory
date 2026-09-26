@@ -97,6 +97,6 @@ npm run build -- decks/my-talk/slides.md
 **Q: 想加插件（二维码、手绘、Python 运行）？**
 `npm i slidev-addon-xxx` + frontmatter `addons:` 列表。见 docs/RESOURCES.md 第四节。
 
-**Q: 和本仓库（ppt-generator）什么关系？**
+**Q: 和 PPT Factory 主系统什么关系？**
 本引擎是「应用型」车间：强交互、代码演示、演讲者模式；
 根目录 HTML 系统是「冻结快照型」车间：零依赖单文件 HTML。按场合选型。

@@ -9,7 +9,7 @@ lang: zh-CN
 
 # 多引擎 PPT 生成系统
 
-### 从单一模板到 PPT 工厂 —— ppt-generator 演进蓝图
+### 从单一模板到 PPT 工厂 —— PPT Factory 演进蓝图
 
 <div class="pt-12 text-sm opacity-70">
   内部规划汇报 · 2026 年 9 月

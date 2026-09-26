@@ -67,7 +67,7 @@ engines/slidev/
 - ⌨️ 语法速查：[docs/CHEATSHEET.md](docs/CHEATSHEET.md)
 - 🌐 官方文档：https://sli.dev · 中文：https://cn.sli.dev
 
-## 与 ppt-generator 的关系
+## 与 HTML 引擎的关系
 
 | | 本引擎（engines/slidev） | HTML 引擎（根目录 templates/ + patterns/） |
 | --- | --- | --- |

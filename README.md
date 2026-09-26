@@ -1,4 +1,4 @@
-# ppt-generator
+# PPT Factory
 
 AI Native 的**多引擎** PPT 生成系统：前沿智能体（Claude Code / Codex / …）+ 本仓库的确定性资产 → 多种形态的演示文稿。
 
@@ -15,7 +15,7 @@ AI Native 的**多引擎** PPT 生成系统：前沿智能体（Claude Code / Co
 ## 目录结构
 
 ```
-ppt-generator/
+ppt-factory/
 ├── engines/
 │   └── slidev/            # Slidev 引擎：5 套中文模板 + 脚手架 + 导出链路（自带工具链）
 ├── templates/base/        # HTML 引擎资产：skeleton.html + base.css + runtime.js

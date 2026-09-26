@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-模板化 PPT 生成系统：智能体 + 本仓库前端模板资产 → 零依赖单文件 HTML deck（16:9、翻页、fragment 渐进、打印导 PDF）。
+PPT Factory：多引擎 PPT 生成系统（HTML 单文件 + Slidev），智能体入口见 `AGENTS.md` 引擎路由。
 
 ## 铁律（必须遵守）
 
