@@ -1,0 +1,27 @@
+/* ============ Geist 风格中文优化 ============ */
+.slidev-layout {
+  font-family:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Noto Sans CJK SC', sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  font-family: inherit;
+  letter-spacing: -0.02em;
+}
+
+.slidev-layout pre,
+.slidev-layout code,
+.slidev-layout kbd {
+  font-family: 'Geist Mono', 'JetBrains Mono', 'Fira Code',
+    Menlo, Consolas, monospace !important;
+}
+
+/* 大数字指标卡 */
+.slidev-layout .font-mono.text-5xl {
+  font-variant-numeric: tabular-nums;
+}

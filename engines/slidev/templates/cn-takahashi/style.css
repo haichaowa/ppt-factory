@@ -1,0 +1,13 @@
+/* ============ 高桥流中文优化：超大黑体 ============ */
+.slidev-layout {
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei',
+    'Noto Sans CJK SC', 'Source Han Sans SC', sans-serif;
+}
+
+.slidev-layout h1 {
+  font-family: inherit;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
