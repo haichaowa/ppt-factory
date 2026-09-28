@@ -1,0 +1,16 @@
+<!-- ============================================================
+  pattern: claim — 核心主张页（Deck 的论证锚点）
+  槽位：核心主张、期望行动、2-3 个证据锚点
+  铁律：主张必须是可被证据支持的完整句；行动必须可执行
+  依赖：patterns.css → .pat-claim
+============================================================ -->
+<section class="slide pat-claim">
+  <div class="pat-claim-kicker">核心主张</div>
+  <h1><!-- SLOT: 核心主张，一句完整话 --></h1>
+  <p class="pat-claim-action"><span>期望行动</span><!-- SLOT: 期望观众采取的行动 --></p>
+  <div class="pat-claim-anchors">
+    <div class="pat-card pat-claim-anchor fragment"><!-- SLOT: 证据锚点 1 --></div>
+    <div class="pat-card pat-claim-anchor fragment"><!-- SLOT: 证据锚点 2 --></div>
+    <div class="pat-card pat-claim-anchor fragment"><!-- SLOT: 证据锚点 3 --></div>
+  </div>
+</section>

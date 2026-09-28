@@ -21,10 +21,10 @@ ppt-factory/
 │       └── style-library/ # 官方主题/Showcase 风格种子与本地参考源码
 ├── templates/base/        # HTML 引擎资产：skeleton.html + base.css + runtime.js
 │   └── themes/            # 主题 = 单文件 CSS 变量组（dark-glow、minimal-light）
-├── patterns/              # 布局模式库：12 种模式片段 + patterns.css + 速查表
+├── patterns/              # 布局模式库：15 种模式片段 + patterns.css + 速查表（含 claim / narrative-map / assertion-evidence）
 ├── decks/                 # 生成产物（{YYYY-MM-DD}-{slug}/index.html，冻结快照）
 ├── examples/              # 金样（curated 质量锚点，兼回归基线）
-├── docs/                  # WORKFLOW（权威流程）/ DESIGN / CONTENT-RULES / LESSONS
+├── docs/                  # WORKFLOW（权威流程）/ AUDIENCE-BRIEF / DESIGN / CONTENT-RULES / DESIGN-RESEARCH / LESSONS
 ├── .claude/skills/deck/   # Claude Code 的 skill 入口（薄接口）
 ├── CLAUDE.md / AGENTS.md  # 智能体入口（指向 docs/WORKFLOW.md）
 └── README.md

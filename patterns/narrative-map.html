@@ -1,0 +1,24 @@
+<!-- ============================================================
+  pattern: narrative-map — 叙事路线总览（问题 / 张力 / 转折 / 行动）
+  槽位：页标题、四个阶段的短句、行动标注
+  铁律：每阶段 ≤16 字；转折和行动必须有视觉层级差异
+  依赖：patterns.css → .pat-narrative-map
+============================================================ -->
+<section class="slide pat-narrative-map">
+  <h2><!-- SLOT: 标题，写本 deck 要解决的问题 --></h2>
+  <div class="pat-nm-grid">
+    <div class="pat-card pat-nm-item fragment">
+      <span>问题</span><b><!-- SLOT: 问题短句 --></b>
+    </div>
+    <div class="pat-card pat-nm-item fragment">
+      <span>张力</span><b><!-- SLOT: 张力短句 --></b>
+    </div>
+    <div class="pat-card pat-nm-item pat-nm-turn fragment">
+      <span>转折</span><b><!-- SLOT: 转折短句 --></b>
+    </div>
+    <div class="pat-card pat-nm-item pat-nm-action fragment">
+      <span>行动</span><b><!-- SLOT: 行动短句 --></b>
+    </div>
+  </div>
+  <p class="caption"><!-- SLOT: 叙事边界或来源（可删） --></p>
+</section>

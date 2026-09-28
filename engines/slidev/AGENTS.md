@@ -12,6 +12,13 @@ npm run export -- decks/<名>/slides.md # 导出 PDF
 npm run build -- decks/<名>/slides.md  # 构建静态网页（dist/）
 ```
 
+## 共用生成原则（先于模板）
+
+1. 创建 deck 前先完成根目录 `docs/AUDIENCE-BRIEF.md`：观众、场景、核心主张、期望行动、叙事线、证据边界。
+2. 大纲遵守根目录 `docs/CONTENT-RULES.md`：一页一主张、结论句标题、证据有出处、页数匹配时长。
+3. 视觉遵守根目录 `docs/DESIGN.md`：一页一焦点、低认知负荷、主张 + 证据优先、对比度与投影约束。
+4. Slidev 的 layout 只是把已确定的叙事和证据形态落版，不允许先挑主题再编内容。
+
 ## 生产规则
 
 1. 新 deck 一律从模板创建，不手搓空文件

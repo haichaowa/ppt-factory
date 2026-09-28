@@ -17,4 +17,4 @@
 
 | 金样 | 状态 | 说明 |
 |------|------|------|
-| `demo/` | ✅ 已建（2026-09-01） | 覆盖全部 12 种 patterns；content.html 为内容层源，index.html 为装配产物 |
+| `demo/` | ✅ 已建（2026-09-01） | 覆盖全部 15 种 patterns（17 页）；content.html 为内容层源，index.html 为装配产物 |

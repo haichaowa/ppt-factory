@@ -122,9 +122,9 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
 }
 
 /* ============================================================
-   patterns:v1 —（整文件内联 patterns/patterns.css）
+   patterns:v2 —（整文件内联 patterns/patterns.css）
    ============================================================ */
-/* patterns:v1 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
+/* patterns:v2 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
    约定：需覆盖 base.css 对 .slide 设置的模式，用 .slide.pat-xxx 复合选择器（后加载者胜出） */
 
 /* ---------- 共用卡片（视觉由主题变量驱动，此处只有结构） ---------- */
@@ -140,6 +140,40 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
 .pat-cover-kicker { font-size: 19px; letter-spacing: .35em; color: var(--accent-2); text-transform: uppercase; }
 .pat-cover-sub { font-size: 26px; color: var(--fg-dim); max-width: 30em; }
 .pat-cover-meta { margin-top: 40px; font-size: 18px; color: var(--fg-dim); }
+
+
+/* ---------- claim 核心主张 ---------- */
+.slide.pat-claim { justify-content: center; gap: 26px; }
+.pat-claim-kicker { font-size: 18px; letter-spacing: .32em; color: var(--accent-2); }
+.pat-claim h1 { max-width: 24em; font-size: 56px; }
+.pat-claim-action { font-size: 25px; color: var(--fg-dim); }
+.pat-claim-action span { color: var(--fg); font-weight: 700; margin-right: 18px; }
+.pat-claim-anchors { display: flex; gap: 16px; margin-top: 30px; }
+.pat-claim-anchor { flex: 1; padding: 20px 22px; font-size: 18px; color: var(--fg-dim); border-color: var(--card-border); }
+
+/* ---------- narrative-map 叙事路线 ---------- */
+.pat-narrative-map { gap: 0; }
+.pat-nm-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 44px; }
+.pat-nm-item { min-height: 180px; padding: 26px 22px; display: flex; flex-direction: column; gap: 14px; }
+.pat-nm-item span { font-size: 14px; letter-spacing: .22em; color: var(--fg-dim); }
+.pat-nm-item b { font-size: 22px; line-height: var(--line-height-body); }
+.pat-nm-turn { border-color: var(--accent-2); }
+.pat-nm-action { background: var(--bg-soft); border-color: var(--accent); }
+.pat-narrative-map .caption { margin-top: 18px; }
+
+/* ---------- assertion-evidence 主张 + 证据 ---------- */
+.pat-assertion { gap: 24px; }
+.pat-assertion h2 { max-width: 24em; font-size: 36px; }
+.pat-ae-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .85fr); gap: 28px; flex: 1; min-height: 0; }
+.pat-ae-visual { min-width: 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; overflow: hidden; border: 1px solid var(--card-border); border-radius: var(--card-radius); background: var(--card-bg); padding: 24px; }
+.pat-ae-visual img, .pat-ae-visual svg { max-width: 100%; max-height: 100%; object-fit: contain; }
+.pat-ae-visual figcaption { max-width: 42em; text-align: center; }
+.pat-ae-side { min-width: 0; padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 16px; }
+.pat-ae-side > b { font-size: 18px; letter-spacing: .18em; }
+.pat-ae-side ul { display: grid; gap: 12px; }
+.pat-ae-side li { position: relative; padding-left: 22px; font-size: 18px; }
+.pat-ae-side li::before { content: ''; position: absolute; left: 0; top: .65em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.pat-ae-side .caption { margin-top: auto; }
 
 /* ---------- section 章节分隔 ---------- */
 .slide.pat-section { justify-content: center; align-items: center; gap: 16px; text-align: center; }
@@ -178,7 +212,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
 /* ---------- timeline 纵向时间线 ---------- */
 .pat-timeline { gap: 0; }
 .pat-timeline .pat-tl-list { margin-top: 36px; }
-.pat-tl-item { position: relative; padding: 0 0 26px 46px; }
+.pat-tl-item { position: relative; padding: 0 0 16px 46px; }
 .pat-tl-item::before { content: ''; position: absolute; left: 9px; top: 12px; bottom: -6px; width: 2px; background: var(--card-border); }
 .pat-tl-item:last-child { padding-bottom: 0; }
 .pat-tl-item:last-child::before { display: none; }
@@ -240,12 +274,13 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
 .pat-end-links { display: flex; gap: 36px; font-size: 18px; color: var(--fg-dim); }
 .pat-end-qr { margin-top: 20px; }
 .pat-end-qr img { width: 170px; height: 170px; border-radius: var(--card-radius); background: #fff; padding: 10px; }
+
 </style>
 </head>
 <body>
 <div class="stage">
 <!-- ============================================================
-  examples/demo — 内容层：14 页，按已确认大纲组装
+  examples/demo — 内容层：17 页，按已确认大纲组装
   每页 = patterns/ 对应片段逐字复制 + 仅填充 SLOT 槽位
 ============================================================ -->
 
@@ -257,13 +292,37 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <div class="pat-cover-meta">ppt-generator · 2026-09</div>
 </section>
 
-<!-- 2 · section -->
+<!-- 2 · claim -->
+<section class="slide pat-claim">
+  <div class="pat-claim-kicker">核心主张</div>
+  <h1>PPT 生成的质量瓶颈在叙事，而不是模板</h1>
+  <p class="pat-claim-action"><span>期望行动</span>组装前先完成观众、主张与证据 brief</p>
+  <div class="pat-claim-anchors">
+    <div class="pat-card pat-claim-anchor fragment">观众：明确已知与未知</div>
+    <div class="pat-card pat-claim-anchor fragment">主张：标题写出结论</div>
+    <div class="pat-card pat-claim-anchor fragment">证据：图表必须可追溯</div>
+  </div>
+</section>
+
+<!-- 3 · narrative-map -->
+<section class="slide pat-narrative-map">
+  <h2>生成系统从排版工具演进为叙事工具</h2>
+  <div class="pat-nm-grid">
+    <div class="pat-card pat-nm-item fragment"><span>问题</span><b>内容被样式吞没</b></div>
+    <div class="pat-card pat-nm-item fragment"><span>张力</span><b>素材多而主张少</b></div>
+    <div class="pat-card pat-nm-item pat-nm-turn fragment"><span>转折</span><b>先定证据形态</b></div>
+    <div class="pat-card pat-nm-item pat-nm-action fragment"><span>行动</span><b>用 QA 验证理解</b></div>
+  </div>
+  <p class="caption">叙事线：technical-review · 问题 → 方案 → 验证 → 行动</p>
+</section>
+
+<!-- 4 · section -->
 <section class="slide pat-section">
   <div class="pat-section-no">01</div>
   <h1>为什么要推倒重来</h1>
 </section>
 
-<!-- 3 · bullets -->
+<!-- 5 · bullets -->
 <section class="slide pat-bullets">
   <h2>旧方案的三类痛点，全部源自框架本身</h2>
   <ul>
@@ -282,7 +341,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   </ul>
 </section>
 
-<!-- 4 · two-col -->
+<!-- 6 · two-col -->
 <section class="slide pat-two-col">
   <h2>Slidev 方案 vs 单文件 HTML 方案</h2>
   <div class="pat-two-col-grid">
@@ -307,7 +366,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   </div>
 </section>
 
-<!-- 5 · metrics -->
+<!-- 7 · metrics -->
 <section class="slide pat-metrics">
   <h2>一次重构的数字</h2>
   <div class="pat-metrics-grid">
@@ -324,20 +383,20 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
       <div class="pat-metric-label">npm 与构建链</div>
     </div>
     <div class="pat-card pat-metric fragment">
-      <div class="pat-metric-num">12<small>种</small></div>
+      <div class="pat-metric-num">15<small>种</small></div>
       <div class="pat-metric-label">布局模式</div>
     </div>
   </div>
-  <p class="caption">来源：git log 2a0fa65（2026-09-01，31 个文件变更）</p>
+  <p class="caption">来源：git log 2a0fa65（2026-09-01）；模式清单（2026-09-28）</p>
 </section>
 
-<!-- 6 · section -->
+<!-- 8 · section -->
 <section class="slide pat-section">
   <div class="pat-section-no">02</div>
   <h1>新架构：三层分离</h1>
 </section>
 
-<!-- 7 · quote -->
+<!-- 9 · quote -->
 <section class="slide pat-quote">
   <blockquote>
     智能放调用方，确定性放仓库。
@@ -345,7 +404,40 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <cite>— ppt-generator 架构原则</cite>
 </section>
 
-<!-- 8 · image-text（内联 SVG 架构图） -->
+<!-- 10 · assertion-evidence -->
+<section class="slide pat-assertion">
+  <h2>冻结快照让交付不依赖模板继续演进</h2>
+  <div class="pat-ae-grid">
+    <figure class="pat-ae-visual fragment">
+      <svg viewBox="0 0 640 300" role="img" aria-label="模板随时间演进，已交付 deck 保持冻结快照">
+        <rect x="30" y="70" width="180" height="42" rx="8" fill="rgba(139,124,248,0.14)" stroke="#8b7cf8"/>
+        <text x="120" y="97" text-anchor="middle" fill="#f0eefc" font-size="16">模板仓库 v1</text>
+        <rect x="30" y="140" width="230" height="42" rx="8" fill="rgba(139,124,248,0.20)" stroke="#8b7cf8"/>
+        <text x="145" y="167" text-anchor="middle" fill="#f0eefc" font-size="16">模板仓库 v2 / v3</text>
+        <line x1="270" y1="161" x2="390" y2="161" stroke="#8b7cf8" stroke-width="2"/>
+        <polygon points="398,161 386,155 386,167" fill="#8b7cf8"/>
+        <rect x="410" y="124" width="190" height="74" rx="10" fill="rgba(79,209,197,0.14)" stroke="#4fd1c5"/>
+        <text x="505" y="155" text-anchor="middle" fill="#f0eefc" font-size="17">已交付 deck</text>
+        <text x="505" y="181" text-anchor="middle" fill="#a8a3c9" font-size="14">冻结快照 · 可直接归档</text>
+        <line x1="30" y1="235" x2="600" y2="235" stroke="#a8a3c9" stroke-width="2" opacity=".55"/>
+        <text x="30" y="264" fill="#a8a3c9" font-size="14">模板持续演进</text>
+        <text x="600" y="264" text-anchor="end" fill="#a8a3c9" font-size="14">交付不受影响</text>
+      </svg>
+      <figcaption>模板演进与交付物解耦</figcaption>
+    </figure>
+    <aside class="pat-card pat-ae-side fragment">
+      <b>读图路径</b>
+      <ul>
+        <li>先看左侧模板版本递进</li>
+        <li>再看右侧交付快照隔离</li>
+        <li>源模板升级不追改旧稿</li>
+      </ul>
+      <p class="caption">来源：PPT Factory 架构原则，2026-09-28</p>
+    </aside>
+  </div>
+</section>
+
+<!-- 11 · image-text（内联 SVG 架构图） -->
 <section class="slide pat-image-text">
   <div class="pat-it-media">
     <svg viewBox="0 0 500 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'PingFang SC','Microsoft YaHei',sans-serif">
@@ -362,7 +454,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
       <text x="95" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">骨架 · 样式 · 运行时</text>
       <rect x="185" y="210" width="130" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
       <text x="250" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">patterns</text>
-      <text x="250" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">12 种布局模式</text>
+      <text x="250" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">15 种布局模式</text>
       <rect x="330" y="210" width="150" height="72" rx="10" fill="rgba(139,124,248,0.12)" stroke="#8b7cf8"/>
       <text x="405" y="241" text-anchor="middle" fill="#f0eefc" font-size="16">themes</text>
       <text x="405" y="264" text-anchor="middle" fill="#a8a3c9" font-size="13">CSS 变量主题</text>
@@ -385,7 +477,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   </div>
 </section>
 
-<!-- 9 · table -->
+<!-- 12 · table -->
 <section class="slide pat-table">
   <h2>向成熟项目借了什么</h2>
   <table>
@@ -410,7 +502,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
       <tr class="fragment">
         <td>PPTist</td>
         <td>幻灯片类型分类学</td>
-        <td>12 种模式清单</td>
+        <td>15 种模式清单</td>
       </tr>
       <tr class="fragment">
         <td>presentation-builder</td>
@@ -422,13 +514,13 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <p class="caption">来源：本仓库重构方案档案（2026-09）</p>
 </section>
 
-<!-- 10 · section -->
+<!-- 13 · section -->
 <section class="slide pat-section">
   <div class="pat-section-no">03</div>
   <h1>生成工作流</h1>
 </section>
 
-<!-- 11 · steps -->
+<!-- 14 · steps -->
 <section class="slide pat-steps">
   <h2>从一句话到一份 deck</h2>
   <div class="pat-steps-row">
@@ -464,7 +556,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   </div>
 </section>
 
-<!-- 12 · code -->
+<!-- 15 · code -->
 <section class="slide pat-code">
   <h2>装配的核心：版本围栏 + 槽位</h2>
   <pre><code><span class="fragment"><em class="hl">&lt;style&gt;</em></span>
@@ -477,7 +569,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <p class="pat-code-note dim fragment">逐字复制 + 只填槽位 —— AI 没有发挥空间，质量由仓库保证</p>
 </section>
 
-<!-- 13 · timeline -->
+<!-- 16 · timeline -->
 <section class="slide pat-timeline">
   <h2>演进路线</h2>
   <div class="pat-tl-list">
@@ -509,7 +601,7 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   </div>
 </section>
 
-<!-- 14 · end -->
+<!-- 17 · end -->
 <section class="slide pat-end">
   <h1>谢谢</h1>
   <div class="pat-end-links">

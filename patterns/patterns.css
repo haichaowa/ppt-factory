@@ -1,4 +1,4 @@
-/* patterns:v1 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
+/* patterns:v2 — 全部布局模式的样式（.pat-* 前缀）。装配时整文件内联一次，禁止按需删减。
    约定：需覆盖 base.css 对 .slide 设置的模式，用 .slide.pat-xxx 复合选择器（后加载者胜出） */
 
 /* ---------- 共用卡片（视觉由主题变量驱动，此处只有结构） ---------- */
@@ -14,6 +14,40 @@
 .pat-cover-kicker { font-size: 19px; letter-spacing: .35em; color: var(--accent-2); text-transform: uppercase; }
 .pat-cover-sub { font-size: 26px; color: var(--fg-dim); max-width: 30em; }
 .pat-cover-meta { margin-top: 40px; font-size: 18px; color: var(--fg-dim); }
+
+
+/* ---------- claim 核心主张 ---------- */
+.slide.pat-claim { justify-content: center; gap: 26px; }
+.pat-claim-kicker { font-size: 18px; letter-spacing: .32em; color: var(--accent-2); }
+.pat-claim h1 { max-width: 24em; font-size: 56px; }
+.pat-claim-action { font-size: 25px; color: var(--fg-dim); }
+.pat-claim-action span { color: var(--fg); font-weight: 700; margin-right: 18px; }
+.pat-claim-anchors { display: flex; gap: 16px; margin-top: 30px; }
+.pat-claim-anchor { flex: 1; padding: 20px 22px; font-size: 18px; color: var(--fg-dim); border-color: var(--card-border); }
+
+/* ---------- narrative-map 叙事路线 ---------- */
+.pat-narrative-map { gap: 0; }
+.pat-nm-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 44px; }
+.pat-nm-item { min-height: 180px; padding: 26px 22px; display: flex; flex-direction: column; gap: 14px; }
+.pat-nm-item span { font-size: 14px; letter-spacing: .22em; color: var(--fg-dim); }
+.pat-nm-item b { font-size: 22px; line-height: var(--line-height-body); }
+.pat-nm-turn { border-color: var(--accent-2); }
+.pat-nm-action { background: var(--bg-soft); border-color: var(--accent); }
+.pat-narrative-map .caption { margin-top: 18px; }
+
+/* ---------- assertion-evidence 主张 + 证据 ---------- */
+.pat-assertion { gap: 24px; }
+.pat-assertion h2 { max-width: 24em; font-size: 36px; }
+.pat-ae-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(260px, .85fr); gap: 28px; flex: 1; min-height: 0; }
+.pat-ae-visual { min-width: 0; min-height: 0; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; overflow: hidden; border: 1px solid var(--card-border); border-radius: var(--card-radius); background: var(--card-bg); padding: 24px; }
+.pat-ae-visual img, .pat-ae-visual svg { max-width: 100%; max-height: 100%; object-fit: contain; }
+.pat-ae-visual figcaption { max-width: 42em; text-align: center; }
+.pat-ae-side { min-width: 0; padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 16px; }
+.pat-ae-side > b { font-size: 18px; letter-spacing: .18em; }
+.pat-ae-side ul { display: grid; gap: 12px; }
+.pat-ae-side li { position: relative; padding-left: 22px; font-size: 18px; }
+.pat-ae-side li::before { content: ''; position: absolute; left: 0; top: .65em; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.pat-ae-side .caption { margin-top: auto; }
 
 /* ---------- section 章节分隔 ---------- */
 .slide.pat-section { justify-content: center; align-items: center; gap: 16px; text-align: center; }
@@ -52,7 +86,7 @@
 /* ---------- timeline 纵向时间线 ---------- */
 .pat-timeline { gap: 0; }
 .pat-timeline .pat-tl-list { margin-top: 36px; }
-.pat-tl-item { position: relative; padding: 0 0 26px 46px; }
+.pat-tl-item { position: relative; padding: 0 0 16px 46px; }
 .pat-tl-item::before { content: ''; position: absolute; left: 9px; top: 12px; bottom: -6px; width: 2px; background: var(--card-border); }
 .pat-tl-item:last-child { padding-bottom: 0; }
 .pat-tl-item:last-child::before { display: none; }

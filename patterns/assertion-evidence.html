@@ -1,0 +1,24 @@
+<!-- ============================================================
+  pattern: assertion-evidence — 主张句 + 证据图（论证页首选）
+  槽位：主张句、证据图 SVG/img、读图要点、证据出处与口径
+  铁律：标题必须写结论；证据区只放一个焦点；出处必填
+  依赖：patterns.css → .pat-assertion
+============================================================ -->
+<section class="slide pat-assertion">
+  <h2><!-- SLOT: 主张句，如 峰值吞吐瓶颈在单写入队列 --></h2>
+  <div class="pat-ae-grid">
+    <figure class="pat-ae-visual fragment">
+      <!-- SLOT: 证据图。使用内联 SVG / 压缩 img；禁止空证据交付 -->
+      <figcaption><!-- SLOT: 证据图说明（可删） --></figcaption>
+    </figure>
+    <aside class="pat-card pat-ae-side fragment">
+      <b>读图路径</b>
+      <ul>
+        <li><!-- SLOT: 第一眼看什么 --></li>
+        <li><!-- SLOT: 该信号说明什么 --></li>
+        <li><!-- SLOT: 边界 / 反例 --></li>
+      </ul>
+      <p class="caption"><!-- SLOT: 数据 / 截图出处、口径、时间范围（必填） --></p>
+    </aside>
+  </div>
+</section>

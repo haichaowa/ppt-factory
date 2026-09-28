@@ -17,7 +17,9 @@
 4. QA 清单逐项打勾（`?qa=1` 溢出检查、中文排版、打印预览等）才可交付
 5. deck 是冻结快照：改旧 deck 直改文件，禁止回源重组装
 
-规范：`docs/DESIGN.md`（设计/中文排版/反 slop）、`docs/CONTENT-RULES.md`（内容组织）。
+通用规范：`docs/AUDIENCE-BRIEF.md`（观众与叙事）、`docs/CONTENT-RULES.md`（内容组织）、`docs/DESIGN.md`（视觉/可访问性/反 slop）、`docs/DESIGN-RESEARCH.md`（外部依据）。
+
+生成前固定顺序：**观众与主张 → 叙事大纲 → 证据与 pattern → 主题与版式 → QA**。两个引擎都不得先选视觉风格再反填内容。
 
 ## Slidev 引擎
 
