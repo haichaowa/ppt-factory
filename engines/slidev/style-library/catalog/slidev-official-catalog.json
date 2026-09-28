@@ -1,0 +1,1281 @@
+{
+  "themes": [
+    {
+      "id": "@slidev/theme-default",
+      "name": "Default",
+      "description": "The minimalism default theme for Slidev",
+      "author": {
+        "name": "Anthony Fu",
+        "link": "https://github.com/antfu"
+      },
+      "repo": "https://github.com/slidevjs/themes/tree/main/packages/theme-default",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-default/01.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-default/02.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-default/06.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-default/08.png"
+      ],
+      "tags": [
+        "official",
+        "minimalism",
+        "dark",
+        "light"
+      ],
+      "category": "official",
+      "localPreviews": [
+        "reference-images/themes/official--slidev-theme-default/01.png",
+        "reference-images/themes/official--slidev-theme-default/02.png",
+        "reference-images/themes/official--slidev-theme-default/03.png",
+        "reference-images/themes/official--slidev-theme-default/04.png"
+      ],
+      "styleProfile": "Minimal developer baseline; clean typography, code-first layouts.",
+      "localSource": "templates/slidevjs-themes/packages/theme-default"
+    },
+    {
+      "id": "@slidev/theme-seriph",
+      "name": "Seriph",
+      "description": "A more formal looking theme using Serif fonts",
+      "author": {
+        "name": "Anthony Fu",
+        "link": "https://github.com/antfu"
+      },
+      "repo": "https://github.com/slidevjs/themes/tree/main/packages/theme-seriph",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-seriph/01.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-seriph/02.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-seriph/03.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-seriph/08.png"
+      ],
+      "tags": [
+        "official",
+        "minimalism",
+        "dark",
+        "light"
+      ],
+      "category": "official",
+      "localPreviews": [
+        "reference-images/themes/official--slidev-theme-seriph/01.png",
+        "reference-images/themes/official--slidev-theme-seriph/02.png",
+        "reference-images/themes/official--slidev-theme-seriph/03.png",
+        "reference-images/themes/official--slidev-theme-seriph/04.png"
+      ],
+      "styleProfile": "Elegant developer keynote; serif display type, photographic cover, formal hierarchy.",
+      "localSource": "templates/slidevjs-themes/packages/theme-seriph"
+    },
+    {
+      "id": "@slidev/theme-apple-basic",
+      "name": "Apple Basic",
+      "description": "Inspired by the Basic Black/White theme from Apple Keynote",
+      "author": {
+        "name": "Jeremy Meissner",
+        "link": "https://github.com/JeremyMeissner"
+      },
+      "repo": "https://github.com/slidevjs/themes/tree/main/packages/theme-apple-basic",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-apple-basic/01.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-apple-basic/02.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-apple-basic/03.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-apple-basic/09.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-apple-basic/11.png"
+      ],
+      "tags": [
+        "minimalism",
+        "dark",
+        "light"
+      ],
+      "category": "official",
+      "localPreviews": [
+        "reference-images/themes/official--slidev-theme-apple-basic/01.png",
+        "reference-images/themes/official--slidev-theme-apple-basic/02.png",
+        "reference-images/themes/official--slidev-theme-apple-basic/03.png",
+        "reference-images/themes/official--slidev-theme-apple-basic/04.png",
+        "reference-images/themes/official--slidev-theme-apple-basic/05.png"
+      ],
+      "styleProfile": "Apple Keynote minimalism; black/white restraint, large statements.",
+      "localSource": "templates/slidevjs-themes/packages/theme-apple-basic"
+    },
+    {
+      "id": "@slidev/theme-bricks",
+      "name": "Bricks",
+      "description": "Building bricks",
+      "author": {
+        "name": "iiiiiiinès",
+        "link": "https://github.com/iiiiiiines"
+      },
+      "repo": "https://github.com/slidevjs/themes/tree/main/packages/theme-bricks",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-bricks/01.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-bricks/04.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-bricks/06.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-bricks/05.png"
+      ],
+      "tags": [
+        "light"
+      ],
+      "category": "official",
+      "localPreviews": [
+        "reference-images/themes/official--slidev-theme-bricks/01.png",
+        "reference-images/themes/official--slidev-theme-bricks/02.png",
+        "reference-images/themes/official--slidev-theme-bricks/03.png",
+        "reference-images/themes/official--slidev-theme-bricks/04.png"
+      ],
+      "styleProfile": "Friendly light educational style; soft grid/brick motifs.",
+      "localSource": "templates/slidevjs-themes/packages/theme-bricks"
+    },
+    {
+      "id": "@slidev/theme-shibainu",
+      "name": "Shibainu",
+      "description": "Meow!",
+      "author": {
+        "name": "iiiiiiinès",
+        "link": "https://github.com/iiiiiiines"
+      },
+      "repo": "https://github.com/slidevjs/themes/tree/main/packages/theme-shibainu",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-shibainu/01.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-shibainu/03.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-shibainu/04.png",
+        "https://cdn.jsdelivr.net/gh/slidevjs/themes@main/screenshots/theme-shibainu/09.png"
+      ],
+      "tags": [
+        "dark"
+      ],
+      "category": "official",
+      "localPreviews": [
+        "reference-images/themes/official--slidev-theme-shibainu/01.png",
+        "reference-images/themes/official--slidev-theme-shibainu/02.png",
+        "reference-images/themes/official--slidev-theme-shibainu/03.png",
+        "reference-images/themes/official--slidev-theme-shibainu/04.png"
+      ],
+      "styleProfile": "Playful dark style; bold color and personality.",
+      "localSource": "templates/slidevjs-themes/packages/theme-shibainu"
+    },
+    {
+      "id": "slidev-theme-geist",
+      "name": "Vercel",
+      "description": "A theme based on Vercel's design system.",
+      "author": {
+        "name": "Nico Bachner",
+        "link": "https://github.com/nico-bachner"
+      },
+      "repo": "https://github.com/nico-bachner/slidev-theme-geist",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/nico-bachner/slidev-theme-geist@main/example-export/01.png",
+        "https://cdn.jsdelivr.net/gh/nico-bachner/slidev-theme-geist@main/example-export/02.png",
+        "https://cdn.jsdelivr.net/gh/nico-bachner/slidev-theme-geist@main/example-export/03.png",
+        "https://cdn.jsdelivr.net/gh/nico-bachner/slidev-theme-geist@main/example-export/04.png",
+        "https://cdn.jsdelivr.net/gh/nico-bachner/slidev-theme-geist@main/example-export/05.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-geist/01.png",
+        "reference-images/themes/community-slidev-theme-geist/02.png",
+        "reference-images/themes/community-slidev-theme-geist/03.png",
+        "reference-images/themes/community-slidev-theme-geist/04.png",
+        "reference-images/themes/community-slidev-theme-geist/05.png"
+      ],
+      "styleProfile": "Modern Vercel/Geist product style; monochrome UI, sharp cards.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-geist"
+    },
+    {
+      "id": "slidev-theme-light-icons",
+      "name": "Light Icons",
+      "description": "A simple, light and elegant theme for Slidev, combined together with creative layouts, custom components & fonts",
+      "author": {
+        "name": "Pulkit Aggarwal",
+        "link": "https://github.com/BashCloud"
+      },
+      "repo": "https://github.com/lightvue/slidev-theme-light-icons",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/1-layout-intro.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/2-layout-image-header-intro-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/3-layout-dynamic-image-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/5-layout-dynamic-image-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/7-layout-dynamic-image-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/8-layout-center-image-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/9-layout-dynamic-image-light.png",
+        "https://cdn.jsdelivr.net/gh/lightvue/slidev-theme-light-icons@master/screenshot/10-layout-left-image-light.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-light-icons/01.png",
+        "reference-images/themes/community-slidev-theme-light-icons/02.png",
+        "reference-images/themes/community-slidev-theme-light-icons/03.png",
+        "reference-images/themes/community-slidev-theme-light-icons/04.png",
+        "reference-images/themes/community-slidev-theme-light-icons/05.png",
+        "reference-images/themes/community-slidev-theme-light-icons/06.png",
+        "reference-images/themes/community-slidev-theme-light-icons/07.png",
+        "reference-images/themes/community-slidev-theme-light-icons/08.png"
+      ],
+      "styleProfile": "Bright editorial system; iconography and flexible image layouts.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-light-icons"
+    },
+    {
+      "id": "slidev-theme-eloc",
+      "name": "Eloc",
+      "description": "Focus on writing, present in a concise style.",
+      "author": {
+        "name": "Amio",
+        "link": "https://github.com/amio"
+      },
+      "repo": "https://github.com/zthxxx/slides/tree/master/packages/slidev-theme-eloc",
+      "previews": [
+        "https://media.githubusercontent.com/media/zthxxx/slides/refs/heads/master/packages/slidev-theme-eloc/screenshot/01.png",
+        "https://media.githubusercontent.com/media/zthxxx/slides/refs/heads/master/packages/slidev-theme-eloc/screenshot/02.png",
+        "https://media.githubusercontent.com/media/zthxxx/slides/refs/heads/master/packages/slidev-theme-eloc/screenshot/03.png",
+        "https://media.githubusercontent.com/media/zthxxx/slides/refs/heads/master/packages/slidev-theme-eloc/screenshot/04.png",
+        "https://media.githubusercontent.com/media/zthxxx/slides/refs/heads/master/packages/slidev-theme-eloc/screenshot/05.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-eloc/01.png",
+        "reference-images/themes/community-slidev-theme-eloc/02.png",
+        "reference-images/themes/community-slidev-theme-eloc/03.png",
+        "reference-images/themes/community-slidev-theme-eloc/04.png",
+        "reference-images/themes/community-slidev-theme-eloc/05.png"
+      ],
+      "styleProfile": "Concise writing-first style; low-decoration typography.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-eloc"
+    },
+    {
+      "id": "slidev-theme-purplin",
+      "name": "Purplin",
+      "description": "Theme with bar bottom component. Based on purple color",
+      "author": {
+        "name": "Mauricio Martínez",
+        "link": "https://github.com/moudev"
+      },
+      "repo": "https://github.com/moudev/slidev-theme-purplin",
+      "previews": [
+        "https://i.imgur.com/BX3TpEc.png",
+        "https://i.imgur.com/mqqRi1F.png",
+        "https://i.imgur.com/fwm2785.png",
+        "https://i.imgur.com/m8eemKt.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Purple brand system with bottom navigation bar.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-purplin"
+    },
+    {
+      "id": "slidev-theme-unicorn",
+      "name": "Unicorn",
+      "description": "Based on Dawntraoz website design",
+      "author": {
+        "name": "Alba Silvente",
+        "link": "https://github.com/dawntraoz"
+      },
+      "repo": "https://github.com/dawntraoz/slidev-theme-unicorn",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/Dawntraoz/slidev-theme-unicorn@master/screenshots/dark-theme-intro.png",
+        "https://cdn.jsdelivr.net/gh/Dawntraoz/slidev-theme-unicorn@master/screenshots/light-theme-cover.png",
+        "https://cdn.jsdelivr.net/gh/Dawntraoz/slidev-theme-unicorn@master/screenshots/dark-theme-image-centered.png",
+        "https://cdn.jsdelivr.net/gh/Dawntraoz/slidev-theme-unicorn@master/screenshots/dark-theme-center-without-header-footer.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-unicorn/01.png",
+        "reference-images/themes/community-slidev-theme-unicorn/02.png",
+        "reference-images/themes/community-slidev-theme-unicorn/03.png",
+        "reference-images/themes/community-slidev-theme-unicorn/04.png"
+      ],
+      "styleProfile": "Personal-site inspired light/dark brand style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-unicorn"
+    },
+    {
+      "id": "slidev-theme-zhozhoba",
+      "name": "Zhozhoba",
+      "description": "A zhozhoba theme for Slidev",
+      "author": {
+        "name": "Bogenbai Bayzharassov",
+        "link": "https://github.com/thatoranzhevyy"
+      },
+      "repo": "https://github.com/thatoranzhevyy/slidev-theme-zhozhoba",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/thatoranzhevyy/slidev-theme-zhozhoba@master/slides-export/01.png",
+        "https://cdn.jsdelivr.net/gh/thatoranzhevyy/slidev-theme-zhozhoba@master/.github/dark.png",
+        "https://cdn.jsdelivr.net/gh/thatoranzhevyy/slidev-theme-zhozhoba@master/slides-export/02.png",
+        "https://cdn.jsdelivr.net/gh/thatoranzhevyy/slidev-theme-zhozhoba@master/slides-export/03.png",
+        "https://cdn.jsdelivr.net/gh/thatoranzhevyy/slidev-theme-zhozhoba@master/slides-export/04.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-zhozhoba/01.png",
+        "reference-images/themes/community-slidev-theme-zhozhoba/02.png",
+        "reference-images/themes/community-slidev-theme-zhozhoba/03.png",
+        "reference-images/themes/community-slidev-theme-zhozhoba/04.png",
+        "reference-images/themes/community-slidev-theme-zhozhoba/05.png"
+      ],
+      "styleProfile": "Expressive dual-mode visual style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-zhozhoba"
+    },
+    {
+      "id": "slidev-theme-penguin",
+      "name": "Penguin",
+      "description": "A Penguin theme for Slidev",
+      "author": {
+        "name": "Alvaro Saburido",
+        "link": "https://github.com/alvarosabu"
+      },
+      "repo": "https://github.com/alvarosabu/slidev-theme-penguin",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/alvarosaburido/slidev-theme-penguin@master/screenshots/dark/01.png",
+        "https://cdn.jsdelivr.net/gh/alvarosaburido/slidev-theme-penguin@master/screenshots/light/02.png",
+        "https://cdn.jsdelivr.net/gh/alvarosaburido/slidev-theme-penguin@master/screenshots/light/06.png",
+        "https://cdn.jsdelivr.net/gh/alvarosaburido/slidev-theme-penguin@master/screenshots/light/05.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-penguin/01.png",
+        "reference-images/themes/community-slidev-theme-penguin/04.png"
+      ],
+      "styleProfile": "Illustrated dark/light personality theme.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-penguin"
+    },
+    {
+      "id": "slidev-theme-vuetiful",
+      "name": "Vuetiful",
+      "description": "A Vue-inspired theme for Slidev",
+      "author": {
+        "name": "Thorsten Lünborg",
+        "link": "https://github.com/LinusBorg"
+      },
+      "repo": "https://github.com/LinusBorg/slidev-theme-vuetiful",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/LinusBorg/slidev-theme-vuetiful@main/screenshots/cover-alt.png",
+        "https://cdn.jsdelivr.net/gh/LinusBorg/slidev-theme-vuetiful@main/screenshots/section.png",
+        "https://cdn.jsdelivr.net/gh/LinusBorg/slidev-theme-vuetiful@main/screenshots/big-points.png",
+        "https://cdn.jsdelivr.net/gh/LinusBorg/slidev-theme-vuetiful@main/screenshots/quote.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-vuetiful/01.png",
+        "reference-images/themes/community-slidev-theme-vuetiful/02.png",
+        "reference-images/themes/community-slidev-theme-vuetiful/03.png",
+        "reference-images/themes/community-slidev-theme-vuetiful/04.png"
+      ],
+      "styleProfile": "Vue-inspired conference style with strong brand colors.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-vuetiful"
+    },
+    {
+      "id": "slidev-theme-takahashi",
+      "name": "Takahashi",
+      "description": "A simple theme for Slidev",
+      "author": {
+        "name": "Percy M.",
+        "link": "https://github.com/kecrily"
+      },
+      "repo": "https://github.com/kecrily/slidev-theme-takahashi",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/01.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/02.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/03.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/04.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/05.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/06.png",
+        "https://cdn.jsdelivr.net/gh/kecrily/slidev-theme-takahashi@master/screenshots/07.png"
+      ],
+      "tags": [
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-takahashi/01.png",
+        "reference-images/themes/community-slidev-theme-takahashi/02.png",
+        "reference-images/themes/community-slidev-theme-takahashi/03.png",
+        "reference-images/themes/community-slidev-theme-takahashi/04.png",
+        "reference-images/themes/community-slidev-theme-takahashi/05.png",
+        "reference-images/themes/community-slidev-theme-takahashi/06.png",
+        "reference-images/themes/community-slidev-theme-takahashi/07.png"
+      ],
+      "styleProfile": "High-contrast Takahashi large-type method.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-takahashi"
+    },
+    {
+      "id": "slidev-theme-academic",
+      "name": "Academic",
+      "description": "Academic presentations with Slidev made simple",
+      "author": {
+        "name": "Alexander Eble",
+        "link": "https://github.com/alexanderdavide"
+      },
+      "repo": "https://github.com/alexanderdavide/slidev-theme-academic",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/01.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/02.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/08.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/04.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/05.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/06.png",
+        "https://cdn.jsdelivr.net/gh/alexanderdavide/slidev-theme-academic@assets/example-export/07.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-academic/01.png",
+        "reference-images/themes/community-slidev-theme-academic/02.png",
+        "reference-images/themes/community-slidev-theme-academic/03.png",
+        "reference-images/themes/community-slidev-theme-academic/04.png",
+        "reference-images/themes/community-slidev-theme-academic/05.png",
+        "reference-images/themes/community-slidev-theme-academic/06.png",
+        "reference-images/themes/community-slidev-theme-academic/07.png"
+      ],
+      "styleProfile": "Formal academic talk system; citations, clean diagrams.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-academic"
+    },
+    {
+      "id": "slidev-theme-mokkapps",
+      "name": "Mokkapps",
+      "description": "A theme for my personal brand \"Mokkapps\"",
+      "author": {
+        "name": "Michael Hoffmann",
+        "link": "https://github.com/mokkapps"
+      },
+      "repo": "https://github.com/mokkapps/slidev-theme-mokkapps",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/001.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/002.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/003.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/004.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/005.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/006.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/007.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/008.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/009.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/010.png",
+        "https://cdn.jsdelivr.net/gh/mokkapps/slidev-theme-mokkapps@master/screenshots/dark/011.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-mokkapps/01.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/02.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/03.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/04.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/05.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/06.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/07.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/08.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/09.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/10.png",
+        "reference-images/themes/community-slidev-theme-mokkapps/11.png"
+      ],
+      "styleProfile": "Personal-brand developer deck with polished cards.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-mokkapps"
+    },
+    {
+      "id": "slidev-theme-the-unnamed",
+      "name": "The unnamed",
+      "description": "A theme based on The unnamed VS Code theme",
+      "author": {
+        "name": "Elio Struyf",
+        "link": "https://elio.dev"
+      },
+      "repo": "https://github.com/estruyf/slidev-theme-the-unnamed",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/cover.png",
+        "https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/about-me.png",
+        "https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/default.png",
+        "https://cdn.jsdelivr.net/gh/estruyf/slidev-theme-the-unnamed@main/assets/section.png"
+      ],
+      "tags": [
+        "dark"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-the-unnamed/01.png",
+        "reference-images/themes/community-slidev-theme-the-unnamed/02.png",
+        "reference-images/themes/community-slidev-theme-the-unnamed/03.png",
+        "reference-images/themes/community-slidev-theme-the-unnamed/04.png"
+      ],
+      "styleProfile": "Dark VS Code-inspired developer aesthetic.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-the-unnamed"
+    },
+    {
+      "id": "slidev-theme-dracula",
+      "name": "Dracula",
+      "description": "One the best dark theme meets slidev",
+      "author": {
+        "name": "JD Solanki",
+        "link": "https://github.com/jd-solanki"
+      },
+      "repo": "https://github.com/jd-solanki/slidev-theme-dracula",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-1.png",
+        "https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-2.png",
+        "https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-3.png",
+        "https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-4.png",
+        "https://cdn.jsdelivr.net/gh/jd-solanki/slidev-theme-dracula/screenshots/screenshot-5.png"
+      ],
+      "tags": [
+        "dark",
+        "minimalism"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-dracula/01.png",
+        "reference-images/themes/community-slidev-theme-dracula/02.png",
+        "reference-images/themes/community-slidev-theme-dracula/03.png",
+        "reference-images/themes/community-slidev-theme-dracula/04.png",
+        "reference-images/themes/community-slidev-theme-dracula/05.png"
+      ],
+      "styleProfile": "High-contrast Dracula dark terminal style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-dracula"
+    },
+    {
+      "id": "slidev-theme-frankfurt",
+      "name": "Frankfurt",
+      "description": "Inspired by the Beamer theme Frankfurt",
+      "author": {
+        "name": "Mu-Tsun Tsai",
+        "link": "https://github.com/MuTsunTsai"
+      },
+      "repo": "https://github.com/MuTsunTsai/slidev-theme-frankfurt",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/01.png",
+        "https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/04.png",
+        "https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/06.png",
+        "https://cdn.jsdelivr.net/gh/MuTsunTsai/slidev-theme-frankfurt/screenshots/07.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-frankfurt/01.png",
+        "reference-images/themes/community-slidev-theme-frankfurt/02.png",
+        "reference-images/themes/community-slidev-theme-frankfurt/03.png",
+        "reference-images/themes/community-slidev-theme-frankfurt/04.png"
+      ],
+      "styleProfile": "Beamer/Frankfurt academic conference style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-frankfurt"
+    },
+    {
+      "id": "slidev-theme-hep",
+      "name": "HEP",
+      "description": "Academic style for High Energy Physics",
+      "author": {
+        "name": "Yulei ZHANG",
+        "link": "https://github.com/AvencastF"
+      },
+      "repo": "https://github.com/AvencastF/slidev-theme-hep",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/avencastf/slidev-theme-hep/screenshot/001.png",
+        "https://cdn.jsdelivr.net/gh/avencastf/slidev-theme-hep/screenshot/004.png",
+        "https://cdn.jsdelivr.net/gh/avencastf/slidev-theme-hep/screenshot/006.png",
+        "https://cdn.jsdelivr.net/gh/avencastf/slidev-theme-hep/screenshot/008.png"
+      ],
+      "tags": [
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-hep/01.png",
+        "reference-images/themes/community-slidev-theme-hep/02.png",
+        "reference-images/themes/community-slidev-theme-hep/03.png",
+        "reference-images/themes/community-slidev-theme-hep/04.png"
+      ],
+      "styleProfile": "High-energy physics academic style with dense figures.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-hep"
+    },
+    {
+      "id": "slidev-theme-excali-slide",
+      "name": "Excali-slide",
+      "description": "A theme based on Excalidraw with animated highlighter effect",
+      "author": {
+        "name": "Filip Hric",
+        "link": "https://github.com/filiphric"
+      },
+      "repo": "https://github.com/filiphric/slidev-theme-excali-slide",
+      "previews": [
+        "https://raw.githubusercontent.com/filiphric/excali-slide/main/images/default_slide.png",
+        "https://raw.githubusercontent.com/filiphric/excali-slide/main/images/intro_slide.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Hand-drawn Excalidraw whiteboard style with markers.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-excali-slide"
+    },
+    {
+      "id": "slidev-theme-mint",
+      "name": "mint",
+      "description": "Slidev Theme Mint",
+      "author": {
+        "name": "Alfatta Rezqa",
+        "link": "https://github.com/alfatta"
+      },
+      "repo": "https://github.com/alfatta/slidev-theme-mint",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/1.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/2.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/3.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/4.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/5.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/6.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/7.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/8.png",
+        "https://cdn.jsdelivr.net/gh/alfatta/slidev-theme-mint/screenshot/9.png"
+      ],
+      "tags": [
+        "light",
+        "mint",
+        "green",
+        "cool"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-mint/01.png",
+        "reference-images/themes/community-slidev-theme-mint/02.png",
+        "reference-images/themes/community-slidev-theme-mint/03.png",
+        "reference-images/themes/community-slidev-theme-mint/04.png",
+        "reference-images/themes/community-slidev-theme-mint/05.png",
+        "reference-images/themes/community-slidev-theme-mint/06.png",
+        "reference-images/themes/community-slidev-theme-mint/07.png",
+        "reference-images/themes/community-slidev-theme-mint/08.png",
+        "reference-images/themes/community-slidev-theme-mint/09.png"
+      ],
+      "styleProfile": "Fresh light mint educational style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-mint"
+    },
+    {
+      "id": "slidev-theme-neversink",
+      "name": "neversink",
+      "description": "Slidev Theme Neversink",
+      "author": {
+        "name": "Todd M. Gureckis",
+        "link": "https://github.com/gureckis"
+      },
+      "repo": "https://github.com/gureckis/slidev-theme-neversink",
+      "previews": [
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/2.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/6.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/8.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/15.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/18.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/22.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/26.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/34.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/36.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/38.png",
+        "https://gureckis.github.io/slidev-theme-neversink/screenshots/35.png"
+      ],
+      "tags": [
+        "light",
+        "academic",
+        "education"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-neversink/01.png",
+        "reference-images/themes/community-slidev-theme-neversink/02.png",
+        "reference-images/themes/community-slidev-theme-neversink/03.png",
+        "reference-images/themes/community-slidev-theme-neversink/04.png",
+        "reference-images/themes/community-slidev-theme-neversink/05.png",
+        "reference-images/themes/community-slidev-theme-neversink/06.png",
+        "reference-images/themes/community-slidev-theme-neversink/07.png",
+        "reference-images/themes/community-slidev-theme-neversink/08.png",
+        "reference-images/themes/community-slidev-theme-neversink/09.png",
+        "reference-images/themes/community-slidev-theme-neversink/10.png",
+        "reference-images/themes/community-slidev-theme-neversink/11.png"
+      ],
+      "styleProfile": "Academic/education-oriented light style with flexible layouts.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-neversink"
+    },
+    {
+      "id": "slidev-theme-ktym4a",
+      "name": "ktym4a",
+      "description": "Based on ktym4a website design",
+      "author": {
+        "name": "ktym4a",
+        "link": "https://github.com/ktym4a"
+      },
+      "repo": "https://github.com/ktym4a/slidev-theme-ktym4a",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/rotation/0.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/rotation/1.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/rotation/6.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/rotation/7.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/rotation/8.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/single/0.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/single/1.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/single/3.png",
+        "https://cdn.jsdelivr.net/gh/ktym4a/slidev-theme-ktym4a@main/example-export/single/4.png"
+      ],
+      "tags": [
+        "dark",
+        "catppuccin"
+      ],
+      "category": "community",
+      "localPreviews": [
+        "reference-images/themes/community-slidev-theme-ktym4a/02.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/03.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/04.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/05.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/06.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/07.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/08.png",
+        "reference-images/themes/community-slidev-theme-ktym4a/09.png"
+      ],
+      "styleProfile": "Catppuccin-flavored personal website style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-ktym4a"
+    },
+    {
+      "id": "slidev-theme-nord",
+      "name": "Nord",
+      "description": "Based on the Nord theme",
+      "author": {
+        "name": "David Ollerhead",
+        "link": "https://github.com/oller"
+      },
+      "repo": "https://github.com/oller/slidev-theme-nord",
+      "previews": [
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/1.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/2.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/3.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/4.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/5.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/6.png",
+        "https://raw.githubusercontent.com/oller/slidev-theme-nord/HEAD/example-export/7.png"
+      ],
+      "tags": [
+        "dark",
+        "light",
+        "nord"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Nord-palette calm developer style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-nord"
+    },
+    {
+      "id": "slidev-theme-scholarly",
+      "name": "Scholarly",
+      "description": "Based on the Nord theme",
+      "author": {
+        "name": "Jiaxin Peng",
+        "link": "https://github.com/jxpeng98"
+      },
+      "repo": "https://github.com/jxpeng98/slidev-theme-scholarly",
+      "previews": [
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/classic-blue/1.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/oxford/1.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/cambridge/1.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/princeton/1.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/classic-blue/2.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/classic-blue/3.png",
+        "https://raw.githubusercontent.com/jxpeng98/slidev-theme-scholarly/HEAD/images/themes/classic-blue/4.png"
+      ],
+      "tags": [
+        "dark",
+        "light",
+        "academic",
+        "oxford",
+        "cambridge",
+        "princeton"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Oxford/Cambridge/Princeton-flavored scholarly style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-scholarly"
+    },
+    {
+      "id": "slidev-theme-field-manual",
+      "name": "Field Manual",
+      "description": "A 24-layout theme modeled on the style of vintage military field manuals",
+      "author": {
+        "name": "PJ Doland",
+        "link": "https://github.com/pjdoland"
+      },
+      "repo": "https://github.com/pjdoland/slidev-theme-field-manual",
+      "previews": [
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/1.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/2.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/3.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/4.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/5.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/6.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/7.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/8.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/9.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/10.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/11.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/12.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/13.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/14.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/15.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/16.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/17.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/18.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/19.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/20.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/21.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/22.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/23.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/24.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/25.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/26.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/27.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/28.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/29.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/30.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/31.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/32.jpg",
+        "https://raw.githubusercontent.com/pjdoland/slidev-theme-field-manual/main/screenshots/33.jpg"
+      ],
+      "tags": [
+        "light",
+        "dark",
+        "vintage",
+        "military"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Vintage military field-manual print system.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-field-manual"
+    },
+    {
+      "id": "slidev-theme-touying",
+      "name": "Touying",
+      "description": "A theme based on the design of the Typst Touying",
+      "author": {
+        "name": "_Kerman",
+        "link": "https://github.com/kermanx"
+      },
+      "repo": "https://github.com/kermanx/slidev-theme-touying",
+      "previews": [
+        "https://github.com/user-attachments/assets/a075a45c-7ee7-4ede-b3e7-90f29edf3845",
+        "https://github.com/user-attachments/assets/5ddea6cb-e604-41f9-a857-9f43b439c91b",
+        "https://github.com/user-attachments/assets/2b649cbc-537d-4306-adcd-3877bbeeb87a",
+        "https://github.com/user-attachments/assets/e2258aef-1c80-4db0-af2f-eb430b83f2e7",
+        "https://github.com/user-attachments/assets/f3010e84-7b9c-42b7-bffc-bdf48fdfbd2e"
+      ],
+      "tags": [
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Typst Touying-inspired mathematical/academic style.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-touying"
+    },
+    {
+      "id": "slidev-theme-tahta",
+      "name": "Tahta",
+      "description": "A design system for Slidev — design tokens, components, and 13 themeable style variants with themed chart palettes and role-color cards. WCAG-AA contrast, ECharts, and frontmatter-driven layouts (no CSS).",
+      "author": {
+        "name": "Cagdas Salur",
+        "link": "https://github.com/zcag"
+      },
+      "repo": "https://github.com/zcag/tahta",
+      "link": "https://tahta.cagdas.io",
+      "previews": [
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/01.png",
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/02.png",
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/03.png",
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/04.png",
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/05.png",
+        "https://cdn.jsdelivr.net/gh/zcag/tahta@1dd8357/docs/screenshots/06.png"
+      ],
+      "tags": [
+        "dark",
+        "light"
+      ],
+      "category": "community",
+      "localPreviews": [],
+      "styleProfile": "Token-driven design system with charts and WCAG-aware variants.",
+      "localSource": "templates/community-theme-packages/src/slidev-theme-tahta"
+    }
+  ],
+  "showcases": [
+    {
+      "title": "Reliability: Manual → Autopilot",
+      "author": {
+        "name": "Severin Neumann",
+        "link": "https://github.com/svrnm/"
+      },
+      "at": "Karlsruhe Cloud Native – Summer Edition 2026",
+      "slidesLink": "https://ai-sre-talk.vercel.app/",
+      "sourcesLink": "https://github.com/bronto-community/ai-sre-talk",
+      "cover": "https://raw.githubusercontent.com/bronto-community/ai-sre-talk/refs/heads/main/preview.png",
+      "datetime": "2026-07-28",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Reverse Engineering Denuvo in Hogwarts Legacy",
+      "author": {
+        "name": "Maurice Heumann",
+        "link": "https://momo5502.com"
+      },
+      "at": "Navaja Negra 2025",
+      "slidesLink": "https://momo5502.com/slides/denuvo",
+      "sourceLink": "https://github.com/momo5502/denuvo-slides",
+      "cover": "https://raw.githubusercontent.com/momo5502/denuvo-slides/refs/heads/master/images/preview.png",
+      "datetime": "2025-10-03",
+      "localCover": [],
+      "localSource": "examples/denuvo-slides"
+    },
+    {
+      "title": "Taming Dependency Chaos for LLM in K8s",
+      "author": {
+        "name": "Neko",
+        "link": "https://github.com/nekomeowww"
+      },
+      "at": "KubeCon 2025 China",
+      "slidesLink": "https://baizeai.github.io/talks/2025-06-11-kubecon-hk/",
+      "sourceLink": "https://github.com/BaizeAI/talks/tree/main/packages/2025-06-11-kubecon-hk",
+      "cover": "https://raw.githubusercontent.com/BaizeAI/talks/main/packages/2025-06-11-kubecon-hk/public/screenshot.png",
+      "datetime": "2025-06-11",
+      "localCover": [],
+      "localSource": "examples/baizeai-talks/packages/2025-06-11-kubecon-hk"
+    },
+    {
+      "title": "A 14-year journey developing nCine, an open-source 2D game framework",
+      "author": {
+        "name": "Angelo Theodorou",
+        "link": "https://encelo.github.io"
+      },
+      "at": "/dev/games/2025",
+      "slidesLink": "https://encelo.github.io/nCine_14Years_Presentation/",
+      "sourceLink": "https://github.com/encelo/nCine_14Years_Presentation",
+      "cover": "https://i.imgur.com/AbTdfhg.png",
+      "datetime": "2025-06-05",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Python Zero To Hero - Episode 1",
+      "author": {
+        "name": "Kareim Tarek",
+        "link": "https://kareimgazer.github.io/"
+      },
+      "at": "Kareem Kreates YouTube Channel",
+      "slidesLink": "https://kareimgazer.github.io/py-intro/",
+      "sourceLink": "https://github.com/KareimGazer/py-intro",
+      "cover": "https://i.ytimg.com/vi/hVMaPBrWvAo/hqdefault.jpg",
+      "datetime": "2025-01-12",
+      "localCover": [],
+      "localSource": "examples/py-intro"
+    },
+    {
+      "title": "Hacker Numerology",
+      "author": {
+        "name": "HD Moore",
+        "link": "https://hdm.io"
+      },
+      "at": "LASCON 2024",
+      "slidesLink": "https://hdm.io/decks/2024-LASCON-Numerology/",
+      "sourceLink": "https://github.com/hdm/decks-2024-lascon-numerology.git",
+      "cover": "https://raw.githubusercontent.com/hdm/decks-2024-lascon-numerology/refs/heads/main/screenshot.png",
+      "datetime": "2024-10-25",
+      "localCover": [],
+      "localSource": "examples/hacker-numerology"
+    },
+    {
+      "title": "Sit Back and Relax with Fault Awareness and Robust Instant Recovery for Large Scale AI Workloads",
+      "author": {
+        "name": "Neko",
+        "link": "https://github.com/nekomeowww"
+      },
+      "at": "KubeCon 2024 China",
+      "slidesLink": "https://talks.ayaka.io/nekoayaka/2024-08-21-kubecon-hk/",
+      "sourceLink": "https://github.com/nekomeowww/talks/tree/main/packages/2024-08-21-kubecon-hk",
+      "cover": "https://raw.githubusercontent.com/BaizeAI/talks/main/packages/2024-08-21-kubecon-hk/public/screenshot.png",
+      "datetime": "2024-08-21",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "How Rust error handling ease web development",
+      "author": {
+        "name": "Nguyễn Hồng Quân",
+        "link": "https://quan.hoabinh.vn"
+      },
+      "at": "FOSSASIA Summit 2024",
+      "slidesLink": "https://talk.quan.hoabinh.vn/rust-error-handling-ease-web-dev/",
+      "sourceLink": "https://hongquan@bitbucket.org/hongquan/rust-error-handling-ease-web-dev",
+      "cover": "https://i.imgur.com/2eBJofY.png",
+      "datetime": "2024-04-10",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Comparison of Packaging Tools in 2023",
+      "author": {
+        "name": "Peacock (Yoichi Takai)",
+        "link": "https://p3ac0ck.net"
+      },
+      "at": "PyCon APAC 2023",
+      "slidesLink": "https://slides.p3ac0ck.net/pyconapac2023/1",
+      "sourceLink": "https://github.com/peacock0803sz/slidev-slides/blob/7d41aa5e89ad8627cb68ae2cdbfe1681017b0408/talks/pyconapac2023/pyconapac2023.md",
+      "cover": "https://slides.p3ac0ck.net/pyconapac2023/cover.png",
+      "datetime": "2023-10-28",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Exploring Social Engineering",
+      "cover": "https://raw.githubusercontent.com/zyf722/exploring-social-engineering-slides/main/assets/Screenshot_Cover.png",
+      "author": {
+        "name": "zyf722",
+        "link": "https://github.com/zyf722"
+      },
+      "slidesLink": "https://zyf722.github.io/exploring-social-engineering-slides/",
+      "sourceLink": "https://github.com/zyf722/exploring-social-engineering-slides",
+      "at": "Presentation on Social Engineering in Computers in Society class",
+      "datetime": "2023-10-20",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Single Image Super-Resolution Based on Capsule Neural Networks",
+      "author": {
+        "name": "George Corrêa de Araújo",
+        "link": "https://george-gca.github.io/"
+      },
+      "at": "Brazilian Conference on Intelligent Systems 2023",
+      "slidesLink": "https://george-gca.github.io/bracis_2023_srcaps/",
+      "sourceLink": "https://github.com/george-gca/bracis_2023_srcaps",
+      "cover": "https://raw.githubusercontent.com/george-gca/bracis_2023_srcaps/refs/heads/main/cover.png",
+      "datetime": "2023-09-27",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Threat Modeling",
+      "author": {
+        "name": "guisso",
+        "link": "https://github.com/fguisso"
+      },
+      "at": "OWASP Meetup",
+      "slidesLink": "https://guisso.dev/talks/threat-modeling",
+      "sourceLink": "https://github.com/fguisso/talks/tree/main/slides/threat-modeling",
+      "cover": "https://guisso.dev/posts/threat-modeling-intro/featured-threat-modeling_hu12396ec5bf9ecba1dda33f1443a5eb10_76776_600x0_resize_box_3.png",
+      "datetime": "2023-09-22",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Building a Polite Popup with Nuxt 3",
+      "author": {
+        "name": "Michael Hoffmann",
+        "link": "https://github.com/mokkapps"
+      },
+      "at": "Vue.js Nation 2023",
+      "slidesLink": "https://vuejsnation-2023-talk-polite-popup.netlify.app",
+      "sourceLink": "https://github.com/Mokkapps/vuejsnation-2023-lightning-talk-polite-popup-nuxt-3-slides",
+      "cover": "https://raw.githubusercontent.com/Mokkapps/vuejsnation-2023-lightning-talk-polite-popup-nuxt-3-slides/main/screenshots/001.png",
+      "datetime": "2023-01-25",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Dev Environment as Code",
+      "cover": "https://cdn.jsdelivr.net/gh/alexanderdavide/dev-environment-as-code@assets/slides-export/001.png",
+      "author": {
+        "name": "Alexander Eble",
+        "link": "https://github.com/alexanderdavide"
+      },
+      "slidesLink": "https://alexeble.de/talks/dev-environment-as-code/",
+      "sourceLink": "https://github.com/alexanderdavide/dev-environment-as-code",
+      "at": "Internal Tech Talk",
+      "datetime": "2022-12-01",
+      "localCover": [],
+      "localSource": "examples/dev-environment-as-code"
+    },
+    {
+      "title": "Blazing slidev ppt template with naive-ui",
+      "author": {
+        "name": "godkun"
+      },
+      "at": "personal sharing",
+      "slidesLink": "https://ppt.godkun.top",
+      "sourceLink": "https://github.com/godkun/ppt-template",
+      "cover": "https://github.com/godkun/ppt-template/raw/main/public/show.gif",
+      "datetime": "2022-10-24",
+      "localCover": [],
+      "localSource": "examples/naive-ui-ppt-template"
+    },
+    {
+      "title": "Is it Okay to Pursue Functional Programming on Frontend?",
+      "author": {
+        "name": "Minsu Kim , Changhui Lee"
+      },
+      "at": "2022 JSConf Korea",
+      "slidesLink": "https://moonlit-nougat-422445.netlify.app/1",
+      "sourceLink": "https://github.com/alstn2468/2022-jsconf-presentation",
+      "cover": "https://raw.githubusercontent.com/alstn2468/2022-jsconf-presentation/main/public/images/og.png",
+      "datetime": "2022-09-16",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Diablo Health Orb Shader",
+      "author": {
+        "name": "SuneBear",
+        "link": "https://github.com/sunebear"
+      },
+      "at": "rctAI Sessions",
+      "slidesLink": "https://rct-ai.github.io/frontend-slides/diablo-health-orb-shader/",
+      "sourceLink": "https://github.com/rct-ai/frontend-slides",
+      "cover": "https://github-production-user-asset-6210df.s3.amazonaws.com/7693264/284304324-db973b4c-a043-4644-932c-826169a1b4d8.gif",
+      "datetime": "2022-09-01",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "OpenFunction 202",
+      "cover": "https://s2.loli.net/2022/05/22/4zsCnkQRFoAU1E5.png",
+      "author": {
+        "name": "Haili Zhang",
+        "link": "https://github.com/webup"
+      },
+      "slidesLink": "https://openfunction-talks.netlify.app/2022/202-node-async/",
+      "sourceLink": "https://github.com/webup/openfunction-talks/tree/main/202-node-async",
+      "at": "OpenFunction Tutorial Sharing",
+      "datetime": "2022-05-08",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Git's Most Wanted",
+      "cover": "https://cdn.jsdelivr.net/gh/alexanderdavide/git-most-wanted@assets/slides-export/01.png",
+      "author": {
+        "name": "Alexander Eble",
+        "link": "https://github.com/alexanderdavide"
+      },
+      "slidesLink": "https://alexeble.de/talks/git-most-wanted/",
+      "sourceLink": "https://github.com/alexanderdavide/git-most-wanted",
+      "at": "Internal Tech Talk",
+      "datetime": "2022-03-11",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Introduction to SVG",
+      "cover": "https://raw.githubusercontent.com/lyqht/intro-to-svg-slides/main/intro-to-svg-slides-cover.png",
+      "author": {
+        "name": "Estee Tey",
+        "link": "https://github.com/lyqht"
+      },
+      "slidesLink": "https://lyqht.github.io/intro-to-svg-slides/",
+      "sourceLink": "https://github.com/lyqht/intro-to-svg-slides",
+      "at": "Thoughtworks Internal Lunch & Learn",
+      "datetime": "2021-11-12",
+      "localCover": [],
+      "localSource": "examples/intro-to-svg"
+    },
+    {
+      "title": "Prisma as my ORM for PostgreSQL",
+      "cover": "https://raw.githubusercontent.com/cedric25/prisma-talk/main/cover-for-slidev.png",
+      "author": {
+        "name": "Cedric Nicoloso",
+        "link": "https://github.com/cedric25"
+      },
+      "slidesLink": "https://prisma-talk.netlify.app/",
+      "sourceLink": "https://github.com/cedric25/prisma-talk",
+      "at": "LyonJS Meetup",
+      "datetime": "2021-07-21",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "BeAPT",
+      "author": {
+        "name": "Daniel Sousa @TutoDS",
+        "link": "https://github.com/tutods"
+      },
+      "at": "Presentation of my college final project",
+      "slidesLink": "https://beapt-presentation.netlify.app",
+      "sourceLink": "https://github.com/TutoDS/lei-project/tree/master/presentation",
+      "cover": "https://raw.githubusercontent.com/TutoDS/lei-project/master/presentation/cover.png",
+      "datetime": "2021-07-20",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Vue 3 > Vue 2 + 1",
+      "cover": "https://user-images.githubusercontent.com/11247099/122246420-1df97b80-cef9-11eb-9c57-7751c6999deb.png",
+      "author": {
+        "name": "Thorsten Lünborg",
+        "link": "https://github.com/LinusBorg"
+      },
+      "slidesLink": "http://vueday-2021.linusb.org",
+      "sourceLink": "https://github.com/LinusBorg/vueday-enterjs-vue3",
+      "at": "Enter.js Vue Day",
+      "datetime": "2021-06-15",
+      "localCover": [],
+      "localSource": "examples/vue3-talk"
+    },
+    {
+      "title": "Developer Seonglae",
+      "cover": "https://seonglae-slides.vercel.app/og.png",
+      "author": {
+        "name": "Seonglae Cho",
+        "link": "https://github.com/seonglae"
+      },
+      "slidesLink": "https://seonglae-slides.vercel.app",
+      "sourceLink": "https://github.com/seonglae/seonglae-slides",
+      "at": "Seongland",
+      "datetime": "2021-05-10",
+      "localCover": [],
+      "localSource": ""
+    },
+    {
+      "title": "Composable Vue",
+      "cover": "/showcases/composable-vue.png",
+      "author": {
+        "name": "Anthony Fu",
+        "link": "https://github.com/antfu"
+      },
+      "slidesLink": "https://talks.antfu.me/2021/composable-vue/",
+      "sourceLink": "https://github.com/antfu/talks/tree/main/2021-04-29",
+      "at": "VueDay 2021",
+      "datetime": "2021-04-29",
+      "localCover": [],
+      "localSource": "examples/antfu-talks/2021-04-29/src"
+    }
+  ]
+}

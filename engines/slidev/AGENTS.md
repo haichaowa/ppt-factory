@@ -15,9 +15,10 @@ npm run build -- decks/<名>/slides.md  # 构建静态网页（dist/）
 ## 生产规则
 
 1. 新 deck 一律从模板创建，不手搓空文件
-2. 中文字体 / 排版调整只改该 deck 的 `style.css`（模板已内置回退栈）
-3. **frontmatter 铁律**：`---` 与 `layout:` 之间禁止空行，否则 layout 会被当正文渲染出空白页
-4. 一页一观点；代码高亮用 `{2|3-4|all}` 分步；细节写演讲备注（HTML 注释）
+2. 用户给出大纲时，先读 `style-library/STYLE-SEEDS.md`，明确选择一个风格种子；需要模仿版式时再读对应本地源码和预览
+3. 中文字体 / 排版调整只改该 deck 的 `style.css`（模板已内置回退栈）
+4. **frontmatter 铁律**：`---` 与 `layout:` 之间禁止空行，否则 layout 会被当正文渲染出空白页
+5. 一页一观点；代码高亮用 `{2|3-4|all}` 分步；细节写演讲备注（HTML 注释）
 
 ## QA 底线（交付前逐项过）
 

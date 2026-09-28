@@ -2,7 +2,16 @@
 
 > 调研时间：2026-09-26 · 当前 @slidev/cli 最新版 v53.0.0 · 全部链接经可用性验证
 
-## 一、官方核心资源
+## 一、本地风格素材库
+
+| 资产 | 位置 | 说明 |
+| --- | --- | --- |
+| 风格种子 | [../style-library/STYLE-SEEDS.md](../style-library/STYLE-SEEDS.md) | 10 个可模仿风格：极简开发者、AI Infra 深色、学术、中文产品 UI、高桥流等 |
+| 官方 Skill | [../style-library/official-skill/SKILL.md](../style-library/official-skill/SKILL.md) | Slidev v53 官方 AI Coding Agent Skill，53 个参考文档 |
+| 机器索引 | [../style-library/catalog/slidev-official-catalog.json](../style-library/catalog/slidev-official-catalog.json) | 29 个主题、25 个 Showcase 的结构化索引 |
+| 本地缓存 | `../style-library/{templates,examples,reference-images}/` | 第三方源码与预览图，本地参考，不入库 |
+
+## 二、官方核心资源
 
 | 资源 | 地址 | 说明 |
 | --- | --- | --- |
@@ -17,7 +26,7 @@
 | 免费封面图 | https://cover.sli.dev | Unsplash 精选，1920×1080 webp |
 | Docker 镜像 | https://hub.docker.com/r/tangramor/slidev | 免装环境，`playwright` tag 支持导出 |
 
-## 二、官方主题（5 个）
+## 三、官方主题（5 个）
 
 | 包名 | 风格 | 标签 |
 | --- | --- | --- |
@@ -27,7 +36,7 @@
 | @slidev/theme-bricks | 积木砖块风 | 亮 |
 | @slidev/theme-shibainu | 柴犬插画风 | 暗 |
 
-## 三、社区精选主题（官方画廊策展）
+## 四、社区精选主题（官方画廊策展）
 
 | 主题包 | 特点 |
 | --- | --- |
@@ -49,7 +58,7 @@
 
 安装用法：`npm i slidev-theme-geist` → slides.md 头部 `theme: geist`。
 
-## 四、Add-on 插件生态
+## 五、Add-on 插件生态
 
 | 插件 | 能力 |
 | --- | --- |
@@ -67,7 +76,7 @@
 
 用法：`npm i <包名>` → frontmatter `addons:` 列表加入。
 
-## 五、高质量模板仓库
+## 六、高质量模板仓库
 
 | 仓库 | 说明 |
 | --- | --- |
@@ -79,7 +88,7 @@
 | https://github.com/zcag/tahta | 一行切换整套视觉的设计系统 |
 | https://github.com/espressif/slidev-esp-template | 乐鑫官方模板 |
 
-## 六、周边工具
+## 七、周边工具
 
 | 工具 | 说明 |
 | --- | --- |
@@ -91,7 +100,7 @@
 > ⚠️ 官方 VS Code 扩展（slidevjs/slidev-vscode）已归档停止维护。
 > 用 Slidev 内置网页编辑器（localhost:3030 左栏 Markdown 右栏预览）即可。
 
-## 七、技术栈速览
+## 八、技术栈速览
 
 Markdown + Vue 3 + Vite + UnoCSS + Shiki + Monaco + Mermaid + KaTeX + Iconify + RecordRTC。
 本质：一个由 Markdown 驱动的 Vite 项目，可随意塞 Vue 组件和 npm 包。

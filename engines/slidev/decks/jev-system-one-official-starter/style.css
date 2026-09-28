@@ -1,0 +1,212 @@
+/* HyperFrames-inspired motion accents for the official Seriph starter deck. */
+
+/* High-contrast dark presentation surface.
+   The official Seriph starter defaults to a light canvas; the HyperFrames motion
+   layer and technical diagrams read much better on a deliberate dark surface. */
+.slidev-layout {
+  position: relative;
+  color: #e7f0f5;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(38, 67, 83, 0.92), transparent 58%),
+    radial-gradient(circle at 84% 82%, rgba(58, 42, 91, 0.72), transparent 62%),
+    linear-gradient(145deg, #08111a 0%, #060c13 52%, #05090f 100%);
+}
+
+/* Keep remote photographic covers from reducing title readability. */
+.slidev-layout.cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(180deg, rgba(4, 8, 13, 0.72), rgba(4, 8, 13, 0.58) 45%, rgba(4, 8, 13, 0.78)),
+    radial-gradient(circle at 72% 24%, rgba(78, 197, 212, 0.12), transparent 58%);
+  pointer-events: none;
+}
+
+.slidev-layout.cover > * {
+  position: relative;
+  z-index: 1;
+}
+
+.slidev-layout h1,
+.slidev-layout h2,
+.slidev-layout h3 {
+  color: #f4f9fb;
+}
+
+.slidev-layout h1 {
+  text-shadow: 0 2px 22px rgba(0, 0, 0, 0.35);
+}
+
+.slidev-layout strong,
+.slidev-layout b {
+  color: #ffffff;
+}
+
+.slidev-layout a {
+  color: #84e5f0;
+  border-color: rgba(132, 229, 240, 0.55);
+}
+
+.hf-title-lockup {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+  text-shadow: 0 2px 24px rgba(0, 0, 0, 0.28);
+}
+
+.hf-title-lockup h1,
+.hf-title-lockup h2 {
+  margin: 0;
+}
+
+.hf-title-lockup h2 {
+  margin-top: 0.75rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 1.5rem;
+}
+
+.hf-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 112px;
+  padding: 1rem;
+  border: 1px solid color-mix(in srgb, #5d8392 30%, transparent);
+  border-radius: 0.75rem;
+  background:
+    linear-gradient(145deg, rgba(93, 131, 146, 0.22), rgba(8, 17, 26, 0.72)),
+    rgba(8, 17, 26, 0.82);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.24);
+  transform-style: preserve-3d;
+}
+
+.hf-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.20), transparent);
+  transform: skewX(-18deg);
+  animation: hf-card-sheen 3.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  pointer-events: none;
+}
+
+.hf-card-accent {
+  border-color: rgba(78, 197, 212, 0.46);
+  box-shadow:
+    0 0 0 1px rgba(78, 197, 212, 0.10),
+    0 18px 46px rgba(78, 197, 212, 0.12);
+}
+
+.primitive-card {
+  min-height: 158px;
+}
+
+.primitive-card:hover {
+  border-color: rgba(78, 197, 212, 0.55);
+  box-shadow:
+    0 0 0 1px rgba(78, 197, 212, 0.12),
+    0 22px 54px rgba(78, 197, 212, 0.14);
+}
+
+.metric-card {
+  min-height: 104px;
+}
+
+.metric-card b,
+.metric-card .hfx-animated-number {
+  display: block;
+  color: #8ce8f7;
+  font-family: "PT Mono", ui-monospace, monospace;
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+}
+
+.hf-meter-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.hf-meter-stack {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.slidev-layout pre {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(132, 229, 240, 0.22);
+  background: #060d14 !important;
+  color: #edf7fb !important;
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.26);
+}
+
+.slidev-layout pre code {
+  color: #edf7fb;
+  text-shadow: none;
+}
+
+/* Shiki's default dark punctuation (#666) is too dim on this deck's
+   near-black code surface. Promote only those neutral token spans. */
+.slidev-layout pre span[style*="--shiki-dark: #666666"] {
+  color: #c5d3de !important;
+}
+
+.slidev-layout :not(pre) > code {
+  border-radius: 0.25rem;
+  background: rgba(132, 229, 240, 0.10);
+  color: #a8ecf6 !important;
+}
+
+.slidev-layout table {
+  color: #e4edf3;
+}
+
+.slidev-layout th {
+  color: #b9d4de;
+  background: rgba(132, 229, 240, 0.08);
+}
+
+.slidev-layout td,
+.slidev-layout th {
+  border-color: rgba(148, 175, 190, 0.28);
+}
+
+.slidev-layout blockquote {
+  border-color: rgba(132, 229, 240, 0.45);
+  background: rgba(132, 229, 240, 0.07);
+  color: #dff3f8;
+}
+
+.slidev-layout pre::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -80%;
+  width: 45%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.10), transparent);
+  transform: skewX(-18deg);
+  animation: hf-card-sheen 4.6s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  pointer-events: none;
+}
+
+@keyframes hf-card-sheen {
+  0% { left: -80%; }
+  45%, 100% { left: 145%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hf-card::after,
+  .slidev-layout pre::after {
+    animation: none;
+    opacity: 0;
+  }
+}

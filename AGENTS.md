@@ -22,3 +22,4 @@
 ## Slidev 引擎
 
 生产规则、QA 底线、已知坑见 `engines/slidev/AGENTS.md`；生态与语法见 `engines/slidev/docs/`。
+用户已有 PPT 大纲时，先读 `engines/slidev/style-library/STYLE-SEEDS.md` 选一个风格种子，再按该引擎流程创建 deck；需要精细模仿时读取对应本地源码与预览。

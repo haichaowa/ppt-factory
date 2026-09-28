@@ -1,0 +1,32 @@
+### Result
+[{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true},{"badCount":0,"bad":[],"overlay":true}]
+### Ran Playwright code
+```js
+await (async (page) => {
+  const results=[];
+  await page.goto('http://127.0.0.1:4173/',{waitUntil:'networkidle'});
+  for(let i=1;i<=23;i++){
+    await page.evaluate(n=>{history.pushState({},'',`/${n}?clicks=0`);window.dispatchEvent(new PopStateEvent('popstate'))},i);
+    await page.waitForTimeout(800);
+    results.push(await page.evaluate(()=>{
+      const root=document.querySelector('#slide-content')||document.body;
+      const rr=root.getBoundingClientRect(); const bad=[];
+      for(const el of root.querySelectorAll('*')){
+        const s=getComputedStyle(el); if(s.display==='none'||s.visibility==='hidden')continue;if(String(el.className).startsWith('hfx-'))continue;
+        const r=el.getBoundingClientRect(); if(!r.width||!r.height)continue;
+        const overBottom=r.bottom-rr.bottom, overRight=r.right-rr.right;
+        if(overBottom>2||overRight>2)bad.push({tag:el.tagName.toLowerCase(),cls:String(el.className).slice(0,80),text:(el.textContent||'').trim().slice(0,50),overBottom:Math.round(overBottom),overRight:Math.round(overRight)});
+      }
+      return {badCount:bad.length,bad:bad.slice(0,10),overlay:!!document.querySelector('.hfx-overlay')};
+    }));
+  }
+  return results;
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4173/23?clicks=0
+- Page Title: 10 分钟看懂 Jev - Slidev
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-09-27T07-29-57-784Z.log#L10-L18

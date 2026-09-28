@@ -5,3 +5,9 @@ slides-export.pptx
 *.pdf
 *.pptx
 .DS_Store
+
+# Slidev style library: third-party source/image cache stays local-only.
+# Curated docs, catalog, style seeds, and the official skill snapshot are tracked.
+style-library/templates/
+style-library/examples/
+style-library/reference-images/

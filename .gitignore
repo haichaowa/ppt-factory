@@ -6,3 +6,6 @@ desktop.ini
 
 # 运行时状态（不入库）
 .omc/
+
+# Browser automation snapshots
+.playwright-cli/

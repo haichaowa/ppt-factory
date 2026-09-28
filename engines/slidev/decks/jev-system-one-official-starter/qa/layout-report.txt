@@ -1,0 +1,31 @@
+### Result
+[{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]},{"title":"10 分钟看懂 Jev - Slidev","badCount":0,"bad":[]}]
+### Ran Playwright code
+```js
+await (async (page) => {
+  const results = [];
+  for (let i = 1; i <= 22; i++) {
+    await page.goto(`http://localhost:3031/${i}`, { waitUntil: 'networkidle' });
+    await page.waitForTimeout(120);
+    results.push(await page.evaluate(() => {
+      const root = document.querySelector('#slide-content') || document.body;
+      const rootRect = root.getBoundingClientRect();
+      const bad = [];
+      for (const el of root.querySelectorAll('*')) {
+        const style = getComputedStyle(el);
+        if (style.display === 'none' || style.visibility === 'hidden') continue;
+        const r = el.getBoundingClientRect();
+        if (!r.width || !r.height) continue;
+        const overBottom = r.bottom - rootRect.bottom;
+        const overRight = r.right - rootRect.right;
+        if (overBottom > 2 || overRight > 2) bad.push({ tag: el.tagName.toLowerCase(), cls: String(el.className).slice(0, 80), text: (el.textContent || '').trim().slice(0, 50), overBottom: Math.round(overBottom), overRight: Math.round(overRight) });
+      }
+      return { title: document.title, badCount: bad.length, bad: bad.slice(0, 10) };
+    }));
+  }
+  return results;
+}
+)(page);
+```
+### Events
+- New console entries: .playwright-cli/console-2026-09-27T05-13-50-507Z.log#L415-L612

@@ -26,6 +26,7 @@ engines/slidev/
 │   ├── cn-takahashi/   #   高桥流大字报
 │   └── cn-dracula/     #   暗色代码风
 ├── decks/              # 你的演示文稿（每场一个目录）
+├── style-library/      # 官方 Theme/Showcase 风格素材库（AI 选风格与模仿用）
 ├── docs/
 │   ├── RESOURCES.md    # 生态资源大全（主题/插件/模板仓库索引）
 │   ├── GUIDE.md        # 从零到发布实操指南
@@ -59,7 +60,7 @@ engines/slidev/
 | @slidev/theme-apple-basic | Apple Keynote 风 | （按需） |
 
 新增主题：`npm i slidev-theme-xxx` → slides.md 头部 `theme: xxx`。
-完整生态索引见 **[docs/RESOURCES.md](docs/RESOURCES.md)**。
+完整生态索引见 **[docs/RESOURCES.md](docs/RESOURCES.md)**。已有大纲时，先在 **[style-library/STYLE-SEEDS.md](style-library/STYLE-SEEDS.md)** 选风格种子，再创建 deck。
 
 ## 更多文档
 

@@ -18,6 +18,7 @@ AI Native 的**多引擎** PPT 生成系统：前沿智能体（Claude Code / Co
 ppt-factory/
 ├── engines/
 │   └── slidev/            # Slidev 引擎：5 套中文模板 + 脚手架 + 导出链路（自带工具链）
+│       └── style-library/ # 官方主题/Showcase 风格种子与本地参考源码
 ├── templates/base/        # HTML 引擎资产：skeleton.html + base.css + runtime.js
 │   └── themes/            # 主题 = 单文件 CSS 变量组（dark-glow、minimal-light）
 ├── patterns/              # 布局模式库：12 种模式片段 + patterns.css + 速查表

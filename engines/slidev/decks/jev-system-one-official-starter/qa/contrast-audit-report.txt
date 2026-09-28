@@ -1,0 +1,68 @@
+### Result
+[{"slide":1,"badCount":0,"bad":[]},{"slide":2,"badCount":0,"bad":[]},{"slide":3,"badCount":0,"bad":[]},{"slide":4,"badCount":0,"bad":[]},{"slide":5,"badCount":0,"bad":[]},{"slide":6,"badCount":0,"bad":[]},{"slide":7,"badCount":0,"bad":[]},{"slide":8,"badCount":0,"bad":[]},{"slide":9,"badCount":0,"bad":[]},{"slide":10,"badCount":0,"bad":[]},{"slide":11,"badCount":0,"bad":[]},{"slide":12,"badCount":0,"bad":[]},{"slide":13,"badCount":0,"bad":[]},{"slide":14,"badCount":0,"bad":[]},{"slide":15,"badCount":0,"bad":[]},{"slide":16,"badCount":0,"bad":[]},{"slide":17,"badCount":0,"bad":[]},{"slide":18,"badCount":0,"bad":[]},{"slide":19,"badCount":0,"bad":[]},{"slide":20,"badCount":0,"bad":[]},{"slide":21,"badCount":0,"bad":[]},{"slide":22,"badCount":0,"bad":[]},{"slide":23,"badCount":0,"bad":[]}]
+### Ran Playwright code
+```js
+await (async (page) => {
+  await page.goto('http://127.0.0.1:4173/', { waitUntil: 'networkidle' });
+  const results = [];
+  for (let slide = 1; slide <= 23; slide++) {
+    await page.evaluate(n => {
+      history.pushState({}, '', `/${n}?clicks=99`);
+      window.dispatchEvent(new PopStateEvent('popstate'));
+    }, slide);
+    await page.waitForTimeout(slide === 1 || slide === 7 || slide === 13 || slide === 15 || slide === 16 ? 1000 : 280);
+    const audit = await page.evaluate(() => {
+      function parseColor(value) {
+        const m = value.match(/rgba?\(([^)]+)\)/);
+        if (!m) return null;
+        const p = m[1].split(',').map(x => Number.parseFloat(x));
+        return { r: p[0], g: p[1], b: p[2], a: p.length > 3 ? p[3] : 1 };
+      }
+      function effectiveBg(el) {
+        let node = el;
+        while (node && node instanceof Element) {
+          const c = parseColor(getComputedStyle(node).backgroundColor);
+          if (c && c.a > 0.55) return c;
+          node = node.parentElement;
+        }
+        return { r: 0, g: 0, b: 0, a: 1 };
+      }
+      function lum(c) {
+        const f = [c.r, c.g, c.b].map(v => {
+          v /= 255;
+          return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4;
+        });
+        return 0.2126 * f[0] + 0.7152 * f[1] + 0.0722 * f[2];
+      }
+      function contrast(a, b) {
+        const l1 = lum(a), l2 = lum(b);
+        return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
+      }
+      const bad = [];
+      for (const el of document.querySelectorAll('#slide-content *')) {
+        const text = [...el.childNodes].filter(n => n.nodeType === 3).map(n => n.textContent.trim()).join(' ');
+        if (!text) continue;
+        const r = el.getBoundingClientRect();
+        if (!r.width || !r.height || r.bottom < 0 || r.top > innerHeight) continue;
+        const style = getComputedStyle(el);
+        if (style.visibility === 'hidden' || style.display === 'none' || Number(style.opacity) === 0) continue;
+        const fg = parseColor(style.color);
+        const bg = effectiveBg(el);
+        if (!fg) continue;
+        const ratio = contrast(fg, bg);
+        if (ratio < 4.5) bad.push({ text: text.slice(0, 70), color: style.color, bg: `rgb(${bg.r},${bg.g},${bg.b})`, ratio: Number(ratio.toFixed(2)) });
+      }
+      return bad.sort((a,b) => a.ratio-b.ratio).slice(0, 12);
+    });
+    results.push({ slide, badCount: audit.length, bad: audit });
+  }
+  return results;
+}
+)(page);
+```
+### Page
+- Page URL: http://127.0.0.1:4173/23?clicks=99
+- Page Title: 10 分钟看懂 Jev - Slidev
+- Console: 1 errors, 0 warnings
+### Events
+- New console entries: .playwright-cli/console-2026-09-27T07-30-59-918Z.log#L10-L18

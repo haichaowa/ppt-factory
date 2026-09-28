@@ -1,0 +1,142 @@
+[
+  {
+    "id": "minimal-developer",
+    "name": "Minimal Developer",
+    "useFor": ["technical sharing", "open source", "API introduction"],
+    "primaryExample": "examples/official-slidev-demos/starter/slides.md",
+    "themes": ["@slidev/theme-default"],
+    "keywords": ["clean", "code-first", "low decoration", "clear hierarchy"],
+    "imitationRules": [
+      "one core idea per slide",
+      "large titles and restrained accent colors",
+      "use code line highlighting and v-click reveals",
+      "avoid decorative clutter"
+    ]
+  },
+  {
+    "id": "elegant-technical-keynote",
+    "name": "Elegant Technical Keynote",
+    "useFor": ["conference keynote", "product launch", "developer event"],
+    "primaryExample": "examples/antfu-talks/2021-04-29/src/slides.md",
+    "themes": ["@slidev/theme-seriph"],
+    "keywords": ["conference", "photographic cover", "serif display", "formal"],
+    "imitationRules": [
+      "use a strong cover image with a readable overlay",
+      "create ceremonial section dividers",
+      "synchronize code animations with the spoken narrative",
+      "keep content pages calm"
+    ]
+  },
+  {
+    "id": "ai-infra-dark",
+    "name": "AI Infra Dark",
+    "useFor": ["AI platform", "cloud native", "architecture", "data-intensive engineering"],
+    "primaryExample": "examples/baizeai-talks/packages/2025-06-11-kubecon-hk/slides.md",
+    "themes": ["slidev-theme-tahta", "slidev-theme-geist"],
+    "keywords": ["dark", "design tokens", "architecture", "metrics", "engineering"],
+    "imitationRules": [
+      "standardize nodes, connectors, cards, and chart colors",
+      "keep text contrast accessible on dark backgrounds",
+      "make each metrics slide support one conclusion",
+      "use consistent spacing and border tokens"
+    ]
+  },
+  {
+    "id": "visual-research-narrative",
+    "name": "Visual Research Narrative",
+    "useFor": ["security research", "reverse engineering", "investigation"],
+    "primaryExample": "examples/denuvo-slides/slides.md",
+    "themes": ["slidev-theme-dracula"],
+    "keywords": ["research", "evidence", "screenshots", "dark contrast"],
+    "imitationRules": [
+      "build a clear evidence timeline",
+      "crop and annotate screenshots precisely",
+      "connect technical fragments to a storyline",
+      "avoid drowning the conclusion in raw evidence"
+    ]
+  },
+  {
+    "id": "formal-academic",
+    "name": "Formal Academic",
+    "useFor": ["paper", "course", "academic report"],
+    "primaryExample": "examples/dev-environment-as-code/slides.md",
+    "themes": ["slidev-theme-academic", "slidev-theme-hep"],
+    "keywords": ["academic", "citation", "figures", "stable"],
+    "imitationRules": [
+      "clarify question, method, experiment, and conclusion",
+      "number figures and cite sources",
+      "use precise language instead of marketing language",
+      "maintain a restrained color palette"
+    ]
+  },
+  {
+    "id": "friendly-education",
+    "name": "Friendly Education",
+    "useFor": ["teaching", "bootcamp", "beginner explanation"],
+    "primaryExample": "examples/py-intro/slides.md",
+    "themes": ["@slidev/theme-bricks", "slidev-theme-neversink"],
+    "keywords": ["light", "friendly", "progressive", "icons"],
+    "imitationRules": [
+      "one knowledge point per slide",
+      "introduce code examples progressively",
+      "use checklists and exercises",
+      "prefer approachable illustrations and spacing"
+    ]
+  },
+  {
+    "id": "chinese-product-ui",
+    "name": "Chinese Product UI",
+    "useFor": ["Chinese product introduction", "dashboard", "Naive UI", "enterprise software"],
+    "primaryExample": "examples/naive-ui-ppt-template/slides.md",
+    "themes": ["slidev-theme-tahta", "slidev-theme-geist"],
+    "keywords": ["Chinese", "product", "componentized", "UI"],
+    "imitationRules": [
+      "use slightly larger Chinese type and short paragraphs",
+      "standardize product screenshot framing",
+      "explain capability boundaries with cards and tables",
+      "avoid translated English boilerplate"
+    ]
+  },
+  {
+    "id": "hand-drawn-whiteboard",
+    "name": "Hand-drawn Whiteboard",
+    "useFor": ["workshop", "solution discussion", "consulting"],
+    "primaryExample": "examples/hacker-numerology/slides.md",
+    "themes": ["slidev-theme-excali-slide"],
+    "keywords": ["hand-drawn", "informal", "thinking process", "markers"],
+    "imitationRules": [
+      "use thick strokes and marker-style emphasis",
+      "favor diagrams over polished gradients",
+      "show problem decomposition",
+      "keep the visual voice intentionally informal"
+    ]
+  },
+  {
+    "id": "svg-diagram-editorial",
+    "name": "SVG / Diagram Editorial",
+    "useFor": ["graphics", "visualization", "design system"],
+    "primaryExample": "examples/intro-to-svg/slides.md",
+    "themes": ["slidev-theme-light-icons"],
+    "keywords": ["diagram", "editorial", "light", "visual explanation"],
+    "imitationRules": [
+      "make the diagram the protagonist",
+      "unify line weight, color, and captions",
+      "place code and rendered result side by side",
+      "use whitespace to separate visual steps"
+    ]
+  },
+  {
+    "id": "large-type-impact",
+    "name": "Large-Type Impact",
+    "useFor": ["opinion talk", "launch", "low-text keynote"],
+    "primaryExample": "templates/community-theme-packages/src/slidev-theme-takahashi",
+    "themes": ["slidev-theme-takahashi", "@slidev/theme-apple-basic"],
+    "keywords": ["large type", "few words", "rhythm", "impact"],
+    "imitationRules": [
+      "one phrase or number per slide",
+      "put narration in presenter notes",
+      "use transitions to form an argument chain",
+      "remove secondary text"
+    ]
+  }
+]
