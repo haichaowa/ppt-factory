@@ -1,2 +1,6 @@
-aa261337ba206afe5b169519276be6f5d51424439fca1baf562a7e84885a5d21  archive/openai-home.mhtml
-fe220d96785dfadfef8305fdd7af3d04714cb76c55a97bb2183a47251792edcd  archive/dom.html
+db8c38366d69b63985266bea48c861fae12970516f55d9910565f95229d6d731  ./computed-styles-mobile.json
+b058de71b81954f767a49f5785e7bdfd2a0ae1faaa50ea3ce4b01e919b17183a  ./computed-styles-probe.json
+fe220d96785dfadfef8305fdd7af3d04714cb76c55a97bb2183a47251792edcd  ./dom.html
+aa261337ba206afe5b169519276be6f5d51424439fca1baf562a7e84885a5d21  ./openai-home.mhtml
+c53100563b9d289efeebb6f826a20c566578e1337e3096e298eb9da5ecc2e498  ./robots.txt
+760279ce4c4b7fb7d23fd6f1303998c1fe2feb0c333a225f0d24f9c16909077e  ./selected-computed-styles.json
