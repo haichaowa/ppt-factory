@@ -1,0 +1,319 @@
+{
+  "collection": "HTML5 UP responsive site templates",
+  "captured_at": "2026-09-30 (Asia/Shanghai)",
+  "source_homepage": "https://html5up.net/",
+  "license_page": "https://html5up.net/license",
+  "license": "Creative Commons Attribution 3.0 Unported",
+  "download_method": "Official per-template ZIP endpoint (https://html5up.net/<slug>/download), extracted without modification",
+  "template_count": 44,
+  "entries": [
+    {
+      "slug": "aerial",
+      "source_url": "https://html5up.net/aerial/download",
+      "archive_size_bytes": 1624880,
+      "archive_sha256": "666836c601eca5a5e89fcb82ba147e0cdd6b45b1502fd66981e87397cd9d0fcd",
+      "extracted_path": "source/aerial/"
+    },
+    {
+      "slug": "alpha",
+      "source_url": "https://html5up.net/alpha/download",
+      "archive_size_bytes": 1624448,
+      "archive_sha256": "f0f15fbbbdc7a1ad0ab62fb47bf92ec9662d0dc052f06ad1fd483e94e7b6bcaf",
+      "extracted_path": "source/alpha/"
+    },
+    {
+      "slug": "arcana",
+      "source_url": "https://html5up.net/arcana/download",
+      "archive_size_bytes": 1517919,
+      "archive_sha256": "91b299a151a8d7f86543a7925d7ac2556b93a4892c70957ecea6b8704ad82dde",
+      "extracted_path": "source/arcana/"
+    },
+    {
+      "slug": "astral",
+      "source_url": "https://html5up.net/astral/download",
+      "archive_size_bytes": 1513832,
+      "archive_sha256": "c80a9456fa3e9f10a8fb5df4810172854f03b3765cf677da31545f15a08f1633",
+      "extracted_path": "source/astral/"
+    },
+    {
+      "slug": "big-picture",
+      "source_url": "https://html5up.net/big-picture/download",
+      "archive_size_bytes": 1995017,
+      "archive_sha256": "10549f9a696094e7890e36b574c16c423fb9a132a1d5d74657e63405971bdcaf",
+      "extracted_path": "source/big-picture/"
+    },
+    {
+      "slug": "dimension",
+      "source_url": "https://html5up.net/dimension/download",
+      "archive_size_bytes": 1485137,
+      "archive_sha256": "b3f851c45a7f379b777745ebbf176f1f42e06e6292d730c192877e3b22d10e3f",
+      "extracted_path": "source/dimension/"
+    },
+    {
+      "slug": "directive",
+      "source_url": "https://html5up.net/directive/download",
+      "archive_size_bytes": 1501257,
+      "archive_sha256": "4affb2bb98cdad9a1b8d533f208fa620407768c29289174c4111dd6bd5fc5bd2",
+      "extracted_path": "source/directive/"
+    },
+    {
+      "slug": "dopetrope",
+      "source_url": "https://html5up.net/dopetrope/download",
+      "archive_size_bytes": 1609643,
+      "archive_sha256": "39b1458368b540bd77047b4e4fdf42db1c1cf6342fdbcaf8c947ce88511de349",
+      "extracted_path": "source/dopetrope/"
+    },
+    {
+      "slug": "editorial",
+      "source_url": "https://html5up.net/editorial/download",
+      "archive_size_bytes": 1774932,
+      "archive_sha256": "a7c4a436f9d7e8b7046b23826c3fdc8572a9506f9c0b377f0d77cc52b5062831",
+      "extracted_path": "source/editorial/"
+    },
+    {
+      "slug": "escape-velocity",
+      "source_url": "https://html5up.net/escape-velocity/download",
+      "archive_size_bytes": 1687162,
+      "archive_sha256": "039b060647f1629ada161e5206dea4b4bead89d0be749af1d166b26c295c7510",
+      "extracted_path": "source/escape-velocity/"
+    },
+    {
+      "slug": "ethereal",
+      "source_url": "https://html5up.net/ethereal/download",
+      "archive_size_bytes": 1762389,
+      "archive_sha256": "8de201340097da6c6db85cb4c5eed233676662c56df04285455f6f678509febc",
+      "extracted_path": "source/ethereal/"
+    },
+    {
+      "slug": "eventually",
+      "source_url": "https://html5up.net/eventually/download",
+      "archive_size_bytes": 1799395,
+      "archive_sha256": "6149d510f479ee075ae4e898a49c72280563ed43e68c9eb58355bdd58a475106",
+      "extracted_path": "source/eventually/"
+    },
+    {
+      "slug": "forty",
+      "source_url": "https://html5up.net/forty/download",
+      "archive_size_bytes": 2236776,
+      "archive_sha256": "ee11c65936eb9cfd14ebb46d7ad69bcea34b73f85e74b5b45ac2c9aacd99e24f",
+      "extracted_path": "source/forty/"
+    },
+    {
+      "slug": "fractal",
+      "source_url": "https://html5up.net/fractal/download",
+      "archive_size_bytes": 1495854,
+      "archive_sha256": "9c88661f5c213e642c338f9fa9897d0be8001395d0f4738e9a9952e6acb5705c",
+      "extracted_path": "source/fractal/"
+    },
+    {
+      "slug": "future-imperfect",
+      "source_url": "https://html5up.net/future-imperfect/download",
+      "archive_size_bytes": 1538370,
+      "archive_sha256": "3126bb682a9851faa3a881b3b12f518552542188823448f9f6181a39f3c961ad",
+      "extracted_path": "source/future-imperfect/"
+    },
+    {
+      "slug": "halcyonic",
+      "source_url": "https://html5up.net/halcyonic/download",
+      "archive_size_bytes": 116503,
+      "archive_sha256": "06a25d3a9a05b0222136aead54833e31f0e417895edc2fe98623119952c1a066",
+      "extracted_path": "source/halcyonic/"
+    },
+    {
+      "slug": "helios",
+      "source_url": "https://html5up.net/helios/download",
+      "archive_size_bytes": 1772436,
+      "archive_sha256": "ed342e053c75dda7b99f37a2ece50cd502840a907602c8335d97dab36b94adad",
+      "extracted_path": "source/helios/"
+    },
+    {
+      "slug": "highlights",
+      "source_url": "https://html5up.net/highlights/download",
+      "archive_size_bytes": 1496533,
+      "archive_sha256": "ba329107fa600a2f40128a41069fc096da5899eed3eb58191f132d98383dea0f",
+      "extracted_path": "source/highlights/"
+    },
+    {
+      "slug": "hyperspace",
+      "source_url": "https://html5up.net/hyperspace/download",
+      "archive_size_bytes": 1472285,
+      "archive_sha256": "aeab533d6c10bda0aa8b47ce7f60f6adb3f7b0ba879b351cfb24948e4a001a39",
+      "extracted_path": "source/hyperspace/"
+    },
+    {
+      "slug": "landed",
+      "source_url": "https://html5up.net/landed/download",
+      "archive_size_bytes": 1555204,
+      "archive_sha256": "a921828b601d9f989d596fee9c276064448b02fffbd3ecd399b09c602678a67f",
+      "extracted_path": "source/landed/"
+    },
+    {
+      "slug": "lens",
+      "source_url": "https://html5up.net/lens/download",
+      "archive_size_bytes": 2239963,
+      "archive_sha256": "3adeb26b2fd2d0bc14ff929bf422382bc766bf00da2eff4a4fc22e25e09305a9",
+      "extracted_path": "source/lens/"
+    },
+    {
+      "slug": "massively",
+      "source_url": "https://html5up.net/massively/download",
+      "archive_size_bytes": 2065870,
+      "archive_sha256": "98ef745001f695509d5f63573c98000d5af8d238c74cc656368351d10adff2c5",
+      "extracted_path": "source/massively/"
+    },
+    {
+      "slug": "minimaxing",
+      "source_url": "https://html5up.net/minimaxing/download",
+      "archive_size_bytes": 1520513,
+      "archive_sha256": "4e89837177094d7ca28c5b11e86520f2f6c6ea45c2474296caa6d953ea698100",
+      "extracted_path": "source/minimaxing/"
+    },
+    {
+      "slug": "miniport",
+      "source_url": "https://html5up.net/miniport/download",
+      "archive_size_bytes": 1500024,
+      "archive_sha256": "1a006dee7023e44e074f62787d69ebf002d59ed787b62dfda0955d52de410824",
+      "extracted_path": "source/miniport/"
+    },
+    {
+      "slug": "multiverse",
+      "source_url": "https://html5up.net/multiverse/download",
+      "archive_size_bytes": 2053285,
+      "archive_sha256": "3666a9ccd87c741084c5825fb585be2ed2ebb026482130ab8d203ccbd835e963",
+      "extracted_path": "source/multiverse/"
+    },
+    {
+      "slug": "paradigm-shift",
+      "source_url": "https://html5up.net/paradigm-shift/download",
+      "archive_size_bytes": 1830228,
+      "archive_sha256": "781c7a8413ff7f6ed45b8349fcbd142d8777cecd80ef02dba9b0b2144e9e51ed",
+      "extracted_path": "source/paradigm-shift/"
+    },
+    {
+      "slug": "parallelism",
+      "source_url": "https://html5up.net/parallelism/download",
+      "archive_size_bytes": 1801103,
+      "archive_sha256": "1e3a2f0a3e7f3bc9bffc8c100aef230f040ed7a683dca7b0c49aed393dfd045a",
+      "extracted_path": "source/parallelism/"
+    },
+    {
+      "slug": "phantom",
+      "source_url": "https://html5up.net/phantom/download",
+      "archive_size_bytes": 1525610,
+      "archive_sha256": "9b05587549c5346f787b16e845372bde3bf69436fb7f2926aecfe78d969f2201",
+      "extracted_path": "source/phantom/"
+    },
+    {
+      "slug": "photon",
+      "source_url": "https://html5up.net/photon/download",
+      "archive_size_bytes": 1563926,
+      "archive_sha256": "3c17498c5eb9c340d01682d6ff6333f7d22eb67da4e0255ee39b0d2458ec4474",
+      "extracted_path": "source/photon/"
+    },
+    {
+      "slug": "prologue",
+      "source_url": "https://html5up.net/prologue/download",
+      "archive_size_bytes": 1709007,
+      "archive_sha256": "f2b4e619844be29237b0d53627a9df042ce9cb6e19079184893e0f556773a371",
+      "extracted_path": "source/prologue/"
+    },
+    {
+      "slug": "read-only",
+      "source_url": "https://html5up.net/read-only/download",
+      "archive_size_bytes": 1552532,
+      "archive_sha256": "ab06232c6edcd79000f70f3c7e184bad8172a0d73511d47dac3af86aff1edad3",
+      "extracted_path": "source/read-only/"
+    },
+    {
+      "slug": "solid-state",
+      "source_url": "https://html5up.net/solid-state/download",
+      "archive_size_bytes": 1529401,
+      "archive_sha256": "c8d5e1586874c7ca6d020aff0e7fc81d1c4cfd8c0b264c43dc12bbce6c0d9c0f",
+      "extracted_path": "source/solid-state/"
+    },
+    {
+      "slug": "spectral",
+      "source_url": "https://html5up.net/spectral/download",
+      "archive_size_bytes": 1486213,
+      "archive_sha256": "204995d6899c42560849ca4d781bb9ff8176a3a278afa3c65905c525c2ac1c72",
+      "extracted_path": "source/spectral/"
+    },
+    {
+      "slug": "stellar",
+      "source_url": "https://html5up.net/stellar/download",
+      "archive_size_bytes": 1603356,
+      "archive_sha256": "4934fe819da48e6104014cc76b6bfdcdc4b8570f01e4cf4b2cf682b51ec16438",
+      "extracted_path": "source/stellar/"
+    },
+    {
+      "slug": "story",
+      "source_url": "https://html5up.net/story/download",
+      "archive_size_bytes": 1700827,
+      "archive_sha256": "d21639f64bf00c89ce2068e4d3dab113759435a250cc70144318a8e945627ec8",
+      "extracted_path": "source/story/"
+    },
+    {
+      "slug": "strata",
+      "source_url": "https://html5up.net/strata/download",
+      "archive_size_bytes": 1516243,
+      "archive_sha256": "2aaca119437d3b342f36b87192172f878ee9a87982b293375b3eb3a3f59b7422",
+      "extracted_path": "source/strata/"
+    },
+    {
+      "slug": "striped",
+      "source_url": "https://html5up.net/striped/download",
+      "archive_size_bytes": 1450505,
+      "archive_sha256": "e99fb92b11254b69fde9933bce77dec30d9f61758ce3d8423b330b1baf7dfa02",
+      "extracted_path": "source/striped/"
+    },
+    {
+      "slug": "strongly-typed",
+      "source_url": "https://html5up.net/strongly-typed/download",
+      "archive_size_bytes": 1560751,
+      "archive_sha256": "4d4672fa9ff54520fb10f267dee96f0dc6d2c13c5db578177f1d0cb7d9879661",
+      "extracted_path": "source/strongly-typed/"
+    },
+    {
+      "slug": "telephasic",
+      "source_url": "https://html5up.net/telephasic/download",
+      "archive_size_bytes": 1599165,
+      "archive_sha256": "7468ff5043db65dad32087ddcc9eda4cb30f4eb42158d45d794c135b2acdb7e8",
+      "extracted_path": "source/telephasic/"
+    },
+    {
+      "slug": "tessellate",
+      "source_url": "https://html5up.net/tessellate/download",
+      "archive_size_bytes": 1638887,
+      "archive_sha256": "93d00782c187ba9db1576fc8df409e9d3cc51609c1ee2fe97c8c9e9dffbd0068",
+      "extracted_path": "source/tessellate/"
+    },
+    {
+      "slug": "twenty",
+      "source_url": "https://html5up.net/twenty/download",
+      "archive_size_bytes": 1598921,
+      "archive_sha256": "c934667966b54146fd9d6b62d730d7c3a058024659c7a35bb93b6b10cd29dcf6",
+      "extracted_path": "source/twenty/"
+    },
+    {
+      "slug": "txt",
+      "source_url": "https://html5up.net/txt/download",
+      "archive_size_bytes": 1576589,
+      "archive_sha256": "391224e20fe6055fc65de5c2a6d93ed6c823966e33e97629be352f4bda3e1dbe",
+      "extracted_path": "source/txt/"
+    },
+    {
+      "slug": "verti",
+      "source_url": "https://html5up.net/verti/download",
+      "archive_size_bytes": 1477144,
+      "archive_sha256": "281a4eabbdd4e66275616143ea7c33114c5791c7acd11c1e0e34f81f44d9bc15",
+      "extracted_path": "source/verti/"
+    },
+    {
+      "slug": "zerofour",
+      "source_url": "https://html5up.net/zerofour/download",
+      "archive_size_bytes": 1489330,
+      "archive_sha256": "7da26a9ed1b24d011eb577ec56dde01d9c90bc87e2031963a598218c30914fd5",
+      "extracted_path": "source/zerofour/"
+    }
+  ]
+}
