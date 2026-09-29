@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.ImageScatter-module__gHmnja__scatter { width: 100%; max-width: 40.625rem; aspect-ratio: var(--scatter-ratio); isolation: isolate; margin: 0px auto; padding: 0px; list-style: none; position: relative; }
+
+.ImageScatter-module__gHmnja__photo { left: var(--desktop-left); top: var(--desktop-top); width: var(--desktop-width); aspect-ratio: 1 / 1; position: absolute; transform: translate(-50%, -50%); }
+
+.ImageScatter-module__gHmnja__entrance { --enter-transform: var(--desktop-enter-transform); width: 100%; height: 100%; transform: rotate(var(--rotation)); }
+
+.ImageScatter-module__gHmnja__picture { corner-shape: squircle; background: rgb(229, 229, 229); border-radius: 13%; width: 100%; height: 100%; position: relative; overflow: hidden; box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 4px; }
+
+.ImageScatter-module__gHmnja__photo img { object-fit: cover; max-width: none; position: absolute; }
+
+@media (max-width: 767px) {
+  .ImageScatter-module__gHmnja__entrance { --enter-transform: var(--mobile-enter-transform); }
+  .ImageScatter-module__gHmnja__scatter { max-width: 25rem; aspect-ratio: var(--mobile-ratio); }
+  .ImageScatter-module__gHmnja__photo { left: var(--mobile-left); top: var(--mobile-top); width: var(--mobile-width); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ImageScatter-module__gHmnja__entrance { opacity: 1 !important; transform: rotate(var(--rotation)) !important; }
+  .ImageScatter-module__gHmnja__picture { transform: none !important; }
+}

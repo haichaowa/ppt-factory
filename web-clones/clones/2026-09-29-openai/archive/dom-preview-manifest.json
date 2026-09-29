@@ -1,0 +1,671 @@
+{
+  "generatedFrom": "dom.raw.html",
+  "mhtmlResourceFiles": [
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/7gq9TtEoObNfTco2uH48q8/3b7813b2b5c5bce4a22a45a7220ac3f7/antibiotic-hero-1x1-preview.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/7gq9TtEoObNfTco2uH48q8/3b7813b2b5c5bce4a22a45a7220ac3f7/antibiotic-hero-1x1-preview.webp",
+      "contentType": "image/webp",
+      "bytes": 336962
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/7bhGkj1QoCeQpqYhTldQLx/b84d760a2f127d930cc2dec9f3d59e17/tbb-retouched-art-card-1260x1260.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/7bhGkj1QoCeQpqYhTldQLx/b84d760a2f127d930cc2dec9f3d59e17/tbb-retouched-art-card-1260x1260.webp",
+      "contentType": "image/webp",
+      "bytes": 663324
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6nM6RNbnqtlPZZQDx71iMm/46843eaee86998217108580d428ea457/atv-hero-square-x480.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6nM6RNbnqtlPZZQDx71iMm/46843eaee86998217108580d428ea457/atv-hero-square-x480.webp",
+      "contentType": "image/webp",
+      "bytes": 66184
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2uvvRNdvFkdWWXNtANgtAF/36e0f8b6a0c35abf88eec71519823409/Option_70___1080_1080.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2uvvRNdvFkdWWXNtANgtAF/36e0f8b6a0c35abf88eec71519823409/Option_70___1080_1080.webp",
+      "contentType": "image/webp",
+      "bytes": 3330
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5iHLTPM4ZhKe4dAwOPfpy2/347b9d804542685bb13dbb63e985d91e/c3f562e2b08a0bfc.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5iHLTPM4ZhKe4dAwOPfpy2/347b9d804542685bb13dbb63e985d91e/c3f562e2b08a0bfc.webp",
+      "contentType": "image/webp",
+      "bytes": 2454
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4PcDbhz75I70TjyGat7oHl/598dd1e865018860c3591cb95c9bc72e/paul-christiano-joins-openai-foundation-board--cover-v001.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4PcDbhz75I70TjyGat7oHl/598dd1e865018860c3591cb95c9bc72e/paul-christiano-joins-openai-foundation-board--cover-v001.webp",
+      "contentType": "image/webp",
+      "bytes": 3032
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4vshYjPreJaZEO8O7sSTFX/e61e1b0c2f67305b55171ae3cc8042b8/introducing-astra-for-law-art-card.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4vshYjPreJaZEO8O7sSTFX/e61e1b0c2f67305b55171ae3cc8042b8/introducing-astra-for-law-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 2788
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/7I8A6x8LfZld8C8IZUbZmi/6c9da8e137ce049fb07e486958636739/advisory-group-on-mathematics-and-artificial-intelligence-cover.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/7I8A6x8LfZld8C8IZUbZmi/6c9da8e137ce049fb07e486958636739/advisory-group-on-mathematics-and-artificial-intelligence-cover.webp",
+      "contentType": "image/webp",
+      "bytes": 1952
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/Tc4KzRhOgVSaIxQoUkr9R/25c2cf38c314d47e6f3cb93e54e382aa/two-years-of-openai-academy-cover.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/Tc4KzRhOgVSaIxQoUkr9R/25c2cf38c314d47e6f3cb93e54e382aa/two-years-of-openai-academy-cover.webp",
+      "contentType": "image/webp",
+      "bytes": 2740
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6C1icjo4Zz6MzpbQl1K2qx/8bf8ec06aae235d81019c24f6098d2f0/images2point5_1-1c.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6C1icjo4Zz6MzpbQl1K2qx/8bf8ec06aae235d81019c24f6098d2f0/images2point5_1-1c.webp",
+      "contentType": "image/webp",
+      "bytes": 49590
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/1GVQAEpVME68kCI7Ol2ApW/abde191546741612492ae27f9baf7f3e/Mental_Health_Bench__art_card.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/1GVQAEpVME68kCI7Ol2ApW/abde191546741612492ae27f9baf7f3e/Mental_Health_Bench__art_card.webp",
+      "contentType": "image/webp",
+      "bytes": 172012
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4HANTuYDvaT04gpR91bEQ9/885481304c5675cb7525bcccbe8c5580/gpt-6-sol-luna-art.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4HANTuYDvaT04gpR91bEQ9/885481304c5675cb7525bcccbe8c5580/gpt-6-sol-luna-art.webp",
+      "contentType": "image/webp",
+      "bytes": 32896
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6aziMFlkfqPiaNdkZujHdo/74adba940d8bc2c3d9f7e500c71298ab/astra_16x9_poster.png?w=3840&q=50&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6aziMFlkfqPiaNdkZujHdo/74adba940d8bc2c3d9f7e500c71298ab/astra_16x9_poster.webp",
+      "contentType": "image/webp",
+      "bytes": 36290
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1str9kb7mkyey.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1str9kb7mkyey.css",
+      "contentType": "text/css",
+      "bytes": 18948
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1vsqvqpe0lwsi.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1vsqvqpe0lwsi.css",
+      "contentType": "text/css",
+      "bytes": 982
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1x81ox1s98glr.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1x81ox1s98glr.css",
+      "contentType": "text/css",
+      "bytes": 1502
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/2i3baeuj560v6.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/2i3baeuj560v6.css",
+      "contentType": "text/css",
+      "bytes": 1505
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0y9_y8-vlpmn1.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0y9_y8-vlpmn1.css",
+      "contentType": "text/css",
+      "bytes": 20588
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0whxqe136feku.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0whxqe136feku.css",
+      "contentType": "text/css",
+      "bytes": 820
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/011mcu7n6v7o0.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/011mcu7n6v7o0.css",
+      "contentType": "text/css",
+      "bytes": 11109
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/199w-v6wvp-zb.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/199w-v6wvp-zb.css",
+      "contentType": "text/css",
+      "bytes": 20096
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0vpmvteqf0--a.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0vpmvteqf0--a.css",
+      "contentType": "text/css",
+      "bytes": 12234
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/2l52jy6w7p63y.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/2l52jy6w7p63y.css",
+      "contentType": "text/css",
+      "bytes": 11321
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1-0v7irv1xbxy.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1-0v7irv1xbxy.css",
+      "contentType": "text/css",
+      "bytes": 4306
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/13orfpld2_45i.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/13orfpld2_45i.css",
+      "contentType": "text/css",
+      "bytes": 3643
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0a73uk6y55u29.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0a73uk6y55u29.css",
+      "contentType": "text/css",
+      "bytes": 6386
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3xkhp5vbrznv4.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3xkhp5vbrznv4.css",
+      "contentType": "text/css",
+      "bytes": 1051
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3es0xkx0wn55l.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3es0xkx0wn55l.css",
+      "contentType": "text/css",
+      "bytes": 4753
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3bdopauhhn_cb.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3bdopauhhn_cb.css",
+      "contentType": "text/css",
+      "bytes": 827
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/42_5c41x-nzpx.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/42_5c41x-nzpx.css",
+      "contentType": "text/css",
+      "bytes": 7441
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0j6dvdpebovbg.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0j6dvdpebovbg.css",
+      "contentType": "text/css",
+      "bytes": 1010
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0h-tu49j5vys7.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0h-tu49j5vys7.css",
+      "contentType": "text/css",
+      "bytes": 73
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/02qavatj933a5.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/02qavatj933a5.css",
+      "contentType": "text/css",
+      "bytes": 584
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0ja1ygm1247x2.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0ja1ygm1247x2.css",
+      "contentType": "text/css",
+      "bytes": 495
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3om74s_avintz.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3om74s_avintz.css",
+      "contentType": "text/css",
+      "bytes": 1380
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/2isg9z8c0-vwn.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/2isg9z8c0-vwn.css",
+      "contentType": "text/css",
+      "bytes": 1230
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3u9xgevl828vu.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3u9xgevl828vu.css",
+      "contentType": "text/css",
+      "bytes": 2139
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3joiz7zi61a_s.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3joiz7zi61a_s.css",
+      "contentType": "text/css",
+      "bytes": 42236
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/2_uro-h4j39cs.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/2_uro-h4j39cs.css",
+      "contentType": "text/css",
+      "bytes": 6626
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0ifi67wxrbsaq.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0ifi67wxrbsaq.css",
+      "contentType": "text/css",
+      "bytes": 74248
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/09t9in8h8h9yd.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/09t9in8h8h9yd.css",
+      "contentType": "text/css",
+      "bytes": 1546
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/38cm2tkepwr00.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/38cm2tkepwr00.css",
+      "contentType": "text/css",
+      "bytes": 11544
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3k2g3v_uak-u1.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3k2g3v_uak-u1.css",
+      "contentType": "text/css",
+      "bytes": 1492
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/371m1wkroup7c.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/371m1wkroup7c.css",
+      "contentType": "text/css",
+      "bytes": 16699
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3eufk0rkpuppb.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3eufk0rkpuppb.css",
+      "contentType": "text/css",
+      "bytes": 12116
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3l0fumx68x--b.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3l0fumx68x--b.css",
+      "contentType": "text/css",
+      "bytes": 2628
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1kvjjz1x6tgww.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1kvjjz1x6tgww.css",
+      "contentType": "text/css",
+      "bytes": 2797
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1c3l7ofa-vr4e.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1c3l7ofa-vr4e.css",
+      "contentType": "text/css",
+      "bytes": 107
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/2sbytptrrrh6y.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/2sbytptrrrh6y.css",
+      "contentType": "text/css",
+      "bytes": 2895
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/23fky70g62fni.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/23fky70g62fni.css",
+      "contentType": "text/css",
+      "bytes": 545
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3ws6s-63hssiy.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3ws6s-63hssiy.css",
+      "contentType": "text/css",
+      "bytes": 420
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1tgbyp7p0zd23.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1tgbyp7p0zd23.css",
+      "contentType": "text/css",
+      "bytes": 80831
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/1-1-jr7c_rq9d.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/1-1-jr7c_rq9d.css",
+      "contentType": "text/css",
+      "bytes": 136657
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/3ez7pbd98c89h.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/3ez7pbd98c89h.css",
+      "contentType": "text/css",
+      "bytes": 612193
+    },
+    {
+      "source": "https://openai.com/_next/static/immutable/chunks/0kbvo8tm6c3-5.css",
+      "local": "dom-assets/openai.com/_next/static/immutable/chunks/0kbvo8tm6c3-5.css",
+      "contentType": "text/css",
+      "bytes": 135895
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=3840&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "fetchedForPreview": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2VUQZfeF2GtKRitKYdkoLu/cc96d05424afb2c9adcca0734ecdafb1/navier-stokes-art-card.webp",
+      "contentType": "image/webp",
+      "bytes": 13140,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/5kS3OG1Jfdja5xLmYcRwgr/f53b9dfe985df5969aff5dc41f2d1934/Art_Card__7_.webp",
+      "contentType": "image/webp",
+      "bytes": 83948,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/2zkd5RIOug4FcEj62mdSF4/3ea9e19c0456289c69f0d839cc929cb2/math-breakthroughs_art-card_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 175672,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/3STNMQMrFRC8mFdLYtjkV4/9cc21e9c729b2ae7cdf75aa3f49b3033/modelml-card.webp",
+      "contentType": "image/webp",
+      "bytes": 208816,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/4G2F8rchz4lfJxdQGBYEb0/e367ed4f9ac0a5cfe505ddb1eed20393/oai_VirginAtlantic_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 284854,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=750&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=640&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=828&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=2048&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=1920&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=1200&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    },
+    {
+      "source": "https://images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.png?w=1080&q=90&fm=webp",
+      "local": "dom-assets/images.ctfassets.net/kftzwdyauwt9/6HUH0KlGRmTuI2IZ6h334C/3c78b804553f7184f6d72c9b33a668c3/oai_Zapier_1x1.webp",
+      "contentType": "image/webp",
+      "bytes": 154220,
+      "variantRewrite": true
+    }
+  ]
+}

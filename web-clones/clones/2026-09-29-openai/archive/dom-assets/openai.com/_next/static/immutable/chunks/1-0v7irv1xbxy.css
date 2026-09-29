@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.CosmosPartitionFigure-module__HvRqSq__board { isolation: isolate; min-width: calc(var(--spacing,.25rem) * 144); padding-block: calc(var(--spacing,.25rem) * 6); contain: inline-size; position: relative; }
+
+.CosmosPartitionFigure-module__HvRqSq__diagram { width: 100%; height: auto; max-width: var(--container-3xl,48rem); display: block; }
+
+.CosmosPartitionFigure-module__HvRqSq__diagram text { fill: var(--color-primary-100,var(--color-primary-100)); font-family: var(--font-mono,"SF Mono", Consolas, "Liberation Mono", ui-monospace, monospace); letter-spacing: var(--type-xs-track); font-size: var(--text-xs,.75rem); line-height: var(--tw-leading,var(--text-xs--line-height,calc(1 / .75))); --tw-font-weight: var(--font-weight-semibold,600); font-weight: var(--font-weight-semibold,600); dominant-baseline: middle; }
+
+.CosmosPartitionFigure-module__HvRqSq__diagram .CosmosPartitionFigure-module__HvRqSq__secondary { fill: var(--color-primary-60,var(--color-primary-60)); }
+
+.CosmosPartitionFigure-module__HvRqSq__conversations { color: rgb(184, 117, 0); }
+
+.CosmosPartitionFigure-module__HvRqSq__auth { color: rgb(0, 133, 122); }
+
+.CosmosPartitionFigure-module__HvRqSq__dreaming { color: rgb(44, 103, 197); }
+
+.CosmosPartitionFigure-module__HvRqSq__container > rect, .CosmosPartitionFigure-module__HvRqSq__client > rect { fill: var(--color-background,var(--color-background)); stroke: var(--color-primary-100,var(--color-primary-100)); }
+
+.CosmosPartitionFigure-module__HvRqSq__container .CosmosPartitionFigure-module__HvRqSq__partition { fill: var(--color-primary-4,var(--color-primary-4)); }
+
+.CosmosPartitionFigure-module__HvRqSq__client > rect { stroke-width: 1.3px; }
+
+.CosmosPartitionFigure-module__HvRqSq__container .CosmosPartitionFigure-module__HvRqSq__cell { fill: currentcolor; stroke: var(--color-primary-44,var(--color-primary-44)); stroke-width: 0.8px; }
+
+.CosmosPartitionFigure-module__HvRqSq__packet { fill: currentcolor; }
+
+.CosmosPartitionFigure-module__HvRqSq__halo { fill: var(--color-background,var(--color-background)); }
+
+.CosmosPartitionFigure-module__HvRqSq__response { fill: var(--color-background,var(--color-background)); stroke: currentcolor; stroke-width: 1.7px; }
+
+.CosmosPartitionFigure-module__HvRqSq__response .CosmosPartitionFigure-module__HvRqSq__halo { stroke: none; }
+
+.CosmosPartitionFigure-module__HvRqSq__rejected circle { fill: var(--color-background,var(--color-background)); stroke: currentcolor; stroke-width: 1.7px; }
+
+.CosmosPartitionFigure-module__HvRqSq__rejected path { stroke: var(--color-primary-100,var(--color-primary-100)); stroke-width: 1.4px; stroke-linecap: round; }
+
+.CosmosPartitionFigure-module__HvRqSq__rejected text { stroke: var(--color-background,var(--color-background)); letter-spacing: var(--type-xs-track); font-size: var(--text-xs,.75rem); line-height: var(--tw-leading,var(--text-xs--line-height,calc(1 / .75))); --tw-font-weight: var(--font-weight-semibold,600); font-weight: var(--font-weight-semibold,600); stroke-width: 3px; paint-order: stroke; }
+
+.CosmosPartitionFigure-module__HvRqSq__container.CosmosPartitionFigure-module__HvRqSq__overloaded .CosmosPartitionFigure-module__HvRqSq__containerOutline { stroke: var(--color-brand-red-700); stroke-width: 2.5px; }
+
+.CosmosPartitionFigure-module__HvRqSq__diagram .CosmosPartitionFigure-module__HvRqSq__overloadLabel { fill: var(--color-brand-red-700); font-family: var(--font-mono,"SF Mono", Consolas, "Liberation Mono", ui-monospace, monospace); font-size: var(--text-sm,.875rem); line-height: var(--tw-leading,var(--text-sm--line-height,calc(1.25 / .875))); --tw-font-weight: var(--font-weight-semibold,600); font-weight: var(--font-weight-semibold,600); }
+
+.CosmosPartitionFigure-module__HvRqSq__diagram .CosmosPartitionFigure-module__HvRqSq__sectionTitle { font-family: var(--font-sans,"OpenAI Sans", "OpenAI Sans Variable Scripts", sans-serif); font-feature-settings: var(--font-sans--font-feature-settings,"liga" on, "calt" on); font-size: var(--type-p2-size); line-height: var(--type-p2-line); letter-spacing: var(--type-p2-track); text-wrap: pretty; --tw-font-weight: var(--font-weight-semibold,600); font-weight: var(--font-weight-semibold,600); }
+
+@property --tw-font-weight { syntax: "*"; inherits: false; }

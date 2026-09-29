@@ -9,4 +9,4 @@ Quick review order:
 5. `archive/README.md` — MHTML/DOM/style evidence and fidelity limits.
 6. `review-log.md` — three mandatory review rounds and remaining gaps.
 
-The MHTML is the primary preservation artifact. If a local browser stalls while reopening it, use the three full-page PNGs plus `archive/dom.html`; the MHTML structure and resources are independently inventoried in `archive/mhtml-manifest.json` and checked in `archive/verification.json`.
+The MHTML is the primary preservation artifact. If a local browser stalls while reopening it, use `archive/dom.html`; its visible CSS/images are local and verified to render under `file://` in `archive/mhtml-manifest.json` and checked in `archive/verification.json`.

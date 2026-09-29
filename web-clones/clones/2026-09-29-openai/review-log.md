@@ -111,3 +111,18 @@ What is still not guaranteed:
 4. Optional `remake/` was intentionally skipped to spend the remaining quality budget on archive verification rather than adding an approximate imitation.
 
 For PPT use, the black/white token system and grid/card logic are ready for human theme extraction; this batch does not modify `templates/`, `patterns/`, or `decks/`.
+
+## Post-review usability fix — 2026-09-30 07:37
+
+User-reported issue: opening `archive/dom.html` directly rendered incorrectly. Root causes were confirmed in the raw `outerHTML` snapshot: it lacked `<!doctype html>`, root-relative CSS resolved to nonexistent `file://` paths, hydration scripts were unsafe under `file://`, and lazy media depended on runtime observers.
+
+Fixes:
+
+1. Preserved the untouched capture as `archive/dom.raw.html`.
+2. Rebuilt `archive/dom.html` as a static preview in standards mode.
+3. Extracted 42 CSS files and 13 MHTML images to `archive/dom-assets/`.
+4. Fetched the 6 additional image paths referenced only after the original full-page lazy-load pass and mapped every srcset variant locally.
+5. Removed 108 runtime/hydration scripts and converted lazy images to eager loading.
+6. Added `dom-preview-manifest.json`, refreshed manifests/checksums/verification, and updated documentation.
+
+Chromium verification at 1440px: `CSS1Compat`, 44 stylesheets, 20/20 images loaded, no incomplete images, and key homepage sections present. No P0/P1 remains.

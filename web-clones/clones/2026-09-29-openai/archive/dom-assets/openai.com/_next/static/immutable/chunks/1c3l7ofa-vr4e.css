@@ -1,0 +1,3 @@
+@charset "utf-8";
+
+article:has(.styles-module__tx2GMa__layer) { isolation: isolate; position: relative; }

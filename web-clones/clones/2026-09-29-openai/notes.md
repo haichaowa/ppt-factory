@@ -1,6 +1,6 @@
 # OpenAI 首页设计拆解（2026-09-29）
 
-> 证据来源：`archive/openai-home.mhtml`、`archive/dom.html`、
+> 证据来源：`archive/openai-home.mhtml`、`archive/dom.raw.html`（原始序列化）与 `archive/dom.html`（可浏览静态版）、
 > `archive/computed-styles-probe.json`（1440px）、`archive/computed-styles-mobile.json`（375px）、
 > `archive/selected-computed-styles.json`。本文数值均为浏览器真实 computed style，非目测。
 

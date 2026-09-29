@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.styles-module__75rLAq__frame { user-select: none; touch-action: pan-y pinch-zoom; }
+
+.styles-module__75rLAq__divider { pointer-events: none; background: rgb(255, 255, 255); width: 2px; position: absolute; inset-block: 0px; transform: translate(-50%); box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 0px 1px; }
+
+.styles-module__75rLAq__handle { pointer-events: none; color: rgb(0, 0, 0); background: rgb(255, 255, 255); border-radius: 50%; justify-content: center; align-items: center; width: 44px; height: 44px; display: flex; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 12px; }
+
+.styles-module__75rLAq__dragTarget { opacity: 0; cursor: ew-resize; touch-action: none; width: 44px; height: 44px; margin: 0px; position: absolute; top: 50%; transform: translate(-50%, -50%); }
+
+.styles-module__75rLAq__frame:has(.styles-module__75rLAq__slider:focus-visible) .styles-module__75rLAq__handle { box-shadow: rgb(0, 0, 0) 0px 0px 0px 2px, rgb(255, 255, 255) 0px 0px 0px 4px, rgba(0, 0, 0, 0.18) 0px 2px 12px; }
+
+.styles-module__75rLAq__labels { color: rgb(255, 255, 255); text-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px; pointer-events: none; justify-content: space-between; gap: 16px; font-size: 12px; display: flex; position: absolute; inset: 16px 16px auto; }
+
+@media not (min-width: 48rem) {
+  .styles-module__75rLAq__labels { line-height: 1.25; inset: 8px 8px auto; }
+  .styles-module__75rLAq__handle { transform: translate(-50%, -50%) scale(0.6364); }
+}
