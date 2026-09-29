@@ -24,3 +24,15 @@
 ### 来源选择结论
 
 官方端点恢复后，最终来源统一采用 `html5up.net/<slug>/download`，未混用 GitHub 镜像或 Wayback 快照。这样可以保证 44 套模板的下载方式、许可文本和作者署名来自同一权威来源，也让 `download-manifest.json` 的 SHA-256 具有一致解释。
+
+### 交付前检查
+
+- [x] 44/44 官方 ZIP SHA-256 对账
+- [x] 44/44 `LICENSE.txt` 与 `README.txt`
+- [x] 110 个顶层页面清单
+- [x] 6 张代表截图与源码页面一一对应
+- [x] 15 个 PPT Factory pattern 全部映射
+- [x] 导览页 0 error / 0 warning，1440/900/560/390px 无横向溢出
+- [x] 3 轮复审记录与修复提交
+- [ ] 真人目检导览页与截图视觉效果
+- [ ] 产品侧决定是否试装建议 token

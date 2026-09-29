@@ -293,3 +293,27 @@ PPT Factory 当前 `templates/base/base.css` 已有 `--bg`、`--bg-soft`、`--fg
 - **可读性红线**：图像上的文字必须有遮罩或改成文字侧布局；正文对比度优先于氛围。
 - **克制动效**：借鉴 0.2s / 0.5s 的节奏分级，不引入滚动视差这类与 PPT 场景无关的交互。
 - **源码隔离**：外部源码保留在 `html-references/`，进入 PPT Factory 的只能是抽象结论、token 值和自写实现。
+
+## 9. 交付边界与下一步决策
+
+### 已经可直接使用
+
+- 本地参考库：44 套官方模板、110 页面、许可证与作者署名完整。
+- 设计拆解：token、色板、字体、间距、响应式、组件规范和局限均有源码锚点。
+- PPT Factory 映射：15 个现有 pattern 均有迁移建议，但未修改任何产品源码。
+- 导览：`../index.html` 可作为本地入口，零脚本、零外部资源。
+
+### 尚需产品决策
+
+1. 是否把 `--overlay`、`--surface-alt`、`--border-soft`、`--control-height`、`--radius-pill`、`--kicker-tracking`、`--duration-fast`、`--section-space` 纳入未来主题 schema。
+2. 是否先试装一个 “Forty Corporate” 或 “Story Narrative” 主题样张，再决定是否扩展变量。
+3. `assertion-evidence` 是否引入 spotlight 式左右交替；若引入，需要规定偶数页/奇数页的交替规则。
+4. `metrics` 是否接受序列色阶；若接受，应固定色序，禁止随机取色。
+5. 是否为 `cover` 增加统一遮罩 token，而不是每页手写渐变。
+
+### 明确不迁移
+
+- 不复制 HTML5 UP 的整页 HTML/CSS/JS。
+- 不引入 jQuery、旧浏览器前缀或外部 Google Fonts。
+- 不把 demo 表单、假联系方式、`#` 链接和 Lorem ipsum 当作生产内容。
+- 不把 44 套模板的重复资产打进 PPT Factory。

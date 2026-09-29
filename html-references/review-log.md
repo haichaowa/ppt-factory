@@ -145,3 +145,84 @@
 ### 诚实自评
 
 本轮后，导览页和文档已经达到“本地可直接使用”的水平：链接、校验、阅读路径、故障处理和可访问性细节都齐备。仍未达到“直接发布”的原因是：外部 HTML5 UP 源码本身包含旧依赖和 demo 占位内容，只适合作为参考库而非生产模板；PPT Factory 映射还停留在设计建议，没有生成试装样张；最终是否采纳新增主题 token，需要产品侧决策。
+
+## 2026-09-30 · HTML5 UP · 第 3 轮复审（最终轮）
+
+### 已检查文件
+
+- `html-references/README.md`
+- `html-references/BACKLOG.md`
+- `html-references/INDEX.md`
+- `html-references/LOG.md`
+- `html-references/PROGRESS.md`
+- `html-references/review-log.md`
+- `html-references/index.html`
+- `html-references/collections/2026-09-30-html5up/meta.md`
+- `html-references/collections/2026-09-30-html5up/preview.md`
+- `html-references/collections/2026-09-30-html5up/notes.md`
+- `html-references/collections/2026-09-30-html5up/download-manifest.json`
+- `html-references/collections/2026-09-30-html5up/screenshots/README.md`
+- `html-references/collections/2026-09-30-html5up/screenshots/dimension-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/editorial-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/forty-landing-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/massively-elements-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/massively-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/story-index-1440x900.png`
+- `patterns/README.md`
+- `patterns/cover.html`
+- `patterns/claim.html`
+- `patterns/section.html`
+- `patterns/narrative-map.html`
+- `patterns/assertion-evidence.html`
+- `patterns/bullets.html`
+- `patterns/two-col.html`
+- `patterns/metrics.html`
+- `patterns/timeline.html`
+- `patterns/steps.html`
+- `patterns/quote.html`
+- `patterns/code.html`
+- `patterns/table.html`
+- `patterns/image-text.html`
+- `patterns/end.html`
+- `templates/base/base.css`
+
+### 最终自动检查
+
+- Manifest：44 条、44 个唯一 slug、44/44 SHA-256 匹配。
+- 源码：44 模板、110 页面、2,438 文件、150,470,994 bytes；无 `node_modules/dist/build/.git`。
+- 版权：44/44 `LICENSE.txt`、44/44 `README.txt`。
+- Notes：第 2 节 44/44 模板与页面名一致；15 个 patterns 全部有映射。
+- 截图：6 张 1440×900 PNG，SHA-256 与截图索引一致。
+- 导览页：无脚本、无外部资产；本地链接全部存在；1440/900/560/390px 无横向溢出；0 error / 0 warning。
+- 仓库边界：`templates/`、`patterns/`、`decks/` 在本轮均未被修改。
+
+### 本轮修复（≥5 处 P2）
+
+1. `html-references/index.html`：外部来源与许可证链接增加 `target="_blank"`、`rel="noopener noreferrer"`，避免本地导览被外部页面替换，并降低反向 tab-nabbing 风险。
+2. `html-references/collections/2026-09-30-html5up/notes.md`：新增“交付边界与下一步决策”，明确可直接使用范围、待产品决策项和明确不迁移项。
+3. `html-references/collections/2026-09-30-html5up/meta.md`：新增 6 项真人验收清单，把后续人工检查从口头要求落成可勾选流程。
+4. `html-references/INDEX.md`：索引行补充复审记录入口，方便验收者直接查看三轮检查证据。
+5. `html-references/LOG.md`：新增交付前检查清单，区分已完成自动验证与仍需真人/产品决策的事项。
+6. `html-references/PROGRESS.md`：复审循环更新为 3 轮完成、P0/P1 为 0，并明确剩余事项不阻塞本地使用。
+
+### 四维评分
+
+| 维度 | 分数 | 说明 |
+|---|---:|---|
+| 正确性 | 5 | 来源、许可证、哈希、页面清单、链接、渲染和控制台均逐项复核。 |
+| 完整性 | 5 | 阶段 1–6、3 轮复审、索引、日志、进度和截图索引全部完成。 |
+| 精致度 | 5 | 导览页、截图索引、预览排障、阅读路线和验收清单均已打磨。 |
+| 可用性 | 5 | 首次接触者可从导览页直达代表页、拆解、映射、校验和复审记录。 |
+
+### 问题分级与状态
+
+- P0：0
+- P1：0
+- P2：本轮已修复 6 处；无阻断或明显缺陷。
+- 后续非本轮缺口：真人视觉验收、真实 deck 试装、主题 token 产品决策。
+
+### 最终诚实自评
+
+这份 HTML5 UP 参考库已经达到“本地可直接使用”的交付标准：来源权威、许可证与署名完整、44 套源码可浏览、110 页清单准确、6 张截图可对照、设计系统拆解有源码证据、15 个 PPT Factory pattern 均有映射建议，导览页零依赖且经过响应式与控制台验证。
+
+它还不是“可直接发布的产品资产”：外部源码包含旧 jQuery、重复资产、demo 表单和占位内容，不能整体进入 PPT Factory；映射结论也尚未用真实 deck 试装验证。若要进入产品，下一步应先按 `notes.md` 第 9 节选择一个主题方向，生成一页 `cover` + 一页 `assertion-evidence` + 一页 `metrics` 的试装样张，再决定是否扩展主题 token。若只是作为设计参考库，当前产物已经可以直接使用。
