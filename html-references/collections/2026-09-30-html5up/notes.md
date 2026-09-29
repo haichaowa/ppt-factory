@@ -222,3 +222,58 @@ $palette:  (bg, bg-alt, fg, fg-bold, fg-light, border, accent, invert ...)
 4. `source/dimension/`：看全屏封面、遮罩、锚点导航与面板式内容。
 5. `source/story/`：看长滚动叙事、画廊、响应式 padding 阶梯。
 6. `source/twenty/` 与 `source/minimaxing/`：看多列页面族的降级方式。
+
+## 8. PPT Factory 可复用映射（仅建议，不改源码）
+
+> 本节只提出迁移方案；本轮没有修改 `templates/`、`patterns/`、`decks/`。HTML5 UP 代码为 CC BY 3.0，迁移时应提炼版式与 token，不复制整段 CSS/HTML。
+
+### 8.1 patterns/ 版式映射
+
+| PPT Factory pattern | HTML5 UP 来源思路 | 具体迁移方式 |
+|---|---|---|
+| `cover` | Dimension 的全屏遮罩封面、Massively 的大图首屏、Story 的长滚动开头 | 保留 16:9 全幅背景图；新增主题级 `overlay` 概念，标题区限制在安全宽度内。主标题、副标题、CTA 三层信息用字号 + 透明度区分，避免在图片上直接加复杂渐变。 |
+| `claim` | Forty landing 的强 CTA 与单一主张、Spectral 的分区标题 | 用一个高对比背景 + 一条 accent 下划线承载核心主张；行动按钮使用现有卡片变量。标题不超过两行，行动文案 ≤8 字。 |
+| `section` | Story / Massively 的交替背景与 uppercase kicker | 章节页可引入“编号 + 小标签 + 大标题”的节奏：编号用 mono/accent-2，标签用 0.2em 字距，标题保持大字号；相邻章节使用 `bg` / `bg-soft` 交替。 |
+| `narrative-map` | Story 的色彩分段与滚动叙事、Forty 的模块 accent | 四个阶段绑定固定色序，不再等权排版。建议“问题”最弱、“转折”最亮、“行动”带边框或填充，形成视觉优先级。 |
+| `assertion-evidence` | Forty / Editorial 的 spotlight 图文交替 | 证据图占 44–50%，文字侧保持 20–24em 可读宽度；标题必须是结论句，证据下方保留来源。左右交替可用于连续论证页，但同一 deck 中交替方向要有规律。 |
+| `bullets` | Editorial / Spectral 的 features 图标列表 | 每条论点可选用图标槽，但图标只做分类提示，不做装饰；同级论点保持同字号、同间距，最多 4 条。 |
+| `two-col` | Twenty / Minimaxing 的多列页面族 | 对比页用两张不同 `card-bg` 或一张填充、一张描边来区分“方案 A/B”；列间 gutter 建议 32–48px，不要让两列内容互相贴边。 |
+| `metrics` | Forty 的 tile 数字卡、Story 的色带序列 | 大数字用 display 字体 + 单一 accent；若指标有时间/顺序，用 accent 色阶表达先后。每个数字必须保留来源行。 |
+| `timeline` | Massively / Future Imperfect 的 date、timestamp、published | 时间用 mono 字体和 `accent-2`，事件标题用 display 字体，说明文字降低到 `fg-dim`；时间线节点可用填充 vs 描边区分关键事件。 |
+| `steps` | Spectral / Forty 的 features 与 tile 排列 | 每步固定“编号 + 短标题 + 一句说明”，箭头只表示方向；步骤超过 4 个时拆页，不压缩字号。 |
+| `quote` | Massively / Story 的 blockquote | 保留 4px 左侧 accent 边框，引用字号接近 h2；引用人与来源分两行，来源使用 caption 样式。 |
+| `code` | Massively elements 的 preformatted 区块 | 代码卡片使用 `card-bg` + 1px `card-border`，行高 1.6；高亮只用于当前讲解行，避免整屏彩虹高亮。 |
+| `table` | Massively / Editorial 的 table-wrapper | 表头用小号 uppercase + accent-2；行分隔用 1px `card-border`，数字列右对齐。若列数超过 5，优先拆分或改用 steps/two-col。 |
+| `image-text` | Forty spotlight、Photon 分屏 | 图片侧不要留白边，文字侧保持 48–64px 内边距；说明文字使用 caption，避免把长段落塞进图片下方。 |
+| `end` | HTML5 UP footer 的 contact-method 与 social icons | 结尾页可复用“致谢 + 联系方式 + 来源/许可”三段结构；若使用外部图像，注明来源，不让 CTA 与版权信息混在同一层级。 |
+
+### 8.2 未来主题 token 草案
+
+PPT Factory 当前 `templates/base/base.css` 已有 `--bg`、`--bg-soft`、`--fg`、`--fg-dim`、`--accent`、`--accent-2`、`--card-*` 等变量。以下只是未来主题建议值，不修改现有文件。
+
+| 主题方向 | 建议变量组 | 来源与适用场景 |
+|---|---|---|
+| **Massively Editorial Light** | `--bg:#ffffff`；`--bg-soft:#f5f5f5`；`--fg:#212931`；`--fg-dim:#717981`；`--accent:#18bfef`；`--card-border:rgba(220,220,220,.5)`；`--card-radius:0px` | Massively。适合白底报告、文章型论证、长文阅读。 |
+| **Dimension Immersive Dark** | `--bg:#1b1f22`；`--bg-soft:rgba(255,255,255,.035)`；`--fg:#ffffff`；`--fg-dim:rgba(255,255,255,.5)`；`--accent:#53e3fb`；`--card-border:rgba(255,255,255,.075)` | Dimension。适合全屏图像封面、舞台感 keynote，但正文页需提高对比。 |
+| **Editorial Docs** | `--bg:#ffffff`；`--bg-soft:#f5f6f7`；`--fg:#3d4449`；`--fg-dim:#7f888f`；`--accent:#f56a6a`；`--card-radius:6px` | Editorial。适合文档、教程、技术分享。 |
+| **Forty Corporate** | `--bg:#242943`；`--bg-soft:#2a2f4a`；`--fg:#ffffff`；`--fg-dim:rgba(244,244,255,.2)`；`--accent:#6fc3df`；`--accent-2:#9bf1ff`；`--card-border:rgba(212,212,255,.1)` | Forty。适合商业提案、产品路线、企业汇报。 |
+| **Story Narrative** | `--bg:#ffffff`；`--bg-soft:#eeeeee`；`--fg:#000000`；`--fg-dim:rgba(0,0,0,.75)`；`--accent:#47d3e5`；`--accent-2:#db8992`；`--card-radius:8px` | Story。适合案例叙事、作品集、调研汇报。 |
+
+### 8.3 建议新增的主题级 token（未来 schema 讨论）
+
+1. `--overlay`: 图像封面/spotlight 的统一遮罩，避免每页手写渐变。
+2. `--surface-alt`: 与 `--bg-soft` 区分的更强分区背景，用于章节交替。
+3. `--border-soft`: 比 `--card-border` 更弱的分隔线，用于表格与列表。
+4. `--control-height`: 统一按钮/输入/标签芯片高度，当前 PPT 场景可用于 CTA 与 badge。
+5. `--radius-pill`: 用于行动按钮、阶段标签或时间线节点。
+6. `--kicker-tracking`: 统一 0.2em 左右的小标签字距。
+7. `--duration-fast`: 按钮与 fragment 的 0.2s 快速反馈。
+8. `--section-space`: 章节页上下留白，建议 64–96px，并保持 8px 倍数。
+
+### 8.4 迁移原则
+
+- **先内容后皮肤**：pattern 负责信息结构，主题只提供 token；不要把 HTML5 UP 的整页背景直接搬进每个 pattern。
+- **单 accent 原则**：默认每页一个主 accent；需要序列时才使用固定色阶。
+- **可读性红线**：图像上的文字必须有遮罩或改成文字侧布局；正文对比度优先于氛围。
+- **克制动效**：借鉴 0.2s / 0.5s 的节奏分级，不引入滚动视差这类与 PPT 场景无关的交互。
+- **源码隔离**：外部源码保留在 `html-references/`，进入 PPT Factory 的只能是抽象结论、token 值和自写实现。
