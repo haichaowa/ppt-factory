@@ -63,3 +63,51 @@
 - Token JSON valid; all archive checksums match.
 - Screenshot dimensions match 1440×6624, 1280×6457, and 375×8695.
 - No P0/P1 remains.
+
+## Round 3 — 2026-09-29 12:05
+
+### Scores (before → after)
+
+| Dimension | Before | After | Reason |
+|---|---:|---:|---|
+| Correctness | 4.9 | 5.0 | Checksum coverage now matches the archive README claim, including manifest and verification files. |
+| Completeness | 4.9 | 5.0 | Top-level manifest and navigation close the review path from artifact to evidence. |
+| Polish | 4.8 | 4.9 | Section captions now include exact pixel dimensions. |
+| Usability | 4.9 | 5.0 | A first-time reviewer has a six-step reading order and fallback if MHTML reopening stalls. |
+
+### P0/P1
+
+- **P1-2 fixed**: after Round 2, `archive/README.md` claimed all archive artifacts were checksummed, but `mhtml-manifest.json` and `verification.json` had not yet been added to `SHA256SUMS`. Both are now covered.
+- No P0 found; no remaining P1.
+
+### P2 fixes (6)
+
+1. Added top-level `README.md` with the intended six-step review order.
+2. Added top-level `MANIFEST.json` listing 25 files and excluding the manifest itself with paths and byte sizes.
+3. Included `mhtml-manifest.json` and `verification.json` in `archive/SHA256SUMS`.
+4. Added exact pixel dimensions to every section caption.
+5. Updated `meta.md` with the measured archive size after Round 2 additions.
+6. Rewrote `web-clones/PROGRESS.md` to remove the stale “next: openai” entry and point to `claude.com/product/claude-code`.
+
+### Post-fix verification
+
+- Required files: 14/14 present.
+- Token JSON valid.
+- MHTML valid multipart with 58 unique resources.
+- Full-page PNG dimensions all match.
+- Five section screenshots present.
+- Top-level manifest present.
+- No P0/P1 remains.
+
+## Honest final assessment
+
+The batch is directly usable as a local design-research asset: the rendered page, three responsive full-page captures, five section captures, DOM, root variables, desktop/mobile computed styles, structured tokens, checksums, and machine verification are all present.
+
+What is still not guaranteed:
+
+1. Local MHTML reopening timed out once in Playwright after this capture, although its 58-resource structure parses cleanly; treat the MHTML as preservation evidence and use the PNG/DOM path for fast review.
+2. MHTML does not guarantee autoplay video bytes; visible-state video/poster fidelity is preserved primarily by the PNG captures.
+3. `OpenAI Sans` is identified but not redistributed; exact typography requires OpenAI’s own licensed font.
+4. Optional `remake/` was intentionally skipped to spend the remaining quality budget on archive verification rather than adding an approximate imitation.
+
+For PPT use, the black/white token system and grid/card logic are ready for human theme extraction; this batch does not modify `templates/`, `patterns/`, or `decks/`.

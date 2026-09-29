@@ -1,0 +1,132 @@
+{
+  "generatedAt": "2026-09-29T12:05:00+08:00",
+  "fileCount": 25,
+  "totalBytes": 13609765,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 820,
+      "kind": "document"
+    },
+    {
+      "path": "archive/README.md",
+      "bytes": 1476,
+      "kind": "document"
+    },
+    {
+      "path": "archive/SHA256SUMS",
+      "bytes": 531,
+      "kind": "document"
+    },
+    {
+      "path": "archive/computed-styles-mobile.json",
+      "bytes": 230389,
+      "kind": "document"
+    },
+    {
+      "path": "archive/computed-styles-probe.json",
+      "bytes": 262931,
+      "kind": "document"
+    },
+    {
+      "path": "archive/dom.html",
+      "bytes": 468749,
+      "kind": "document"
+    },
+    {
+      "path": "archive/mhtml-manifest.json",
+      "bytes": 15121,
+      "kind": "document"
+    },
+    {
+      "path": "archive/openai-home.mhtml",
+      "bytes": 3385520,
+      "kind": "document"
+    },
+    {
+      "path": "archive/robots.txt",
+      "bytes": 98,
+      "kind": "document"
+    },
+    {
+      "path": "archive/selected-computed-styles.json",
+      "bytes": 57401,
+      "kind": "document"
+    },
+    {
+      "path": "archive/verification.json",
+      "bytes": 1142,
+      "kind": "document"
+    },
+    {
+      "path": "meta.md",
+      "bytes": 1514,
+      "kind": "document"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 5524,
+      "kind": "document"
+    },
+    {
+      "path": "review-log.md",
+      "bytes": 3046,
+      "kind": "document"
+    },
+    {
+      "path": "screenshots/README.md",
+      "bytes": 634,
+      "kind": "document"
+    },
+    {
+      "path": "screenshots/openai-home-1280-full.png",
+      "bytes": 2733665,
+      "kind": "image"
+    },
+    {
+      "path": "screenshots/openai-home-1440-full.png",
+      "bytes": 3385088,
+      "kind": "image"
+    },
+    {
+      "path": "screenshots/openai-home-375-full.png",
+      "bytes": 847526,
+      "kind": "image"
+    },
+    {
+      "path": "sections/01-hero-first-experience.png",
+      "bytes": 28724,
+      "kind": "image"
+    },
+    {
+      "path": "sections/02-featured-grid.png",
+      "bytes": 451723,
+      "kind": "image"
+    },
+    {
+      "path": "sections/03-recent-news-grid.png",
+      "bytes": 192820,
+      "kind": "image"
+    },
+    {
+      "path": "sections/04-stories-grid.png",
+      "bytes": 1027624,
+      "kind": "image"
+    },
+    {
+      "path": "sections/05-latest-research.png",
+      "bytes": 500863,
+      "kind": "image"
+    },
+    {
+      "path": "sections/README.md",
+      "bytes": 843,
+      "kind": "document"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 5993,
+      "kind": "document"
+    }
+  ]
+}

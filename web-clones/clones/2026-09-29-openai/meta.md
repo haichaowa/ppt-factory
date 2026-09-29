@@ -6,5 +6,5 @@
 - **robots 核对**：`robots.txt` 对 `User-agent: *` 为 `Allow: /`，仅 `/microsoft-for-startups/` 禁止；本次未抓取该路径。
 - **归档内容**：`archive/openai-home.mhtml`（主归档）、`archive/dom.html`（渲染后 DOM）、`archive/computed-styles-probe.json`（真实计算样式）、`archive/selected-computed-styles.json`（代表性元素样式）、`archive/computed-styles-mobile.json`（375px 响应式计算样式）、`archive/robots.txt`、`archive/mhtml-manifest.json`（资源清单）与 `archive/verification.json`（自动核验）。
 - **截图**：`screenshots/openai-home-1440-full.png`、`screenshots/openai-home-1280-full.png`、`screenshots/openai-home-375-full.png`。
-- **归档体积**：约 10.6 MB（archive 4.0 MB + screenshots 6.6 MB）。
+- **归档体积**：约 12.98 MB：archive 4.22 MB、三档全页截图 6.64 MB、区块截图与说明 2.10 MB。
 - **版权口径**：原站文本、图像、视频、字体与品牌资产版权归 OpenAI；仅供本地设计学习与留存，不二次分发、不商用、不用于训练式复刻发布。
