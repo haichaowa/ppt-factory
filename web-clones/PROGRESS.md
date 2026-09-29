@@ -9,9 +9,13 @@
 - [x] 阶段5：tokens.json 结构化沉淀 + BACKLOG 打勾
 - [x] 阶段6：notes.md 差异自检（结构级）；像素级打磨循环待后续额度补充
 
+## 复审记录
+
+- [x] 第1轮（09:26）：7 处 P2 精修（a11y/间距/hover/页脚），重截图，见 clones/2026-09-29-anthropic/review-log.md
+
 ## 待办 / 下次入口
 
-- [ ] 阶段6 加深：对照 original.png 做 3 轮像素级差异修正（当前完成结构级自检）
+- [ ] 阶段6 加深：对照 original.png 做 3 轮像素级逐区差异修正（第1轮结构级已完成）
 - [ ] 下一个对象：openai.com（Codex）
 
 ## 下次入口
