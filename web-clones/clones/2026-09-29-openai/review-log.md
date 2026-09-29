@@ -31,3 +31,35 @@
 - `python3 -m json.tool tokens.json` passes.
 - PNG dimensions match the documented 1440, 1280, and 375 outputs.
 - No P0/P1 remains.
+
+## Round 2 — 2026-09-29 11:58
+
+### Scores (before → after)
+
+| Dimension | Before | After | Reason |
+|---|---:|---:|---|
+| Correctness | 4.7 | 4.9 | Added machine-readable MHTML structure validation and automated artifact verification. |
+| Completeness | 4.8 | 4.9 | Documented that MHTML preserves HTML/CSS/images but not guaranteed autoplay video bytes. |
+| Polish | 4.6 | 4.8 | Resource inventory, provenance, and review state are now explicit. |
+| Usability | 4.6 | 4.9 | Reviewer can audit completeness without opening every binary manually. |
+
+### P0/P1
+
+- None found.
+
+### P2 fixes (6)
+
+1. Added `archive/mhtml-manifest.json` with all 58 unique resource locations, content types, byte counts, and hashes.
+2. Added `archive/verification.json` to automate required-file, JSON, MHTML, checksum, and PNG dimension checks.
+3. Documented the MHTML fidelity boundary: 1 HTML + 44 CSS + 13 WebP parts; autoplay video bytes are not guaranteed.
+4. Added screenshot provenance: campaign banner dismissed and lazy content scrolled before capture.
+5. Updated `meta.md` to reference the manifest and verification report.
+6. Updated `web-clones/PROGRESS.md` with the complete OpenAI batch state and review entry point.
+
+### Post-fix verification
+
+- `overallPass: true`.
+- Required files: all present.
+- Token JSON valid; all archive checksums match.
+- Screenshot dimensions match 1440×6624, 1280×6457, and 375×8695.
+- No P0/P1 remains.
