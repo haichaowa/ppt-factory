@@ -3,7 +3,7 @@
 > 每天取最上方未完成项。完成打 ✅ 并注明产出目录。
 
 ## AI / 开发者工具官网
-- [ ] anthropic.com（Claude）· 克制的高级感：暖白底、衬线大标题、大量留白
+- [x] anthropic.com（Claude）· 克制的高级感：暖白底、衬线大标题、大量留白 → `clones/2026-09-29-anthropic/`
 - [ ] openai.com（Codex）· 科技叙事：黑白主调、大字号、动效点缀
 - [ ] claude.com/product/claude-code · 开发者工具落地页：代码块视觉、清晰层级
 - [ ] vercel.com · 极客黑白灰：网格、等宽字、微光效

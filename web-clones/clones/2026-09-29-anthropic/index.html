@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cream">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frontier Lab — a style study</title>
+<style>
+/* ============ Design Tokens (extracted 2026-09-29) ============ */
+:root {
+  --bg: #FAF9F5;          /* body cream */
+  --ink: #141413;         /* near-black text */
+  --ink-soft: rgba(20,20,19,.68);
+  --line: rgba(20,20,19,.14);
+  --card: #FFFFFF;
+  --clay: #D97757;        /* signature accent */
+  --clay-soft: rgba(217,119,87,.12);
+  --footer-bg: #141413;
+  --footer-ink: #FAF9F5;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: Georgia, "Times New Roman", "Songti SC", serif;
+  --step--1: 14px; --step-0: 16px; --step-1: 20px; --step-2: 24px;
+  --step-3: 32px; --step-4: 44px; --step-5: 58px;
+  --space-1: 8px; --space-2: 16px; --space-3: 24px; --space-4: 40px;
+  --space-5: 64px; --space-6: 96px; --space-7: 144px;
+  --radius: 8px;
+  --ease: cubic-bezier(.22,.61,.21,1);
+  --dur: .5s;
+}
+[data-theme="dark"] {
+  --bg: #161614; --ink: #F4F1E8; --ink-soft: rgba(244,241,232,.66);
+  --line: rgba(244,241,232,.16); --card: #1D1D1A;
+  --footer-bg: #0E0E0C; --footer-ink: #F4F1E8;
+}
+[data-theme="clay"] {
+  --bg: #F3E9E2; --ink: #3D2318; --ink-soft: rgba(61,35,24,.7);
+  --line: rgba(61,35,24,.16); --card: #FBF5F1;
+  --clay: #B4472E; --clay-soft: rgba(180,71,46,.12);
+  --footer-bg: #3D2318; --footer-ink: #F3E9E2;
+}
+
+/* ============ Base ============ */
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: var(--serif); font-size: var(--step-1); line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+::selection { background: var(--clay); color: var(--bg); }
+.wrap { max-width: 1200px; margin: 0 auto; padding: 0 40px; }
+a { color: inherit; text-decoration: none; }
+
+/* ============ Nav ============ */
+.banner { position: sticky; top:0; z-index:50; background: var(--bg);
+  border-bottom: 1px solid transparent; transition: border-color var(--dur) var(--ease); }
+.banner.scrolled { border-bottom-color: var(--line); }
+.banner-inner { display:flex; align-items:center; gap: 40px; height: 76px; }
+.wordmark { font-family: var(--sans); font-weight:700; font-size:17px;
+  letter-spacing:.02em; display:flex; align-items:center; gap:10px; }
+.wordmark .mark { width:16px; height:16px; background:var(--clay); border-radius:3px;
+  transform: rotate(45deg); }
+.nav { display:flex; gap: 28px; margin-left:auto; align-items:center; }
+.nav a { font-size: var(--step-0); padding: 6px 2px; position:relative; }
+.nav a::after { content:""; position:absolute; left:0; right:100%; bottom:0;
+  height:1px; background: var(--ink); transition: right var(--dur) var(--ease); }
+.nav a:hover::after { right:0; }
+.pill { display:flex; margin-left:8px; }
+.pill a { font-family: var(--sans); font-size: var(--step-0); background: var(--ink);
+  color: var(--bg); padding: 11px 22px; border-radius: var(--radius) 0 0 var(--radius);
+  transition: background var(--dur) var(--ease); }
+.pill a:hover { background: var(--clay); }
+.pill .caret { background: var(--ink); color: var(--bg); display:grid; place-items:center;
+  width:34px; border-radius: 0 var(--radius) var(--radius) 0; border-left:1px solid var(--bg);
+  transition: background var(--dur) var(--ease); }
+.pill .caret:hover { background: var(--clay); }
+
+/* ============ Hero ============ */
+.hero { padding: var(--space-7) 0 var(--space-6); }
+.hero h1 { font-family: var(--sans); font-size: var(--step-5); font-weight: 700;
+  line-height: 1.1; letter-spacing: -0.015em; max-width: 13ch; }
+.hero h1 .lnk { text-decoration: underline; text-underline-offset: 6px;
+  text-decoration-thickness: 1.5px; text-decoration-color: var(--ink);
+  transition: text-decoration-color var(--dur) var(--ease); }
+.hero h1 .lnk:hover { text-decoration-color: var(--clay); }
+.hero .lede { margin-top: var(--space-4); max-width: 34ch; font-size: var(--step-2);
+  line-height: 1.4; color: var(--ink-soft); }
+
+/* ============ Announcement card ============ */
+.announce { border: 1px solid var(--line); border-radius: 14px; padding: var(--space-5);
+  background: var(--card); display:grid; grid-template-columns: 1fr auto; gap: var(--space-5);
+  align-items:center; margin-top: var(--space-6);
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease); }
+.announce:hover { border-color: var(--ink); }
+.announce h2 { font-family: var(--sans); font-size: var(--step-3); font-weight: 500; }
+.announce h2 em { font-style: normal; color: var(--clay); }
+.announce p { margin-top: 10px; max-width: 52ch; color: var(--ink-soft); }
+.announce .more { font-family: var(--sans); font-size: var(--step-0); white-space:nowrap;
+  border-bottom: 1px solid var(--ink); padding-bottom: 2px; }
+.announce:hover .more { color: var(--clay); border-color: var(--clay); }
+
+/* ============ Section heading ============ */
+.sec { padding: var(--space-6) 0; }
+.sec-h { font-family: var(--sans); font-size: var(--step-4); font-weight: 500;
+  letter-spacing: -0.01em; margin-bottom: var(--space-5); }
+
+/* ============ Release cards ============ */
+.cards { display:grid; grid-template-columns: repeat(12, 1fr); gap: var(--space-3); }
+.card { grid-column: span 6; border: 1px solid var(--line); border-radius: 14px;
+  padding: var(--space-4); background: var(--card);
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease); }
+.card:hover { border-color: var(--ink); transform: translateY(-2px); }
+.card h3 { font-family: var(--sans); font-size: var(--step-2); font-weight: 600; }
+.card > p { margin-top: 10px; color: var(--ink-soft); font-size: var(--step-1); }
+.meta { margin-top: var(--space-3); border-top: 1px solid var(--line); padding-top: var(--space-3); }
+.meta div { display:flex; gap: 24px; font-family: var(--sans); font-size: var(--step--1); }
+.meta dt { color: var(--ink-soft); min-width: 64px; }
+.meta dd { color: var(--ink); }
+
+/* ============ Pull quote ============ */
+.quote { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+  padding: var(--space-6) 0; text-align:center; }
+.quote p { font-size: var(--step-3); line-height: 1.35; max-width: 30ch; margin: 0 auto; }
+.quote .who { margin-top: var(--space-3); font-family: var(--sans);
+  font-size: var(--step--1); color: var(--ink-soft); }
+
+/* ============ Footer ============ */
+footer { background: var(--footer-bg); color: var(--footer-ink);
+  padding: var(--space-6) 0 var(--space-5); margin-top: var(--space-6); }
+.foot-grid { display:grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: var(--space-5); }
+.foot-grid h4 { font-family: var(--sans); font-size: var(--step--1); font-weight:600;
+  margin-bottom: var(--space-2); color: var(--footer-ink); }
+.foot-grid a { display:block; font-size: var(--step-0); opacity:.72; padding:4px 0; }
+.foot-grid a:hover { opacity:1; }
+.foot-note { font-family: var(--sans); font-size: var(--step--1); opacity:.55;
+  margin-top: var(--space-6); }
+
+/* ============ Motion ============ */
+.rv { opacity:0; transform: translateY(14px);
+  transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.rv.on { opacity:1; transform:none; }
+
+/* ============ Theme switch ============ */
+.theme { position:fixed; right:20px; bottom:20px; z-index:60; display:flex; gap:8px;
+  background: var(--card); border:1px solid var(--line); padding:8px 10px; border-radius:99px;
+  font-family: var(--sans); font-size:12px; }
+.theme button { border:0; background:transparent; color:var(--ink); cursor:pointer;
+  padding:4px 8px; border-radius:99px; font:inherit; }
+.theme button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+
+/* ============ Responsive ============ */
+@media (max-width: 1024px) { .hero h1 { font-size: var(--step-4); } .card { grid-column: span 12; } }
+@media (max-width: 768px) {
+  .wrap { padding: 0 20px; }
+  .nav { display:none; }
+  .hero { padding: var(--space-6) 0 var(--space-5); }
+  .hero h1 { font-size: 40px; }
+  .hero .lede { font-size: var(--step-1); }
+  .announce { grid-template-columns: 1fr; }
+  .foot-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1440px) { .wrap { max-width: 1320px; } .hero h1 { font-size: 64px; } }
+</style>
+</head>
+<body>
+
+<header class="banner" id="top">
+  <div class="wrap banner-inner">
+    <a class="wordmark" href="#top"><span class="mark" aria-hidden="true"></span>Northfield</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#research">Research</a>
+      <a href="#safety">Practice</a>
+      <a href="#writing">Writing</a>
+      <a href="#news">News</a>
+    </nav>
+    <div class="pill">
+      <a href="#try">Try Studio</a>
+      <span class="caret" aria-hidden="true">▾</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <!-- Hero -->
+  <section class="hero">
+    <h1 class="rv">Frontier <a class="lnk" href="#research">research</a> and careful <a class="lnk" href="#try">engineering</a>, built to last.</h1>
+    <p class="lede rv">A small lab studying how ambitious systems fail — and how to make their failure modes boring, reversible, and rare.</p>
+  </section>
+
+  <!-- Announcement -->
+  <a class="announce rv" href="#news">
+    <div>
+      <h2>Fieldnote <em>№&nbsp;12</em> — Reading the Room</h2>
+      <p>Our winter fieldnote on evaluation drift: why benchmarks age faster than models, and three habits that keep a test suite honest.</p>
+    </div>
+    <span class="more">Read the note →</span>
+  </a>
+
+  <!-- Latest releases -->
+  <section class="sec" id="news">
+    <h2 class="sec-h rv">Latest notes</h2>
+    <div class="cards">
+      <article class="card rv">
+        <h3>Fieldnote №11 — The Quiet Stack</h3>
+        <p>A tour of the unglamorous infrastructure — logs, replay, versioned prompts — that makes careful work repeatable.</p>
+        <dl class="meta">
+          <div><dt>Kind</dt><dd>Essay</dd></div>
+          <div><dt>Length</dt><dd>18 min</dd></div>
+        </dl>
+      </article>
+      <article class="card rv">
+        <h3>Open dataset: drift-500</h3>
+        <p>Five hundred model outputs annotated for subtle capability drift, released for anyone building evaluation harnesses.</p>
+        <dl class="meta">
+          <div><dt>Kind</dt><dd>Dataset</dd></div>
+          <div><dt>License</dt><dd>CC BY 4.0</dd></div>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- Pull quote -->
+  <section class="quote rv" id="research">
+    <p>“Care is not caution. It is the willingness to look closely, write things down, and change your mind in public.”</p>
+    <p class="who">— from the lab notebook</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Northfield</h4>
+        <a href="#top">A style study in restraint: cream paper, one clay accent, serif body text.</a>
+      </div>
+      <div>
+        <h4>Work</h4>
+        <a href="#research">Research</a><a href="#news">Notes</a><a href="#try">Studio</a>
+      </div>
+      <div>
+        <h4>Lab</h4>
+        <a href="#safety">Practice</a><a href="#writing">Writing</a><a href="#news">Archive</a>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <a href="#top">RSS</a><a href="#top">Email</a><a href="#top">Feed</a>
+      </div>
+    </div>
+    <p class="foot-note">© 2026 Northfield — an original homage; no third-party assets or copy.</p>
+  </div>
+</footer>
+
+<div class="theme" role="group" aria-label="Theme">
+  <button data-set="cream" aria-pressed="true">Cream</button>
+  <button data-set="dark" aria-pressed="false">Dark</button>
+  <button data-set="clay" aria-pressed="false">Clay</button>
+</div>
+
+<script>
+// Scroll reveal
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }
+}), { threshold: .15 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+// Sticky nav hairline
+const banner = document.querySelector('.banner');
+addEventListener('scroll', () => banner.classList.toggle('scrolled', scrollY > 8), { passive:true });
+
+// Theme switch (three variants)
+const root = document.documentElement, btns = [...document.querySelectorAll('.theme button')];
+btns.forEach(b => b.addEventListener('click', () => {
+  root.dataset.theme = b.dataset.set;
+  btns.forEach(x => x.setAttribute('aria-pressed', x === b));
+}));
+</script>
+</body>
+</html>
