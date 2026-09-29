@@ -15,6 +15,18 @@
 - **下载方式**：逐个请求官方下载端点 `https://html5up.net/<slug>/download`，校验 ZIP 完整性后原样解压到 `source/<slug>/`；未修改源码。
 - **排除项**：本地检查未发现 `node_modules/`、`dist/`、`build/`、`.git/`。
 
+## 完整性复核结果
+
+| 检查项 | 结果 |
+|---|---|
+| Manifest 条目 / 唯一 slug | 44 / 44 |
+| 原始 ZIP SHA-256 复核 | 44/44 匹配 `download-manifest.json` |
+| `index.html` / `LICENSE.txt` / `README.txt` | 44/44、44/44、44/44 |
+| 顶层 HTML 页面 | 110 |
+| 源码文件数 | 2,438 |
+| 源码字节数 | 150,470,994 bytes（约 143.48 MiB / 150.47 MB） |
+| `node_modules` / `dist` / `build` / `.git` | 0 |
+
 ## 本地结构
 
 ```text

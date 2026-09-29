@@ -25,3 +25,26 @@
   - Landing - Forty by HTML5 UP
   - Story by HTML5 UP
 - Massively 首页存在 `/favicon.ico` 404，不影响版式渲染；其他截图页面未见阻断性错误。
+
+## 文件校验
+
+| 截图 | SHA-256 |
+|---|---|
+| `dimension-index-1440x900.png` | `7359c171f795f0dba94b85b1c5226b769f9a78fccfd6ae5ca363665fbe1d4185` |
+| `editorial-index-1440x900.png` | `131c930d48a2b422282a8fa94ed02f2090171cdd8e3cccb72b020c611212caaf` |
+| `forty-landing-1440x900.png` | `0ca791353e531eaef7dd475a57e837d00458e4c668b6eba4ceb1de67a96d917a` |
+| `massively-elements-1440x900.png` | `d882a878b4fc66425b5b467defe75a50a0217cb9dcdf75a1232d7ff08cf319c1` |
+| `massively-index-1440x900.png` | `3742e742cbb57a081f9ea0eb8ac16a94a6beaca3b29f3ff1b1700635ea0d7d20` |
+| `story-index-1440x900.png` | `bbc0b49ac0654136ed8405e2b8438770bb9dd208a6dceba38efa9fdb11f101db` |
+
+## 复现方式
+
+```bash
+python3 -m http.server 8766 --bind 127.0.0.1 --directory source
+export PWCLI="$HOME/.codex/skills/playwright/scripts/playwright_cli.sh"
+"$PWCLI" resize 1440 900
+"$PWCLI" goto http://127.0.0.1:8766/massively/
+"$PWCLI" screenshot --filename screenshots/massively-index-1440x900.png
+```
+
+其余页面按上表替换 `goto` URL 与输出文件名即可。

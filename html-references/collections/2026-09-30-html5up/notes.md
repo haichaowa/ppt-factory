@@ -131,6 +131,14 @@ $palette:  (bg, bg-alt, fg, fg-bold, fg-light, border, accent, invert ...)
 
 这说明 HTML5 UP 的设计系统核心是**模板内 token 化**：一套模板先定义节奏与颜色，再复用共享组件语法。它不是全站统一的 CSS variables，而是每套模板独立编译但结构同构。
 
+### 4.1.1 证据锚点
+
+- Token 结构：[`source/massively/assets/sass/libs/_vars.scss`](source/massively/assets/sass/libs/_vars.scss)、[`source/dimension/assets/sass/libs/_vars.scss`](source/dimension/assets/sass/libs/_vars.scss)、[`source/editorial/assets/sass/libs/_vars.scss`](source/editorial/assets/sass/libs/_vars.scss)、[`source/forty/assets/sass/libs/_vars.scss`](source/forty/assets/sass/libs/_vars.scss)、[`source/story/assets/sass/libs/_vars.scss`](source/story/assets/sass/libs/_vars.scss)、[`source/spectral/assets/sass/libs/_vars.scss`](source/spectral/assets/sass/libs/_vars.scss)
+- 组件样张：[`source/massively/elements.html`](source/massively/elements.html)
+- 图文交替：[`source/forty/landing.html`](source/forty/landing.html)
+- 长文侧栏：[`source/editorial/index.html`](source/editorial/index.html)
+- 快照清单：[`download-manifest.json`](download-manifest.json)
+
 ### 4.2 色板策略
 
 | 模板 | 主要颜色 | 使用策略 |

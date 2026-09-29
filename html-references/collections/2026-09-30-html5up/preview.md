@@ -24,6 +24,17 @@ python3 -m http.server 8766 --bind 127.0.0.1 --directory source
 | `source/massively/elements.html` | Elements Reference - Massively by HTML5 UP | 可浏览。标题层级、列表、表格、表单、按钮、引用、代码块等组件参考完整，导航可用。 |
 | `source/dimension/index.html` | Dimension by HTML5 UP | 可浏览。全屏背景、居中标题、四项锚点导航与页脚署名正常显示。 |
 
+## 已生成代表截图
+
+| 截图 | 对应页面 |
+|---|---|
+| [`massively-index-1440x900.png`](screenshots/massively-index-1440x900.png) | `source/massively/index.html` |
+| [`massively-elements-1440x900.png`](screenshots/massively-elements-1440x900.png) | `source/massively/elements.html` |
+| [`dimension-index-1440x900.png`](screenshots/dimension-index-1440x900.png) | `source/dimension/index.html` |
+| [`editorial-index-1440x900.png`](screenshots/editorial-index-1440x900.png) | `source/editorial/index.html` |
+| [`forty-landing-1440x900.png`](screenshots/forty-landing-1440x900.png) | `source/forty/landing.html` |
+| [`story-index-1440x900.png`](screenshots/story-index-1440x900.png) | `source/story/index.html` |
+
 ## 建议先看的页面
 
 1. `source/massively/index.html` — 杂志式首页、卡片列表、分页与联系区。
