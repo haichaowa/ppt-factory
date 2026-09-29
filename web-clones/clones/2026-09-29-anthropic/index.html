@@ -59,7 +59,7 @@ section[id] { scroll-margin-top: 96px; }
 .banner { position: sticky; top:0; z-index:50; background: var(--bg);
   border-bottom: 1px solid transparent; transition: border-color var(--dur) var(--ease); }
 .banner.scrolled { border-bottom-color: var(--line); }
-.banner-inner { display:flex; align-items:center; gap: 40px; height: 76px; }
+.banner-inner { display:flex; align-items:center; gap: 40px; height: 68px; }
 .wordmark { font-family: var(--sans); font-weight:700; font-size:17px;
   letter-spacing:.02em; display:flex; align-items:center; gap:10px; }
 .wordmark .mark { width:16px; height:16px; background:var(--clay); border-radius:3px;
@@ -80,14 +80,16 @@ section[id] { scroll-margin-top: 96px; }
 .pill .caret:hover { background: var(--clay); }
 
 /* ============ Hero ============ */
-.hero { padding: var(--space-7) 0 var(--space-6); }
+.hero { padding: var(--space-7) 0 var(--space-6); display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 1fr); gap: var(--space-5);
+  align-items: start; }
 .hero h1 { font-family: var(--sans); font-size: var(--step-5); font-weight: 700;
-  line-height: 1.1; letter-spacing: -0.015em; max-width: 13ch; }
+  line-height: 1.1; letter-spacing: normal; max-width: 660px; }
 .hero h1 .lnk { text-decoration: underline; text-underline-offset: 6px;
   text-decoration-thickness: 1.5px; text-decoration-color: var(--ink);
   transition: text-decoration-color var(--dur) var(--ease); }
 .hero h1 .lnk:hover { text-decoration-color: var(--clay); }
-.hero .lede { margin-top: var(--space-5); max-width: 34ch; font-size: var(--step-2);
+.hero .lede { max-width: 30ch; margin-top: 48px; font-size: var(--step-2);
   line-height: 1.4; color: var(--ink-soft); }
 
 /* ============ Announcement card ============ */
@@ -161,7 +163,7 @@ footer { background: var(--footer-bg); color: var(--footer-ink);
 @media (max-width: 768px) {
   .wrap { padding: 0 20px; }
   .nav { display:none; }
-  .hero { padding: var(--space-6) 0 var(--space-5); }
+  .hero { padding: var(--space-6) 0 var(--space-5); grid-template-columns: 1fr; }
   .hero h1 { font-size: 40px; }
   .hero .lede { font-size: var(--step-1); }
   .announce { grid-template-columns: 1fr; }
