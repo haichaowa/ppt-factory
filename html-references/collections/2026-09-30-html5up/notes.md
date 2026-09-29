@@ -222,6 +222,14 @@ $palette:  (bg, bg-alt, fg, fg-bold, fg-light, border, accent, invert ...)
 7. **Demo 内容非生产内容**：占位图、`#` 链接、Lorem ipsum 和假联系方式较多。
 8. **许可证约束**：CC BY 3.0 要求保留署名；迁移到 PPT Factory 时只能提炼思路与 token，不应复制整页代码。
 
+## 6.1 首次使用路线（15 分钟）
+
+1. **2 分钟 · 建立直觉**：打开 [`screenshots/massively-index-1440x900.png`](screenshots/massively-index-1440x900.png) 与 [`screenshots/forty-landing-1440x900.png`](screenshots/forty-landing-1440x900.png)，比较“内容流”和“商业区块”两种节奏。
+2. **4 分钟 · 看组件语法**：打开 [`source/massively/elements.html`](source/massively/elements.html)，只看标题、列表、按钮、表单、表格五组的间距与状态。
+3. **4 分钟 · 反查 token**：对照 [`source/massively/assets/sass/libs/_vars.scss`](source/massively/assets/sass/libs/_vars.scss) 与 [`source/forty/assets/sass/libs/_vars.scss`](source/forty/assets/sass/libs/_vars.scss)，观察同一 token 结构如何产出完全不同气质。
+4. **3 分钟 · 选择 PPT 映射**：在本文第 8.1 节找到即将制作的 pattern，只记录一条可迁移规则。
+5. **2 分钟 · 判断是否适合**：回到第 6 节局限，确认当前任务没有踩中外部字体、旧实现、可达性或许可证风险。
+
 ## 7. 阅读优先级
 
 1. `source/massively/`：看杂志流、卡片、分页、组件参考页。

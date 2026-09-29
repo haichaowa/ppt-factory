@@ -20,3 +20,7 @@
 - 官方下载初期连续触发 429，等待后恢复；最终 44/44 均来自 `https://html5up.net/<slug>/download`。
 - 每个 ZIP 均通过 Python `zipfile` 完整性校验，解压后确认 `index.html`、`LICENSE.txt`、`README.txt` 均存在。
 - 未发现 `node_modules/`、`dist/`、`build/`、`.git/`。
+
+### 来源选择结论
+
+官方端点恢复后，最终来源统一采用 `html5up.net/<slug>/download`，未混用 GitHub 镜像或 Wayback 快照。这样可以保证 44 套模板的下载方式、许可文本和作者署名来自同一权威来源，也让 `download-manifest.json` 的 SHA-256 具有一致解释。

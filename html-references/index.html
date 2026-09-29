@@ -13,7 +13,7 @@
       --ink: #202731;
       --muted: #626d78;
       --line: #d8dee4;
-      --accent: #168ba8;
+      --accent: #0f6d86;
       --accent-soft: #e7f5f8;
       --radius: 10px;
       --shadow: 0 1px 2px rgba(32, 39, 49, .06), 0 12px 28px rgba(32, 39, 49, .05);
@@ -69,6 +69,22 @@
     .section-label { margin: 6px 0 10px; font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
     .note { margin: 20px 0 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
     footer { margin-top: 34px; color: var(--muted); font-size: 13px; text-align: center; }
+
+    a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+    .visual:focus-within { outline: 3px solid var(--accent); outline-offset: 3px; }
+
+    @media print {
+      html, body { background: #fff; }
+      main { width: auto; max-width: none; margin: 0; padding: 0; }
+      .stats { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 18px 0 24px; }
+      .collection { box-shadow: none; break-inside: avoid; }
+      .collection-grid { grid-template-columns: 240px minmax(0, 1fr); }
+      .visual img { min-height: 0; max-height: 200px; }
+      .content { padding: 18px 20px; }
+      a.button { border-color: #66707a; color: #202731; background: #fff; }
+      a.button.primary { background: #202731; color: #fff; }
+      .note, footer { color: #4d5660; }
+    }
 
     @media (max-width: 900px) {
       .collection-grid { grid-template-columns: 1fr; }

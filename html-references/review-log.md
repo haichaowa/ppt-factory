@@ -80,3 +80,68 @@
 ### 诚实自评
 
 这轮产物已经能可靠支撑本地查阅和设计反推：来源、许可证、快照校验、页面清单、截图和 PPT Factory 映射都有证据。但距离“直接拿去发布”仍有差距：需要真人目检 6 张截图与导览页视觉效果，确认中文排版和卡片密度符合审美；`patterns/` 的映射只是建议，尚未经实际 deck 试装验证；未来主题 token 也只是草案，没有生成可切换主题样张。
+
+## 2026-09-30 · HTML5 UP · 第 2 轮复审
+
+### 已检查文件
+
+- `html-references/index.html`
+- `html-references/PROGRESS.md`
+- `html-references/LOG.md`
+- `html-references/review-log.md`
+- `html-references/collections/2026-09-30-html5up/meta.md`
+- `html-references/collections/2026-09-30-html5up/preview.md`
+- `html-references/collections/2026-09-30-html5up/notes.md`
+- `html-references/collections/2026-09-30-html5up/download-manifest.json`
+- `html-references/collections/2026-09-30-html5up/screenshots/README.md`
+- `html-references/collections/2026-09-30-html5up/screenshots/dimension-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/editorial-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/forty-landing-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/massively-elements-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/massively-index-1440x900.png`
+- `html-references/collections/2026-09-30-html5up/screenshots/story-index-1440x900.png`
+- `source/massively/assets/sass/libs/_vars.scss`
+- `source/forty/assets/sass/libs/_vars.scss`
+- `source/massively/elements.html`
+
+### 自动检查结果
+
+- `index.html`：无脚本、无外部资源依赖；所有本地相对链接存在。
+- 响应式：1440×1000、900×1000、560×900、390×844 均无横向溢出。
+- 控制台：0 error / 0 warning。
+- 对比度：`--accent` 调整为 `#0f6d86` 后，在白色和 `#f4f6f8` 背景上的对比度分别约 5.91:1 与 5.46:1，满足正文链接可读性要求。
+- Markdown 本地链接：`meta.md`、`preview.md`、`notes.md`、`screenshots/README.md` 中指向本地文件的链接均存在。
+- Manifest：44 条、44 个唯一 slug；44/44 ZIP SHA-256 仍与记录一致。
+- Notes 清单：第 2 节限定解析后 44/44 模板与页面名匹配。
+
+### 本轮修复（≥5 处 P2 / 含 1 处可达性缺陷）
+
+1. `html-references/index.html`：将 `--accent` 从 `#168ba8` 调整为 `#0f6d86`，普通文本链接和主按钮文字对比度从约 3.97:1 提升到约 5.91:1，满足 WCAG AA 正文要求。
+2. `html-references/index.html`：新增 `:focus-visible` 与 `.visual:focus-within` 焦点样式，键盘导航时能看到清晰焦点框。
+3. `html-references/index.html`：新增 `@media print` 样式，导览页打印时去除背景、压缩卡片间距、保留可读链接与内容结构。
+4. `html-references/collections/2026-09-30-html5up/notes.md`：新增“首次使用路线（15 分钟）”，把 44 套模板压缩成时间盒化阅读路径，降低第一次使用成本。
+5. `html-references/collections/2026-09-30-html5up/meta.md`：新增“可复现校验”代码块，明确 manifest 与版权文件的本地验证方法。
+6. `html-references/collections/2026-09-30-html5up/preview.md`：新增端口占用、Google Fonts fallback、favicon 404、相对路径四类常见问题的处理表。
+7. `html-references/collections/2026-09-30-html5up/screenshots/README.md`：新增每张截图的目检要点，说明截图为视口图而非整页长图。
+8. `html-references/LOG.md`：补充“来源选择结论”，说明为何最终统一使用官方端点而非镜像或 Wayback 混合快照。
+9. `html-references/PROGRESS.md`：更新为第 1、2 轮完成，第 3 轮待执行。
+
+### 四维评分
+
+| 维度 | 分数 | 说明 |
+|---|---:|---|
+| 正确性 | 5 | 44 个 ZIP 哈希、44/44 版权文件、110 页面、索引链接与导览页渲染均复核通过。 |
+| 完整性 | 4 | 交付物完整；仍缺第 3 轮最终交付自评与真人视觉验收记录。 |
+| 精致度 | 5 | 导览页已补齐 AA 对比度、焦点、打印与响应式细节；文档阅读路径更明确。 |
+| 可用性 | 5 | 首次使用者可按 15 分钟路线完成浏览、拆解与映射选择；常见问题有处理方案。 |
+
+### 问题分级与状态
+
+- P0：0
+- P1：0
+- P2：已修复 9 处（见上）
+- 遗留 P2：需要真人目检截图视觉效果；映射建议尚未在真实 deck 中试装。
+
+### 诚实自评
+
+本轮后，导览页和文档已经达到“本地可直接使用”的水平：链接、校验、阅读路径、故障处理和可访问性细节都齐备。仍未达到“直接发布”的原因是：外部 HTML5 UP 源码本身包含旧依赖和 demo 占位内容，只适合作为参考库而非生产模板；PPT Factory 映射还停留在设计建议，没有生成试装样张；最终是否采纳新增主题 token，需要产品侧决策。

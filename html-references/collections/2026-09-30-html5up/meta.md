@@ -48,3 +48,21 @@ source/<template-slug>/
 | 源码体积 | 通过：约 150.5 MB |
 | 版权与署名 | 通过：44/44 保留 LICENSE 与 README |
 | 可浏览 | 通过：零构建，本地静态服务器可直接打开 |
+
+## 可复现校验
+
+```bash
+python3 - <<'PY'
+import json, hashlib
+from pathlib import Path
+m = json.loads(Path("download-manifest.json").read_text())
+assert len(m["entries"]) == 44
+assert len({e["slug"] for e in m["entries"]}) == 44
+for e in m["entries"]:
+    assert (Path("source") / e["slug"] / "LICENSE.txt").is_file()
+    assert (Path("source") / e["slug"] / "README.txt").is_file()
+print("manifest and attribution files verified")
+PY
+```
+
+原始 ZIP 的 SHA-256 复核需要在下载现场保留的 ZIP 文件上执行；本轮已在复审中完成 44/44 对账。
