@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-10-01T04:28:00+08:00",
+  "scope": "Round 1 archival integrity and required-output audit",
+  "allPassed": false,
+  "checks": [
+    {
+      "name": "required deliverables",
+      "status": "failed",
+      "details": {
+        "missing": [
+          "review-log.md"
+        ]
+      }
+    },
+    {
+      "name": "json validity",
+      "status": "passed",
+      "details": {
+        "parsed": [
+          "mhtml-manifest.json",
+          "font-manifest.json",
+          "computed-styles.json",
+          "tokens.json",
+          "capture-manifest.json",
+          "section-capture-manifest.json"
+        ]
+      }
+    },
+    {
+      "name": "sanitized MHTML inventory",
+      "status": "passed",
+      "details": {
+        "partCount": 115,
+        "types": {
+          "text/html": 1,
+          "image/png": 1,
+          "text/css": 113
+        }
+      }
+    },
+    {
+      "name": "robots disallowed parts absent",
+      "status": "passed",
+      "details": {
+        "checkedPrefix": "https://linear.app/cdn-cgi/"
+      }
+    },
+    {
+      "name": "full-page PNG dimensions",
+      "status": "passed",
+      "details": {
+        "linear-home-1440-full.png": [
+          1440,
+          9960
+        ],
+        "linear-home-1280-full.png": [
+          1280,
+          9619
+        ],
+        "linear-home-375-full.png": [
+          375,
+          5864
+        ]
+      }
+    },
+    {
+      "name": "section PNG 2x dimensions",
+      "status": "passed",
+      "details": {
+        "01-hero-product-screenshot.png": [
+          2688,
+          2048
+        ],
+        "02-manifesto-statement.png": [
+          2500,
+          290
+        ],
+        "03-intake-integrations.png": [
+          2688,
+          2454
+        ],
+        "04-ai-automations.png": [
+          2688,
+          2466
+        ],
+        "05-changelog.png": [
+          2688,
+          846
+        ],
+        "06-prefooter-cta.png": [
+          2688,
+          458
+        ]
+      }
+    },
+    {
+      "name": "computed-style viewport coverage",
+      "status": "passed",
+      "details": {
+        "desktop": 39,
+        "medium": 39,
+        "mobile": 39
+      }
+    },
+    {
+      "name": "font supplement count",
+      "status": "passed",
+      "details": {
+        "files": [
+          "resources/Berkeley-Mono-Variable.woff2",
+          "resources/InterVariable-Italic.woff2",
+          "resources/InterVariable.woff2"
+        ]
+      }
+    },
+    {
+      "name": "checksum coverage",
+      "status": "passed",
+      "details": {
+        "hashedFiles": 13
+      }
+    },
+    {
+      "name": "BACKLOG completion",
+      "status": "passed",
+      "details": "manual grep committed in baseline"
+    }
+  ],
+  "checksumFile": "SHA256SUMS",
+  "checksumAlgorithm": "SHA-256"
+}

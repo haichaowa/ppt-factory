@@ -8,7 +8,7 @@
   - `archive/linear-home-robots-sanitized.mhtml`：robots 清理后的 MHTML，1.69 MiB，115 个资源 part（1 HTML、113 CSS、1 PNG）；`archive/dom-snapshot.html`：渲染后 HTML；`archive/robots-sanitization.json`：清理记录；
   - `archive/resources/`：3 个 WOFF2 字体（约 1.00 MiB），补充 MHTML 因浏览器缓存未内嵌的 Inter Variable、Italic、Berkeley Mono；
   - `archive/computed-styles.json`：1440 / 1280 / 375 三档 computed style 与盒模型；
-  - `archive/mhtml-manifest.json`、`archive/font-manifest.json`、`archive/capture-manifest.json`、`archive/section-capture-manifest.json`、`archive/resource-performance.json`；
+  - `archive/mhtml-manifest.json`、`archive/font-manifest.json`、`archive/capture-manifest.json`、`archive/section-capture-manifest.json`、`archive/resource-performance.json`、`archive/verification.json`、`archive/SHA256SUMS`；
   - `screenshots/`：1440、1280、375 三档全页 PNG；
   - `sections/`：6 个 2× DPR 代表区块 PNG；
   - `notes.md`、`tokens.json`、`review-log.md`。
