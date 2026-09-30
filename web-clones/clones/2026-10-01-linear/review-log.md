@@ -31,3 +31,20 @@
 6. `web-clones/clones/2026-10-01-linear/review-log.md` — recorded the round-2 correction so the initially failed round-1 audit is not silently misrepresented.
 
 **Result:** `archive/verification.json` now reports `allPassed: true`; 13 stable archive artifacts are checksummed.
+
+## Round 3 — fidelity and provenance closeout
+
+**Reviewed:** 2026-10-01 04:34（Asia/Shanghai）  
+**Scope:** checksum validity, computed-style/token parity, robots fallback clarity, and final documentation accuracy.
+
+### Fixes (all committed in this round)
+
+1. `web-clones/clones/2026-10-01-linear/archive/verification.json` — added a per-file SHA-256 verification check for all 13 entries in `SHA256SUMS`, not merely a coverage count.
+2. `web-clones/clones/2026-10-01-linear/archive/verification.json` — added a primary font-stack parity check that compares `tokens.json` directly with the 1440px computed `root html` font family.
+3. `web-clones/clones/2026-10-01-linear/archive/verification.json` — added a documentation check requiring `meta.md` and `archive/README.md` to state the robots fallback and canonical PNG evidence.
+4. `web-clones/clones/2026-10-01-linear/meta.md` — extended the capture window through the 04:25 robots-sanitization step so post-processing is not presented as outside the archive operation.
+5. `web-clones/clones/2026-10-01-linear/archive/README.md` — clarified that `dom-snapshot.html` is preservation evidence rather than a standalone offline visual preview.
+6. `web-clones/clones/2026-10-01-linear/notes.md` — explicitly designated the three full-page PNGs and six 2× section PNGs as canonical visual evidence after `/cdn-cgi/` image-byte removal.
+7. `web-clones/clones/2026-10-01-linear/sections/README.md` — tied the doubled PNG dimensions to both the CSS geometry and capture DPR recorded in `section-capture-manifest.json`.
+
+**Result:** `archive/verification.json` reports `allPassed: true`; all 13 stable artifact hashes match, and the measured sans stack matches computed style exactly.

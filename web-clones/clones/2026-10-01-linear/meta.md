@@ -1,7 +1,7 @@
 # Linear 首页高保真归档
 
 - **来源**：<https://linear.app/>（英文首页，canonical 保持根路径）
-- **抓取时间**：2026-10-01 04:13–04:21（Asia/Shanghai）
+- **抓取时间**：2026-10-01 04:13–04:25（Asia/Shanghai）
 - **抓取方式**：Playwright Chromium 140 无头/独立上下文加载原站；先分段滚动触发 lazy media 与滚动状态，再执行三档全页截图。先使用 Chrome DevTools Protocol `Page.captureSnapshot(format: "mhtml")` 获取渲染状态；复核 robots 后移除 28 个位于禁抓 `/cdn-cgi/` 路径的图片 part，形成 `linear-home-robots-sanitized.mhtml`，并保留 `dom-snapshot.html`、三档截图与 2× 区块图作为保真补充。另用 DOM computed style 采样三档真实样式。
 - **robots 核对**：`robots.txt` 对 `User-agent: *` 仅禁止 `/api/`、`/cdn-cgi/`，并允许 `/api/og/`；根路径允许抓取；复核 MHTML 清单时发现 28 个页面必需图片由 `https://linear.app/cdn-cgi/imagedelivery/...` 提供，虽由浏览器渲染自然加载，但该前缀被 robots 禁抓，因此已从本地归档字节中移除，并在 `archive/robots-sanitization.json` 记录数量与字节数。
 - **归档内容**：

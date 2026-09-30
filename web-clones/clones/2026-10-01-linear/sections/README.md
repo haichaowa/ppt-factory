@@ -1,6 +1,6 @@
 # Representative section captures
 
-All files were captured in a clean 1440×1000 context at device pixel ratio 2; PNG dimensions are therefore twice the CSS geometry recorded in `archive/section-capture-manifest.json`.
+All files were captured in a clean 1440×1000 context at device pixel ratio 2; PNG dimensions are therefore twice the CSS geometry and capture DPR recorded in `archive/section-capture-manifest.json`.
 
 | File | CSS box | What is especially good |
 |---|---:|---|

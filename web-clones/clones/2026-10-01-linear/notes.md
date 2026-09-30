@@ -5,6 +5,7 @@
 > （robots 清理后保留 115 个 part；原始渲染 snapshot 143 个 part，其中 28 个 `/cdn-cgi/` 图片 part 已按 robots 移除）、
 > `archive/section-capture-manifest.json` 与 `screenshots/`。
 > 本文数值均为浏览器实测，不用目测近似；少量标注为 CSS token 的值来自归档 CSS。
+> 由于 robots 清理移除了 `/cdn-cgi/` 图片字节，视觉保真以三档全页 PNG 与 2× 区块 PNG 为 canonical。
 
 ## 1. 总体气质
 
@@ -57,7 +58,8 @@ string `#FFDF9F`、constant `#8FA6FF`、entity `#83DCDC`。这些颜色服务于
 ## 3. 字体系统
 
 - 无衬线主字体（computed）：
-  `"Inter Variable", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", sans-serif`
+  `"Inter Variable", "SF Pro Display", -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif`
+  （归档 CSS token 中还包含 `BlinkMacSystemFont` fallback；Chromium 序列化 computed value 时省略该项。）
 - 等宽：
   `"Berkeley Mono", ui-monospace, "SF Mono", Menlo, monospace`
 - 归档 CSS 另有展示衬线 token：`"Tiempos Headline", ui-serif, Georgia, ...`，本首页主路径未使用。

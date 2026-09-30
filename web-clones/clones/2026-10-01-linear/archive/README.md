@@ -5,7 +5,7 @@
 - `computed-styles.json` — 39 focused element records at 1440, 1280, and 375, including boxes, fonts, colors, gradients, spacing, layout, shadows, transitions, animations, and aggregate style frequency.
 - `capture-manifest.json` — full-page dimensions, canonical URL, and section CSS geometry.
 - `section-capture-manifest.json` — section selectors/geometry and device pixel ratio for the 2× section PNGs.
-- `dom-snapshot.html` — decoded HTML part from the rendered page, retained as the DOM half of the robots fallback.
+- `dom-snapshot.html` — decoded HTML part from the rendered page, retained as the DOM half of the robots fallback. It is preservation evidence, not a standalone visual preview; scripts and remote image URLs remain dependent on the live network.
 - `robots-sanitization.json` — exact count/byte summary of the removed disallowed MHTML parts.
 - `resource-performance.json` — resource timing evidence used to identify the font files not embedded by MHTML after browser caching.
 - `resources/` — three WOFF2 files referenced by the archived CSS (`InterVariable`, italic, and Berkeley Mono variable), retained separately to preserve typography fidelity.
