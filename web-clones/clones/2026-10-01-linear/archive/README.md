@@ -11,6 +11,6 @@
 - `resources/` — three WOFF2 files referenced by the archived CSS (`InterVariable`, italic, and Berkeley Mono variable), retained separately to preserve typography fidelity.
 - `robots.txt` — capture-time robots policy.
 - `verification.json` — automated required-file, JSON, MHTML, robots-sanitization, PNG-dimension, computed-style, font, and checksum coverage checks.
-- `SHA256SUMS` — SHA-256 checksums for archival artifacts except the archive README and the checksum file itself.
+- `SHA256SUMS` — SHA-256 checksums for archival artifacts except the archive README, the checksum file itself, and self-auditing `verification.json`.
 
 The sanitized MHTML preserves the rendered DOM, CSS, and permitted assets. Because Linear serves most homepage raster assets from `/cdn-cgi/`, which robots.txt disallows, those image bytes were removed. The three full-page PNGs and six 2× section PNGs are therefore the canonical rendered-image evidence. The font files are supplementary because the live browser served them from cache during `Page.captureSnapshot`; keeping them beside the MHTML preserves the exact font assets without redistributing them beyond this local study archive.

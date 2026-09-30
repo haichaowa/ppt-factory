@@ -1,15 +1,13 @@
 {
-  "checkedAt": "2026-10-01T04:28:00+08:00",
-  "scope": "Round 1 archival integrity and required-output audit",
-  "allPassed": false,
+  "checkedAt": "2026-10-01T04:31:00+08:00",
+  "scope": "Round 2 corrected audit after review-log creation",
+  "allPassed": true,
   "checks": [
     {
       "name": "required deliverables",
-      "status": "failed",
+      "status": "passed",
       "details": {
-        "missing": [
-          "review-log.md"
-        ]
+        "missing": []
       }
     },
     {
@@ -117,13 +115,18 @@
       "name": "checksum coverage",
       "status": "passed",
       "details": {
-        "hashedFiles": 13
+        "hashedFiles": 13,
+        "excluded": [
+          "README.md",
+          "SHA256SUMS",
+          "verification.json"
+        ]
       }
     },
     {
       "name": "BACKLOG completion",
       "status": "passed",
-      "details": "manual grep committed in baseline"
+      "details": "linear.app entry points to clones/2026-10-01-linear/"
     }
   ],
   "checksumFile": "SHA256SUMS",
