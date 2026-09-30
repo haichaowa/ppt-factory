@@ -6,7 +6,7 @@
 - [x] anthropic.com（Claude）· 克制的高级感：暖白底、衬线大标题、大量留白 → `clones/2026-09-29-anthropic/`
 - [x] openai.com（Codex）· 科技叙事：黑白主调、大字号、动效点缀 → `clones/2026-09-29-openai/`
 - [ ] claude.com/product/claude-code · 开发者工具落地页：代码块视觉、清晰层级
-- [ ] vercel.com · 极客黑白灰：网格、等宽字、微光效
+- [x] vercel.com · 极客黑白灰：网格、等宽字、微光效 → `clones/2026-10-01-vercel/`
 - [x] linear.app · 深色 SaaS 标杆：渐变、玻璃拟态、精致排版 → `clones/2026-10-01-linear/`
 - [ ] raycast.com · macOS 质感：暖灰底、红点缀、产品截图叙事
 - [ ] stripe.com · 金融科技经典：斜切渐变、插画系统、滚动动效
