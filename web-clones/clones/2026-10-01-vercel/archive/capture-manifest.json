@@ -1,0 +1,117 @@
+{
+  "source": {
+    "url": "https://vercel.com/",
+    "title": "Agentic Infrastructure - Vercel",
+    "canonicalRoot": true
+  },
+  "captureWindow": "2026-10-01 06:41–06:52 Asia/Shanghai",
+  "browser": "Playwright 1.62.1 / Chromium 141.0.7390.37",
+  "colorScheme": "dark",
+  "reducedMotion": "no-preference",
+  "method": [
+    "staged scroll",
+    "return-to-top settle",
+    "full-page screenshot",
+    "CDP Page.captureSnapshot(format=mhtml)",
+    "manual MIME-preserving WOFF2 supplementation"
+  ],
+  "mhtml": {
+    "file": "archive/vercel-home.mhtml",
+    "bytes": 1965113,
+    "resourcePartCount": 29
+  },
+  "fullPageScreenshots": [
+    {
+      "file": "screenshots/vercel-1440-fullpage.png",
+      "logicalViewport": 1440,
+      "deviceScaleFactor": 1,
+      "pngWidth": 1440,
+      "pngHeight": 6030,
+      "bytes": 466717,
+      "sha256": "99b2d0d9bab9980aab26a2b951db92f41ce6830bb76c9db0dcd4bf1501b28b1c"
+    },
+    {
+      "file": "screenshots/vercel-1280-fullpage.png",
+      "logicalViewport": 1280,
+      "deviceScaleFactor": 1,
+      "pngWidth": 1280,
+      "pngHeight": 5870,
+      "bytes": 438624,
+      "sha256": "192164738634fa664c2562d67e9ff557772325e5ae34bab63babe5c54be5cf05"
+    },
+    {
+      "file": "screenshots/vercel-375-fullpage.png",
+      "logicalViewport": 375,
+      "deviceScaleFactor": 1,
+      "pngWidth": 375,
+      "pngHeight": 6652,
+      "bytes": 189856,
+      "sha256": "5b86ddf79574a9095efd1aa140251c69d040a7a364db4cb0f2e74270ac47dba8"
+    }
+  ],
+  "sectionScreenshots": [
+    {
+      "file": "sections/01-hero.png",
+      "deviceScaleFactor": 2,
+      "cssWidth": 1392,
+      "cssHeight": 936,
+      "pngWidth": 2784,
+      "pngHeight": 1872,
+      "bytes": 956414,
+      "sha256": "51fbba8d10f35cbbc6d6a3f165e61e51941f72f025f8dec00e519d6c9ba3ad86"
+    },
+    {
+      "file": "sections/02-agents-feature.png",
+      "deviceScaleFactor": 2,
+      "cssWidth": 1392,
+      "cssHeight": 2362,
+      "pngWidth": 2784,
+      "pngHeight": 4724,
+      "bytes": 779730,
+      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+    },
+    {
+      "file": "sections/03-apps-feature.png",
+      "deviceScaleFactor": 2,
+      "cssWidth": 1392,
+      "cssHeight": 2362,
+      "pngWidth": 2784,
+      "pngHeight": 4724,
+      "bytes": 779730,
+      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+    },
+    {
+      "file": "sections/04-proof-platform.png",
+      "deviceScaleFactor": 2,
+      "cssWidth": 1392,
+      "cssHeight": 2362,
+      "pngWidth": 2784,
+      "pngHeight": 4724,
+      "bytes": 779730,
+      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+    },
+    {
+      "file": "sections/05-recently-shipped.png",
+      "deviceScaleFactor": 2,
+      "cssWidth": 1392,
+      "cssHeight": 719,
+      "pngWidth": 2784,
+      "pngHeight": 1438,
+      "bytes": 158736,
+      "sha256": "6222be6e9cbda10ec20e14ef322e87b0172a41cd47c8979c3f76b40ba02278a7"
+    }
+  ],
+  "mhtmlBrowserReopen": {
+    "browser": "Chromium 141.0.7390.37",
+    "status": 200,
+    "contentType": "multipart/related",
+    "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-vercel/archive/vercel-home.mhtml",
+    "title": "Agentic Infrastructure - Vercel",
+    "h1": "Agentic Infrastructure",
+    "htmlLength": 262127
+  },
+  "fontSupplement": {
+    "count": 12,
+    "bytes": 272576
+  }
+}

@@ -2,7 +2,7 @@
 
 - **来源**：<https://vercel.com/>（英文首页；渲染标题 `Agentic Infrastructure - Vercel`）
 - **抓取时间**：2026-10-01 06:41–06:52（Asia/Shanghai）
-- **抓取方式**：Playwright Chromium 无头、独立 dark 上下文加载原站；先分段滚动触发 lazy media / 滚动状态，再保存 1440、1280、375 三档全页截图。使用 Chrome DevTools Protocol `Page.captureSnapshot(format: "mhtml")` 获取渲染状态，并在保持 Chrome 原始 boundary/HTML 结构的前提下补充 12 个页面引用的 WOFF2 字体 part，形成可离线打开的单文件。另保留渲染后 DOM、computed style 采样与 2× 区块截图。
+- **抓取方式**：Playwright 1.62.1 / Chromium 141.0.7390.37 无头、独立 dark 上下文加载原站；先分段滚动触发 lazy media / 滚动状态，再保存 1440、1280、375 三档全页截图。使用 Chrome DevTools Protocol `Page.captureSnapshot(format: "mhtml")` 获取渲染状态，并在保持 Chrome 原始 boundary/HTML 结构的前提下补充 12 个页面引用的 WOFF2 字体 part，形成可离线打开的单文件。另保留渲染后 DOM、computed style 采样与 2× 区块截图。
 - **robots 核对**：`archive/robots.txt` 对 `User-agent: *` 的根路径未禁止；仅禁止 `/api/`、`/oauth`、`/confirm` 等路径，并允许 OG 图片 API 子路径。归档未抓取 `/api/` 字节；浏览器自然请求的 `/api/jwt` 返回 403 且未进入 MHTML。页面图片来自允许的 `/vc-ap-vercel-marketing/` 与 public blob storage，字体来自允许的 `/vc-ap-vercel-marketing/`。
 - **归档内容**：
   - `archive/vercel-home.mhtml`：1,965,113 bytes、30 个 MIME part（1 HTML、6 CSS、12 WOFF2、4 SVG、4 WebP、2 AVIF；另含 multipart 容器计数）；已本地验证 Chromium 可打开并解析标题；
@@ -11,6 +11,8 @@
   - `archive/key-element-metrics.json`：1440 / 375 关键元素 computed style 与盒模型；
   - `archive/font-manifest.json`、`archive/resources/`：12 个补充字体（272,576 bytes）；
   - `archive/robots.txt`：抓取时 robots 原文；
+  - `archive/mhtml-manifest.json`、`archive/capture-manifest.json`、`archive/mhtml-browser-check.json`：MHTML part 清单、截图/MHTML 清单与 Chromium 重开验证；
+  - `archive/SHA256SUMS`、`archive/verification.json`：校验与自动复审记录；
   - `screenshots/`：1440 / 1280 / 375 三档全页 PNG；
   - `sections/`：5 个 2× DPR 代表区块 PNG；
   - `notes.md`、`tokens.json`。

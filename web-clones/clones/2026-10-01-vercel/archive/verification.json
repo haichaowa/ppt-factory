@@ -1,0 +1,162 @@
+{
+  "reviewRound": 1,
+  "reviewedAt": "2026-10-01T06:55:00+08:00",
+  "allPassed": true,
+  "passed": 9,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "required deliverables",
+      "passed": true,
+      "details": {
+        "missing": []
+      }
+    },
+    {
+      "name": "JSON validity",
+      "passed": true,
+      "details": {
+        "valid": 8,
+        "total": 8
+      }
+    },
+    {
+      "name": "MHTML resource inventory",
+      "passed": true,
+      "details": {
+        "partCount": 29,
+        "counts": {
+          "text/html": 1,
+          "image/svg+xml": 4,
+          "image/webp": 4,
+          "image/avif": 2,
+          "text/css": 6,
+          "application/font-woff2": 12
+        },
+        "expected": {
+          "text/html": 1,
+          "text/css": 6,
+          "application/font-woff2": 12,
+          "image/svg+xml": 4,
+          "image/webp": 4,
+          "image/avif": 2
+        }
+      }
+    },
+    {
+      "name": "robots-disallowed MHTML parts absent",
+      "passed": true,
+      "details": {
+        "violations": []
+      }
+    },
+    {
+      "name": "PNG dimensions",
+      "passed": true,
+      "details": {
+        "actual": {
+          "screenshots/vercel-1440-fullpage.png": [
+            1440,
+            6030
+          ],
+          "screenshots/vercel-1280-fullpage.png": [
+            1280,
+            5870
+          ],
+          "screenshots/vercel-375-fullpage.png": [
+            375,
+            6652
+          ],
+          "sections/01-hero.png": [
+            2784,
+            1872
+          ],
+          "sections/02-agents-feature.png": [
+            2784,
+            4724
+          ],
+          "sections/03-apps-feature.png": [
+            2784,
+            4724
+          ],
+          "sections/04-proof-platform.png": [
+            2784,
+            4724
+          ],
+          "sections/05-recently-shipped.png": [
+            2784,
+            1438
+          ]
+        },
+        "expected": {
+          "screenshots/vercel-1440-fullpage.png": [
+            1440,
+            6030
+          ],
+          "screenshots/vercel-1280-fullpage.png": [
+            1280,
+            5870
+          ],
+          "screenshots/vercel-375-fullpage.png": [
+            375,
+            6652
+          ],
+          "sections/01-hero.png": [
+            2784,
+            1872
+          ],
+          "sections/02-agents-feature.png": [
+            2784,
+            4724
+          ],
+          "sections/03-apps-feature.png": [
+            2784,
+            4724
+          ],
+          "sections/04-proof-platform.png": [
+            2784,
+            4724
+          ],
+          "sections/05-recently-shipped.png": [
+            2784,
+            1438
+          ]
+        }
+      }
+    },
+    {
+      "name": "font supplement",
+      "passed": true,
+      "details": {
+        "files": 12,
+        "manifest": 12,
+        "bytes": 272576
+      }
+    },
+    {
+      "name": "MHTML Chromium reopen",
+      "passed": true,
+      "details": {
+        "browser": "Chromium 141.0.7390.37",
+        "status": 200,
+        "contentType": "multipart/related",
+        "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-vercel/archive/vercel-home.mhtml",
+        "title": "Agentic Infrastructure - Vercel",
+        "h1": "Agentic Infrastructure",
+        "htmlLength": 262127
+      }
+    },
+    {
+      "name": "archive checksums",
+      "passed": true,
+      "details": {
+        "entries": 21,
+        "matching": 21
+      }
+    },
+    {
+      "name": "BACKLOG completion",
+      "passed": true
+    }
+  ]
+}
