@@ -114,5 +114,19 @@
     "count": 12,
     "bytes": 272576
   },
-  "sectionCaptureNote": "Each product-story capture is the distinct sibling block containing one heading and its media/proof group, not the shared 2,362px outer wrapper."
+  "sectionCaptureNote": "Each product-story capture is the distinct sibling block containing one heading and its media/proof group, not the shared 2,362px outer wrapper.",
+  "offlineFidelity": {
+    "viewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "matchingPixels": 1418138,
+    "differentPixels": 21862,
+    "totalPixels": 1440000,
+    "differentRatio": 0.015181944444444444,
+    "matchingRatio": 0.9848180555555556,
+    "meanAbsoluteChannelError": 1.6947902777777777,
+    "method": "Live URL and final MHTML opened in separate reduced-motion Chromium contexts at 1440×1000, settled 5s; PNGs compared with pixelmatch threshold 0.10, alpha disabled.",
+    "diffImage": "archive/offline-fidelity.png"
+  }
 }

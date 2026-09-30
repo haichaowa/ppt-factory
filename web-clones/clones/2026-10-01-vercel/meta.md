@@ -12,10 +12,11 @@
   - `archive/font-manifest.json`、`archive/resources/`：12 个补充字体（272,576 bytes）；
   - `archive/robots.txt`：抓取时 robots 原文；
   - `archive/mhtml-manifest.json`、`archive/capture-manifest.json`、`archive/mhtml-browser-check.json`：MHTML part 清单、截图/MHTML 清单与 Chromium 重开验证；
+  - `archive/offline-fidelity.json`、`archive/offline-fidelity.png`：live 与 MHTML 的 1440×1000 像素对比；
   - `archive/SHA256SUMS`、`archive/verification.json`：校验与自动复审记录；
   - `screenshots/`：1440 / 1280 / 375 三档全页 PNG；
   - `sections/`：5 个 2× DPR 代表区块 PNG；
   - `notes.md`、`tokens.json`。
-- **归档体积**：约 6.46 MiB（archive 约 3.53 MiB、全页截图约 1.10 MiB、2× 区块约 1.82 MiB）。
-- **保真说明**：全页截图按 CSS 像素 DPR 1 保存，区块截图按 DPR 2 保存；MHTML 保留页面渲染状态与字体，静态归档不等于持续网络动画，动画证据以 CSSOM/keyframes 与截图为准。375px 截图高度大于初始 scroll height，来自截图时 lazy content 与 `content-visibility` 估高的展开，以 PNG 为 canonical。
+- **归档体积**：约 6.48 MiB（archive 约 3.54 MiB、全页截图约 1.10 MiB、2× 区块约 1.82 MiB）。
+- **保真说明**：全页截图按 CSS 像素 DPR 1 保存，区块截图按 DPR 2 保存；MHTML 保留页面渲染状态与字体，静态归档不等于持续网络动画，动画证据以 CSSOM/keyframes 与截图为准。补充离线复现检查：live 与最终 MHTML 在 1440×1000、reduced motion、5 秒稳定后按 pixelmatch threshold 0.10 比较，98.4819% 像素匹配，平均通道误差 1.6948；差异主要来自实时计时/营销状态与服务端实验帧。375px 截图高度大于初始 scroll height，来自截图时 lazy content 与 `content-visibility` 估高的展开，以 PNG 为 canonical。
 - **版权口径**：原站文本、图像、字体、产品界面与品牌资产版权归 Vercel；本归档仅供本地设计学习与留存，不二次分发、不商用、不作为对外发布的复刻或训练素材。

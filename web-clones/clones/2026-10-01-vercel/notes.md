@@ -1,6 +1,6 @@
 # Vercel 首页设计拆解（2026-10-01）
 
-> 证据：`archive/vercel-home.mhtml`、`archive/style-metrics.json`、`archive/key-element-metrics.json`（1440 / 375 实测 computed style）、三档 PNG 与 5 张 2× 区块图。以下均为渲染后的具体值，而不是目测值。
+> 证据：`archive/vercel-home.mhtml`、`archive/style-metrics.json`、`archive/key-element-metrics.json`（1440 / 375 实测 computed style）、三档 PNG 与 5 张 2× 区块图。以下均为渲染后的具体值，而不是目测值。最终 MHTML 在离线 Chromium 中可渲染 H1，且 1440×1000 首屏与 live 截图有 98.4819% 像素匹配（平均通道误差 1.6948），字体补充有效。
 
 ## 1. 总体气质：黑白基础设施面板
 

@@ -1,0 +1,12 @@
+{
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "matchingPixels": 1418138,
+  "differentPixels": 21862,
+  "totalPixels": 1440000,
+  "differentRatio": 0.015181944444444444,
+  "matchingRatio": 0.9848180555555556,
+  "meanAbsoluteChannelError": 1.6947902777777777
+}

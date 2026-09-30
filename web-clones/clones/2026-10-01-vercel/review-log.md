@@ -34,3 +34,21 @@
 7. Extended `archive/verification.json` into a round-2 audit with section-hash uniqueness, exact PNG geometry, font-stack parity, color-token parity, documentation claims, and checksum verification.
 
 **Result:** `archive/verification.json` reports `allPassed: true`; all five section hashes are unique.
+
+## Round 3 — offline fidelity and provenance closeout
+
+**Reviewed:** 2026-10-01 07:08（Asia/Shanghai）
+**Scope:** live-versus-MHTML rendering, pixel evidence, token provenance, final checksums, and final documentation accuracy.
+
+### Fixes (all committed in this round)
+
+1. Added `archive/offline-fidelity.png`, a pixel-level diff of the live URL and the final MHTML under identical reduced-motion Chromium settings.
+2. Added `archive/offline-fidelity.json` with exact matching/different pixel counts, ratios, and mean absolute channel error (98.4819% match / 1.6948 MAE).
+3. Embedded the offline-fidelity method and result in `archive/capture-manifest.json`, making the comparison reproducible rather than an unexplained number.
+4. Added `offline-fidelity.json` and the diff image to `tokens.json` evidence and an `archiveQuality` block for downstream filtering.
+5. Documented the fidelity check and updated final archive/per-directory sizes in `meta.md`.
+6. Explained the new diff artifacts in `archive/README.md` and tied the measured match ratio to font supplementation in `notes.md`.
+7. Rebuilt `archive/SHA256SUMS` to cover 23 stable archive artifacts, including both offline-fidelity records.
+8. Regenerated `archive/verification.json` for round 3 with the pixel-match threshold, diff PNG dimensions, unique section hashes, exact checksum verification, and prior structural checks.
+
+**Result:** `archive/verification.json` reports `allPassed: true`; MHTML first-screen fidelity is 98.4819%, and all 23 stable archive hashes match.

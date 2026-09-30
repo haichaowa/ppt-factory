@@ -8,6 +8,7 @@
 - `mhtml-manifest.json` — every MHTML resource part with decoded byte count, SHA-256, Content-Location, and transfer encoding.
 - `capture-manifest.json` — browser/capture parameters, PNG geometry and hashes, MHTML inventory, and the exact Chromium reopen check.
 - `mhtml-browser-check.json` — saved result of reopening the final MHTML in Chromium.
+- `offline-fidelity.json` and `offline-fidelity.png` — live-versus-MHTML viewport audit: 98.4819% of 1,440,000 pixels match; mean absolute channel error is 1.6948. The diff PNG highlights changed pixels.
 - `SHA256SUMS` — SHA-256 coverage for stable archive artifacts; it excludes only `verification.json` (which audits the hashes) and the checksum file itself.
 - `font-manifest.json` and `resources/` — byte counts, URLs, and SHA-256 hashes for supplementary fonts.
 

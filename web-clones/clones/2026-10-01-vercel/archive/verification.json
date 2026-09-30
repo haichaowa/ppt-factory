@@ -1,8 +1,8 @@
 {
-  "reviewRound": 2,
-  "reviewedAt": "2026-10-01T07:03:00+08:00",
+  "reviewRound": 3,
+  "reviewedAt": "2026-10-01T07:08:00+08:00",
   "allPassed": true,
-  "passed": 12,
+  "passed": 14,
   "failed": 0,
   "checks": [
     {
@@ -16,8 +16,8 @@
       "name": "JSON validity",
       "passed": true,
       "details": {
-        "valid": 8,
-        "total": 8
+        "valid": 9,
+        "total": 9
       }
     },
     {
@@ -78,40 +78,10 @@
           "sections/05-recently-shipped.png": [
             2784,
             1438
-          ]
-        },
-        "expected": {
-          "screenshots/vercel-1440-fullpage.png": [
+          ],
+          "archive/offline-fidelity.png": [
             1440,
-            6030
-          ],
-          "screenshots/vercel-1280-fullpage.png": [
-            1280,
-            5870
-          ],
-          "screenshots/vercel-375-fullpage.png": [
-            375,
-            6652
-          ],
-          "sections/01-hero.png": [
-            2784,
-            1872
-          ],
-          "sections/02-agents-feature.png": [
-            2784,
-            1234
-          ],
-          "sections/03-apps-feature.png": [
-            2784,
-            1236
-          ],
-          "sections/04-proof-platform.png": [
-            2784,
-            1234
-          ],
-          "sections/05-recently-shipped.png": [
-            2784,
-            1438
+            1000
           ]
         }
       }
@@ -120,13 +90,7 @@
       "name": "representative section uniqueness",
       "passed": true,
       "details": {
-        "hashes": [
-          "6a61e325e47326c0879565d19ff53dac06a43176b427f57d53d51f8763178cec",
-          "6fdee0d84deac680ad6881658d5d279748bcd02c92122ffee9d3dc6a4d233064",
-          "fce7223e31edbc8d1d7fab2757b4b08eb0f345dbb34483f1c3f3275ffdb4cdf8",
-          "ea3b8d811364118407de6891d1738f0be3c0714683770a39495f8241e30e600d",
-          "6222be6e9cbda10ec20e14ef322e87b0172a41cd47c8979c3f76b40ba02278a7"
-        ]
+        "uniqueHashes": 5
       }
     },
     {
@@ -163,11 +127,31 @@
       }
     },
     {
+      "name": "offline pixel fidelity",
+      "passed": true,
+      "details": {
+        "viewport": {
+          "width": 1440,
+          "height": 1000
+        },
+        "matchingPixels": 1418138,
+        "differentPixels": 21862,
+        "totalPixels": 1440000,
+        "differentRatio": 0.015181944444444444,
+        "matchingRatio": 0.9848180555555556,
+        "meanAbsoluteChannelError": 1.6947902777777777
+      }
+    },
+    {
+      "name": "offline fidelity documentation",
+      "passed": true
+    },
+    {
       "name": "archive checksums",
       "passed": true,
       "details": {
-        "entries": 21,
-        "matching": 21
+        "entries": 23,
+        "matching": 23
       }
     },
     {
