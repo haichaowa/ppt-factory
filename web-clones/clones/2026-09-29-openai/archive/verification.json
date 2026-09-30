@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-30T07:37:00+08:00",
+  "checkedAt": "2026-10-01T01:55:00+08:00",
   "requiredFiles": {
     "count": 17,
     "missing": [],
@@ -51,13 +51,16 @@
     }
   },
   "sectionScreenshots": {
-    "count": 5,
+    "count": 8,
     "files": [
       "01-hero-first-experience.png",
       "02-featured-grid.png",
       "03-recent-news-grid.png",
       "04-stories-grid.png",
-      "05-latest-research.png"
+      "05-latest-research.png",
+      "06-openai-for-business.png",
+      "07-get-started-cta.png",
+      "08-footer.png"
     ]
   },
   "checksums": {
@@ -66,7 +69,7 @@
   "overallPass": true,
   "topLevelManifest": {
     "present": true,
-    "fileCount": 88,
+    "fileCount": 94,
     "matchesDisk": true
   },
   "domPreview": {

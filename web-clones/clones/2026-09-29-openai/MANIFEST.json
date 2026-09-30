@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-30T07:39:00+08:00",
-  "fileCount": 88,
-  "totalBytes": 17428867,
+  "generatedAt": "2026-10-01T01:58:00+08:00",
+  "fileCount": 94,
+  "totalBytes": 21910859,
   "files": [
     {
       "path": "README.md",
@@ -369,13 +369,28 @@
       "kind": "document"
     },
     {
+      "path": "archive/stage6-baseline-1440.png",
+      "bytes": 3288623,
+      "kind": "image"
+    },
+    {
+      "path": "archive/stage6-computed-recheck.json",
+      "bytes": 21011,
+      "kind": "document"
+    },
+    {
+      "path": "archive/stage6-pixel-baseline.json",
+      "bytes": 3459,
+      "kind": "document"
+    },
+    {
       "path": "archive/verification.json",
-      "bytes": 1555,
+      "bytes": 1646,
       "kind": "document"
     },
     {
       "path": "meta.md",
-      "bytes": 1728,
+      "bytes": 1754,
       "kind": "document"
     },
     {
@@ -385,7 +400,7 @@
     },
     {
       "path": "review-log.md",
-      "bytes": 6851,
+      "bytes": 8250,
       "kind": "document"
     },
     {
@@ -434,8 +449,23 @@
       "kind": "image"
     },
     {
+      "path": "sections/06-openai-for-business.png",
+      "bytes": 1064836,
+      "kind": "image"
+    },
+    {
+      "path": "sections/07-get-started-cta.png",
+      "bytes": 19574,
+      "kind": "image"
+    },
+    {
+      "path": "sections/08-footer.png",
+      "bytes": 82423,
+      "kind": "image"
+    },
+    {
       "path": "sections/README.md",
-      "bytes": 843,
+      "bytes": 1393,
       "kind": "document"
     },
     {

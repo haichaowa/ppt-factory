@@ -126,3 +126,21 @@ Fixes:
 6. Added `dom-preview-manifest.json`, refreshed manifests/checksums/verification, and updated documentation.
 
 Chromium verification at 1440px: `CSS1Compat`, 44 stylesheets, 20/20 images loaded, no incomplete images, and key homepage sections present. No P0/P1 remains.
+
+## 阶段6像素级复审 Round 1 — 2026-10-01 01:55
+
+### 覆盖补齐与像素基线（9 处）
+
+1. `sections/06-openai-for-business.png`：从 1440 原始全页截图按 y=4683、h=614 裁切，补上商业/产品转化区。
+2. `sections/07-get-started-cta.png`：按 x=32、y=5417、w=1376、h=368 裁切，补上页尾大 CTA。
+3. `sections/08-footer.png`：按 y=5904、h=688 裁切，补上完整页脚。
+4. `sections/README.md`：声明 8 个区块覆盖顺序并补充产品区、CTA、页脚说明。
+5. `archive/verification.json`：区块计数由 5 更新为 8，并列出新增文件。
+6. `MANIFEST.json`：重新统计 91 个文件与总字节数。
+7. `meta.md`：同步区块数量与批次体积口径。
+8. `archive/stage6-baseline-1440.png`：记录修正前离线预览全页（1440×6649）。
+9. `archive/stage6-computed-recheck.json` 与 `archive/stage6-pixel-baseline.json`：记录 1440×1000 DOM 计算样式与原始截图对齐后的像素差异基线。
+
+### 结果
+
+代表区域从“首屏/featured/新闻/stories/research”扩展到“产品商业区、收束 CTA、页脚”；三张新增截图均直接裁自 `screenshots/openai-home-1440-full.png`，不使用复刻图。基线显示离线预览比原始高 25px；按 featured 区后缘对齐后，主要剩余差异集中在视频帧与图标资源，另有全站 25px 纵向偏移待 Round 3 修正。
