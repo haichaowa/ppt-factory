@@ -16,6 +16,6 @@
   - `screenshots/`：1440 / 1280 / 375 三档全页 PNG；
   - `sections/`：5 个 2× DPR 代表区块 PNG；
   - `notes.md`、`tokens.json`。
-- **归档体积**：约 8.06 MiB（archive 约 3.51 MiB、全页截图约 1.10 MiB、2× 区块约 3.45 MiB）。
+- **归档体积**：约 6.46 MiB（archive 约 3.53 MiB、全页截图约 1.10 MiB、2× 区块约 1.82 MiB）。
 - **保真说明**：全页截图按 CSS 像素 DPR 1 保存，区块截图按 DPR 2 保存；MHTML 保留页面渲染状态与字体，静态归档不等于持续网络动画，动画证据以 CSSOM/keyframes 与截图为准。375px 截图高度大于初始 scroll height，来自截图时 lazy content 与 `content-visibility` 估高的展开，以 PNG 为 canonical。
 - **版权口径**：原站文本、图像、字体、产品界面与品牌资产版权归 Vercel；本归档仅供本地设计学习与留存，不二次分发、不商用、不作为对外发布的复刻或训练素材。

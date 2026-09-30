@@ -1,8 +1,8 @@
 {
-  "reviewRound": 1,
-  "reviewedAt": "2026-10-01T06:55:00+08:00",
+  "reviewRound": 2,
+  "reviewedAt": "2026-10-01T07:03:00+08:00",
   "allPassed": true,
-  "passed": 9,
+  "passed": 12,
   "failed": 0,
   "checks": [
     {
@@ -32,14 +32,6 @@
           "image/avif": 2,
           "text/css": 6,
           "application/font-woff2": 12
-        },
-        "expected": {
-          "text/html": 1,
-          "text/css": 6,
-          "application/font-woff2": 12,
-          "image/svg+xml": 4,
-          "image/webp": 4,
-          "image/avif": 2
         }
       }
     },
@@ -73,15 +65,15 @@
           ],
           "sections/02-agents-feature.png": [
             2784,
-            4724
+            1234
           ],
           "sections/03-apps-feature.png": [
             2784,
-            4724
+            1236
           ],
           "sections/04-proof-platform.png": [
             2784,
-            4724
+            1234
           ],
           "sections/05-recently-shipped.png": [
             2784,
@@ -107,15 +99,15 @@
           ],
           "sections/02-agents-feature.png": [
             2784,
-            4724
+            1234
           ],
           "sections/03-apps-feature.png": [
             2784,
-            4724
+            1236
           ],
           "sections/04-proof-platform.png": [
             2784,
-            4724
+            1234
           ],
           "sections/05-recently-shipped.png": [
             2784,
@@ -125,11 +117,35 @@
       }
     },
     {
+      "name": "representative section uniqueness",
+      "passed": true,
+      "details": {
+        "hashes": [
+          "6a61e325e47326c0879565d19ff53dac06a43176b427f57d53d51f8763178cec",
+          "6fdee0d84deac680ad6881658d5d279748bcd02c92122ffee9d3dc6a4d233064",
+          "fce7223e31edbc8d1d7fab2757b4b08eb0f345dbb34483f1c3f3275ffdb4cdf8",
+          "ea3b8d811364118407de6891d1738f0be3c0714683770a39495f8241e30e600d",
+          "6222be6e9cbda10ec20e14ef322e87b0172a41cd47c8979c3f76b40ba02278a7"
+        ]
+      }
+    },
+    {
+      "name": "primary font-stack parity",
+      "passed": true,
+      "details": {
+        "token": "GeistSans, \"GeistSans Fallback\"",
+        "computed": "GeistSans, \"GeistSans Fallback\""
+      }
+    },
+    {
+      "name": "core color parity",
+      "passed": true
+    },
+    {
       "name": "font supplement",
       "passed": true,
       "details": {
         "files": 12,
-        "manifest": 12,
         "bytes": 272576
       }
     },

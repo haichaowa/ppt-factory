@@ -57,38 +57,38 @@
       "cssHeight": 936,
       "pngWidth": 2784,
       "pngHeight": 1872,
-      "bytes": 956414,
-      "sha256": "51fbba8d10f35cbbc6d6a3f165e61e51941f72f025f8dec00e519d6c9ba3ad86"
+      "bytes": 909557,
+      "sha256": "6a61e325e47326c0879565d19ff53dac06a43176b427f57d53d51f8763178cec"
     },
     {
       "file": "sections/02-agents-feature.png",
       "deviceScaleFactor": 2,
       "cssWidth": 1392,
-      "cssHeight": 2362,
+      "cssHeight": 617,
       "pngWidth": 2784,
-      "pngHeight": 4724,
-      "bytes": 779730,
-      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+      "pngHeight": 1234,
+      "bytes": 221442,
+      "sha256": "6fdee0d84deac680ad6881658d5d279748bcd02c92122ffee9d3dc6a4d233064"
     },
     {
       "file": "sections/03-apps-feature.png",
       "deviceScaleFactor": 2,
       "cssWidth": 1392,
-      "cssHeight": 2362,
+      "cssHeight": 617,
       "pngWidth": 2784,
-      "pngHeight": 4724,
-      "bytes": 779730,
-      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+      "pngHeight": 1236,
+      "bytes": 249523,
+      "sha256": "fce7223e31edbc8d1d7fab2757b4b08eb0f345dbb34483f1c3f3275ffdb4cdf8"
     },
     {
       "file": "sections/04-proof-platform.png",
       "deviceScaleFactor": 2,
       "cssWidth": 1392,
-      "cssHeight": 2362,
+      "cssHeight": 617,
       "pngWidth": 2784,
-      "pngHeight": 4724,
-      "bytes": 779730,
-      "sha256": "2489c263e06ba97a633c2d5f60a18f4735c45df851ef869f5445eca80bab1c71"
+      "pngHeight": 1234,
+      "bytes": 279650,
+      "sha256": "ea3b8d811364118407de6891d1738f0be3c0714683770a39495f8241e30e600d"
     },
     {
       "file": "sections/05-recently-shipped.png",
@@ -113,5 +113,6 @@
   "fontSupplement": {
     "count": 12,
     "bytes": 272576
-  }
+  },
+  "sectionCaptureNote": "Each product-story capture is the distinct sibling block containing one heading and its media/proof group, not the shared 2,362px outer wrapper."
 }
