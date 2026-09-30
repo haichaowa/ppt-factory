@@ -2,7 +2,8 @@
 
 > 证据来源：`archive/openai-home.mhtml`、`archive/dom.raw.html`（原始序列化）与 `archive/dom.html`（可浏览静态版）、
 > `archive/computed-styles-probe.json`（1440px）、`archive/computed-styles-mobile.json`（375px）、
-> `archive/selected-computed-styles.json`。本文数值均为浏览器真实 computed style，非目测。
+> `archive/selected-computed-styles.json`。阶段6又以 1440×1000 / 375×812 无头 Chromium 复查，新增
+`archive/stage6-computed-recheck.json` 与 `archive/stage6-token-audit.json`。本文数值均为浏览器真实 computed style，非目测。
 
 ## 1. 总体气质
 
@@ -42,17 +43,21 @@
 | 卡片标题 | `18px / 23.76px / 500 / -0.18px` | 1:1 与列表卡 |
 | 正文/页面默认 | `17px / 27.999px / 400 / -0.17px` | 继承正文 |
 | 输入框 | `16px / 24px / 400 / -0.16px` | ChatGPT prompt |
-| Meta / CTA | `14px / 19.6px 或 14px / 500` | 分类、日期、按钮 |
-| 页脚链接 | `13px / 19.68px / 500` | 次级导航 |
+| 卡片 Meta | `14px / 19.6px / 500 / normal` | 分类、日期、阅读时长 |
+| 按钮 / View all / chip 文案 | `14px / 14px / 500 / normal` | 真实交互控件使用独立 1:1 行高，而非卡片 Meta 行高 |
+| 导航与页脚链接 | `13px / 19.68px / 500 / normal` | Header 导航、页脚栏目与链接 |
+| 收束 CTA 标题 | `48px / 55.68px / 500 / -1.44px` | Get started with ChatGPT |
 
-响应式实测：375px 下区块标题降为 `20px / 24px / 500 / -0.2px`，移动容器边距 24px。
+响应式实测：375px 下区块标题降为 `20px / 24px / 500 / -0.2px`，移动容器边距 24px；
+收束 CTA 标题降为 `32px / 36.48px / 500 / -0.64px`。
 
 ### 圆角与阴影
 
 - 媒体卡：`6.08px`（`--radius-md: .38rem`）。
 - Prompt 输入：桌面 `24px`，移动 `16px`。
 - 快捷入口 chip：`9999px`。
-- 主 CTA：`40px` 药丸。
+- 主 CTA / Download：`40px` 药丸；主 CTA 高 36px，Download 高 40px，两者均为 `14px/14px/500`。
+- View all 文字动作：`4px` 圆角、40px 可点击高度、`14px/14px/500`。
 - Prompt 主阴影（简化后的有效层）：
   - `0 3px 6px 0 rgba(0,0,0,.04)`
   - `0 4px 80px 8px rgba(0,0,0,.04)`
@@ -66,7 +71,9 @@
 - 首屏：768px 宽 prompt 居中，输入高 `104px`，下方 chip 行高 `40px`，整块用大留白而非插画装饰。
 - 首页故事区：4 列显式网格 `[326px 326px 326px 326px]` + `24px` gap；首个视频跨 3 列成 `1026×577`（约 16:9），右列三张 1:1 卡垂直排布，卡间 `64px`。
 - Recent news：两列 `[676px 676px]` + `24px` gap；行内小图为 `185×185`，文字距图 `32px`。
-- Stories / Latest research：三列 `[442.664px × 3]` + `24px` gap，方形媒体 `443×443`。
+- Stories / Latest research / OpenAI for business：三列 `[442.664px × 3]` + `24px` gap，方形媒体 `443×443`；商业区复用研究区卡片网格，只更换内容与入口。
+- Get started CTA：卡片 `1376×368`、4% 黑表面、6.08px 圆角、12 列 `[92.656px]` + `24px` gap；375px 变为 `327×385`、12 列 `[19.914px]` + `8px` gap。
+- Footer：外距 `120px 0 32px`，内容顶部 `48px`；5 组 `256px` 信息列 + `24px` 列距，列内 `40px` 节奏，底部工具行高 `40px`。
 - 页面主纵向节奏：`article` gap 在 1440px 为 `120px`，移动为 `80px`。
 - 标题行：区块标题与右上 “View all” 用 baseline 对齐，标题下方到内容 `32px`。
 
@@ -84,7 +91,16 @@
 动效特点：时长短、位移小，主要变化集中在透明度、背景、颜色和 1%–2.5% 的 scale；
 没有大幅滚动视差，页面稳定感优先。
 
-## 5. 可复用结论（→ PPT 主题 / patterns）
+## 5. 阶段6令牌校正记录
+
+- 将“Meta / CTA”拆成两类：卡片 Meta `14/19.6/500`，交互动作 `14/14/500`。
+- 补齐 Header 导航 `13/19.68/500`。
+- 补齐 OpenAI for business 与 Latest research 完全同构的三列卡片网格。
+- 补齐 Get started CTA 桌面/移动网格、4% 表面、6.08px 圆角与 32/36.48 移动标题。
+- 补齐 Footer 5×256px 信息列、24px 列距、40px 列内节奏与 13/19.68 链接系统。
+- 证据：`archive/stage6-token-audit.json`（1440×1000 DOM）与 `archive/computed-styles-mobile.json`（375×812）。
+
+## 6. 可复用结论（→ PPT 主题 / patterns）
 
 1. **主题名建议**：`openai-monochrome`。
 2. **适合场景**：AI/研究/企业级产品发布、严肃技术分享、以真实媒体和数据卡为主的叙事。
@@ -93,6 +109,7 @@
    - 封面标题 44–54px / 500 / -2% 字距，章节标题 22px / 500，卡标题 18px / 500；
    - 用 12% 黑细线和 4% 黑 wash 代替重色块；
    - 图片卡统一 6px 圆角，重点卡可跨 3/4 宽，辅卡保持 1:1；
-   - 主 CTA 黑底白字 40px 药丸，次级 chip 1px 12% 黑边 + 胶囊形。
+   - 主 CTA 黑底白字 40px 药丸、36px 高、14px/14px 行高；次级 chip 1px 12% 黑边 + 40px 胶囊形；
+   - 页脚用 5 组 256px 列、24px 列距与 13px/19.68px 链接，避免把大量导航做成重色块。
 4. **patterns 建议**：封面可用居中 prompt 结构；`metrics` 可学“大媒体 + 右侧三条 1:1 卡”的信息密度；`timeline`/`two-col` 可学 2 列新闻列表的 185px 方图 + 文本；`section` 可复用“小标题 + 右上 View all”的基准线结构。
 5. **不要照搬**：OpenAI Sans、logo、视频与图像资产受版权保护；复用应抽取黑白系统、网格和动效参数，图形与文案原创。

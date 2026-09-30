@@ -1,0 +1,612 @@
+{
+  "capturedAt": "2026-09-30T17:58:19.520Z",
+  "url": "http://127.0.0.1:8766/clones/2026-09-29-openai/archive/dom.html",
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "desktop": {
+    "navHeader": {
+      "selector": "SPAN[inline-flex items-center px-4 py-0 text-nav-header]",
+      "text": "Research",
+      "rect": {
+        "x": 115.641,
+        "y": 22.156,
+        "width": 87.625,
+        "height": 19.688
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "center",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "19.68px",
+        "letterSpacing": "normal",
+        "padding": "0px 16px",
+        "margin": "0px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "87.625px",
+        "height": "19.6875px"
+      }
+    },
+    "primaryCta": {
+      "selector": "A[transition duration-short ease-curve-a rounded-[2.5rem] text-nowrap min-h-8 flex items-center justif]",
+      "text": "Try ChatGPT(opens in a new window)",
+      "rect": {
+        "x": 1270.328,
+        "y": 14,
+        "width": 137.672,
+        "height": 36
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "center",
+        "color": "rgb(255, 255, 255)",
+        "backgroundColor": "rgb(0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "normal",
+        "padding": "0px 20px",
+        "margin": "0px",
+        "gap": "4.2px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "40px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "137.672px",
+        "height": "36px"
+      }
+    },
+    "chip": {
+      "selector": "A[transition ease-curve-a duration-250 border-primary-12 hover:bg-primary-4 whitespace-nowrap text-cta]",
+      "text": "Learn about ChatGPT Business",
+      "rect": {
+        "x": 391.203,
+        "y": 581,
+        "width": 226.563,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "center",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "normal",
+        "padding": "0px 12px",
+        "margin": "0px",
+        "gap": "normal",
+        "border": "1px solid rgba(0, 0, 0, 0.12)",
+        "borderRadius": "9999px",
+        "boxShadow": "rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.02) 0px 4px 6px 0px, rgba(0, 0, 0, 0.05) 0px 0px 2px 0px",
+        "gridTemplateColumns": "none",
+        "width": "226.562px",
+        "height": "40px"
+      }
+    },
+    "cardMeta": {
+      "selector": "P[flex flex-wrap gap-x-3 gap-y-2 text-meta @md:pe-8]",
+      "text": "Research28 min read",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "19.6px",
+        "letterSpacing": "normal",
+        "padding": "0px 32px 0px 0px",
+        "margin": "0px",
+        "gap": "8px 12px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "auto",
+        "height": "auto"
+      }
+    },
+    "cardTitle": {
+      "selector": "DIV[mb-4 text-h5 @md:pe-8]",
+      "text": "Introducing GPT-6 Sol and Luna",
+      "rect": {
+        "x": 1082,
+        "y": 1302,
+        "width": 326,
+        "height": 23.766
+      },
+      "styles": {
+        "display": "block",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "18px",
+        "fontWeight": "500",
+        "lineHeight": "23.76px",
+        "letterSpacing": "-0.18px",
+        "padding": "0px 32px 0px 0px",
+        "margin": "0px 0px 16px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "326px",
+        "height": "23.7656px"
+      }
+    },
+    "sectionAction": {
+      "selector": "A[transition duration-short ease-curve-a rounded-[2.5rem] text-nowrap min-h-8 flex items-center justif]",
+      "text": "View all",
+      "rect": {
+        "x": 1358.766,
+        "y": 3263.953,
+        "width": 49.234,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "center",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "4.2px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "4px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "49.2344px",
+        "height": "40px"
+      }
+    },
+    "ctaSection": {
+      "selector": "DIV[toc-visible:md:grid-cols-10 grid grid-cols-12 gap-x-(--grid-gap) [--grid-gap:8px] md:[--grid-gap:16p]",
+      "text": "Get started with ChatGPTDownload",
+      "rect": {
+        "x": 32,
+        "y": 5441.563,
+        "width": 1376,
+        "height": 367.688
+      },
+      "styles": {
+        "display": "grid",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0.04)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "lineHeight": "27.999px",
+        "letterSpacing": "-0.17px",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal 24px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "6.08px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px 92.6562px",
+        "width": "1376px",
+        "height": "367.688px"
+      }
+    },
+    "ctaSectionOuter": {
+      "selector": "DIV[@container w-full multi-columns:px-0 max-w-container]",
+      "text": "Get started with ChatGPTDownload",
+      "rect": {
+        "x": 0,
+        "y": 5441.563,
+        "width": 1440,
+        "height": 367.688
+      },
+      "styles": {
+        "display": "block",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "lineHeight": "27.999px",
+        "letterSpacing": "-0.17px",
+        "padding": "0px 32px",
+        "margin": "0px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "1440px",
+        "height": "367.688px"
+      }
+    },
+    "ctaTitle": {
+      "selector": "H2[text-center text-h2]",
+      "text": "Get started with ChatGPT",
+      "rect": {
+        "x": 265.328,
+        "y": 5561.563,
+        "width": 909.328,
+        "height": 55.688
+      },
+      "styles": {
+        "display": "block",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "48px",
+        "fontWeight": "500",
+        "lineHeight": "55.68px",
+        "letterSpacing": "-1.44px",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "909.328px",
+        "height": "55.6875px"
+      }
+    },
+    "downloadAction": {
+      "selector": "A[transition duration-short ease-curve-a rounded-[2.5rem] text-nowrap min-h-8 flex items-center justif]",
+      "text": "Download",
+      "rect": {
+        "x": 667.734,
+        "y": 5649.25,
+        "width": 104.516,
+        "height": 40
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "center",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0.04)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "14px",
+        "fontWeight": "500",
+        "lineHeight": "14px",
+        "letterSpacing": "normal",
+        "padding": "0px 20px",
+        "margin": "0px",
+        "gap": "4.2px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "40px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "104.516px",
+        "height": "40px"
+      }
+    },
+    "footer": {
+      "selector": "FOOTER[@container relative z-1 mt-30 mb-8]",
+      "text": "ResearchResearch IndexResearch OverviewEconomic ResearchLatest AdvancementsGPT-6GPT-5.6GPT-5.5GPT-5.",
+      "rect": {
+        "x": 0,
+        "y": 5929.25,
+        "width": 1440,
+        "height": 687.625
+      },
+      "styles": {
+        "display": "block",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "17px",
+        "fontWeight": "400",
+        "lineHeight": "27.999px",
+        "letterSpacing": "-0.17px",
+        "padding": "0px",
+        "margin": "120px 0px 32px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "1440px",
+        "height": "687.625px"
+      }
+    },
+    "footerContent": {
+      "selector": "DIV[max-w-container mb-16 px-6 pt-12 text-nav-header @md:mb-20 @md:px-8]",
+      "text": "ResearchResearch IndexResearch OverviewEconomic ResearchLatest AdvancementsGPT-6GPT-5.6GPT-5.5GPT-5.",
+      "rect": {
+        "x": 0,
+        "y": 5929.25,
+        "width": 1440,
+        "height": 567.625
+      },
+      "styles": {
+        "display": "block",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "19.68px",
+        "letterSpacing": "normal",
+        "padding": "48px 32px 0px",
+        "margin": "0px 0px 80px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "1440px",
+        "height": "567.625px"
+      }
+    },
+    "footerRow": {
+      "selector": "DIV[flex flex-col @md:flex-row @md:gap-6]",
+      "text": "ResearchResearch IndexResearch OverviewEconomic ResearchLatest AdvancementsGPT-6GPT-5.6GPT-5.5GPT-5.",
+      "rect": {
+        "x": 32,
+        "y": 5977.25,
+        "width": 1376,
+        "height": 519.625
+      },
+      "styles": {
+        "display": "flex",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "19.68px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "24px",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "1376px",
+        "height": "519.625px"
+      }
+    },
+    "footerColumns": [
+      {
+        "selector": "DIV[mt-11 flex w-full flex-col gap-11 first:mt-0 @md:mt-0 @md:gap-10]",
+        "text": "ResearchResearch IndexResearch OverviewEconomic ResearchLatest AdvancementsGPT-6GPT-5.6GPT-5.5GPT-5.",
+        "rect": {
+          "x": 32,
+          "y": 5977.25,
+          "width": 256,
+          "height": 519.625
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "normal",
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "19.68px",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "40px",
+          "border": "0px solid rgb(229, 231, 235)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "gridTemplateColumns": "none",
+          "width": "256px",
+          "height": "519.625px"
+        }
+      },
+      {
+        "selector": "DIV[mt-11 flex w-full flex-col gap-11 first:mt-0 @md:mt-0 @md:gap-10]",
+        "text": "ProductsChatGPT(opens in a new window)ChatGPT Business(opens in a new window)ChatGPT Enterprise(open",
+        "rect": {
+          "x": 312,
+          "y": 5977.25,
+          "width": 256,
+          "height": 519.625
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "normal",
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "19.68px",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "40px",
+          "border": "0px solid rgb(229, 231, 235)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "gridTemplateColumns": "none",
+          "width": "256px",
+          "height": "519.625px"
+        }
+      },
+      {
+        "selector": "DIV[mt-11 flex w-full flex-col gap-11 first:mt-0 @md:mt-0 @md:gap-10]",
+        "text": "BusinessOverviewSolutionsResourcesPluginsCustomer StoriesPartner NetworkContact SalesDevelopersApps ",
+        "rect": {
+          "x": 592,
+          "y": 5977.25,
+          "width": 256,
+          "height": 519.625
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "normal",
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "19.68px",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "40px",
+          "border": "0px solid rgb(229, 231, 235)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "gridTemplateColumns": "none",
+          "width": "256px",
+          "height": "519.625px"
+        }
+      },
+      {
+        "selector": "DIV[mt-11 flex w-full flex-col gap-11 first:mt-0 @md:mt-0 @md:gap-10]",
+        "text": "CompanyAbout UsOur CharterCareersNewsSupportHelp Center(opens in a new window)",
+        "rect": {
+          "x": 872,
+          "y": 5977.25,
+          "width": 256,
+          "height": 519.625
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "normal",
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "19.68px",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "40px",
+          "border": "0px solid rgb(229, 231, 235)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "gridTemplateColumns": "none",
+          "width": "256px",
+          "height": "519.625px"
+        }
+      },
+      {
+        "selector": "DIV[mt-11 flex w-full flex-col gap-11 first:mt-0 @md:mt-0 @md:gap-10]",
+        "text": "MoreStoriesAcademySupply Co.LivestreamsPodcastRSSTerms & PoliciesTerms of UsePrivacy PolicyOther Pol",
+        "rect": {
+          "x": 1152,
+          "y": 5977.25,
+          "width": 256,
+          "height": 519.625
+        },
+        "styles": {
+          "display": "flex",
+          "alignItems": "normal",
+          "color": "rgb(0, 0, 0)",
+          "backgroundColor": "rgba(0, 0, 0, 0)",
+          "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+          "fontSize": "13px",
+          "fontWeight": "500",
+          "lineHeight": "19.68px",
+          "letterSpacing": "normal",
+          "padding": "0px",
+          "margin": "0px",
+          "gap": "40px",
+          "border": "0px solid rgb(229, 231, 235)",
+          "borderRadius": "0px",
+          "boxShadow": "none",
+          "gridTemplateColumns": "none",
+          "width": "256px",
+          "height": "519.625px"
+        }
+      }
+    ],
+    "footerHeading": null,
+    "footerLink": {
+      "selector": "A[transition ease-curve-a duration-250 hover:text-primary-60]",
+      "text": "Research Index",
+      "rect": {
+        "x": 32,
+        "y": 6010.938,
+        "width": 91.141,
+        "height": 15
+      },
+      "styles": {
+        "display": "inline",
+        "alignItems": "normal",
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontFamily": "\"OpenAI Sans\", \"OpenAI Sans Variable Scripts\", sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "19.68px",
+        "letterSpacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border": "0px solid rgb(229, 231, 235)",
+        "borderRadius": "0px",
+        "boxShadow": "none",
+        "gridTemplateColumns": "none",
+        "width": "auto",
+        "height": "auto"
+      }
+    }
+  },
+  "mobileArchiveEvidence": {
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "sectionTitle": {
+      "fontSize": "20px",
+      "lineHeight": "24px",
+      "fontWeight": "500",
+      "letterSpacing": "-0.2px"
+    },
+    "ctaTitle": {
+      "fontSize": "32px",
+      "lineHeight": "36.48px",
+      "fontWeight": "500",
+      "letterSpacing": "-0.64px"
+    },
+    "prompt": {
+      "width": 327,
+      "height": 104,
+      "radius": "16px"
+    },
+    "getStarted": {
+      "width": 327,
+      "height": 385,
+      "gridColumns": "19.9141px × 12",
+      "gap": "8px"
+    }
+  }
+}

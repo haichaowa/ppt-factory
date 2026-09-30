@@ -144,3 +144,20 @@ Chromium verification at 1440px: `CSS1Compat`, 44 stylesheets, 20/20 images load
 ### 结果
 
 代表区域从“首屏/featured/新闻/stories/research”扩展到“产品商业区、收束 CTA、页脚”；三张新增截图均直接裁自 `screenshots/openai-home-1440-full.png`，不使用复刻图。基线显示离线预览比原始高 25px；按 featured 区后缘对齐后，主要剩余差异集中在视频帧与图标资源，另有全站 25px 纵向偏移待 Round 3 修正。
+
+## 阶段6像素级复审 Round 2 — 2026-10-01 02:08
+
+### 令牌修正（8 处）
+
+1. `tokens.json`：拆分卡片 Meta `14px/19.6px/500` 与交互动作 `14px/14px/500`，修正原先“Meta / CTA”混写造成的行高误差。
+2. `tokens.json`：补齐 Header 导航 `13px/19.68px/500`。
+3. `tokens.json`：补齐 OpenAI for business 与 research 完全同构的三列 `[442.656px]` 卡片网格。
+4. `tokens.json`：补齐 Get started CTA 桌面 `1376×368`、4% 表面、6.08px 圆角、12 列网格与移动 `327×385` / 8px gap。
+5. `tokens.json`：补齐 Footer `120px 0 32px` 外距、5×256px 信息列、24px 列距、40px 列内节奏和 13px/19.68px 链接系统。
+6. `notes.md`：同步以上真实 computed style，并记录阶段6证据来源与校正结论。
+7. `archive/stage6-token-audit.json`：保存 1440×1000 DOM 的 nav/CTA/chip/卡片/商业区/CTA/footer 逐项样式与几何测量。
+8. `archive/README.md`、`archive/verification.json`、`archive/SHA256SUMS`、`MANIFEST.json`：登记阶段6审计证据并刷新校验。
+
+### 复核结论
+
+原令牌的字体、色彩、prompt、featured、news、stories、research 主值均与复查一致；主要缺口是交互行高被误归入卡片 Meta，以及 nav、business、CTA、footer 未沉淀。375px 复查确认页面高度 `8695px`、section title `20px/24px/-0.2px`、CTA 标题 `32px/36.48px/-0.64px`、prompt `327×104/16px`。

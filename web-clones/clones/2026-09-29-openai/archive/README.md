@@ -8,6 +8,8 @@
 - `computed-styles-probe.json` — broad 1440px computed-style sample, including root CSS variables.
 - `computed-styles-mobile.json` — broad 375px computed-style sample.
 - `selected-computed-styles.json` — focused style records for navigation, prompt, media grids, cards, and section headers.
+- `stage6-computed-recheck.json` / `stage6-token-audit.json` — stage-6 headless computed-style and focused component audits at 1440×1000, cross-checked with the 375×812 mobile archive probe.
+- `stage6-baseline-1440.png` / `stage6-pixel-baseline.json` — pre-fix offline preview and pixel-difference baseline used to diagnose the 25px vertical drift.
 - `robots.txt` — capture-time robots policy.
 - `mhtml-manifest.json` — machine-readable MHTML resource inventory with content type, byte count, and per-resource SHA-256.
 - `verification.json` — automated checks for required files, token JSON validity, MHTML structure, checksums, and screenshot dimensions.

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T01:58:00+08:00",
-  "fileCount": 94,
-  "totalBytes": 21910859,
+  "generatedAt": "2026-10-01T02:08:00+08:00",
+  "fileCount": 95,
+  "totalBytes": 21938365,
   "files": [
     {
       "path": "README.md",
@@ -10,12 +10,12 @@
     },
     {
       "path": "archive/README.md",
-      "bytes": 2185,
+      "bytes": 2540,
       "kind": "document"
     },
     {
       "path": "archive/SHA256SUMS",
-      "bytes": 10498,
+      "bytes": 10725,
       "kind": "document"
     },
     {
@@ -384,8 +384,13 @@
       "kind": "document"
     },
     {
+      "path": "archive/stage6-token-audit.json",
+      "bytes": 19721,
+      "kind": "document"
+    },
+    {
       "path": "archive/verification.json",
-      "bytes": 1646,
+      "bytes": 1822,
       "kind": "document"
     },
     {
@@ -395,12 +400,12 @@
     },
     {
       "path": "notes.md",
-      "bytes": 5595,
+      "bytes": 7364,
       "kind": "document"
     },
     {
       "path": "review-log.md",
-      "bytes": 8250,
+      "bytes": 9675,
       "kind": "document"
     },
     {
@@ -470,7 +475,7 @@
     },
     {
       "path": "tokens.json",
-      "bytes": 5993,
+      "bytes": 9826,
       "kind": "document"
     }
   ]
