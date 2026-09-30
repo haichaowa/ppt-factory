@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-01T02:08:00+08:00",
+  "checkedAt": "2026-10-01T02:15:00+08:00",
   "requiredFiles": {
     "count": 17,
     "missing": [],
@@ -69,7 +69,7 @@
   "overallPass": true,
   "topLevelManifest": {
     "present": true,
-    "fileCount": 95,
+    "fileCount": 97,
     "matchesDisk": true
   },
   "domPreview": {
@@ -83,15 +83,43 @@
       "width": 1440,
       "height": 1000
     },
-    "scrollHeight": 6649,
+    "scrollHeight": 6624,
     "offlineLocalAssets": 61,
-    "missingLocalAssetReferences": 0
+    "missingLocalAssetReferences": 0,
+    "desktopViewport": {
+      "width": 1440,
+      "height": 1000
+    },
+    "mobileViewport": {
+      "width": 375,
+      "height": 812,
+      "scrollHeight": 8695
+    }
   },
   "stage6": {
     "computedRecheckPresent": true,
     "tokenAuditPresent": true,
     "pixelBaselinePresent": true,
+    "pixelFinalPresent": true,
     "sectionCoverage": 8,
-    "tokenAudit": "corrected"
+    "tokenAudit": "corrected",
+    "pixelAlignment": {
+      "originalHeight": 6624,
+      "beforeHeight": 6649,
+      "afterHeight": 6624,
+      "verticalOffsetBefore": 25,
+      "verticalOffsetAfter": 0,
+      "meanAbsoluteErrorChannelBefore": 4.342308,
+      "meanAbsoluteErrorChannelAfter": 1.290694,
+      "changedOver2RatioBefore": 0.10847403,
+      "changedOver2RatioAfter": 0.07057617,
+      "featuredRailPaddingBefore": "56.875px",
+      "featuredRailPaddingAfter": "31.953125px"
+    },
+    "remainingFidelityBoundaries": [
+      "autoplay video frame differences",
+      "13 remote SVG use references absent from MHTML",
+      "licensed OpenAI Sans exact rasterization"
+    ]
   }
 }

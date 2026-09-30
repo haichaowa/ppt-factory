@@ -99,6 +99,7 @@
 - 补齐 Get started CTA 桌面/移动网格、4% 表面、6.08px 圆角与 32/36.48 移动标题。
 - 补齐 Footer 5×256px 信息列、24px 列距、40px 列内节奏与 13/19.68 链接系统。
 - 证据：`archive/stage6-token-audit.json`（1440×1000 DOM）与 `archive/computed-styles-mobile.json`（375×812）。
+- 最终像素校正：静态预览第三个 featured 卡的运行期补偿 `--pb` 由 `56.875px` 调为 `31.953125px`，1440×1000 页高从 6649px 回到 6624px，与原始截图零纵向偏移；375×812 仍为 8695px。见 `archive/stage6-corrected-1440.png` 与 `archive/stage6-pixel-final.json`。
 
 ## 6. 可复用结论（→ PPT 主题 / patterns）
 

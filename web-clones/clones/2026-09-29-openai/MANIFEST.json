@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-01T02:08:00+08:00",
-  "fileCount": 95,
-  "totalBytes": 21938365,
+  "generatedAt": "2026-10-01T02:15:00+08:00",
+  "fileCount": 97,
+  "totalBytes": 25235427,
   "files": [
     {
       "path": "README.md",
@@ -10,12 +10,12 @@
     },
     {
       "path": "archive/README.md",
-      "bytes": 2540,
+      "bytes": 2948,
       "kind": "document"
     },
     {
       "path": "archive/SHA256SUMS",
-      "bytes": 10725,
+      "bytes": 10907,
       "kind": "document"
     },
     {
@@ -340,7 +340,7 @@
     },
     {
       "path": "archive/dom.html",
-      "bytes": 199146,
+      "bytes": 199149,
       "kind": "document"
     },
     {
@@ -379,8 +379,18 @@
       "kind": "document"
     },
     {
+      "path": "archive/stage6-corrected-1440.png",
+      "bytes": 3289928,
+      "kind": "image"
+    },
+    {
       "path": "archive/stage6-pixel-baseline.json",
       "bytes": 3459,
+      "kind": "document"
+    },
+    {
+      "path": "archive/stage6-pixel-final.json",
+      "bytes": 3474,
       "kind": "document"
     },
     {
@@ -390,22 +400,22 @@
     },
     {
       "path": "archive/verification.json",
-      "bytes": 1822,
+      "bytes": 2682,
       "kind": "document"
     },
     {
       "path": "meta.md",
-      "bytes": 1754,
+      "bytes": 1901,
       "kind": "document"
     },
     {
       "path": "notes.md",
-      "bytes": 7364,
+      "bytes": 7668,
       "kind": "document"
     },
     {
       "path": "review-log.md",
-      "bytes": 9675,
+      "bytes": 11431,
       "kind": "document"
     },
     {

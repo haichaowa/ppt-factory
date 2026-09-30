@@ -161,3 +161,22 @@ Chromium verification at 1440px: `CSS1Compat`, 44 stylesheets, 20/20 images load
 ### 复核结论
 
 原令牌的字体、色彩、prompt、featured、news、stories、research 主值均与复查一致；主要缺口是交互行高被误归入卡片 Meta，以及 nav、business、CTA、footer 未沉淀。375px 复查确认页面高度 `8695px`、section title `20px/24px/-0.2px`、CTA 标题 `32px/36.48px/-0.64px`、prompt `327×104/16px`。
+
+## 阶段6像素级复审 Round 3 — 2026-10-01 02:15
+
+### 像素修正（10 处）
+
+1. `archive/dom.html`：定位 featured 右列第三卡保留下来的运行期补偿 `--pb:56.875px`；它使静态预览 grid 变为 `1388.953px`、页高变为 `6649px`。
+2. `archive/dom.html`：将该补偿校准为 `31.953125px`，featured grid 回到 `1364.031px`，后续区块整体上移 `24.922px`。
+3. `archive/stage6-corrected-1440.png`：重新以 1440×1000 无头 Chromium 截图，输出尺寸 `1440×6624`，与原始全页截图完全一致。
+4. `archive/stage6-pixel-final.json`：记录修正后零纵向偏移像素对比；MAE 由 `4.342308` 降至 `1.290694`，>2 差异像素比例由 `10.847403%` 降至 `7.057617%`。
+5. 复测 DOM 锚点：hero y112、featured y960、Recent y2444.031、Stories y3239.031、Research y3949.063、Business y4682.844、CTA y5416.641、footer y5904.328，与原始计算样式/截图锚点一致。
+6. 复测 375×812：页高仍为 `8695px`，说明桌面像素校正未破坏移动布局。
+7. `archive/verification.json`：写入 stage6 before/after 页高、像素指标与剩余保真边界。
+8. `archive/README.md`、`meta.md`、`notes.md`：记录校正依据、结果与不可强行补偿的动态媒体/远程图标限制。
+9. `web-clones/PROGRESS.md`：阶段6标记完成。
+10. `archive/SHA256SUMS` 与 `MANIFEST.json`：覆盖新增最终截图/报告并刷新清单。
+
+### 最终判定
+
+结构性像素对齐完成：同 viewport 全页尺寸一致、纵向偏移为 0、代表区块锚点回位。剩余 7.06% >2 差异主要来自 autoplay 视频帧与未进入 MHTML 的远程 SVG `<use>`；不使用臆造图标或字体近似去伪装原始资源，原始 PNG 继续作为渲染真值。
