@@ -1,0 +1,138 @@
+[
+  {
+    "index": 0,
+    "tag": "DIV",
+    "id": "",
+    "className": "c-kXWSNC",
+    "rect": {
+      "x": 0,
+      "y": 90,
+      "width": 1440,
+      "height": 617
+    },
+    "text": "Meet Dia, the next evolution of Arc Weekly security updates, SOC 2 certification, and the Arc DNA you know (and love). Try Dia",
+    "styles": {
+      "color": "rgb(0, 0, 0)",
+      "background-color": "rgb(255, 252, 236)",
+      "background-image": "url(\"https://arc.net/images/dia-background-image.png\")",
+      "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "font-size": "16px",
+      "font-weight": "400",
+      "line-height": "normal",
+      "letter-spacing": "normal",
+      "padding": "72px 0px 0px",
+      "margin": "90px 0px 0px",
+      "gap": "normal",
+      "border-radius": "0px",
+      "display": "flex",
+      "width": "1440px",
+      "height": "617px",
+      "transform": "none",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "opacity": "1"
+    }
+  },
+  {
+    "index": 1,
+    "tag": "SECTION",
+    "id": "",
+    "className": "c-gujhdE",
+    "rect": {
+      "x": 0,
+      "y": 707,
+      "width": 1440,
+      "height": 920
+    },
+    "text": "Arc is the Chrome replacement I've been waiting for. FYI: Arc receives Chromium updates only. For active security patches and enterprise-grade protection, download Dia instead. Download Arc for Mac Download Arc for Windows MORE DETAILS",
+    "styles": {
+      "color": "rgb(255, 250, 221)",
+      "background-color": "rgb(49, 57, 251)",
+      "background-image": "url(\"https://arc.net/noise-light.png\")",
+      "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "font-size": "16px",
+      "font-weight": "400",
+      "line-height": "normal",
+      "letter-spacing": "normal",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "border-radius": "0px",
+      "display": "block",
+      "width": "1440px",
+      "height": "920px",
+      "transform": "none",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "opacity": "1"
+    }
+  },
+  {
+    "index": 2,
+    "tag": "ASIDE",
+    "id": "",
+    "className": "c-CPmpi",
+    "rect": {
+      "x": 0,
+      "y": 1627,
+      "width": 1440,
+      "height": 67
+    },
+    "text": "“Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enj",
+    "styles": {
+      "color": "rgb(49, 57, 251)",
+      "background-color": "rgb(255, 252, 236)",
+      "background-image": "none",
+      "font-family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "font-size": "16px",
+      "font-weight": "700",
+      "line-height": "normal",
+      "letter-spacing": "normal",
+      "padding": "0px",
+      "margin": "0px",
+      "gap": "normal",
+      "border-radius": "0px",
+      "display": "block",
+      "width": "1440px",
+      "height": "67px",
+      "transform": "none",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "opacity": "1"
+    }
+  },
+  {
+    "index": 3,
+    "tag": "DIV",
+    "id": "",
+    "className": "c-ivWXJT",
+    "rect": {
+      "x": 0,
+      "y": 1694,
+      "width": 1440,
+      "height": 3556
+    },
+    "text": "A browser that doesn’t just meet your needs — it anticipates them. Clean and calm, Arc shapes itself to how you use the internet. Space for the different sides of you. Effortlessly organize everything you do online — work, study, hobbies — all in one window with Spaces and Profiles. Your perfect setup. Find your perfect setup with Split View, Themes, and more. The comfort of privacy. Arc is built from the ground up to be private and secure. We don’t know what sites you visit or what you search for. Learn more about privacy in Arc →",
+    "styles": {
+      "color": "rgb(0, 0, 0)",
+      "background-color": "rgba(0, 0, 0, 0)",
+      "background-image": "none",
+      "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "font-size": "16px",
+      "font-weight": "400",
+      "line-height": "normal",
+      "letter-spacing": "normal",
+      "padding": "128px 0px",
+      "margin": "0px",
+      "gap": "normal",
+      "border-radius": "0px",
+      "display": "block",
+      "width": "1440px",
+      "height": "3556px",
+      "transform": "none",
+      "transition": "all",
+      "animation": "none 0s ease 0s 1 normal none running",
+      "opacity": "1"
+    }
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "source": "https://arc.net/",
+  "capturedAt": "2026-10-01T09:57:23.493Z",
+  "files": [
+    {
+      "name": "css/home.css",
+      "url": "https://arc.net/_next/static/css/df28c1bc1b1a6c7d.css",
+      "status": 200,
+      "contentType": "text/css; charset=utf-8",
+      "bytes": 6309,
+      "sha256": "5f339a337b5582c1c09ffa9243f581c2c0c1f15d06719ed25101f520c3d8db31"
+    },
+    {
+      "name": "fonts/marlin.woff2",
+      "url": "https://arc.net/fonts/marlin.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 42584,
+      "sha256": "beddf3b75df0666866bfa57aa45b8366d9e5396d916d4c7c1f25cc79ae31a743"
+    },
+    {
+      "name": "fonts/MarlinSoftSQ-Medium.woff2",
+      "url": "https://arc.net/fonts/MarlinSoftSQ-Medium.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 42652,
+      "sha256": "58c5e068f13fa03d5458a49385cbdcb2a588ff39b68ea61ce8bc1e56f29eb707"
+    },
+    {
+      "name": "fonts/MarlinSoftSQ-ExtraBold.woff2",
+      "url": "https://arc.net/fonts/MarlinSoftSQ-ExtraBold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 22632,
+      "sha256": "63de82a4fe61ce7de8b445fa0ab6b67189afd6fd1f5023a5f9eb6897e2dd2e8c"
+    },
+    {
+      "name": "fonts/MarlinSoftSQ-ExtraBoldItalic.woff2",
+      "url": "https://arc.net/fonts/MarlinSoftSQ-ExtraBoldItalic.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 47396,
+      "sha256": "40d893f517812966015c47af4f819b305dd309881579e119810db25c82feee0d"
+    },
+    {
+      "name": "fonts/ABCOracle-Regular.woff2",
+      "url": "https://arc.net/fonts/ABCOracle-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 44704,
+      "sha256": "e8c546ad4144a201f013d0cbd8c61370028e32b789859e36752c77d57c006dd8"
+    },
+    {
+      "name": "fonts/ABCFavoritMono-Regular.woff2",
+      "url": "https://arc.net/fonts/ABCFavoritMono-Regular.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 27952,
+      "sha256": "ac80e240d7ea10482ad36b12197b67a9e9b2154baa21d2e7cf0918c39a4bb138"
+    },
+    {
+      "name": "fonts/ABCFavoritMono-Bold.woff2",
+      "url": "https://arc.net/fonts/ABCFavoritMono-Bold.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 27764,
+      "sha256": "77f1784882af551bc0992d409eed8ae5ae7981c40d363bd3687595b02afe585f"
+    },
+    {
+      "name": "fonts/inter-var-latin.woff2",
+      "url": "https://arc.net/fonts/inter-var-latin.woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 36532,
+      "sha256": "7b37fe23a7c053972771428efcb225cd67bc573452cea2efc55e576580fe4963"
+    },
+    {
+      "name": "fonts/exposure-var-30.woff2",
+      "url": "https://arc.net/fonts/205TF-Exposure-[-30].woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 80252,
+      "sha256": "eb953e00ccd252a996eadb4cf0b0f12a6579f3ed3f187f8aaed5c1e91159c31f"
+    },
+    {
+      "name": "fonts/exposure-var-40.woff2",
+      "url": "https://arc.net/fonts/205TF-Exposure-[-40].woff2",
+      "status": 200,
+      "contentType": "font/woff2",
+      "bytes": 82740,
+      "sha256": "b8e46e36fbc835df84e0a40dfb48be88c482794251c67f8a56d44721a34b34fc"
+    },
+    {
+      "name": "video/ArcDiaPLG_Video-poster.jpg",
+      "url": "https://arc.net/video/ArcDiaPLG_Video-poster.jpg",
+      "status": 200,
+      "contentType": "image/jpeg",
+      "bytes": 55960,
+      "sha256": "f95690c5f1ca54d995f4746f651e020ae2602906a32da028bf54a72dceaf635a"
+    },
+    {
+      "name": "video/ArcDiaPLG_Video.webm",
+      "url": "https://arc.net/video/ArcDiaPLG_Video.webm",
+      "status": 200,
+      "contentType": "video/webm",
+      "bytes": 1503212,
+      "sha256": "57e7a2ea646356a2c0bf7e2bdcb386c014dcaeade11445f30a55e269d4b7e22a"
+    },
+    {
+      "name": "video/zero-chrome.png",
+      "url": "https://arc.net/zero-chrome.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 950102,
+      "sha256": "df58db15b6b79a021626c203c122803a34b04f7d26999ed3b824f3223b8216f0"
+    },
+    {
+      "name": "video/zero-chrome.mp4",
+      "url": "https://arc.net/zero-chrome.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 1219724,
+      "sha256": "f8d8cdcf2169295c41e237c8ff77c14eb00bd7dfe04d5e999a070db0c90e635d"
+    },
+    {
+      "name": "video/space-swiping.png",
+      "url": "https://arc.net/space-swiping.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 484167,
+      "sha256": "bf369fc7cc9089a57237e1603166450d59a678cc8d33e3f00f01c19fe9b58ef0"
+    },
+    {
+      "name": "video/space-swiping.mp4",
+      "url": "https://arc.net/space-swiping.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 1820923,
+      "sha256": "b8676899447d0cecaf2b70b0c2b594484ba0a39ed93ecfa76f744a424aa0526b"
+    },
+    {
+      "name": "video/theme-picker.png",
+      "url": "https://arc.net/theme-picker.png",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 356509,
+      "sha256": "8b1578ce052b6483e8d2e506745a804b9f779b3d63b61fb042b6469bc42d9619"
+    },
+    {
+      "name": "video/theme-picker.mp4",
+      "url": "https://arc.net/theme-picker.mp4",
+      "status": 200,
+      "contentType": "video/mp4",
+      "bytes": 1245582,
+      "sha256": "596dfc60e4b94d1e44c691326660eb798016b09e0326435d783bd04b5dbcc4c5"
+    },
+    {
+      "name": "images/browser-mmmhome-2048.png",
+      "url": "https://arc.net/_next/image?url=%2Fbrowser-mmmhome.png&w=2048&q=100",
+      "status": 200,
+      "contentType": "image/png",
+      "bytes": 477097,
+      "sha256": "e1a67883c2eb82cad5876b281cc5c797d1a00da59e62e865e1eedd982f873774"
+    }
+  ]
+}

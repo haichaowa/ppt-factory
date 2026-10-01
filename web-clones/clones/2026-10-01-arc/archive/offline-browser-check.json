@@ -1,0 +1,31 @@
+{
+  "file": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-arc/archive/arc-home.mhtml",
+  "metrics": {
+    "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-arc/archive/arc-home.mhtml",
+    "title": "Arc from The Browser Company",
+    "h1": [
+      "Arc is the Chrome  replacement I've been  waiting for.",
+      "Arc is the Chrome replacement I've been waiting for."
+    ],
+    "headings": 2,
+    "links": 49,
+    "stylesheets": 6,
+    "images": 3,
+    "videos": 4,
+    "scrollWidth": 1440,
+    "scrollHeight": 6087,
+    "overflowX": false,
+    "bodyText": "Max Mobile Developers Students Blog Meet Dia, the next evolution of Arc Weekly security updates, SOC 2 certification, and the Arc DNA you know (and love). Try Dia Arc is the Chrome replacement I've been waiting for. FYI: Arc receives Chromium updates only. For active security patches and enterprise-grade protection, download Dia instead. Download Arc for Mac Download Arc for Windows MORE DETAILS “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of h"
+  },
+  "externalRequests": [],
+  "blockedRequests": [
+    {
+      "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-arc/archive/arc-home.mhtml",
+      "resourceType": "document"
+    }
+  ],
+  "screenshot": {
+    "path": "archive/offline-firstscreen.png",
+    "bytes": 256001
+  }
+}

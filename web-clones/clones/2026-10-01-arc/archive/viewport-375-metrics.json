@@ -1,0 +1,2187 @@
+{
+  "url": "https://arc.net/",
+  "title": "Arc from The Browser Company",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "document": {
+    "scrollWidth": 375,
+    "scrollHeight": 3601,
+    "clientWidth": 375,
+    "clientHeight": 812,
+    "bodyScrollWidth": 375,
+    "bodyScrollHeight": 3511,
+    "overflowX": false
+  },
+  "topSections": [
+    {
+      "index": 0,
+      "tag": "DIV",
+      "id": "",
+      "className": "c-kXWSNC",
+      "rect": {
+        "x": 0,
+        "y": 90,
+        "width": 375,
+        "height": 401.56,
+        "left": 0,
+        "top": 90,
+        "right": 375,
+        "bottom": 491.56
+      },
+      "text": "Meet Dia, the next evolution of Arc Weekly security updates, SOC 2 certification, and the Arc DNA you know (and love). Try Dia",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgb(255, 252, 236)",
+        "background-image": "url(\"https://arc.net/images/dia-background-image.png\")",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "72px 0px 0px",
+        "margin": "90px 0px 0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "401.562px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 1,
+      "tag": "SECTION",
+      "id": "",
+      "className": "c-gujhdE",
+      "rect": {
+        "x": 0,
+        "y": 491.56,
+        "width": 375,
+        "height": 589.61,
+        "left": 0,
+        "top": 491.56,
+        "right": 375,
+        "bottom": 1081.17
+      },
+      "text": "Arc is the Chrome replacement I've been waiting for. FYI: Arc receives Chromium updates only. For active security patches and enterprise-grade protection, download Dia instead. Download Arc for Mac Download Arc for Windows",
+      "styles": {
+        "color": "rgb(255, 250, 221)",
+        "background-color": "rgb(49, 57, 251)",
+        "background-image": "url(\"https://arc.net/noise-light.png\")",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "589.609px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 2,
+      "tag": "ASIDE",
+      "id": "",
+      "className": "c-CPmpi",
+      "rect": {
+        "x": 0,
+        "y": 1081.17,
+        "width": 375,
+        "height": 67,
+        "left": 0,
+        "top": 1081.17,
+        "right": 375,
+        "bottom": 1148.17
+      },
+      "text": "“Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new browser I’ve most enjoyed using.” “Arc is a great name.” “Rethinking the fundamentals of how we use the web.” “Arc is the best browser to come out in the last decade.” “Arc is the new brows",
+      "styles": {
+        "color": "rgb(49, 57, 251)",
+        "background-color": "rgb(255, 252, 236)",
+        "background-image": "none",
+        "font-family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "13px",
+        "font-weight": "700",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "375px",
+        "height": "67px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 3,
+      "tag": "DIV",
+      "id": "",
+      "className": "c-ivWXJT",
+      "rect": {
+        "x": 0,
+        "y": 1148.17,
+        "width": 375,
+        "height": 1416.11,
+        "left": 0,
+        "top": 1148.17,
+        "right": 375,
+        "bottom": 2564.28
+      },
+      "text": "A browser that doesn’t just meet your needs — it anticipates them. Clean and calm, Arc shapes itself to how you use the internet. Space for the different sides of you. Effortlessly organize everything you do online — work, study, hobbies — all in one window with Spaces and Profiles. Your perfect setup. Find your perfect setup with Split View, Themes, and more. The comfort of privacy. Arc is built from the ground up to be private and secure. We don’t know what sites you visit or what you search f",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "64px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "375px",
+        "height": "1416.11px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 4,
+      "tag": "SECTION",
+      "id": "",
+      "className": "c-OBxzD",
+      "rect": {
+        "x": 0,
+        "y": 1212.17,
+        "width": 375,
+        "height": 396.55,
+        "left": 0,
+        "top": 1212.17,
+        "right": 375,
+        "bottom": 1608.72
+      },
+      "text": "A browser that doesn’t just meet your needs — it anticipates them. Clean and calm, Arc shapes itself to how you use the internet.",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "8px",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "396.547px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 5,
+      "tag": "SECTION",
+      "id": "",
+      "className": "c-OBxzD",
+      "rect": {
+        "x": 0,
+        "y": 1608.72,
+        "width": 375,
+        "height": 395.53,
+        "left": 0,
+        "top": 1608.72,
+        "right": 375,
+        "bottom": 2004.25
+      },
+      "text": "Space for the different sides of you. Effortlessly organize everything you do online — work, study, hobbies — all in one window with Spaces and Profiles.",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "8px",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "395.531px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 6,
+      "tag": "SECTION",
+      "id": "",
+      "className": "c-OBxzD",
+      "rect": {
+        "x": 0,
+        "y": 2004.25,
+        "width": 375,
+        "height": 343.52,
+        "left": 0,
+        "top": 2004.25,
+        "right": 375,
+        "bottom": 2347.77
+      },
+      "text": "Your perfect setup. Find your perfect setup with Split View, Themes, and more.",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "8px",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "343.516px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 7,
+      "tag": "SECTION",
+      "id": "",
+      "className": "c-OBxzD",
+      "rect": {
+        "x": 0,
+        "y": 2347.77,
+        "width": 375,
+        "height": 152.52,
+        "left": 0,
+        "top": 2347.77,
+        "right": 375,
+        "bottom": 2500.28
+      },
+      "text": "The comfort of privacy. Arc is built from the ground up to be private and secure. We don’t know what sites you visit or what you search for. Learn more about privacy in Arc →",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "8px",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "152.516px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 8,
+      "tag": "FOOTER",
+      "id": "",
+      "className": "c-fQOTre c-fQOTre-iHvQKn-css",
+      "rect": {
+        "x": 0,
+        "y": 2564.28,
+        "width": 375,
+        "height": 1037.03,
+        "left": 0,
+        "top": 2564.28,
+        "right": 375,
+        "bottom": 3601.31
+      },
+      "text": "Enter your new home on the internet Download Arc for Mac PRODUCT Download Privacy Policy Terms of Use Security Arc Max Arc for iPhone Integrations Credits RESOURCES Resource Center Release Notes Students FAQ Careers @ BCNY",
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgb(49, 57, 251)",
+        "background-image": "url(\"https://arc.net/noise-light.png\")",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "375px",
+        "height": "1037.03px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 9,
+      "tag": "ASIDE",
+      "id": "",
+      "className": "c-glZFUG c-glZFUG-iHvQKn-css",
+      "rect": {
+        "x": 0,
+        "y": 2564.28,
+        "width": 375,
+        "height": 260.59,
+        "left": 0,
+        "top": 2564.28,
+        "right": 375,
+        "bottom": 2824.88
+      },
+      "text": "Enter your new home on the internet Download Arc for Mac",
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgb(49, 57, 251)",
+        "background-image": "url(\"https://arc.net/noise-light.png\")",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "32px 0px 40px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "375px",
+        "height": "260.594px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 10,
+      "tag": "DIV",
+      "id": "",
+      "className": "c-ktvLll",
+      "rect": {
+        "x": 0,
+        "y": 2824.88,
+        "width": 375,
+        "height": 666,
+        "left": 0,
+        "top": 2824.88,
+        "right": 375,
+        "bottom": 3490.88
+      },
+      "text": "PRODUCT Download Privacy Policy Terms of Use Security Arc Max Arc for iPhone Integrations Credits RESOURCES Resource Center Release Notes Students FAQ Careers @ BCNY",
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "InterVariable, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "12px",
+        "font-weight": "600",
+        "line-height": "normal",
+        "letter-spacing": "0.4px",
+        "padding": "16px 64px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "375px",
+        "height": "666px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 11,
+      "tag": "A",
+      "id": "",
+      "className": "c-ftWcvJ",
+      "rect": {
+        "x": 64,
+        "y": 3514.88,
+        "width": 247,
+        "height": 86.44,
+        "left": 64,
+        "top": 3514.88,
+        "right": 311,
+        "bottom": 3601.31
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px 0px 24px",
+        "margin": "24px 64px 0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "247px",
+        "height": "86.4375px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    }
+  ],
+  "headings": [
+    {
+      "tag": "H1",
+      "text": "Arc is the Chrome replacement I've been waiting for.",
+      "rect": {
+        "x": 18.75,
+        "y": 641.56,
+        "width": 337.5,
+        "height": 99.61,
+        "left": 18.75,
+        "top": 641.56,
+        "right": 356.25,
+        "bottom": 741.17
+      },
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "32px",
+        "font-weight": "700",
+        "line-height": "31.2px",
+        "letter-spacing": "-1.6px",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "337.5px",
+        "height": "99.6094px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    }
+  ],
+  "actionElements": [
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Try Dia",
+      "rect": {
+        "x": 100.08,
+        "y": 306.38,
+        "width": 174.84,
+        "height": 58,
+        "left": 100.08,
+        "top": 306.38,
+        "right": 274.92,
+        "bottom": 364.38
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgba(0, 0, 0, 0.85)",
+        "background-image": "none",
+        "font-family": "\"ABC Oracle\", Helvetica, sans-serif",
+        "font-size": "20px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "normal",
+        "padding": "8px 18px 8px 8px",
+        "margin": "26px 100.078px 0px",
+        "gap": "14px",
+        "border-radius": "16px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "174.844px",
+        "height": "58px",
+        "transform": "none",
+        "transition": "background 0.2s ease-in-out",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px"
+      },
+      "href": "https://diabrowser.com/?utm_campaign=arc-cta"
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Download Arc for Mac",
+      "rect": {
+        "x": 51,
+        "y": 899.17,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 899.17,
+        "right": 324,
+        "bottom": 944.17
+      },
+      "styles": {
+        "color": "rgb(255, 250, 221)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      },
+      "href": "https://releases.arc.net/release/Arc-latest.dmg"
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Download Arc for Mac",
+      "rect": {
+        "x": 51,
+        "y": 899.17,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 899.17,
+        "right": 324,
+        "bottom": 944.17
+      },
+      "styles": {
+        "color": "rgb(39, 2, 194)",
+        "background-color": "rgb(255, 255, 255)",
+        "background-image": "none",
+        "font-family": "-apple-system, \"system-ui\", sans-serif",
+        "font-size": "14px",
+        "font-weight": "600",
+        "line-height": "29px",
+        "letter-spacing": "-0.14px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "border-radius": "10px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "273px",
+        "height": "45px",
+        "transform": "none",
+        "transition": "transform 0.15s, box-shadow 0.15s ease-out",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px"
+      },
+      "href": null
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Download Arc for Windows",
+      "rect": {
+        "x": 51,
+        "y": 956.17,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 956.17,
+        "right": 324,
+        "bottom": 1001.17
+      },
+      "styles": {
+        "color": "rgb(255, 250, 221)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      },
+      "href": "https://releases.arc.net/windows/ArcInstaller.exe"
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Download Arc for Windows",
+      "rect": {
+        "x": 51,
+        "y": 956.17,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 956.17,
+        "right": 324,
+        "bottom": 1001.17
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(39, 2, 194)",
+        "background-image": "none",
+        "font-family": "-apple-system, \"system-ui\", sans-serif",
+        "font-size": "14px",
+        "font-weight": "600",
+        "line-height": "29px",
+        "letter-spacing": "-0.14px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "border-radius": "10px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "273px",
+        "height": "45px",
+        "transform": "none",
+        "transition": "transform 0.15s, box-shadow 0.15s ease-out",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px"
+      },
+      "href": null
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Learn more about privacy in Arc →",
+      "rect": {
+        "x": 48.73,
+        "y": 2476.78,
+        "width": 277.52,
+        "height": 20,
+        "left": 48.73,
+        "top": 2476.78,
+        "right": 326.25,
+        "bottom": 2496.78
+      },
+      "styles": {
+        "color": "rgb(49, 57, 251)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "InterVariable, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "17px",
+        "font-weight": "700",
+        "line-height": "25.5px",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "4px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      },
+      "href": "https://arc.net/privacy"
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Download Arc for Mac",
+      "rect": {
+        "x": 51,
+        "y": 2707.88,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 2707.88,
+        "right": 324,
+        "bottom": 2752.88
+      },
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "auto",
+        "height": "auto",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      },
+      "href": "https://releases.arc.net/release/Arc-latest.dmg"
+    },
+    {
+      "tag": "BUTTON",
+      "role": null,
+      "text": "Download Arc for Mac",
+      "rect": {
+        "x": 51,
+        "y": 2707.88,
+        "width": 273,
+        "height": 45,
+        "left": 51,
+        "top": 2707.88,
+        "right": 324,
+        "bottom": 2752.88
+      },
+      "styles": {
+        "color": "rgb(39, 2, 194)",
+        "background-color": "rgb(255, 255, 255)",
+        "background-image": "none",
+        "font-family": "-apple-system, \"system-ui\", sans-serif",
+        "font-size": "14px",
+        "font-weight": "600",
+        "line-height": "29px",
+        "letter-spacing": "-0.14px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "gap": "10px",
+        "border-radius": "10px",
+        "grid-template-columns": "none",
+        "display": "flex",
+        "width": "273px",
+        "height": "45px",
+        "transform": "none",
+        "transition": "transform 0.15s, box-shadow 0.15s ease-out",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px"
+      },
+      "href": null
+    },
+    {
+      "tag": "A",
+      "role": null,
+      "text": "Download",
+      "rect": {
+        "x": 64,
+        "y": 2960.88,
+        "width": 61.67,
+        "height": 31,
+        "left": 64,
+        "top": 2960.88,
+        "right": 125.67,
+        "bottom": 2991.88
+      },
+      "styles": {
+        "color": "rgb(255, 252, 236)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "InterVariable, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "12px",
+        "font-weight": "600",
+        "line-height": "normal",
+        "letter-spacing": "0.4px",
+        "padding": "8px 0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "61.6719px",
+        "height": "31px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      },
+      "href": "https://arc.net/download"
+    }
+  ],
+  "media": [
+    {
+      "index": 0,
+      "tag": "IMG",
+      "alt": "Dia Icon",
+      "src": "https://arc.net/images/dia_app_icon.png",
+      "poster": null,
+      "rect": {
+        "x": 108.08,
+        "y": 314.38,
+        "width": 42,
+        "height": 42,
+        "left": 108.08,
+        "top": 314.38,
+        "right": 150.08,
+        "bottom": 356.38
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "\"ABC Oracle\", Helvetica, sans-serif",
+        "font-size": "20px",
+        "font-weight": "400",
+        "line-height": "24px",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "42px",
+        "height": "42px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "fill",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 1,
+      "tag": "IMG",
+      "alt": "Dia Hero Image",
+      "src": "https://arc.net/images/dia-hero-image.png",
+      "poster": null,
+      "rect": {
+        "x": 0,
+        "y": 389.38,
+        "width": 375,
+        "height": 216.56,
+        "left": 0,
+        "top": 389.38,
+        "right": 375,
+        "bottom": 605.94
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "375px",
+        "height": "216.562px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "contain",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 2,
+      "tag": "VIDEO",
+      "alt": "",
+      "src": "https://arc.net/video/ArcDiaPLG_Video.webm",
+      "poster": "https://arc.net/video/ArcDiaPLG_Video-poster.jpg",
+      "rect": {
+        "x": 112.5,
+        "y": 411.84,
+        "width": 225,
+        "height": 156.47,
+        "left": 112.5,
+        "top": 411.84,
+        "right": 337.5,
+        "bottom": 568.31
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "block",
+        "width": "225px",
+        "height": "156.469px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "contain",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 3,
+      "tag": "VIDEO",
+      "alt": "",
+      "src": "https://arc.net/zero-chrome.mp4",
+      "poster": "https://arc.net/zero-chrome.png",
+      "rect": {
+        "x": 0,
+        "y": 1336.22,
+        "width": 375,
+        "height": 249.91,
+        "left": 0,
+        "top": 1336.22,
+        "right": 375,
+        "bottom": 1586.13
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "-22.5px 0px 0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "375px",
+        "height": "249.906px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "contain",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 4,
+      "tag": "VIDEO",
+      "alt": "",
+      "src": "https://arc.net/space-swiping.mp4",
+      "poster": "https://arc.net/space-swiping.png",
+      "rect": {
+        "x": 0,
+        "y": 1731.75,
+        "width": 375,
+        "height": 249.91,
+        "left": 0,
+        "top": 1731.75,
+        "right": 375,
+        "bottom": 1981.66
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "-22.5px 0px 0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "375px",
+        "height": "249.906px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "contain",
+        "box-shadow": "none"
+      }
+    },
+    {
+      "index": 5,
+      "tag": "VIDEO",
+      "alt": "",
+      "src": "https://arc.net/theme-picker.mp4",
+      "poster": "https://arc.net/theme-picker.png",
+      "rect": {
+        "x": 0,
+        "y": 2075.27,
+        "width": 375,
+        "height": 249.91,
+        "left": 0,
+        "top": 2075.27,
+        "right": 375,
+        "bottom": 2325.17
+      },
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "normal",
+        "letter-spacing": "normal",
+        "padding": "0px",
+        "margin": "-22.5px 0px 0px",
+        "gap": "normal",
+        "border-radius": "0px",
+        "grid-template-columns": "none",
+        "display": "inline",
+        "width": "375px",
+        "height": "249.906px",
+        "transform": "none",
+        "transition": "all",
+        "animation-name": "none",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "opacity": "1",
+        "mix-blend-mode": "normal",
+        "object-fit": "contain",
+        "box-shadow": "none"
+      }
+    }
+  ],
+  "computedFrequencies": {
+    "color": [
+      {
+        "value": "rgb(49, 57, 251)",
+        "count": 92
+      },
+      {
+        "value": "rgb(255, 252, 236)",
+        "count": 49
+      },
+      {
+        "value": "rgb(0, 0, 0)",
+        "count": 42
+      },
+      {
+        "value": "rgb(255, 250, 221)",
+        "count": 18
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 10
+      },
+      {
+        "value": "rgb(105, 105, 105)",
+        "count": 9
+      },
+      {
+        "value": "rgb(39, 2, 194)",
+        "count": 6
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.65)",
+        "count": 1
+      }
+    ],
+    "background-color": [
+      {
+        "value": "rgba(0, 0, 0, 0)",
+        "count": 216
+      },
+      {
+        "value": "rgb(49, 57, 251)",
+        "count": 4
+      },
+      {
+        "value": "rgb(255, 255, 255)",
+        "count": 3
+      },
+      {
+        "value": "rgb(255, 252, 236)",
+        "count": 2
+      },
+      {
+        "value": "rgb(39, 2, 194)",
+        "count": 1
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.85)",
+        "count": 1
+      }
+    ],
+    "background-image": [
+      {
+        "value": "url(\"https://arc.net/noise-light.png\")",
+        "count": 4
+      },
+      {
+        "value": "url(\"https://arc.net/images/dia-background-image.png\")",
+        "count": 1
+      }
+    ],
+    "font-family": [
+      {
+        "value": "\"Marlin Soft SQ\", -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "count": 94
+      },
+      {
+        "value": "Marlin, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "count": 77
+      },
+      {
+        "value": "InterVariable, Inter, -apple-system, \"system-ui\", \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+        "count": 38
+      },
+      {
+        "value": "-apple-system, \"system-ui\", sans-serif",
+        "count": 9
+      },
+      {
+        "value": "\"ABC Oracle\", Helvetica, sans-serif",
+        "count": 6
+      },
+      {
+        "value": "\"ABC Favorit Mono\", Menlo, Monaco, \"Lucida Console\", \"Liberation Mono\", \"DejaVu Sans Mono\", \"Bitstream Vera Sans Mono\", \"Courier New\", monospace",
+        "count": 2
+      },
+      {
+        "value": "\"Exposure VAR\", Helvetica, sans-serif",
+        "count": 1
+      }
+    ],
+    "font-size": [
+      {
+        "value": "13px",
+        "count": 88
+      },
+      {
+        "value": "16px",
+        "count": 73
+      },
+      {
+        "value": "12px",
+        "count": 30
+      },
+      {
+        "value": "17px",
+        "count": 10
+      },
+      {
+        "value": "14px",
+        "count": 9
+      },
+      {
+        "value": "20px",
+        "count": 5
+      },
+      {
+        "value": "27.2px",
+        "count": 4
+      },
+      {
+        "value": "32px",
+        "count": 3
+      },
+      {
+        "value": "13.3333px",
+        "count": 2
+      },
+      {
+        "value": "28px",
+        "count": 2
+      },
+      {
+        "value": "30px",
+        "count": 1
+      }
+    ],
+    "font-weight": [
+      {
+        "value": "700",
+        "count": 104
+      },
+      {
+        "value": "400",
+        "count": 81
+      },
+      {
+        "value": "600",
+        "count": 37
+      },
+      {
+        "value": "500",
+        "count": 5
+      }
+    ],
+    "line-height": [
+      {
+        "value": "25.5px",
+        "count": 10
+      },
+      {
+        "value": "29px",
+        "count": 9
+      },
+      {
+        "value": "24px",
+        "count": 5
+      },
+      {
+        "value": "26.52px",
+        "count": 4
+      },
+      {
+        "value": "31.2px",
+        "count": 3
+      },
+      {
+        "value": "30.8px",
+        "count": 2
+      },
+      {
+        "value": "19.2px",
+        "count": 1
+      },
+      {
+        "value": "30px",
+        "count": 1
+      }
+    ],
+    "letter-spacing": [
+      {
+        "value": "0.4px",
+        "count": 30
+      },
+      {
+        "value": "-0.14px",
+        "count": 9
+      },
+      {
+        "value": "-1.6px",
+        "count": 7
+      },
+      {
+        "value": "-1.4px",
+        "count": 2
+      },
+      {
+        "value": "-0.72px",
+        "count": 1
+      }
+    ],
+    "padding": [
+      {
+        "value": "0px",
+        "count": 172
+      },
+      {
+        "value": "8px 0px",
+        "count": 18
+      },
+      {
+        "value": "24px",
+        "count": 16
+      },
+      {
+        "value": "0px 32px",
+        "count": 6
+      },
+      {
+        "value": "0px 24px",
+        "count": 4
+      },
+      {
+        "value": "0px 20px",
+        "count": 2
+      },
+      {
+        "value": "0px 0px 24px",
+        "count": 1
+      },
+      {
+        "value": "0px 0px 2px",
+        "count": 1
+      },
+      {
+        "value": "150px 0px 80px",
+        "count": 1
+      },
+      {
+        "value": "16px 64px",
+        "count": 1
+      },
+      {
+        "value": "32px 0px 40px",
+        "count": 1
+      },
+      {
+        "value": "32px 48px",
+        "count": 1
+      },
+      {
+        "value": "64px 0px",
+        "count": 1
+      },
+      {
+        "value": "72px 0px 0px",
+        "count": 1
+      },
+      {
+        "value": "8px 18px 8px 8px",
+        "count": 1
+      }
+    ],
+    "margin": [
+      {
+        "value": "0px",
+        "count": 211
+      },
+      {
+        "value": "-22.5px 0px 0px",
+        "count": 3
+      },
+      {
+        "value": "0px 0px 8px",
+        "count": 2
+      },
+      {
+        "value": "0px -22.4px 0px 0px",
+        "count": 1
+      },
+      {
+        "value": "0px 0px 0px -20.8px",
+        "count": 1
+      },
+      {
+        "value": "0px 0px 0px 8px",
+        "count": 1
+      },
+      {
+        "value": "16px 0px -4px",
+        "count": 1
+      },
+      {
+        "value": "16px 0px 0px",
+        "count": 1
+      },
+      {
+        "value": "16px 0px 32px",
+        "count": 1
+      },
+      {
+        "value": "20px 0px 0px",
+        "count": 1
+      },
+      {
+        "value": "24px 64px 0px",
+        "count": 1
+      },
+      {
+        "value": "25px 0px 0px",
+        "count": 1
+      },
+      {
+        "value": "26px 100.078px 0px",
+        "count": 1
+      },
+      {
+        "value": "90px 0px 0px",
+        "count": 1
+      }
+    ],
+    "gap": [
+      {
+        "value": "12px",
+        "count": 19
+      },
+      {
+        "value": "16px",
+        "count": 5
+      },
+      {
+        "value": "8px",
+        "count": 4
+      },
+      {
+        "value": "10px",
+        "count": 3
+      },
+      {
+        "value": "32px",
+        "count": 2
+      },
+      {
+        "value": "14px",
+        "count": 1
+      },
+      {
+        "value": "24px",
+        "count": 1
+      }
+    ],
+    "border-radius": [
+      {
+        "value": "0px",
+        "count": 222
+      },
+      {
+        "value": "10px",
+        "count": 3
+      },
+      {
+        "value": "16px",
+        "count": 1
+      },
+      {
+        "value": "4px",
+        "count": 1
+      }
+    ],
+    "grid-template-columns": [],
+    "display": [
+      {
+        "value": "block",
+        "count": 102
+      },
+      {
+        "value": "inline",
+        "count": 77
+      },
+      {
+        "value": "flex",
+        "count": 48
+      }
+    ],
+    "width": [
+      {
+        "value": "375px",
+        "count": 46
+      },
+      {
+        "value": "273px",
+        "count": 13
+      },
+      {
+        "value": "216.469px",
+        "count": 8
+      },
+      {
+        "value": "475.156px",
+        "count": 8
+      },
+      {
+        "value": "495.094px",
+        "count": 8
+      },
+      {
+        "value": "506.906px",
+        "count": 8
+      },
+      {
+        "value": "85px",
+        "count": 8
+      },
+      {
+        "value": "16px",
+        "count": 7
+      },
+      {
+        "value": "24px",
+        "count": 6
+      },
+      {
+        "value": "100px",
+        "count": 4
+      },
+      {
+        "value": "104.453px",
+        "count": 4
+      },
+      {
+        "value": "3387.25px",
+        "count": 3
+      },
+      {
+        "value": "247px",
+        "count": 2
+      },
+      {
+        "value": "311px",
+        "count": 2
+      },
+      {
+        "value": "32px",
+        "count": 2
+      },
+      {
+        "value": "45px",
+        "count": 2
+      },
+      {
+        "value": "84px",
+        "count": 2
+      },
+      {
+        "value": "103.672px",
+        "count": 1
+      },
+      {
+        "value": "174.844px",
+        "count": 1
+      },
+      {
+        "value": "19px",
+        "count": 1
+      },
+      {
+        "value": "225px",
+        "count": 1
+      },
+      {
+        "value": "25.3594px",
+        "count": 1
+      },
+      {
+        "value": "279px",
+        "count": 1
+      },
+      {
+        "value": "293.438px",
+        "count": 1
+      },
+      {
+        "value": "327px",
+        "count": 1
+      },
+      {
+        "value": "337.5px",
+        "count": 1
+      },
+      {
+        "value": "341.797px",
+        "count": 1
+      },
+      {
+        "value": "40px",
+        "count": 1
+      },
+      {
+        "value": "42px",
+        "count": 1
+      },
+      {
+        "value": "45.7969px",
+        "count": 1
+      },
+      {
+        "value": "50.75px",
+        "count": 1
+      },
+      {
+        "value": "52.5312px",
+        "count": 1
+      },
+      {
+        "value": "53.1719px",
+        "count": 1
+      },
+      {
+        "value": "56.6719px",
+        "count": 1
+      },
+      {
+        "value": "60px",
+        "count": 1
+      },
+      {
+        "value": "61.6719px",
+        "count": 1
+      },
+      {
+        "value": "68.3594px",
+        "count": 1
+      },
+      {
+        "value": "76.3438px",
+        "count": 1
+      },
+      {
+        "value": "82.375px",
+        "count": 1
+      },
+      {
+        "value": "88.0625px",
+        "count": 1
+      }
+    ],
+    "height": [
+      {
+        "value": "70px",
+        "count": 18
+      },
+      {
+        "value": "31px",
+        "count": 13
+      },
+      {
+        "value": "45px",
+        "count": 13
+      },
+      {
+        "value": "65px",
+        "count": 12
+      },
+      {
+        "value": "16px",
+        "count": 8
+      },
+      {
+        "value": "66px",
+        "count": 6
+      },
+      {
+        "value": "10px",
+        "count": 5
+      },
+      {
+        "value": "24px",
+        "count": 5
+      },
+      {
+        "value": "13px",
+        "count": 4
+      },
+      {
+        "value": "18px",
+        "count": 4
+      },
+      {
+        "value": "22px",
+        "count": 4
+      },
+      {
+        "value": "232.406px",
+        "count": 3
+      },
+      {
+        "value": "249.906px",
+        "count": 3
+      },
+      {
+        "value": "250px",
+        "count": 3
+      },
+      {
+        "value": "32px",
+        "count": 3
+      },
+      {
+        "value": "43px",
+        "count": 3
+      },
+      {
+        "value": "82px",
+        "count": 3
+      },
+      {
+        "value": "96px",
+        "count": 3
+      },
+      {
+        "value": "26.5156px",
+        "count": 2
+      },
+      {
+        "value": "42px",
+        "count": 2
+      },
+      {
+        "value": "51px",
+        "count": 2
+      },
+      {
+        "value": "589.609px",
+        "count": 2
+      },
+      {
+        "value": "102.188px",
+        "count": 1
+      },
+      {
+        "value": "102px",
+        "count": 1
+      },
+      {
+        "value": "1037.03px",
+        "count": 1
+      },
+      {
+        "value": "118px",
+        "count": 1
+      },
+      {
+        "value": "1416.11px",
+        "count": 1
+      },
+      {
+        "value": "15.0469px",
+        "count": 1
+      },
+      {
+        "value": "152.516px",
+        "count": 1
+      },
+      {
+        "value": "156.469px",
+        "count": 1
+      },
+      {
+        "value": "15px",
+        "count": 1
+      },
+      {
+        "value": "188.594px",
+        "count": 1
+      },
+      {
+        "value": "20px",
+        "count": 1
+      },
+      {
+        "value": "216.562px",
+        "count": 1
+      },
+      {
+        "value": "234px",
+        "count": 1
+      },
+      {
+        "value": "2474.28px",
+        "count": 1
+      },
+      {
+        "value": "25.5px",
+        "count": 1
+      },
+      {
+        "value": "260.594px",
+        "count": 1
+      },
+      {
+        "value": "26px",
+        "count": 1
+      },
+      {
+        "value": "272px",
+        "count": 1
+      }
+    ],
+    "transform": [
+      {
+        "value": "matrix(1, 0, 0, 1, -348.262, 0)",
+        "count": 2
+      },
+      {
+        "value": "matrix(-1, 0, 0, -1, 0, 0)",
+        "count": 1
+      },
+      {
+        "value": "matrix(1, 0, 0, 1, 0.630371, 0.481934)",
+        "count": 1
+      }
+    ],
+    "transition": [
+      {
+        "value": "all",
+        "count": 222
+      },
+      {
+        "value": "transform 0.15s, box-shadow 0.15s ease-out",
+        "count": 3
+      },
+      {
+        "value": "background 0.2s ease-in-out",
+        "count": 1
+      },
+      {
+        "value": "transform 0.2s ease-in-out",
+        "count": 1
+      }
+    ],
+    "animation-name": [
+      {
+        "value": "scroll",
+        "count": 2
+      }
+    ],
+    "animation-duration": [
+      {
+        "value": "0s",
+        "count": 225
+      },
+      {
+        "value": "67.745s",
+        "count": 2
+      }
+    ],
+    "animation-timing-function": [
+      {
+        "value": "ease",
+        "count": 225
+      },
+      {
+        "value": "linear",
+        "count": 2
+      }
+    ],
+    "opacity": [
+      {
+        "value": "1",
+        "count": 224
+      },
+      {
+        "value": "0.5",
+        "count": 3
+      }
+    ],
+    "mix-blend-mode": [
+      {
+        "value": "overlay",
+        "count": 2
+      }
+    ],
+    "object-fit": [
+      {
+        "value": "fill",
+        "count": 222
+      },
+      {
+        "value": "contain",
+        "count": 5
+      }
+    ],
+    "box-shadow": [
+      {
+        "value": "rgba(0, 0, 0, 0.1) 0px 5px 5px 0px",
+        "count": 3
+      },
+      {
+        "value": "rgba(0, 0, 0, 0.25) 0px 2px 8px 0px",
+        "count": 1
+      }
+    ]
+  },
+  "stylesheets": [
+    {
+      "href": null,
+      "rules": "blocked"
+    },
+    {
+      "href": "https://arc.net/_next/static/css/df28c1bc1b1a6c7d.css",
+      "rules": "blocked"
+    },
+    {
+      "href": null,
+      "rules": "blocked"
+    },
+    {
+      "href": null,
+      "rules": "blocked"
+    },
+    {
+      "href": null,
+      "rules": "blocked"
+    },
+    {
+      "href": null,
+      "rules": "blocked"
+    }
+  ],
+  "matchMedia": {
+    "mobileMax479": true,
+    "mobileMax767": true,
+    "tabletMin768": false,
+    "desktopMin1024": false,
+    "reducedMotion": true
+  },
+  "animations": [
+    {
+      "type": "CSSAnimation",
+      "duration": 67745,
+      "delay": 0,
+      "easing": "linear",
+      "targetDescription": "DIV.marquee"
+    },
+    {
+      "type": "CSSAnimation",
+      "duration": 67745,
+      "delay": 0,
+      "easing": "linear",
+      "targetDescription": "DIV.marquee"
+    }
+  ],
+  "response": {
+    "status": 200,
+    "url": "https://arc.net/",
+    "headers": [
+      {
+        "name": "access-control-allow-origin",
+        "value": "*"
+      },
+      {
+        "name": "age",
+        "value": "54501"
+      },
+      {
+        "name": "cache-control",
+        "value": "public, max-age=0, must-revalidate"
+      },
+      {
+        "name": "cf-cache-status",
+        "value": "DYNAMIC"
+      },
+      {
+        "name": "cf-ray",
+        "value": "a43a8f3f781e963f-SJC"
+      },
+      {
+        "name": "content-disposition",
+        "value": "inline"
+      },
+      {
+        "name": "content-encoding",
+        "value": "gzip"
+      },
+      {
+        "name": "content-type",
+        "value": "text/html; charset=utf-8"
+      },
+      {
+        "name": "date",
+        "value": "Thu, 01 Oct 2026 09:49:49 GMT"
+      },
+      {
+        "name": "server",
+        "value": "cloudflare"
+      },
+      {
+        "name": "strict-transport-security",
+        "value": "max-age=63072000; includeSubDomains; preload"
+      },
+      {
+        "name": "vary",
+        "value": "RSC, Next-Router-State-Tree, Next-Router-Prefetch\naccept-encoding"
+      },
+      {
+        "name": "x-frames-options",
+        "value": "DENY"
+      },
+      {
+        "name": "x-matched-path",
+        "value": "/"
+      },
+      {
+        "name": "x-vercel-cache",
+        "value": "HIT"
+      },
+      {
+        "name": "x-vercel-id",
+        "value": "sfo1::6kbj4-1790848189374-cd4a37ce5e91"
+      }
+    ]
+  }
+}

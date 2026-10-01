@@ -1,0 +1,660 @@
+[
+  {
+    "name": "https://arc.net/fonts/marlin.woff2",
+    "initiatorType": "link",
+    "transferSize": 42884,
+    "encodedBodySize": 42584,
+    "decodedBodySize": 42584
+  },
+  {
+    "name": "https://arc.net/_next/image?url=%2Fzero-chrome.png&w=1920&q=100",
+    "initiatorType": "link",
+    "transferSize": 212336,
+    "encodedBodySize": 212036,
+    "decodedBodySize": 212036
+  },
+  {
+    "name": "https://arc.net/_next/image?url=%2Fspace-swiping.png&w=1920&q=100",
+    "initiatorType": "link",
+    "transferSize": 109430,
+    "encodedBodySize": 109130,
+    "decodedBodySize": 109130
+  },
+  {
+    "name": "https://arc.net/_next/image?url=%2Ftheme-picker.png&w=1920&q=100",
+    "initiatorType": "link",
+    "transferSize": 106948,
+    "encodedBodySize": 106648,
+    "decodedBodySize": 106648
+  },
+  {
+    "name": "https://arc.net/_next/static/css/df28c1bc1b1a6c7d.css",
+    "initiatorType": "link",
+    "transferSize": 1055,
+    "encodedBodySize": 755,
+    "decodedBodySize": 6309
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/webpack-c7e72f719ef4fcbc.js",
+    "initiatorType": "script",
+    "transferSize": 2665,
+    "encodedBodySize": 2365,
+    "decodedBodySize": 4500
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/main-0ed5ce4e590b0f33.js",
+    "initiatorType": "script",
+    "transferSize": 40449,
+    "encodedBodySize": 40149,
+    "decodedBodySize": 131665
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/framework-552547284f246270.js",
+    "initiatorType": "script",
+    "transferSize": 46633,
+    "encodedBodySize": 46333,
+    "decodedBodySize": 140001
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/7112840a-127f2773c0a86c59.js",
+    "initiatorType": "script",
+    "transferSize": 49696,
+    "encodedBodySize": 49396,
+    "decodedBodySize": 162314
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/a9e2c71f-f1afca517a37845b.js",
+    "initiatorType": "script",
+    "transferSize": 4359,
+    "encodedBodySize": 4059,
+    "decodedBodySize": 46938
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/_app-549c2dcbaa19fc61.js",
+    "initiatorType": "script",
+    "transferSize": 40933,
+    "encodedBodySize": 40633,
+    "decodedBodySize": 110999
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/e8085b2a-0762b558c513b73b.js",
+    "initiatorType": "script",
+    "transferSize": 25342,
+    "encodedBodySize": 25042,
+    "decodedBodySize": 82631
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/b47c2c54-361162632dff898f.js",
+    "initiatorType": "script",
+    "transferSize": 3216,
+    "encodedBodySize": 2916,
+    "decodedBodySize": 39899
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/6208-ba8d210d5d7b6073.js",
+    "initiatorType": "script",
+    "transferSize": 5072,
+    "encodedBodySize": 4772,
+    "decodedBodySize": 11209
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/9182-84d5580a6c7b8724.js",
+    "initiatorType": "script",
+    "transferSize": 52488,
+    "encodedBodySize": 52188,
+    "decodedBodySize": 222828
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/1606-c4260f233328d341.js",
+    "initiatorType": "script",
+    "transferSize": 91804,
+    "encodedBodySize": 91504,
+    "decodedBodySize": 654975
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/index-de1a668006350c05.js",
+    "initiatorType": "script",
+    "transferSize": 4996,
+    "encodedBodySize": 4696,
+    "decodedBodySize": 12103
+  },
+  {
+    "name": "https://arc.net/_next/static/ZItv7-G5V1T6S5vw51s7i/_buildManifest.js",
+    "initiatorType": "script",
+    "transferSize": 2028,
+    "encodedBodySize": 1728,
+    "decodedBodySize": 5662
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/4196-e646878f89c77cbb.js",
+    "initiatorType": "script",
+    "transferSize": 127419,
+    "encodedBodySize": 127119,
+    "decodedBodySize": 388047
+  },
+  {
+    "name": "https://arc.net/_next/static/ZItv7-G5V1T6S5vw51s7i/_ssgManifest.js",
+    "initiatorType": "script",
+    "transferSize": 444,
+    "encodedBodySize": 144,
+    "decodedBodySize": 255
+  },
+  {
+    "name": "https://arc.net/video/ArcDiaPLG_Video-poster.jpg",
+    "initiatorType": "video",
+    "transferSize": 56260,
+    "encodedBodySize": 55960,
+    "decodedBodySize": 55960
+  },
+  {
+    "name": "https://arc.net/images/dia-hero-image.png",
+    "initiatorType": "img",
+    "transferSize": 393530,
+    "encodedBodySize": 393230,
+    "decodedBodySize": 393230
+  },
+  {
+    "name": "https://arc.net/images/dia_app_icon.png",
+    "initiatorType": "img",
+    "transferSize": 359849,
+    "encodedBodySize": 359549,
+    "decodedBodySize": 359549
+  },
+  {
+    "name": "https://arc.net/video/ArcDiaPLG_Video.webm",
+    "initiatorType": "video",
+    "transferSize": 1503512,
+    "encodedBodySize": 1503212,
+    "decodedBodySize": 1503212
+  },
+  {
+    "name": "https://arc.net/noise-light.png",
+    "initiatorType": "css",
+    "transferSize": 33658,
+    "encodedBodySize": 33358,
+    "decodedBodySize": 33358
+  },
+  {
+    "name": "https://arc.net/images/dia-background-image.png",
+    "initiatorType": "css",
+    "transferSize": 1179419,
+    "encodedBodySize": 1179119,
+    "decodedBodySize": 1179119
+  },
+  {
+    "name": "https://arc.net/fonts/MarlinSoftSQ-Medium.woff2",
+    "initiatorType": "css",
+    "transferSize": 42952,
+    "encodedBodySize": 42652,
+    "decodedBodySize": 42652
+  },
+  {
+    "name": "https://arc.net/fonts/205TF-Exposure-[-30].woff2",
+    "initiatorType": "css",
+    "transferSize": 80552,
+    "encodedBodySize": 80252,
+    "decodedBodySize": 80252
+  },
+  {
+    "name": "https://arc.net/fonts/ABCOracle-Regular.woff2",
+    "initiatorType": "css",
+    "transferSize": 45004,
+    "encodedBodySize": 44704,
+    "decodedBodySize": 44704
+  },
+  {
+    "name": "https://arc.net/fonts/MarlinSoftSQ-ExtraBold.woff2",
+    "initiatorType": "css",
+    "transferSize": 22932,
+    "encodedBodySize": 22632,
+    "decodedBodySize": 22632
+  },
+  {
+    "name": "https://arc.net/fonts/inter-var-latin.woff2",
+    "initiatorType": "css",
+    "transferSize": 36832,
+    "encodedBodySize": 36532,
+    "decodedBodySize": 36532
+  },
+  {
+    "name": "https://arc.net/fonts/ABCFavoritMono-Regular.woff2",
+    "initiatorType": "css",
+    "transferSize": 28252,
+    "encodedBodySize": 27952,
+    "decodedBodySize": 27952
+  },
+  {
+    "name": "https://arc.net/fonts/MarlinSoftSQ-ExtraBoldItalic.woff2",
+    "initiatorType": "css",
+    "transferSize": 47696,
+    "encodedBodySize": 47396,
+    "decodedBodySize": 47396
+  },
+  {
+    "name": "https://arc.net/fonts/ABCFavoritMono-Bold.woff2",
+    "initiatorType": "css",
+    "transferSize": 28064,
+    "encodedBodySize": 27764,
+    "decodedBodySize": 27764
+  },
+  {
+    "name": "https://arc.net/zero-chrome.png",
+    "initiatorType": "video",
+    "transferSize": 950402,
+    "encodedBodySize": 950102,
+    "decodedBodySize": 950102
+  },
+  {
+    "name": "https://arc.net/space-swiping.png",
+    "initiatorType": "video",
+    "transferSize": 484467,
+    "encodedBodySize": 484167,
+    "decodedBodySize": 484167
+  },
+  {
+    "name": "https://arc.net/theme-picker.png",
+    "initiatorType": "video",
+    "transferSize": 356809,
+    "encodedBodySize": 356509,
+    "decodedBodySize": 356509
+  },
+  {
+    "name": "https://arc.net/_next/image?url=%2Fbrowser-mmmhome.png&w=2048&q=100",
+    "initiatorType": "img",
+    "transferSize": 458814,
+    "encodedBodySize": 458514,
+    "decodedBodySize": 458514
+  },
+  {
+    "name": "https://arc.net/zero-chrome.mp4",
+    "initiatorType": "video",
+    "transferSize": 300,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/space-swiping.mp4",
+    "initiatorType": "video",
+    "transferSize": 300,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/theme-picker.mp4",
+    "initiatorType": "video",
+    "transferSize": 300,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/max.json",
+    "initiatorType": "fetch",
+    "transferSize": 1633,
+    "encodedBodySize": 1333,
+    "decodedBodySize": 3458
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/max-846ad5d8f1b1fac5.js",
+    "initiatorType": "link",
+    "transferSize": 2538,
+    "encodedBodySize": 2238,
+    "decodedBodySize": 4818
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/search.json",
+    "initiatorType": "fetch",
+    "transferSize": 473,
+    "encodedBodySize": 173,
+    "decodedBodySize": 193
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/6432-2b2d11de797a3b5f.js",
+    "initiatorType": "link",
+    "transferSize": 10217,
+    "encodedBodySize": 9917,
+    "decodedBodySize": 25290
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/8788-2ba29eedb651f1f9.js",
+    "initiatorType": "link",
+    "transferSize": 3566,
+    "encodedBodySize": 3266,
+    "decodedBodySize": 7205
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/search-1bd490a806db848f.js",
+    "initiatorType": "link",
+    "transferSize": 17031,
+    "encodedBodySize": 16731,
+    "decodedBodySize": 51645
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/6340-6ec32339962b6a54.js",
+    "initiatorType": "link",
+    "transferSize": 6820,
+    "encodedBodySize": 6520,
+    "decodedBodySize": 17023
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/developers.json",
+    "initiatorType": "fetch",
+    "transferSize": 473,
+    "encodedBodySize": 173,
+    "decodedBodySize": 193
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/developers-ac0fa3ceb79a9aae.js",
+    "initiatorType": "link",
+    "transferSize": 6551,
+    "encodedBodySize": 6251,
+    "decodedBodySize": 16894
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/students.json",
+    "initiatorType": "fetch",
+    "transferSize": 473,
+    "encodedBodySize": 173,
+    "decodedBodySize": 193
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/students-ba529ad4dca3efb0.js",
+    "initiatorType": "link",
+    "transferSize": 4947,
+    "encodedBodySize": 4647,
+    "decodedBodySize": 12601
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/905-66e5c5f4168bf0dc.js",
+    "initiatorType": "link",
+    "transferSize": 13757,
+    "encodedBodySize": 13457,
+    "decodedBodySize": 38956
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/blog.json",
+    "initiatorType": "fetch",
+    "transferSize": 1580,
+    "encodedBodySize": 1280,
+    "decodedBodySize": 3838
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/1209-39beec6ae7953340.js",
+    "initiatorType": "link",
+    "transferSize": 3410,
+    "encodedBodySize": 3110,
+    "decodedBodySize": 8240
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/blog-c769fb826adf748f.js",
+    "initiatorType": "link",
+    "transferSize": 2371,
+    "encodedBodySize": 2071,
+    "decodedBodySize": 4333
+  },
+  {
+    "name": "https://arc.net/zero-chrome.mp4",
+    "initiatorType": "video",
+    "transferSize": 7608,
+    "encodedBodySize": 7308,
+    "decodedBodySize": 7308
+  },
+  {
+    "name": "https://arc.net/space-swiping.mp4",
+    "initiatorType": "video",
+    "transferSize": 18983,
+    "encodedBodySize": 18683,
+    "decodedBodySize": 18683
+  },
+  {
+    "name": "https://arc.net/theme-picker.mp4",
+    "initiatorType": "video",
+    "transferSize": 33466,
+    "encodedBodySize": 33166,
+    "decodedBodySize": 33166
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/max-846ad5d8f1b1fac5.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 2238,
+    "decodedBodySize": 4818
+  },
+  {
+    "name": "https://arc.net/zero-chrome.mp4",
+    "initiatorType": "video",
+    "transferSize": 0,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/js/arcnet-script.js",
+    "initiatorType": "script",
+    "transferSize": 2458,
+    "encodedBodySize": 2158,
+    "decodedBodySize": 4978
+  },
+  {
+    "name": "https://arc.net/space-swiping.mp4",
+    "initiatorType": "video",
+    "transferSize": 0,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/6432-2b2d11de797a3b5f.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 9917,
+    "decodedBodySize": 25290
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/8788-2ba29eedb651f1f9.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 3266,
+    "decodedBodySize": 7205
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/6340-6ec32339962b6a54.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 6520,
+    "decodedBodySize": 17023
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/search-1bd490a806db848f.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 16731,
+    "decodedBodySize": 51645
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/developers-ac0fa3ceb79a9aae.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 6251,
+    "decodedBodySize": 16894
+  },
+  {
+    "name": "https://arc.net/theme-picker.mp4",
+    "initiatorType": "video",
+    "transferSize": 0,
+    "encodedBodySize": 0,
+    "decodedBodySize": 0
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/905-66e5c5f4168bf0dc.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 13457,
+    "decodedBodySize": 38956
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/students-ba529ad4dca3efb0.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 4647,
+    "decodedBodySize": 12601
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/1209-39beec6ae7953340.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 3110,
+    "decodedBodySize": 8240
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/blog-c769fb826adf748f.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 2071,
+    "decodedBodySize": 4333
+  },
+  {
+    "name": "https://arc.net/favicon.png",
+    "initiatorType": "other",
+    "transferSize": 1886,
+    "encodedBodySize": 1586,
+    "decodedBodySize": 1586
+  },
+  {
+    "name": "https://arc.net/images/desktop-banner-bg.png",
+    "initiatorType": "css",
+    "transferSize": 37581,
+    "encodedBodySize": 37281,
+    "decodedBodySize": 37281
+  },
+  {
+    "name": "https://arc.net/images/desktop-banner-mask.svg",
+    "initiatorType": "css",
+    "transferSize": 2489,
+    "encodedBodySize": 2189,
+    "decodedBodySize": 19430
+  },
+  {
+    "name": "https://arc.net/fonts/205TF-Exposure-[-40].woff2",
+    "initiatorType": "css",
+    "transferSize": 83040,
+    "encodedBodySize": 82740,
+    "decodedBodySize": 82740
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/privacy-23242df82334101a.js",
+    "initiatorType": "link",
+    "transferSize": 13193,
+    "encodedBodySize": 12893,
+    "decodedBodySize": 41022
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/index.json",
+    "initiatorType": "fetch",
+    "transferSize": 331,
+    "encodedBodySize": 31,
+    "decodedBodySize": 31
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/4970-927d6d6640d920f1.js",
+    "initiatorType": "link",
+    "transferSize": 5842,
+    "encodedBodySize": 5542,
+    "decodedBodySize": 14716
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/download-a51b835555e34fb7.js",
+    "initiatorType": "link",
+    "transferSize": 1586,
+    "encodedBodySize": 1286,
+    "decodedBodySize": 2377
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/security-1f3e529e0dc484d4.js",
+    "initiatorType": "link",
+    "transferSize": 4900,
+    "encodedBodySize": 4600,
+    "decodedBodySize": 11864
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/integrations.json",
+    "initiatorType": "fetch",
+    "transferSize": 1736,
+    "encodedBodySize": 1436,
+    "decodedBodySize": 4606
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/integrations-9b7b364650f51ae1.js",
+    "initiatorType": "link",
+    "transferSize": 3350,
+    "encodedBodySize": 3050,
+    "decodedBodySize": 7828
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/credits-309cfe007a076d10.js",
+    "initiatorType": "link",
+    "transferSize": 286557,
+    "encodedBodySize": 286257,
+    "decodedBodySize": 592367
+  },
+  {
+    "name": "https://arc.net/_next/data/ZItv7-G5V1T6S5vw51s7i/faq.json",
+    "initiatorType": "fetch",
+    "transferSize": 3618,
+    "encodedBodySize": 3318,
+    "decodedBodySize": 9483
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/faq-77b4f8fcdbe852aa.js",
+    "initiatorType": "link",
+    "transferSize": 1447,
+    "encodedBodySize": 1147,
+    "decodedBodySize": 2115
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/privacy-23242df82334101a.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 12893,
+    "decodedBodySize": 41022
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/4970-927d6d6640d920f1.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 5542,
+    "decodedBodySize": 14716
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/download-a51b835555e34fb7.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 1286,
+    "decodedBodySize": 2377
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/security-1f3e529e0dc484d4.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 4600,
+    "decodedBodySize": 11864
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/integrations-9b7b364650f51ae1.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 3050,
+    "decodedBodySize": 7828
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/faq-77b4f8fcdbe852aa.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 1147,
+    "decodedBodySize": 2115
+  },
+  {
+    "name": "https://arc.net/_next/static/chunks/pages/credits-309cfe007a076d10.js",
+    "initiatorType": "script",
+    "transferSize": 0,
+    "encodedBodySize": 286257,
+    "decodedBodySize": 592367
+  }
+]

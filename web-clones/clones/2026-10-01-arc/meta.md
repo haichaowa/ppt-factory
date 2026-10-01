@@ -1,0 +1,23 @@
+# Arc 首页高保真归档
+
+- **来源**：<https://arc.net/>
+- **归档时间**：2026-10-01 17:47–17:58（Asia/Shanghai）
+- **页面状态**：Chromium HTTP 200；最终 URL 保持 `https://arc.net/`；标题 `Arc from The Browser Company`。1440 / 1280 / 375 三档全页高度分别为 6125px、5805px、3601px，均未出现横向溢出。
+- **抓取方式**：
+  - Playwright Chromium 打开实时页面，语言 `en-US`、时区 `Asia/Shanghai`；主截图捕获启用 `prefers-reduced-motion: reduce`，避免滚动动画造成随机帧；
+  - 完整滚动触发 lazy media 后，分别保存 1440 / 1280 / 375 CSS 像素 1x 全页 PNG；
+  - 通过 Chromium DevTools Protocol `Page.captureSnapshot(format="mhtml")` 保存单文件 MHTML；
+  - 另外保存 live DOM、三档 computed style / geometry、动画证据、关键资源清单、20 个实际渲染的 CSS / 字体 / 视频 / 关键图片文件，并用 2x deviceScaleFactor 截取五个代表区块。
+- **robots 结果**：`archive/robots.txt` 仅包含 `User-agent: *` 与 `Allow: /api/redirect-links/link/*`，未 Disallow 首页；robots 另声明 sitemap `https://arc.net/sitemap.xml`。本次归档继续执行。
+- **Cloudflare 说明**：命令行 `curl` 访问被 Cloudflare 403 拦截；同一 URL 在真实 Chromium 上下文中可正常打开。因此所有捕获均通过 Playwright Chromium 完成，直接 `context.request` 下载资源也会被 403，资源补充使用已打开页面内的同源 `fetch`，20/20 均为 200。
+- **MHTML 完整性**：`archive/arc-home.mhtml` 为 4,097,083 bytes、14 个带 `Content-Location` 的资源 part（1 HTML、6 CSS、7 图片）；来源均为 `arc.net` 或 Chromium MHTML 内嵌 CID。离线 `file://` 打开时标题、两份 H1、49 个链接、6 个 stylesheet、3 个图片与 4 个 video 节点可解析，外网请求 0。MHTML 不含视频字节和大部分字体字节；已按 `archive/resource-download-manifest.json` 补充 20 个实际渲染资源（8,574,793 bytes）。
+- **视觉基准**：三档全页 PNG 与五个 2x 区块 PNG 是 canonical 视觉记录。MHTML 首屏（1440×900）与 live 首屏 exact match 65.89%、MAE 30.98，主因是视频/WebGL/字体与滚动状态无法由 MHTML 完整重放；离线 DOM/CSS 结构仍可用于研究。
+- **资源权利清单**：MHTML 与补充资源均来自 `arc.net`。页面文案、Logo、产品 UI、字体、图片与视频版权归 The Browser Company / 相应权利人；第三方媒体引语与商标归各自权利人。
+- **版权口径**：本目录仅供本地学习与内部研究，不二次分发、不商用、不对外发布，也不作为模型训练素材；不改变任何权利归属。
+- **复现入口**：
+  - `archive/capture.js`：三档截图、MHTML、DOM、computed style、robots、performance；
+  - `archive/capture-sections.js`：五个代表区块 2x 截图；
+  - `archive/capture-design-evidence.js`：CSS 变量、font-face、关键文本样式、动画证据；
+  - `archive/download-resources.js`：同源页面内 fetch 补充关键资源；
+  - `archive/offline-browser-check.js/.json/.png`：MHTML 离线解析与外网隔离验证。
+- **主要交付**：`screenshots/` 三档全页、`archive/arc-home.mhtml`、`sections/` 五个 2x 区块、`tokens.json`、`notes.md`、`review-log.md`。

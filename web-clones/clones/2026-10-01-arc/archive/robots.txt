@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /api/redirect-links/link/*
+
+Sitemap: https://arc.net/sitemap.xml

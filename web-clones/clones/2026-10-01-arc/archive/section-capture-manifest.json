@@ -1,0 +1,77 @@
+{
+  "source": "https://arc.net/",
+  "capturedAt": "2026-10-01T09:52:57.175Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "reducedMotion": "reduce",
+  "sections": [
+    {
+      "name": "01-dia-transition-banner",
+      "file": "sections/01-dia-transition-banner.png",
+      "cssRect": {
+        "x": 0,
+        "y": 90,
+        "width": 1440,
+        "height": 617
+      },
+      "text": "Meet Dia, the next evolution of Arc Weekly security updates, SOC 2 certification, and the Arc DNA you know (and love). Try Dia",
+      "bytes": 702628,
+      "assessment": "迁移横幅：把续作宣传嵌入首屏，用产品图形和胶囊 CTA 承接升级叙事。"
+    },
+    {
+      "name": "02-arc-editorial-hero",
+      "file": "sections/02-arc-editorial-hero.png",
+      "cssRect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 920
+      },
+      "text": "Arc is the Chrome replacement I've been waiting for. FYI: Arc receives Chromium updates only. For active security patches and enterprise-grade protection, download Dia instead. Download Arc for Mac Download Arc for Windows MORE DETAILS",
+      "bytes": 2850252,
+      "assessment": "媒体引语 H1 与双平台下载构成品牌宣言，大字宽幅置入钴蓝底。"
+    },
+    {
+      "name": "03-browser-story-video",
+      "file": "sections/03-browser-story-video.png",
+      "cssRect": {
+        "x": 0,
+        "y": -90,
+        "width": 1440,
+        "height": 1079.5
+      },
+      "text": "A browser that doesn’t just meet your needs — it anticipates them. Clean and calm, Arc shapes itself to how you use the internet.",
+      "bytes": 2185371,
+      "assessment": "大标题右置、全宽视频下沉，形成左文右动态画面的非对称分栏。"
+    },
+    {
+      "name": "04-spaces-product-video",
+      "file": "sections/04-spaces-product-video.png",
+      "cssRect": {
+        "x": 0,
+        "y": -70.5,
+        "width": 1440,
+        "height": 1040.5
+      },
+      "text": "Space for the different sides of you. Effortlessly organize everything you do online — work, study, hobbies — all in one window with Spaces and Profiles.",
+      "bytes": 1092786,
+      "assessment": "以真实操作视频解释 Spaces/Profiles，延续纵向交错的产品叙事。"
+    },
+    {
+      "name": "05-privacy-and-footer-cta",
+      "file": "sections/05-privacy-and-footer-cta.png",
+      "cssRect": {
+        "x": 0,
+        "y": 398,
+        "width": 1440,
+        "height": 229.796875
+      },
+      "text": "Enter your new home on the internet Download Arc for Mac",
+      "bytes": 315847,
+      "assessment": "隐私短段与钴蓝 Footer CTA 连成收束区，白字蓝底保持强品牌记忆。"
+    }
+  ]
+}
