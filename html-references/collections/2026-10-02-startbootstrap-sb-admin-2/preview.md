@@ -34,6 +34,14 @@ python3 -m http.server 8766 --bind 127.0.0.1
 | 图文分栏认证卡 | [06-login-authentication.png](screenshots/06-login-authentication.png) |
 | 异常状态页 | [07-404-error-state.png](screenshots/07-404-error-state.png) |
 
+## 15 分钟阅读路线
+
+1. **0–3 分钟 · `index.html`**：只看 KPI 卡、图表卡、进度卡的层级，不看示例文案。
+2. **3–6 分钟 · `cards.html`**：确认卡头/卡体/卡脚、下拉与折叠三类状态。
+3. **6–9 分钟 · `tables.html`**：观察列头、数字对齐、状态徽标和工具栏密度。
+4. **9–12 分钟 · `utilities-color.html`**：把页面当成 token 文档读，记住主题色、灰阶与渐变。
+5. **12–15 分钟 · `login.html` + `404.html`**：对比系统在非仪表盘场景下如何维持字体、圆角、颜色和留白。
+
 ## 建议阅读顺序
 
 1. `index.html`：看信息层级、KPI 数字卡与两栏图表的版式节奏。

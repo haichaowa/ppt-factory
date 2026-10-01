@@ -146,6 +146,21 @@ SB Admin 2 是一个成熟的 **后台信息系统模板**，不是营销页模�
 - UnDraw SVG 插画本地保留，线性、圆角、单一主题色，与 Nunito 气质一致。
 - 认证页背景使用远程 Unsplash URL，是本档案的主要离线风险。
 
+## 4.6 证据锚点
+
+| 结论 | 源码锚点 |
+|---|---|
+| 色板、字体、阴影、侧栏与顶栏尺寸 | `source/scss/_variables.scss` |
+| 全局 wrapper、内容背景与容器间距 | `source/scss/_global.scss` |
+| 侧栏展开/收起、二级菜单、品牌与分组标题 | `source/scss/navs/_sidebar.scss` |
+| 顶栏高度、搜索、通知菜单与头像状态点 | `source/scss/navs/_topbar.scss` |
+| KPI/图表/表格的实际 HTML 结构 | `source/index.html`、`source/tables.html` |
+| 卡片折叠与卡头操作位 | `source/scss/_cards.scss`、`source/cards.html` |
+| 图表高度断点 | `source/scss/_charts.scss`、`source/charts.html` |
+| 认证胶囊表单与远程背景 | `source/scss/_login.scss`、`source/login.html` |
+| 渐变、灰阶、彩边、字号与动效 | `source/scss/utilities/*.scss` 与 4 个 `utilities-*.html` |
+| 编译后的 CSS 自定义属性 | `source/css/sb-admin-2.css` 的 `:root` 规则 |
+
 ## 5. 这套体系为什么成立
 
 1. **容器先于内容**：所有复杂内容先进入同一张白卡，再通过卡头、边线、图表、表格等插槽分化。即使信息类型很多，页面仍保持统一边界和间距。
@@ -163,7 +178,7 @@ SB Admin 2 是一个成熟的 **后台信息系统模板**，不是营销页模�
 4. **可访问性有历史缺口**：`a:focus { outline: none; }`、多处 `:focus { outline: none; }` 会削弱键盘可见性；`aria-expanded` 初始值与 collapsed 状态也存在旧 Bootstrap 模板常见的不严谨处。
 5. **内容语义重复**：模板大量复制的占位文本/导航让每个 HTML 约 400–900 行；对学习者容易造成干扰，需要识别哪些是结构性代码。
 6. **视觉表现依赖组件库**：卡片、按钮、网格、表格基础来自 Bootstrap；真正自有的增量是 token 覆盖、侧栏/顶栏、KPI 卡、图表容器、认证卡和工具类。
-7. **默认字体对比度需复核**：正文 `gray-600 #858796` 在白底上的正文级长文本对比度不足 4.5:1，适合小标签但不宜直接作为 PPT 正文标准。
+7. **默认字体对比度需复核**：正文 `gray-600 #858796` 在白底上的对比度为 3.56:1，低于 WCAG AA 正文 4.5:1；主蓝 `#4e73df` 为 4.34:1，作为小字号文字也需要谨慎。全套模板还存在 46 处占位 `alt="..."`、34 处折叠菜单初始 `aria-expanded="true"` 与 4 处 SCSS `outline: none`，这些都不应迁移。
 
 ## 7. 可直接借鉴的资产
 

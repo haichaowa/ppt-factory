@@ -9475,5 +9475,15 @@
       "bytes": 26674,
       "sha256": "0d77d4c4df1a488c45d012931fee8153254d69e62cd466f5d4eba5c18a5d440d"
     }
+  ],
+  "author": "Start Bootstrap LLC",
+  "license_path": "LICENSE",
+  "local_path": "collections/2026-10-02-startbootstrap-sb-admin-2/source/",
+  "snapshot_policy": "Git metadata was removed after recording HEAD; source payload was not modified.",
+  "excludes": [
+    "node_modules",
+    ".git",
+    "top-level dist",
+    "top-level build"
   ]
 }

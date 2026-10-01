@@ -10,8 +10,8 @@
 - **版本**：4.1.4（`package.json`）
 - **commit**：`f0309881ef82794a1bd6257cd321801bc38a0f3d`（master，浅克隆 HEAD）
 - **下载方式**：`git clone --depth 1 https://github.com/StartBootstrap/startbootstrap-sb-admin-2.git`
-- **下载范围**：完整 Git 浅克隆；未安装依赖，未执行构建，未修改 `source/` 任何文件；仓库内未包含 `node_modules`
-- **源码体积**：有效源码 1,878 个文件、18,153,426 bytes（约 17.31 MiB）；含 `.git` 的本地工作区约 28 MiB。远端 GitHub size 报告 29,395 KB
+- **下载范围**：完整 Git 浅克隆；记录 HEAD 后移除 `.git` 管理元数据以冻结源码快照；未安装依赖，未执行构建，未修改 `source/` 任何文件；仓库内未包含 `node_modules`
+- **源码体积**：有效源码 1,878 个文件、18,153,426 bytes（约 17.31 MiB）；浅克隆刚完成、尚含 `.git` 时工作区约 28 MiB。远端 GitHub size 报告 29,395 KB
 - **本地路径**：`collections/2026-10-02-startbootstrap-sb-admin-2/source/`
 
 ## 许可证
@@ -48,3 +48,12 @@
 - jQuery 3.6.0：文件头保留 OpenJS Foundation 版权与 MIT license 链接。
 - jQuery Easing 1.4.1：文件头保留 George McGinley Smith 版权与 BSD License 链接。
 - Font Awesome Free 5.15.3：`vendor/fontawesome-free/LICENSE.txt` 完整保留，声明 Icons CC BY 4.0 / Fonts SIL OFL 1.1 / Code MIT。
+
+## 真人验收清单
+
+- [ ] 打开 `index.html`，确认两张 collection 卡片视觉节奏正常。
+- [ ] 打开 `source/index.html`，目检 KPI 卡、面积图、环形图与项目进度是否完整。
+- [ ] 打开 `source/cards.html`，试点击卡头下拉与折叠，确认状态图标方向。
+- [ ] 打开 `source/tables.html`，试搜索、排序与翻页。
+- [ ] 断网后重新打开 `source/login.html`，确认可接受远程背景缺失的系统回退。
+- [ ] 阅读 `notes.md` 第 8 节，决定是否试装 `--sb-*` token 草案。

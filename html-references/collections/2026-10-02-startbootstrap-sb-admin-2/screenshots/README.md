@@ -12,6 +12,15 @@
 | [06-login-authentication.png](06-login-authentication.png) | [../source/login.html](../source/login.html) | 认证页图文分栏、胶囊表单与同族页面结构 | 1440×900 |
 | [07-404-error-state.png](07-404-error-state.png) | [../source/404.html](../source/404.html) | 异常状态页的大号 glitch 数字与操作入口 | 1440×900 |
 
+## 复现方式
+
+```bash
+cd ../source
+python3 -m http.server 8766 --bind 127.0.0.1
+```
+
+Playwright 中将视口设为 1440×900，对 `http://127.0.0.1:8766/<page>.html` 使用 `waitUntil: 'networkidle'`，等待 500ms 后执行 `page.screenshot({ path, fullPage: true })`。
+
 ## 采集备注
 
 - 截图 01–07 均成功保存，图片均为 PNG。

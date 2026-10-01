@@ -311,3 +311,82 @@
 ### 诚实自评
 
 本轮后，SB Admin 2 已是可复查的本地参考快照：源码、版权、页面、截图和映射都有证据链。但还不能称“可直接发布”：导览和截图尚未由真人目检；设计 token 只是建议，未在真实 PPT deck 中试装；旧依赖与外部资源限制也必须由使用者理解。下一轮应补齐这些可执行判断，而不是继续增加无关收藏。
+
+## 2026-10-02 · SB Admin 2 · 第 2 轮复审
+
+### 已检查文件
+
+- `html-references/README.md`
+- `html-references/BACKLOG.md`
+- `html-references/INDEX.md`
+- `html-references/LOG.md`
+- `html-references/PROGRESS.md`
+- `html-references/index.html`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/download-manifest.json`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/README.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/01-index-dashboard.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/02-cards-components.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/03-tables-datatable.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/04-charts-visualizations.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/05-utilities-color-tokens.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/06-login-authentication.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/07-404-error-state.png`
+- `source/LICENSE`
+- `source/README.md`
+- `source/package.json`
+- `source/css/sb-admin-2.css`
+- `source/scss/_global.scss`
+- `source/scss/_variables.scss`
+- `source/scss/_cards.scss`
+- `source/scss/_charts.scss`
+- `source/scss/_login.scss`
+- `source/scss/navs/_sidebar.scss`
+- `source/scss/navs/_topbar.scss`
+- `source/scss/utilities/_animation.scss`
+- `source/scss/utilities/_background.scss`
+- `source/scss/utilities/_border.scss`
+- `source/scss/utilities/_text.scss`
+- 14 个顶层 HTML 页面
+- `patterns/README.md` 与 15 个 `patterns/*.html`
+
+### 自动检查结果
+
+- Manifest：1,878 个文件、18,153,426 bytes、源码树 SHA-256 复算一致；JSON 语法有效。
+- 可访问性扫描：量化 4 处 SCSS `outline:none`、46 处占位 `alt="..."`、34 处初始 `aria-expanded="true"`；计算 `#858796` 白底对比度 3.56:1、`#4e73df` 4.34:1。
+- 完整性：`LICENSE`、`README.md`、第三方版权头存在；无 `node_modules/.git/dist/build`。
+- 映射：15 个 patterns 全部存在且覆盖。
+- 导览页：本地链接全部存在；1440/900/560/390px 无横向溢出；0 error / 0 warning。
+- 仓库边界：本轮仍只改动 `html-references/`，`patterns/templates/decks` 无差异。
+
+### 本轮修复（8 处 P2）
+
+1. `collections/2026-10-02-startbootstrap-sb-admin-2/download-manifest.json`：补充 author、license path、local path、snapshot policy 与排除项，降低快照策略歧义。
+2. `collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`：明确“记录 HEAD 后移除 `.git`，源码 payload 未修改”，并把 28MiB 解释为移除前的浅克隆工作区体积。
+3. `collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`：新增 6 项真人验收清单，覆盖导览、仪表盘、卡片交互、表格、断网回退与 token 决策。
+4. `collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`：新增 15 分钟时间盒阅读路线，明确每段看什么、不看什么。
+5. `collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`：将可访问性缺陷量化为对比度、alt、aria 与 focus 数据，避免停留在泛泛描述。
+6. `collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`：新增“4.6 证据锚点”，把设计结论逐项指回 SCSS/HTML/CSS 源文件。
+7. `collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/README.md`：补充本地服务器与 Playwright 参数的截图复现方式。
+8. `html-references/index.html` 与 `html-references/LOG.md`：为 commit 片段补充克制的 inline code 样式，并在日志中记录源码树 SHA-256。
+
+### 四维评分
+
+| 维度 | 分数 | 说明 |
+|---|---:|---|
+| 正确性 | 4.7 | 事实链、哈希、许可、可访问性数值和渲染均复核；尚未做真实键盘逐项操作测试。 |
+| 完整性 | 4.7 | 阶段、映射、证据锚点、阅读路线与验收清单齐备；还差最终轮交付声明。 |
+| 精致度 | 4.5 | 文档路径与导览细节更清晰；截图本身仍需真人目检。 |
+| 可用性 | 4.7 | 首次接触者可在 15 分钟路线内完成重点阅读，但 token 试装仍需产品决策。 |
+
+### 问题分级与状态
+
+- P0：0
+- P1：0
+- P2：本轮修复 8 处；遗留为最终三轮状态收口、真实键盘/断网人工操作、真人视觉验收和 token 产品决策。
+
+### 诚实自评
+
+现在这份收藏已经从“可浏览”推进到“可验收”：用户知道看什么、点哪里、哪些结论来自哪个源码文件、哪些风险不能迁移。但它仍不是产品化资产：未修改外部源码的历史可访问性问题无法在本档案内修复；PPT Factory 迁移建议仍缺真实 deck 试装；真人也尚未确认截图和导览的视觉手感。第 3 轮应做最终边界声明和收尾检查，而不是为了分数继续扩写。

@@ -43,7 +43,7 @@
 
 - **StartBootstrap/startbootstrap-sb-admin-2**：14 个 HTML 页面、MIT、版本 4.1.4、commit `f0309881ef82794a1bd6257cd321801bc38a0f3d`、有效源码 17.31 MiB。通过复核：许可证清晰，后台体系完整，专业质量稳定，静态源码可浏览，体积远低于 200MB。
 - 下载方式：GitHub 浅克隆；保留原 `LICENSE`、`README.md`、作者署名与 vendor 版权头；未安装依赖、未执行构建、未修改 `source/`。
-- 产出：`collections/2026-10-02-startbootstrap-sb-admin-2/`。
+- 产出：`collections/2026-10-02-startbootstrap-sb-admin-2/`；源码树 SHA-256 `6254b19dbbd5e51a98872c7e9f5221f21670fe85485cb4319a09c6748e3c8d00`。
 
 ### 考察但未采用
 
