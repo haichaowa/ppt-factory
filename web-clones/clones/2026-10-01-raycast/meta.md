@@ -11,12 +11,14 @@
   - 代表区块用 1440 CSS 宽、`deviceScaleFactor=2` 裁切输出。
 - **robots 结果**：`https://www.raycast.com/robots.txt` 对 `User-agent: *` 为 `Allow: /`；仅禁用 `/upgrade`、`/settings/sessions`、`/handles/new`、`/users/confirmation`，均不在本次首页归档范围。
 - **MHTML 完整性**：71 个资源 part（1 HTML、11 CSS、41 WebP、18 JPEG），解码资源 2,335,433 bytes。Chromium MHTML 未内嵌字体，因此按 live performance 记录另行补充 6 个 WOFF2 到 `archive/resources/`。
+- **离线校验**：MHTML 在 `file://` 加载成功，标题和 H1 保持原值，root 渲染 14 个子节点，非 file 网络请求 0 个失败。
 - **版权口径**：页面文案、Logo、产品截图、扩展图标与媒体资源版权归 Raycast / 各资源权利人。此目录仅供本地设计学习与内部研究，不二次分发、不商用、不用于对外发布；保留原站权利信息。
 - **复现入口**：
   - `archive/capture.js`：主捕获流程（已保留现场版本）；
   - `archive/capture-mhtml.js`：MHTML 专用重捕；
   - `archive/capture-sections.js`：2x 代表区块裁切；
-  - `archive/mhtml-manifest.py`：MHTML part 清单。
+  - `archive/mhtml-manifest.py`：MHTML part 清单；
+  - `archive/mhtml-browser-check.js`：禁止外网请求后用 file:// 打开 MHTML 的离线校验。
 - **目录规模**：约 14 MB；截图与区块为最大部分，归档文件均记录 SHA-256。
 
 ## 主要交付

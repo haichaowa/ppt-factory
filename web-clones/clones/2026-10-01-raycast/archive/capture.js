@@ -90,8 +90,11 @@ async function captureViewport(browser, width, filename, options = {}) {
     };
     const typography = [...document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,button,li,span,strong,em,code,kbd')].filter(el => el.textContent?.trim()).slice(0,420).map(el => ({ selector: shortSelector(el), text: el.textContent.trim().replace(/\s+/g,' ').slice(0,180), rect: rect(el), styles: pickStyle(el) }));
     const componentSelectors = [
-      ['root','body'],['navbar','#root > div:first-child'],['hero','#root > div:nth-child(2)'],['command-launcher','#root > div:nth-child(3)'],['value-grid','#root > div:nth-child(4)'],['extension-carousel','#root > div:nth-child(5)'],['ai-agent','#root > div:nth-child(6)'],['social-proof','#root > div:nth-child(7)'],['automation','#root > div:nth-child(8)'],['features','#root > div:nth-child(9)'],['community','#root > div:nth-child(10)'],['api','#root > div:nth-child(11)'],['final-cta','#root > div:nth-child(12)'],['footer','#root > div:nth-child(13)']
-    ].map(([name, selector]) => ({ name, selector, element: document.querySelector(selector), text: document.querySelector(selector)?.textContent?.trim().replace(/\s+/g,' ').slice(0,220) || '' })).filter(x => x.element).map(x => ({ name:x.name, selector:x.selector, text:x.text, rect:rect(x.element), styles:pickStyle(x.element) }));
+      ['root','body'],['navbar','Navbar-module'],['hero','page-module__H3BVAa__hero'],['command-launcher','Take shortcuts'],['value-grid','GetYourTimeBack'],['extension-carousel','ExtensionHighlight'],['ai-agent','styles-module__fHNhKq__root'],['social-proof','Built for professionals'],['automation','Don\'t repeat yourself'],['features','What else can Raycast do'],['community','CommunitySection'],['api','Build the perfect tools'],['final-cta','CommandYourTime'],['footer','Footer-module']
+    ].map(([name, selector]) => {
+      const element = selector === 'body' ? document.body : [...document.querySelector('#root').children].find(el => (el instanceof HTMLElement && (String(el.className).includes(selector) || (el.textContent||'').includes(selector))));
+      return { name, selector, element, text: element?.textContent?.trim().replace(/\s+/g,' ').slice(0,220) || '' };
+    }).filter(x => x.element).map(x => ({ name:x.name, selector:x.selector, text:x.text, rect:rect(x.element), styles:pickStyle(x.element) }));
     const cssVariables = getComputedStyle(document.documentElement);
     const variables = {};
     for (let i = 0; i < cssVariables.length; i++) { const name = cssVariables[i]; if (name.startsWith('--')) variables[name] = cssVariables.getPropertyValue(name).trim(); }
@@ -137,7 +140,7 @@ async function captureViewport(browser, width, filename, options = {}) {
   await cdp.send('DOM.enable'); await cdp.send('CSS.enable'); await cdp.send('Page.enable');
   const snapshot = await cdp.send('Page.captureSnapshot', { format: 'mhtml' });
   const mhtmlFile = path.join(ROOT, 'archive', 'raycast-home.mhtml');
-  fs.writeFileSync(mhtmlFile, snapshot.data, 'base64');
+  fs.writeFileSync(mhtmlFile, snapshot.data, 'utf8');
 
   // Three full-page viewport captures.
   const captures = [];
@@ -157,13 +160,15 @@ async function captureViewport(browser, width, filename, options = {}) {
     ['05-ai-agent', 5, 'AI agent and chat interface']
   ];
   const sections = [];
-  for (const [name, childIndex, label] of sectionDefs) {
-    const el = sectionPage.locator(`#root > div:nth-child(${childIndex + 1})`).first();
-    const box = await el.boundingBox();
+  const visibleRoots = await sectionPage.evaluate(() => [...document.querySelector('#root').children].filter(el => el instanceof HTMLElement && getComputedStyle(el).display !== 'none' && getComputedStyle(el).visibility !== 'hidden' && el.getBoundingClientRect().height > 30).map(el => { const r = el.getBoundingClientRect(); return { x:r.x, y:r.y + scrollY, width:r.width, height:r.height, className:String(el.className), text:(el.textContent||'').trim().replace(/\s+/g,' ').slice(0,220) }; }));
+  for (const [name, rootIndex, label] of sectionDefs) {
+    const source = visibleRoots[rootIndex];
+    if (!source) throw new Error(`Missing visible root child ${rootIndex}`);
+    const box = { x:Math.max(0,Math.floor(source.x)), y:Math.max(0,Math.floor(source.y)), width:Math.ceil(source.width), height:Math.ceil(source.height) };
     const file = path.join(ROOT, 'sections', `${name}.png`);
-    await el.screenshot({ path:file, animations:'disabled', caret:'hide', timeout:180000 });
+    await sectionPage.screenshot({ path:file, clip:box, fullPage:true, animations:'disabled', caret:'hide', timeout:180000 });
     const dims = pngDimensions(file);
-    sections.push({ name, rootChildIndex:childIndex, label, cssBox:box, png:dims, deviceScaleFactor:2, sha256:sha256(file), bytes:fs.statSync(file).size });
+    sections.push({ name, rootChildIndex:rootIndex, label, cssBox:box, text:source.text, png:dims, deviceScaleFactor:2, sha256:sha256(file), bytes:fs.statSync(file).size });
   }
   await sectionContext.close();
 

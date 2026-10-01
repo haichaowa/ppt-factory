@@ -9,7 +9,8 @@
       "height": 900
     },
     "scrollWidth": 1440,
-    "scrollHeight": 15983
+    "scrollHeight": 15983,
+    "componentMetricsRefreshedAt": "2026-10-01T01:28:41.210Z"
   },
   "rootChildren": [
     {
@@ -227,14 +228,13 @@
     {
       "name": "root",
       "selector": "body",
+      "className": "",
       "text": "self.__wrap_n=self.__wrap_n||(self.CSS&&CSS.supports(\"text-wrap\",\"balance\")?1:2);self.__wrap_b=(a,b,c)=>{let d=null==(c=c||document.querySelector(`[data-br=\"${a}\"]`))?void 0:c.parentElement;if(!d)return;let e=a=>c.style.",
       "rect": {
         "x": 0,
         "y": 0,
         "width": 1440,
-        "height": 15983.17,
-        "top": 0,
-        "left": 0
+        "height": 15983.17
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -265,56 +265,15 @@
       }
     },
     {
-      "name": "hero",
-      "selector": "#root > div:nth-child(2)",
-      "text": "",
-      "rect": {
-        "x": 0,
-        "y": 72,
-        "width": 1440,
-        "height": 0,
-        "top": 72,
-        "left": 0
-      },
-      "styles": {
-        "color": "rgb(255, 255, 255)",
-        "background-color": "rgba(0, 0, 0, 0)",
-        "background-image": "none",
-        "font-family": "Inter, \"Inter Fallback\", sans-serif",
-        "font-size": "16px",
-        "font-weight": "400",
-        "font-style": "normal",
-        "line-height": "18.4px",
-        "letter-spacing": "normal",
-        "text-transform": "none",
-        "border-radius": "0px",
-        "box-shadow": "none",
-        "padding": "0px 24px",
-        "margin": "72px 0px 0px",
-        "gap": "normal",
-        "transition": "all",
-        "transition-duration": "0s",
-        "transition-timing-function": "ease",
-        "animation": "none 0s ease 0s 1 normal none running",
-        "animation-duration": "0s",
-        "animation-timing-function": "ease",
-        "backdrop-filter": "none",
-        "filter": "none",
-        "border": "0px none rgb(255, 255, 255)",
-        "opacity": "1"
-      }
-    },
-    {
-      "name": "command-launcher",
-      "selector": "#root > div:nth-child(3)",
+      "name": "navbar",
+      "selector": "Navbar-module",
+      "className": "Navbar-module__pSp8Ga__container",
       "text": "StoreProAIiOSWindowsTeamsEnterpriseBlogPricingLog inDownloadLog in",
       "rect": {
         "x": 0,
         "y": 0,
         "width": 1440,
-        "height": 92,
-        "top": 0,
-        "left": 0
+        "height": 92
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -345,16 +304,15 @@
       }
     },
     {
-      "name": "value-grid",
-      "selector": "#root > div:nth-child(4)",
+      "name": "hero",
+      "selector": "page-module__H3BVAa__hero",
+      "className": "page-module__H3BVAa__hero",
       "text": "Your shortcut to everything.A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.self.__wrap_n!=1&&self.__wrap_b(\"_R_24inpfb3b_\",1)Download for MacmacOS Tahoe and Ap",
       "rect": {
         "x": 0,
         "y": 0,
         "width": 1440,
-        "height": 967.22,
-        "top": 0,
-        "left": 0
+        "height": 967.22
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -385,16 +343,15 @@
       }
     },
     {
-      "name": "extension-carousel",
-      "selector": "#root > div:nth-child(5)",
+      "name": "command-launcher",
+      "selector": "Take shortcuts",
+      "className": "page-module__H3BVAa__sectionContainer",
       "text": "Take shortcuts, not detours.One interface, everything you need.Type to filter entries...All TypesSearch...All TypesText OnlyImages OnlyFiles OnlyLinks OnlyColors OnlyTodayImage (1200 x 1000)#FF6363#59D499#56C2FF#FFC531ht",
       "rect": {
         "x": 0,
         "y": 1191.22,
         "width": 1440,
-        "height": 1375.19,
-        "top": 1191.22,
-        "left": 0
+        "height": 1375.19
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -425,16 +382,15 @@
       }
     },
     {
-      "name": "ai-agent",
-      "selector": "#root > div:nth-child(6)",
+      "name": "value-grid",
+      "selector": "GetYourTimeBack",
+      "className": "GetYourTimeBack-module__o1EREW__container",
       "text": "It’s not about saving time.It’s about feeling like you’re never wasting it.DownloadescF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteFast. Think in milliseconds.Ergonomic.Keyboard First.ERTYUIOP{[}]|\\Personal",
       "rect": {
         "x": 0,
         "y": 2566.41,
         "width": 1440,
-        "height": 720,
-        "top": 2566.41,
-        "left": 0
+        "height": 720
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -465,16 +421,15 @@
       }
     },
     {
-      "name": "social-proof",
-      "selector": "#root > div:nth-child(7)",
+      "name": "extension-carousel",
+      "selector": "ExtensionHighlight",
+      "className": "ExtensionHighlight-module__3Yq4tG__container",
       "text": "There’s an extension for that.Use your favorite tools without even opening them.ProductivityEngineeringDesignWritingLinearCreate, search and modify your issues without leaving your keyboard.Google TranslateUse Google Tra",
       "rect": {
         "x": 0,
         "y": 3286.41,
         "width": 1440,
-        "height": 1257.19,
-        "top": 3286.41,
-        "left": 0
+        "height": 1257.19
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -505,16 +460,15 @@
       }
     },
     {
-      "name": "automation",
-      "selector": "#root > div:nth-child(8)",
+      "name": "ai-agent",
+      "selector": "styles-module__fHNhKq__root",
+      "className": "styles-module__fHNhKq__root",
       "text": "AI AgentMeet your new virtual assistantRaycast AI uses the tools you already rely on to get work done.Search chatsWebsiteDailyRecentSync linear tasksCreate landing page for AI AgentsCompress filesCreate Raycast extension",
       "rect": {
         "x": 0,
         "y": 4723.59,
         "width": 1440,
-        "height": 1388.55,
-        "top": 4723.59,
-        "left": 0
+        "height": 1388.55
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -545,16 +499,93 @@
       }
     },
     {
-      "name": "features",
-      "selector": "#root > div:nth-child(9)",
+      "name": "social-proof",
+      "selector": "Built for professionals",
+      "className": "page-module__H3BVAa__sectionContainer",
       "text": "Built for professionals like you.Used by seriously productive people.Guillermo Rauch@rauchgCEO, VercelMarques Brownlee@MKBHDCreator, MKBHDKoen Bok@koenbokFounder, FramerAndreas Storm@avstormDesigner & IconographAdam Wath",
       "rect": {
         "x": 0,
         "y": 6292.14,
         "width": 1440,
-        "height": 1100,
-        "top": 6292.14,
-        "left": 0
+        "height": 1100
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Inter, \"Inter Fallback\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "font-style": "normal",
+        "line-height": "18.4px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "border-radius": "0px",
+        "box-shadow": "none",
+        "padding": "224px 24px",
+        "margin": "0px",
+        "gap": "normal",
+        "transition": "all",
+        "transition-duration": "0s",
+        "transition-timing-function": "ease",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "backdrop-filter": "none",
+        "filter": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "automation",
+      "selector": "Don't repeat yourself",
+      "className": "page-module__H3BVAa__sectionContainer",
+      "text": "Don't repeat yourself.Automate the things you do all the time.SnippetsTired of typing the same thing? Create a snippet and insert it by simply typing its keyword.Sure, here you go:3rd Floor 1 Ashley Road, WA14 2DT Altrin",
+      "rect": {
+        "x": 0,
+        "y": 7392.14,
+        "width": 1440,
+        "height": 1143.88
+      },
+      "styles": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgba(0, 0, 0, 0)",
+        "background-image": "none",
+        "font-family": "Inter, \"Inter Fallback\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "font-style": "normal",
+        "line-height": "18.4px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "border-radius": "0px",
+        "box-shadow": "none",
+        "padding": "224px 24px",
+        "margin": "0px",
+        "gap": "normal",
+        "transition": "all",
+        "transition-duration": "0s",
+        "transition-timing-function": "ease",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animation-duration": "0s",
+        "animation-timing-function": "ease",
+        "backdrop-filter": "none",
+        "filter": "none",
+        "border": "0px none rgb(255, 255, 255)",
+        "opacity": "1"
+      }
+    },
+    {
+      "name": "features",
+      "selector": "What else can Raycast do",
+      "className": "page-module__H3BVAa__sectionContainer",
+      "text": "What else can Raycast do?It can take notes. Track your flights. Convert anything. Search files. Run scripts. Manage your windows. Plan your day. Remind you of stuff. Translate into any language. Block distractions. Find ",
+      "rect": {
+        "x": 0,
+        "y": 8536.02,
+        "width": 1440,
+        "height": 986.06
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -586,15 +617,14 @@
     },
     {
       "name": "community",
-      "selector": "#root > div:nth-child(10)",
-      "text": "Don't repeat yourself.Automate the things you do all the time.SnippetsTired of typing the same thing? Create a snippet and insert it by simply typing its keyword.Sure, here you go:3rd Floor 1 Ashley Road, WA14 2DT Altrin",
+      "selector": "CommunitySection",
+      "className": "CommunitySection-module__MQiDUG__container",
+      "text": "Stay in the loop.Join the community and learn how other people get the most out of Raycast.Slack37k membersGet the inside track on new features and learn how other people use Raycast.JoinX/Twitter90k followersKeep up to ",
       "rect": {
         "x": 0,
-        "y": 7392.14,
+        "y": 9522.08,
         "width": 1440,
-        "height": 1143.88,
-        "top": 7392.14,
-        "left": 0
+        "height": 795.28
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -609,7 +639,7 @@
         "text-transform": "none",
         "border-radius": "0px",
         "box-shadow": "none",
-        "padding": "224px 24px",
+        "padding": "0px",
         "margin": "0px",
         "gap": "normal",
         "transition": "all",
@@ -626,15 +656,14 @@
     },
     {
       "name": "api",
-      "selector": "#root > div:nth-child(11)",
-      "text": "What else can Raycast do?It can take notes. Track your flights. Convert anything. Search files. Run scripts. Manage your windows. Plan your day. Remind you of stuff. Translate into any language. Block distractions. Find ",
+      "selector": "Build the perfect tools",
+      "className": "page-module__H3BVAa__sectionContainer",
+      "text": "Build the perfect tools.Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.Read the docsFIG_0FIG_0Cross-platformBuild your extension once and make it available to Ra",
       "rect": {
         "x": 0,
-        "y": 8536.02,
+        "y": 10317.36,
         "width": 1440,
-        "height": 986.06,
-        "top": 8536.02,
-        "left": 0
+        "height": 3182
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -666,15 +695,14 @@
     },
     {
       "name": "final-cta",
-      "selector": "#root > div:nth-child(12)",
-      "text": "Stay in the loop.Join the community and learn how other people get the most out of Raycast.Slack37k membersGet the inside track on new features and learn how other people use Raycast.JoinX/Twitter90k followersKeep up to ",
+      "selector": "CommandYourTime",
+      "className": "CommandYourTime-module__rfxe3q__container",
+      "text": "escF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteQWERTYUIOP{[}]|\\ASDFGHJKL:;\",~`ZXCVBNM<,>.?/fncontroloptioncommandcommandoptionTake the short way.Download and use Raycast for free.Download for MacmacOS Taho",
       "rect": {
         "x": 0,
-        "y": 9522.08,
+        "y": 13499.36,
         "width": 1440,
-        "height": 795.28,
-        "top": 9522.08,
-        "left": 0
+        "height": 1244.41
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -689,9 +717,9 @@
         "text-transform": "none",
         "border-radius": "0px",
         "box-shadow": "none",
-        "padding": "0px",
+        "padding": "0px 0px 224px",
         "margin": "0px",
-        "gap": "normal",
+        "gap": "24px",
         "transition": "all",
         "transition-duration": "0s",
         "transition-timing-function": "ease",
@@ -706,15 +734,14 @@
     },
     {
       "name": "footer",
-      "selector": "#root > div:nth-child(13)",
-      "text": "Build the perfect tools.Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.Read the docsFIG_0FIG_0Cross-platformBuild your extension once and make it available to Ra",
+      "selector": "Footer-module",
+      "className": "Footer-module__nhiC3q__container",
+      "text": "ProductStoreProTeamsPricingChangelogBrowser ExtensionDevelopersiOSWindowsRaycast 2.0API DocsManualTroubleshootingRaycast vs AlfredFAQCore FeaturesRaycast AIRaycast NotesRaycast FocusClipboard HistoryWindow ManagementSnip",
       "rect": {
         "x": 0,
-        "y": 10317.36,
+        "y": 14743.77,
         "width": 1440,
-        "height": 3182,
-        "top": 10317.36,
-        "left": 0
+        "height": 1239.41
       },
       "styles": {
         "color": "rgb(255, 255, 255)",
@@ -729,7 +756,7 @@
         "text-transform": "none",
         "border-radius": "0px",
         "box-shadow": "none",
-        "padding": "224px 24px",
+        "padding": "200px 0px 0px",
         "margin": "0px",
         "gap": "normal",
         "transition": "all",

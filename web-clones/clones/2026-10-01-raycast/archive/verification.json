@@ -1,0 +1,150 @@
+{
+  "round": 1,
+  "generatedAt": "2026-10-01T01:30:00+08:00",
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "screenshot-raycast-home-1440-fullpage.png",
+      "passed": true,
+      "actual": [
+        1440,
+        15983
+      ],
+      "expected": [
+        1440,
+        15983
+      ]
+    },
+    {
+      "name": "screenshot-raycast-home-1280-fullpage.png",
+      "passed": true,
+      "actual": [
+        1280,
+        15983
+      ],
+      "expected": [
+        1280,
+        15983
+      ]
+    },
+    {
+      "name": "screenshot-raycast-home-375-fullpage.png",
+      "passed": true,
+      "actual": [
+        375,
+        15647
+      ],
+      "expected": [
+        375,
+        15647
+      ]
+    },
+    {
+      "name": "section-01-hero-2x",
+      "passed": true,
+      "actual": [
+        2880,
+        1936
+      ],
+      "expected": [
+        2880,
+        1936
+      ]
+    },
+    {
+      "name": "section-02-command-launcher-2x",
+      "passed": true,
+      "actual": [
+        2880,
+        2752
+      ],
+      "expected": [
+        2880,
+        2752
+      ]
+    },
+    {
+      "name": "section-03-value-grid-2x",
+      "passed": true,
+      "actual": [
+        2880,
+        1440
+      ],
+      "expected": [
+        2880,
+        1440
+      ]
+    },
+    {
+      "name": "section-04-extension-carousel-2x",
+      "passed": true,
+      "actual": [
+        2880,
+        2516
+      ],
+      "expected": [
+        2880,
+        2516
+      ]
+    },
+    {
+      "name": "section-05-ai-agent-2x",
+      "passed": true,
+      "actual": [
+        2880,
+        2778
+      ],
+      "expected": [
+        2880,
+        2778
+      ]
+    },
+    {
+      "name": "mhtml-parse",
+      "passed": true
+    },
+    {
+      "name": "mhtml-offline-browser",
+      "passed": true
+    },
+    {
+      "name": "robots-homepage-allowed",
+      "passed": true
+    },
+    {
+      "name": "backlog-complete",
+      "passed": true
+    },
+    {
+      "name": "json-parse",
+      "passed": true,
+      "files": [
+        "tokens.json",
+        "archive/capture-manifest.json",
+        "archive/computed-styles.json",
+        "archive/mhtml-capture.json",
+        "archive/mhtml-manifest.json",
+        "archive/font-manifest.json",
+        "archive/section-capture-manifest.json",
+        "archive/mhtml-browser-check.json"
+      ]
+    },
+    {
+      "name": "component-metrics-corrected",
+      "passed": true
+    },
+    {
+      "name": "required-directory",
+      "passed": true
+    },
+    {
+      "name": "required-documents",
+      "passed": true
+    },
+    {
+      "name": "checksum-coverage-and-values",
+      "passed": true,
+      "coveredFiles": 36
+    }
+  ]
+}

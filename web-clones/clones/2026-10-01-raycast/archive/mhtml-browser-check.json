@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-01T01:27:45.170Z",
+  "sourceFile": "archive/raycast-home.mhtml",
+  "loadUrl": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-raycast/archive/raycast-home.mhtml",
+  "responseStatus": 200,
+  "title": "Raycast - Your shortcut to everything",
+  "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-raycast/archive/raycast-home.mhtml",
+  "readyState": "complete",
+  "h1": "Your shortcut to everything.",
+  "rootChildren": 14,
+  "scrollHeight": 15959,
+  "screenshot": {
+    "file": "archive/mhtml-browser-check.png",
+    "bytes": 78199,
+    "sha256": "ed1d098ced4db62de12a66dd932e1544aa7f6e3dc21dd0aca00f8b620fc9d3b4"
+  },
+  "networkErrors": [],
+  "errorCount": 0,
+  "passed": true
+}

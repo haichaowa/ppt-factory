@@ -9,4 +9,8 @@
 - `robots.txt`, `live-response-headers.txt` — crawl allowance evidence and live HTTP response headers.
 - `styles/` — 11 same-origin stylesheet sources fetched after rendering.
 - `resources/` — 6 WOFF2 fonts actually used by the rendered homepage; Chromium's MHTML omitted font parts, so these are supplements for local fidelity and token research.
+- `mhtml-browser-check.js` / `.json` / `.png` — offline file:// load test with all non-file network requests blocked; verifies title, H1, root children, and zero network failures.
+- `measure-components.js` — refreshes the 14 correctly aligned component geometry/style records in `computed-styles.json`.
+- `SHA256SUMS` — SHA-256 coverage for stable archive artifacts; excludes only this checksum file and the self-auditing `verification.json`.
+- `verification.json` — round-level machine-readable audit.
 - `capture.js`, `capture-mhtml.js`, `capture-sections.js` — capture scripts retained for reproducibility.
