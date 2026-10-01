@@ -7,6 +7,9 @@
 - `computed-styles.json` — live DOM geometry, root section inventory, selected computed styles, CSS variables, computed-style frequencies and resource timings.
 - `viewport-metrics.js` / `viewport-metrics.json` — remeasured 1440/1280/375 DOM geometry, visible root-section boxes and selected typography.
 - `document-outline.py` / `document-outline.json` — semantic heading outline extracted from the serialized live DOM.
+- `offline-fidelity.js` / `.json` / `live-first-viewport.png` / `offline-fidelity.png` / `offline-fidelity-diff.png` — exact first-screen comparison of live and file:// MHTML renderings; records the script-generated hero limitation.
+- `offline-preview.html`, `offline-preview-fidelity.js` / `.json` / `.png` / `-diff.png` — local screenshot preview and its pixel-exact comparison against the archived full-page capture.
+- `rights-inventory.py` / `rights-inventory.json` — MIME, host and rights-sensitive resource provenance.
 - `token-evidence.py` / `token-evidence.json` — cross-check of published colors, typography, spacing, radius, shadows, materials, motion and responsive values against raw evidence.
 - `capture-manifest.json` — consolidated capture provenance, screenshot/section geometry, hashes, browser/tool versions and evidence counts.
 - `robots.txt`, `live-response-headers.txt` — crawl allowance evidence and live HTTP response headers.

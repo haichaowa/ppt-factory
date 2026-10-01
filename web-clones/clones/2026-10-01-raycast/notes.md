@@ -115,7 +115,11 @@ CSS 源文件包含 `fadeInUp`、`fadeInScaleUp`、`slideIn`、`blink`、`loadin
 - **375**：归档截图高 15647px，后续同条件 DOM 复测为 15672px（25px 动态布局漂移，来自可滚动 demo 的运行态）。H1 实测 36/39.6px、宽度 343px；常规 section H2/描述降至 18/28.8px；AI 描述 15/22.5px。桌面 `Download for Mac` 锚点在 375 下 box 为 0×0，移动端改由平台专属安装入口承接。section 纵向堆叠，扩展 reel 继续使用横向 snap/mask。
 - Raycast 的移动策略不是“缩小桌面”，而是保留暗色材质和产品截图，重排文案与 demo，但坚持横向生态展示。
 
-## 9. 可复用结论
+## 9. 归档保真备注
+
+MHTML 可在 `file://` 下恢复 DOM、CSS 和 raster 资源，但不能重放生成 hero 物件的 script/WebGL 状态，因此首屏 exact match 只有 24.1299%（MAE 20.5038）。这不是截图误差：三档 PNG、2x 区块、DOM、CSS、字体与计算样式保留的是主视觉证据；`offline-preview.html` 直接引用原始 1440 截图，其本地首屏与截图顶部裁切的 exact match 为 100%。
+
+## 10. 可复用结论
 
 适合转化为：
 

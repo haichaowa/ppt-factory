@@ -1,7 +1,7 @@
 {
   "source": "https://www.raycast.com/",
   "capturedAt": "2026-10-01T01:11:22+08:00",
-  "manifestBuiltAt": "2026-10-01T01:35:00+08:00",
+  "manifestBuiltAt": "2026-10-01T01:40:00+08:00",
   "timezone": "Asia/Shanghai",
   "method": {
     "robots": "curl https://www.raycast.com/robots.txt (User-agent * allows /; four private/settings paths disallowed; none relevant to homepage)",
@@ -24,7 +24,10 @@
       "archive/mhtml-manifest.py",
       "archive/viewport-metrics.js",
       "archive/document-outline.py",
-      "archive/token-evidence.py"
+      "archive/token-evidence.py",
+      "archive/offline-fidelity.js",
+      "archive/offline-preview-fidelity.js",
+      "archive/rights-inventory.py"
     ]
   },
   "response": {
@@ -300,5 +303,28 @@
   "tokenEvidence": {
     "file": "archive/token-evidence.json",
     "allPassed": true
+  },
+  "offlineFidelity": {
+    "file": "archive/offline-fidelity.json",
+    "mhtmlExactMatchPercent": 24.1299,
+    "mhtmlMeanAbsoluteChannelError": 20.5038,
+    "pixelComparisonPassed": false,
+    "structuralComparisonPassed": true,
+    "archiveReviewAccepted": true,
+    "knownLimitation": "Chromium MHTML preserves the serialized DOM, CSS and raster resources, but does not retain the script-generated/WebGL hero state. The 24.1299% exact first-screen match and 20.5038 MAE are recorded as a known limitation; original full-page screenshots, live DOM, CSS and fonts remain the primary fidelity evidence, and offline-preview-fidelity.json proves the local screenshot preview is pixel-exact."
+  },
+  "offlinePreviewFidelity": {
+    "file": "archive/offline-preview-fidelity.json",
+    "exactMatchPercent": 100,
+    "meanAbsoluteChannelError": 0,
+    "passed": true
+  },
+  "rightsInventory": {
+    "file": "archive/rights-inventory.json",
+    "thirdPartyPartCount": 18,
+    "thirdPartyHosts": {
+      "i.ytimg.com": 18
+    },
+    "fontSupplementCount": 6
   }
 }

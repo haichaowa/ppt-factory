@@ -34,3 +34,20 @@
 7. Updated `archive/verification.json` to round 2 with viewport root counts, height tolerance, outline count, token-evidence pass state, JSON validity and rebuilt checksum coverage.
 
 **Result:** round-2 verification reports `allPassed: true`; all published token families trace to raw measured evidence. This round is committed separately.
+
+## Round 3 — offline fidelity, rights provenance, and closeout
+
+**Reviewed:** 2026-10-01 09:40（Asia/Shanghai）
+**Scope:** live-versus-MHTML rendering, local visual fallback, third-party resource provenance, copyright documentation, manifest/token freshness, final verification and checksums.
+
+### Fixes
+
+1. Added `archive/offline-fidelity.js` plus live, MHTML and magenta-diff first-viewport PNGs; measured 1,296,000 pixels, 24.1299% exact match and 20.5038 MAE.
+2. Documented rather than hid the cause: Chromium MHTML omits the script-generated/WebGL hero state, while its DOM/title/H1/root structure and embedded CSS/images still load successfully.
+3. Added `archive/offline-preview.html` and `offline-preview-fidelity.*`; the local preview built from the original 1440 full-page screenshot matches its source crop at 100% with 0 different pixels.
+4. Added `archive/rights-inventory.py` / `.json`, separating 53 `www.raycast.com` parts, 18 `i.ytimg.com` thumbnails, 34 `misc-assets.raycast.com` originals behind Next optimization, and six supplemented fonts.
+5. Expanded `meta.md` and `notes.md` with the MHTML limitation, exact fallback metrics, and resource-rights summary so downstream users do not mistake the MHTML pixel score for screenshot quality.
+6. Added fidelity, preview and rights provenance to `capture-manifest.json`, plus an `archiveQuality` block to `tokens.json`.
+7. Rebuilt `archive/SHA256SUMS` and advanced `archive/verification.json` to round 3 with explicit pixel-limitation, fallback, rights-inventory, JSON, prior-round and checksum checks.
+
+**Result:** final verification reports `allPassed: true`. The MHTML pixel limitation is documented and mitigated by the original screenshots plus a pixel-exact local preview; all stable archive checksums match. This round is committed separately.

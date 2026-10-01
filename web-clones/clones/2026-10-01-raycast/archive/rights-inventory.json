@@ -1,0 +1,361 @@
+{
+  "source": "https://www.raycast.com/",
+  "generatedAt": "2026-10-01T01:35:24.318908+00:00",
+  "purpose": "Local-only rights provenance for the archived homepage. This is not a license grant.",
+  "mimeTypeCounts": {
+    "image/jpeg": 18,
+    "image/webp": 41,
+    "text/css": 11,
+    "text/html": 1
+  },
+  "partHostCounts": {
+    "www.raycast.com": 53,
+    "i.ytimg.com": 18
+  },
+  "thirdPartyParts": {
+    "count": 18,
+    "hosts": {
+      "i.ytimg.com": 18
+    }
+  },
+  "nextImageOptimizedExternalAssets": [
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/oy8jtxl7c2I/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/oy8jtxl7c2I/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 22360
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/9KvmDCy23g0/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/9KvmDCy23g0/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 15715
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/UUPStiOLKlU/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/UUPStiOLKlU/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 25685
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/Xc262WTsZoU/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/Xc262WTsZoU/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 19723
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/OHuLnaY7Nxs/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/OHuLnaY7Nxs/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 19503
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/RFwumqHLc8Y/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/RFwumqHLc8Y/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 11558
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/_P1b00n12PU/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/_P1b00n12PU/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 14745
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/4Hi21ZpdrOc/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/4Hi21ZpdrOc/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 16412
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/m5MDv9qwhU8/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/m5MDv9qwhU8/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 16883
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/_DxukQdW1yg/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/_DxukQdW1yg/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 22303
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/HDQIvbLCF7Y/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/HDQIvbLCF7Y/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 20673
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/qobDloop1bg/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/qobDloop1bg/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 12603
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/NuIpZoQwuVY/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/NuIpZoQwuVY/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 6686
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/yR2hnn7Ghko/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/yR2hnn7Ghko/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 6848
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/A4bewhG4724/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/A4bewhG4724/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 15238
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/6knS3y39f7k/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/6knS3y39f7k/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 9731
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/W9FPWzorLyI/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/W9FPWzorLyI/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 10138
+    },
+    {
+      "mhtmlLocation": "https://i.ytimg.com/vi/NZwqx_dS-k0/hqdefault.jpg",
+      "originalUrl": "https://i.ytimg.com/vi/NZwqx_dS-k0/hqdefault.jpg",
+      "contentType": "image/jpeg",
+      "decodedBytes": 6265
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fcleanshotx-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/cleanshotx-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 44290
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fcleanshotx-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/cleanshotx-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2090
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-chrome-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-chrome-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 61412
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-chrome-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-chrome-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2280
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fobsidian-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/obsidian-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 49568
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fobsidian-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/obsidian-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2104
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-search-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-search-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 43326
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-search-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-search-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2208
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftodoist-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/todoist-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 47276
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftodoist-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/todoist-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2180
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fnotion-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/notion-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 43370
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fnotion-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/notion-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2236
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fpomodoro-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/pomodoro-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 50878
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fpomodoro-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/pomodoro-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2128
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftimers-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/timers-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 87230
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftimers-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/timers-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2252
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fzoom-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/zoom-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 35620
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fzoom-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/zoom-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2134
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fslack-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/slack-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 59282
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fslack-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/slack-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2346
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fjira-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/jira-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 53114
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fjira-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/jira-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2246
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2F1password-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/1password-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 50144
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2F1password-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/1password-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2340
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftiny-png-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/tiny-png-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 30426
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftiny-png-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/tiny-png-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2242
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Farc-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/arc-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 53692
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Farc-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/arc-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2206
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fspotify-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/spotify-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 22580
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fspotify-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/spotify-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2298
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-translate-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 23586
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/google-translate-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2284
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-web.png&w=750&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/linear-web.png",
+      "contentType": "image/webp",
+      "decodedBytes": 55544
+    },
+    {
+      "mhtmlLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-icon.png&w=128&q=70",
+      "originalUrl": "https://misc-assets.raycast.com/extension-cards/linear-icon.png",
+      "contentType": "image/webp",
+      "decodedBytes": 2190
+    }
+  ],
+  "nextImageOptimizedExternalAssetCount": 52,
+  "nextImageOptimizedOriginalHostCounts": {
+    "i.ytimg.com": 18,
+    "misc-assets.raycast.com": 34
+  },
+  "fontSupplement": {
+    "count": 6,
+    "hosts": {
+      "www.raycast.com": 6
+    },
+    "files": [
+      "archive/resources/0c8c4ded07fff55c-s.p.0bh8ttrlmx6iv.woff2",
+      "archive/resources/70bc3e132a0a741e-s.p.269kn9uafm0ti.woff2",
+      "archive/resources/83afe278b6a6bb3c-s.p.45535valc9rzk.woff2",
+      "archive/resources/e41d5df559864f9e-s.p.2rlzm4mj5kw8e.woff2",
+      "archive/resources/GeistMono_Variable.p.0b02cdm7g7y6h.woff2",
+      "archive/resources/1bffadaabf893a1e-s.0szrwpqb9mkwe.woff2"
+    ]
+  },
+  "notes": [
+    "Page markup, CSS, logo marks, product screenshots and assets served from raycast.com / misc-assets.raycast.com remain the property of Raycast or its licensors.",
+    "The 18 i.ytimg.com JPEG parts are video thumbnails referenced by the community section; any rights in those thumbnails remain with the video creators and/or YouTube.",
+    "Six rendered WOFF2 fonts were downloaded from www.raycast.com for local fidelity only; font licensing follows the original upstream license and is not relicensed by this archive.",
+    "No asset in this directory may be redistributed or used commercially."
+  ],
+  "localUseOnly": true
+}

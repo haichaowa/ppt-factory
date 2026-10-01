@@ -12,6 +12,8 @@
 - **robots 结果**：`https://www.raycast.com/robots.txt` 对 `User-agent: *` 为 `Allow: /`；仅禁用 `/upgrade`、`/settings/sessions`、`/handles/new`、`/users/confirmation`，均不在本次首页归档范围。
 - **MHTML 完整性**：71 个资源 part（1 HTML、11 CSS、41 WebP、18 JPEG），解码资源 2,335,433 bytes。Chromium MHTML 未内嵌字体，因此按 live performance 记录另行补充 6 个 WOFF2 到 `archive/resources/`。
 - **离线校验**：MHTML 在 `file://` 加载成功，标题和 H1 保持原值，root 渲染 14 个子节点，非 file 网络请求 0 个失败。
+- **离线像素复检**：MHTML 的首屏结构加载成功，但 exact pixel match 为 24.1299%（MAE 20.5038）。原因是 Chromium MHTML 未保留 script-generated/WebGL hero 状态；该限制已在 `archive/offline-fidelity.json` 明示。`archive/offline-preview.html` 使用原始 1440 全页截图，本地预览与截图顶部 1440×900 裁切 exact match 100%。
+- **资源权利清单**：`archive/rights-inventory.json` 记录 MHTML 53 个 `www.raycast.com` part、18 个 `i.ytimg.com` 缩略图 part，以及 6 个补充 WOFF2 字体；不改变原权利归属。
 - **版权口径**：页面文案、Logo、产品截图、扩展图标与媒体资源版权归 Raycast / 各资源权利人。此目录仅供本地设计学习与内部研究，不二次分发、不商用、不用于对外发布；保留原站权利信息。
 - **复现入口**：
   - `archive/capture.js`：主捕获流程（已保留现场版本）；
