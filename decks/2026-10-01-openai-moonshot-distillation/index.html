@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OpenAI 指控 Moonshot：隐藏思考为何被“转录”？</title>
+<title>加密没被破解，隐藏思考为何被“转录”？</title>
 <style>
 /* ============================================================
    theme:xxx — 主题变量注入点（整文件内联 templates/base/themes/{所选}.css）
@@ -277,21 +277,81 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
 .pat-end-qr { margin-top: 20px; }
 .pat-end-qr img { width: 170px; height: 170px; border-radius: var(--card-radius); background: #fff; padding: 10px; }
 
+/* ---------- deck surgery:case-brief v2 ----------
+   局部样式：只服务本项目 18 页取证简报视觉，不回写模板源。 ---------- */
+.slide.pat-cover.cover-case { align-items: center; }
+.cover-case-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(300px, .75fr); gap: 56px; align-items: center; width: 100%; }
+.cover-case-copy { display: flex; flex-direction: column; gap: 20px; }
+.cover-case-copy h1 { font-size: 60px; max-width: 16em; }
+.cover-case-badges { display: grid; gap: 14px; }
+.case-badge { padding: 18px 20px; display: grid; gap: 5px; }
+.case-badge b { font-family: var(--font-mono); font-size: 16px; letter-spacing: .12em; color: var(--accent-2); }
+.case-badge span { font-size: 17px; color: var(--fg-dim); }
+.case-badge.alert b { color: #ffb86b; }
+
+.section-question { max-width: 27em; font-size: 25px; color: var(--fg-dim); }
+.pat-section .section-rule { width: 112px; height: 3px; background: var(--accent); }
+
+.metric-hero { grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); }
+.pat-metric.hero { grid-column: 1 / -1; padding: 28px 34px 24px; border-color: var(--accent); background: var(--bg-soft); }
+.pat-metric.hero .pat-metric-num { font-size: 88px; }
+.metric-secondary { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+.quote-boundary { display: flex; flex-direction: column; gap: 22px; width: 100%; }
+.quote-boundary blockquote { max-width: 30em; font-size: 42px; }
+.quote-chips { display: flex; gap: 14px; flex-wrap: wrap; max-width: 34em; }
+.quote-chip { padding: 12px 16px; border: 1px solid var(--card-border); border-radius: 999px; background: var(--card-bg); font-family: var(--font-mono); font-size: 15px; color: var(--accent-2); }
+
+.term-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-top: 38px; flex: 1; min-height: 0; }
+.term-card { padding: 26px 24px; display: flex; flex-direction: column; gap: 14px; }
+.term-card b { font-size: 21px; }
+.term-card p { font-size: 18px; color: var(--fg-dim); }
+.term-card small { margin-top: auto; font-size: 14px; color: var(--fg-dim); }
+
+.source-chip { display: inline-block; padding: 4px 9px; border: 1px solid var(--card-border); border-radius: 999px; font-family: var(--font-mono); font-size: 13px; color: var(--accent-2); white-space: nowrap; }
+.source-chip.historical { color: #ffb86b; }
+.source-chip.preprint { color: #ff8f8f; }
+.pat-table.dense table { font-size: 18px; margin-top: 28px; }
+.pat-table.dense th { font-size: 15px; }
+.pat-table.dense td { padding: 12px 14px; }
+
+.end-evidence { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, .75fr); gap: 42px; align-items: center; width: 100%; margin-top: 28px; text-align: left; }
+.end-takeaway { font-size: 25px; line-height: 1.7; color: var(--fg-dim); }
+.end-takeaway b { color: var(--fg); }
+.end-checklist { display: grid; gap: 13px; }
+.end-checklist .pat-card { padding: 15px 18px; font-size: 17px; color: var(--fg-dim); }
+.end-checklist .pat-card b { display: block; color: var(--fg); font-size: 18px; margin-bottom: 4px; }
+.slide.pat-end { gap: 12px; }
+
+@media print {
+  .cover-case-grid, .term-grid, .end-evidence { break-inside: avoid; }
+}
+
 </style>
 </head>
 <body>
 <div class="stage">
-  <section class="slide pat-cover">
-    <div class="pat-cover-kicker">AI SECURITY EXPLAINER</div>
-    <h1>OpenAI 指控 Moonshot：隐藏思考为何被“转录”？</h1>
-    <p class="pat-cover-sub">从一次“没有破译加密”的蒸馏事件，看清推理链协议的新攻击面</p>
-    <div class="pat-cover-meta">视频讲解 PPT · 2026-10-01</div>
+  <section class="slide pat-cover cover-case">
+     <div class="cover-case-grid">
+      <div class="cover-case-copy">
+      <div class="pat-cover-kicker">AI SECURITY CASE BRIEF</div>
+      <h1>加密没被破解，隐藏思考为何被“转录”？</h1>
+      <p class="pat-cover-sub">OpenAI 指控与 Moonshot AI 相关个人参与模型蒸馏；本期只拆公开证据、技术机制与不能下的结论。</p>
+      <div class="pat-cover-meta">视频讲解 PPT · 2026-10-02</div>
+    </div>
+    <div class="cover-case-badges">
+      <div class="pat-card case-badge fragment"><b>NO CRYPTO BREAK</b><span>OpenAI 称未破译加密</span></div>
+      <div class="pat-card case-badge fragment"><b>NO DATABASE BREACH</b><span>OpenAI 称未入侵数据库</span></div>
+      <div class="pat-card case-badge alert fragment"><b>CROSS-SESSION REPLAY</b><span>争议在推理块跨会话复用</span></div>
+      <div class="pat-card case-badge fragment"><b>ATTRIBUTION UNPROVEN</b><span>技术归因证据未公开</span></div>
+     </div>
+    </div>
   </section>
 
   <section class="slide pat-claim">
     <div class="pat-claim-kicker">核心主张</div>
     <h1>风险不在密码学破译，而在可复用推理块把交互变成泄露通道</h1>
-    <p class="pat-claim-action"><span>期望行动</span>录制时保留“指控 / 称”口径，区分事实、归因与技术机制</p>
+    <p class="pat-claim-action"><span>判断标准</span>先区分密码学失败、数据库入侵、协议工件复用与厂商归因</p>
     <div class="pat-claim-anchors">
       <div class="pat-card pat-claim-anchor fragment">OpenAI 称：未破译加密，也未入侵数据库</div>
       <div class="pat-card pat-claim-anchor fragment">机制焦点：加密推理块跨会话被复用并转写</div>
@@ -302,10 +362,10 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <section class="slide pat-narrative-map">
     <h2>这期视频按四层拆解</h2>
     <div class="pat-nm-grid">
-      <div class="pat-card pat-nm-item fragment"><span>问题</span><b>加密未破，内容外泄</b></div>
-      <div class="pat-card pat-nm-item fragment"><span>张力</span><b>归因证据未公开</b></div>
-      <div class="pat-card pat-nm-item pat-nm-turn fragment"><span>转折</span><b>交互协议成为通道</b></div>
-      <div class="pat-card pat-nm-item pat-nm-action fragment"><span>行动</span><b>先核实再归因</b></div>
+      <div class="pat-card pat-nm-item fragment"><span>事件</span><b>OpenAI 声称看到了什么</b></div>
+      <div class="pat-card pat-nm-item fragment"><span>机制</span><b>为什么加密没破也能复现</b></div>
+      <div class="pat-card pat-nm-item pat-nm-turn fragment"><span>证据</span><b>哪些归因结论不能下</b></div>
+      <div class="pat-card pat-nm-item pat-nm-action fragment"><span>启示</span><b>防护对象从答案转向轨迹</b></div>
     </div>
     <p class="caption">口径来源：OpenAI、CyberScoop、Anthropic、CISA 与 arXiv 预印本</p>
   </section>
@@ -313,105 +373,166 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <section class="slide pat-section">
     <div class="pat-section-no">01 / PART ONE</div>
     <h1>事件事实</h1>
+    <div class="section-rule"></div>
+    <p class="section-question">OpenAI 到底声称观察到了什么？</p>
   </section>
 
   <section class="slide pat-timeline">
     <h2>OpenAI 称：四周内从低量活动到完全处置</h2>
     <div class="pat-tl-list">
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-01</div><h3>发现低量活动</h3><p>最早观察到提取保护推理的协同活动</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-24 / 25</div><h3>出现高量峰值</h3><p>1.6 万个相关请求，来自逾 4,000 用户</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-28</div><h3>处置关联簇</h3><p>相关用户簇超过 15,000，称已完全阻断</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">09-30</div><h3>公开披露</h3><p>说明机制、防御措施与归因判断</p></div>
+      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-01 · LOW ACTIVITY</div><h3>发现低量活动</h3><p>最早观察到提取保护推理的协同活动</p></div>
+      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-24 / 25 · PEAK</div><h3>出现高量峰值</h3><p>1.6 万个相关请求，来自逾 4,000 用户</p></div>
+      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-28 · BLOCKED</div><h3>处置关联簇</h3><p>相关用户簇超过 15,000，称已完全阻断</p></div>
+      <div class="pat-tl-item fragment"><div class="pat-tl-time">09-30 · PUBLIC</div><h3>公开披露</h3><p>说明机制、防御措施与归因判断</p></div>
     </div>
+    <p class="caption">来源：OpenAI 官方披露，2026-09-30；全部为 OpenAI 口径</p>
   </section>
 
   <section class="slide pat-metrics">
-    <h2>规模足以构成产业级信号</h2>
-    <div class="pat-metrics-grid">
-      <div class="pat-card pat-metric fragment"><div class="pat-metric-num">1.6<small>万请求</small></div><div class="pat-metric-label">07-24 / 25 相关提取模式峰值</div></div>
-      <div class="pat-card pat-metric fragment"><div class="pat-metric-num">4<small>千用户</small></div><div class="pat-metric-label">峰值期间涉及的用户数</div></div>
-      <div class="pat-card pat-metric fragment"><div class="pat-metric-num">1.5<small>万+用户</small></div><div class="pat-metric-label">后续识别到的关联用户簇</div></div>
+    <h2>规模足以构成产业级信号，但不是归因证明</h2>
+    <div class="pat-metrics-grid metric-hero">
+      <div class="pat-card pat-metric hero fragment"><div class="pat-metric-num">16,000<small> requests</small></div><div class="pat-metric-label">07-24 / 25 两天峰值：OpenAI 称符合相关提取模式的请求数</div></div>
+      <div class="metric-secondary">
+        <div class="pat-card pat-metric fragment"><div class="pat-metric-num">4,000<small>+ users</small></div><div class="pat-metric-label">峰值期间涉及用户</div></div>
+        <div class="pat-card pat-metric fragment"><div class="pat-metric-num">15,000<small>+ users</small></div><div class="pat-metric-label">后续识别的关联用户簇</div></div>
+      </div>
     </div>
-    <p class="caption">来源：OpenAI 官方博客，2026-09-30；数字均为 OpenAI 口径</p>
+    <p class="caption">来源：OpenAI，2026-09-30。请求数与用户数单位不同，不作同轴比较</p>
   </section>
 
   <section class="slide pat-section">
     <div class="pat-section-no">02 / PART TWO</div>
     <h1>技术机制</h1>
+    <div class="section-rule"></div>
+    <p class="section-question">为什么加密没有被破解，内容还能被复现？</p>
   </section>
 
   <section class="slide pat-assertion">
-    <h2>加密块跨会话复用，让“转写”成为攻击面</h2>
+    <h2>加密推理块不是废料，而是任务续跑凭证</h2>
     <div class="pat-ae-grid">
       <figure class="pat-ae-visual fragment">
-        <svg viewBox="0 0 760 370" role="img" aria-label="加密推理块跨会话复用示意图：会话 A 产生明文答案和加密推理块，块被复制到会话 B，由另一个模型请求转写为明文推理。">
-          <defs>
-            <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="currentColor"/></marker>
-          </defs>
+        <svg viewBox="0 0 760 330" role="img" aria-label="加密推理块的正常生命周期：客户端请求模型，模型返回可见答案和加密推理块，客户端在下一轮同一会话回传该块以继续任务。">
+          <defs><marker id="arrow-normal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="currentColor"/></marker></defs>
           <g fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="20" y="42" width="205" height="130" rx="12" opacity=".75"/>
-            <rect x="275" y="20" width="205" height="95" rx="12" opacity=".55"/>
-            <rect x="275" y="140" width="205" height="95" rx="12" opacity=".95" stroke-width="3"/>
-            <rect x="535" y="42" width="205" height="130" rx="12" opacity=".75"/>
-            <path d="M230 187 L268 187" marker-end="url(#arrow)"/>
-            <path d="M485 187 L528 187" marker-end="url(#arrow)"/>
-            <path d="M637 177 L637 255" marker-end="url(#arrow)"/>
-            <rect x="515" y="260" width="245" height="72" rx="12" opacity=".8"/>
+            <rect x="24" y="72" width="178" height="104" rx="14" opacity=".62"/>
+            <rect x="286" y="40" width="188" height="82" rx="14" opacity=".55"/>
+            <rect x="286" y="148" width="188" height="94" rx="14" opacity=".95" stroke-width="3"/>
+            <rect x="558" y="72" width="178" height="104" rx="14" opacity=".62"/>
+            <path d="M211 124 L279 124" marker-end="url(#arrow-normal)"/>
+            <path d="M483 124 L551 124" marker-end="url(#arrow-normal)"/>
           </g>
           <g fill="currentColor" font-size="18" font-weight="700">
-            <text x="38" y="72">会话 A</text>
-            <text x="293" y="49">返回结果</text>
-            <text x="293" y="169">加密推理块</text>
-            <text x="553" y="72">会话 B</text>
-            <text x="533" y="289">明文推理被复现</text>
+            <text x="46" y="110">客户端请求</text><text x="306" y="74">可见答案</text><text x="306" y="184">加密推理块</text><text x="580" y="110">下一轮回传</text>
           </g>
-          <g fill="currentColor" opacity=".78" font-size="14">
-            <text x="38" y="100">请求强模型</text>
-            <text x="38" y="126">得到可见答案</text>
-            <text x="38" y="152">同时带回加密块</text>
-            <text x="293" y="76">用户可见答案</text>
-            <text x="293" y="196">协议可见轨迹</text>
-            <text x="293" y="220">可跨会话复用</text>
-            <text x="553" y="100">复制到新会话</text>
-            <text x="553" y="126">请求模型转写</text>
-            <text x="553" y="152">绕过强模型防线</text>
+          <g fill="currentColor" opacity=".75" font-size="14">
+            <text x="46" y="138">请求强模型</text><text x="46" y="160">继续同一任务</text>
+            <text x="306" y="100">用户可读结果</text><text x="306" y="214">协议可见轨迹</text><text x="306" y="236">用于续接上下文</text>
+            <text x="580" y="138">回到同一会话</text><text x="580" y="160">任务状态继续</text>
           </g>
+          <g fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="292" y="142" width="176" height="82" rx="12" opacity=".8"/></g>
         </svg>
-        <figcaption>机制示意图；不提供可操作提示词</figcaption>
+        <figcaption>正常协议路径：推理块被返回，是为了让客户端下一轮续跑任务</figcaption>
+      </figure>
+      <aside class="pat-card pat-ae-side fragment">
+        <b>理解关键</b>
+        <ul>
+          <li>它不是给人阅读的密文</li>
+          <li>更像可回放的会话凭证</li>
+          <li>安全边界在于绑定会话、用户与模型</li>
+        </ul>
+        <p class="caption">来源：arXiv:2608.09867 作者描述；OpenAI 官方披露</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="slide pat-assertion">
+    <h2>关键差异：同一会话续跑，变成跨会话复用</h2>
+    <div class="pat-ae-grid">
+      <figure class="pat-ae-visual fragment">
+        <svg viewBox="0 0 760 390" role="img" aria-label="正常路径与风险路径对比：正常路径中加密推理块回到同一会话续跑任务；风险路径中推理块被复制到另一个会话，由模型交互转写为明文推理。示意图不提供操作方法。">
+          <defs><marker id="arrow-compare" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="currentColor"/></marker></defs>
+          <g fill="none" stroke="#4fd1c5" stroke-width="2">
+            <rect x="25" y="34" width="180" height="70" rx="12"/><rect x="290" y="34" width="180" height="70" rx="12"/><rect x="555" y="34" width="180" height="70" rx="12"/>
+            <path d="M210 69 L283 69" marker-end="url(#arrow-compare)"/><path d="M475 69 L548 69" marker-end="url(#arrow-compare)"/>
+          </g>
+          <g fill="#4fd1c5" font-size="15" font-weight="700"><text x="45" y="60">会话 A</text><text x="310" y="60">加密推理块</text><text x="575" y="60">同一会话回传</text></g>
+          <g fill="currentColor" opacity=".68" font-size="13"><text x="45" y="84">任务继续</text><text x="310" y="84">正常续跑凭证</text><text x="575" y="84">授权边界内</text></g>
+          <g fill="none" stroke="#ff7a70" stroke-width="2">
+            <rect x="25" y="175" width="180" height="82" rx="12"/><rect x="290" y="160" width="180" height="112" rx="12"/><rect x="555" y="175" width="180" height="82" rx="12"/><rect x="290" y="305" width="445" height="55" rx="12"/>
+            <path d="M210 216 L283 216" marker-end="url(#arrow-compare)"/><path d="M475 216 L548 216" marker-end="url(#arrow-compare)"/><path d="M640 262 L640 296" marker-end="url(#arrow-compare)"/>
+          </g>
+          <g fill="#ff9f97" font-size="15" font-weight="700"><text x="45" y="204">复制推理块</text><text x="310" y="190">会话 B / 另一模型</text><text x="575" y="204">请求模型交互</text><text x="310" y="339">明文推理被复现</text></g>
+          <g fill="currentColor" opacity=".70" font-size="13"><text x="45" y="228">离开原授权边界</text><text x="310" y="216">不是破解密钥</text><text x="310" y="238">不是入侵数据库</text><text x="575" y="228">转写隐藏轨迹</text></g>
+          <g fill="none" stroke="#ffb86b" stroke-width="2"><rect x="270" y="145" width="220" height="145" rx="14" opacity=".8"/></g>
+          <g fill="#ffb86b" font-size="13" font-weight="700"><text x="289" y="136">缺口：会话 / 用户 / 模型绑定不足</text></g>
+        </svg>
+        <figcaption>机制示意图；只解释边界差异，不提供可操作提示词</figcaption>
       </figure>
       <aside class="pat-card pat-ae-side fragment">
         <b>读图路径</b>
         <ul>
-          <li>第一眼：加密块从会话 A 带出</li>
-          <li>信号：会话 B 复用它触发转写</li>
-          <li>边界：不是破译密钥或入侵数据库</li>
+          <li>上排：正常续跑，不暴露明文</li>
+          <li>下排：跨会话复用，触发转写</li>
+          <li>结论：保护的是使用轨迹，不只是答案</li>
         </ul>
         <p class="caption">来源：OpenAI，2026-09-30；机制背景 arXiv:2608.09867，预印本</p>
       </aside>
     </div>
   </section>
 
-  <section class="slide pat-quote">
+  <section class="slide pat-quote quote-boundary">
     <blockquote>“没有破译加密、入侵数据库，或直接访问存储的用户会话。”</blockquote>
+    <div class="quote-chips">
+      <span class="quote-chip fragment">NOT CRYPTO BREAK</span>
+      <span class="quote-chip fragment">NOT DB BREACH</span>
+      <span class="quote-chip fragment">NOT STORED-CHAT ACCESS</span>
+    </div>
     <cite>— OpenAI 对本次活动的边界说明，2026-09-30</cite>
+  </section>
+
+  <section class="slide pat-table dense">
+    <h2>三个高频误解，先从机制上拆掉</h2>
+    <table>
+      <thead><tr><th>误解</th><th>更准确的口径</th><th>为什么重要</th></tr></thead>
+      <tbody>
+        <tr class="fragment"><td>“加密算法被破解”</td><td>OpenAI 称未破译加密，争议在交互转写</td><td>避免把协议风险误写成密码学失败</td></tr>
+        <tr class="fragment"><td>“入侵了数据库”</td><td>OpenAI 称未入侵数据库、未读存储会话</td><td>区分在线交互与存储泄露</td></tr>
+        <tr class="fragment"><td>“蒸馏必然非法”</td><td>蒸馏是常见训练方法，争议在授权与条款</td><td>区分技术方法、合同限制与法律结论</td></tr>
+      </tbody>
+    </table>
+    <p class="caption">来源：OpenAI 官方披露与公开条款；法律结论仍需司法或监管认定</p>
+  </section>
+
+  <section class="slide">
+    <h2>OpenAI 的指控落在条款边界，而不是司法结论</h2>
+    <div class="term-grid">
+      <div class="pat-card term-card fragment"><b>自动化提取</b><p>Terms of Use 禁止自动或程序化提取数据或 Output。</p><small>OpenAI Terms of Use，2026-01-01 生效</small></div>
+      <div class="pat-card term-card fragment"><b>竞争模型开发</b><p>禁止使用 Output 开发与 OpenAI 竞争的模型；Business Terms §3.3 亦有限制。</p><small>OpenAI Terms of Use / Business Terms §3.3(e)</small></div>
+      <div class="pat-card term-card fragment"><b>绕过保护</b><p>禁止绕过速率限制、限制、保护措施或安全缓解。</p><small>Business Terms §3.3(h)–(i)</small></div>
+    </div>
+    <p class="caption">条款违约、技术违规与法律责任不能互相替代；本页不构成法律意见</p>
   </section>
 
   <section class="slide pat-section">
     <div class="pat-section-no">03 / PART THREE</div>
     <h1>证据边界</h1>
+    <div class="section-rule"></div>
+    <p class="section-question">哪些结论现在还不能下？</p>
   </section>
 
-  <section class="slide pat-table">
-    <h2>公开材料支持机制叙述，不足以证明全部归因</h2>
+  <section class="slide pat-table dense">
+    <h2>五类材料支持机制叙述，不足以证明全部归因</h2>
     <table>
-      <thead><tr><th>材料</th><th>能支持</th><th>不能支持</th></tr></thead>
+      <thead><tr><th>材料</th><th>性质</th><th>能支持</th><th>不能支持</th></tr></thead>
       <tbody>
-        <tr class="fragment"><td>OpenAI 官方</td><td>观察规模、处置过程与核心簇归因判断</td><td>不能替代未公开的技术证据</td></tr>
-        <tr class="fragment"><td>CyberScoop</td><td>指出归因证据未公开、Moonshot 待回应</td><td>不能补充厂商内部证据</td></tr>
-        <tr class="fragment"><td>Anthropic / CISA</td><td>提供历史指控与政策背景</td><td>不证明本次事件全部细节</td></tr>
+        <tr class="fragment"><td>OpenAI 官方</td><td><span class="source-chip">OFFICIAL</span></td><td>观察规模、处置过程与归因判断</td><td>不能替代未公开技术证据</td></tr>
+        <tr class="fragment"><td>CyberScoop</td><td><span class="source-chip">MEDIA</span></td><td>指出证据缺口、Moonshot 待回应</td><td>不能补充厂商内部证据</td></tr>
+        <tr class="fragment"><td>arXiv 论文</td><td><span class="source-chip preprint">PREPRINT</span></td><td>解释跨会话复用机制可能性</td><td>未经同行评审，不是事件定论</td></tr>
+        <tr class="fragment"><td>Anthropic</td><td><span class="source-chip historical">HISTORICAL</span></td><td>提供历史指控与同类风险背景</td><td>不能证明本次归因成立</td></tr>
+        <tr class="fragment"><td>CISA / NSA / FBI</td><td><span class="source-chip historical">ADVISORY</span></td><td>提供政府口径与防御建议</td><td>不能替代本次技术证据</td></tr>
       </tbody>
     </table>
-    <p class="caption">来源：OpenAI、CyberScoop、Anthropic、CISA，2026-02 至 2026-09</p>
+    <p class="caption">来源：OpenAI、CyberScoop、arXiv:2608.09867、Anthropic、CISA，2026-02 至 2026-09</p>
   </section>
 
   <section class="slide pat-two-col">
@@ -433,55 +554,37 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   <section class="slide pat-section">
     <div class="pat-section-no">04 / PART FOUR</div>
     <h1>防御与启示</h1>
+    <div class="section-rule"></div>
+    <p class="section-question">防线应该建在哪一层？</p>
   </section>
 
-  <section class="slide pat-assertion">
-    <h2>OpenAI 的响应把防线放在四层控制上</h2>
-    <div class="pat-ae-grid">
-      <figure class="pat-ae-visual fragment">
-        <svg viewBox="0 0 760 310" role="img" aria-label="四层防御示意：账号与注册治理，绑定推理块使用边界，检测并暂持可能暴露推理的流式输出，协调第三方服务与伙伴。">
-          <g fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="20" y="34" width="160" height="92" rx="12" opacity=".55"/>
-            <rect x="205" y="34" width="160" height="92" rx="12" opacity=".75"/>
-            <rect x="390" y="34" width="160" height="92" rx="12" opacity=".95" stroke-width="3"/>
-            <rect x="575" y="34" width="160" height="92" rx="12" opacity=".75"/>
-            <path d="M185 80 L200 80" marker-end="url(#arrow)"/>
-            <path d="M370 80 L385 80" marker-end="url(#arrow)"/>
-            <path d="M555 80 L570 80" marker-end="url(#arrow)"/>
-            <rect x="115" y="180" width="530" height="80" rx="14" opacity=".35"/>
-          </g>
-          <g fill="currentColor" font-size="17" font-weight="700">
-            <text x="40" y="68">账号治理</text><text x="225" y="68">注册控制</text><text x="410" y="68">推理绑定</text><text x="595" y="68">输出检测</text>
-            <text x="145" y="218">伙伴与第三方服务协同</text>
-          </g>
-          <g fill="currentColor" opacity=".75" font-size="13">
-            <text x="40" y="95">封禁欺诈账号</text><text x="225" y="95">提高批量注册成本</text><text x="410" y="95">限制跨主体复用</text><text x="595" y="95">暂持可疑明文</text>
-            <text x="145" y="243">覆盖云伙伴、代理与可回放推理工件</text>
-          </g>
-        </svg>
-        <figcaption>防御层示意；按 OpenAI 公开响应归纳</figcaption>
-      </figure>
-      <aside class="pat-card pat-ae-side fragment">
-        <b>读图路径</b>
-        <ul>
-          <li>第一眼：先抬高攻击成本</li>
-          <li>信号：再收窄工件复用边界</li>
-          <li>边界：防护需覆盖第三方部署</li>
-        </ul>
-        <p class="caption">来源：OpenAI 官方博客 “How we responded”，2026-09-30</p>
-      </aside>
-    </div>
+  <section class="slide pat-table dense">
+    <h2>防御不是单点拦截，而是逐层压缩攻击面</h2>
+    <table>
+      <thead><tr><th>防御层</th><th>主要压制什么</th><th>残留局限</th></tr></thead>
+      <tbody>
+        <tr class="fragment"><td>账号治理</td><td>批量欺诈账号与重复滥用</td><td>攻击者可更换账号或身份</td></tr>
+        <tr class="fragment"><td>注册控制</td><td>降低低成本批量进入</td><td>可能影响正常用户接入</td></tr>
+        <tr class="fragment"><td>推理绑定</td><td>跨会话 / 用户 / 模型复用</td><td>需兼容续跑与生态移植</td></tr>
+        <tr class="fragment"><td>输出检测</td><td>可疑明文转写与流式暴露</td><td>存在误报、延迟与绕过</td></tr>
+        <tr class="fragment"><td>伙伴协同</td><td>第三方服务、代理与云部署</td><td>依赖跨组织情报共享</td></tr>
+      </tbody>
+    </table>
+    <p class="caption">按 OpenAI 公开响应归纳；不是完整安全架构建议</p>
   </section>
 
   <section class="slide pat-end">
     <h1>先核实，再归因</h1>
-    <div class="pat-end-links">
-      <span>P0：Moonshot 公开回应</span>
-      <span>P0：服务条款原文</span>
-      <span>P0：可验证技术证据</span>
+    <div class="end-evidence">
+      <p class="end-takeaway">当隐藏推理成为可复用资产，保护对象必须从<b>答案内容</b>扩展到<b>推理工件的使用轨迹</b>。</p>
+      <div class="end-checklist">
+        <div class="pat-card fragment"><b>协议层</b>推理块是否绑定会话、用户与模型？</div>
+        <div class="pat-card fragment"><b>日志层</b>是否误把可回放推理块写入共享日志？</div>
+        <div class="pat-card fragment"><b>生态层</b>第三方代理与伙伴部署是否继承防护？</div>
+      </div>
     </div>
+    <div class="pat-end-links"><span>发布前：Moonshot 回应</span><span>条款原文</span><span>可验证技术证据</span></div>
   </section>
-
 </div>
 <script>
 /* ============================================================
