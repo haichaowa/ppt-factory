@@ -13,9 +13,10 @@
   - `archive/network-manifest.json`、`archive/font-manifest.json`、`archive/resources/fonts/`：请求清单、字体来源与 726,728 bytes 字体副本；
   - `archive/mhtml-manifest.json`、`archive/mhtml-browser-check.json`：MHTML part 清单与本地重开验证；
   - `archive/offline-fidelity.json`、`archive/offline-firstscreen.png`、`archive/live-firstscreen.png`、`archive/offline-fidelity-diff.png`：live 与离线 MHTML 的 1440×1000 像素对比；
-  - `archive/section-capture-manifest.json`：五个 2× 区块截图的几何与哈希清单；
+  - `archive/section-capture-manifest.json`：五个 2× 区块截图的文档坐标、CSS 尺寸、实际 PNG 尺寸与哈希清单；
   - `screenshots/`：`1440×12338`、`1280×12130`、`375×17213` 三档全页 PNG；
   - `sections/`：五个 2× DPR 代表区块 PNG 与评价；
-  - `notes.md`、`tokens.json`。
+  - `archive/SHA256SUMS`、`archive/verification.json`：32 个稳定 archive 文件校验与 11 项自动审计；
+  - `manifest.json`、`notes.md`、`tokens.json`。
 - **保真说明**：全页截图为 CSS 像素 DPR 1，区块截图为 DPR 2。MHTML 在离线路由阻断外部网络的情况下重开，无外部请求，live/offline 首屏在 pixelmatch threshold 0.10 下匹配 96.4774%，平均通道误差 8.7631；剩余差异来自实时产品 Shell 状态、lazy 内容与动态帧。1440 截图高度 12338 高于截图前 DOM 估高 12201，来自 full-page 截图阶段 lazy/content-visibility 展开；PNG 为 canonical。
 - **版权口径**：原站文本、图像、字体、产品界面与 Anthropic/Claude 品牌资产版权归 Anthropic PBC。本归档仅供本地设计学习与留存，不二次分发、不商用、不作为对外发布的复刻或训练素材。

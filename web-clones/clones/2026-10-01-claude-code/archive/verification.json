@@ -1,0 +1,61 @@
+{
+  "round": 1,
+  "allPassed": true,
+  "checks": [
+    {
+      "name": "required deliverables",
+      "passed": true,
+      "detail": "13/13 files present and non-empty"
+    },
+    {
+      "name": "JSON parseability",
+      "passed": true,
+      "detail": "14/14 valid"
+    },
+    {
+      "name": "full-page PNG geometry",
+      "passed": true,
+      "detail": "{'claude-code-1440x12338-fullpage.png': (1440, 12338), 'claude-code-1280x12130-fullpage.png': (1280, 12130), 'claude-code-375x17213-fullpage.png': (375, 17213)}"
+    },
+    {
+      "name": "2x section captures",
+      "passed": true,
+      "detail": "{'01-hero-shell.png': (2880, 1900), '02-pricing-plans.png': (2880, 2272), '03-code-workflow.png': (2880, 2914), '04-integrations.png': (2880, 2342), '05-dark-newsletter.png': (2880, 1264)}"
+    },
+    {
+      "name": "MHTML structure",
+      "passed": true,
+      "detail": "39 parts, 3755773 bytes"
+    },
+    {
+      "name": "MHTML browser reopen",
+      "passed": true,
+      "detail": "{'url': 'file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-claude-code/archive/claude-code.mhtml', 'title': 'Claude Code by Anthropic | AI Coding Agent, Terminal, IDE', 'h1': 'Claude Code', 'h2Count': 38, 'shellPresent': True, 'fontChecks': {'sans': True, 'serif': True, 'mono': True}, 'bodyComputed': 'anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif'}"
+    },
+    {
+      "name": "font supplement integrity",
+      "passed": true,
+      "detail": "6 WOFF2 files verified"
+    },
+    {
+      "name": "robots compliance",
+      "passed": true,
+      "detail": "root and referenced static paths allowed"
+    },
+    {
+      "name": "offline fidelity",
+      "passed": true,
+      "detail": "0.964774 match, 8.763057 MAE"
+    },
+    {
+      "name": "SHA256SUMS",
+      "passed": true,
+      "detail": "32/32 hashes match"
+    },
+    {
+      "name": "BACKLOG completion",
+      "passed": true,
+      "detail": "marked complete with output directory"
+    }
+  ]
+}

@@ -8,80 +8,91 @@
       "file": "sections/01-hero-shell.png",
       "label": "Hero + product shell",
       "cssBox": {
-        "x": 0,
-        "y": 0,
+        "documentX": 0,
+        "documentY": 0,
         "width": 1440,
-        "height": 949.03125
+        "height": 949.03125,
+        "note": "documentY is layout position before capture scrolling; width/height are CSS pixels at DPR 2"
       },
       "pngDimensions": {
         "width": 2880,
-        "height": 1898
+        "height": 1900
       },
-      "bytes": 393186
+      "bytes": 393186,
+      "sha256": "294a8f7db25f7b020460d095d88929404d7327dd16941cd11d0e4260a4cf2023"
     },
     {
       "id": "pricing",
       "file": "sections/02-pricing-plans.png",
       "label": "Plans and pricing",
       "cssBox": {
-        "x": 0,
-        "y": -55.75,
+        "documentX": 0,
+        "documentY": 1109,
         "width": 1440,
-        "height": 1135.71875
+        "height": 1135.71875,
+        "note": "documentY is layout position before capture scrolling; width/height are CSS pixels at DPR 2"
       },
       "pngDimensions": {
         "width": 2880,
-        "height": 2271
+        "height": 2272
       },
-      "bytes": 235881
+      "bytes": 235881,
+      "sha256": "315b85bfe41cce2d20332c5d52a68cc7e340526e2defd102578a23b3aad3ff32"
     },
     {
       "id": "code-workflow",
       "file": "sections/03-code-workflow.png",
       "label": "Code workflow + terminal",
       "cssBox": {
-        "x": 0,
-        "y": -216.40625,
+        "documentX": 0,
+        "documentY": 3266,
         "width": 1440,
-        "height": 1455.890625
+        "height": 1455.890625,
+        "note": "documentY is layout position before capture scrolling; width/height are CSS pixels at DPR 2"
       },
       "pngDimensions": {
         "width": 2880,
-        "height": 2912
+        "height": 2914
       },
-      "bytes": 474349
+      "bytes": 474349,
+      "sha256": "57e8e2a81054723fe805c1e624c9a930da51ba513e1af7a2b07cccf4dee87cc0"
     },
     {
       "id": "integrations",
       "file": "sections/04-integrations.png",
       "label": "Terminal / IDE / web integrations",
       "cssBox": {
-        "x": 0,
-        "y": -73.515625,
+        "documentX": 0,
+        "documentY": 4721,
         "width": 1440,
-        "height": 1170.1875
+        "height": 1170.1875,
+        "note": "documentY is layout position before capture scrolling; width/height are CSS pixels at DPR 2"
       },
       "pngDimensions": {
         "width": 2880,
-        "height": 2340
+        "height": 2342
       },
-      "bytes": 670973
+      "bytes": 670973,
+      "sha256": "23fe45d972f8357f69c6dc68f6904f93b88fbf18e0d02ec80765cfd311a09f4c"
     },
     {
       "id": "newsletter",
       "file": "sections/05-dark-newsletter.png",
       "label": "Dark developer newsletter",
       "cssBox": {
-        "x": 0,
-        "y": 196.40625,
+        "documentX": 0,
+        "documentY": 10425,
         "width": 1440,
-        "height": 630.75
+        "height": 630.75,
+        "note": "documentY is layout position before capture scrolling; width/height are CSS pixels at DPR 2"
       },
       "pngDimensions": {
         "width": 2880,
-        "height": 1262
+        "height": 1264
       },
-      "bytes": 160058
+      "bytes": 160058,
+      "sha256": "319b61e5a4169ba9eaf5aa6289d765aaa0190789121030d384610e194ba3c78c"
     }
-  ]
+  ],
+  "selectorMethod": "Mark each target heading and its closest section with data-capture-id, then capture that element at DPR 2."
 }

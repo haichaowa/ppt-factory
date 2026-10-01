@@ -12,3 +12,5 @@
 - `offline-fidelity.json`、`live-firstscreen.png`、`offline-firstscreen.png`、`offline-fidelity-diff.png` — 首屏像素级离线保真验证。
 - `section-capture-manifest.json` — 2× 区块截图几何与哈希。
 - `capture.js`、`extract-element-metrics.js`、`supplement-mhtml-fonts.py`、`mhtml-manifest.py`、`validate-mhtml.js` — 可复现采集、补充字体、清单生成和离体验证脚本。
+- `SHA256SUMS` — 32 个稳定 archive 文件的 SHA-256 校验；自校验文件 `verification.json` 与清单本身除外。
+- `verification.json`、`verify.py` — 交付物、JSON、PNG 几何、MHTML、字体、robots、离线保真、checksum 与 BACKLOG 的自动复审记录。

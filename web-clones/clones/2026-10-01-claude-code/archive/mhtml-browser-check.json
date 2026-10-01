@@ -14,5 +14,13 @@
   },
   "mhtmlBytes": 3755773,
   "openedWithFileUrl": true,
-  "externalRequestsBlocked": 0
+  "externalRequestsBlocked": 0,
+  "browser": {
+    "name": "Chromium/Chrome",
+    "version": "154.0.8037.59",
+    "playwright": "1.62.1"
+  },
+  "mhtmlSha256": "062a9457376762346270ee176a0c553a00eccc5bfbfea2da8dd566add26adaed",
+  "offlineNetworkPolicy": "all http/https routes aborted",
+  "resourcePartCount": 39
 }
