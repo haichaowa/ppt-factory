@@ -31,3 +31,20 @@
 | 可运行 | 通过 | 静态 HTML + 已提交的 vendor 资源；本地 HTTP 服务器零构建即可浏览 |
 | 体量 <200MB | 通过 | 有效源码 17.31 MiB，无 `node_modules` 或新生成构建产物 |
 | 许可证清晰 | 通过 | 仓库根目录 MIT 原文与作者署名完整保留 |
+
+## 快照完整性
+
+- 校验文件：`download-manifest.json`
+- 有效源码：1,878 个文件、18,153,426 bytes
+- 源码树 SHA-256：`6254b19dbbd5e51a98872c7e9f5221f21670fe85485cb4319a09c6748e3c8d00`
+- 14 个顶层 HTML 页面均逐文件记录 SHA-256；manifest 采用相对路径排序，可复算。
+- 快照中无 `node_modules/`、顶层 `dist/`、顶层 `build/` 或 `.git/`。`vendor/` 中已有 minified 文件为上游包原始内容，非本轮生成。
+
+## 内嵌第三方许可与署名
+
+- Bootstrap 4.6.0：文件头 MIT 声明，保留在 `vendor/bootstrap/js/*.js`。
+- Chart.js 2.9.4：文件头 MIT 声明，保留在 `vendor/chart.js/*.js`。
+- DataTables 1.10.24：`vendor/datatables/jquery.dataTables.js` 文件头保留 SpryMedia 版权与 MIT license 链接。
+- jQuery 3.6.0：文件头保留 OpenJS Foundation 版权与 MIT license 链接。
+- jQuery Easing 1.4.1：文件头保留 George McGinley Smith 版权与 BSD License 链接。
+- Font Awesome Free 5.15.3：`vendor/fontawesome-free/LICENSE.txt` 完整保留，声明 Icons CC BY 4.0 / Fonts SIL OFL 1.1 / Code MIT。

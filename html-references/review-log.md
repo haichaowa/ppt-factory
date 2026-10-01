@@ -226,3 +226,88 @@
 这份 HTML5 UP 参考库已经达到“本地可直接使用”的交付标准：来源权威、许可证与署名完整、44 套源码可浏览、110 页清单准确、6 张截图可对照、设计系统拆解有源码证据、15 个 PPT Factory pattern 均有映射建议，导览页零依赖且经过响应式与控制台验证。
 
 它还不是“可直接发布的产品资产”：外部源码包含旧 jQuery、重复资产、demo 表单和占位内容，不能整体进入 PPT Factory；映射结论也尚未用真实 deck 试装验证。若要进入产品，下一步应先按 `notes.md` 第 9 节选择一个主题方向，生成一页 `cover` + 一页 `assertion-evidence` + 一页 `metrics` 的试装样张，再决定是否扩展主题 token。若只是作为设计参考库，当前产物已经可以直接使用。
+
+## 2026-10-02 · SB Admin 2 · 第 1 轮复审
+
+### 已检查文件
+
+**任务规则与总索引**
+- `html-references/README.md`
+- `html-references/BACKLOG.md`
+- `html-references/INDEX.md`
+- `html-references/PROGRESS.md`
+- `html-references/LOG.md`
+- `html-references/index.html`
+
+**SB Admin 2 交付物**
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/README.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/01-index-dashboard.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/02-cards-components.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/03-tables-datatable.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/04-charts-visualizations.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/05-utilities-color-tokens.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/06-login-authentication.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/07-404-error-state.png`
+
+**源码与映射证据**
+- `source/LICENSE`
+- `source/README.md`
+- `source/package.json`
+- `source/scss/_variables.scss`
+- `source/scss/_global.scss`
+- `source/scss/_buttons.scss`
+- `source/scss/_cards.scss`
+- `source/scss/_charts.scss`
+- `source/scss/_login.scss`
+- `source/scss/navs/_sidebar.scss`
+- `source/scss/navs/_topbar.scss`
+- 14 个顶层 HTML：`404.html`、`blank.html`、`buttons.html`、`cards.html`、`charts.html`、`forgot-password.html`、`index.html`、`login.html`、`register.html`、`tables.html`、`utilities-animation.html`、`utilities-border.html`、`utilities-color.html`、`utilities-other.html`
+- `vendor/bootstrap/js/bootstrap.js`
+- `vendor/chart.js/Chart.js`
+- `vendor/datatables/jquery.dataTables.js`
+- `vendor/jquery/jquery.js`
+- `vendor/jquery-easing/jquery.easing.js`
+- `vendor/fontawesome-free/LICENSE.txt`
+- `patterns/README.md` 与 15 个 `patterns/*.html`
+
+### 自动检查结果
+
+- Manifest：1,878 个源码文件、18,153,426 bytes、14 个顶层 HTML，源码树 SHA-256 复算一致。
+- 版权：根 `LICENSE`、`README.md`、作者与内嵌第三方版权头均存在。
+- 排除项：无 `node_modules/`、`.git/`、顶层 `dist/`、顶层 `build/`。
+- 截图：7 张 PNG 的 SHA-256 与截图索引一致。
+- 映射：15 个 PPT Factory patterns 全部在 notes 中有逐项映射。
+- 导览页：28 个本地 `href/src` 全部存在，0 个 `<script>`；1440/900/560/390px 无横向溢出，0 error / 0 warning。
+- 仓库边界：`patterns/`、`templates/`、`decks/` 相对 HEAD 无改动。
+
+### 本轮修复（7 处 P2）
+
+1. `collections/2026-10-02-startbootstrap-sb-admin-2/download-manifest.json`：新增 1,878 个源码文件的字节数与逐文件 SHA-256、源码树 digest、版本与 commit，补齐可复算完整性证据。
+2. `collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`：新增“快照完整性”与“内嵌第三方许可与署名”，区分模板 MIT 与 vendor 版权头。
+3. `collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`：新增 7 张代表截图到查看意图的映射，补齐从预览记录到图像证据的路径。
+4. `collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/README.md`：新增 7 张 PNG 的 SHA-256 表，截图后续可对账。
+5. `collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`：修正“认知恢复”为“账号/密码恢复”，避免中文误读。
+6. `collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`：把认证卡及其迁移建议中的 0.5rem 圆角修正为源码实际的 0.35rem，并删除“高度高度”重复。
+7. `html-references/index.html`：统计标签由“代表页面”改为“收录页面”，与 110+14 的统计口径一致。
+
+### 四维评分
+
+| 维度 | 分数 | 说明 |
+|---|---:|---|
+| 正确性 | 4.5 | 来源、许可证、体积、manifest、页面、截图哈希和渲染已复核；可访问性细节还可进一步量化。 |
+| 完整性 | 4.5 | 6 个阶段完成，15 个 pattern 全映射；还需两轮复审和更明确的人工验收清单。 |
+| 精致度 | 4 | 文档证据链已明显增强；导览信息架构可用但尚未做逐区块视觉细查。 |
+| 可用性 | 4 | 可从导览直达源码、截图和拆解；首次使用者还缺一条时间盒阅读路线。 |
+
+### 问题分级与状态
+
+- P0：0
+- P1：0
+- P2：本轮修复 7 处；遗留为可访问性数据量化、人工验收清单、阅读路线与最终发布差距说明。
+
+### 诚实自评
+
+本轮后，SB Admin 2 已是可复查的本地参考快照：源码、版权、页面、截图和映射都有证据链。但还不能称“可直接发布”：导览和截图尚未由真人目检；设计 token 只是建议，未在真实 PPT deck 中试装；旧依赖与外部资源限制也必须由使用者理解。下一轮应补齐这些可执行判断，而不是继续增加无关收藏。

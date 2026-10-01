@@ -22,6 +22,18 @@ python3 -m http.server 8766 --bind 127.0.0.1
 | 认证页 | [source/login.html](source/login.html) | 通过。居中登录卡片、图标输入框与登录/注册/忘记密码路径完整，无控制台错误 |
 | 工具类页 | [source/utilities-color.html](source/utilities-color.html) | 通过。4 张卡片中的背景、文字、渐变色样例完整显示，无控制台错误 |
 
+## 已生成代表截图
+
+| 想看的体系 | 截图 |
+|---|---|
+| Dashboard / KPI / 图表分区 | [01-index-dashboard.png](screenshots/01-index-dashboard.png) |
+| 卡片状态与折叠 | [02-cards-components.png](screenshots/02-cards-components.png) |
+| 数据表密度与工具栏 | [03-tables-datatable.png](screenshots/03-tables-datatable.png) |
+| 图表容器规范 | [04-charts-visualizations.png](screenshots/04-charts-visualizations.png) |
+| 颜色 token 文档 | [05-utilities-color-tokens.png](screenshots/05-utilities-color-tokens.png) |
+| 图文分栏认证卡 | [06-login-authentication.png](screenshots/06-login-authentication.png) |
+| 异常状态页 | [07-404-error-state.png](screenshots/07-404-error-state.png) |
+
 ## 建议阅读顺序
 
 1. `index.html`：看信息层级、KPI 数字卡与两栏图表的版式节奏。

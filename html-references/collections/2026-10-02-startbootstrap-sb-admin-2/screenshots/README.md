@@ -17,3 +17,15 @@
 - 截图 01–07 均成功保存，图片均为 PNG。
 - 图表页存在 Chart.js 2 的弃用提示（`scales.[x/y]Axes.maxBarThickness`），不影响渲染。
 - 登录页有浏览器关于 `current-password` autocomplete 的建议提示，不影响视觉浏览。
+
+## SHA-256
+
+| 文件 | SHA-256 |
+|---|---|
+| `01-index-dashboard.png` | `00df409a7c7d68e16424ff9743dd4dccb6610c76f68fceaba9e4bee31b802575` |
+| `02-cards-components.png` | `dd3ec777f663f9f32b59019cd88ce194d0a5cb4165f528b7985ad7678ca3a80e` |
+| `03-tables-datatable.png` | `27d286d5723e93ef788f21852ed6eeea65459e92ea9c60623f7d32bcb899c2e9` |
+| `04-charts-visualizations.png` | `54944845f40c39ca9ed03687eeccbdeb031d87970f465f819f5b2470286284f3` |
+| `05-utilities-color-tokens.png` | `efcc8d841344af222818d253e96da086a2f56ead34f28d0716f19acca92e6708` |
+| `06-login-authentication.png` | `a8af33c3e344ef7e2c645e10c04c764a9a37366c4fbc2097179e0d651e53e4e5` |
+| `07-404-error-state.png` | `898d3256976a86743a4d7595affed422ebba5f11784fe126c53a5ee3105f6b29` |
