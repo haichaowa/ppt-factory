@@ -1,0 +1,323 @@
+{
+  "source": "https://stripe.com/",
+  "capturedAt": "2026-10-01T07:22:13.575Z",
+  "completedAt": "2026-10-01T07:24:45.666Z",
+  "timezone": "Asia/Shanghai",
+  "method": {
+    "primary": "Chromium Page.captureSnapshot(format=mhtml) after full-page lazy-load pass",
+    "screenshots": "Playwright fullPage PNG at 1440/1280/375 with reduced motion and animations disabled",
+    "sections": "Playwright full-page clipping with deviceScaleFactor=2",
+    "measurement": "live DOM getComputedStyle, CSSOM, PerformanceResourceTiming, and element geometry"
+  },
+  "environment": {
+    "playwright": "1.62.1",
+    "browserExecutable": "/Users/wanghaichao/Library/Caches/ms-playwright/chromium-1194/chrome-mac/Chromium.app/Contents/MacOS/Chromium",
+    "platform": "darwin",
+    "node": "v23.11.0"
+  },
+  "response": {
+    "status": 200,
+    "url": "https://stripe.com/",
+    "headers": {
+      "content-encoding": "gzip",
+      "content-security-policy": "base-uri 'none'; child-src 'none'; connect-src https://c.increment.com https://c.stripe.dev https://c.stripe.global https://c.stripe.partners blob: https://b.stripecdn.com https://errors.stripe.com https://ext.stripe.com https://r.stripe.com https://stripe-images.s3.us-west-1.amazonaws.com https://stripe.com 'self'; default-src 'none'; font-src https://b.stripecdn.com 'self'; form-action https://stripe.com 'self'; frame-ancestors https://app.contentful.com 'self'; frame-src https://b.stripecdn.com https://js.stripe.com https://support-conversations.stripe.com 'self'; img-src data: https://assets.ctfassets.net https://assets.stripeassets.com https://b.stripecdn.com https://images.ctfassets.net https://images.stripeassets.com https://q.stripe.com 'self'; manifest-src 'none'; media-src https://assets.ctfassets.net https://assets.stripeassets.com https://b.stripecdn.com https://videos.ctfassets.net https://videos.stripeassets.com 'self'; object-src 'none'; script-src https://b.stripecdn.com https://js.stripe.com 'self' 'sha256-3aWvb9tRBjmz1OjR3n7mwiTm94+s4iki4mMZF82asmc=' 'sha256-5LtzXhT7UFn+GqP5pKEMGL08UNZsrzANHFEBW/mQHGw=' 'sha256-beLzNcen8LrazzSCRjAapoIMTgJI0osPWGNSX7aK6lc=' 'sha256-cCM0Z4lzGkzQnmbdVw+ouz0JRawyaKcZ4yiqzqYS7ek=' 'sha256-vTifGUJH6hJYTvstw4xJ4xfr/vE0ELkOV4GpCumyqfg=' 'sha256-KxhSaxKB5RFTQsqfRwp+zG7iLjvMrTAySqnSvWlqct0=' 'sha256-tMuJ8c00j54yuxogrdIJeGhNVB350dc56i969XRz/Mc=' 'sha256-aEFSvCaVnb2wNwuO3IzA8J44RdTKt6vms9beA7BcCYg=' 'sha256-0SWEc2BfR2o77i2vUiNNIrFKQkjc2Ujsr2hlfZ6oUek=' 'report-sample'; style-src https://b.stripecdn.com 'self' 'unsafe-inline'; worker-src https://b.stripecdn.com 'self'; upgrade-insecure-requests; report-uri https://q.stripe.com/csp-violation?q=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M%3D; report-to csp",
+      "content-type": "text/html; charset=utf-8",
+      "cross-origin-opener-policy": "same-origin-allow-popups; report-to=\"wsp_coop\"",
+      "cross-origin-opener-policy-report-only": "same-origin-allow-popups; report-to=\"wsp_coop\"",
+      "date": "Thu, 01 Oct 2026 07:22:14 GMT",
+      "referrer-policy": "no-referrer-when-downgrade",
+      "report-to": "{\"group\":\"coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report\"}],\"include_subdomains\":true}, {\"group\":\"wsp_coop\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coop-report?s=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M=\"}],\"include_subdomains\":true}, {\"group\":\"wsp_coep\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/coep-report?s=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M=\"}],\"include_subdomains\":true}, {\"group\":\"csp\",\"max_age\":8640,\"endpoints\":[{\"url\":\"https://q.stripe.com/csp-report-v2?q=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M%3D&t=1\"}],\"include_subdomains\":true}",
+      "reporting-endpoints": "coop=\"https://q.stripe.com/coop-report\", wsp_coop=\"https://q.stripe.com/coop-report?s=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M=\", wsp_coep=\"https://q.stripe.com/coep-report?s=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M=\", csp=\"https://q.stripe.com/csp-report-v2?q=eHjRNq7VbmqcPIsQjrmGXZvwdBvgPi4gyf-d41Btig8gQmmUaHDZ_30XEV6eG9M%3D&t=1\"",
+      "server": "nginx",
+      "strict-transport-security": "max-age=63072000; includeSubDomains; preload",
+      "x-content-type-options": "nosniff",
+      "x-frame-options": "SAMEORIGIN",
+      "x-mkt-cache": "HIT",
+      "x-stripe-proxy-response": "upstream",
+      "x-stripe-server-rpc-duration-micros": "60697",
+      "x-wc": "3ff"
+    }
+  },
+  "document": {
+    "url": "https://stripe.com/",
+    "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+    "readyState": "complete",
+    "characterSet": "UTF-8",
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "scrollWidth": 1440,
+    "scrollHeight": 15140,
+    "bodyBackgroundColor": "rgba(0, 0, 0, 0)",
+    "htmlBackgroundColor": "rgba(0, 0, 0, 0)",
+    "lang": "en-US",
+    "metaThemeColor": null,
+    "h1": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth."
+  },
+  "mhtml": {
+    "file": "archive/stripe-home.mhtml",
+    "bytes": 2280686,
+    "sha256": "30635270c04eb97952c00c57f8efc540fbdcc8cec344807c75632f02922f65e0"
+  },
+  "screenshots": [
+    {
+      "requestedViewport": 1440,
+      "file": "screenshots/stripe-home-1440-fullpage.png",
+      "url": "https://stripe.com/",
+      "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+      "scrollWidth": 1440,
+      "scrollHeight": 14702,
+      "readyState": "complete",
+      "h1": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "bodyBackgroundColor": "rgba(0, 0, 0, 0)",
+      "rootFontSize": "16px",
+      "png": {
+        "width": 1440,
+        "height": 14702
+      },
+      "sha256": "13320f2eb339cb8cf4b1b589592664e04fb0e2fca4e3d3ad74e92db7c30d2a29",
+      "bytes": 6444413,
+      "responseStatus": 200,
+      "responseUrl": "https://stripe.com/"
+    },
+    {
+      "requestedViewport": 1280,
+      "file": "screenshots/stripe-home-1280-fullpage.png",
+      "url": "https://stripe.com/",
+      "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+      "scrollWidth": 1280,
+      "scrollHeight": 15089,
+      "readyState": "complete",
+      "h1": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth.",
+      "bodyBackgroundColor": "rgba(0, 0, 0, 0)",
+      "rootFontSize": "16px",
+      "png": {
+        "width": 1280,
+        "height": 15089
+      },
+      "sha256": "2e3df2209c70a306d231c7550781a6c0cebdceae024ecf17c7446c277f23402b",
+      "bytes": 6452321,
+      "responseStatus": 200,
+      "responseUrl": "https://stripe.com/"
+    },
+    {
+      "requestedViewport": 375,
+      "file": "screenshots/stripe-home-375-fullpage.png",
+      "url": "https://stripe.com/",
+      "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+      "scrollWidth": 375,
+      "scrollHeight": 20231,
+      "readyState": "complete",
+      "h1": "Financial infrastructure to grow your revenue.",
+      "bodyBackgroundColor": "rgba(0, 0, 0, 0)",
+      "rootFontSize": "16px",
+      "png": {
+        "width": 375,
+        "height": 20231
+      },
+      "sha256": "e6858d1e561291788d4bbcce39cc6fb1e7f090edff48eb93198a37c09fa549bf",
+      "bytes": 3233155,
+      "responseStatus": 200,
+      "responseUrl": "https://stripe.com/"
+    }
+  ],
+  "sections": [
+    {
+      "name": "01-hero-diagonal-gradient",
+      "selector": "section.hero-section-container",
+      "label": "Hero with diagonal color wash, clipped copy and GDP ticker",
+      "className": "hds-color-mode hero-section-container section section--white hds-mode--light",
+      "text": "Global GDP running on Stripe: 1.72472535% 1.72472536% Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth. Financial infrastructure to grow your revenue. Accept payments, offer financial services, and",
+      "cssBox": {
+        "x": 0,
+        "y": 76,
+        "width": 1440,
+        "height": 685
+      },
+      "png": {
+        "width": 2880,
+        "height": 1370
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "3ac8e2a55dbf8258d17df96e38e58bba4fff0c88d2245ccc421e7119fca642c3",
+      "bytes": 1795938
+    },
+    {
+      "name": "02-modular-solutions-bento",
+      "selector": "section.hero-section-container + section",
+      "label": "Bento system of payment/billing/commerce products",
+      "className": "hds-color-mode section section--white hds-mode--light",
+      "text": "Flexible solutions for every business model. Grow your business with a comprehensive set of payments and financial tools⁠—⁠designed to work individually or together. Accept and optimize payments globally—online and in person Pay Roastery Cartsy bezahlen Showflix に支払う Pay Roastery $5.46 €26.89 ¥5,000 $5.46 Tap, insert, ",
+      "cssBox": {
+        "x": 0,
+        "y": 761,
+        "width": 1440,
+        "height": 2196
+      },
+      "png": {
+        "width": 2880,
+        "height": 4392
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "3cfb5fe89f933fa3ca2091a818a89d77b8ca4e6be30f21206e53b54048dfbf43",
+      "bytes": 2997399
+    },
+    {
+      "name": "03-global-commerce-stats",
+      "selector": "section.stats-section",
+      "label": "Statistics narrative and illustration/graphic system",
+      "className": "hds-color-mode stats-section stats-section--time-daytime section section--white hds-mode--light",
+      "text": "The backbone of global commerce 135+ currencies and payment methods supported $1.9T in payments volume processed in 2025 99.999% historical uptime for Stripe services 200M+ active subscriptions managed on Stripe Billing",
+      "cssBox": {
+        "x": 0,
+        "y": 3516,
+        "width": 1440,
+        "height": 978
+      },
+      "png": {
+        "width": 2880,
+        "height": 1956
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "22b31e509d253fa9b5e90ad30c752b535fd74f7ec6cfeb50f7fcb36561706438",
+      "bytes": 1639531
+    },
+    {
+      "name": "04-business-sizes",
+      "selector": "section.business-sizes-section",
+      "label": "Enterprise/startup/platform segmentation and carousel",
+      "className": "hds-color-mode business-sizes-section section section--white hds-mode--light",
+      "text": "Powering businesses of all sizes. Run your business on a reliable platform that adapts to your needs. Transform your enterprise with agile financial infrastructure Stripe for enterprises 50% of Fortune 100 companies have used Stripe to grow their businesses—from expanding internationally to reimagining the customer exp",
+      "cssBox": {
+        "x": 0,
+        "y": 4494,
+        "width": 1440,
+        "height": 4611
+      },
+      "png": {
+        "width": 2880,
+        "height": 9222
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "ebf906fd01459c0a21ecfc9b9b0004e634da8ccce01859ebb0cab5d5bdafe5b0",
+      "bytes": 6954580
+    },
+    {
+      "name": "05-dark-developer-infrastructure",
+      "selector": "section.hds-mode--dark",
+      "label": "Dark developer stack and integration section",
+      "className": "hds-color-mode section hds-mode--dark",
+      "text": "Reliable, extensible infrastructure for every stack. Adapt Stripe to your business needs with flexible integration options. View developer docs View Stripe’s GitHub Connect to existing systems. Orchestrate payments across multiple processors, build custom workflows, and connect to third parties using APIs, partner apps",
+      "cssBox": {
+        "x": 0,
+        "y": 9104,
+        "width": 1440,
+        "height": 2342
+      },
+      "png": {
+        "width": 2880,
+        "height": 4684
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "a96a44d64379bc72b767a897c6d9c3e5fcab7c3c202b297664d642d1ae3fce0a",
+      "bytes": 1340186
+    }
+  ],
+  "cssFiles": [
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5f8c822d1f0f2d3e.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-5f8c822d1f0f2d3e-css.css",
+      "bytes": 2723,
+      "sha256": "a3047fe26979d471500be7efbb6fd6ffa2f96958a4ae85be16bf19fd43f05884",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5abff0f798ddf7af.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-5abff0f798ddf7af-css.css",
+      "bytes": 33603,
+      "sha256": "615a99d29844cd23ea409fd67da86120432ee34f227925589654963e5d4b6990",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/e5be0f41b7fa7f3f.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-e5be0f41b7fa7f3f-css.css",
+      "bytes": 303489,
+      "sha256": "9b342380bbd27a2bf9a3941a7645a4ac209c7c7e62e5641065249c87e6df20c0",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/c27cf5158235e02f.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-c27cf5158235e02f-css.css",
+      "bytes": 71275,
+      "sha256": "c005e55819950cb4f3594036d31e04ab4077188da95cca5e71c382c389463776",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/c3ca6e08b62a6ac3.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-c3ca6e08b62a6ac3-css.css",
+      "bytes": 79486,
+      "sha256": "e359eb64c3a6254dbe77ce07765df872ffc8d011c238b0f02858f1856c124fce",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/e8a443975bb49a32.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-e8a443975bb49a32-css.css",
+      "bytes": 8898,
+      "sha256": "ff1cc0d36e2b5376d8742a254b37b6c184169e01cc9b8e84c6d225d6f672a977",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/7ab15948e3aeca38.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-7ab15948e3aeca38-css.css",
+      "bytes": 264,
+      "sha256": "7e881bbf196d1f3b4c22f89e5548a8978ddf3389d5e468066a39e749ecf1e996",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/d829866f0dc0cad9.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-d829866f0dc0cad9-css.css",
+      "bytes": 15822,
+      "sha256": "4613ba45ba36eae2d2a3ae6167061f11adea939120de521400ef92927eaebde2",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/7fe9607f2fcd2964.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-7fe9607f2fcd2964-css.css",
+      "bytes": 318,
+      "sha256": "9bc8ade3e040807fa0491bee42f15a7f1231661cf86edcf8e390028346d2a41e",
+      "status": 200
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5e8a245fcb880dab.css",
+      "file": "archive/styles/mkt-ssr-statics-assets-next-static-css-5e8a245fcb880dab-css.css",
+      "bytes": 104,
+      "sha256": "a02dc79567d204c4ba28767624df3ce7e2259677c30975238e079d4d85537f63",
+      "status": 200
+    }
+  ],
+  "fontFiles": [
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/Sohne.cb178166.woff2",
+      "file": "archive/resources/mkt-ssr-statics-assets-next-static-media-Sohne-cb178166-woff2",
+      "bytes": 58852,
+      "sha256": "2228fee8f2931671a4690c35ec3a6746216f8d7fba4f51adc91f9b58a6b28f89"
+    },
+    {
+      "href": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/SourceCodePro-Medium.f5ba3e6a.woff2",
+      "file": "archive/resources/mkt-ssr-statics-assets-next-static-media-SourceCodePro-Medium-f5ba3e6a-woff2",
+      "bytes": 11880,
+      "sha256": "df3dde8b3f5a6e70697c24c32e0c03885fc69952e2371b45a80d5c2ae8a30ffc"
+    }
+  ],
+  "counts": {
+    "stylesheets": 10,
+    "cssSources": 10,
+    "renderedFonts": 2,
+    "typographySamples": 500,
+    "visibleElements": 3046,
+    "headings": 58,
+    "heroLayers": 182,
+    "resources": 217
+  }
+}
