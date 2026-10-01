@@ -1,7 +1,7 @@
 {
   "root": "/Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-arc",
-  "fileCount": 69,
-  "totalBytes": 30163764,
+  "fileCount": 77,
+  "totalBytes": 30191247,
   "files": [
     {
       "path": "archive/arc-home.mhtml",
@@ -39,9 +39,29 @@
       "sha256": "b2b457d6de1188fc96dd0bb2e457e923cb3c31c786bd13c5ada21488cec0c5b0"
     },
     {
+      "path": "archive/css-token-evidence.json",
+      "bytes": 12487,
+      "sha256": "f36ae55d81e217529167d6210b00e5465be4d40254b41ab0aee76cb7cbe08dee"
+    },
+    {
+      "path": "archive/css-token-evidence.py",
+      "bytes": 2387,
+      "sha256": "3b7f599f9c00dbf4540df0c7ffff7860d7cd4250147290b0298e51cf333f9dc6"
+    },
+    {
       "path": "archive/design-evidence.json",
       "bytes": 218953,
       "sha256": "66483c68d3b77229ba291aa45ba1778c4c6891a4867d2aadf029f2129908ba9c"
+    },
+    {
+      "path": "archive/document-outline.json",
+      "bytes": 1626,
+      "sha256": "fc763e07d20b7a845242c5dcb81f07b458814bdf0333ef1b78212014da535631"
+    },
+    {
+      "path": "archive/document-outline.py",
+      "bytes": 1233,
+      "sha256": "46eba9bfbc4ab600b2d558dbe686d227ae71a2cd1c807061bcbd1de7b08690f2"
     },
     {
       "path": "archive/download-resources.js",
@@ -77,6 +97,16 @@
       "path": "archive/mhtml-manifest.py",
       "bytes": 962,
       "sha256": "d6fc21838af02ef2a424941a001d2717e1c804fdd87cf832b73afb9f0306c25f"
+    },
+    {
+      "path": "archive/motion-evidence.json",
+      "bytes": 1444,
+      "sha256": "3c9f14d81a6e092629c41471237fd4a3a1915cb400b6a0de5558223b62a141bf"
+    },
+    {
+      "path": "archive/motion-evidence.py",
+      "bytes": 761,
+      "sha256": "425fc7b8d94acdedc7aae5b74ca40ad4e124f86fe574d867ad3625f43ff189eb"
     },
     {
       "path": "archive/offline-browser-check.js",
@@ -214,6 +244,16 @@
       "sha256": "df58db15b6b79a021626c203c122803a34b04f7d26999ed3b824f3223b8216f0"
     },
     {
+      "path": "archive/responsive-metrics.json",
+      "bytes": 2364,
+      "sha256": "f15c2e50f1d1e945012a1a49a156a1e9f44034254b7ae7162e6c19eae96387d6"
+    },
+    {
+      "path": "archive/responsive-metrics.py",
+      "bytes": 1219,
+      "sha256": "71294eaff3798653d43bcd31c6306d6d78c432f6155c8da0f0bbded533623ace"
+    },
+    {
       "path": "archive/rights-inventory.json",
       "bytes": 648,
       "sha256": "9ff83611067ee5069ca0338dc8560fc870670e608e655c97eb08b17e478a2ed3"
@@ -236,7 +276,7 @@
     {
       "path": "archive/security-scan.json",
       "bytes": 654,
-      "sha256": "2f5eb36ec7ec7de45462d1f2468a957bc48a5ddaf32b6ccac17055aaf27171a3"
+      "sha256": "f64b822547c4e7f655e6ab3581f75bbbf332bb87bd8dc6f040552f61cc37b564"
     },
     {
       "path": "archive/security-scan.py",
@@ -245,13 +285,13 @@
     },
     {
       "path": "archive/verification.json",
-      "bytes": 81033,
-      "sha256": "57b514d0c0fc804f8661f4f197e45c74fb0d594fee2f1d88217761648cbb55f2"
+      "bytes": 81513,
+      "sha256": "4034d91a250f4ad14929b6cf8c9da0823b198d29bd7826f39afbf479b85030c4"
     },
     {
       "path": "archive/verification.py",
-      "bytes": 3219,
-      "sha256": "01f6d3eb02542bd5e0017199d2d562d59d42574d8647e31b1060c66278b30a35"
+      "bytes": 4555,
+      "sha256": "a1ea44c92fd161d83501e17a61c773032d1eb6efa5a24d1b7c741abc02a17412"
     },
     {
       "path": "archive/viewport-1280-firstscreen.png",
@@ -285,18 +325,18 @@
     },
     {
       "path": "meta.md",
-      "bytes": 3842,
-      "sha256": "98416b0b5f539b5d2cb3967ad90ede1729d134a563929ab2840c29c2bd92c722"
+      "bytes": 4034,
+      "sha256": "dd139dd6debd3a765f1f0e1077476e69cba2d1e2952899eddd8269418058a848"
     },
     {
       "path": "notes.md",
-      "bytes": 5777,
-      "sha256": "3ae2867b3f954b3c0c06f2bbf5947af721d246229c0a3c20284dbae361d80e36"
+      "bytes": 6001,
+      "sha256": "fa04a719b9c113ccbedff839ad858b3de204e7d4bed97d72e22a0816578f7165"
     },
     {
       "path": "review-log.md",
-      "bytes": 2637,
-      "sha256": "df114ebceb21340e45019e712858b07f183677dd47782200be45587d58833832"
+      "bytes": 4075,
+      "sha256": "2caedd364c6485b5cbcfcd0d8fcdb372a9362496f36d120ccbc34c70bbbfbc1c"
     },
     {
       "path": "screenshots/arc-home-1280-fullpage.png",
@@ -345,8 +385,8 @@
     },
     {
       "path": "tokens.json",
-      "bytes": 11790,
-      "sha256": "2f10b29a1bdd997e5916910aa75dde938054ab4dfe2428165ae21991aff558ab"
+      "bytes": 12082,
+      "sha256": "5b0964b63f5b03002f42aeac5d10287213690dfd1958fdcbbefe078cb8d414b6"
     }
   ]
 }

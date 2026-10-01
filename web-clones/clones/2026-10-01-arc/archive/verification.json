@@ -1,6 +1,6 @@
 {
-  "passed": 19,
-  "total": 19,
+  "passed": 23,
+  "total": 23,
   "allPassed": true,
   "checks": [
     {
@@ -86,7 +86,7 @@
     {
       "check": "security",
       "passed": true,
-      "detail": "scanned 33, findings 0"
+      "detail": "scanned 34, findings 0"
     },
     {
       "check": "color-accessibility",
@@ -97,6 +97,26 @@
       "check": "tokens",
       "passed": true,
       "detail": "palette and archive references resolved"
+    },
+    {
+      "check": "document-outline",
+      "passed": true,
+      "detail": "nav/main/footer=1/1/1"
+    },
+    {
+      "check": "css-token-evidence",
+      "passed": true,
+      "detail": "fragments=6, fontFaces=38, customProps=130, keyframes=3"
+    },
+    {
+      "check": "motion-evidence",
+      "passed": true,
+      "detail": "running=2, keyframes=3"
+    },
+    {
+      "check": "responsive-summary",
+      "passed": true,
+      "detail": "viewports=3, sections=5"
     }
   ]
 }

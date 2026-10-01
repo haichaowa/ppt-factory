@@ -1,6 +1,6 @@
 {
   "scope": "archive/** excluding scanner source and generated JSON",
-  "filesScanned": 33,
+  "filesScanned": 34,
   "patterns": [
     "setCookie",
     "authorizationHeader",

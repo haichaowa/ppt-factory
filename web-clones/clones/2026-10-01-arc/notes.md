@@ -41,7 +41,7 @@
 
 - 双条 `.marquee` `scroll` 动画线性运行，实测 duration 78522.5ms、delay 0、`linear`，低速度、长周期，形成持续漂浮感。
 - 常见 hover/状态过渡：`transform 0.15s, background 0.15s`；`background 0.2s ease-in-out`；`transform 0.2s ease-in-out`；`opacity 0.1s ease-out`。交互反馈轻快、低幅度。
-- 页面叙事主要依赖视频播放与滚动 reveal，而非复杂路径动画；截图捕获时用 reduce motion 固定状态，保证资料可复现。
+- CSS 另有 `k-lFWJD`（translateX -1px→-42px）与 `k-coDfUB`（background-position -800px→800px）两个备用的微位移动画；本次滚动采样中实际处于 running 状态的是两个 `.marquee` scroll 动画。页面叙事主要依赖视频播放与滚动 reveal，而非复杂路径动画；截图捕获时用 reduce motion 固定状态，保证资料可复现。
 
 ## 6. 响应式实测
 

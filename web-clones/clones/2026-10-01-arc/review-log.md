@@ -23,3 +23,16 @@
 4. `tokens.json` 新增三档 responsiveComparison 与 evidenceSummary，把截图、2x 区块、文本节点、font-face 与 computed style 覆盖数量结构化。
 5. 新增 `verification.py/.json`，对三档 PNG 尺寸、五个 2x 区块、HTTP/overflow、MHTML、robots、离线请求、20 个补充资源哈希、安全扫描、可访问性、tokens 引用执行 19/19 项机器校验。
 6. 新增 `archive/SHA256SUMS` 并刷新 `file-inventory.json`，覆盖 70 个稳定交付文件、约 30.17MB，便于后续校验归档未被改动。
+
+
+## Round 3 · 2026-10-01
+
+**结论：通过（发现并修复 7 处证据质量问题）**
+
+1. 初版 `document-outline.py` 的 HTMLParser 栈处理不适合该 React/live DOM，输出 header/nav/main/footer/aside 全为 0；改为针对性结构解析后得到 nav=1、main=1、footer=1、aside=2，并保留 2 个 H1、49 links、3 images、4 videos 的真实轮廓。
+2. `css-token-evidence.py` 同时解析 MHTML CSS 与重复下载 CSS，font-face 被双计为 72；改为仅以 6 个 MHTML CSS fragments 为源，MHTML 计 38 个 font-face，与 live `design-evidence.json` 一致。
+3. CSS 变量原以“最后一次声明”覆盖所有作用域，容易把 `--max-width` 误读成 960px；新增 declaration counts 与 observed root variables，明确实测 root `--max-width=1280px`。
+4. 关键帧初版正则在嵌套花括号处截断，只保留 0%；改为括号深度解析后完整记录 `scroll`、`k-lFWJD`、`k-coDfUB` 的 0%→100% 声明。
+5. 新增 `motion-evidence.py/.json`，把运行中的两个 marquee animation 与三个 CSS keyframe 区分开，避免把备用微位移动画误当成首屏实际动效。
+6. 新增 `responsive-metrics.py/.json`，集中记录三档 HTTP、高度、overflow、heading/media/top section 数、全页/首屏 PNG 尺寸与五个 2x 区块。
+7. 刷新安全扫描至 34 个非生成 JSON / 扫描器源文件，仍为 0 findings；机器验证扩展为 23/23 项通过。
