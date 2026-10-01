@@ -1,0 +1,61 @@
+{
+  "method": "WCAG 2.1 relative luminance / contrast ratio",
+  "pairs": [
+    {
+      "foreground": "#FFFCEC",
+      "background": "#3139FB",
+      "ratio": 6.56,
+      "passesAA": true,
+      "usage": "Hero/footer display text"
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#3139FB",
+      "ratio": 6.75,
+      "passesAA": true,
+      "usage": "White text on cobalt"
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#2702C2",
+      "ratio": 11.21,
+      "passesAA": true,
+      "usage": "Primary button text"
+    },
+    {
+      "foreground": "#3139FB",
+      "background": "#FFFCEC",
+      "ratio": 6.56,
+      "passesAA": true,
+      "usage": "Feature title"
+    },
+    {
+      "foreground": "#000000",
+      "background": "#FFFCEC",
+      "ratio": 20.39,
+      "passesAA": true,
+      "usage": "Announcement title"
+    },
+    {
+      "foreground": "#696969",
+      "background": "#FFFCEC",
+      "ratio": 5.33,
+      "passesAA": true,
+      "usage": "Feature body"
+    },
+    {
+      "foreground": "#FFFADD",
+      "background": "#3139FB",
+      "ratio": 6.42,
+      "passesAA": true,
+      "usage": "Hero notice"
+    },
+    {
+      "foreground": "#FFFFFF",
+      "background": "#000000",
+      "ratio": 21.0,
+      "passesAA": true,
+      "usage": "Announcement pill"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "root": "/Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-arc",
-  "fileCount": 65,
-  "totalBytes": 30073773,
+  "fileCount": 69,
+  "totalBytes": 30163764,
   "files": [
     {
       "path": "archive/arc-home.mhtml",
@@ -29,6 +29,16 @@
       "sha256": "cc0d8b9f8aeb037d9cbe721b2a38091dfed56674a35ea96ac3cdec88fd70a0d4"
     },
     {
+      "path": "archive/color-accessibility.json",
+      "bytes": 1320,
+      "sha256": "3dc35a1ba2f2d7e5f6fce6638ad67ea98f8a703c13f5a550a05b38b55acf5ffd"
+    },
+    {
+      "path": "archive/color-accessibility.py",
+      "bytes": 998,
+      "sha256": "b2b457d6de1188fc96dd0bb2e457e923cb3c31c786bd13c5ada21488cec0c5b0"
+    },
+    {
       "path": "archive/design-evidence.json",
       "bytes": 218953,
       "sha256": "66483c68d3b77229ba291aa45ba1778c4c6891a4867d2aadf029f2129908ba9c"
@@ -40,8 +50,8 @@
     },
     {
       "path": "archive/file-inventory.py",
-      "bytes": 577,
-      "sha256": "d4aaea5dee1f0525b478ef675b88a387f04c304ba1c4376234dc7881fe90bfc9"
+      "bytes": 594,
+      "sha256": "40101ab8a1cad70bc47bf36a30fbe5d3047991ae94d66c9a8a9996af09ef530a"
     },
     {
       "path": "archive/font-urls.json",
@@ -234,6 +244,16 @@
       "sha256": "95f70df2c9e2f35f0e3ee6837a72ffd7721e7d13d1b991be5f86b882306b9905"
     },
     {
+      "path": "archive/verification.json",
+      "bytes": 81033,
+      "sha256": "57b514d0c0fc804f8661f4f197e45c74fb0d594fee2f1d88217761648cbb55f2"
+    },
+    {
+      "path": "archive/verification.py",
+      "bytes": 3219,
+      "sha256": "01f6d3eb02542bd5e0017199d2d562d59d42574d8647e31b1060c66278b30a35"
+    },
+    {
       "path": "archive/viewport-1280-firstscreen.png",
       "bytes": 368311,
       "sha256": "82cb1a121e0c8dadccd143045f8cd28df751225cc9abedc119956cc9b82de829"
@@ -265,18 +285,18 @@
     },
     {
       "path": "meta.md",
-      "bytes": 3609,
-      "sha256": "f2545d6275f7194eed88164c51beb33d209f0b620fdf9e2fa03367500fb3cd95"
+      "bytes": 3842,
+      "sha256": "98416b0b5f539b5d2cb3967ad90ede1729d134a563929ab2840c29c2bd92c722"
     },
     {
       "path": "notes.md",
-      "bytes": 5076,
-      "sha256": "b90a890035fc6c520acb0605cb4382eed4778528004a839c06f21459b32b5e17"
+      "bytes": 5777,
+      "sha256": "3ae2867b3f954b3c0c06f2bbf5947af721d246229c0a3c20284dbae361d80e36"
     },
     {
       "path": "review-log.md",
-      "bytes": 1510,
-      "sha256": "17a3b6397bae414115947ee9fe1035220dde966f9e1cb52954e49015a2e6abf6"
+      "bytes": 2637,
+      "sha256": "df114ebceb21340e45019e712858b07f183677dd47782200be45587d58833832"
     },
     {
       "path": "screenshots/arc-home-1280-fullpage.png",
@@ -325,8 +345,8 @@
     },
     {
       "path": "tokens.json",
-      "bytes": 10447,
-      "sha256": "8891ba4c21ae79003f269f23bbd1b58e3495342ee6c6889c3919fed63c111410"
+      "bytes": 11790,
+      "sha256": "2f10b29a1bdd997e5916910aa75dde938054ab4dfe2428165ae21991aff558ab"
     }
   ]
 }

@@ -22,4 +22,5 @@
   - `archive/offline-browser-check.js/.json/.png`：MHTML 离线解析与外网隔离验证；
   - `archive/mhtml-manifest.py/.json`、`archive/security-scan.py/.json`、`archive/rights-inventory.py/.json`、`archive/file-inventory.py/.json`：资源、安全、版权与交付复审；
   - `archive/offline-fidelity.json`：live 与 MHTML 首屏像素对比指标。
+- **复审校验**：第 2 轮新增 `archive/verification.py/.json`，19/19 项通过；新增 `archive/color-accessibility.json`，8 个关键色对全部通过 WCAG 2.1 AA；`archive/SHA256SUMS` 覆盖 70 个稳定交付文件。
 - **主要交付**：`screenshots/` 三档全页、`archive/arc-home.mhtml`、`sections/` 五个 2x 区块、`tokens.json`、`notes.md`、`review-log.md`。
