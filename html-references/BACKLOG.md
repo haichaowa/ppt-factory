@@ -4,7 +4,7 @@
 
 ## 经典成体系模板（优先）
 - [x] ✅ **html5up** · html5up.net · 44 套响应式 HTML 模板 · CC BY 3.0 · 结构经典、体系完整 · 产出：`collections/2026-09-30-html5up/`
-- [ ] **startbootstrap-sb-admin-2** · GitHub MIT · 后台仪表盘体系（卡片/表格/图表页齐全）
+- [x] ✅ **startbootstrap-sb-admin-2** · GitHub MIT · 后台仪表盘体系（卡片/表格/图表页齐全） · 产出：`collections/2026-10-02-startbootstrap-sb-admin-2/`
 - [ ] **startbootstrap-freelancer** · GitHub MIT · 个人作品集模板，单页叙事结构
 - [ ] **bootswatch** · GitHub MIT · 20+ 套 Bootstrap 主题，设计令牌驱动换肤的教科书
 - [ ] **picocss** · GitHub MIT · 极简 classless CSS，语义化排版标杆

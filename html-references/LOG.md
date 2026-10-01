@@ -36,3 +36,22 @@
 - [x] 3 轮复审记录与修复提交
 - [ ] 真人目检导览页与截图视觉效果
 - [ ] 产品侧决定是否试装建议 token
+
+## 2026-10-02 · SB Admin 2
+
+### 采纳
+
+- **StartBootstrap/startbootstrap-sb-admin-2**：14 个 HTML 页面、MIT、版本 4.1.4、commit `f0309881ef82794a1bd6257cd321801bc38a0f3d`、有效源码 17.31 MiB。通过复核：许可证清晰，后台体系完整，专业质量稳定，静态源码可浏览，体积远低于 200MB。
+- 下载方式：GitHub 浅克隆；保留原 `LICENSE`、`README.md`、作者署名与 vendor 版权头；未安装依赖、未执行构建、未修改 `source/`。
+- 产出：`collections/2026-10-02-startbootstrap-sb-admin-2/`。
+
+### 考察但未采用
+
+本轮只复核了队列最上方候选并采纳，没有为了凑数继续下载后续项。无候选因许可、体系或质量被淘汰。
+
+### 过程记录
+
+- 本地 HTTP + 无头 Chromium 验证 Dashboard、Cards、Tables、Login、Color Utilities 均可浏览；唯一页面级控制台错误为 Dashboard 缺省 `favicon.ico` 404，不影响功能。
+- 截图时 `charts.html` 出现 Chart.js 2 弃用提示，`login.html` 出现 autocomplete 建议，均不阻塞浏览，已记录。
+- `index.html` 在 1440/900/560/390px 下均无横向溢出，两张缩略图均正常加载，0 error / 0 warning。
+- 已明确限制：Nunito 与认证页背景为外部资源；Bootstrap 4/jQuery/Chart.js 2 技术栈偏旧，只借鉴体系，不建议直接复制到 PPT Factory。
