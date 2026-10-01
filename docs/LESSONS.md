@@ -30,3 +30,11 @@
 - 原因：PPT 被当成排版任务，而不是面向观众认知的信息产品设计；pattern 库缺少“结论 + 证据”的首选结构
 - 改进：① 新增 `docs/AUDIENCE-BRIEF.md` 与 `docs/DESIGN-RESEARCH.md`；② `CONTENT-RULES` 引入叙事骨架、主张句标题、数据叙事纪律；③ `DESIGN` 引入 3 秒测试、Squint test、Assertion-Evidence、证据视觉和可访问性规则；④ `WORKFLOW` 增加观众 brief、证据选型、逐页视觉抽查和首尾一致性 QA；⑤ patterns 新增 `claim` / `narrative-map` / `assertion-evidence`；⑥ Slidev 引擎同步遵守跨引擎原则
 - 验证：新增 3 个 pattern 已用 1280×720 逻辑舞台 + `?qa=1` 逐页检查；`examples/demo` 同步扩展到 17 页并覆盖 15 种模式，页面级与子元素出界均为 0；打印 PDF 页数为 17（同时压缩 timeline 垂直间距修复 5 节点溢出）
+
+---
+
+## 2026-10-01 OpenAI / Moonshot 蒸馏事件讲解 deck
+
+- 问题：事件中的 `16,000`、`15,000` 若直接放入 metrics pattern，会违反“数字 ≤4 位”的防溢出约束，也容易被读成精确归因证据。
+- 原因：该页面目标不是展示原始工程指标，而是解释 OpenAI 口径下的规模量级；同时归因证据未公开，完整数字会放大“精确已证”的错觉。
+- 改进：数字改用 `1.6万`、`4千`、`1.5万+`，caption 固定写“OpenAI 口径”；事件时间线、机制图与证据边界拆成三段，避免把技术机制、官方归因和历史指控压进同一页。验证：15 页 HTML deck 通过 `?qa=1`、逐页 DOM 边界检查、15 页 PDF 导出与静态资源检查。
