@@ -57,3 +57,10 @@
 - [ ] 打开 `source/tables.html`，试搜索、排序与翻页。
 - [ ] 断网后重新打开 `source/login.html`，确认可接受远程背景缺失的系统回退。
 - [ ] 阅读 `notes.md` 第 8 节，决定是否试装 `--sb-*` token 草案。
+
+## 运行时外部资源
+
+- **字体**：14 个页面均通过 Google Fonts 加载 Nunito；离线时使用系统 sans-serif 回退，布局仍可浏览，但品牌字形会变化。
+- **认证/头像图片**：`source.scss/_login.scss` 与页面头像引用 `source.unsplash.com` 的 4 个唯一 URL；离线时左侧认证背景与远程头像会缺失，本地 SVG 插画和 Font Awesome 不受影响。
+- **外部链接**：升级到 Pro、UnDraw、Bootstrap/Chart.js/DataTables 文档链接只在点击时访问，不影响本地渲染。
+- **favicon**：源码未提供 favicon，本地 HTTP 打开 Dashboard 时会出现一次 404；这是上游模板状态，未修改源码。

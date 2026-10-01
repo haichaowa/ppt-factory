@@ -390,3 +390,99 @@
 ### 诚实自评
 
 现在这份收藏已经从“可浏览”推进到“可验收”：用户知道看什么、点哪里、哪些结论来自哪个源码文件、哪些风险不能迁移。但它仍不是产品化资产：未修改外部源码的历史可访问性问题无法在本档案内修复；PPT Factory 迁移建议仍缺真实 deck 试装；真人也尚未确认截图和导览的视觉手感。第 3 轮应做最终边界声明和收尾检查，而不是为了分数继续扩写。
+
+## 2026-10-02 · SB Admin 2 · 第 3 轮复审（最终轮）
+
+### 已检查文件
+
+- `html-references/README.md`
+- `html-references/BACKLOG.md`
+- `html-references/INDEX.md`
+- `html-references/LOG.md`
+- `html-references/PROGRESS.md`
+- `html-references/review-log.md`
+- `html-references/index.html`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/download-manifest.json`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/README.md`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/01-index-dashboard.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/02-cards-components.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/03-tables-datatable.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/04-charts-visualizations.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/05-utilities-color-tokens.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/06-login-authentication.png`
+- `html-references/collections/2026-10-02-startbootstrap-sb-admin-2/screenshots/07-404-error-state.png`
+- `source/LICENSE`
+- `source/README.md`
+- `source/package.json`
+- `source/package-lock.json`
+- `source/css/sb-admin-2.css`
+- `source/scss/_variables.scss`
+- `source/scss/_global.scss`
+- `source/scss/_buttons.scss`
+- `source/scss/_cards.scss`
+- `source/scss/_charts.scss`
+- `source/scss/_login.scss`
+- `source/scss/navs/_global.scss`
+- `source/scss/navs/_sidebar.scss`
+- `source/scss/navs/_topbar.scss`
+- `source/scss/utilities/_animation.scss`
+- `source/scss/utilities/_background.scss`
+- `source/scss/utilities/_border.scss`
+- `source/scss/utilities/_display.scss`
+- `source/scss/utilities/_progress.scss`
+- `source/scss/utilities/_rotate.scss`
+- `source/scss/utilities/_text.scss`
+- 14 个顶层 HTML：`404.html`、`blank.html`、`buttons.html`、`cards.html`、`charts.html`、`forgot-password.html`、`index.html`、`login.html`、`register.html`、`tables.html`、`utilities-animation.html`、`utilities-border.html`、`utilities-color.html`、`utilities-other.html`
+- `vendor/bootstrap/js/bootstrap.js`
+- `vendor/chart.js/Chart.js`
+- `vendor/datatables/jquery.dataTables.js`
+- `vendor/jquery/jquery.js`
+- `vendor/jquery-easing/jquery.easing.js`
+- `vendor/fontawesome-free/LICENSE.txt`
+- `patterns/README.md` 与 15 个 `patterns/*.html`
+
+### 最终自动与交互检查
+
+- Manifest：1,878 个源码文件、18,153,426 bytes、源码树 SHA-256 复算一致；14 个 HTML 页面逐文件有哈希。
+- 快照边界：`source/` 相对 HEAD 无修改；`patterns/`、`templates/`、`decks/` 无修改；本轮全部待提交变更都在 `html-references/`。
+- 版权：模板 MIT、README 作者信息、第三方版权头与 Font Awesome license 均保留。
+- 截图：7 张 PNG 与 7 个源码页面一一对应；实际 PNG 头解析尺寸为 1440×1665、1440×900、1440×1089、1440×1275、1440×1359、1440×900、1440×900；SHA-256 全部与索引一致。
+- 交互：`cards.html` 折叠卡从 `collapse show` 变为 `collapse`；`tables.html` 搜索 Garrett 从 10 行过滤为 1 行；`index.html` 侧栏点击后进入 `toggled` 状态。
+- 直开：`file://.../source/index.html` 可渲染 Dashboard、17 张卡和 2 个可见 canvas；唯一提示是外部 Nunito 加载慢时使用回退字体，0 error。
+- 导览页：2 个 collection 卡片、4 项统计、28 个本地引用全部存在；无脚本；1440/900/560/390px 无横向溢出；0 error / 0 warning。
+- 队列：BACKLOG 已标记 SB Admin 2 完成，下一项指向 startbootstrap-freelancer。
+
+### 本轮修复（7 处 P2）
+
+1. `collections/2026-10-02-startbootstrap-sb-admin-2/meta.md`：新增“运行时外部资源”，逐项说明 Google Fonts、Unsplash、favicon 与外部链接的离线影响。
+2. `collections/2026-10-02-startbootstrap-sb-admin-2/preview.md`：新增“常见问题与排障”，覆盖图标、字体、远程背景、favicon 404 和 Chart.js 弃用提示。
+3. `collections/2026-10-02-startbootstrap-sb-admin-2/notes.md`：新增“交付边界与下一步决策”，区分可直接参考、不能发布到 PPT Factory 的部分和三页试装路径。
+4. `html-references/INDEX.md`：SB Admin 2 行补充截图索引和快照清单入口，验收者不需要在目录中查找证据文件。
+5. `html-references/LOG.md`：新增交付前检查清单，区分已完成自动/交互复核与仍需真人目检、产品决策的事项。
+6. `html-references/PROGRESS.md`：复审循环更新为 3 轮完成、P0/P1 为 0，并明确下一队列项。
+7. `html-references/review-log.md`：写入最终轮逐文件检查、交互结果、四维评分和诚实发布差距说明。
+
+### 四维评分
+
+| 维度 | 分数 | 说明 |
+|---|---:|---|
+| 正确性 | 5 | 来源、许可证、哈希、页面、截图、链接、渲染、交互与仓库边界均逐项复核。 |
+| 完整性 | 5 | 阶段 1–6、15 个 pattern 映射、3 轮复审、导览、日志和进度全部收口。 |
+| 精致度 | 4 | 文档结构、证据锚点、阅读路线和导览可用；仍保留真人视觉验收这个必要环节。 |
+| 可用性 | 5 | 首次接触者可从导览页直达源码、截图、拆解、manifest、排障和复审记录。 |
+
+### 问题分级与最终状态
+
+- P0：0
+- P1：0
+- P2：本轮修复 7 处；未发现新的阻断或明显缺陷。
+- 发布前外部事项：真人目检视觉效果；产品侧决定是否试装 `--sb-*` token；若试装，需用真实 deck 内容验证。
+
+### 最终诚实自评
+
+这份 SB Admin 2 收录已经达到“本地参考库可直接使用”的标准：源码冻结且有树级/逐文件哈希，许可和署名可查，14 页体系完整，7 张截图可对照，设计系统拆解有源码锚点，15 个 PPT Factory pattern 均有迁移建议，导览页零依赖且通过多宽度与交互检查。
+
+它仍然不是“可直接发布进 PPT Factory 的产品资产”：外部模板依赖 Bootstrap 4、jQuery、Chart.js 2 与 DataTables，且自带远程字体/图片和可访问性历史问题；映射建议尚未用真实 deck 试装，也不能自动证明 `--sb-*` token 优于现有主题。正确使用方式是按 notes 第 10 节先做 `cover + metrics + assertion-evidence` 三页试装，再由真人判断视觉与阅读效率；在此之前，它只应作为外部参考，不进入 templates/patterns/decks 源码。

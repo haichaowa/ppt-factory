@@ -55,3 +55,16 @@
 - 截图时 `charts.html` 出现 Chart.js 2 弃用提示，`login.html` 出现 autocomplete 建议，均不阻塞浏览，已记录。
 - `index.html` 在 1440/900/560/390px 下均无横向溢出，两张缩略图均正常加载，0 error / 0 warning。
 - 已明确限制：Nunito 与认证页背景为外部资源；Bootstrap 4/jQuery/Chart.js 2 技术栈偏旧，只借鉴体系，不建议直接复制到 PPT Factory。
+
+### 交付前检查
+
+- [x] 14/14 顶层 HTML 页面清单
+- [x] MIT 与内嵌第三方版权头保留
+- [x] 1,878 文件 / 18,153,426 bytes / 源码树 SHA-256 对账
+- [x] 7 张代表截图与源码页面一一对应，尺寸和 SHA-256 复核
+- [x] 15/15 PPT Factory patterns 逐项映射
+- [x] 导览页 0 error / 0 warning，1440/900/560/390px 无横向溢出
+- [x] 卡片折叠、表格搜索、侧栏收起与 file:// 直开复核
+- [x] 3 轮复审记录与修复提交
+- [ ] 真人目检导览页与截图视觉效果
+- [ ] 产品侧决定是否试装 `--sb-*` token 草案

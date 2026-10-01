@@ -49,3 +49,11 @@ python3 -m http.server 8766 --bind 127.0.0.1
 3. `tables.html`：看密集信息的表格密度、搜索/分页位置和工具栏组织。
 4. `utilities-color.html` + `utilities-other.html`：看设计令牌如何被文档化为可用规则。
 5. `login.html` / `register.html` / `404.html`：看系统在非仪表盘场景下如何保持品牌与布局一致性。
+
+## 常见问题与排障
+
+- **图标丢失**：确认是从 `source/` 目录启动本地服务器，或在导览页用“本地打开”进入；Font Awesome 为本地资源，不应访问网络。
+- **字体不像截图**：Nunito 来自 Google Fonts；断网或网络慢时浏览器会使用系统回退字体，这不影响布局结构判断。
+- **登录/头像背景缺失**：认证页背景和部分远程头像来自 Unsplash；离线时这是预期回退，不代表卡片或表单损坏。
+- **Dashboard favicon 404**：上游未提供 favicon；除该 404 外页面应无错误。
+- **图表警告**：Chart.js 2 会提示 `maxBarThickness` 弃用，属于上游依赖提示，图表仍渲染。
