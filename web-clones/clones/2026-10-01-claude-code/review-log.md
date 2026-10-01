@@ -36,3 +36,21 @@
 8. Updated archive and meta inventories so every downstream audit artifact has a stated purpose.
 
 **Result:** round-2 `archive/verification.json` reports `allPassed: true`; all 36 checksummed archive hashes match.
+
+## Round 3 — final fidelity, resource, security, and inventory closeout
+
+**Reviewed:** 2026-10-01 13:14–13:16（Asia/Shanghai）
+**Scope:** end-to-end provenance, live-to-MHTML resource coverage, privacy, final inventory, documentation accuracy, and final checksums.
+
+### Fixes (all committed in this round)
+
+1. Added `archive/capture-timeline.json` to make the capture, font supplementation, MHTML repair, and three review rounds chronologically auditable.
+2. Added `archive/resource-manifest.json`, reconciling 89 live requests, 39 MHTML parts, and 6 supplemented fonts while documenting why executable scripts are absent from the static rendered-state snapshot.
+3. Added `archive/security-scan.json` with byte-safe scans for cookies, cloud keys, API keys, bearer tokens, and private keys; confirmed the transient Cloudflare cookie remains redacted.
+4. Added `archive/file-inventory.json` with final stable-file byte counts and hashes, plus explicit scope exclusions for self-auditing records.
+5. Added `archive/final-review.json` and the reproducible `archive/finalize-review.py` closeout generator.
+6. Extended round-3 `archive/verification.json` to assert resource provenance, security, inventory integrity, timeline completeness, and final review status.
+7. Updated `meta.md` and `archive/README.md` with the final artifact inventory and approximately 14.5 MiB output size.
+8. Rebuilt `archive/SHA256SUMS` for all 42 stable archive artifacts after the final evidence additions.
+
+**Result:** final `archive/verification.json` reports `allPassed: true`; no secret patterns or unredacted transient cookies were found.

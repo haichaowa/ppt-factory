@@ -1,0 +1,287 @@
+{
+  "scope": "All final files except file-inventory.json and self-auditing verification.json; SHA256SUMS hash is intentionally null because it hashes many sibling files.",
+  "fileCount": 56,
+  "totalBytes": 15050746,
+  "files": [
+    {
+      "path": "archive/README.md",
+      "bytes": 2484,
+      "sha256": "ebf81db3a287361f650a15eaec2e9a89d9e72c8d1908629d55ca5f2f40da01d2"
+    },
+    {
+      "path": "archive/SHA256SUMS",
+      "bytes": 3869,
+      "sha256": null
+    },
+    {
+      "path": "archive/build-design-audits.py",
+      "bytes": 4238,
+      "sha256": "2f7982effab89720cb668de617787231383f7cc974a42f04d1920c1f3b5e5f55"
+    },
+    {
+      "path": "archive/capture-manifest.json",
+      "bytes": 4934,
+      "sha256": "1948c4e4a2c3f4ad000a8883091bd28d103335469b8f49f2765a02b8005be206"
+    },
+    {
+      "path": "archive/capture-timeline.json",
+      "bytes": 1391,
+      "sha256": "3a36f23df44be8cec73773b1064820599b1c2fca816a4b4a6d50034ea5c63f6f"
+    },
+    {
+      "path": "archive/capture.js",
+      "bytes": 14278,
+      "sha256": "7a4a3b3aeb0743db763f09d89c89b5c674474defef2535839213feb282374e38"
+    },
+    {
+      "path": "archive/claude-code.mhtml",
+      "bytes": 3755773,
+      "sha256": "062a9457376762346270ee176a0c553a00eccc5bfbfea2da8dd566add26adaed"
+    },
+    {
+      "path": "archive/color-accessibility.json",
+      "bytes": 1498,
+      "sha256": "9047fe5c78afb4e9838626599a7da0eb923fae0c3064bda70f8c80b27aca3141"
+    },
+    {
+      "path": "archive/dom-snapshot.html",
+      "bytes": 2012875,
+      "sha256": "16f36c4feef955067241bc646682c9678d1fa9a5f417aec01ce387078f2a784f"
+    },
+    {
+      "path": "archive/extract-element-metrics.js",
+      "bytes": 3574,
+      "sha256": "07bb5f600574185d236781adfa38046fb0c20cd4341dba40a7bdc32b41c9c242"
+    },
+    {
+      "path": "archive/final-review.json",
+      "bytes": 1163,
+      "sha256": "95cef6956bf56a7b61b7961ab1f4fda3467dd6b010d285dd49cfdf2a78b3f3bf"
+    },
+    {
+      "path": "archive/finalize-review.py",
+      "bytes": 5791,
+      "sha256": "c803c67ce66753fad5a6c99d6ef798eac22c4c0bd9a37a8ba3d6513f2bf996bf"
+    },
+    {
+      "path": "archive/font-manifest.json",
+      "bytes": 1888,
+      "sha256": "79022b3c8d7917311ee53afecad999ba7c38694206afd175250adbcad0eacd46"
+    },
+    {
+      "path": "archive/http-headers.txt",
+      "bytes": 5094,
+      "sha256": "0861b289579a34fd0a098da812626246be9e3e56e2410f4e50651bc46d7bca43"
+    },
+    {
+      "path": "archive/key-element-metrics.json",
+      "bytes": 265218,
+      "sha256": "78c5fde3c344e18c32cad0f3ee82f0b851d103818145dcd5d79e6f0fdb1d1123"
+    },
+    {
+      "path": "archive/live-firstscreen.png",
+      "bytes": 172570,
+      "sha256": "0f43486e94b94661f8500c610b7d4b52a19eb8eaefb2a7e64a152af1f5bcf816"
+    },
+    {
+      "path": "archive/mhtml-browser-check.json",
+      "bytes": 873,
+      "sha256": "ee6233b621b03fc9bc28c7247e20d117b630945022dd6775b1a5c1c17c49c71c"
+    },
+    {
+      "path": "archive/mhtml-manifest.json",
+      "bytes": 12886,
+      "sha256": "394eba2088bd58b8f507437a59259ad0f43fa3ee88cf4f31bf76b9a2c3bbf609"
+    },
+    {
+      "path": "archive/mhtml-manifest.py",
+      "bytes": 1361,
+      "sha256": "d0bfaac2de1dc2b77c5ffeef9f116a0456fdf1651c68fdd5ea5e0bc10a9e31d8"
+    },
+    {
+      "path": "archive/network-manifest.json",
+      "bytes": 16604,
+      "sha256": "31e840e47c4774a63bbf40b9bc6a1030692bc16bdb9cd399fb08d9cb9ae9a953"
+    },
+    {
+      "path": "archive/offline-fidelity-diff.png",
+      "bytes": 167411,
+      "sha256": "5cfa34d7c313e82f7bc449f1f9fe38325c54613afc0ce041ff10313e530d155d"
+    },
+    {
+      "path": "archive/offline-fidelity.json",
+      "bytes": 1480,
+      "sha256": "a04a4733a443de3ba368414f62731d0aef3290fa22b50938bdd45d687e4ece1e"
+    },
+    {
+      "path": "archive/offline-firstscreen.png",
+      "bytes": 175195,
+      "sha256": "6a1a1a778f58b005db3011398591b59cfd0c8e524abfaa9ae93341839afc808b"
+    },
+    {
+      "path": "archive/resource-manifest.json",
+      "bytes": 1202,
+      "sha256": "058a57aa8727a89ca2e242eb63ed850a6b320d872e1600793a15f1aa36296a96"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicMono_Italic_Web-s.p.39343088.woff2",
+      "bytes": 70384,
+      "sha256": "58bc928b953cea2666c578222a0a7c4fba4b3eb1b07c840a38be00aaba325f85"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicMono_Roman_Web-s.p.80d4607c.woff2",
+      "bytes": 66056,
+      "sha256": "49b8b95c950b0bee7ecdf68cda9dd6908e980283c50dc570c401de1e683a22e5"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicSans_Italic_Web-s.p.6550bf15.woff2",
+      "bytes": 129868,
+      "sha256": "ffcf21c4e9a729cbf4710401760434bb1d10bc7db244540e4af796d182c6817d"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicSans_Roman_Web-s.p.050e7498.woff2",
+      "bytes": 118340,
+      "sha256": "1b75c8ee81a05fa77331366e9602b82072bb5223593c928a6488dfe6fd023f1b"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2",
+      "bytes": 166724,
+      "sha256": "7f61e32b5941ad6e5699aeb3e03390a43e5f04f3bff6a5853bed08c802596f83"
+    },
+    {
+      "path": "archive/resources/fonts/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2",
+      "bytes": 175356,
+      "sha256": "e96fe97bb7ba2190a9a227d27380e0c79894408bfc6acea5a511774d93a16f69"
+    },
+    {
+      "path": "archive/responsive-metrics.json",
+      "bytes": 29942,
+      "sha256": "881072cad137777fb334c77bc120228f923cd84f581bb8c36726ecd0a249e77f"
+    },
+    {
+      "path": "archive/robots.txt",
+      "bytes": 107,
+      "sha256": "ac75fa6a94a20976d60a308f1404ac2d4e29ca774fe19eb001261bffeaf3f162"
+    },
+    {
+      "path": "archive/section-capture-manifest.json",
+      "bytes": 3026,
+      "sha256": "1ec96899b6eccf67125538069cec573a9f814f94e25045d768637a1484b89715"
+    },
+    {
+      "path": "archive/security-scan.json",
+      "bytes": 393,
+      "sha256": "7321a9f64db4eab6fa4dd27fe17c6a140f6dea8c1c7a5e16287991b2352f1ed7"
+    },
+    {
+      "path": "archive/source.html",
+      "bytes": 588289,
+      "sha256": "326075175a2f1f0b91ebf30fd85c359f27022c6a78e3474610a132b64e6eaaad"
+    },
+    {
+      "path": "archive/style-metrics-1280.json",
+      "bytes": 538184,
+      "sha256": "8b312bc38475d0dad0e4918495f0a2a15f9a372aed4f406bf387b89a1cd6f61e"
+    },
+    {
+      "path": "archive/style-metrics-1440.json",
+      "bytes": 539876,
+      "sha256": "8d7a54ac95ad1ab03a1636efccf3a095971cfba260f4b70ac03a414d34ccee8a"
+    },
+    {
+      "path": "archive/style-metrics-375.json",
+      "bytes": 388955,
+      "sha256": "309c54f3b4f0534ed615fa126bada260ac729408f59c48df66883967cb2e40b5"
+    },
+    {
+      "path": "archive/supplement-mhtml-fonts.py",
+      "bytes": 1574,
+      "sha256": "44abfafda0332ef44c764fb0be2c11067d0baafceed9a49b9728c45eba13e353"
+    },
+    {
+      "path": "archive/token-provenance.json",
+      "bytes": 2028,
+      "sha256": "6c87200e9ac52645acb3f923dfa58bd74f0838286ad490ea73db768c8df5366f"
+    },
+    {
+      "path": "archive/validate-mhtml.js",
+      "bytes": 4056,
+      "sha256": "7824f61c5538de5f92a680f993b0a761b3223c7ea8d9941fa2370f0d197c12f1"
+    },
+    {
+      "path": "archive/verify.py",
+      "bytes": 6289,
+      "sha256": "067493ff7fb46cf4f371d64cd4e301e188e8dcf3d86c5dcf58b6ade8195ff2dd"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1299,
+      "sha256": "ac64924b1eeef3b9a1826094dac78aeafaba915072c69c593dde5c1b90018aef"
+    },
+    {
+      "path": "meta.md",
+      "bytes": 4182,
+      "sha256": "785948675c0580c56a1224deebda6640a84979bd3845cbb716f7ec68f77ff49f"
+    },
+    {
+      "path": "notes.md",
+      "bytes": 8665,
+      "sha256": "6208356b21cdb1c5257e8417ddb14c53fe9aa9f8e2179056874c7f542c7f1190"
+    },
+    {
+      "path": "review-log.md",
+      "bytes": 4613,
+      "sha256": "a3866eb46521a40a07c8c0d98b2960bf19173dd699c6263b9b060877e2f7cd0e"
+    },
+    {
+      "path": "screenshots/claude-code-1280x12130-fullpage.png",
+      "bytes": 1305509,
+      "sha256": "7daf6029e1150f90f62a78395be65d8ff1355cb380154e031406b62705951d6b"
+    },
+    {
+      "path": "screenshots/claude-code-1440x12338-fullpage.png",
+      "bytes": 1377888,
+      "sha256": "71f93e5997cd268cceb02b2f1e11dca460ff2f458b150469bed5c5cb8f384026"
+    },
+    {
+      "path": "screenshots/claude-code-375x17213-fullpage.png",
+      "bytes": 940577,
+      "sha256": "ae8aa39b6bc3f5c10467807b802dae4ca1cc29918b1b5bd0b383913a0241c0f0"
+    },
+    {
+      "path": "sections/01-hero-shell.png",
+      "bytes": 393186,
+      "sha256": "294a8f7db25f7b020460d095d88929404d7327dd16941cd11d0e4260a4cf2023"
+    },
+    {
+      "path": "sections/02-pricing-plans.png",
+      "bytes": 235881,
+      "sha256": "315b85bfe41cce2d20332c5d52a68cc7e340526e2defd102578a23b3aad3ff32"
+    },
+    {
+      "path": "sections/03-code-workflow.png",
+      "bytes": 474349,
+      "sha256": "57e8e2a81054723fe805c1e624c9a930da51ba513e1af7a2b07cccf4dee87cc0"
+    },
+    {
+      "path": "sections/04-integrations.png",
+      "bytes": 670973,
+      "sha256": "23fe45d972f8357f69c6dc68f6904f93b88fbf18e0d02ec80765cfd311a09f4c"
+    },
+    {
+      "path": "sections/05-dark-newsletter.png",
+      "bytes": 160058,
+      "sha256": "319b61e5a4169ba9eaf5aa6289d765aaa0190789121030d384610e194ba3c78c"
+    },
+    {
+      "path": "sections/README.md",
+      "bytes": 1409,
+      "sha256": "8cbe50a1072c636acb3fef54d80babeacb7d3e1cf3caa3601224bab44e6bc6b3"
+    },
+    {
+      "path": "tokens.json",
+      "bytes": 9060,
+      "sha256": "f90c467a3f38a41c4c5d499134090a4921f99178b4aeeea292741c68d955d808"
+    }
+  ]
+}

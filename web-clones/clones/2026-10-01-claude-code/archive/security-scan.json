@@ -1,0 +1,16 @@
+{
+  "scanScope": "All files under archive/ except the scanner source itself; binary inspected by byte-safe patterns.",
+  "patterns": [
+    "awsAccessKey",
+    "bearerAuthorization",
+    "cloudflareBmCookie",
+    "googleApiKey",
+    "privateKey"
+  ],
+  "findings": [],
+  "transientCookieHandling": {
+    "expected": "redacted in http-headers.txt",
+    "confirmed": true
+  },
+  "passed": true
+}

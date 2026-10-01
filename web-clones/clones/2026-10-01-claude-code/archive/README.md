@@ -18,3 +18,8 @@
 - `token-provenance.json` — 13 个代表性 token 到 computed value / selector / property 的映射。
 - `color-accessibility.json` — 7 组关键前景/背景的 WCAG 对比度计算。
 - `build-design-audits.py` — 上述三项设计审计的生成脚本。
+- `capture-timeline.json` — 从读取队列、抓取、字体补充、MHTML 验证到三轮复审的时间线。
+- `resource-manifest.json` — live 渲染请求、MHTML part、补入字体与脚本不纳入静态快照的覆盖决策。
+- `security-scan.json` — 对 archive 进行 byte-safe 秘钥/Cookie 模式扫描，并确认临时 Cookie 已红除。
+- `file-inventory.json` — 最终稳定文件的大小、SHA-256 与总字节清单。
+- `final-review.json`、`finalize-review.py` — 第三轮收口复核与上述终审证据生成器。

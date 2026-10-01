@@ -1,0 +1,48 @@
+{
+  "purpose": "Explain what the final browser render requested and what the static MHTML preserves.",
+  "networkRender": {
+    "requestCount": 89,
+    "byResourceType": {
+      "document": 2,
+      "fetch": 7,
+      "font": 6,
+      "image": 29,
+      "other": 1,
+      "script": 27,
+      "stylesheet": 6,
+      "xhr": 11
+    },
+    "byHost": {
+      "a.claude.com": 1,
+      "assets.claude.ai": 2,
+      "assets.claude.com": 40,
+      "claude.com": 43,
+      "js.hs-analytics.net": 1,
+      "js.hs-scripts.com": 1,
+      "track.hubspot.com": 1
+    }
+  },
+  "mhtml": {
+    "byteCount": 3755773,
+    "partCount": 39,
+    "contentTypeCounts": {
+      "font/woff2": 6,
+      "image/svg+xml": 23,
+      "image/webp": 3,
+      "text/css": 5,
+      "text/html": 2
+    }
+  },
+  "supplementedFonts": {
+    "count": 6,
+    "byteCount": 726728
+  },
+  "coverageDecision": {
+    "renderedDom": true,
+    "stylesheets": true,
+    "imagesUsedByRenderedState": true,
+    "fonts": true,
+    "scripts": false,
+    "scriptsNote": "CDP MHTML intentionally retains the rendered DOM/style/media state without executable script parts; offline reopen and pixel comparison validate that state without network access."
+  }
+}

@@ -1,5 +1,5 @@
 {
-  "round": 2,
+  "round": 3,
   "allPassed": true,
   "checks": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "JSON parseability",
       "passed": true,
-      "detail": "17/17 valid"
+      "detail": "22/22 valid"
     },
     {
       "name": "full-page PNG geometry",
@@ -68,9 +68,34 @@
       "detail": "tokens.json points to and matches design audit evidence"
     },
     {
+      "name": "resource provenance",
+      "passed": true,
+      "detail": "89 live requests, 39 MHTML parts, 6 supplemented fonts"
+    },
+    {
+      "name": "security scan",
+      "passed": true,
+      "detail": "no secret patterns found; transient cookie redacted"
+    },
+    {
+      "name": "file inventory",
+      "passed": true,
+      "detail": "56 files, 15050746 bytes"
+    },
+    {
+      "name": "capture timeline",
+      "passed": true,
+      "detail": "capture and review chronology complete"
+    },
+    {
+      "name": "final review",
+      "passed": true,
+      "detail": "round-3 closeout checks recorded"
+    },
+    {
       "name": "SHA256SUMS",
       "passed": true,
-      "detail": "36/36 hashes match"
+      "detail": "42/42 hashes match"
     },
     {
       "name": "BACKLOG completion",
