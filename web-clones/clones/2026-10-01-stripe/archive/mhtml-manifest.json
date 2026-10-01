@@ -1,0 +1,299 @@
+{
+  "file": "archive/stripe-home.mhtml",
+  "fileBytes": 2280686,
+  "partCount": 35,
+  "resourceCount": 35,
+  "domains": {
+    "b.stripecdn.com": 13,
+    "images.stripeassets.com": 21,
+    "stripe.com": 1
+  },
+  "contentTypes": {
+    "image/webp": 22,
+    "text/css": 10,
+    "text/html": 3
+  },
+  "decodedBytes": 1948590,
+  "parts": [
+    {
+      "index": 0,
+      "contentType": "text/html",
+      "contentLocation": "https://stripe.com/",
+      "domain": "stripe.com",
+      "decodedBytes": 677370,
+      "sha256": "b4617067b95cd21ae4ff7c45c44435cb0baa1108e1f3f166f54daa5330e99ca8"
+    },
+    {
+      "index": 1,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1hmjWQj2Xwglop2rAW62zf/2899db472c5095e1a6b69bee0ead60c9/WorkInProgressIcon.png?w=32&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 370,
+      "sha256": "fd9aa9147491105239bd69489e86228fd85dd7fc44ece28c461eff1e19d88ccc"
+    },
+    {
+      "index": 2,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/4ohI1ccuGvrsR1BXwECmcg/61fa19552071ff7b0b3d612e915b0937/Polio__An_American_Story.png?w=592&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 43680,
+      "sha256": "5dda7b988b5ab91e4b7f1a3bbef54b209a784df10fed202bfdb4b3f1f8237494"
+    },
+    {
+      "index": 3,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/4oTkzvOAoM5Ruub2qYNVRC/cfb038e66b1d8bc034b6a178484862a8/KurtisMoyer.png?w=48&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 1364,
+      "sha256": "aac177f26e5fe4e4f913e06bf78aee57d819ae0b449fdacbd53df1e04dc9d078"
+    },
+    {
+      "index": 4,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/5dQAw5oJf3TOO1Jt6IKDRH/f391594c11f38d821259acdd3412a7a6/platform-graphic-background_2x.png?w=1632&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 146764,
+      "sha256": "f8a0fe005ba96ee7f167fc09af396740f4f5951b2d0012c42a3a4a96ef5590f9"
+    },
+    {
+      "index": 5,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1DZkp4Ce0kiwj2F2Z0kJ16/fcb4904fd728f49521385059618245b9/card_startups.png?w=585&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 7394,
+      "sha256": "9f03b5a67767a0e03ef8e6da98dcf3e853ea158ae7c0d83b88a419a58bfcdf7d"
+    },
+    {
+      "index": 6,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1hreJwxuVJ5ucPtuA7pRKH/3c5630387bca898d01ae17fc7ae2890a/decagon.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 18560,
+      "sha256": "930a981bf86eeda159b6ac2413ec5f9364a1cd706b51ce54f6d8c3eb5a5780bf"
+    },
+    {
+      "index": 7,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1NiQJZA0rKbwXZ7mD4BCrM/0abdaba77e564f858a33241a9aab0939/browserbase.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 3886,
+      "sha256": "523aec94f69c6c7ba4a78fa5b7b2f062b2d7c2816785b19d501ccf3922a844a3"
+    },
+    {
+      "index": 8,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/JK7aZoMzWA3uUbLb35kxx/dea1444a0aee29751c0c7098ffb33534/Eleven_Labs.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 5328,
+      "sha256": "ad2e6ff82d1546645ce5a9a39420d43e0687066399a91b883c712a03d94a4d69"
+    },
+    {
+      "index": 9,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/4b8Ubw7N2kYwb7QZl3Ogri/422cc19f725aa68e647d90ce2833c8d0/linear.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 2922,
+      "sha256": "bce630fa43588af387bf34941fb01a85a60d0910979db78e7ebb450419cf66a2"
+    },
+    {
+      "index": 10,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/7fM8bvEbivprOMM1zyow9N/3cad3cc826f96e4038b4ea88d81ebe3b/Supabase.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 4046,
+      "sha256": "a0239fccebe1042fb1dfcfd3c5e825a57c5bdcaa2bffef5f7ab9970954bf3713"
+    },
+    {
+      "index": 11,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/6fpvaTP1TZWXKWVMewABjV/4412b9ca2940d89d3834ac65c1fc329d/Runway.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 22402,
+      "sha256": "2435ea204afb60dffd75c6cfd06db80725498b2a29b10b1eddf605a6a3af6d77"
+    },
+    {
+      "index": 12,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/2QjRFO1cRvocACDtyA7g9e/44245671788d6e086ab7d82b37937450/Gamma.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 18208,
+      "sha256": "9b58096f32b730717ee8c5b2934a5bb99494df594e45526b6a051be7a9bb669a"
+    },
+    {
+      "index": 13,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1CBkJePR5Cwf2QNIVCia1I/c0a702cec7a3814c69f21f86b89ed718/lovable.png?w=432&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 16218,
+      "sha256": "cfcab23ef136dbdb34bea6da9af6ea119471d60ef597caf7c5f1840991a991af"
+    },
+    {
+      "index": 14,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/24BNV3GGtvCprFLrYovyaa/b2eac20a1d5ec75e4bff3888b998d163/enterprise-accordion-hertz.png?w=1632&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 205658,
+      "sha256": "d478ae6ee3bd578ba17c178426b28262ff27319c398b691eb601429190d36819"
+    },
+    {
+      "index": 15,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/2YFdgdFPeIiDpmQbhHPAx8/186752498bf713fea245f31bcec84f8a/sessions-2026-on-demand-bg.png?w=1632&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 54524,
+      "sha256": "c0a93120558ece0e2c2e7693e5baba5a0389a0f9885b3c3f158ed66fa2f35358"
+    },
+    {
+      "index": 16,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/3NcSrMqMgaKe75QNr8wZI8/46d520dfc48c5b9f1c59dcde9460b58c/connect-bento-card-background-image.jpg?w=1232&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 77144,
+      "sha256": "0368cc550ff455470c9e7b36e493dd5674f2e2832f36e400604401f11e0f0ba1"
+    },
+    {
+      "index": 17,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/6KmB7XGsUbTefNew25WF4T/6a949fbf5567dcd145339f5fcf207fae/hoodie-navy.png?w=160&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 6472,
+      "sha256": "0db2a4f10019c448fa9b121960291db226cee8297eadb5865cf089104dc80a0d"
+    },
+    {
+      "index": 18,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/2rL4pJabxq9Yo0haXwK2HO/83c05122b463c882c8c89111154d77ec/shirt-blue.png?w=160&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 5558,
+      "sha256": "10a095c185c48439cbf5616439ebfb8a7f69737990125f2d860a8594a425368d"
+    },
+    {
+      "index": 19,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/vYmk6v8n7oDAwbDpwhjV6/846f9b3e214549b8f14e2b8c8cfe9343/payment-bento-background.jpg?w=860&fm=webp&q=80",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 12700,
+      "sha256": "abb9783ad99fca19aeb45245e40e6e144b6412b68b1d9c5e36a95fe3bc3d65fa"
+    },
+    {
+      "index": 20,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/6BTjJGdjfGVA8brPwj7p3M/fcf084ff85142366e118fe85ee78b632/payments-electric-kettle.jpg?w=80&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 650,
+      "sha256": "f8dc15613c9216bb093b53dab1727216e3effbedc89cc12033864b7694337f39"
+    },
+    {
+      "index": 21,
+      "contentType": "image/webp",
+      "contentLocation": "https://images.stripeassets.com/fzn2n1nzq965/1Vf8oT9Fm6dEwpnEx5PgK1/055956f38d7fd8b0cc7419692ef29778/bento-terminal.png?w=308&fm=webp&q=90",
+      "domain": "images.stripeassets.com",
+      "decodedBytes": 12362,
+      "sha256": "785f1a205afd7a4689201b5f5c3a3b43d9dd6896e8d568dd04df9a528e15100d"
+    },
+    {
+      "index": 22,
+      "contentType": "image/webp",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/media/wave-fallback-desktop-1x.fba6fa88.webp",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 33544,
+      "sha256": "2daf8ce7404a849937a47041584d5d1818ce7fd3e8712b5bfb1d6961f0e3f679"
+    },
+    {
+      "index": 23,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5e8a245fcb880dab.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 147,
+      "sha256": "42fde96c2af6b0b038f4e75f4f81314bc470dff9fcfe97386f7e38fab6461dfe"
+    },
+    {
+      "index": 24,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/7fe9607f2fcd2964.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 380,
+      "sha256": "a3d228538361763c9a68d61c9b753650cce7f1279957e6ee57a9c60f69143526"
+    },
+    {
+      "index": 25,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/d829866f0dc0cad9.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 17562,
+      "sha256": "b11868b3d233745aa40d637a3e7f3b422315680c291391e57486c9f2d453216e"
+    },
+    {
+      "index": 26,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/7ab15948e3aeca38.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 327,
+      "sha256": "2fa730dc1fe68b85a185628597a007f8d89a0c3afa65c689843383ba028f3fbc"
+    },
+    {
+      "index": 27,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/e8a443975bb49a32.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 10409,
+      "sha256": "d0ceb5e3fec61c5bf9bc5eb1f844cf138bc6c93ee6bb10b4fb8b5270846cbafb"
+    },
+    {
+      "index": 28,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/c3ca6e08b62a6ac3.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 82782,
+      "sha256": "ca58aa996209d591e10cb2a2139a16bc29d806e1025341e3f7fa385bd41509d7"
+    },
+    {
+      "index": 29,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/c27cf5158235e02f.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 77708,
+      "sha256": "4bf01432104f1325485ee8ef60d04da5cd7c965723d994941abeadeb44597c5a"
+    },
+    {
+      "index": 30,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/e5be0f41b7fa7f3f.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 340627,
+      "sha256": "91567fb528c338599bed491de06117a151948f595c973e4df7e80008349258f8"
+    },
+    {
+      "index": 31,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5abff0f798ddf7af.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 38000,
+      "sha256": "7dc429e46c763b305d7c85c81dd4a186aaa32caa89606afab3604712440b6539"
+    },
+    {
+      "index": 32,
+      "contentType": "text/css",
+      "contentLocation": "https://b.stripecdn.com/mkt-ssr-statics/assets/_next/static/css/5f8c822d1f0f2d3e.css",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 3240,
+      "sha256": "bf50b30befb56e4748e46aae22f4d3073fbffb56c2b38c71d784242ee59b759a"
+    },
+    {
+      "index": 33,
+      "contentType": "text/html",
+      "contentLocation": "https://b.stripecdn.com/stripethirdparty-srv/assets/v33.1/PrivacyCompliance.html?id=9618be57-e333-44a4-8a65-117a8298ca98&origin=https%3A%2F%2Fstripe.com",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 142,
+      "sha256": "7d3f96224db81d40e215978c3973e903bde94f8db94ff0211aa82a572a87aada"
+    },
+    {
+      "index": 34,
+      "contentType": "text/html",
+      "contentLocation": "https://b.stripecdn.com/stripethirdparty-srv/assets/v33.1/GoogleTagManager.html?id=d1511ba3-c90e-467d-9b6b-f32b5c4fdba7&origin=https%3A%2F%2Fstripe.com",
+      "domain": "b.stripecdn.com",
+      "decodedBytes": 142,
+      "sha256": "7d3f96224db81d40e215978c3973e903bde94f8db94ff0211aa82a572a87aada"
+    }
+  ]
+}

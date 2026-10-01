@@ -1,0 +1,21 @@
+{
+  "round": 1,
+  "scope": "archive integrity, CSS token provenance, key element evidence, MHTML inventory, and offline browser validation",
+  "added": [
+    {"file": "archive/mhtml-manifest.py", "purpose": "Parse MHTML parts, domains, content types and payload hashes without network access."},
+    {"file": "archive/mhtml-manifest.json", "purpose": "35-part inventory and decoded-byte statistics."},
+    {"file": "archive/key-element-metrics.js", "purpose": "Remeasure 19 named elements, including the two H1 copies, canvas, fallback, gradients and primary CTA."},
+    {"file": "archive/key-element-metrics.json", "purpose": "Focused DOM geometry and computed-style evidence."},
+    {"file": "archive/offline-browser-check.js", "purpose": "Load MHTML via file:// with external HTTP(S) requests blocked."},
+    {"file": "archive/offline-browser-check.json", "purpose": "Offline title, heading, structure, stylesheet, image and request checks."},
+    {"file": "archive/offline-firstscreen.png", "purpose": "1440x900 offline MHTML visual evidence."},
+    {"file": "archive/css-token-evidence.py", "purpose": "Extract 640 matching HDS color/font/space declarations from 10 CSS files."},
+    {"file": "archive/css-token-evidence.json", "purpose": "Direct CSS token provenance, 39 key tokens, media conditions and keyframes."},
+    {"file": "archive/document-outline.py", "purpose": "Preserve the semantic hierarchy from live computed-style evidence."},
+    {"file": "archive/document-outline.json", "purpose": "58 headings with geometry and typography."},
+    {"file": "archive/verification.py", "purpose": "Run machine-readable integrity and evidence checks."},
+    {"file": "archive/verification.json", "purpose": "Round-1 audit result."},
+    {"file": "archive/SHA256SUMS", "purpose": "SHA-256 coverage for 31 stable archive artifacts."}
+  ],
+  "result": {"allPassed": true, "checks": 18}
+}

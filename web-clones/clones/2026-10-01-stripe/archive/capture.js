@@ -124,7 +124,7 @@ async function captureViewport(browser, width, filename) {
       }
       return [...map.entries()].sort((a,b) => b[1].count-a[1].count).slice(0, 40).map(([value,v]) => ({ value, count:v.count, examples:v.examples }));
     };
-    const directTop = [...document.querySelectorAll('body > header, body > section, body > footer')].filter(el => el.getBoundingClientRect().height > 30).map((el,i) => ({ index:i, tag:el.tagName, id:el.id, className:String(el.className), ...rect(el), text:(el.innerText||'').trim().replace(/\s+/g,' ').slice(0,260) }));
+    const directTop = [...document.querySelectorAll('header, section, footer')].filter(el => !el.parentElement?.closest('header, section, footer') && el.getBoundingClientRect().height > 30).map((el,i) => ({ index:i, tag:el.tagName, id:el.id, className:String(el.className), ...rect(el), text:(el.innerText||'').trim().replace(/\s+/g,' ').slice(0,260) }));
     const headings = [...document.querySelectorAll('h1,h2,h3,h4')].filter(el => el.getBoundingClientRect().height > 0).map(el => ({ tag:el.tagName, text:el.innerText.trim().replace(/\s+/g,' '), className:String(el.className), ...rect(el), styles:pickStyle(el) }));
     const typography = visible.filter(el => el.innerText?.trim()).slice(0, 500).map(el => ({ selector:shortSelector(el), text:el.innerText.trim().replace(/\s+/g,' ').slice(0,180), ...rect(el), styles:pickStyle(el) }));
     const hero = document.querySelector('section.hero-section-container');
@@ -134,17 +134,16 @@ async function captureViewport(browser, width, filename) {
     }).map(el => ({ selector:shortSelector(el), ...rect(el), styles:pickStyle(el) })) : [];
     const root = document.documentElement;
     const variables = {};
+    const collectVariables = rule => {
+      if (!rule.style) return;
+      for (let i = 0; i < rule.style.length; i++) {
+        const name = rule.style[i];
+        if (name.startsWith('--')) variables[name] = rule.style.getPropertyValue(name).trim();
+      }
+      if (rule.cssRules) for (const child of rule.cssRules) collectVariables(child);
+    };
     for (const sheet of document.styleSheets) {
-      try {
-        for (const rule of sheet.cssRules) {
-          if (rule.selectorText === ':root' || (rule.selectorText || '').includes(':root')) {
-            for (let i = 0; i < rule.style.length; i++) {
-              const name = rule.style[i];
-              if (name.startsWith('--')) variables[name] = rule.style.getPropertyValue(name).trim();
-            }
-          }
-        }
-      } catch {}
+      try { for (const rule of sheet.cssRules) collectVariables(rule); } catch {}
     }
     const links = [...document.querySelectorAll('a')].slice(0, 300).map(a => ({ text:a.innerText.trim().replace(/\s+/g,' '), href:a.href, className:String(a.className), ...rect(a), styles:pickStyle(a) }));
     const buttons = [...document.querySelectorAll('button,a')].filter(el => /button|cta|link link--/.test(String(el.className))).slice(0,100).map(el => ({ selector:shortSelector(el), text:el.innerText.trim(), ...rect(el), styles:pickStyle(el) }));

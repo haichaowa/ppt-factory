@@ -1,0 +1,183 @@
+{
+  "round": 1,
+  "allPassed": true,
+  "passed": 18,
+  "total": 18,
+  "checks": [
+    {
+      "name": "json_valid:capture-manifest.json",
+      "passed": true,
+      "details": {
+        "bytes": 16579
+      }
+    },
+    {
+      "name": "json_valid:computed-styles.json",
+      "passed": true,
+      "details": {
+        "bytes": 1572158
+      }
+    },
+    {
+      "name": "json_valid:mhtml-manifest.json",
+      "passed": true,
+      "details": {
+        "bytes": 13152
+      }
+    },
+    {
+      "name": "json_valid:key-element-metrics.json",
+      "passed": true,
+      "details": {
+        "bytes": 46713
+      }
+    },
+    {
+      "name": "json_valid:offline-browser-check.json",
+      "passed": true,
+      "details": {
+        "bytes": 1242
+      }
+    },
+    {
+      "name": "json_valid:css-token-evidence.json",
+      "passed": true,
+      "details": {
+        "bytes": 94043
+      }
+    },
+    {
+      "name": "json_valid:document-outline.json",
+      "passed": true,
+      "details": {
+        "bytes": 32630
+      }
+    },
+    {
+      "name": "viewport_png_geometry",
+      "passed": true,
+      "details": [
+        {
+          "1440": {
+            "width": 1440,
+            "height": 14702
+          }
+        },
+        {
+          "1280": {
+            "width": 1280,
+            "height": 15089
+          }
+        },
+        {
+          "375": {
+            "width": 375,
+            "height": 20231
+          }
+        }
+      ]
+    },
+    {
+      "name": "section_png_2x",
+      "passed": true,
+      "details": {
+        "01-hero-diagonal-gradient": {
+          "width": 2880,
+          "height": 1370
+        },
+        "02-modular-solutions-bento": {
+          "width": 2880,
+          "height": 4392
+        },
+        "03-global-commerce-stats": {
+          "width": 2880,
+          "height": 1956
+        },
+        "04-business-sizes": {
+          "width": 2880,
+          "height": 9222
+        },
+        "05-dark-developer-infrastructure": {
+          "width": 2880,
+          "height": 4684
+        }
+      }
+    },
+    {
+      "name": "png_signature:screenshots/stripe-home-1440-fullpage.png",
+      "passed": true,
+      "details": [
+        1440,
+        14702
+      ]
+    },
+    {
+      "name": "png_signature:screenshots/stripe-home-1280-fullpage.png",
+      "passed": true,
+      "details": [
+        1280,
+        15089
+      ]
+    },
+    {
+      "name": "png_signature:screenshots/stripe-home-375-fullpage.png",
+      "passed": true,
+      "details": [
+        375,
+        20231
+      ]
+    },
+    {
+      "name": "mhtml_inventory",
+      "passed": true,
+      "details": {
+        "partCount": 35,
+        "domains": {
+          "b.stripecdn.com": 13,
+          "images.stripeassets.com": 21,
+          "stripe.com": 1
+        }
+      }
+    },
+    {
+      "name": "offline_browser",
+      "passed": true,
+      "details": {
+        "title": "Stripe | Financial Infrastructure to Grow Your Revenue",
+        "h1Copies": 2,
+        "headings": 58,
+        "blockedExternalRequests": 0
+      }
+    },
+    {
+      "name": "css_token_provenance",
+      "passed": true,
+      "details": {
+        "matchedTokenCount": 640,
+        "keyTokenCount": 39,
+        "mediaConditions": 44,
+        "keyframes": 10
+      }
+    },
+    {
+      "name": "document_outline",
+      "passed": true,
+      "details": {
+        "headingCount": 58
+      }
+    },
+    {
+      "name": "backlog_complete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "checksums_generated",
+      "passed": true,
+      "details": {
+        "files": 32,
+        "bytes": 3548
+      }
+    }
+  ]
+}

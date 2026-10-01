@@ -1,6 +1,6 @@
 # Stripe 首页设计拆解（DOM 实测）
 
-> 证据：`archive/computed-styles.json`（live DOM + computed style）、`archive/live-dom.html`、`archive/styles/`、`archive/capture-manifest.json`。除特别说明外均为 1440×900、DPR 1、`prefers-reduced-motion: reduce` 下的测量。
+> 证据：`archive/computed-styles.json`（live DOM + computed style）、`archive/key-element-metrics.json`（19 个关键元素定向复测）、`archive/css-token-evidence.json`（640 个 HDS 声明）、`archive/live-dom.html`、`archive/styles/`、`archive/capture-manifest.json`。除特别说明外均为 1440×900、DPR 1、`prefers-reduced-motion: reduce` 下的测量。
 
 ## 1. 第一眼结论
 
@@ -8,8 +8,8 @@ Stripe 的经典感并非来自装饰，而来自**金融品牌可信度 × 产�
 
 ## 2. 斜切渐变与 Hero
 
-- Hero 背景 DOM 是 `section-background hero-section__background`，内部为 `hero-wave-animation`、`canvas[data-engine="three.js r178"]`，画布属性 1392×761；可见区域约 1440×685。视觉从左上深蓝紫推进到右下品红与橙，形成斜切波面。
-- `prefers-reduced-motion` 时保留 desktop/tablet/mobile 三档 WebP fallback，因此归档不仅记录动态 canvas，也能研究静态降级素材。
+- Hero 背景 DOM 是 `section-background hero-section__background`，内部为 `hero-wave-animation`、`canvas[data-engine="three.js r178"]`；画布属性 1392×761，渲染盒 x=337、y=0、1392.59×761，页面可见区域约 1440×685。视觉从左上深蓝紫推进到右下品红与橙，形成斜切波面。
+- `prefers-reduced-motion` 时保留 desktop/tablet/mobile 三档 WebP fallback；本次 Chromium 实际选择 desktop 1x `wave-fallback-desktop-1x.fba6fa88.webp`，渲染 1392×975 且向下偏移 107px，因此归档不仅记录动态 canvas，也能研究静态降级素材。
 - H1 采用双份同位文案：`--background` 与 `--foreground` 各一份。48px / 300 / 55.2px / -0.96px；主句 `em` 是 #0A2540，说明句在波形上呈现绿/蓝半透明采样色，形成“文字嵌入渐变”的效果。
 - 顶部动态 GDP 指标使用双层数字滚动；首屏下方 logo marquee 以横向位移延续能量，但在 reduced motion 场景中避免抢占主叙事。
 
@@ -44,7 +44,8 @@ Stripe 的经典感并非来自装饰，而来自**金融品牌可信度 × 产�
 
 - 首页根网格呈现 1232px 内容宽，外层 section container 1266px；Hero H1 从 x=208 开始，宽约 959px，说明大标题不占满全宽，而把右下留给渐变与插画入口。
 - 主体模块大量使用 12 列语义栅格：标题 `span-8`、业务细分标题 `span-5`，与右侧 7 列产品剧场配对。
-- 间距节奏以 4px 为基：8、16、32、64、96、128 反复出现；高频 gap 实测 8px×54、16px×27、4px×20、32px×16、64px×14。
+- HDS 原始 token 也确认该节奏：`--hds-space-core-25:2px`、`50:4px`、`100:8px`、`200:16px`、`400:32px`、`800:64px`、`1200:96px`、`1600:128px`；控件圆角 `radius-sm:4px`、`md:6px`、`lg:16px`。
+- 高频 gap 实测 8px×54、16px×27、4px×20、32px×16、64px×14。
 - 导航高 76px，Hero 总高 685px，第一屏不硬塞满；中段 section 常以 96–128px 垂直节奏分隔。
 
 ## 6. 插画系统
@@ -66,7 +67,7 @@ Stripe 插画不是独立装饰，而是“产品界面微缩模型”：
 - stats 背景用 `cubic-bezier(.65,0,.35,1)` 过渡 opacity；
 - 布局位移：`transform 2s cubic-bezier(.9,0,.1,1)`；
 - 线条绘制：`stroke-dashoffset 2s cubic-bezier(.78,0,.22,1) 1.25s`。
-- CSS 明确区分 `prefers-reduced-motion:no-preference`（58 处媒体块）与 `reduce`（15 处），动态 Hero 有静态 fallback。
+- CSS 源码复审保留 44 种唯一媒体条件与 10 个 keyframe（`opacityAnimation`、`gradient-border-input-shimmer`、`agentic-commerce-graphic-border-spin`、`book-of-the-week-fade-in` 等），并明确区分 `prefers-reduced-motion:no-preference` 与 `reduce`，动态 Hero 有静态 fallback。
 
 **动效气质**：慢、少、长尾；进入时轻微位移/透明度，完成后让插画和文本自己说明产品。
 
