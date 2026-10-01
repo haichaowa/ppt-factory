@@ -1,0 +1,117 @@
+{
+  "standard": "WCAG 2.1 relative luminance",
+  "paletteSource": "live computed styles in computed-styles.json",
+  "pairs": [
+    {
+      "name": "primary text / page",
+      "foreground": "#0A2540",
+      "background": "#FFFFFF",
+      "role": "body",
+      "fontSizePx": 18,
+      "largeText": false,
+      "contrast": 15.54,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": true
+    },
+    {
+      "name": "primary text / quiet",
+      "foreground": "#0A2540",
+      "background": "#F8FAFD",
+      "role": "body",
+      "fontSizePx": 18,
+      "largeText": false,
+      "contrast": 14.86,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": true
+    },
+    {
+      "name": "secondary text / page",
+      "foreground": "#50617A",
+      "background": "#FFFFFF",
+      "role": "body",
+      "fontSizePx": 16,
+      "largeText": false,
+      "contrast": 6.3,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": false
+    },
+    {
+      "name": "muted text / page",
+      "foreground": "#64748D",
+      "background": "#FFFFFF",
+      "role": "body",
+      "fontSizePx": 16,
+      "largeText": false,
+      "contrast": 4.75,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": false
+    },
+    {
+      "name": "brand link / page",
+      "foreground": "#533AFD",
+      "background": "#FFFFFF",
+      "role": "body link",
+      "fontSizePx": 16,
+      "largeText": false,
+      "contrast": 6.19,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": false
+    },
+    {
+      "name": "primary CTA / brand",
+      "foreground": "#FFFFFF",
+      "background": "#533AFD",
+      "role": "control",
+      "fontSizePx": 16,
+      "largeText": false,
+      "contrast": 6.19,
+      "aaThreshold": 4.5,
+      "aaaThreshold": 7,
+      "aaPassed": true,
+      "aaaPassed": false
+    },
+    {
+      "name": "inverse text / developer",
+      "foreground": "#FFFFFF",
+      "background": "#020826",
+      "role": "display",
+      "fontSizePx": 32,
+      "largeText": true,
+      "contrast": 19.71,
+      "aaThreshold": 3,
+      "aaaThreshold": 4.5,
+      "aaPassed": true,
+      "aaaPassed": true
+    },
+    {
+      "name": "inverse text / raised",
+      "foreground": "#F2F7FE",
+      "background": "#2C2484",
+      "role": "display",
+      "fontSizePx": 32,
+      "largeText": true,
+      "contrast": 11.53,
+      "aaThreshold": 3,
+      "aaaThreshold": 4.5,
+      "aaPassed": true,
+      "aaaPassed": true
+    }
+  ],
+  "allAaPassed": true,
+  "aaaPairs": [
+    "primary text / page",
+    "primary text / quiet",
+    "inverse text / developer",
+    "inverse text / raised"
+  ]
+}

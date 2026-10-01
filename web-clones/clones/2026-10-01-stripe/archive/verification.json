@@ -1,8 +1,8 @@
 {
-  "round": 1,
+  "round": 2,
   "allPassed": true,
-  "passed": 18,
-  "total": 18,
+  "passed": 27,
+  "total": 27,
   "checks": [
     {
       "name": "json_valid:capture-manifest.json",
@@ -51,6 +51,27 @@
       "passed": true,
       "details": {
         "bytes": 32630
+      }
+    },
+    {
+      "name": "json_valid:responsive-metrics.json",
+      "passed": true,
+      "details": {
+        "bytes": 135589
+      }
+    },
+    {
+      "name": "json_valid:color-accessibility.json",
+      "passed": true,
+      "details": {
+        "bytes": 2772
+      }
+    },
+    {
+      "name": "json_valid:motion-evidence.json",
+      "passed": true,
+      "details": {
+        "bytes": 33453
       }
     },
     {
@@ -167,6 +188,108 @@
       }
     },
     {
+      "name": "responsive_viewports",
+      "passed": true,
+      "details": [
+        {
+          "width": 1440,
+          "height": 14702,
+          "overflowX": false
+        },
+        {
+          "width": 1280,
+          "height": 14651,
+          "overflowX": false
+        },
+        {
+          "width": 375,
+          "height": 20231,
+          "overflowX": false
+        }
+      ]
+    },
+    {
+      "name": "responsive_typography",
+      "passed": true,
+      "details": {
+        "desktopH1": "48px",
+        "mobileH1": "34px",
+        "desktopLineHeight": "55.2px",
+        "mobileLineHeight": "35.02px"
+      }
+    },
+    {
+      "name": "responsive_layout_drift",
+      "passed": true,
+      "details": {
+        "desktopHero": {
+          "x": 0,
+          "y": 76,
+          "width": 1440,
+          "height": 685
+        },
+        "mobileHero": {
+          "x": 0,
+          "y": 66,
+          "width": 375,
+          "height": 484.03
+        },
+        "desktopCta": {
+          "x": 208,
+          "y": 518.88,
+          "width": 141.45,
+          "height": 48
+        },
+        "mobileCta": {
+          "x": 16,
+          "y": 301.03,
+          "width": 343,
+          "height": 44
+        }
+      }
+    },
+    {
+      "name": "responsive_firstscreen_pngs",
+      "passed": true,
+      "details": [
+        {
+          "file": "archive/viewport-1280-firstscreen.png",
+          "width": 1280,
+          "height": 900,
+          "bytes": 548610
+        },
+        {
+          "file": "archive/viewport-375-firstscreen.png",
+          "width": 375,
+          "height": 812,
+          "bytes": 137597
+        }
+      ]
+    },
+    {
+      "name": "color_contrast_aa",
+      "passed": true,
+      "details": {
+        "pairs": 8,
+        "minimum": 4.75,
+        "aaaPairs": [
+          "primary text / page",
+          "primary text / quiet",
+          "inverse text / developer",
+          "inverse text / raised"
+        ]
+      }
+    },
+    {
+      "name": "motion_evidence",
+      "passed": true,
+      "details": {
+        "transitionFamilies": 27,
+        "keyframes": 10,
+        "reducedMotionConditions": 8
+      }
+    },
+    {
       "name": "backlog_complete",
       "passed": true,
       "details": null
@@ -175,8 +298,8 @@
       "name": "checksums_generated",
       "passed": true,
       "details": {
-        "files": 32,
-        "bytes": 3548
+        "files": 41,
+        "bytes": 4433
       }
     }
   ]

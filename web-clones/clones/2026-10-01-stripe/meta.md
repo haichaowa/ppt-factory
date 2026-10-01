@@ -10,6 +10,8 @@
   - 保存 live DOM、computed style 频率、标题/按钮/链接样式、Hero 图层、10 个 CSS 源文件与 2 个实际渲染 WOFF2 字体。
 - **robots 结果**：`archive/robots.txt` 中 `User-agent: *` 未禁止首页；本页允许继续抓取。其显式 `Allow: /docs` 只覆盖文档路径，另有 `/handoff`、测试支付源、unsupported-browser 等与首页归档无关的 Disallow。针对 `ia_archiver` 的限制不影响本次 Playwright 归档。
 - **MHTML 完整性**：`archive/stripe-home.mhtml` 为 2,280,686 bytes、35 个带 Content-Location 的资源 part（3 个 text/html、10 CSS、22 WebP；解码后 1,948,590 bytes）。MHTML 未包含 JS 与字体字节，已按 performance 记录补充 `Sohne` 与 `Source Code Pro Medium` 两个 WOFF2 到 `archive/resources/`。
+- **响应式复审**：`archive/responsive-metrics.json` 复测三档视口均为无横向溢出；1440/1280/375 live 高度分别为 14702、14651、20231。初始 1280 full-page PNG 为 15089，两者相差 438px，来自站点动态布局/懒载状态；PNG 仍是视觉 canonical。移动端 H1 34/35.02px、CTA 343×44，桌面 H1 48/55.2px、CTA 约141×48。
+- **可访问性复审**：`archive/color-accessibility.json` 审计 8 个实测色对，全部通过 WCAG 2.1 AA，最低 4.75:1；主文本/白底 15.54:1、白字/#533AFD 6.19:1、开发者白字/#020826 19.71:1。
 - **动态保真说明**：首页 Hero 为 `three.js r178` canvas 波形渐变，MHTML 不能重放脚本生成的 WebGL 状态；归档中的三档 PNG 和 2x 区块 PNG 是视觉 canonical。MHTML 适合研究 DOM/CSS/静态图片结构，不应视为像素完整重建。
 - **资源权利清单**：MHTML 资源来自 `stripe.com`（1）、`b.stripecdn.com`（13）、`images.stripeassets.com`（21）；字体来自 `b.stripecdn.com`。所有权利归原权利人，归档不改变归属。
 - **复现与复审入口**：
@@ -18,7 +20,7 @@
   - `archive/key-element-metrics.js/.json` 补充 19 个关键元素的几何与计算样式；
   - `archive/offline-browser-check.js/.json/.png` 以 `file://` 打开 MHTML 并阻断外网请求，标题、两份 H1、58 个标题、10 个 stylesheet、Hero/深色区/footer 均可解析，外部请求 0；
   - `archive/css-token-evidence.py/.json` 从 CSS 源码提取 640 个 HDS token 声明、44 个媒体条件与 10 个 keyframe；
-  - `archive/verification.py/.json` 与 `archive/SHA256SUMS` 提供机器可读复审。
+  - `archive/responsive-metrics.json`、`archive/color-accessibility.json`、`archive/motion-evidence.json`、`archive/verification.py/.json` 与 `archive/SHA256SUMS` 提供机器可读复审。
 - **版权口径**：页面文案、Logo、插画、产品 UI、字体与品牌资产版权归 Stripe / 各资源权利人。此目录仅供本地设计学习与内部研究，不二次分发、不商用、不用于对外发布，也不作为模型训练素材。
 - **目录规模**：约 35 MiB；最大文件为五个 2x 区块与三档全页截图。
 

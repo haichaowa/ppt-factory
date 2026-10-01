@@ -40,7 +40,11 @@ Stripe 的经典感并非来自装饰，而来自**金融品牌可信度 × 产�
 - 行高：56→57.68、48→55.2、32→35.2、26→29.12、22→24.2，均接近 1.1；18px 正文约 1.5，16px 控件为紧凑 16px。
 - 字距随字号增大收紧：-1.4、-0.96、-0.64、-0.26、-0.22。
 
-## 5. 版式与留白
+## 5. 响应式与版式留白
+
+复测三档均无横向溢出。1440/1280/375 的 live 高度为 14702/14651/20231；1280 初始全页 PNG 为 15089，438px 差值来自动态布局状态，PNG 是视觉基准。Hero 从 1440×685 压到 375×484，H1 从 48/55.2/-0.96 变为 34/35.02/-0.34；主 CTA 从约141×48 变为 343×44；Bento 从 1266×2196、gap64、上下 padding96 转为 375×3379、gap40、padding56。移动端不是简单缩小，而是把产品模块转为更长的纵向叙事。
+
+## 6. 版式与留白（桌面）
 
 - 首页根网格呈现 1232px 内容宽，外层 section container 1266px；Hero H1 从 x=208 开始，宽约 959px，说明大标题不占满全宽，而把右下留给渐变与插画入口。
 - 主体模块大量使用 12 列语义栅格：标题 `span-8`、业务细分标题 `span-5`，与右侧 7 列产品剧场配对。
@@ -48,7 +52,7 @@ Stripe 的经典感并非来自装饰，而来自**金融品牌可信度 × 产�
 - 高频 gap 实测 8px×54、16px×27、4px×20、32px×16、64px×14。
 - 导航高 76px，Hero 总高 685px，第一屏不硬塞满；中段 section 常以 96–128px 垂直节奏分隔。
 
-## 6. 插画系统
+## 7. 插画系统
 
 Stripe 插画不是独立装饰，而是“产品界面微缩模型”：
 
@@ -58,7 +62,7 @@ Stripe 插画不是独立装饰，而是“产品界面微缩模型”：
 4. **圆角克制**：控件 4px、面板 6px、媒体 8px，避免可爱化；
 5. **色彩同源**：插画中的紫、品红、橙与 Hero、stats 渐变同谱，深色区用 #020826/rgba 白色线条延续。
 
-## 7. 滚动与动效语言
+## 8. 滚动与动效语言
 
 - 图标填充：`fill 0.3s cubic-bezier(.25,1,.5,1)`，120 处；
 - 轮播淡入：`opacity 0.15s linear`，36 处；
@@ -67,11 +71,11 @@ Stripe 插画不是独立装饰，而是“产品界面微缩模型”：
 - stats 背景用 `cubic-bezier(.65,0,.35,1)` 过渡 opacity；
 - 布局位移：`transform 2s cubic-bezier(.9,0,.1,1)`；
 - 线条绘制：`stroke-dashoffset 2s cubic-bezier(.78,0,.22,1) 1.25s`。
-- CSS 源码复审保留 44 种唯一媒体条件与 10 个 keyframe（`opacityAnimation`、`gradient-border-input-shimmer`、`agentic-commerce-graphic-border-spin`、`book-of-the-week-fade-in` 等），并明确区分 `prefers-reduced-motion:no-preference` 与 `reduce`，动态 Hero 有静态 fallback。
+- `archive/motion-evidence.json` 保留 27 个非泛化 transition 家族、15 个 timing 家族、10 个 keyframe 与 8 个 reduced-motion 条件；CSS 源码复审保留 44 种唯一媒体条件与 10 个 keyframe（`opacityAnimation`、`gradient-border-input-shimmer`、`agentic-commerce-graphic-border-spin`、`book-of-the-week-fade-in` 等），并明确区分 `prefers-reduced-motion:no-preference` 与 `reduce`，动态 Hero 有静态 fallback。
 
 **动效气质**：慢、少、长尾；进入时轻微位移/透明度，完成后让插画和文本自己说明产品。
 
-## 8. 可复用转化
+## 9. 可复用转化
 
 - **PPT 主题**：白底、#0A2540 大字、#533AFD 单一 CTA、#F8FAFD 分区、#E5EDF5 边框、紫粉橙渐变只作分隔带或图表光效。
 - **Pattern**：五类页面结构可直接转化——Hero 波形、Bento 产品矩阵、数据大字、企业/初创/平台分段、深色开发者区。
