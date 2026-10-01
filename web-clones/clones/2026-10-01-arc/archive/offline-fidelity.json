@@ -1,0 +1,14 @@
+{
+  "comparison": {
+    "live": "archive/viewport-1440-firstscreen.png",
+    "offline": "archive/offline-firstscreen.png",
+    "difference": "archive/offline-fidelity-diff.png",
+    "viewport": "1440×900 CSS pixels"
+  },
+  "metrics": {
+    "exactMatchRatio": 0.658949074074074,
+    "meanAbsoluteError": 30.976652520576296,
+    "differentPixels": 442002
+  },
+  "interpretation": "MHTML preserves DOM, CSS links and several static images, but does not carry the live video frame, script-generated runtime state or every rendered font. Treat the three full-page PNGs and five 2x section PNGs as the visual canonical record, and the MHTML/supplemented resources as structure and asset evidence."
+}

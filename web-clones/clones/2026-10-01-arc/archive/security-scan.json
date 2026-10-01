@@ -1,0 +1,32 @@
+{
+  "scope": "archive/** excluding scanner source and generated JSON",
+  "filesScanned": 33,
+  "patterns": [
+    "setCookie",
+    "authorizationHeader",
+    "oauthToken",
+    "privateKey",
+    "awsKey",
+    "openAIKey"
+  ],
+  "findings": [],
+  "externalHostnames": [
+    "arc.net",
+    "diabrowser.com",
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "releases.arc.net",
+    "resources.arc.net",
+    "start.arc.net",
+    "thebrowser.company",
+    "twitter.com",
+    "www.bloomberg.com",
+    "www.fastcompany.com",
+    "www.inverse.com",
+    "www.serif.com",
+    "www.theverge.com",
+    "www.w3.org",
+    "www.youtube.com",
+    "youtu.be"
+  ]
+}

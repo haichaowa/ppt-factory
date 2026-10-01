@@ -19,5 +19,7 @@
   - `archive/capture-sections.js`：五个代表区块 2x 截图；
   - `archive/capture-design-evidence.js`：CSS 变量、font-face、关键文本样式、动画证据；
   - `archive/download-resources.js`：同源页面内 fetch 补充关键资源；
-  - `archive/offline-browser-check.js/.json/.png`：MHTML 离线解析与外网隔离验证。
+  - `archive/offline-browser-check.js/.json/.png`：MHTML 离线解析与外网隔离验证；
+  - `archive/mhtml-manifest.py/.json`、`archive/security-scan.py/.json`、`archive/rights-inventory.py/.json`、`archive/file-inventory.py/.json`：资源、安全、版权与交付复审；
+  - `archive/offline-fidelity.json`：live 与 MHTML 首屏像素对比指标。
 - **主要交付**：`screenshots/` 三档全页、`archive/arc-home.mhtml`、`sections/` 五个 2x 区块、`tokens.json`、`notes.md`、`review-log.md`。

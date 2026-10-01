@@ -61,8 +61,8 @@
       "assessment": "以真实操作视频解释 Spaces/Profiles，延续纵向交错的产品叙事。"
     },
     {
-      "name": "05-privacy-and-footer-cta",
-      "file": "sections/05-privacy-and-footer-cta.png",
+      "name": "05-footer-cta",
+      "file": "sections/05-footer-cta.png",
       "cssRect": {
         "x": 0,
         "y": 398,
@@ -71,7 +71,7 @@
       },
       "text": "Enter your new home on the internet Download Arc for Mac",
       "bytes": 315847,
-      "assessment": "隐私短段与钴蓝 Footer CTA 连成收束区，白字蓝底保持强品牌记忆。"
+      "assessment": "钴蓝底上的 28px CTA 形成动作终点，白色下载按钮与奶油文字延续品牌色收束。"
     }
   ]
 }

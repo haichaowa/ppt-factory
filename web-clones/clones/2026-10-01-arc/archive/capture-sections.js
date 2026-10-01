@@ -14,7 +14,7 @@ const BROWSER = '/Users/wanghaichao/Library/Caches/ms-playwright/chromium-1194/c
     ['02-arc-editorial-hero',page.locator('main > section').first(),'媒体引语 H1 与双平台下载构成品牌宣言，大字宽幅置入钴蓝底。'],
     ['03-browser-story-video',page.locator('section').nth(1),'大标题右置、全宽视频下沉，形成左文右动态画面的非对称分栏。'],
     ['04-spaces-product-video',page.locator('section').nth(2),'以真实操作视频解释 Spaces/Profiles，延续纵向交错的产品叙事。'],
-    ['05-privacy-and-footer-cta',page.locator('footer > aside').first(),'隐私短段与钴蓝 Footer CTA 连成收束区，白字蓝底保持强品牌记忆。']
+    ['05-footer-cta',page.locator('footer > aside').first(),'钴蓝底上的 28px CTA 形成动作终点，白色下载按钮与奶油文字延续品牌色收束。']
   ];
   const manifest={source:'https://arc.net/',capturedAt:new Date().toISOString(),viewport:{width:1440,height:900},deviceScaleFactor:2,reducedMotion:'reduce',sections:[]};
   for(const [name,locator,assessment] of specs){
