@@ -10,6 +10,7 @@
   - `archive/dom-snapshot.html`、`archive/source.html`、`archive/http-headers.txt`：渲染 DOM、原始 HTML 与清洗后的响应头；
   - `archive/style-metrics-{1440,1280,375}.json`：三档视口全页 computed style、颜色/字号/字重/行高/圆角/阴影/动效频率、标题、区块、按钮、媒体与终端 descendants；
   - `archive/key-element-metrics.json`：定价卡、首屏产品 Shell、安装命令、终端卡片的定向 DOM + computed style 证据；
+  - `archive/responsive-metrics.json`、`archive/token-provenance.json`、`archive/color-accessibility.json`：三档响应式对照、token 来源映射与 WCAG 对比度审计；
   - `archive/network-manifest.json`、`archive/font-manifest.json`、`archive/resources/fonts/`：请求清单、字体来源与 726,728 bytes 字体副本；
   - `archive/mhtml-manifest.json`、`archive/mhtml-browser-check.json`：MHTML part 清单与本地重开验证；
   - `archive/offline-fidelity.json`、`archive/offline-firstscreen.png`、`archive/live-firstscreen.png`、`archive/offline-fidelity-diff.png`：live 与离线 MHTML 的 1440×1000 像素对比；

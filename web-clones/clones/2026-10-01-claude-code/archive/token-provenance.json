@@ -1,0 +1,74 @@
+{
+  "generatedFrom": [
+    "archive/style-metrics-1440.json",
+    "archive/style-metrics-375.json",
+    "archive/key-element-metrics.json"
+  ],
+  "tokens": {
+    "color.pageWarmPaper": {
+      "computed": "rgb(250, 249, 245)",
+      "selector": "body",
+      "property": "backgroundColor",
+      "frequency": 27
+    },
+    "color.ink.primary": {
+      "computed": "rgb(20, 20, 19)",
+      "selector": "body",
+      "property": "color",
+      "frequency": 844
+    },
+    "color.ink.secondary": {
+      "computed": "rgb(94, 93, 89)",
+      "selector": "hero paragraph",
+      "property": "color",
+      "frequency": 176
+    },
+    "color.darkSurfaces.terminal": {
+      "computed": "rgb(20, 20, 19)",
+      "selector": "terminal card",
+      "property": "backgroundColor"
+    },
+    "color.darkSurfaces.terminalHeader": {
+      "computed": "rgb(48, 48, 46)",
+      "selector": "terminal header",
+      "property": "backgroundColor"
+    },
+    "color.terminalBody": {
+      "computed": "rgb(176, 174, 165)",
+      "selector": "terminal code",
+      "property": "color"
+    },
+    "typography.h1": {
+      "computed": "64px / 70.4px, weight 400",
+      "selector": "h1"
+    },
+    "typography.headlineL": {
+      "computed": "52px / 62.4px, weight 500",
+      "selector": "Get started / work H2"
+    },
+    "typography.base": {
+      "computed": "15px / 22.5px, weight 400",
+      "selector": "body"
+    },
+    "typography.installCommand": {
+      "computed": "17px / 25.5px",
+      "selector": "[class*=commandText]"
+    },
+    "radius.commandWell": {
+      "computed": "12px",
+      "selector": "[class*=commandWrap]"
+    },
+    "radius.terminal": {
+      "computed": "16px",
+      "selector": "[class*=terminal]"
+    },
+    "radius.pricingCard": {
+      "computed": "24px",
+      "selector": "Pricing card"
+    },
+    "shadow.productShell": {
+      "computed": "rgba(10, 10, 10, 0.04) 0px 0px 0px 1px, rgba(0, 0, 0, 0.024) 0px 8px 24px 0px, rgba(0, 0, 0, 0.04) 0px 32px 80px 0px",
+      "selector": "AppShell window"
+    }
+  }
+}

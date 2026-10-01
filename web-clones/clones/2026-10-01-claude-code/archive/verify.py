@@ -41,9 +41,17 @@ ok=0
 for line in sums:
     h,name=line.split('  ',1); p=archive/name
     if sha(p)==h: ok+=1
+resp=json.loads((archive/'responsive-metrics.json').read_text())
+check('responsive evidence parity',len(resp['viewports'])==3 and {v['viewport']['width'] for v in resp['viewports']}=={1440,1280,375},'1440/1280/375 computed-style records present')
+prov=json.loads((archive/'token-provenance.json').read_text())
+check('token provenance',len(prov['tokens'])==14 and all('computed' in x for x in prov['tokens'].values()),f"{len(prov['tokens'])} token families mapped to computed values")
+access=json.loads((archive/'color-accessibility.json').read_text())
+check('color accessibility',access['allMeasuredPairsMeetListedThreshold'] and all(x['passes'] for x in access['pairs']),str({x['name']:x['ratio'] for x in access['pairs']}))
+token=json.loads((root/'tokens.json').read_text())
+check('token audit parity',token['accessibility']['allMeasuredPairsMeetListedThreshold']==access['allMeasuredPairsMeetListedThreshold'] and isinstance(token['source']['capturedAt'],dict),'tokens.json points to and matches design audit evidence')
 check('SHA256SUMS',ok==len(sums),f'{ok}/{len(sums)} hashes match')
 check('BACKLOG completion','`clones/2026-10-01-claude-code/`' in (root.parents[1]/'BACKLOG.md').read_text(),'marked complete with output directory')
-result={'round':1,'allPassed':all(x['passed'] for x in checks),'checks':checks}
+result={'round':2,'allPassed':all(x['passed'] for x in checks),'checks':checks}
 (archive/'verification.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))
 raise SystemExit(0 if result['allPassed'] else 1)

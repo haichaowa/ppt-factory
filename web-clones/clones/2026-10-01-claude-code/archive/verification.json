@@ -1,5 +1,5 @@
 {
-  "round": 1,
+  "round": 2,
   "allPassed": true,
   "checks": [
     {
@@ -10,7 +10,7 @@
     {
       "name": "JSON parseability",
       "passed": true,
-      "detail": "14/14 valid"
+      "detail": "17/17 valid"
     },
     {
       "name": "full-page PNG geometry",
@@ -48,9 +48,29 @@
       "detail": "0.964774 match, 8.763057 MAE"
     },
     {
+      "name": "responsive evidence parity",
+      "passed": true,
+      "detail": "1440/1280/375 computed-style records present"
+    },
+    {
+      "name": "token provenance",
+      "passed": true,
+      "detail": "14 token families mapped to computed values"
+    },
+    {
+      "name": "color accessibility",
+      "passed": true,
+      "detail": "{'primary text on warm paper': 17.5, 'secondary text on warm paper': 6.26, 'tertiary/footer text on warm paper': 3.47, 'primary CTA text on dark button': 17.5, 'on-dark text on newsletter': 17.5, 'terminal body on terminal': 8.29, 'secondary CTA text on muted button': 6.87}"
+    },
+    {
+      "name": "token audit parity",
+      "passed": true,
+      "detail": "tokens.json points to and matches design audit evidence"
+    },
+    {
       "name": "SHA256SUMS",
       "passed": true,
-      "detail": "32/32 hashes match"
+      "detail": "36/36 hashes match"
     },
     {
       "name": "BACKLOG completion",

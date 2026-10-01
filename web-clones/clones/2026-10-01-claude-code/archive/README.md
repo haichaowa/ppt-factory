@@ -14,3 +14,7 @@
 - `capture.js`、`extract-element-metrics.js`、`supplement-mhtml-fonts.py`、`mhtml-manifest.py`、`validate-mhtml.js` — 可复现采集、补充字体、清单生成和离体验证脚本。
 - `SHA256SUMS` — 32 个稳定 archive 文件的 SHA-256 校验；自校验文件 `verification.json` 与清单本身除外。
 - `verification.json`、`verify.py` — 交付物、JSON、PNG 几何、MHTML、字体、robots、离线保真、checksum 与 BACKLOG 的自动复审记录。
+- `responsive-metrics.json` — 三档视口的文档几何、关键元素 computed style 与字号频率对照。
+- `token-provenance.json` — 13 个代表性 token 到 computed value / selector / property 的映射。
+- `color-accessibility.json` — 7 组关键前景/背景的 WCAG 对比度计算。
+- `build-design-audits.py` — 上述三项设计审计的生成脚本。
