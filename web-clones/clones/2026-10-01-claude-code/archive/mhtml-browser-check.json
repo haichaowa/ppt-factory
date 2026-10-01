@@ -1,0 +1,18 @@
+{
+  "offline": {
+    "url": "file:///Users/wanghaichao/develop/VsCodeProject/personal-video-workflow/ppt-factory/web-clones/clones/2026-10-01-claude-code/archive/claude-code.mhtml",
+    "title": "Claude Code by Anthropic | AI Coding Agent, Terminal, IDE",
+    "h1": "Claude Code",
+    "h2Count": 38,
+    "shellPresent": true,
+    "fontChecks": {
+      "sans": true,
+      "serif": true,
+      "mono": true
+    },
+    "bodyComputed": "anthropicSans, \"anthropicSans Fallback\", system-ui, sans-serif"
+  },
+  "mhtmlBytes": 3755773,
+  "openedWithFileUrl": true,
+  "externalRequestsBlocked": 0
+}

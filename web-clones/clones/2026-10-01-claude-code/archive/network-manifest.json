@@ -1,0 +1,540 @@
+{
+  "url": "https://claude.com/product/claude-code",
+  "capturedAt": "2026-10-01T05:02:01.060Z",
+  "requests": [
+    {
+      "url": "https://claude.com/product/claude-code",
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html; charset=utf-8"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/d09d6f9774f2969a.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/bcc2bc539c433659.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Roman_Web-s.p.050e7498.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Roman_Web-s.p.c28786b4.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/195c2e474ca3e6f7.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/shared/webflow-local-pricing.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/64073838a5b1ca2b.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Italic_Web-s.p.39343088.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicMono_Roman_Web-s.p.80d4607c.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSans_Italic_Web-s.p.6550bf15.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/6197ae84002d41d5.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/1c8096b9209e274b.css",
+      "status": 200,
+      "resourceType": "stylesheet",
+      "contentType": "text/css"
+    },
+    {
+      "url": "https://claude.com/_next/static/media/AnthropicSerif_Italic_Web-s.p.43888cc6.woff2",
+      "status": 200,
+      "resourceType": "font",
+      "contentType": "font/woff2"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/f8280cab374bdf10.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/356c50710ec64383.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/3eb85ed729550711.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/4169756a1f006107.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/62b5b69171614e0d.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/73e3194f06db260e.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/206d512e9fd9301b.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/d96012bcfc98706a.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/turbopack-4cf820e89967b6b5.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/4088b06f7501ed53.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/28985195bd49b091.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/a7a83e8b4fd4c9d6.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/75d5747d8c8b5dee.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/641e7b42a02352de.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/8595efd8da7a8e0b.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://assets.claude.com/60bc422c7916679b221ea6d55ba27adc584ac66e.webp",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/326029d8f55cf3bc.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/c9f0ddbd7273b30a.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/1b4ac3895f07012e.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/01fc3faddf4ec9e7.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://assets.claude.com/454390de9d9ccefb6082b7c2440c7547c1ec3964.webp",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "https://assets.claude.com/d4645137a0c197beee5313fedbf9417d035452fc.webp",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/webp"
+    },
+    {
+      "url": "https://assets.claude.com/e66fa87cb0236fb0bb7ded4facb4cd6013f01a7f.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/76ec34d2d040fb1dd2dd94a7950788e0a82a09b6.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/19e0cdfaef9d2980bddd19cd993076d62b46c0c7.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/2fa9dd8ac68a8a9c6348127669c04cb6a7815dda.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/927749f49f21d9e0.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/c5e38f9c77190ab1.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://assets.claude.com/95a868946ac8a31e5ff832e2899f294aa368b836.png?w=32&h=32",
+      "status": 200,
+      "resourceType": "other",
+      "contentType": "image/png"
+    },
+    {
+      "url": "https://claude.com/api/country",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://claude.com/_next/static/chunks/604f9169de82a1f8.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://assets.claude.com/40cac5bb60362b9a3d1711447d37e78e78bd547e.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/b6698027075ae08131163eae1022d66d1b0b39dd.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/d3451a4bfe1c5af7f56f76ab8237c3bab7dd7a9d.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/0e2493b60dbe1a71a144ca649e1916bade399bf7.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/37f89a0357c2d15b69e554a0427652d250404b19.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/f0e3e76d14233fb0b84fa4363342b6c0b60ea5ca.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/a2c18afc64496a96da5330ea0966ee7259683512.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/a2c18afc64496a96da5330ea0966ee7259683512.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/62d79f01099dff27d4a29bec00d5ab4ad41f0e3e.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/bdbf17d2b956064e5f5f578c8ad017a8d4d2f6d1.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/e19ea7eecc49ca3f9d7e22ec4a79bbb8b88eae25.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/381c35dbb5df9c4a18273f9f30e81b5c2dd6d218.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/ad4171c16972accd3b5e448a507de2d5cb3af51c.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://a.claude.com/isolated-segment.html?v=749822417b10",
+      "status": 200,
+      "resourceType": "document",
+      "contentType": "text/html"
+    },
+    {
+      "url": "https://assets.claude.ai/sdk/antalytics/atm/claude_com/latest.umd.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://assets.claude.com/21ec753cb30a8f9d428903f23e402ed131a9e25e.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.com/029933bf1d20527b4503cf00ada327392bb0174c.json",
+      "status": 200,
+      "resourceType": "xhr",
+      "contentType": "application/json"
+    },
+    {
+      "url": "https://assets.claude.ai/sdk/antalytics/latest.umd.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "application/javascript; charset=utf-8"
+    },
+    {
+      "url": "https://assets.claude.com/6bdc64f3c9fde30b4b2cecb8544be888a4233887.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    },
+    {
+      "url": "https://js.hs-scripts.com/23987127.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "application/javascript;charset=utf-8"
+    },
+    {
+      "url": "https://assets.claude.com/5463fa5a44d12868ceec5ae30bfc8c412cafdeae.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://js.hs-analytics.net/analytics/1790830800000/23987127.js",
+      "status": 200,
+      "resourceType": "script",
+      "contentType": "text/javascript"
+    },
+    {
+      "url": "https://assets.claude.com/30df15cbd261edbc52262a1fa2d1339f3a1a372b.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://track.hubspot.com/__ptq.gif?k=1&sd=1440x960&cd=24-bit&cs=UTF-8&ln=zh-cn&v=1.1&a=23987127&po=%2Fproduct%2Fclaude-code%3Fv%3D749822417b10&qo=true&opo=%2Fproduct%2Fclaude-code&pu=https%3A%2F%2Fa.claude.com%2Fisolated-segment.html%3Fv%3D749822417b10&cts=1790830914850&vi=3c25fb632f94ff9a28c396cd34e33137&nc=true&ce=false&cc=0",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/gif"
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    },
+    {
+      "url": "https://assets.claude.com/6db782273272dd89f11df7b54089328994fe718e.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/d60d14e07300066206a9765859021f49663f2d38.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/0ab77011513992a5697712fd2cb8c809f3a88e7e.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/b84d84f9576d1d2e0b4ab65de530ccab8bac0d41.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/4870b3d6c0253cea01b100c98ad2030b8e4f8ce1.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/9760b31778be76fd66c6b722dced22db12cb59e8.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/410f375f04040180bb6545e287b4ad178b0d7767.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/ff6655b95f24d2aa0b9bf52c94ef5d5f5e54a70e.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    },
+    {
+      "url": "https://assets.claude.com/f6f5598aac3be6fd9b2dfc23eced7509c90d387b.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/659229862ffd01b50ea108b31624c8c0951bf1a5.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/1e6c5ec0a16e29efa8298174620a13235bb414c0.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/29f9867e9ce2a0784d68e8f4714faabbc2bb81f2.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/45982f0c915b94d8ae0a729f1c24ac69c59cc539.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://assets.claude.com/0a17621af2bfc623c9104a3dd9fba2e6ebfc89d5.svg",
+      "status": 200,
+      "resourceType": "image",
+      "contentType": "image/svg+xml"
+    },
+    {
+      "url": "https://claude.com/api/queue",
+      "status": 200,
+      "resourceType": "fetch",
+      "contentType": ""
+    }
+  ]
+}

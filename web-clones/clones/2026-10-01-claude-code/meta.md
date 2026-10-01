@@ -1,0 +1,21 @@
+# Claude Code 产品页高保真归档
+
+- **来源**：<https://claude.com/product/claude-code>（英文产品页；渲染标题 `Claude Code by Anthropic | AI Coding Agent, Terminal, IDE`）
+- **抓取时间**：2026-10-01 12:42–13:04（Asia/Shanghai）
+- **抓取方式**：Playwright 1.62.1 驱动 Chromium/Chrome 154.0.8037.59 无头浏览器；逐段滚动触发 lazy media 与滚动状态后，保存 1440、1280、375 三档全页截图；另用 Chrome DevTools Protocol `Page.captureSnapshot(format: "mhtml")` 获取渲染状态 MHTML，并从 robots 允许的同源静态资源路径补充 6 个 WOFF2 字体，保持原始 CRLF MIME 边界。保留原始 HTML、响应头、DOM、computed style、网络清单与 2× 代表区块截图。
+- **robots 核对**：抓取时 `archive/robots.txt` 仅包含 `User-agent: *`、两个 sitemap 声明与 `Allow: /`，未禁止本页及页面引用的静态资源。归档未抓取后台 API 字节；浏览器自然出现的跨站广告/表单脚本因站点 CSP 未加载。
+- **隐私处理**：原始响应中的临时 Cloudflare `Set-Cookie` 值已从 `archive/http-headers.txt` 红除，只保留字段与说明；归档不含认证 Cookie。
+- **归档内容**：
+  - `archive/claude-code.mhtml`：3,755,773 bytes，39 个资源 part（2 HTML、5 CSS、6 WOFF2、3 WebP、23 SVG）；本地 Chromium 可打开，标题/H1/38 个 H2 与产品 Shell 均可解析；
+  - `archive/dom-snapshot.html`、`archive/source.html`、`archive/http-headers.txt`：渲染 DOM、原始 HTML 与清洗后的响应头；
+  - `archive/style-metrics-{1440,1280,375}.json`：三档视口全页 computed style、颜色/字号/字重/行高/圆角/阴影/动效频率、标题、区块、按钮、媒体与终端 descendants；
+  - `archive/key-element-metrics.json`：定价卡、首屏产品 Shell、安装命令、终端卡片的定向 DOM + computed style 证据；
+  - `archive/network-manifest.json`、`archive/font-manifest.json`、`archive/resources/fonts/`：请求清单、字体来源与 726,728 bytes 字体副本；
+  - `archive/mhtml-manifest.json`、`archive/mhtml-browser-check.json`：MHTML part 清单与本地重开验证；
+  - `archive/offline-fidelity.json`、`archive/offline-firstscreen.png`、`archive/live-firstscreen.png`、`archive/offline-fidelity-diff.png`：live 与离线 MHTML 的 1440×1000 像素对比；
+  - `archive/section-capture-manifest.json`：五个 2× 区块截图的几何与哈希清单；
+  - `screenshots/`：`1440×12338`、`1280×12130`、`375×17213` 三档全页 PNG；
+  - `sections/`：五个 2× DPR 代表区块 PNG 与评价；
+  - `notes.md`、`tokens.json`。
+- **保真说明**：全页截图为 CSS 像素 DPR 1，区块截图为 DPR 2。MHTML 在离线路由阻断外部网络的情况下重开，无外部请求，live/offline 首屏在 pixelmatch threshold 0.10 下匹配 96.4774%，平均通道误差 8.7631；剩余差异来自实时产品 Shell 状态、lazy 内容与动态帧。1440 截图高度 12338 高于截图前 DOM 估高 12201，来自 full-page 截图阶段 lazy/content-visibility 展开；PNG 为 canonical。
+- **版权口径**：原站文本、图像、字体、产品界面与 Anthropic/Claude 品牌资产版权归 Anthropic PBC。本归档仅供本地设计学习与留存，不二次分发、不商用、不作为对外发布的复刻或训练素材。

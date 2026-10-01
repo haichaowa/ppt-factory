@@ -1,0 +1,87 @@
+{
+  "url": "https://claude.com/product/claude-code",
+  "dpr": 2,
+  "capturedAt": "2026-10-01T05:02:19.018Z",
+  "sections": [
+    {
+      "id": "hero",
+      "file": "sections/01-hero-shell.png",
+      "label": "Hero + product shell",
+      "cssBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 949.03125
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 1898
+      },
+      "bytes": 393186
+    },
+    {
+      "id": "pricing",
+      "file": "sections/02-pricing-plans.png",
+      "label": "Plans and pricing",
+      "cssBox": {
+        "x": 0,
+        "y": -55.75,
+        "width": 1440,
+        "height": 1135.71875
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2271
+      },
+      "bytes": 235881
+    },
+    {
+      "id": "code-workflow",
+      "file": "sections/03-code-workflow.png",
+      "label": "Code workflow + terminal",
+      "cssBox": {
+        "x": 0,
+        "y": -216.40625,
+        "width": 1440,
+        "height": 1455.890625
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2912
+      },
+      "bytes": 474349
+    },
+    {
+      "id": "integrations",
+      "file": "sections/04-integrations.png",
+      "label": "Terminal / IDE / web integrations",
+      "cssBox": {
+        "x": 0,
+        "y": -73.515625,
+        "width": 1440,
+        "height": 1170.1875
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2340
+      },
+      "bytes": 670973
+    },
+    {
+      "id": "newsletter",
+      "file": "sections/05-dark-newsletter.png",
+      "label": "Dark developer newsletter",
+      "cssBox": {
+        "x": 0,
+        "y": 196.40625,
+        "width": 1440,
+        "height": 630.75
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 1262
+      },
+      "bytes": 160058
+    }
+  ]
+}

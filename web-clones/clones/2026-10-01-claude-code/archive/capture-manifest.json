@@ -1,0 +1,140 @@
+{
+  "url": "https://claude.com/product/claude-code",
+  "executablePath": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "playwrightVersion": "1.62.1",
+  "browserVersion": "154.0.8037.59",
+  "capturedAt": "2026-10-01T05:02:19.019Z",
+  "viewports": [
+    {
+      "viewport": {
+        "name": "1440",
+        "width": 1440,
+        "height": 960
+      },
+      "documentHeightBeforeScreenshot": 12201,
+      "screenshot": "screenshots/claude-code-1440x12338-fullpage.png",
+      "screenshotBytes": 1377888,
+      "pngDimensions": {
+        "width": 1440,
+        "height": 12338
+      },
+      "styleMetrics": "archive/style-metrics-1440.json",
+      "requestCount": 89
+    },
+    {
+      "viewport": {
+        "name": "1280",
+        "width": 1280,
+        "height": 800
+      },
+      "documentHeightBeforeScreenshot": 12130,
+      "screenshot": "screenshots/claude-code-1280x12130-fullpage.png",
+      "screenshotBytes": 1305509,
+      "pngDimensions": {
+        "width": 1280,
+        "height": 12130
+      },
+      "styleMetrics": "archive/style-metrics-1280.json",
+      "requestCount": null
+    },
+    {
+      "viewport": {
+        "name": "375",
+        "width": 375,
+        "height": 812
+      },
+      "documentHeightBeforeScreenshot": 17213,
+      "screenshot": "screenshots/claude-code-375x17213-fullpage.png",
+      "screenshotBytes": 940577,
+      "pngDimensions": {
+        "width": 375,
+        "height": 17213
+      },
+      "styleMetrics": "archive/style-metrics-375.json",
+      "requestCount": null
+    }
+  ],
+  "sections": [
+    {
+      "id": "hero",
+      "file": "sections/01-hero-shell.png",
+      "label": "Hero + product shell",
+      "cssBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 949.03125
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 1898
+      },
+      "bytes": 393186
+    },
+    {
+      "id": "pricing",
+      "file": "sections/02-pricing-plans.png",
+      "label": "Plans and pricing",
+      "cssBox": {
+        "x": 0,
+        "y": -55.75,
+        "width": 1440,
+        "height": 1135.71875
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2271
+      },
+      "bytes": 235881
+    },
+    {
+      "id": "code-workflow",
+      "file": "sections/03-code-workflow.png",
+      "label": "Code workflow + terminal",
+      "cssBox": {
+        "x": 0,
+        "y": -216.40625,
+        "width": 1440,
+        "height": 1455.890625
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2912
+      },
+      "bytes": 474349
+    },
+    {
+      "id": "integrations",
+      "file": "sections/04-integrations.png",
+      "label": "Terminal / IDE / web integrations",
+      "cssBox": {
+        "x": 0,
+        "y": -73.515625,
+        "width": 1440,
+        "height": 1170.1875
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 2340
+      },
+      "bytes": 670973
+    },
+    {
+      "id": "newsletter",
+      "file": "sections/05-dark-newsletter.png",
+      "label": "Dark developer newsletter",
+      "cssBox": {
+        "x": 0,
+        "y": 196.40625,
+        "width": 1440,
+        "height": 630.75
+      },
+      "pngDimensions": {
+        "width": 2880,
+        "height": 1262
+      },
+      "bytes": 160058
+    }
+  ],
+  "canonicalScreenshotNote": "The 1440 full-page screenshot expanded to 12338px during capture after lazy/content-visibility rendering; the pre-screenshot DOM height was 12201px."
+}
