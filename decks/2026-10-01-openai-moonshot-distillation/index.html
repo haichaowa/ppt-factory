@@ -327,263 +327,553 @@ code { font-family: var(--font-mono); font-size: .88em; background: var(--bg-sof
   .cover-case-grid, .term-grid, .end-evidence { break-inside: avoid; }
 }
 
+
+/* ============================================================
+   FRONTEND-INSPIRED REDESIGN v3
+   Local references: Vercel / Linear / Raycast / Stripe / Claude Code
+   Original deck content; no third-party logo, image, or font is copied.
+   ============================================================ */
+body.inspire { --ins-bg:#050607; --ins-panel:#0b0c0e; --ins-panel2:#101114; --ins-line:#ffffff14; --ins-line2:#ffffff26; --ins-fg:#f7f8f8; --ins-sub:#a8aeb7; --ins-dim:#8f969e; --ins-accent:#7c87ff; --ins-accent2:#8ce2ff; --ins-danger:#ff5c57; --ins-ok:#4ade80; --ins-warn:#ffb86b; --ins-paper:#faf9f5; --ins-ink:#141413; }
+.inspire .stage {
+  background:
+    radial-gradient(760px 500px at 76% -12%, rgba(124,135,255,.17), transparent 68%),
+    radial-gradient(620px 420px at 6% 108%, rgba(140,226,255,.08), transparent 68%),
+    linear-gradient(180deg,#060708,#040506);
+  color:var(--ins-fg);
+  font-family:-apple-system,BlinkMacSystemFont,"Inter","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+}
+.inspire .stage::before {
+  content:''; position:absolute; inset:0; pointer-events:none;
+  background-image:linear-gradient(90deg,#ffffff05 1px,transparent 1px),linear-gradient(180deg,#ffffff05 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(900px 620px at 50% 40%,black,transparent 78%);
+}
+.inspire .slide { padding:58px 68px; color:var(--ins-fg); }
+.inspire h1,.inspire h2,.inspire h3 { font-family:inherit; color:var(--ins-fg); letter-spacing:-.035em; }
+.inspire h1 { font-weight:480; line-height:1.03; }
+.inspire h2 { font-weight:510; line-height:1.12; letter-spacing:-.032em; }
+.inspire h3 { font-weight:600; line-height:1.25; letter-spacing:-.015em; }
+.inspire p,.inspire li { color:var(--ins-sub); }
+.inspire .caption,.inspire .small { color:var(--ins-dim); }
+.inspire strong,.inspire b { color:var(--ins-fg); font-weight:600; }
+.inspire .fragment { transform:translateY(10px); }
+
+/* shared atoms */
+.ins-kicker { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:13px; letter-spacing:.18em; color:var(--ins-accent2); text-transform:uppercase; }
+.ins-panel { position:relative; background:linear-gradient(180deg,rgba(255,255,255,.045),rgba(255,255,255,.012)); border:1px solid var(--ins-line); border-radius:12px; box-shadow:0 0 0 1px #00000066, 0 24px 70px #00000066; }
+.ins-panel::after { content:''; position:absolute; inset:0; border-radius:inherit; pointer-events:none; background:linear-gradient(180deg,rgba(255,255,255,.055),transparent 34%); }
+.ins-label { font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11.5px; letter-spacing:.14em; color:var(--ins-dim); text-transform:uppercase; }
+.ins-spectrum { height:3px; background:linear-gradient(90deg,#7c87ff,#f472b6 45%,#ffb86b); border-radius:99px; }
+.ins-status { display:inline-flex; align-items:center; gap:7px; padding:4px 10px; border-radius:999px; border:1px solid var(--ins-line); background:rgba(255,255,255,.03); font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; font-size:11.5px; color:var(--ins-sub); }
+.ins-status i { width:7px; height:7px; border-radius:99px; background:var(--ins-dim); }
+.ins-status.ok { color:#b8f7ce; border-color:rgba(74,222,128,.32); background:rgba(74,222,128,.08); } .ins-status.ok i { background:var(--ins-ok); }
+.ins-status.alert { color:#ffc9c6; border-color:rgba(255,92,87,.34); background:rgba(255,92,87,.08); } .ins-status.alert i { background:var(--ins-danger); }
+.ins-status.warn { color:#ffe0b8; border-color:rgba(255,184,107,.32); background:rgba(255,184,107,.08); } .ins-status.warn i { background:var(--ins-warn); }
+
+/* 01 cover */
+.ins-cover { display:grid; grid-template-columns:minmax(0,1.18fr) minmax(360px,.82fr); gap:52px; align-items:center; }
+.ins-cover-copy { display:flex; flex-direction:column; align-items:flex-start; gap:18px; min-width:0; }
+.ins-cover-copy h1 { max-width:13.2em; font-size:54px; }
+.ins-cover-copy h1 em { font-style:normal; background:linear-gradient(92deg,#fff 10%,#a8b0ff 52%,#8ce2ff); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.ins-cover-lead { max-width:37em; font-size:19px; line-height:1.58; }
+.ins-cover-meta { display:flex; gap:12px; flex-wrap:wrap; margin-top:6px; }
+.ins-cover-console { min-width:0; padding:0; overflow:hidden; }
+.ins-console-bar { display:flex; align-items:center; gap:9px; height:38px; padding:0 14px; border-bottom:1px solid var(--ins-line); background:rgba(255,255,255,.028); }
+.ins-console-bar i { width:8px; height:8px; border-radius:99px; background:#373a40; }
+.ins-console-bar span { margin-left:auto; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:11px; color:var(--ins-dim); }
+.ins-cover-rows { display:grid; padding:10px 12px 14px; }
+.ins-cover-row { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:18px; padding:14px 10px; border-bottom:1px solid #ffffff0a; }
+.ins-cover-row:last-child { border-bottom:0; }
+.ins-cover-row b { display:block; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; letter-spacing:.08em; color:var(--ins-fg); }
+.ins-cover-row span { display:block; margin-top:2px; font-size:12.5px; color:var(--ins-dim); }
+
+/* 02 claim */
+.ins-claim { display:grid; grid-template-columns:minmax(0,.92fr) minmax(390px,1.08fr); gap:54px; align-items:center; }
+.ins-claim-copy { display:flex; flex-direction:column; gap:25px; }
+.ins-claim-copy h1 { font-size:54px; max-width:16em; }
+.ins-claim-copy p { font-size:21px; line-height:1.65; max-width:30em; }
+.ins-claim-list { display:grid; gap:14px; }
+.ins-claim-item { display:grid; grid-template-columns:auto minmax(0,1fr); gap:18px; align-items:center; padding:20px 22px; }
+.ins-claim-item .num { width:34px; height:34px; border-radius:10px; display:grid; place-items:center; border:1px solid var(--ins-line2); background:rgba(255,255,255,.04); font-family:ui-monospace,monospace; color:var(--ins-accent2); font-size:13px; }
+.ins-claim-item p { font-size:18px; color:var(--ins-fg); }
+.ins-claim-item.span { border-color:rgba(124,135,255,.38); background:linear-gradient(90deg,rgba(124,135,255,.14),rgba(255,255,255,.02)); }
+
+/* 03 map */
+.ins-map { display:flex; flex-direction:column; gap:36px; }
+.ins-map-head { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:28px; align-items:end; }
+.ins-map-head h2 { font-size:44px; max-width:15em; }
+.ins-map-route { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.ins-map-step { min-height:205px; padding:22px; display:flex; flex-direction:column; gap:15px; }
+.ins-map-step .no { font-family:ui-monospace,monospace; font-size:12px; color:var(--ins-accent2); }
+.ins-map-step h3 { font-size:23px; }
+.ins-map-step p { font-size:16px; line-height:1.58; }
+.ins-map-step.hot { border-color:rgba(255,92,87,.3); background:linear-gradient(180deg,rgba(255,92,87,.11),rgba(255,255,255,.015)); }
+.ins-map-step.action { border-color:rgba(124,135,255,.38); background:linear-gradient(180deg,rgba(124,135,255,.13),rgba(255,255,255,.015)); }
+.ins-map-foot { display:flex; justify-content:space-between; gap:20px; }
+
+/* sections */
+.ins-section { display:grid; grid-template-columns:minmax(0,1fr) minmax(330px,.62fr); gap:50px; align-items:center; }
+.ins-section-no { font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:15px; letter-spacing:.22em; color:var(--ins-accent2); }
+.ins-section-left { display:flex; flex-direction:column; gap:20px; align-items:flex-start; }
+.ins-section-left h1 { font-size:76px; }
+.ins-section-line { width:112px; height:2px; background:linear-gradient(90deg,var(--ins-accent),transparent); }
+.ins-section-question { position:relative; padding:24px 26px; font-size:21px; line-height:1.62; color:var(--ins-sub); }
+.ins-progress { position:absolute; left:68px; right:68px; bottom:42px; display:grid; grid-template-columns:repeat(4,1fr); gap:8px; }
+.ins-progress span { height:2px; border-radius:99px; background:#ffffff16; }
+.ins-progress span.on { background:linear-gradient(90deg,#7c87ff,#8ce2ff); }
+
+/* 05 event log */
+.ins-log { display:grid; grid-template-columns:minmax(0,.78fr) minmax(390px,1.22fr); gap:46px; }
+.ins-log-copy { display:flex; flex-direction:column; gap:20px; }
+.ins-log-copy h2 { font-size:37px; max-width:14em; }
+.ins-log-copy p { font-size:17px; line-height:1.58; }
+.ins-log-panel { padding:12px; }
+.ins-log-list { display:grid; }
+.ins-log-item { position:relative; display:grid; grid-template-columns:108px minmax(0,1fr) auto; gap:18px; align-items:center; padding:15px 11px; border-bottom:1px solid #ffffff0a; }
+.ins-log-item:last-child { border-bottom:0; }
+.ins-log-time { font-family:ui-monospace,monospace; font-size:12.5px; color:var(--ins-accent2); }
+.ins-log-item h3 { font-size:19px; }
+.ins-log-item p { margin-top:4px; font-size:14.5px; }
+.ins-log-badge { border-radius:99px; }
+
+/* 06 metrics bento */
+.ins-metrics { display:flex; flex-direction:column; gap:28px; }
+.ins-metrics-head { display:flex; justify-content:space-between; align-items:end; gap:25px; }
+.ins-metrics-head h2 { font-size:42px; max-width:17em; }
+.ins-metrics-grid { display:grid; grid-template-columns:minmax(0,1.18fr) minmax(300px,.82fr); gap:20px; flex:1; min-height:0; }
+.ins-metric-hero { padding:30px; display:flex; flex-direction:column; justify-content:space-between; overflow:hidden; }
+.ins-metric-hero .value { font-size:92px; line-height:.92; letter-spacing:-.055em; font-weight:450; }
+.ins-metric-hero .value small { display:block; margin-top:12px; font-size:17px; letter-spacing:0; color:var(--ins-sub); font-weight:400; }
+.ins-bars { display:flex; align-items:flex-end; gap:8px; height:82px; margin-top:28px; }
+.ins-bars span { flex:1; border-radius:5px 5px 2px 2px; background:linear-gradient(180deg,rgba(124,135,255,.85),rgba(124,135,255,.12)); }
+.ins-metric-side { display:grid; grid-template-rows:1fr 1fr; gap:20px; min-height:0; }
+.ins-metric-card { padding:23px 25px; display:flex; flex-direction:column; justify-content:center; gap:8px; }
+.ins-metric-card .value { font-size:40px; line-height:1; letter-spacing:-.04em; font-weight:500; }
+.ins-metric-card p { font-size:14.5px; }
+
+/* diagrams */
+.ins-diagram { display:grid; grid-template-columns:minmax(0,1.55fr) minmax(280px,.75fr); gap:28px; flex:1; min-height:0; }
+.ins-diagram h2 { font-size:37px; max-width:19em; margin-bottom:26px; }
+.ins-window { display:flex; flex-direction:column; min-width:0; min-height:0; overflow:hidden; }
+.ins-window-bar { min-height:37px; display:flex; align-items:center; gap:8px; padding:0 13px; border-bottom:1px solid var(--ins-line); background:rgba(255,255,255,.026); }
+.ins-window-bar i { width:7px; height:7px; border-radius:99px; background:#33363c; }
+.ins-window-bar span { margin-left:auto; font-family:ui-monospace,monospace; font-size:10.5px; color:var(--ins-dim); }
+.ins-window-body { flex:1; min-height:0; display:grid; place-items:center; padding:16px; }
+.ins-window-body svg { width:100%; height:100%; max-height:100%; }
+.ins-side { padding:25px; display:flex; flex-direction:column; gap:17px; }
+.ins-side b { display:block; font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.16em; color:var(--ins-accent2); }
+.ins-side ul { display:grid; gap:13px; list-style:none; }
+.ins-side li { position:relative; padding-left:18px; font-size:17px; line-height:1.55; }
+.ins-side li::before { content:''; position:absolute; left:0; top:.62em; width:7px; height:7px; border-radius:99px; background:var(--ins-accent); }
+.ins-side .caption { margin-top:auto; }
+
+/* quote */
+.ins-quote { display:flex; flex-direction:column; justify-content:center; gap:26px; }
+.ins-quote blockquote { max-width:29em; font-size:45px; line-height:1.22; font-weight:480; letter-spacing:-.035em; color:var(--ins-fg); }
+.ins-quote blockquote::before { content:''; display:block; width:84px; height:3px; margin-bottom:24px; background:linear-gradient(90deg,#7c87ff,#f472b6,#ffb86b); }
+.ins-quote-chips { display:flex; gap:12px; flex-wrap:wrap; }
+.ins-quote cite { font-style:normal; font-size:15px; color:var(--ins-dim); }
+
+/* comparison rows */
+.ins-review { display:flex; flex-direction:column; gap:30px; }
+.ins-review h2 { font-size:41px; max-width:17em; }
+.ins-review-list { display:grid; gap:14px; flex:1; justify-content:center; }
+.ins-review-item { display:grid; grid-template-columns:minmax(210px,.68fr) minmax(0,1.32fr); gap:22px; align-items:center; padding:20px 24px; }
+.ins-review-item .bad { font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.1em; color:#ffc9c6; }
+.ins-review-item h3 { font-size:20px; color:#ffc9c6; }
+.ins-review-item p { font-size:16.5px; line-height:1.55; }
+.ins-review-item .ok-line { position:absolute; left:0; top:14px; bottom:14px; width:2px; border-radius:99px; background:var(--ins-ok); }
+
+/* 12 paper terms */
+.ins-paper { background:var(--ins-paper); color:var(--ins-ink); }
+.ins-paper::after { content:none; }
+.ins-paper,.ins-paper h1,.ins-paper h2,.ins-paper h3,.ins-paper b,.ins-paper strong { color:var(--ins-ink); }
+.ins-paper p,.ins-paper li { color:#5e5d59; }
+.ins-paper .caption { color:#78766e; }
+.ins-paper-shell { position:absolute; inset:0; padding:58px 68px; display:flex; flex-direction:column; gap:31px; background:linear-gradient(135deg,#fffefb,#f5f2e8); }
+.ins-paper-head { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:30px; align-items:end; padding-bottom:20px; border-bottom:1px solid #ddd8c8; }
+.ins-paper-head h2 { font-family:Georgia,"Times New Roman","Songti SC",serif; font-size:43px; line-height:1.15; max-width:15em; }
+.ins-paper-kicker { font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.18em; color:#9a5b3f; }
+.ins-paper-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; flex:1; min-height:0; }
+.ins-paper-card { background:#fff; border:1px solid#e2ded0; border-radius:16px; padding:24px; box-shadow:0 14px 34px rgba(48,48,46,.06); display:flex; flex-direction:column; gap:12px; }
+.ins-paper-card .tag { font-family:ui-monospace,monospace; font-size:11.5px; color:#9a5b3f; }
+.ins-paper-card h3 { font-family:Georgia,"Songti SC",serif; font-size:23px; }
+.ins-paper-card p { font-size:16px; line-height:1.62; }
+.ins-paper-card small { margin-top:auto; font-size:12.5px; color:#78766e; }
+
+/* table */
+.ins-table { display:flex; flex-direction:column; gap:26px; }
+.ins-table h2 { font-size:38px; max-width:18em; }
+.ins-table-wrap { flex:1; min-height:0; padding:8px 10px 10px; overflow:hidden; }
+.ins-table table { width:100%; height:100%; border-collapse:collapse; table-layout:fixed; }
+.ins-table th { text-align:left; font-family:ui-monospace,monospace; font-size:11.5px; letter-spacing:.12em; color:var(--ins-dim); text-transform:uppercase; padding:12px 14px 10px; border-bottom:1px solid var(--ins-line2); }
+.ins-table td { padding:12px 14px; border-bottom:1px solid #ffffff0b; font-size:16.5px; line-height:1.5; color:var(--ins-sub); vertical-align:middle; }
+.ins-table tr:last-child td { border-bottom:0; }
+.ins-table td:first-child { color:var(--ins-fg); font-weight:550; }
+.ins-table .chip { display:inline-flex; padding:4px 8px; border-radius:99px; border:1px solid var(--ins-line); background:rgba(255,255,255,.035); font-family:ui-monospace,monospace; font-size:10.5px; letter-spacing:.08em; color:var(--ins-accent2); }
+.ins-table .chip.pre { color:#ffc9c6; border-color:rgba(255,92,87,.28); background:rgba(255,92,87,.07); }
+.ins-table .chip.hist { color:#ffe0b8; border-color:rgba(255,184,107,.28); background:rgba(255,184,107,.07); }
+
+/* two col */
+.ins-two { display:flex; flex-direction:column; gap:28px; }
+.ins-two h2 { font-size:42px; }
+.ins-two-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; flex:1; min-height:0; }
+.ins-two-card { padding:27px; display:flex; flex-direction:column; gap:17px; }
+.ins-two-card .tag { font-family:ui-monospace,monospace; font-size:12px; letter-spacing:.15em; }
+.ins-two-card.ok { border-color:rgba(74,222,128,.26); background:linear-gradient(180deg,rgba(74,222,128,.08),rgba(255,255,255,.015)); } .ins-two-card.ok .tag { color:var(--ins-ok); }
+.ins-two-card.no { border-color:rgba(255,92,87,.26); background:linear-gradient(180deg,rgba(255,92,87,.08),rgba(255,255,255,.015)); } .ins-two-card.no .tag { color:var(--ins-danger); }
+.ins-two-card ul { display:grid; gap:13px; list-style:none; }
+.ins-two-card li { position:relative; padding-left:20px; font-size:17px; line-height:1.58; }
+.ins-two-card.ok li::before { content:''; position:absolute; left:0; top:.62em; width:7px; height:7px; border-radius:99px; background:var(--ins-ok); }
+.ins-two-card.no li::before { content:''; position:absolute; left:0; top:.62em; width:7px; height:7px; border-radius:99px; background:var(--ins-danger); }
+
+/* end */
+.ins-end { display:grid; grid-template-columns:minmax(0,1fr) minmax(350px,.72fr); gap:48px; align-items:center; }
+.ins-end-copy { display:flex; flex-direction:column; align-items:flex-start; gap:23px; }
+.ins-end-copy h1 { font-size:52px; max-width:10em; }
+.ins-end-copy p { font-size:20px; line-height:1.58; max-width:28em; }
+.ins-end-panel { padding:20px; display:grid; gap:13px; }
+.ins-end-item { display:grid; grid-template-columns:auto minmax(0,1fr); gap:14px; align-items:start; padding:12px 14px; border:1px solid var(--ins-line); border-radius:10px; background:rgba(255,255,255,.025); }
+.ins-end-item i { width:9px; height:9px; margin-top:7px; border-radius:99px; background:var(--ins-ok); }
+.ins-end-item b { display:block; font-size:16px; color:var(--ins-fg); }
+.ins-end-item span { display:block; margin-top:3px; font-size:14.5px; color:var(--ins-dim); }
+.ins-end-foot { display:flex; justify-content:space-between; gap:20px; margin-top:auto; }
+
+/* Layout visibility must win over component display declarations. */
+body.inspire .slide { display:none !important; }
+body.inspire .slide.active { display:grid !important; }
+body.inspire .slide.active.ins-metrics,
+body.inspire .slide.active.ins-quote,
+body.inspire .slide.active.ins-review,
+body.inspire .slide.active.ins-table,
+body.inspire .slide.active.ins-two { display:flex !important; }
+
+/* responsive safety for fixed stage */
+@media (max-width:900px) { .ins-cover,.ins-claim,.ins-log,.ins-metrics-grid,.ins-diagram,.ins-paper-grid,.ins-two-grid,.ins-end { grid-template-columns:1fr; } }
+@media print {
+  .inspire .slide { background:transparent; }
+  .ins-paper-shell { position:absolute; inset:0; }
+  .ins-panel,.ins-table-wrap { break-inside:avoid; }
+}
+
+@media print {
+  body.inspire .slide { display:grid !important; }
+  body.inspire .slide.ins-metrics,
+  body.inspire .slide.ins-quote,
+  body.inspire .slide.ins-review,
+  body.inspire .slide.ins-table,
+  body.inspire .slide.ins-two { display:flex !important; }
+}
 </style>
 </head>
-<body>
+<body class="inspire">
 <div class="stage">
-  <section class="slide pat-cover cover-case">
-     <div class="cover-case-grid">
-      <div class="cover-case-copy">
-      <div class="pat-cover-kicker">AI SECURITY CASE BRIEF</div>
-      <h1>加密没被破解，隐藏思考为何被“转录”？</h1>
-      <p class="pat-cover-sub">OpenAI 指控与 Moonshot AI 相关个人参与模型蒸馏；本期只拆公开证据、技术机制与不能下的结论。</p>
-      <div class="pat-cover-meta">视频讲解 PPT · 2026-10-02</div>
+  <section class="slide ins-cover">
+    <div class="ins-cover-copy">
+      <div class="ins-kicker">MODEL SECURITY CASE / 2026-10</div>
+      <h1>加密没被破解，<br>隐藏思考为何被<em>“转录”</em>？</h1>
+      <p class="ins-cover-lead">OpenAI 指控与 Moonshot AI 相关个人参与模型蒸馏。我们不先站队，而是把公开证据、协议机制与归因边界拆开。</p>
+      <div class="ins-cover-meta">
+        <span class="ins-status">OPENAI DISCLOSURE</span>
+        <span class="ins-status">MECHANISM EXPLAINER</span>
+        <span class="ins-status warn">ATTRIBUTION UNPROVEN</span>
+      </div>
+      <div class="ins-spectrum" style="width:180px"></div>
     </div>
-    <div class="cover-case-badges">
-      <div class="pat-card case-badge fragment"><b>NO CRYPTO BREAK</b><span>OpenAI 称未破译加密</span></div>
-      <div class="pat-card case-badge fragment"><b>NO DATABASE BREACH</b><span>OpenAI 称未入侵数据库</span></div>
-      <div class="pat-card case-badge alert fragment"><b>CROSS-SESSION REPLAY</b><span>争议在推理块跨会话复用</span></div>
-      <div class="pat-card case-badge fragment"><b>ATTRIBUTION UNPROVEN</b><span>技术归因证据未公开</span></div>
-     </div>
-    </div>
-  </section>
-
-  <section class="slide pat-claim">
-    <div class="pat-claim-kicker">核心主张</div>
-    <h1>风险不在密码学破译，而在可复用推理块把交互变成泄露通道</h1>
-    <p class="pat-claim-action"><span>判断标准</span>先区分密码学失败、数据库入侵、协议工件复用与厂商归因</p>
-    <div class="pat-claim-anchors">
-      <div class="pat-card pat-claim-anchor fragment">OpenAI 称：未破译加密，也未入侵数据库</div>
-      <div class="pat-card pat-claim-anchor fragment">机制焦点：加密推理块跨会话被复用并转写</div>
-      <div class="pat-card pat-claim-anchor fragment">证据边界：归因技术证据未公开</div>
-    </div>
-  </section>
-
-  <section class="slide pat-narrative-map">
-    <h2>这期视频按四层拆解</h2>
-    <div class="pat-nm-grid">
-      <div class="pat-card pat-nm-item fragment"><span>事件</span><b>OpenAI 声称看到了什么</b></div>
-      <div class="pat-card pat-nm-item fragment"><span>机制</span><b>为什么加密没破也能复现</b></div>
-      <div class="pat-card pat-nm-item pat-nm-turn fragment"><span>证据</span><b>哪些归因结论不能下</b></div>
-      <div class="pat-card pat-nm-item pat-nm-action fragment"><span>启示</span><b>防护对象从答案转向轨迹</b></div>
-    </div>
-    <p class="caption">口径来源：OpenAI、CyberScoop、Anthropic、CISA 与 arXiv 预印本</p>
-  </section>
-
-  <section class="slide pat-section">
-    <div class="pat-section-no">01 / PART ONE</div>
-    <h1>事件事实</h1>
-    <div class="section-rule"></div>
-    <p class="section-question">OpenAI 到底声称观察到了什么？</p>
-  </section>
-
-  <section class="slide pat-timeline">
-    <h2>OpenAI 称：四周内从低量活动到完全处置</h2>
-    <div class="pat-tl-list">
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-01 · LOW ACTIVITY</div><h3>发现低量活动</h3><p>最早观察到提取保护推理的协同活动</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-24 / 25 · PEAK</div><h3>出现高量峰值</h3><p>1.6 万个相关请求，来自逾 4,000 用户</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">07-28 · BLOCKED</div><h3>处置关联簇</h3><p>相关用户簇超过 15,000，称已完全阻断</p></div>
-      <div class="pat-tl-item fragment"><div class="pat-tl-time">09-30 · PUBLIC</div><h3>公开披露</h3><p>说明机制、防御措施与归因判断</p></div>
-    </div>
-    <p class="caption">来源：OpenAI 官方披露，2026-09-30；全部为 OpenAI 口径</p>
-  </section>
-
-  <section class="slide pat-metrics">
-    <h2>规模足以构成产业级信号，但不是归因证明</h2>
-    <div class="pat-metrics-grid metric-hero">
-      <div class="pat-card pat-metric hero fragment"><div class="pat-metric-num">16,000<small> requests</small></div><div class="pat-metric-label">07-24 / 25 两天峰值：OpenAI 称符合相关提取模式的请求数</div></div>
-      <div class="metric-secondary">
-        <div class="pat-card pat-metric fragment"><div class="pat-metric-num">4,000<small>+ users</small></div><div class="pat-metric-label">峰值期间涉及用户</div></div>
-        <div class="pat-card pat-metric fragment"><div class="pat-metric-num">15,000<small>+ users</small></div><div class="pat-metric-label">后续识别的关联用户簇</div></div>
+    <div class="ins-panel ins-cover-console">
+      <div class="ins-console-bar"><i></i><i></i><i></i><span>security posture</span></div>
+      <div class="ins-cover-rows">
+        <div class="ins-cover-row fragment"><div><b>CRYPTOGRAPHIC BREAK</b><span>OpenAI 称未破译加密</span></div><span class="ins-status ok"><i></i>CLEAR</span></div>
+        <div class="ins-cover-row fragment"><div><b>DATABASE BREACH</b><span>OpenAI 称未入侵数据库</span></div><span class="ins-status ok"><i></i>CLEAR</span></div>
+        <div class="ins-cover-row fragment"><div><b>CROSS-SESSION REPLAY</b><span>加密推理块被跨会话复用</span></div><span class="ins-status alert"><i></i>RISK</span></div>
+        <div class="ins-cover-row fragment"><div><b>ATTRIBUTION EVIDENCE</b><span>技术归因证据未公开</span></div><span class="ins-status warn"><i></i>PENDING</span></div>
       </div>
     </div>
-    <p class="caption">来源：OpenAI，2026-09-30。请求数与用户数单位不同，不作同轴比较</p>
   </section>
 
-  <section class="slide pat-section">
-    <div class="pat-section-no">02 / PART TWO</div>
-    <h1>技术机制</h1>
-    <div class="section-rule"></div>
-    <p class="section-question">为什么加密没有被破解，内容还能被复现？</p>
-  </section>
-
-  <section class="slide pat-assertion">
-    <h2>加密推理块不是废料，而是任务续跑凭证</h2>
-    <div class="pat-ae-grid">
-      <figure class="pat-ae-visual fragment">
-        <svg viewBox="0 0 760 330" role="img" aria-label="加密推理块的正常生命周期：客户端请求模型，模型返回可见答案和加密推理块，客户端在下一轮同一会话回传该块以继续任务。">
-          <defs><marker id="arrow-normal" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="currentColor"/></marker></defs>
-          <g fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="24" y="72" width="178" height="104" rx="14" opacity=".62"/>
-            <rect x="286" y="40" width="188" height="82" rx="14" opacity=".55"/>
-            <rect x="286" y="148" width="188" height="94" rx="14" opacity=".95" stroke-width="3"/>
-            <rect x="558" y="72" width="178" height="104" rx="14" opacity=".62"/>
-            <path d="M211 124 L279 124" marker-end="url(#arrow-normal)"/>
-            <path d="M483 124 L551 124" marker-end="url(#arrow-normal)"/>
-          </g>
-          <g fill="currentColor" font-size="18" font-weight="700">
-            <text x="46" y="110">客户端请求</text><text x="306" y="74">可见答案</text><text x="306" y="184">加密推理块</text><text x="580" y="110">下一轮回传</text>
-          </g>
-          <g fill="currentColor" opacity=".75" font-size="14">
-            <text x="46" y="138">请求强模型</text><text x="46" y="160">继续同一任务</text>
-            <text x="306" y="100">用户可读结果</text><text x="306" y="214">协议可见轨迹</text><text x="306" y="236">用于续接上下文</text>
-            <text x="580" y="138">回到同一会话</text><text x="580" y="160">任务状态继续</text>
-          </g>
-          <g fill="none" stroke="#4fd1c5" stroke-width="2"><rect x="292" y="142" width="176" height="82" rx="12" opacity=".8"/></g>
-        </svg>
-        <figcaption>正常协议路径：推理块被返回，是为了让客户端下一轮续跑任务</figcaption>
-      </figure>
-      <aside class="pat-card pat-ae-side fragment">
-        <b>理解关键</b>
-        <ul>
-          <li>它不是给人阅读的密文</li>
-          <li>更像可回放的会话凭证</li>
-          <li>安全边界在于绑定会话、用户与模型</li>
-        </ul>
-        <p class="caption">来源：arXiv:2608.09867 作者描述；OpenAI 官方披露</p>
-      </aside>
+  <section class="slide ins-claim">
+    <div class="ins-claim-copy">
+      <div class="ins-kicker">CORE CLAIM</div>
+      <h1>风险不在密码学破译，而在可复用推理块把交互变成泄露通道</h1>
+      <p>加密推理块的功能类似任务续跑凭证。真正要问的是：它是否绑定会话、用户与模型？如果可以跨边界复用，协议边界就成为安全边界。</p>
+    </div>
+    <div class="ins-claim-list">
+      <div class="ins-panel ins-claim-item fragment"><span class="num">01</span><p>OpenAI 称：未破译加密，也未入侵数据库</p></div>
+      <div class="ins-panel ins-claim-item span fragment"><span class="num">02</span><p>机制焦点：加密推理块跨会话被复用并转写</p></div>
+      <div class="ins-panel ins-claim-item fragment"><span class="num">03</span><p>证据边界：归因技术证据未公开</p></div>
     </div>
   </section>
 
-  <section class="slide pat-assertion">
-    <h2>关键差异：同一会话续跑，变成跨会话复用</h2>
-    <div class="pat-ae-grid">
-      <figure class="pat-ae-visual fragment">
-        <svg viewBox="0 0 760 390" role="img" aria-label="正常路径与风险路径对比：正常路径中加密推理块回到同一会话续跑任务；风险路径中推理块被复制到另一个会话，由模型交互转写为明文推理。示意图不提供操作方法。">
-          <defs><marker id="arrow-compare" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="currentColor"/></marker></defs>
-          <g fill="none" stroke="#4fd1c5" stroke-width="2">
-            <rect x="25" y="34" width="180" height="70" rx="12"/><rect x="290" y="34" width="180" height="70" rx="12"/><rect x="555" y="34" width="180" height="70" rx="12"/>
-            <path d="M210 69 L283 69" marker-end="url(#arrow-compare)"/><path d="M475 69 L548 69" marker-end="url(#arrow-compare)"/>
-          </g>
-          <g fill="#4fd1c5" font-size="15" font-weight="700"><text x="45" y="60">会话 A</text><text x="310" y="60">加密推理块</text><text x="575" y="60">同一会话回传</text></g>
-          <g fill="currentColor" opacity=".68" font-size="13"><text x="45" y="84">任务继续</text><text x="310" y="84">正常续跑凭证</text><text x="575" y="84">授权边界内</text></g>
-          <g fill="none" stroke="#ff7a70" stroke-width="2">
-            <rect x="25" y="175" width="180" height="82" rx="12"/><rect x="290" y="160" width="180" height="112" rx="12"/><rect x="555" y="175" width="180" height="82" rx="12"/><rect x="290" y="305" width="445" height="55" rx="12"/>
-            <path d="M210 216 L283 216" marker-end="url(#arrow-compare)"/><path d="M475 216 L548 216" marker-end="url(#arrow-compare)"/><path d="M640 262 L640 296" marker-end="url(#arrow-compare)"/>
-          </g>
-          <g fill="#ff9f97" font-size="15" font-weight="700"><text x="45" y="204">复制推理块</text><text x="310" y="190">会话 B / 另一模型</text><text x="575" y="204">请求模型交互</text><text x="310" y="339">明文推理被复现</text></g>
-          <g fill="currentColor" opacity=".70" font-size="13"><text x="45" y="228">离开原授权边界</text><text x="310" y="216">不是破解密钥</text><text x="310" y="238">不是入侵数据库</text><text x="575" y="228">转写隐藏轨迹</text></g>
-          <g fill="none" stroke="#ffb86b" stroke-width="2"><rect x="270" y="145" width="220" height="145" rx="14" opacity=".8"/></g>
-          <g fill="#ffb86b" font-size="13" font-weight="700"><text x="289" y="136">缺口：会话 / 用户 / 模型绑定不足</text></g>
-        </svg>
-        <figcaption>机制示意图；只解释边界差异，不提供可操作提示词</figcaption>
-      </figure>
-      <aside class="pat-card pat-ae-side fragment">
-        <b>读图路径</b>
-        <ul>
-          <li>上排：正常续跑，不暴露明文</li>
-          <li>下排：跨会话复用，触发转写</li>
-          <li>结论：保护的是使用轨迹，不只是答案</li>
-        </ul>
-        <p class="caption">来源：OpenAI，2026-09-30；机制背景 arXiv:2608.09867，预印本</p>
-      </aside>
+  <section class="slide ins-map">
+    <div class="ins-map-head">
+      <div>
+        <div class="ins-kicker">READING PATH</div>
+        <h2>这期视频按四层拆解</h2>
+      </div>
+      <span class="ins-status">EVIDENCE-FIRST</span>
+    </div>
+    <div class="ins-map-route">
+      <div class="ins-panel ins-map-step fragment"><span class="no">01</span><h3>事件</h3><p>OpenAI 声称看到了什么</p></div>
+      <div class="ins-panel ins-map-step hot fragment"><span class="no">02</span><h3>机制</h3><p>为什么加密没破也能复现</p></div>
+      <div class="ins-panel ins-map-step fragment"><span class="no">03</span><h3>证据</h3><p>哪些归因结论不能下</p></div>
+      <div class="ins-panel ins-map-step action fragment"><span class="no">04</span><h3>启示</h3><p>防护从答案转向轨迹</p></div>
+    </div>
+    <div class="ins-map-foot">
+      <span class="ins-label">Sources</span>
+      <span class="caption">OpenAI · CyberScoop · arXiv · Anthropic · CISA</span>
     </div>
   </section>
 
-  <section class="slide pat-quote quote-boundary">
+  <section class="slide ins-section">
+    <div class="ins-section-left">
+      <div class="ins-section-no">PART 01</div>
+      <h1>事件事实</h1>
+      <div class="ins-section-line"></div>
+    </div>
+    <div class="ins-panel ins-section-question">
+      OpenAI 到底声称观察到了什么？规模说明严重性，但不自动证明归因。
+    </div>
+    <div class="ins-progress"><span class="on"></span><span></span><span></span><span></span></div>
+  </section>
+
+  <section class="slide ins-log">
+    <div class="ins-log-copy">
+      <div class="ins-kicker">EVENT LOG</div>
+      <h2>OpenAI 称：四周内从低量活动到完全处置</h2>
+      <p>以下时间线全部采用 OpenAI 官方口径。它描述观察与处置过程，不等于第三方已验证的技术归因。</p>
+      <div class="ins-spectrum" style="width:140px"></div>
+    </div>
+    <div class="ins-panel ins-log-panel">
+      <div class="ins-log-list">
+        <div class="ins-log-item fragment"><span class="ins-log-time">07-01</span><div><h3>发现低量活动</h3><p>最早观察到提取保护推理的协同活动</p></div><span class="ins-status">LOW</span></div>
+        <div class="ins-log-item fragment"><span class="ins-log-time">07-24/25</span><div><h3>出现高量峰值</h3><p>16,000 个相关请求，来自逾 4,000 用户</p></div><span class="ins-status alert">PEAK</span></div>
+        <div class="ins-log-item fragment"><span class="ins-log-time">07-28</span><div><h3>处置关联簇</h3><p>相关用户簇超过 15,000，称已完全阻断</p></div><span class="ins-status ok">BLOCKED</span></div>
+        <div class="ins-log-item fragment"><span class="ins-log-time">09-30</span><div><h3>公开披露</h3><p>说明机制、防御措施与归因判断</p></div><span class="ins-status">PUBLIC</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide ins-metrics">
+    <div class="ins-metrics-head">
+      <div>
+        <div class="ins-kicker">SCALE SIGNAL</div>
+        <h2>规模足以构成产业级信号，但不是归因证明</h2>
+      </div>
+      <span class="ins-status">OPENAI-REPORTED</span>
+    </div>
+    <div class="ins-metrics-grid">
+      <div class="ins-panel ins-metric-hero fragment">
+        <div>
+          <div class="ins-label">PEAK REQUESTS / 07-24–25</div>
+          <div class="value">16,000<small>符合 OpenAI 所称相关提取模式的请求</small></div>
+        </div>
+        <div class="ins-bars"><span style="height:18%"></span><span style="height:28%"></span><span style="height:20%"></span><span style="height:82%"></span><span style="height:100%"></span><span style="height:67%"></span><span style="height:38%"></span><span style="height:24%"></span></div>
+      </div>
+      <div class="ins-metric-side">
+        <div class="ins-panel ins-metric-card fragment"><div class="ins-label">PEAK USERS</div><div class="value">4,000+</div><p>峰值期间涉及用户</p></div>
+        <div class="ins-panel ins-metric-card fragment"><div class="ins-label">LINKED CLUSTER</div><div class="value">15,000+</div><p>后续识别的关联用户簇</p></div>
+      </div>
+    </div>
+    <p class="caption">来源：OpenAI，2026-09-30。请求数与用户数单位不同，不作同轴比较；示意图不表示逐日真实分布。</p>
+  </section>
+
+  <section class="slide ins-section">
+    <div class="ins-section-left">
+      <div class="ins-section-no">PART 02</div>
+      <h1>技术机制</h1>
+      <div class="ins-section-line"></div>
+    </div>
+    <div class="ins-panel ins-section-question">
+      为什么加密没有被破解，隐藏内容还是可能被复现？
+    </div>
+    <div class="ins-progress"><span class="on"></span><span class="on"></span><span></span><span></span></div>
+  </section>
+
+  <section class="slide ins-diagram">
+    <div style="display:flex;flex-direction:column;min-height:0">
+      <div class="ins-kicker">PROTOCOL BACKGROUND</div>
+      <h2>加密推理块不是废料，而是任务续跑凭证</h2>
+      <div class="ins-panel ins-window" style="flex:1">
+        <div class="ins-window-bar"><i></i><i></i><i></i><span>normal lifecycle</span></div>
+        <div class="ins-window-body">
+          <svg viewBox="0 0 760 310" role="img" aria-label="客户端请求模型，模型返回可见答案和加密推理块；客户端下一轮在同一会话回传该块以继续任务。">
+            <defs><marker id="ia" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a8aeb7"/></marker></defs>
+            <g fill="none" stroke="#ffffff30" stroke-width="1.5">
+              <rect x="22" y="62" width="185" height="112" rx="12"/><rect x="288" y="27" width="184" height="82" rx="12"/><rect x="288" y="144" width="184" height="96" rx="12"/><rect x="553" y="62" width="185" height="112" rx="12"/>
+              <path d="M214 118 L280 118" marker-end="url(#ia)"/><path d="M483 118 L545 118" marker-end="url(#ia)"/>
+            </g>
+            <g fill="#f7f8f8" font-size="18" font-weight="600"><text x="43" y="99">客户端请求</text><text x="307" y="62">可见答案</text><text x="307" y="181">加密推理块</text><text x="574" y="99">下一轮回传</text></g>
+            <g fill="#a8aeb7" font-size="14"><text x="43" y="128">继续同一任务</text><text x="43" y="152">需要上下文状态</text><text x="307" y="89">用户可读结果</text><text x="307" y="212">协议可见轨迹</text><text x="307" y="236">用于续接上下文</text><text x="574" y="128">回到同一会话</text><text x="574" y="152">任务继续</text></g>
+            <g fill="none" stroke="#7c87ff" stroke-width="2"><rect x="285" y="141" width="190" height="102" rx="12" opacity=".9"/></g>
+            <g fill="#8ce2ff" font-size="12" font-family="monospace"><text x="288" y="130">CONTINUATION TOKEN</text></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <aside class="ins-panel ins-side fragment">
+      <b>READ IT AS</b>
+      <ul>
+        <li>它不是给人阅读的密文</li>
+        <li>更像可回放的会话凭证</li>
+        <li>安全边界在会话、用户、模型绑定</li>
+      </ul>
+      <p class="caption">来源：arXiv:2608.09867 作者描述；OpenAI 官方披露</p>
+    </aside>
+  </section>
+
+  <section class="slide ins-diagram">
+    <div style="display:flex;flex-direction:column;min-height:0">
+      <div class="ins-kicker">ATTACK SURFACE</div>
+      <h2>关键差异：同一会话续跑，变成跨会话复用</h2>
+      <div class="ins-panel ins-window" style="flex:1">
+        <div class="ins-window-bar"><i></i><i></i><i></i><span>normal vs replay</span></div>
+        <div class="ins-window-body">
+          <svg viewBox="0 0 760 390" role="img" aria-label="正常路径中加密推理块回到同一会话；风险路径中推理块被复制到另一个会话，由模型交互转写为明文推理。示意图不提供操作方法。">
+            <defs><marker id="ib" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#a8aeb7"/></marker></defs>
+            <g fill="none" stroke="#4ade8070" stroke-width="1.5"><rect x="24" y="30" width="184" height="72" rx="11"/><rect x="288" y="30" width="184" height="72" rx="11"/><rect x="552" y="30" width="184" height="72" rx="11"/><path d="M214 66 L280 66" marker-end="url(#ib)"/><path d="M478 66 L544 66" marker-end="url(#ib)"/></g>
+            <g fill="#b8f7ce" font-size="14" font-family="monospace"><text x="42" y="56">SESSION A</text><text x="306" y="56">ENCRYPTED TRACE</text><text x="570" y="56">SAME SESSION</text></g>
+            <g fill="#a8aeb7" font-size="13"><text x="42" y="83">task request</text><text x="306" y="83">continuation token</text><text x="570" y="83">authorized replay</text></g>
+            <g fill="none" stroke="#ff5c5770" stroke-width="1.5"><rect x="24" y="170" width="184" height="82" rx="11"/><rect x="288" y="153" width="184" height="116" rx="11"/><rect x="552" y="170" width="184" height="82" rx="11"/><rect x="288" y="305" width="448" height="56" rx="11"/><path d="M214 211 L280 211" marker-end="url(#ib)"/><path d="M478 211 L544 211" marker-end="url(#ib)"/><path d="M635 259 L635 296" marker-end="url(#ib)"/></g>
+            <g fill="#ffc9c6" font-size="14" font-family="monospace"><text x="42" y="197">COPY TOKEN</text><text x="306" y="181">SESSION B</text><text x="570" y="197">MODEL INTERACTION</text><text x="306" y="339">PLAINTEXT TRACE RECOVERED</text></g>
+            <g fill="#a8aeb7" font-size="13"><text x="42" y="223">leaves boundary</text><text x="306" y="209">no key break</text><text x="306" y="231">no db breach</text><text x="570" y="223">transcribe trace</text></g>
+            <g fill="none" stroke="#ffb86b" stroke-width="1.5"><rect x="271" y="139" width="218" height="147" rx="13" opacity=".9"/></g>
+            <g fill="#ffb86b" font-size="12" font-family="monospace"><text x="283" y="130">BINDING GAP</text></g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <aside class="ins-panel ins-side fragment">
+      <b>INTERPRETATION</b>
+      <ul>
+        <li>上排：正常续跑，不暴露明文</li>
+        <li>下排：跨会话复用，触发转写</li>
+        <li>保护对象是使用轨迹，不只是答案</li>
+      </ul>
+      <p class="caption">机制示意；不提供可操作提示词。来源：OpenAI，2026-09-30；arXiv 预印本</p>
+    </aside>
+  </section>
+
+  <section class="slide ins-quote">
+    <div class="ins-kicker">OFFICIAL BOUNDARY</div>
     <blockquote>“没有破译加密、入侵数据库，或直接访问存储的用户会话。”</blockquote>
-    <div class="quote-chips">
-      <span class="quote-chip fragment">NOT CRYPTO BREAK</span>
-      <span class="quote-chip fragment">NOT DB BREACH</span>
-      <span class="quote-chip fragment">NOT STORED-CHAT ACCESS</span>
+    <div class="ins-quote-chips">
+      <span class="ins-status ok fragment"><i></i>NOT CRYPTO BREAK</span>
+      <span class="ins-status ok fragment"><i></i>NOT DB BREACH</span>
+      <span class="ins-status ok fragment"><i></i>NOT STORED-CHAT ACCESS</span>
     </div>
     <cite>— OpenAI 对本次活动的边界说明，2026-09-30</cite>
   </section>
 
-  <section class="slide pat-table dense">
+  <section class="slide ins-review">
+    <div class="ins-kicker">MISREADING GUARD</div>
     <h2>三个高频误解，先从机制上拆掉</h2>
-    <table>
-      <thead><tr><th>误解</th><th>更准确的口径</th><th>为什么重要</th></tr></thead>
-      <tbody>
-        <tr class="fragment"><td>“加密算法被破解”</td><td>OpenAI 称未破译加密，争议在交互转写</td><td>避免把协议风险误写成密码学失败</td></tr>
-        <tr class="fragment"><td>“入侵了数据库”</td><td>OpenAI 称未入侵数据库、未读存储会话</td><td>区分在线交互与存储泄露</td></tr>
-        <tr class="fragment"><td>“蒸馏必然非法”</td><td>蒸馏是常见训练方法，争议在授权与条款</td><td>区分技术方法、合同限制与法律结论</td></tr>
-      </tbody>
-    </table>
-    <p class="caption">来源：OpenAI 官方披露与公开条款；法律结论仍需司法或监管认定</p>
-  </section>
-
-  <section class="slide">
-    <h2>OpenAI 的指控落在条款边界，而不是司法结论</h2>
-    <div class="term-grid">
-      <div class="pat-card term-card fragment"><b>自动化提取</b><p>Terms of Use 禁止自动或程序化提取数据或 Output。</p><small>OpenAI Terms of Use，2026-01-01 生效</small></div>
-      <div class="pat-card term-card fragment"><b>竞争模型开发</b><p>禁止使用 Output 开发与 OpenAI 竞争的模型；Business Terms §3.3 亦有限制。</p><small>OpenAI Terms of Use / Business Terms §3.3(e)</small></div>
-      <div class="pat-card term-card fragment"><b>绕过保护</b><p>禁止绕过速率限制、限制、保护措施或安全缓解。</p><small>Business Terms §3.3(h)–(i)</small></div>
+    <div class="ins-review-list">
+      <div class="ins-panel ins-review-item fragment"><div><div class="bad">MISREAD 01</div><h3>加密算法被破解</h3></div><p>更准确：OpenAI 称未破译加密；争议在模型交互中的复用与转写。</p></div>
+      <div class="ins-panel ins-review-item fragment"><div><div class="bad">MISREAD 02</div><h3>入侵了数据库</h3></div><p>更准确：OpenAI 称未入侵数据库、未直接读取存储会话。</p></div>
+      <div class="ins-panel ins-review-item fragment"><div><div class="bad">MISREAD 03</div><h3>蒸馏必然非法</h3></div><p>更准确：蒸馏是常见训练方法；争议在授权、条款与数据来源。</p></div>
     </div>
-    <p class="caption">条款违约、技术违规与法律责任不能互相替代；本页不构成法律意见</p>
   </section>
 
-  <section class="slide pat-section">
-    <div class="pat-section-no">03 / PART THREE</div>
-    <h1>证据边界</h1>
-    <div class="section-rule"></div>
-    <p class="section-question">哪些结论现在还不能下？</p>
+  <section class="slide ins-paper">
+    <div class="ins-paper-shell">
+      <div class="ins-paper-head">
+        <div>
+          <div class="ins-paper-kicker">TERMS BOUNDARY</div>
+          <h2>OpenAI 的指控落在条款边界，而不是司法结论</h2>
+        </div>
+        <span class="ins-status warn">NOT LEGAL ADVICE</span>
+      </div>
+      <div class="ins-paper-grid">
+        <div class="ins-paper-card fragment"><span class="tag">AUTOMATED EXTRACTION</span><h3>程序化提取</h3><p>Terms of Use 禁止自动或程序化提取数据或 Output。</p><small>OpenAI Terms of Use，2026-01-01 生效</small></div>
+        <div class="ins-paper-card fragment"><span class="tag">COMPETING MODEL</span><h3>竞争模型开发</h3><p>禁止使用 Output 开发与 OpenAI 竞争的模型；Business Terms §3.3(e) 亦有限制。</p><small>OpenAI Business Terms §3.3(e)</small></div>
+        <div class="ins-paper-card fragment"><span class="tag">PROTECTION BYPASS</span><h3>绕过保护</h3><p>禁止绕过速率限制、保护措施或安全缓解。</p><small>OpenAI Business Terms §3.3(h)–(i)</small></div>
+      </div>
+      <p class="caption">条款违约、技术违规与法律责任不能互相替代；本页不构成法律意见。</p>
+    </div>
   </section>
 
-  <section class="slide pat-table dense">
+  <section class="slide ins-section">
+    <div class="ins-section-left">
+      <div class="ins-section-no">PART 03</div>
+      <h1>证据边界</h1>
+      <div class="ins-section-line"></div>
+    </div>
+    <div class="ins-panel ins-section-question">
+      哪些结论现在还不能下？公开材料支持机制叙述，不等于支持全部归因。
+    </div>
+    <div class="ins-progress"><span class="on"></span><span class="on"></span><span class="on"></span><span></span></div>
+  </section>
+
+  <section class="slide ins-table">
+    <div class="ins-kicker">EVIDENCE MATRIX</div>
     <h2>五类材料支持机制叙述，不足以证明全部归因</h2>
-    <table>
-      <thead><tr><th>材料</th><th>性质</th><th>能支持</th><th>不能支持</th></tr></thead>
-      <tbody>
-        <tr class="fragment"><td>OpenAI 官方</td><td><span class="source-chip">OFFICIAL</span></td><td>观察规模、处置过程与归因判断</td><td>不能替代未公开技术证据</td></tr>
-        <tr class="fragment"><td>CyberScoop</td><td><span class="source-chip">MEDIA</span></td><td>指出证据缺口、Moonshot 待回应</td><td>不能补充厂商内部证据</td></tr>
-        <tr class="fragment"><td>arXiv 论文</td><td><span class="source-chip preprint">PREPRINT</span></td><td>解释跨会话复用机制可能性</td><td>未经同行评审，不是事件定论</td></tr>
-        <tr class="fragment"><td>Anthropic</td><td><span class="source-chip historical">HISTORICAL</span></td><td>提供历史指控与同类风险背景</td><td>不能证明本次归因成立</td></tr>
-        <tr class="fragment"><td>CISA / NSA / FBI</td><td><span class="source-chip historical">ADVISORY</span></td><td>提供政府口径与防御建议</td><td>不能替代本次技术证据</td></tr>
-      </tbody>
-    </table>
+    <div class="ins-panel ins-table-wrap">
+      <table>
+        <thead><tr><th style="width:17%">Material</th><th style="width:16%">Type</th><th style="width:34%">Supports</th><th style="width:33%">Cannot support</th></tr></thead>
+        <tbody>
+          <tr class="fragment"><td>OpenAI</td><td><span class="chip">OFFICIAL</span></td><td>观察规模、处置过程与归因判断</td><td>不能替代未公开技术证据</td></tr>
+          <tr class="fragment"><td>CyberScoop</td><td><span class="chip">MEDIA</span></td><td>指出证据缺口、Moonshot 待回应</td><td>不能补充厂商内部证据</td></tr>
+          <tr class="fragment"><td>arXiv</td><td><span class="chip pre">PREPRINT</span></td><td>解释跨会话复用机制可能性</td><td>未经同行评审，不是事件定论</td></tr>
+          <tr class="fragment"><td>Anthropic</td><td><span class="chip hist">HISTORICAL</span></td><td>提供历史指控与同类风险背景</td><td>不能证明本次归因成立</td></tr>
+          <tr class="fragment"><td>CISA</td><td><span class="chip hist">ADVISORY</span></td><td>提供政府口径与防御建议</td><td>不能替代本次技术证据</td></tr>
+        </tbody>
+      </table>
+    </div>
     <p class="caption">来源：OpenAI、CyberScoop、arXiv:2608.09867、Anthropic、CISA，2026-02 至 2026-09</p>
   </section>
 
-  <section class="slide pat-two-col">
+  <section class="slide ins-two">
+    <div class="ins-kicker">BROADCAST GUARDRAIL</div>
     <h2>录制口径必须分成两栏</h2>
-    <div class="pat-two-col-grid">
-      <div class="pat-card pat-two-col-card fragment">
-        <div class="pat-two-col-tag">可以讲</div>
-        <h3>公开材料已支持</h3>
-        <ul><li>OpenAI 称观察到提取模式</li><li>其称未破译加密或入侵数据库</li><li>其将核心簇关联到 Moonshot 相关个人</li></ul>
-      </div>
-      <div class="pat-card pat-two-col-card fragment">
-        <div class="pat-two-col-tag">不能讲</div>
-        <h3>仍缺公开证明</h3>
-        <ul><li>“Moonshot 已主使本次攻击”</li><li>“所有活动同源或同属一个组织”</li><li>“加密算法已经被攻破”</li></ul>
-      </div>
+    <div class="ins-two-grid">
+      <div class="ins-panel ins-two-card ok fragment"><span class="tag">CAN SAY</span><h3>公开材料已支持</h3><ul><li>OpenAI 称观察到提取模式</li><li>其称未破译加密或入侵数据库</li><li>其将核心簇关联到 Moonshot 相关个人</li></ul></div>
+      <div class="ins-panel ins-two-card no fragment"><span class="tag">CANNOT SAY</span><h3>仍缺公开证明</h3><ul><li>“Moonshot 已主使本次攻击”</li><li>“所有活动同源或同属一个组织”</li><li>“加密算法已经被攻破”</li></ul></div>
     </div>
   </section>
 
-  <section class="slide pat-section">
-    <div class="pat-section-no">04 / PART FOUR</div>
-    <h1>防御与启示</h1>
-    <div class="section-rule"></div>
-    <p class="section-question">防线应该建在哪一层？</p>
+  <section class="slide ins-section">
+    <div class="ins-section-left">
+      <div class="ins-section-no">PART 04</div>
+      <h1>防御与启示</h1>
+      <div class="ins-section-line"></div>
+    </div>
+    <div class="ins-panel ins-section-question">
+      如果推理块是可复用资产，防线应该建在哪一层？
+    </div>
+    <div class="ins-progress"><span class="on"></span><span class="on"></span><span class="on"></span><span class="on"></span></div>
   </section>
 
-  <section class="slide pat-table dense">
+  <section class="slide ins-table">
+    <div class="ins-kicker">DEFENSE MATRIX</div>
     <h2>防御不是单点拦截，而是逐层压缩攻击面</h2>
-    <table>
-      <thead><tr><th>防御层</th><th>主要压制什么</th><th>残留局限</th></tr></thead>
-      <tbody>
-        <tr class="fragment"><td>账号治理</td><td>批量欺诈账号与重复滥用</td><td>攻击者可更换账号或身份</td></tr>
-        <tr class="fragment"><td>注册控制</td><td>降低低成本批量进入</td><td>可能影响正常用户接入</td></tr>
-        <tr class="fragment"><td>推理绑定</td><td>跨会话 / 用户 / 模型复用</td><td>需兼容续跑与生态移植</td></tr>
-        <tr class="fragment"><td>输出检测</td><td>可疑明文转写与流式暴露</td><td>存在误报、延迟与绕过</td></tr>
-        <tr class="fragment"><td>伙伴协同</td><td>第三方服务、代理与云部署</td><td>依赖跨组织情报共享</td></tr>
-      </tbody>
-    </table>
+    <div class="ins-panel ins-table-wrap">
+      <table>
+        <thead><tr><th style="width:19%">Layer</th><th style="width:38%">Suppresses</th><th style="width:43%">Residual limit</th></tr></thead>
+        <tbody>
+          <tr class="fragment"><td>账号治理</td><td>批量欺诈账号与重复滥用</td><td>攻击者可更换账号或身份</td></tr>
+          <tr class="fragment"><td>注册控制</td><td>降低低成本批量进入</td><td>可能影响正常用户接入</td></tr>
+          <tr class="fragment"><td>推理绑定</td><td>跨会话 / 用户 / 模型复用</td><td>需兼容续跑与生态移植</td></tr>
+          <tr class="fragment"><td>输出检测</td><td>可疑明文转写与流式暴露</td><td>存在误报、延迟与绕过</td></tr>
+          <tr class="fragment"><td>伙伴协同</td><td>第三方服务、代理与云部署</td><td>依赖跨组织情报共享</td></tr>
+        </tbody>
+      </table>
+    </div>
     <p class="caption">按 OpenAI 公开响应归纳；不是完整安全架构建议</p>
   </section>
 
-  <section class="slide pat-end">
-    <h1>先核实，再归因</h1>
-    <div class="end-evidence">
-      <p class="end-takeaway">当隐藏推理成为可复用资产，保护对象必须从<b>答案内容</b>扩展到<b>推理工件的使用轨迹</b>。</p>
-      <div class="end-checklist">
-        <div class="pat-card fragment"><b>协议层</b>推理块是否绑定会话、用户与模型？</div>
-        <div class="pat-card fragment"><b>日志层</b>是否误把可回放推理块写入共享日志？</div>
-        <div class="pat-card fragment"><b>生态层</b>第三方代理与伙伴部署是否继承防护？</div>
-      </div>
+  <section class="slide ins-end">
+    <div class="ins-end-copy">
+      <div class="ins-kicker">TAKEAWAY</div>
+      <h1>先核实，再归因</h1>
+      <p>当隐藏推理成为可复用资产，保护对象必须从<b>答案内容</b>扩展到<b>推理工件的使用轨迹</b>。</p>
+      <div class="ins-spectrum" style="width:180px"></div>
     </div>
-    <div class="pat-end-links"><span>发布前：Moonshot 回应</span><span>条款原文</span><span>可验证技术证据</span></div>
+    <div class="ins-panel ins-end-panel">
+      <div class="ins-end-item fragment"><i></i><div><b>协议层</b><span>推理块是否绑定会话、用户与模型？</span></div></div>
+      <div class="ins-end-item fragment"><i></i><div><b>日志层</b><span>是否误把可回放推理块写入共享日志？</span></div></div>
+      <div class="ins-end-item fragment"><i></i><div><b>生态层</b><span>第三方代理与伙伴部署是否继承防护？</span></div></div>
+      <div class="ins-end-foot"><span class="ins-label">PRE-PUBLISH</span><span class="caption">Moonshot 回应 · 条款原文 · 技术证据</span></div>
+    </div>
   </section>
 </div>
 <script>
