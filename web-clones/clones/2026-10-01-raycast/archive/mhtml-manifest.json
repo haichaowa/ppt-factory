@@ -1,0 +1,587 @@
+{
+  "source": "https://www.raycast.com/",
+  "subject": "Raycast - Your shortcut to everything",
+  "snapshotDate": "Thu, 1 Oct 2026 09:24:01 +0800",
+  "inventoryGeneratedAt": "2026-10-01T01:24:38.743778+00:00",
+  "mhtmlBytes": 2885868,
+  "mhtmlSha256": "42206c680d69245713ac98cb4277e3eb82b11f334a0be2ff1b6ad4c160db63cb",
+  "partCountIncludingMultipart": 72,
+  "resourcePartCount": 71,
+  "decodedResourceBytes": 2335433,
+  "contentTypeCounts": {
+    "image/jpeg": 18,
+    "image/webp": 41,
+    "text/css": 11,
+    "text/html": 1
+  },
+  "parts": [
+    {
+      "index": 1,
+      "contentType": "text/html",
+      "contentLocation": "https://www.raycast.com/",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 522235,
+      "sha256": "e77b3c6786ef45f9bc4e9f235fe4ce7590a21a6e0e55f851b3a382763751b917"
+    },
+    {
+      "index": 2,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/oy8jtxl7c2I/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 22360,
+      "sha256": "505aba8adaa0a4faf80237cea89059fb35f6169bb9154101bb74f2c1ae66d5c1"
+    },
+    {
+      "index": 3,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/9KvmDCy23g0/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 15715,
+      "sha256": "c145cf94fd019d0dfaf52ce23e3bdb86e03b67dd822d22edda075b5578f8acaf"
+    },
+    {
+      "index": 4,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/UUPStiOLKlU/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 25685,
+      "sha256": "4e11059fac2e68c44264a3c3ca2b8454ac5a04caeb3131541b33f41ae9929b1f"
+    },
+    {
+      "index": 5,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/Xc262WTsZoU/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 19723,
+      "sha256": "10e6f18adc27892944d3e240a76b59cf574bfa15de6761d52dfe098cebec30b9"
+    },
+    {
+      "index": 6,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/OHuLnaY7Nxs/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 19503,
+      "sha256": "ddb0cad8916243e498e4dfc69c28ff6792892b82ca25acbae18633bee6565169"
+    },
+    {
+      "index": 7,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/RFwumqHLc8Y/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 11558,
+      "sha256": "fbc8c3b62ac8bace231d21e8b7c1f6c78a77e639609c9f8bdbcd2d05dcad25b4"
+    },
+    {
+      "index": 8,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/_P1b00n12PU/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 14745,
+      "sha256": "598e2a326d9d056d9b0855501501fab6e5fbc12efe211eee316cfe0ab2f13228"
+    },
+    {
+      "index": 9,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/4Hi21ZpdrOc/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 16412,
+      "sha256": "e5ddc2cb93b192b2889b4d3af28413afeb33abb703932292c5bcde0936fa5275"
+    },
+    {
+      "index": 10,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/m5MDv9qwhU8/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 16883,
+      "sha256": "a78d29c9bad3d89f357326cb47bf257b20d86507c5ba9010938736806ba5119b"
+    },
+    {
+      "index": 11,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/_DxukQdW1yg/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 22303,
+      "sha256": "a909ff8d76602e39552d304edc766c200d6aaaf6bd176842809345c5c7f8f5e4"
+    },
+    {
+      "index": 12,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/HDQIvbLCF7Y/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 20673,
+      "sha256": "f8c984665510fc9216eb314d1418c2523e1b5d3382768250da8f1e4d7a8f7f32"
+    },
+    {
+      "index": 13,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/qobDloop1bg/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 12603,
+      "sha256": "4ddc733d5caaec454ff4d9064f6a3e0fc86f7b8263a97aacbe88d0a47e89c0dc"
+    },
+    {
+      "index": 14,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/NuIpZoQwuVY/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 6686,
+      "sha256": "65ec01d98105c55b189a5e7bd35cf3a05e7d4c5a5e1d6f067a5de58f8aa7feec"
+    },
+    {
+      "index": 15,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/yR2hnn7Ghko/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 6848,
+      "sha256": "b8791229fb319c9e6ef0c8d536c358c5e31fa29daf2eef842c18dc839bf7d930"
+    },
+    {
+      "index": 16,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/A4bewhG4724/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 15238,
+      "sha256": "e5c761e8aeab496153f558e047122e6adcdc2faf60a373e20b50da7bfd48a4dc"
+    },
+    {
+      "index": 17,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/6knS3y39f7k/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 9731,
+      "sha256": "2a13c2486bdbc22b33dce58cc87777732c54553cb451cac716ef43a3a4cbadad"
+    },
+    {
+      "index": 18,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/W9FPWzorLyI/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 10138,
+      "sha256": "4fa0f0bac167d1eabf243d8abdab28f959d09ee0731771145558f32747b7ca87"
+    },
+    {
+      "index": 19,
+      "contentType": "image/jpeg",
+      "contentLocation": "https://i.ytimg.com/vi/NZwqx_dS-k0/hqdefault.jpg",
+      "transferEncoding": "base64",
+      "decodedBytes": 6265,
+      "sha256": "4b12e01ee6c7259c7d638a24bf971dbfc09e2c57d7e35e9b20e27edc30a3f616"
+    },
+    {
+      "index": 20,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fmore-extensions.3zzk4y--pp9zu.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 43592,
+      "sha256": "7107346470c77eb39337b21e96958f742dc8640796882e8f0e0f28508c25b3b1"
+    },
+    {
+      "index": 21,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fcleanshotx-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 44290,
+      "sha256": "304de5ce9def3f5caf4799e333e8b2ff098000e3024ce8b38665df7f4e7cd4a7"
+    },
+    {
+      "index": 22,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fcleanshotx-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2090,
+      "sha256": "c73f172f9b2a267ae750fdf8c34778da7a333c875a2d9dd8be2520aa44162ffd"
+    },
+    {
+      "index": 23,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-chrome-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 61412,
+      "sha256": "a155222c8332f12c9cb523a7e6730a64d824ce41640fe997f5c9b3e20bc3282e"
+    },
+    {
+      "index": 24,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-chrome-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2280,
+      "sha256": "ee0d30ed5c71240d061b7a6e8c43bf0fcad6feeedd71515a0ea51fc55832d385"
+    },
+    {
+      "index": 25,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fobsidian-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 49568,
+      "sha256": "0a107a7be6c46777e7ae8fcd0d5455679fc8831d9ebc36b027d016935612ec0a"
+    },
+    {
+      "index": 26,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fobsidian-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2104,
+      "sha256": "58a9576a69b8ec62aab7ec5f6b88b737d49a40dbc3edd0fb6e9f6b8336284bbe"
+    },
+    {
+      "index": 27,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-search-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 43326,
+      "sha256": "b0d347a110f50a37cb2069d30fedf1eeb39da50a27f1b728e6023e346796e4a3"
+    },
+    {
+      "index": 28,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-search-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2208,
+      "sha256": "d7382a3ce506d6e68934ac301819d523f1d7f05a3046b1fb3e96bcc68787724e"
+    },
+    {
+      "index": 29,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftodoist-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 47276,
+      "sha256": "0f04e52b6e6f769b9600ebbe8fac6f1a76c16fdb1f74b8d8ea472958774175f0"
+    },
+    {
+      "index": 30,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftodoist-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2180,
+      "sha256": "7936d8e5fd79e393b179e83d24476d909b63a60d3e51f2f37681d41b7d88a99c"
+    },
+    {
+      "index": 31,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fnotion-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 43370,
+      "sha256": "73e87e3086bf41457b058fa3655dbec5707a46f1be21424fef06c848e58cf1a5"
+    },
+    {
+      "index": 32,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fnotion-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2236,
+      "sha256": "2526d11473484181a154059f7192c4eadae4d1d670ece739c23fd04286439c4d"
+    },
+    {
+      "index": 33,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fpomodoro-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 50878,
+      "sha256": "7c36ca4265ceb4e5ab17bbd93b8b8f0cdcd05bd979f93fe4c50b84f78c61becb"
+    },
+    {
+      "index": 34,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fpomodoro-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2128,
+      "sha256": "94efa17ed6dc2ca1ca00665c37987f1485bc1bacf4e5bcfbe7b4baf3a5f2e013"
+    },
+    {
+      "index": 35,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftimers-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 87230,
+      "sha256": "18f1185c271797f6a6bf128729247e60c4cb235e1ab5294d0a15be0c486cc53c"
+    },
+    {
+      "index": 36,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftimers-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2252,
+      "sha256": "b9c4168069e8cdc67f02b0b94fadd1d10522712b807758ebabfea118c49c0672"
+    },
+    {
+      "index": 37,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fzoom-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 35620,
+      "sha256": "c40125208bfcdb78412a3def91732befbd4db743a88fdddc4f7ffe1e5b4407f7"
+    },
+    {
+      "index": 38,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fzoom-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2134,
+      "sha256": "b947df8794edb5bbf680865050146ebaa3eb7838785c1f1ed63aaded1da410d0"
+    },
+    {
+      "index": 39,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fslack-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 59282,
+      "sha256": "c5c1a2f93c756e537246ad69b1f4f43a2d51c82e354cccad53c4d6280ec3fd4e"
+    },
+    {
+      "index": 40,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fslack-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2346,
+      "sha256": "909954bc661472b18d8185222a08039a3b9e90ff547afe47f9ea961b93e0812e"
+    },
+    {
+      "index": 41,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fjira-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 53114,
+      "sha256": "e39e32711707af216130851a78e6548730d61b7b5a78988bbdc56687530b6405"
+    },
+    {
+      "index": 42,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fjira-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2246,
+      "sha256": "9ea739229909508a33a119644e2cb778c9e2362dd12c3d12876691c3f282127c"
+    },
+    {
+      "index": 43,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2F1password-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 50144,
+      "sha256": "f84304c6cd44d8ba1a0d882db38a53c09b1414a76558fde72140f9a7ffad36bf"
+    },
+    {
+      "index": 44,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2F1password-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2340,
+      "sha256": "011bab42eb70c78379094e6b81724e90a9011ab38ed35738e5a521b9c417b963"
+    },
+    {
+      "index": 45,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftiny-png-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 30426,
+      "sha256": "508f0e069bca1a2997430fe544b57a15871ababd645ca28430ebc7524c2dabcf"
+    },
+    {
+      "index": 46,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Ftiny-png-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2242,
+      "sha256": "09c6c2d0011ea7776c98cdd6f5fed85857402b771784a2001b4819e1a80a71e7"
+    },
+    {
+      "index": 47,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Farc-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 53692,
+      "sha256": "d014f67bc34b03ece2cc72b8c81cc44ca1ab004dc4ced3bc40774c928d903fa6"
+    },
+    {
+      "index": 48,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Farc-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2206,
+      "sha256": "bb5a7cf1854b74e421423c6c19c9a487b923af0c96f1ec2b9f2bb5f4606da42d"
+    },
+    {
+      "index": 49,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fspotify-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 22580,
+      "sha256": "824e5cfb4bdab82cd57080c31408c53a294b23ee5d76392a87b205edce127dbc"
+    },
+    {
+      "index": 50,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fspotify-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2298,
+      "sha256": "984c816c548a2c4e72483e583b728853770f8cec7cf31861c626c1917739738d"
+    },
+    {
+      "index": 51,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 23586,
+      "sha256": "50a240d3fe7f06a31c016b91fe047eb2e21154fb14b1ee1f8e34a53d93ccff06"
+    },
+    {
+      "index": 52,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Fgoogle-translate-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2284,
+      "sha256": "7278ad185433f3f7ec5dd6f298997ffdabb78567369c5db78e5550a375302390"
+    },
+    {
+      "index": 53,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-web.png&w=750&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 55544,
+      "sha256": "364e741727b27e716b23fe9ea4075623ed7b987eeaac3d80483e4fc685211af5"
+    },
+    {
+      "index": 54,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=https%3A%2F%2Fmisc-assets.raycast.com%2Fextension-cards%2Flinear-icon.png&w=128&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 2190,
+      "sha256": "d035022dceb171d4afda072ef0f122301537f5826d4d271e94f810c066d23d52"
+    },
+    {
+      "index": 55,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fcommand-clipboard-history.237roft4bdmk2.png&w=48&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 784,
+      "sha256": "2c794a2ec72b4d86a1c604d5cae1e42c908f839694d2583fd103260e250427e4"
+    },
+    {
+      "index": 56,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fmagic-at-your-fingertips.1v4xjucno2nvv.png&w=48&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 220,
+      "sha256": "284baa5a13b552daf13cf49c9c4863404b0195f4dc3c13cb0da527c01b900306"
+    },
+    {
+      "index": 57,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fmagic.0zwq2z389cq09.jpeg&w=48&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 276,
+      "sha256": "4255bcb82cd539eed500320cf071b0b0e449561fd7a5bc5e68bb1080ac538fe6"
+    },
+    {
+      "index": 58,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fmangos.062tyil4el1n0.jpeg&w=48&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 240,
+      "sha256": "fb5838ae4223e63491773247f2efb3c8bb6da2b9e4ba9ae70996ce5db0ac45d0"
+    },
+    {
+      "index": 59,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2Fwallpaper.0abiqd6ysuhu6.png&w=48&q=70",
+      "transferEncoding": "base64",
+      "decodedBytes": 198,
+      "sha256": "1e82b3650acdb1066038c55985c4a31fc2764728f66eb8902e55bb15310c8299"
+    },
+    {
+      "index": 60,
+      "contentType": "image/webp",
+      "contentLocation": "https://www.raycast.com/_next/image?url=%2F_next%2Fstatic%2Fimmutable%2Fmedia%2FfeatureBackground.3bxd817ow3sdx.png&w=3840&q=100",
+      "transferEncoding": "base64",
+      "decodedBytes": 110940,
+      "sha256": "6b7b5939ef43c58c64fc3417e065b45813e08372bd2f2a9fb550e8803fd5881e"
+    },
+    {
+      "index": 61,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/2l91udtlc6wy_.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 464,
+      "sha256": "c7c6cf0124fd88ab11a47add2eedef7b6328de7af8c469aaafa464b0a187d8ef"
+    },
+    {
+      "index": 62,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/20-u3uvlg9ni5.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 863,
+      "sha256": "f682301da0ad52f5eb06079a3263e9ba0d182853b4e0596bf98547b7494ba2d0"
+    },
+    {
+      "index": 63,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/0kc_hkloc96lx.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 713,
+      "sha256": "d6c74e5e438877dbec2e7273d980df5f584925f5d937c7f1471429fc271fa3c4"
+    },
+    {
+      "index": 64,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/1vcus8zeo70q9.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 698,
+      "sha256": "cf27113779c507da1d4f8e0338eb5fe5f574002ab7f11ce5cca336b9b5eb7164"
+    },
+    {
+      "index": 65,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/4280i_jf0vo9o.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 610,
+      "sha256": "79e4c53a1c6fcccc32cc9dcb3ea0c60cbb2c6725a2b5c4cbc2b487420356e6af"
+    },
+    {
+      "index": 66,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/1nslddiwip-rj.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 1224,
+      "sha256": "5a8901ab77c8441fa32c0f8eb7bfb558eeb12e64917ca2ec92d49edf00dfbc09"
+    },
+    {
+      "index": 67,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/4414uvwqm0ft7.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 112776,
+      "sha256": "3953ed948d06998aeb3dd9b5d891ae809909b89bfc28b52c003f9e9bfd3c9246"
+    },
+    {
+      "index": 68,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/3v0rkvocmoxgi.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 17712,
+      "sha256": "3098f8c96c83f2579130176bdbd4857d4b1a83f87051f05144665567880d15df"
+    },
+    {
+      "index": 69,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/2ucegx0evob1x.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 132084,
+      "sha256": "92a1c9078026b588c84cbbd7d01bf88a68806c35ab98d8267dfa7e2a1957a4f4"
+    },
+    {
+      "index": 70,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/2sy9j61xcy5n3.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 131764,
+      "sha256": "a98d0f08c92fe782882e0d0d516629579b441b0c1168aab30dc8bfa74593b7a3"
+    },
+    {
+      "index": 71,
+      "contentType": "text/css",
+      "contentLocation": "https://www.raycast.com/_next/static/immutable/chunks/1_cwu-c-01nsh.css",
+      "transferEncoding": "quoted-printable",
+      "decodedBytes": 135869,
+      "sha256": "8bb40e6fe1bf3d14f89e34cc12074040ec8753db7c8f23676c55551da7c51b87"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "source": "https://www.raycast.com/",
+  "capturedAt": "2026-10-01T01:23:02.231Z",
+  "method": "Playwright page clip with context deviceScaleFactor=2, reduced motion and animations disabled",
+  "sections": [
+    {
+      "name": "01-hero",
+      "rootChildIndex": 1,
+      "label": "Hero and macOS product object",
+      "cssBox": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 968
+      },
+      "png": {
+        "width": 2880,
+        "height": 1936
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "85e710c41e67f8065b81f3923f117acdf4f0b2325b07870b5228a76495a6434d",
+      "bytes": 3027740,
+      "text": "Your shortcut to everything.A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.self.__wrap_n!=1&&self.__wrap_b(\"_R_24inpfb3"
+    },
+    {
+      "name": "02-command-launcher",
+      "rootChildIndex": 2,
+      "label": "Launcher feature and command window",
+      "cssBox": {
+        "x": 0,
+        "y": 1191,
+        "width": 1440,
+        "height": 1376
+      },
+      "png": {
+        "width": 2880,
+        "height": 2752
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "5dda9e356d148e885f6e9decaa7427ec269ebf00b6ac540d7a7f7dff953200e2",
+      "bytes": 663936,
+      "text": "Take shortcuts, not detours.One interface, everything you need.Type to filter entries...All TypesSearch...All TypesText OnlyImages OnlyFiles OnlyLinks OnlyColors OnlyTodayImage (12"
+    },
+    {
+      "name": "03-value-grid",
+      "rootChildIndex": 3,
+      "label": "Keyboard-first value proposition grid",
+      "cssBox": {
+        "x": 0,
+        "y": 2566,
+        "width": 1440,
+        "height": 720
+      },
+      "png": {
+        "width": 2880,
+        "height": 1440
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "399d07ece4c4756085a8a1eb17094cf8dd026bea89af497e056ace771eb2c0d9",
+      "bytes": 133582,
+      "text": "It’s not about saving time.It’s about feeling like you’re never wasting it.DownloadescF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteFast. Think in milliseconds.Ergonom"
+    },
+    {
+      "name": "04-extension-carousel",
+      "rootChildIndex": 4,
+      "label": "Extension ecosystem carousel",
+      "cssBox": {
+        "x": 0,
+        "y": 3286,
+        "width": 1440,
+        "height": 1258
+      },
+      "png": {
+        "width": 2880,
+        "height": 2516
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "8db67fb6a6b98f3d1c5bc756820e3d7568aefc93dd6752fcace4f97bbbb33312",
+      "bytes": 1651473,
+      "text": "There’s an extension for that.Use your favorite tools without even opening them.ProductivityEngineeringDesignWritingLinearCreate, search and modify your issues without leaving your"
+    },
+    {
+      "name": "05-ai-agent",
+      "rootChildIndex": 5,
+      "label": "AI agent and chat interface",
+      "cssBox": {
+        "x": 0,
+        "y": 4723,
+        "width": 1440,
+        "height": 1389
+      },
+      "png": {
+        "width": 2880,
+        "height": 2778
+      },
+      "deviceScaleFactor": 2,
+      "sha256": "0481e8aabb865953cd4928d83db02fdbb8ea06f95c3e8ecd4cf8eab6058224e2",
+      "bytes": 412783,
+      "text": "AI AgentMeet your new virtual assistantRaycast AI uses the tools you already rely on to get work done.Search chatsWebsiteDailyRecentSync linear tasksCreate landing page for AI Agen"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+HTTP/2 200 
+age: 0
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+content-security-policy: frame-ancestors 'self' http://localhost:3333 https://cms.raycast.com https://arc.net/folder/;
+content-type: text/html; charset=utf-8
+cross-origin-opener-policy: same-origin-allow-popups
+date: Thu, 01 Oct 2026 01:24:50 GMT
+link: </_next/static/immutable/media/0c8c4ded07fff55c-s.p.0bh8ttrlmx6iv.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/immutable/media/70bc3e132a0a741e-s.p.269kn9uafm0ti.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/immutable/media/83afe278b6a6bb3c-s.p.45535valc9rzk.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/immutable/media/GeistMono_Variable.p.0b02cdm7g7y6h.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/immutable/media/e41d5df559864f9e-s.p.2rlzm4mj5kw8e.woff2>; rel=preload; as="font"; crossorigin=""; type="font/woff2", </_next/static/immutable/chunks/1_cwu-c-01nsh.css>; rel=preload; as="style", </_next/static/immutable/chunks/2sy9j61xcy5n3.css>; rel=preload; as="style", </_next/static/immutable/chunks/2ucegx0evob1x.css>; rel=preload; as="style", </_next/static/immutable/chunks/3v0rkvocmoxgi.css>; rel=preload; as="style", </_next/static/immutable/chunks/4414uvwqm0ft7.css>; rel=preload; as="style"
+permissions-policy: camera=(), microphone=(), geolocation=()
+referrer-policy: strict-origin-when-cross-origin
+server: Vercel
+strict-transport-security: max-age=63072000; includeSubDomains; preload
+vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+x-content-type-options: nosniff
+x-dns-prefetch-control: on
+x-matched-path: /
+x-powered-by: Next.js
+x-vercel-cache: MISS
+x-vercel-id: hnd1::iad1::2l2ht-1790817890029-4faf163fde9f
+x-xss-protection: 1; mode=block
+

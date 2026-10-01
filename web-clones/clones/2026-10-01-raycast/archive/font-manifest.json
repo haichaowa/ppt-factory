@@ -1,0 +1,43 @@
+{
+  "source": "https://www.raycast.com/ performance resource entries",
+  "downloadedAt": "2026-10-01T01:25:30+08:00",
+  "reason": "Chromium MHTML retained CSS and images but not the six rendered font files; fonts supplemented for local fidelity and token research.",
+  "fonts": [
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/0c8c4ded07fff55c-s.p.0bh8ttrlmx6iv.woff2",
+      "file": "archive/resources/0c8c4ded07fff55c-s.p.0bh8ttrlmx6iv.woff2",
+      "bytes": 7192,
+      "sha256": "043a60145af2ddbcd0a6452625cb0bfc4e18b222c76dcd1d4a0106715472faba"
+    },
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/70bc3e132a0a741e-s.p.269kn9uafm0ti.woff2",
+      "file": "archive/resources/70bc3e132a0a741e-s.p.269kn9uafm0ti.woff2",
+      "bytes": 40480,
+      "sha256": "1e06740a02a443fb7f3eeda8fcaa685a0f6c620e3f01e6666e847295469ce3ad"
+    },
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/83afe278b6a6bb3c-s.p.45535valc9rzk.woff2",
+      "file": "archive/resources/83afe278b6a6bb3c-s.p.45535valc9rzk.woff2",
+      "bytes": 48432,
+      "sha256": "c940764593d0fe5d596be327ca7558855e018039fb78509aa21921fd3644c3e4"
+    },
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/e41d5df559864f9e-s.p.2rlzm4mj5kw8e.woff2",
+      "file": "archive/resources/e41d5df559864f9e-s.p.2rlzm4mj5kw8e.woff2",
+      "bytes": 15040,
+      "sha256": "60c06664b5a95c7de6cc3e00d1f9034d78bd1e40b564016b241674449a067d4d"
+    },
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/GeistMono_Variable.p.0b02cdm7g7y6h.woff2",
+      "file": "archive/resources/GeistMono_Variable.p.0b02cdm7g7y6h.woff2",
+      "bytes": 71368,
+      "sha256": "fba8f577f38a2bbcbe818efa6348dd58f36303a10b8737c42fefad275be563ab"
+    },
+    {
+      "url": "https://www.raycast.com/_next/static/immutable/media/1bffadaabf893a1e-s.0szrwpqb9mkwe.woff2",
+      "file": "archive/resources/1bffadaabf893a1e-s.0szrwpqb9mkwe.woff2",
+      "bytes": 85272,
+      "sha256": "a28eb6d3ccb534ae0c94ca999371df024aab60b08c3c8a5720ee9e32fa0faaa2"
+    }
+  ]
+}
