@@ -1,0 +1,139 @@
+{
+  "source": "https://www.raycast.com/",
+  "checkedAt": "2026-10-01T01:31:41.303670+00:00",
+  "inputs": [
+    "tokens.json",
+    "archive/computed-styles.json",
+    "archive/styles/",
+    "archive/viewport-metrics.json",
+    "archive/document-outline.json"
+  ],
+  "allPassed": true,
+  "checks": [
+    {
+      "token": "color.background.page",
+      "evidence": "CSS variable --color-bg and body computed backgroundColor",
+      "passed": true
+    },
+    {
+      "token": "color #07080A",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #101111",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #111214",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #18191A",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #1B1C1E",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #242728",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #F4F4F6",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #E6E6E6",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #FF6363",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #FF6161",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #59D499",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #57C1FF",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "color #FFC533",
+      "evidence": "case-insensitive CSS source search and/or computed variable value",
+      "passed": true
+    },
+    {
+      "token": "typography.hero",
+      "evidence": "computed typography sample: Your shortcut to everything.",
+      "passed": true
+    },
+    {
+      "token": "typography.aiTitle",
+      "evidence": "computed typography sample: Meet your new virtual assistant",
+      "passed": true
+    },
+    {
+      "token": "typography.eyebrow",
+      "evidence": "computed typography sample: AI Agent",
+      "passed": true
+    },
+    {
+      "token": "spacing.scalePx",
+      "evidence": "computed CSS custom properties",
+      "passed": true
+    },
+    {
+      "token": "radius.scalePx",
+      "evidence": "computed CSS custom properties",
+      "passed": true
+    },
+    {
+      "token": "shadow.keyboardKey",
+      "evidence": "computed box-shadow frequency",
+      "passed": true
+    },
+    {
+      "token": "material.keyboardMask",
+      "evidence": "CSS source radial-gradient declaration",
+      "passed": true
+    },
+    {
+      "token": "motion.interfaceEasing",
+      "evidence": "computed transition frequency",
+      "passed": true
+    },
+    {
+      "token": "layout.fullPageHeights",
+      "evidence": "viewport-metrics.json",
+      "passed": true
+    },
+    {
+      "token": "layout.mobileHero",
+      "evidence": "viewport-metrics.json selected H1",
+      "passed": true
+    },
+    {
+      "token": "documentOutline",
+      "evidence": "document-outline.json",
+      "passed": true
+    }
+  ]
+}

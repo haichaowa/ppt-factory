@@ -1,6 +1,6 @@
 # Raycast 设计拆解（live DOM 实测）
 
-> 证据：`archive/computed-styles.json`（1440 × 900、完整渲染后 `getComputedStyle`）、`archive/styles/`（11 个 CSS 源文件）、`archive/dom-snapshot.html`。截图统一使用 reduced-motion 并禁用 CSS animation，避免动态内容造成不可复现重影；本文动效参数来自实时 CSS。
+> 证据：`archive/computed-styles.json`（1440 × 900、完整渲染后 `getComputedStyle`）、`archive/styles/`（11 个 CSS 源文件）、`archive/dom-snapshot.html`、`archive/viewport-metrics.json`（1440/1280/375 复测）。截图统一使用 reduced-motion 并禁用 CSS animation，避免动态内容造成不可复现重影；本文动效参数来自实时 CSS。
 
 ## 1. 总体气质
 
@@ -112,7 +112,7 @@ CSS 源文件包含 `fadeInUp`、`fadeInScaleUp`、`slideIn`、`blink`、`loadin
 ## 8. 三档视口观察
 
 - **1440 / 1280**：全页高均为 15983px；桌面结构保持相同，1280 只压缩水平余量，产品窗口和 carousel 仍横向溢出滚动。
-- **375**：全页高 15647px，移动端 hero 字号源码从 36px 起步，≥420px 到 48px；AI 描述降到 15px，section 纵向堆叠，扩展 reel 继续使用横向 snap/mask。
+- **375**：归档截图高 15647px，后续同条件 DOM 复测为 15672px（25px 动态布局漂移，来自可滚动 demo 的运行态）。H1 实测 36/39.6px、宽度 343px；常规 section H2/描述降至 18/28.8px；AI 描述 15/22.5px。桌面 `Download for Mac` 锚点在 375 下 box 为 0×0，移动端改由平台专属安装入口承接。section 纵向堆叠，扩展 reel 继续使用横向 snap/mask。
 - Raycast 的移动策略不是“缩小桌面”，而是保留暗色材质和产品截图，重排文案与 demo，但坚持横向生态展示。
 
 ## 9. 可复用结论

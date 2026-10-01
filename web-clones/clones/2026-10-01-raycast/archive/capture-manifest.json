@@ -1,7 +1,7 @@
 {
   "source": "https://www.raycast.com/",
   "capturedAt": "2026-10-01T01:11:22+08:00",
-  "manifestBuiltAt": "2026-10-01T01:29:00+08:00",
+  "manifestBuiltAt": "2026-10-01T01:35:00+08:00",
   "timezone": "Asia/Shanghai",
   "method": {
     "robots": "curl https://www.raycast.com/robots.txt (User-agent * allows /; four private/settings paths disallowed; none relevant to homepage)",
@@ -21,7 +21,10 @@
       "archive/capture-sections.js",
       "archive/measure-components.js",
       "archive/mhtml-browser-check.js",
-      "archive/mhtml-manifest.py"
+      "archive/mhtml-manifest.py",
+      "archive/viewport-metrics.js",
+      "archive/document-outline.py",
+      "archive/token-evidence.py"
     ]
   },
   "response": {
@@ -269,5 +272,33 @@
     "networkErrors": [],
     "errorCount": 0,
     "passed": true
+  },
+  "viewportMetrics": {
+    "file": "archive/viewport-metrics.json",
+    "viewports": [
+      {
+        "width": 1440,
+        "scrollHeight": 15983,
+        "visibleRoots": 13
+      },
+      {
+        "width": 1280,
+        "scrollHeight": 15983,
+        "visibleRoots": 13
+      },
+      {
+        "width": 375,
+        "scrollHeight": 15672,
+        "visibleRoots": 13
+      }
+    ]
+  },
+  "documentOutline": {
+    "file": "archive/document-outline.json",
+    "headingCount": 24
+  },
+  "tokenEvidence": {
+    "file": "archive/token-evidence.json",
+    "allPassed": true
   }
 }

@@ -1,0 +1,1192 @@
+{
+  "source": "https://www.raycast.com/",
+  "capturedAt": "2026-10-01T01:31:03.324Z",
+  "method": "Live DOM after domcontentloaded, networkidle-or-settle, reduced motion; selected computed styles and visible root-section boxes.",
+  "viewports": [
+    {
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "isMobile": false
+      },
+      "document": {
+        "title": "Raycast - Your shortcut to everything",
+        "readyState": "complete",
+        "viewportWidth": 1440,
+        "viewportHeight": 900,
+        "scrollWidth": 1440,
+        "scrollHeight": 15983,
+        "documentElementHeight": 15983
+      },
+      "bodyStyle": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(7, 8, 10)",
+        "font-family": "Inter, \"Inter Fallback\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "18.4px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "border-radius": "0px",
+        "box-shadow": "none",
+        "transition": "all",
+        "background-image": "none"
+      },
+      "visibleRoots": [
+        {
+          "index": 0,
+          "className": "Navbar-module__pSp8Ga__container",
+          "text": "StoreProAIiOSWindowsTeamsEnterpriseBlogPricingLog inDownloadLog in",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 92
+          }
+        },
+        {
+          "index": 1,
+          "className": "page-module__H3BVAa__hero",
+          "text": "Your shortcut to everything.A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.self.__wrap_n!=1&&self.__wrap_b(\"_R_24inpfb3",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 967
+          }
+        },
+        {
+          "index": 2,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Take shortcuts, not detours.One interface, everything you need.Type to filter entries...All TypesSearch...All TypesText OnlyImages OnlyFiles OnlyLinks OnlyColors OnlyTodayImage (12",
+          "box": {
+            "x": 0,
+            "y": 1191,
+            "width": 1440,
+            "height": 1375
+          }
+        },
+        {
+          "index": 3,
+          "className": "GetYourTimeBack-module__o1EREW__container",
+          "text": "It’s not about saving time.It’s about feeling like you’re never wasting it.DownloadescF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteFast. Think in milliseconds.Ergonom",
+          "box": {
+            "x": 0,
+            "y": 2566,
+            "width": 1440,
+            "height": 720
+          }
+        },
+        {
+          "index": 4,
+          "className": "ExtensionHighlight-module__3Yq4tG__container",
+          "text": "There’s an extension for that.Use your favorite tools without even opening them.ProductivityEngineeringDesignWritingLinearCreate, search and modify your issues without leaving your",
+          "box": {
+            "x": 0,
+            "y": 3286,
+            "width": 1440,
+            "height": 1257
+          }
+        },
+        {
+          "index": 5,
+          "className": "styles-module__fHNhKq__root",
+          "text": "AI AgentMeet your new virtual assistantRaycast AI uses the tools you already rely on to get work done.Search chatsWebsiteDailyRecentSync linear tasksCreate landing page for AI Agen",
+          "box": {
+            "x": 0,
+            "y": 4724,
+            "width": 1440,
+            "height": 1389
+          }
+        },
+        {
+          "index": 6,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Built for professionals like you.Used by seriously productive people.Guillermo Rauch@rauchgCEO, VercelMarques Brownlee@MKBHDCreator, MKBHDKoen Bok@koenbokFounder, FramerAndreas Sto",
+          "box": {
+            "x": 0,
+            "y": 6292,
+            "width": 1440,
+            "height": 1100
+          }
+        },
+        {
+          "index": 7,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Don't repeat yourself.Automate the things you do all the time.SnippetsTired of typing the same thing? Create a snippet and insert it by simply typing its keyword.Sure, here you go:",
+          "box": {
+            "x": 0,
+            "y": 7392,
+            "width": 1440,
+            "height": 1144
+          }
+        },
+        {
+          "index": 8,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "What else can Raycast do?It can take notes. Track your flights. Convert anything. Search files. Run scripts. Manage your windows. Plan your day. Remind you of stuff. Translate into",
+          "box": {
+            "x": 0,
+            "y": 8536,
+            "width": 1440,
+            "height": 986
+          }
+        },
+        {
+          "index": 9,
+          "className": "CommunitySection-module__MQiDUG__container",
+          "text": "Stay in the loop.Join the community and learn how other people get the most out of Raycast.Slack37k membersGet the inside track on new features and learn how other people use Rayca",
+          "box": {
+            "x": 0,
+            "y": 9522,
+            "width": 1440,
+            "height": 795
+          }
+        },
+        {
+          "index": 10,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Build the perfect tools.Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.Read the docsFIG_0FIG_0Cross-platformBuild your ex",
+          "box": {
+            "x": 0,
+            "y": 10317,
+            "width": 1440,
+            "height": 3182
+          }
+        },
+        {
+          "index": 11,
+          "className": "CommandYourTime-module__rfxe3q__container",
+          "text": "escF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteQWERTYUIOP{[}]|\\ASDFGHJKL:;\",~`ZXCVBNM<,>.?/fncontroloptioncommandcommandoptionTake the short way.Download and use Ray",
+          "box": {
+            "x": 0,
+            "y": 13499,
+            "width": 1440,
+            "height": 1244
+          }
+        },
+        {
+          "index": 12,
+          "className": "Footer-module__nhiC3q__container",
+          "text": "ProductStoreProTeamsPricingChangelogBrowser ExtensionDevelopersiOSWindowsRaycast 2.0API DocsManualTroubleshootingRaycast vs AlfredFAQCore FeaturesRaycast AIRaycast NotesRaycast Foc",
+          "box": {
+            "x": 0,
+            "y": 14744,
+            "width": 1440,
+            "height": 1239
+          }
+        }
+      ],
+      "selected": [
+        {
+          "tag": "H1",
+          "className": "",
+          "text": "Your shortcut to everything.",
+          "box": {
+            "x": 450,
+            "y": 370,
+            "width": 540,
+            "height": 141
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "64px",
+            "font-weight": "600",
+            "line-height": "70.4px",
+            "letter-spacing": "normal",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 633,
+            "y": 797,
+            "width": 173,
+            "height": 36
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "Take shortcuts, not detours.",
+          "box": {
+            "x": 545,
+            "y": 1415,
+            "width": 350,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "",
+          "text": "One interface, everything you need.",
+          "box": {
+            "x": 545,
+            "y": 1439,
+            "width": 350,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(106, 107, 108)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "It’s not about saving time.",
+          "box": {
+            "x": 142,
+            "y": 2848,
+            "width": 272,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "styles-module__eUngVq__title",
+          "text": "Meet your new virtual assistant",
+          "box": {
+            "x": 494,
+            "y": 4817,
+            "width": 453,
+            "height": 38
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "32px",
+            "font-weight": "500",
+            "line-height": "38.4px",
+            "letter-spacing": "-0.8px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px 0px 15px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "styles-module__eUngVq__description",
+          "text": "Raycast AI uses the tools you already rely on to get work done.",
+          "box": {
+            "x": 470,
+            "y": 4870,
+            "width": 500,
+            "height": 54
+          },
+          "styles": {
+            "color": "rgba(255, 255, 255, 0.5)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "letter-spacing": "0.18px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 633,
+            "y": 14421,
+            "width": 173,
+            "height": 36
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900,
+        "isMobile": false
+      },
+      "document": {
+        "title": "Raycast - Your shortcut to everything",
+        "readyState": "complete",
+        "viewportWidth": 1280,
+        "viewportHeight": 900,
+        "scrollWidth": 1280,
+        "scrollHeight": 15983,
+        "documentElementHeight": 15983
+      },
+      "bodyStyle": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(7, 8, 10)",
+        "font-family": "Inter, \"Inter Fallback\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "18.4px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "border-radius": "0px",
+        "box-shadow": "none",
+        "transition": "all",
+        "background-image": "none"
+      },
+      "visibleRoots": [
+        {
+          "index": 0,
+          "className": "Navbar-module__pSp8Ga__container",
+          "text": "StoreProAIiOSWindowsTeamsEnterpriseBlogPricingLog inDownloadLog in",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 92
+          }
+        },
+        {
+          "index": 1,
+          "className": "page-module__H3BVAa__hero",
+          "text": "Your shortcut to everything.A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.self.__wrap_n!=1&&self.__wrap_b(\"_R_24inpfb3",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 1280,
+            "height": 967
+          }
+        },
+        {
+          "index": 2,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Take shortcuts, not detours.One interface, everything you need.Type to filter entries...All TypesSearch...All TypesText OnlyImages OnlyFiles OnlyLinks OnlyColors OnlyTodayImage (12",
+          "box": {
+            "x": 0,
+            "y": 1191,
+            "width": 1280,
+            "height": 1375
+          }
+        },
+        {
+          "index": 3,
+          "className": "GetYourTimeBack-module__o1EREW__container",
+          "text": "It’s not about saving time.It’s about feeling like you’re never wasting it.DownloadescF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteFast. Think in milliseconds.Ergonom",
+          "box": {
+            "x": 0,
+            "y": 2566,
+            "width": 1280,
+            "height": 720
+          }
+        },
+        {
+          "index": 4,
+          "className": "ExtensionHighlight-module__3Yq4tG__container",
+          "text": "There’s an extension for that.Use your favorite tools without even opening them.ProductivityEngineeringDesignWritingLinearCreate, search and modify your issues without leaving your",
+          "box": {
+            "x": 0,
+            "y": 3286,
+            "width": 1280,
+            "height": 1257
+          }
+        },
+        {
+          "index": 5,
+          "className": "styles-module__fHNhKq__root",
+          "text": "AI AgentMeet your new virtual assistantRaycast AI uses the tools you already rely on to get work done.Search chatsWebsiteDailyRecentSync linear tasksCreate landing page for AI Agen",
+          "box": {
+            "x": 0,
+            "y": 4724,
+            "width": 1280,
+            "height": 1389
+          }
+        },
+        {
+          "index": 6,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Built for professionals like you.Used by seriously productive people.Guillermo Rauch@rauchgCEO, VercelMarques Brownlee@MKBHDCreator, MKBHDKoen Bok@koenbokFounder, FramerAndreas Sto",
+          "box": {
+            "x": 0,
+            "y": 6292,
+            "width": 1280,
+            "height": 1100
+          }
+        },
+        {
+          "index": 7,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Don't repeat yourself.Automate the things you do all the time.SnippetsTired of typing the same thing? Create a snippet and insert it by simply typing its keyword.Sure, here you go:",
+          "box": {
+            "x": 0,
+            "y": 7392,
+            "width": 1280,
+            "height": 1144
+          }
+        },
+        {
+          "index": 8,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "What else can Raycast do?It can take notes. Track your flights. Convert anything. Search files. Run scripts. Manage your windows. Plan your day. Remind you of stuff. Translate into",
+          "box": {
+            "x": 0,
+            "y": 8536,
+            "width": 1280,
+            "height": 986
+          }
+        },
+        {
+          "index": 9,
+          "className": "CommunitySection-module__MQiDUG__container",
+          "text": "Stay in the loop.Join the community and learn how other people get the most out of Raycast.Slack37k membersGet the inside track on new features and learn how other people use Rayca",
+          "box": {
+            "x": 0,
+            "y": 9522,
+            "width": 1280,
+            "height": 795
+          }
+        },
+        {
+          "index": 10,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Build the perfect tools.Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.Read the docsFIG_0FIG_0Cross-platformBuild your ex",
+          "box": {
+            "x": 0,
+            "y": 10317,
+            "width": 1280,
+            "height": 3182
+          }
+        },
+        {
+          "index": 11,
+          "className": "CommandYourTime-module__rfxe3q__container",
+          "text": "escF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteQWERTYUIOP{[}]|\\ASDFGHJKL:;\",~`ZXCVBNM<,>.?/fncontroloptioncommandcommandoptionTake the short way.Download and use Ray",
+          "box": {
+            "x": 0,
+            "y": 13499,
+            "width": 1280,
+            "height": 1244
+          }
+        },
+        {
+          "index": 12,
+          "className": "Footer-module__nhiC3q__container",
+          "text": "ProductStoreProTeamsPricingChangelogBrowser ExtensionDevelopersiOSWindowsRaycast 2.0API DocsManualTroubleshootingRaycast vs AlfredFAQCore FeaturesRaycast AIRaycast NotesRaycast Foc",
+          "box": {
+            "x": 0,
+            "y": 14744,
+            "width": 1280,
+            "height": 1239
+          }
+        }
+      ],
+      "selected": [
+        {
+          "tag": "H1",
+          "className": "",
+          "text": "Your shortcut to everything.",
+          "box": {
+            "x": 370,
+            "y": 370,
+            "width": 540,
+            "height": 141
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "64px",
+            "font-weight": "600",
+            "line-height": "70.4px",
+            "letter-spacing": "normal",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 553,
+            "y": 797,
+            "width": 173,
+            "height": 36
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "Take shortcuts, not detours.",
+          "box": {
+            "x": 465,
+            "y": 1415,
+            "width": 350,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "",
+          "text": "One interface, everything you need.",
+          "box": {
+            "x": 465,
+            "y": 1439,
+            "width": 350,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(106, 107, 108)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "It’s not about saving time.",
+          "box": {
+            "x": 62,
+            "y": 2848,
+            "width": 272,
+            "height": 24
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "20px",
+            "font-weight": "500",
+            "line-height": "normal",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "styles-module__eUngVq__title",
+          "text": "Meet your new virtual assistant",
+          "box": {
+            "x": 414,
+            "y": 4817,
+            "width": 453,
+            "height": 38
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "32px",
+            "font-weight": "500",
+            "line-height": "38.4px",
+            "letter-spacing": "-0.8px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px 0px 15px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "styles-module__eUngVq__description",
+          "text": "Raycast AI uses the tools you already rely on to get work done.",
+          "box": {
+            "x": 390,
+            "y": 4870,
+            "width": 500,
+            "height": 54
+          },
+          "styles": {
+            "color": "rgba(255, 255, 255, 0.5)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "27px",
+            "letter-spacing": "0.18px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 553,
+            "y": 14421,
+            "width": 173,
+            "height": 36
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        }
+      ]
+    },
+    {
+      "viewport": {
+        "width": 375,
+        "height": 812,
+        "isMobile": true
+      },
+      "document": {
+        "title": "Raycast - Your shortcut to everything",
+        "readyState": "complete",
+        "viewportWidth": 375,
+        "viewportHeight": 812,
+        "scrollWidth": 375,
+        "scrollHeight": 15672,
+        "documentElementHeight": 15672
+      },
+      "bodyStyle": {
+        "color": "rgb(255, 255, 255)",
+        "background-color": "rgb(7, 8, 10)",
+        "font-family": "Inter, \"Inter Fallback\", sans-serif",
+        "font-size": "16px",
+        "font-weight": "400",
+        "line-height": "18.4px",
+        "letter-spacing": "normal",
+        "text-transform": "none",
+        "padding": "0px",
+        "margin": "0px",
+        "border-radius": "0px",
+        "box-shadow": "none",
+        "transition": "all",
+        "background-image": "none"
+      },
+      "visibleRoots": [
+        {
+          "index": 0,
+          "className": "Navbar-module__pSp8Ga__container",
+          "text": "StoreProAIiOSWindowsTeamsEnterpriseBlogPricingLog inDownloadLog in",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 74
+          }
+        },
+        {
+          "index": 1,
+          "className": "page-module__H3BVAa__hero",
+          "text": "Your shortcut to everything.A collection of powerful productivity tools all within an extendable launcher. Fast, ergonomic and reliable.self.__wrap_n!=1&&self.__wrap_b(\"_R_24inpfb3",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 375,
+            "height": 615
+          }
+        },
+        {
+          "index": 2,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Take shortcuts, not detours.One interface, everything you need.AIBe Curious. Have a question? Why google it when you can just ask AI without leaving your keyboard?",
+          "box": {
+            "x": 0,
+            "y": 711,
+            "width": 375,
+            "height": 1058
+          }
+        },
+        {
+          "index": 3,
+          "className": "GetYourTimeBack-module__o1EREW__container",
+          "text": "It’s not about saving time.It’s about feeling like you’re never wasting it.DownloadescF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteFast. Think in milliseconds.Ergonom",
+          "box": {
+            "x": 0,
+            "y": 1770,
+            "width": 375,
+            "height": 709
+          }
+        },
+        {
+          "index": 4,
+          "className": "ExtensionHighlight-module__3Yq4tG__container",
+          "text": "There’s an extension for that.Use your favorite tools without even opening them.ProductivityEngineeringDesignWritingLinearCreate, search and modify your issues without leaving your",
+          "box": {
+            "x": 0,
+            "y": 2479,
+            "width": 375,
+            "height": 1124
+          }
+        },
+        {
+          "index": 5,
+          "className": "styles-module__fHNhKq__root",
+          "text": "AI AgentMeet your new virtual assistantRaycast AI uses the tools you already rely on to get work done.Search chatsWebsiteDailyRecentSync linear tasksCreate landing page for AI Agen",
+          "box": {
+            "x": 0,
+            "y": 3683,
+            "width": 375,
+            "height": 1480
+          }
+        },
+        {
+          "index": 6,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Built for professionals like you.Used by seriously productive people.Guillermo Rauch@rauchgCEO, VercelMarques Brownlee@MKBHDCreator, MKBHDKoen Bok@koenbokFounder, FramerAndreas Sto",
+          "box": {
+            "x": 0,
+            "y": 5243,
+            "width": 375,
+            "height": 934
+          }
+        },
+        {
+          "index": 7,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Don't repeat yourself.Automate the things you do all the time.SnippetsTired of typing the same thing? Create a snippet and insert it by simply typing its keyword.Sure, here you go:",
+          "box": {
+            "x": 0,
+            "y": 6177,
+            "width": 375,
+            "height": 1422
+          }
+        },
+        {
+          "index": 8,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "What else can Raycast do?It can take notes. Track your flights. Convert anything. Search files. Run scripts. Manage your windows. Plan your day. Remind you of stuff. Translate into",
+          "box": {
+            "x": 0,
+            "y": 7600,
+            "width": 375,
+            "height": 887
+          }
+        },
+        {
+          "index": 9,
+          "className": "CommunitySection-module__MQiDUG__container",
+          "text": "Stay in the loop.Join the community and learn how other people get the most out of Raycast.Slack37k membersGet the inside track on new features and learn how other people use Rayca",
+          "box": {
+            "x": 0,
+            "y": 8487,
+            "width": 375,
+            "height": 1006
+          }
+        },
+        {
+          "index": 10,
+          "className": "page-module__H3BVAa__sectionContainer",
+          "text": "Build the perfect tools.Our extension API is designed to allow anyone with web development skills to unleash the power of Raycast.Read the docsFIG_0FIG_0Cross-platformBuild your ex",
+          "box": {
+            "x": 0,
+            "y": 9493,
+            "width": 375,
+            "height": 3260
+          }
+        },
+        {
+          "index": 11,
+          "className": "CommandYourTime-module__rfxe3q__container",
+          "text": "escF1F2F3F4F5F6F7F8F9F10F11F12±§!1@2#3$4%5^6&7*8(9)0_-+=deleteQWERTYUIOP{[}]|\\ASDFGHJKL:;\",~`ZXCVBNM<,>.?/fncontroloptioncommandcommandoptionTake the short way.Download and use Ray",
+          "box": {
+            "x": 0,
+            "y": 12753,
+            "width": 375,
+            "height": 724
+          }
+        },
+        {
+          "index": 12,
+          "className": "Footer-module__nhiC3q__container",
+          "text": "ProductStoreProTeamsPricingChangelogBrowser ExtensionDevelopersiOSWindowsRaycast 2.0API DocsManualTroubleshootingRaycast vs AlfredFAQCore FeaturesRaycast AIRaycast NotesRaycast Foc",
+          "box": {
+            "x": 0,
+            "y": 13477,
+            "width": 375,
+            "height": 2195
+          }
+        }
+      ],
+      "selected": [
+        {
+          "tag": "H1",
+          "className": "",
+          "text": "Your shortcut to everything.",
+          "box": {
+            "x": 16,
+            "y": 260,
+            "width": 343,
+            "height": 79
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "36px",
+            "font-weight": "600",
+            "line-height": "39.6px",
+            "letter-spacing": "normal",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "Take shortcuts, not detours.",
+          "box": {
+            "x": 30,
+            "y": 879,
+            "width": 316,
+            "height": 29
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "500",
+            "line-height": "28.8px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "",
+          "text": "One interface, everything you need.",
+          "box": {
+            "x": 30,
+            "y": 908,
+            "width": 316,
+            "height": 29
+          },
+          "styles": {
+            "color": "rgb(106, 107, 108)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "500",
+            "line-height": "28.8px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "",
+          "text": "It’s not about saving time.",
+          "box": {
+            "x": 52,
+            "y": 2369,
+            "width": 272,
+            "height": 29
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "18px",
+            "font-weight": "500",
+            "line-height": "28.8px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "H2",
+          "className": "styles-module__eUngVq__title",
+          "text": "Meet your new virtual assistant",
+          "box": {
+            "x": 20,
+            "y": 3776,
+            "width": 335,
+            "height": 77
+          },
+          "styles": {
+            "color": "rgb(255, 255, 255)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "32px",
+            "font-weight": "500",
+            "line-height": "38.4px",
+            "letter-spacing": "-0.8px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px 0px 15px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "P",
+          "className": "styles-module__eUngVq__description",
+          "text": "Raycast AI uses the tools you already rely on to get work done.",
+          "box": {
+            "x": 20,
+            "y": 3868,
+            "width": 335,
+            "height": 45
+          },
+          "styles": {
+            "color": "rgba(255, 255, 255, 0.5)",
+            "background-color": "rgba(0, 0, 0, 0)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "22.5px",
+            "letter-spacing": "0.15px",
+            "text-transform": "none",
+            "padding": "0px",
+            "margin": "0px",
+            "border-radius": "0px",
+            "box-shadow": "none",
+            "transition": "all",
+            "background-image": "none"
+          }
+        },
+        {
+          "tag": "A",
+          "className": "Button-module__3dJGfa__button Button-module__3dJGfa__light",
+          "text": "Download for Mac",
+          "box": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "styles": {
+            "color": "rgb(47, 48, 49)",
+            "background-color": "rgb(230, 230, 230)",
+            "font-family": "Inter, \"Inter Fallback\", sans-serif",
+            "font-size": "14px",
+            "font-weight": "500",
+            "line-height": "16px",
+            "letter-spacing": "0.2px",
+            "text-transform": "none",
+            "padding": "8px 12px",
+            "margin": "0px",
+            "border-radius": "8px",
+            "box-shadow": "rgba(0, 0, 0, 0.5) 0px 0px 0px 2px, rgba(255, 255, 255, 0.19) 0px 0px 14px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0.4px 0px inset, rgb(255, 255, 255) 0px 1px 0.4px 0px inset",
+            "transition": "background-image 0.2s, background-color 0.2s, box-shadow 0.2s ease-in-out, transform 0.1s ease-in-out",
+            "background-image": "none"
+          }
+        }
+      ]
+    }
+  ]
+}

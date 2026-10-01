@@ -1,120 +1,8 @@
 {
-  "round": 1,
-  "generatedAt": "2026-10-01T01:30:00+08:00",
+  "round": 2,
+  "generatedAt": "2026-10-01T01:36:00+08:00",
   "allPassed": true,
   "checks": [
-    {
-      "name": "screenshot-raycast-home-1440-fullpage.png",
-      "passed": true,
-      "actual": [
-        1440,
-        15983
-      ],
-      "expected": [
-        1440,
-        15983
-      ]
-    },
-    {
-      "name": "screenshot-raycast-home-1280-fullpage.png",
-      "passed": true,
-      "actual": [
-        1280,
-        15983
-      ],
-      "expected": [
-        1280,
-        15983
-      ]
-    },
-    {
-      "name": "screenshot-raycast-home-375-fullpage.png",
-      "passed": true,
-      "actual": [
-        375,
-        15647
-      ],
-      "expected": [
-        375,
-        15647
-      ]
-    },
-    {
-      "name": "section-01-hero-2x",
-      "passed": true,
-      "actual": [
-        2880,
-        1936
-      ],
-      "expected": [
-        2880,
-        1936
-      ]
-    },
-    {
-      "name": "section-02-command-launcher-2x",
-      "passed": true,
-      "actual": [
-        2880,
-        2752
-      ],
-      "expected": [
-        2880,
-        2752
-      ]
-    },
-    {
-      "name": "section-03-value-grid-2x",
-      "passed": true,
-      "actual": [
-        2880,
-        1440
-      ],
-      "expected": [
-        2880,
-        1440
-      ]
-    },
-    {
-      "name": "section-04-extension-carousel-2x",
-      "passed": true,
-      "actual": [
-        2880,
-        2516
-      ],
-      "expected": [
-        2880,
-        2516
-      ]
-    },
-    {
-      "name": "section-05-ai-agent-2x",
-      "passed": true,
-      "actual": [
-        2880,
-        2778
-      ],
-      "expected": [
-        2880,
-        2778
-      ]
-    },
-    {
-      "name": "mhtml-parse",
-      "passed": true
-    },
-    {
-      "name": "mhtml-offline-browser",
-      "passed": true
-    },
-    {
-      "name": "robots-homepage-allowed",
-      "passed": true
-    },
-    {
-      "name": "backlog-complete",
-      "passed": true
-    },
     {
       "name": "json-parse",
       "passed": true,
@@ -122,6 +10,9 @@
         "tokens.json",
         "archive/capture-manifest.json",
         "archive/computed-styles.json",
+        "archive/viewport-metrics.json",
+        "archive/document-outline.json",
+        "archive/token-evidence.json",
         "archive/mhtml-capture.json",
         "archive/mhtml-manifest.json",
         "archive/font-manifest.json",
@@ -130,21 +21,188 @@
       ]
     },
     {
-      "name": "component-metrics-corrected",
+      "name": "viewport-count",
       "passed": true
     },
     {
-      "name": "required-directory",
+      "name": "viewport-visible-roots",
       "passed": true
     },
     {
-      "name": "required-documents",
+      "name": "viewport-height-parity",
+      "passed": true
+    },
+    {
+      "name": "mobile-height-drift-bounded",
+      "passed": true,
+      "driftPx": 25
+    },
+    {
+      "name": "mobile-hero-36px",
+      "passed": true
+    },
+    {
+      "name": "document-outline",
+      "passed": true
+    },
+    {
+      "name": "token-evidence",
       "passed": true
     },
     {
       "name": "checksum-coverage-and-values",
       "passed": true,
-      "coveredFiles": 36
+      "coveredFiles": 42
     }
-  ]
+  ],
+  "priorRounds": {
+    "1": {
+      "allPassed": true,
+      "checks": [
+        {
+          "name": "screenshot-raycast-home-1440-fullpage.png",
+          "passed": true,
+          "actual": [
+            1440,
+            15983
+          ],
+          "expected": [
+            1440,
+            15983
+          ]
+        },
+        {
+          "name": "screenshot-raycast-home-1280-fullpage.png",
+          "passed": true,
+          "actual": [
+            1280,
+            15983
+          ],
+          "expected": [
+            1280,
+            15983
+          ]
+        },
+        {
+          "name": "screenshot-raycast-home-375-fullpage.png",
+          "passed": true,
+          "actual": [
+            375,
+            15647
+          ],
+          "expected": [
+            375,
+            15647
+          ]
+        },
+        {
+          "name": "section-01-hero-2x",
+          "passed": true,
+          "actual": [
+            2880,
+            1936
+          ],
+          "expected": [
+            2880,
+            1936
+          ]
+        },
+        {
+          "name": "section-02-command-launcher-2x",
+          "passed": true,
+          "actual": [
+            2880,
+            2752
+          ],
+          "expected": [
+            2880,
+            2752
+          ]
+        },
+        {
+          "name": "section-03-value-grid-2x",
+          "passed": true,
+          "actual": [
+            2880,
+            1440
+          ],
+          "expected": [
+            2880,
+            1440
+          ]
+        },
+        {
+          "name": "section-04-extension-carousel-2x",
+          "passed": true,
+          "actual": [
+            2880,
+            2516
+          ],
+          "expected": [
+            2880,
+            2516
+          ]
+        },
+        {
+          "name": "section-05-ai-agent-2x",
+          "passed": true,
+          "actual": [
+            2880,
+            2778
+          ],
+          "expected": [
+            2880,
+            2778
+          ]
+        },
+        {
+          "name": "mhtml-parse",
+          "passed": true
+        },
+        {
+          "name": "mhtml-offline-browser",
+          "passed": true
+        },
+        {
+          "name": "robots-homepage-allowed",
+          "passed": true
+        },
+        {
+          "name": "backlog-complete",
+          "passed": true
+        },
+        {
+          "name": "json-parse",
+          "passed": true,
+          "files": [
+            "tokens.json",
+            "archive/capture-manifest.json",
+            "archive/computed-styles.json",
+            "archive/mhtml-capture.json",
+            "archive/mhtml-manifest.json",
+            "archive/font-manifest.json",
+            "archive/section-capture-manifest.json",
+            "archive/mhtml-browser-check.json"
+          ]
+        },
+        {
+          "name": "component-metrics-corrected",
+          "passed": true
+        },
+        {
+          "name": "required-directory",
+          "passed": true
+        },
+        {
+          "name": "required-documents",
+          "passed": true
+        },
+        {
+          "name": "checksum-coverage-and-values",
+          "passed": true,
+          "coveredFiles": 36
+        }
+      ]
+    }
+  }
 }
