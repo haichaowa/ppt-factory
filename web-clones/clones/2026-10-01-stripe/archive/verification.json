@@ -1,8 +1,8 @@
 {
-  "round": 2,
+  "round": 3,
   "allPassed": true,
-  "passed": 27,
-  "total": 27,
+  "passed": 37,
+  "total": 37,
   "checks": [
     {
       "name": "json_valid:capture-manifest.json",
@@ -72,6 +72,34 @@
       "passed": true,
       "details": {
         "bytes": 33453
+      }
+    },
+    {
+      "name": "json_valid:offline-fidelity.json",
+      "passed": true,
+      "details": {
+        "bytes": 973
+      }
+    },
+    {
+      "name": "json_valid:rights-inventory.json",
+      "passed": true,
+      "details": {
+        "bytes": 9933
+      }
+    },
+    {
+      "name": "json_valid:security-scan.json",
+      "passed": true,
+      "details": {
+        "bytes": 3592
+      }
+    },
+    {
+      "name": "json_valid:file-inventory.json",
+      "passed": true,
+      "details": {
+        "bytes": 17004
       }
     },
     {
@@ -290,6 +318,74 @@
       }
     },
     {
+      "name": "offline_fidelity_evidence",
+      "passed": true,
+      "details": {
+        "pixelsCompared": 1296000,
+        "exactMatchingPixels": 94073,
+        "pixelmatchDifferentPixels": 365408,
+        "exactMatchRatio": 0.07258719,
+        "meanAbsoluteError": 27.476935
+      }
+    },
+    {
+      "name": "offline_preview_pixel_exact",
+      "passed": true,
+      "details": {
+        "pixelsCompared": 1296000,
+        "exactMatchingPixels": 1296000,
+        "pixelmatchDifferentPixels": 0,
+        "exactMatchRatio": 1,
+        "meanAbsoluteError": 0
+      }
+    },
+    {
+      "name": "rights_inventory",
+      "passed": true,
+      "details": {
+        "resourceCount": 35,
+        "domains": {
+          "b.stripecdn.com": 13,
+          "images.stripeassets.com": 21,
+          "stripe.com": 1
+        },
+        "supplementalFonts": 2
+      }
+    },
+    {
+      "name": "security_scan",
+      "passed": true,
+      "details": {
+        "filesScanned": 70,
+        "findings": 0,
+        "allowedOrigins": [
+          "b.stripecdn.com",
+          "images.stripeassets.com",
+          "stripe.com"
+        ]
+      }
+    },
+    {
+      "name": "file_inventory",
+      "passed": true,
+      "details": {
+        "fileCount": 69,
+        "totalBytes": 39155739
+      }
+    },
+    {
+      "name": "checksums_previous_match",
+      "passed": true,
+      "details": {
+        "entries": 53,
+        "mismatches": [],
+        "excludedMutable": [
+          "archive/verification.py",
+          "archive/file-inventory.json"
+        ]
+      }
+    },
+    {
       "name": "backlog_complete",
       "passed": true,
       "details": null
@@ -298,8 +394,8 @@
       "name": "checksums_generated",
       "passed": true,
       "details": {
-        "files": 41,
-        "bytes": 4433
+        "files": 55,
+        "bytes": 5867
       }
     }
   ]

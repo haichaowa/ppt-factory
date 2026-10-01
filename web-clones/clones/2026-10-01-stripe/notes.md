@@ -9,7 +9,7 @@ Stripe 的经典感并非来自装饰，而来自**金融品牌可信度 × 产�
 ## 2. 斜切渐变与 Hero
 
 - Hero 背景 DOM 是 `section-background hero-section__background`，内部为 `hero-wave-animation`、`canvas[data-engine="three.js r178"]`；画布属性 1392×761，渲染盒 x=337、y=0、1392.59×761，页面可见区域约 1440×685。视觉从左上深蓝紫推进到右下品红与橙，形成斜切波面。
-- `prefers-reduced-motion` 时保留 desktop/tablet/mobile 三档 WebP fallback；本次 Chromium 实际选择 desktop 1x `wave-fallback-desktop-1x.fba6fa88.webp`，渲染 1392×975 且向下偏移 107px，因此归档不仅记录动态 canvas，也能研究静态降级素材。
+- `prefers-reduced-motion` 时保留 desktop/tablet/mobile 三档 WebP fallback；本次 Chromium 实际选择 desktop 1x `wave-fallback-desktop-1x.fba6fa88.webp`，渲染 1392×975 且向下偏移 107px，因此归档不仅记录动态 canvas，也能研究静态降级素材。MHTML 无法重放 WebGL，首屏 exact match 仅 7.258719%、MAE 27.476935；本地截图预览则 100% 一致。
 - H1 采用双份同位文案：`--background` 与 `--foreground` 各一份。48px / 300 / 55.2px / -0.96px；主句 `em` 是 #0A2540，说明句在波形上呈现绿/蓝半透明采样色，形成“文字嵌入渐变”的效果。
 - 顶部动态 GDP 指标使用双层数字滚动；首屏下方 logo marquee 以横向位移延续能量，但在 reduced motion 场景中避免抢占主叙事。
 

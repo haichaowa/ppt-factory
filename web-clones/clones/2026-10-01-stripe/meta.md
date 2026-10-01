@@ -12,8 +12,8 @@
 - **MHTML 完整性**：`archive/stripe-home.mhtml` 为 2,280,686 bytes、35 个带 Content-Location 的资源 part（3 个 text/html、10 CSS、22 WebP；解码后 1,948,590 bytes）。MHTML 未包含 JS 与字体字节，已按 performance 记录补充 `Sohne` 与 `Source Code Pro Medium` 两个 WOFF2 到 `archive/resources/`。
 - **响应式复审**：`archive/responsive-metrics.json` 复测三档视口均为无横向溢出；1440/1280/375 live 高度分别为 14702、14651、20231。初始 1280 full-page PNG 为 15089，两者相差 438px，来自站点动态布局/懒载状态；PNG 仍是视觉 canonical。移动端 H1 34/35.02px、CTA 343×44，桌面 H1 48/55.2px、CTA 约141×48。
 - **可访问性复审**：`archive/color-accessibility.json` 审计 8 个实测色对，全部通过 WCAG 2.1 AA，最低 4.75:1；主文本/白底 15.54:1、白字/#533AFD 6.19:1、开发者白字/#020826 19.71:1。
-- **动态保真说明**：首页 Hero 为 `three.js r178` canvas 波形渐变，MHTML 不能重放脚本生成的 WebGL 状态；归档中的三档 PNG 和 2x 区块 PNG 是视觉 canonical。MHTML 适合研究 DOM/CSS/静态图片结构，不应视为像素完整重建。
-- **资源权利清单**：MHTML 资源来自 `stripe.com`（1）、`b.stripecdn.com`（13）、`images.stripeassets.com`（21）；字体来自 `b.stripecdn.com`。所有权利归原权利人，归档不改变归属。
+- **动态保真说明**：首页 Hero 为 `three.js r178` canvas 波形渐变，MHTML 不能重放脚本生成的 WebGL 状态。对 1440×900 首屏的 1,296,000 像素做对比，MHTML exact match 7.258719%、MAE 27.476935、pixelmatch 差异 365,408；`archive/offline-preview.html` 改用 canonical 截图后 exact match 100%、MAE 0。三档 PNG 和 2x 区块 PNG 是视觉基准，MHTML 适合研究 DOM/CSS/静态图片结构。
+- **资源权利清单**：`archive/rights-inventory.json` 记录 MHTML 资源来自 `stripe.com`（1）、`b.stripecdn.com`（13）、`images.stripeassets.com`（21），另有 2 个补充 WOFF2 字体来自 `b.stripecdn.com`。所有权利归原权利人，客户与第三方商标归相应权利人，归档不改变归属。
 - **复现与复审入口**：
   - `archive/capture.js` 保留本次完整捕获流程；`archive/capture-manifest.json` 记录工具、响应、截图/区块坐标、哈希与资源覆盖；
   - `archive/mhtml-manifest.py/.json` 清点 MHTML 35 个 part、3 个来源域与内容类型；
@@ -22,7 +22,9 @@
   - `archive/css-token-evidence.py/.json` 从 CSS 源码提取 640 个 HDS token 声明、44 个媒体条件与 10 个 keyframe；
   - `archive/responsive-metrics.json`、`archive/color-accessibility.json`、`archive/motion-evidence.json`、`archive/verification.py/.json` 与 `archive/SHA256SUMS` 提供机器可读复审。
 - **版权口径**：页面文案、Logo、插画、产品 UI、字体与品牌资产版权归 Stripe / 各资源权利人。此目录仅供本地设计学习与内部研究，不二次分发、不商用、不用于对外发布，也不作为模型训练素材。
-- **目录规模**：约 35 MiB；最大文件为五个 2x 区块与三档全页截图。
+- **隐私与安全**：`archive/security-scan.json` 扫描 70 个文件，未发现 Set-Cookie、Authorization/Bearer、OAuth token 或 Stripe secret key；外源仅限以上三个域名。
+- **最终校验**：`archive/file-inventory.json` 清点全部交付；`archive/verification.json` 第 3 轮 37/37 通过；`archive/SHA256SUMS` 覆盖 55 个稳定 archive 文件。
+- **目录规模**：约 37.3 MiB；最大文件为五个 2x 区块、三档全页截图与 MHTML。
 
 ## 主要交付
 

@@ -36,3 +36,23 @@
 9. Updated `meta.md`, `notes.md`, `tokens.json`, round-2 manifest, checksums and `archive/verification.json`.
 
 **Result:** round-2 `archive/verification.json` reports `allPassed: true` (27/27). This round is committed separately.
+
+## Round 3 — offline fidelity, rights provenance and final closeout
+
+**Reviewed:** 2026-10-01 15:50–16:05（Asia/Shanghai）
+**Scope:** live/MHTML pixel comparison, local visual fallback, third-party/resource rights, privacy scan, complete file inventory, checksum verification and final automation.
+
+### Fixes
+
+1. Added `archive/offline-fidelity.js/.json`, comparing 1,296,000 first-screen pixels. MHTML exact match is 7.258719% with MAE 27.476935; this quantifies rather than hides the missing three.js/WebGL state.
+2. Added `archive/live-firstscreen.png` and `archive/offline-fidelity-diff.png`, making the live crop and every compared difference auditable.
+3. Added `archive/offline-preview.html/.png` and `offline-preview-fidelity-diff.png`; the canonical-screenshot preview is pixel-exact (1,296,000/1,296,000, MAE 0).
+4. Added `archive/rights-inventory.py/.json`, grouping all MHTML parts and supplemental fonts by origin/type and explicitly preserving third-party trademark rights.
+5. Added `archive/security-scan.py/.json`; 70 files were scanned for Set-Cookie, Authorization/Bearer, OAuth token and Stripe secret-key patterns with zero findings, and only three allowed origins appear.
+6. Added `archive/file-inventory.py/.json`, refreshing all deliverable paths, sizes, image geometry and SHA-256 values after round-3 edits.
+7. Updated checksum verification to require every prior stable entry to exist and match before regeneration, excluding only the mutable audit driver and freshly rebuilt inventory, then rebuilt `archive/SHA256SUMS` for 55 stable archive artifacts.
+8. Advanced `archive/verification.py/.json` to a 37-check final audit covering JSON, images, sections, MHTML, offline loading, CSS provenance, responsive data, contrast, motion, fidelity, rights, security, inventory, checksums and BACKLOG.
+9. Corrected checksum path generation for nested `archive/styles/` and `archive/resources/` files, and changed missing checksum targets from silent skips into failures.
+10. Expanded `meta.md`, `notes.md` and `tokens.json` with exact pixel metrics, rights/security results and final inventory/verification coverage.
+
+**Result:** final `archive/verification.json` reports `allPassed: true` (37/37). This round is committed separately; no push was performed.

@@ -1,0 +1,29 @@
+{
+  "comparedRegion": {
+    "x": 0,
+    "y": 0,
+    "width": 1440,
+    "height": 900
+  },
+  "live": "screenshots/stripe-home-1440-fullpage.png#first-900",
+  "offline": "archive/offline-firstscreen.png",
+  "offlineDiff": "archive/offline-fidelity-diff.png",
+  "offlineFidelity": {
+    "pixelsCompared": 1296000,
+    "exactMatchingPixels": 94073,
+    "pixelmatchDifferentPixels": 365408,
+    "exactMatchRatio": 0.07258719,
+    "meanAbsoluteError": 27.476935
+  },
+  "preview": "archive/offline-preview.html",
+  "previewScreenshot": "archive/offline-preview.png",
+  "previewDiff": "archive/offline-preview-fidelity-diff.png",
+  "previewFidelity": {
+    "pixelsCompared": 1296000,
+    "exactMatchingPixels": 1296000,
+    "pixelmatchDifferentPixels": 0,
+    "exactMatchRatio": 1,
+    "meanAbsoluteError": 0
+  },
+  "interpretation": "MHTML retains DOM/CSS/static images but cannot replay script-generated WebGL state; canonical PNGs and the local preview are visual fallbacks."
+}
