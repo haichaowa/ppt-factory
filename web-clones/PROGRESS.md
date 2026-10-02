@@ -1,6 +1,15 @@
 # web-clones 进度
 
-## 当前批次：2026-09-29 openai.com
+## 当前批次：2026-10-02 framer.com
+
+- [x] 阶段1：robots 核对、CDP MHTML、live DOM、三档 computed style / 全页截图；补充 4 个实际渲染 MP4
+- [x] 阶段2：`notes.md` 基于三档真实计算样式完成设计拆解
+- [x] 阶段3：5 个 2x 代表区块截图与一句评价
+- [x] 阶段4：`tokens.json` 结构化沉淀 + BACKLOG 打勾
+- [ ] 阶段5：remake 本批跳过；额度优先投入强制复审与归档保真度
+- [ ] 复审-精修：待执行
+
+## 历史批次：2026-09-29 openai.com
 
 - [x] 阶段1：MHTML 单文件归档 + DOM/桌面与移动计算样式 + 1440/1280/375 全页截图
 - [x] 阶段2：notes.md 设计拆解（真实 computed style）
@@ -17,4 +26,4 @@
 
 ## 下次入口
 
-取 `web-clones/BACKLOG.md` 最上方未完成项：`claude.com/product/claude-code`。
+取 `web-clones/BACKLOG.md` 最上方未完成项：`tailwindcss.com`。

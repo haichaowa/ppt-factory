@@ -11,7 +11,7 @@
 - [x] raycast.com · macOS 质感：暗色硬件材质、红点缀、产品截图叙事 → `clones/2026-10-01-raycast/`
 - [x] stripe.com · 金融科技经典：斜切渐变、插画系统、滚动动效 → `clones/2026-10-01-stripe/`
 - [x] arc.net · 浏览器官网的个性表达：大胆配色、非对称构图 → `clones/2026-10-01-arc/`
-- [ ] framer.com · 设计工具的自我展示：真实交互、现代版式
+- [x] framer.com · 设计工具的自我展示：真实交互、现代版式 → `clones/2026-10-02-framer/`
 - [ ] tailwindcss.com · 文档与营销的平衡：浅色、清晰、工程师友好
 
 ## 设计系 / 工作室官网
