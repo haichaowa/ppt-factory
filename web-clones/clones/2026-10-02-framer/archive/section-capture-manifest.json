@@ -1,0 +1,151 @@
+{
+  "source": "https://www.framer.com/",
+  "capturedAt": "2026-10-02T03:55:13.990Z",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  },
+  "deviceScaleFactor": 2,
+  "videoState": [
+    {
+      "src": "https://framerusercontent.com/assets/2zyGmnAWVTTdkv4LY1mFKgEdhg.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 1200,
+      "height": 673.4375
+    },
+    {
+      "src": "https://framerusercontent.com/assets/IxrpbsCJLku5W91FcYn0gQuQY.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 560,
+      "height": 150
+    },
+    {
+      "src": "https://framerusercontent.com/assets/d5okMiktMgbhCcGtgbr8gGqqHU.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 515,
+      "height": 150
+    },
+    {
+      "src": "https://framerusercontent.com/assets/EGqLxawrgBiyYfcyRAdEFPRAMWo.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 560,
+      "height": 150
+    },
+    {
+      "src": "https://framerusercontent.com/assets/IxrpbsCJLku5W91FcYn0gQuQY.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 560,
+      "height": 150
+    },
+    {
+      "src": "https://framerusercontent.com/assets/d5okMiktMgbhCcGtgbr8gGqqHU.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 515,
+      "height": 150
+    },
+    {
+      "src": "https://framerusercontent.com/assets/EGqLxawrgBiyYfcyRAdEFPRAMWo.mp4",
+      "readyState": 0,
+      "paused": true,
+      "duration": null,
+      "current": 0,
+      "width": 560,
+      "height": 150
+    }
+  ],
+  "sections": [
+    {
+      "name": "01-hero-headline-cta",
+      "selector": "main > section:nth-of-type(1) > header",
+      "file": "sections/01-hero-headline-cta.png",
+      "cssRect": {
+        "x": 0,
+        "y": 64,
+        "width": 1440,
+        "height": 308,
+        "documentY": 128
+      },
+      "text": "Framer is the design agent for every step from idea to launch Get started for free Download app New: Skills",
+      "bytes": 62409,
+      "assessment": "黑底首屏把 54px 品牌标题压到两行，右侧留白让 12px 级小 CTA 反而成为清晰入口。"
+    },
+    {
+      "name": "02-hero-product-video",
+      "selector": "main > section:nth-of-type(1) > div:nth-child(2)",
+      "file": "sections/02-hero-product-video.png",
+      "cssRect": {
+        "x": 0,
+        "y": 227,
+        "width": 1440,
+        "height": 673.4375,
+        "documentY": 372
+      },
+      "text": "0:36",
+      "bytes": 1323847,
+      "assessment": "好在这里不画抽象插画，而是用 1200px 宽的真实产品操作视频立即证明“design agent”的能力。"
+    },
+    {
+      "name": "03-agent-workflow",
+      "selector": "main > section:nth-of-type(2) > div:first-child",
+      "file": "sections/03-agent-workflow.png",
+      "cssRect": {
+        "x": 20,
+        "y": -638.5625,
+        "width": 1400,
+        "height": 2176.8125,
+        "documentY": 1381.44
+      },
+      "text": "Agents that work alongside you, not instead of you Start with agents Exploration Exploration — Big Intro Exploration — Side Nav Design with an agent A professional design agent, native to the canvas. It works directly on your site to generate and refine in place, with every change visible, editable, and under your control. Start with Agents CMS Site · main Invite Publish Collections Fields Plugins Academy Blog Articles 320 Creators 256 Categories 18 Styles 7 Developers Startups Help Add... Title",
+      "bytes": 1239285,
+      "assessment": "探索方案、画布代理、CMS 和代码操作连续排列，把复杂工作流拆成可逐屏阅读的产品证据。"
+    },
+    {
+      "name": "04-platform-interface",
+      "selector": "main > section:nth-of-type(3) > div:nth-child(2)",
+      "file": "sections/04-platform-interface.png",
+      "cssRect": {
+        "x": 120,
+        "y": -269.9375,
+        "width": 1200,
+        "height": 1440,
+        "documentY": 4655.06
+      },
+      "text": "Core Web Vitals GOOD LCP 1.1s INP 95ms CLS 0.01 Performance Collections Fields Blog Careers Events Categories 13 Speakers 18 Talks 89 Startups Help Add... Title Status Image Category Generative design rooted in natural forms Live Design Blog Designing AI tools that feel organic Live AI Blog Living systems: data visualization from nature Live Data Blog Sustainable interfaces for a greener web Live Engineering Blog Learning from nature to design better products Live AI Blog CMS Site Settings Title",
+      "bytes": 455946,
+      "assessment": "25px 圆角的巨幅平台面板把性能指标、CMS、SEO、分析等模块装进一个可感知的一体化工作台。"
+    },
+    {
+      "name": "05-community-feed",
+      "selector": "main > section:nth-of-type(6) > div:nth-child(2)",
+      "file": "sections/05-community-feed.png",
+      "cssRect": {
+        "x": 120,
+        "y": 30.09375,
+        "width": 1200,
+        "height": 840,
+        "documentY": 8529.09
+      },
+      "text": "Community Feed Hype Experts Gallery Search Topics… Post Lee Black 7m The only Framer Liquid Glass component that is cross browser and mobile friendly. Turn your sound on. 117 32 8 Gustave Flowbert in Marketplace · 42m Billie · Template Copy 91 11 3 Reposted by Jurre Ben Fryc 6h in my fisheye era 231 27 11 Renny Mathew in Marketplace · 19h Carousel 3D · Component Copy 16 4 2 Lee Black 7m The only Framer Liquid Glass component that is cross browser and mobile friendly. Turn your sound on. 117 32 8",
+      "bytes": 444244,
+      "assessment": "#111 面板内的社区 Feed、搜索和实时帖子让生态活力像产品界面一样可被浏览，而不是一句口号。"
+    }
+  ]
+}
