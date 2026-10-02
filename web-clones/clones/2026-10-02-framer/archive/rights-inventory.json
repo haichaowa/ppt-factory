@@ -15,7 +15,20 @@
       "www.framer.com"
     ],
     "partCount": 79,
-    "bytes": 4724439
+    "bytes": 4724439,
+    "partsByDomain": {
+      "accounts.google.com": 1,
+      "framer.com": 1,
+      "framerusercontent.com": 66,
+      "www.framer.com": 1
+    },
+    "contentTypes": [
+      "image/avif",
+      "image/jpeg",
+      "image/svg+xml",
+      "text/css",
+      "text/html"
+    ]
   },
   "supplementedMedia": {
     "count": 4,

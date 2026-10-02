@@ -1,7 +1,12 @@
 {
-  "count": 57,
-  "totalBytes": 30177031,
+  "count": 60,
+  "totalBytes": 30192556,
   "files": [
+    {
+      "file": "README.md",
+      "bytes": 1393,
+      "sha256": "a04b37459e9de2b72b19a5fda0480fcca993bcfb17f753c3008ae514c76e0e1f"
+    },
     {
       "file": "archive/capture-design-evidence.js",
       "bytes": 7717,
@@ -15,7 +20,7 @@
     {
       "file": "archive/capture-sections.js",
       "bytes": 4400,
-      "sha256": "59afa20f880d3144760b186ca345574f165ab353d022150752f516bfd25d483f"
+      "sha256": "5979d19a447b64ae5cec558d077ad663123ffe82ad1d188279973708bbf6ef76"
     },
     {
       "file": "archive/capture.js",
@@ -39,8 +44,8 @@
     },
     {
       "file": "archive/file-inventory.json",
-      "bytes": 7823,
-      "sha256": "9119b14618ad9f050d80276d75700f298cc48f4b255627f90b94be1997e9a441"
+      "bytes": 9953,
+      "sha256": "bd521f1f1a8c784426bf25738d9c09f036f1d57b3abbd5404d3cff99f6d03a02"
     },
     {
       "file": "archive/file-inventory.py",
@@ -139,13 +144,13 @@
     },
     {
       "file": "archive/rights-inventory.json",
-      "bytes": 1068,
-      "sha256": "c904248335917d6af990b50fa89c640a33612150f3d2b90010683a68994996f3"
+      "bytes": 1342,
+      "sha256": "b0b9559a2d2f51caabaf77796ea217670f89effa0bf726a9632e64fa06f1fbd3"
     },
     {
       "file": "archive/rights-inventory.py",
-      "bytes": 1323,
-      "sha256": "335d7d96f1f7771724cdde7270b78806ba2a606c8e07e07e344dd6ea827a40a7"
+      "bytes": 1525,
+      "sha256": "1530c595d6286906a4b5df517a4b7e69c742fec03b7c234c78f1200873f24d72"
     },
     {
       "file": "archive/robots.txt",
@@ -160,27 +165,37 @@
     {
       "file": "archive/section-capture-manifest.json",
       "bytes": 5747,
-      "sha256": "7868f06ae7ce1c75bad1850b2e86d13947c290edd87596ad7a9fd6d053750bd3"
+      "sha256": "9e130102d4f33638fffdf578748c1ed3bfa5f63fd7da221105a272ed451ea7b0"
     },
     {
       "file": "archive/security-scan.json",
-      "bytes": 190,
-      "sha256": "763bdd21c7bde584ff18847c0427f9538b947daf5be83021de1e0bc618b0bad3"
+      "bytes": 216,
+      "sha256": "d3a3ea728118900e1dc0f9d4d272eb77d3702af5366085b65dc556ad6fc93b9e"
     },
     {
       "file": "archive/security-scan.py",
-      "bytes": 1684,
-      "sha256": "8302cac76a335f7172f70d0913b9969f74a5e77fc946b27bfccce754c70a1fd0"
+      "bytes": 1669,
+      "sha256": "8b10843bd78f531d11d853fda65f100b1d0825ea012ea252af06e7db5b9cc860"
+    },
+    {
+      "file": "archive/token-evidence-audit.json",
+      "bytes": 2978,
+      "sha256": "fc2dbf7630745f6c81e294eed97e44e4d8b0871eca5be73c29d82aa6ec1ea7b2"
+    },
+    {
+      "file": "archive/token-evidence-audit.py",
+      "bytes": 4347,
+      "sha256": "b8e667a0cffcbc68ff8533253cfbfcca4829ddb087bed6a20dcfdbef4cc77302"
     },
     {
       "file": "archive/verification.json",
-      "bytes": 4413,
-      "sha256": "6cbcc240fe013d097346d141fd17f4bdc07f7bdbf4666f29534a2684b86a4c29"
+      "bytes": 4842,
+      "sha256": "1ae8dcf40d8c1162838799257d1cb5fedcbcba515ed363bc5762b6f8754c3533"
     },
     {
       "file": "archive/verification.py",
-      "bytes": 6240,
-      "sha256": "ecac9dda16eb1e7a07e630ceb8ffe265c48d06fccd3b60199f980beaec5c9378"
+      "bytes": 6914,
+      "sha256": "2e2183a79e37f3833b34a28fe5c87bc944211a0ff4db99fbc5306c7a15eeecab"
     },
     {
       "file": "archive/viewport-1280-firstscreen.png",
@@ -219,8 +234,8 @@
     },
     {
       "file": "meta.md",
-      "bytes": 2828,
-      "sha256": "427cb3f6f5826033b6f2a82495cfc546d577679c3266f8e8235e886841d1fa6a"
+      "bytes": 2843,
+      "sha256": "6b33f7bd45212710196eca485c9f75e935b65695d1438b753d9166ace998e183"
     },
     {
       "file": "notes.md",
@@ -229,8 +244,8 @@
     },
     {
       "file": "review-log.md",
-      "bytes": 6270,
-      "sha256": "df4aecb5a8da2707fabbc13ce989e8dcef8d13a430ffeeb60bf45e3778e94249"
+      "bytes": 9342,
+      "sha256": "987efce2f4dcb7929765903c40f6a281991ad918e15e57af245507ac75c63c58"
     },
     {
       "file": "screenshots/README.md",
@@ -280,7 +295,7 @@
     {
       "file": "sections/README.md",
       "bytes": 1204,
-      "sha256": "314188e895f54a8ff9782fb0bb58c4ea1e1929890ce369f768c3567acd262332"
+      "sha256": "0f146c1f48a7d054585e73b5bf7ed446eb2f614326cb0381b47480f3421b876c"
     },
     {
       "file": "tokens.json",

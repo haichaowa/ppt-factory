@@ -45,3 +45,26 @@
 
 **诚实自评**
 现在主交付已经达到“打开目录即可核对”的可用度：浏览器可看三档与区块截图，MHTML 可离线打开，脚本和 JSON 可复现证据，版权边界明确。剩余不足是：尚未对 1280 / 375 的 MHTML 做逐档离线差异，未建立面向真人浏览的目录索引页，最后一轮还需复核提交边界与未跟踪文件，确保没有把旧批次未提交 remakes 混入本次成果。
+
+## Round 3 · 2026-10-02
+
+**四维打分**：正确性 9.6 / 10；完整性 9.7 / 10；精致度 9.6 / 10；可用性 9.7 / 10。无 P0 / P1；发现并修复 7 处 P2。
+
+**逐文件检查范围**
+- 目录入口：`README.md`、`meta.md`、`notes.md`、`tokens.json`、`review-log.md`
+- 可视交付：8 张全页 / 首屏 / 区块 PNG、`screenshots/README.md`、`sections/README.md`、4 个 MP4
+- 主归档与证据：`archive/framer-home.mhtml`、`archive/framer-home.source.html`、`archive/live-dom.html`、`archive/robots.txt`、`archive/capture-manifest.json`、`archive/mhtml-manifest.json`、`archive/design-evidence.json`、三份 viewport metrics、`offline-browser-check.json`
+- 校验与版权：`token-evidence-audit.py/.json`、`verification.py/.json`、`responsive-metrics.py/.json`、`color-accessibility.py/.json`、`security-scan.py/.json`、`rights-inventory.py/.json`、`file-inventory.py/.json`、`SHA256SUMS`
+- 队列状态：`web-clones/BACKLOG.md`、`web-clones/PROGRESS.md`
+
+**具体修复（7 处 P2）**
+1. 新增 `archive/token-evidence-audit.py/.json`：把 14 条结构化令牌逐条回指到 1440/375 computed metrics、CSS transition、视频计数、页高与区块坐标；14/14 匹配，防止 tokens 变成主观抄写。
+2. 初版 token audit 有两处选择器误读：主 CTA 未做 `rgb()`→hex 归一，社区面板选中外层黑底而非 `#111/18px` 内层；均已修正并通过。
+3. 新增本目录 `README.md` 索引，明确“先看什么、区块在哪里、离线文件是什么、复核命令怎么跑”，让真人不必遍历 50+ 个 archive 文件。
+4. 修正 `sections/README.md`、`section-capture-manifest.json`、`capture-sections.js` 中首屏 CTA 的“12px 级”表述；实测外层 anchor 为 12px、内部文字为 14px，统一改为“小号 CTA”避免错误量化。
+5. 扩大 `security-scan.py` 覆盖到原始 MHTML/DOM 与资源 URL，并新增 credential query 模式；7 类风险检查仍为 0 findings。
+6. `rights-inventory.json` 补充 MHTML 每域名 part 数与 content types，明确 66 个 framerusercontent 资源、1 个 Google accounts 图标与 10 个 CID 内嵌资源；第三方边界不再只靠域名列表。
+7. `verification.py` 扩展为 44/44 项：新增 token audit、真人索引、三轮 review log、最终 inventory 阈值；最终复核通过且无 P0 / P1。
+
+**诚实自评 / 距离“直接可用 / 发布”还差什么**
+这份素材已经满足本地高保真研究与取用：原始 MHTML 可离线打开、无外网请求，三档视觉基准完整，五个代表区块为 2x，令牌有真实 computed style 回指，安全和版权边界可机器核查。仍不能称为“可发布站点复刻”：Walsheim 是商业字体且不得打包复用；MHTML 的视频帧与滚动状态不能完全重放，视觉研究应以三档 PNG + 本地 MP4 为准；1280/375 未做 MHTML 像素对比；可选 remake 也按计划跳过。若要发布，需要替换字体与所有版权素材，并把本包拆成只含抽象 tokens / 原创示例的公开版。

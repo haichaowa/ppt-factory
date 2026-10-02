@@ -7,7 +7,7 @@
 - [x] 阶段3：5 个 2x 代表区块截图与一句评价
 - [x] 阶段4：`tokens.json` 结构化沉淀 + BACKLOG 打勾
 - [x] 阶段5决策：remake 本批跳过；额度优先投入强制复审与归档保真度
-- [ ] 复审-精修：Round 1 / Round 2 完成；待 Round 3
+- [x] 复审-精修：3/3 轮完成；无 P0 / P1；见 `clones/2026-10-02-framer/review-log.md`
 
 ## 历史批次：2026-09-29 openai.com
 

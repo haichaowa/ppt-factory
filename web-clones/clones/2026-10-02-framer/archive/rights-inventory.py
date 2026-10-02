@@ -6,7 +6,7 @@ r=json.loads((root/'archive/resource-download-manifest.json').read_text())
 output={
  'source':'https://www.framer.com/',
  'robots':{'file':'archive/robots.txt','homepageAllowed':True,'restrictedPathsNotVisited':['/api-proxy']},
- 'mhtml':{'domains':m['domains'],'partCount':m['partCount'],'bytes':m['bytes']},
+ 'mhtml':{'domains':m['domains'],'partCount':m['partCount'],'bytes':m['bytes'],'partsByDomain':{domain:sum(1 for x in m['parts'] if x['contentLocation'].startswith('http') and x['contentLocation'].split('/')[2]==domain) for domain in m['domains']},'contentTypes':m['contentTypes']},
  'supplementedMedia':{'count':len(r['resources']),'domains':sorted({x['source'].split('/')[2] for x in r['resources']}),'bytes':r['totalBytes']},
  'rightsHolders':{
    'siteCopyAndBrand':'Framer Software, Inc. / Framer brand rights holders',

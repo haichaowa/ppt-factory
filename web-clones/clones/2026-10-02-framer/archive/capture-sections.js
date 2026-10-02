@@ -36,7 +36,7 @@ const videoMap = new Map([
   });
   const videoState=await page.evaluate(()=>[...document.querySelectorAll('video')].map(v=>({src:v.currentSrc||v.src,readyState:v.readyState,paused:v.paused,duration:v.duration,current:v.currentTime,width:v.getBoundingClientRect().width,height:v.getBoundingClientRect().height})));
   const specs=[
-    ['01-hero-headline-cta','main > section:nth-of-type(1) > header','黑底首屏把 54px 品牌标题压到两行，右侧留白让 12px 级小 CTA 反而成为清晰入口。'],
+    ['01-hero-headline-cta','main > section:nth-of-type(1) > header','黑底首屏把 54px 品牌标题压到两行，右侧留白让小号 CTA 在暗场中成为清晰入口。'],
     ['02-hero-product-video','main > section:nth-of-type(1) > div:nth-child(2)','好在这里不画抽象插画，而是用 1200px 宽的真实产品操作视频立即证明“design agent”的能力。'],
     ['03-agent-workflow','main > section:nth-of-type(2) > div:first-child','探索方案、画布代理、CMS 和代码操作连续排列，把复杂工作流拆成可逐屏阅读的产品证据。'],
     ['04-platform-interface','main > section:nth-of-type(3) > div:nth-child(2)','25px 圆角的巨幅平台面板把性能指标、CMS、SEO、分析等模块装进一个可感知的一体化工作台。'],

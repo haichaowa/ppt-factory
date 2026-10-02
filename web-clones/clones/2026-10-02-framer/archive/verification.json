@@ -139,7 +139,7 @@
     {
       "name": "security findings",
       "passed": true,
-      "details": "6 secret pattern classes, 0 findings"
+      "details": "7 secret pattern classes, 0 findings"
     },
     {
       "name": "rights restrictions",
@@ -160,6 +160,11 @@
       "name": "notes real computed evidence",
       "passed": true,
       "details": null
+    },
+    {
+      "name": "token evidence audit",
+      "passed": true,
+      "details": "14/14 structured claims traced to computed metrics"
     },
     {
       "name": "tokens structured",
@@ -187,14 +192,29 @@
       "details": null
     },
     {
-      "name": "progress updated",
-      "passed": false,
+      "name": "progress finalized",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "human browse index",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "final honest assessment",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "three review rounds",
+      "passed": true,
       "details": null
     },
     {
       "name": "SHA256SUMS",
       "passed": true,
-      "details": "57 files verified in Python"
+      "details": "60 files verified in Python"
     },
     {
       "name": "inventory nonempty",
@@ -202,7 +222,7 @@
       "details": null
     }
   ],
-  "passed": 39,
-  "failed": 1,
-  "total": 40
+  "passed": 44,
+  "failed": 0,
+  "total": 44
 }

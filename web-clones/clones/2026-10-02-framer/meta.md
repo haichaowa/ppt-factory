@@ -12,6 +12,6 @@
 - **视频补充**：Chromium MHTML 未嵌入 MP4 字节；已按实际 `video.currentSrc` 另存 4 个 muted loop 视频（1 个首屏产品演示 + 3 个社区循环，共 8.3 MiB），清单与 SHA256 见 `archive/resource-download-manifest.json`、`archive/resources/`。
 - **截图**：`screenshots/framer-home-1440-fullpage.png`（1440×10741）、`screenshots/framer-home-1280-fullpage.png`（1280×10741）、`screenshots/framer-home-375-fullpage.png`（375×10861）。
 - **MHTML 内容**：HTML、CSS、AVIF、JPEG、SVG；资源域名包含 `www.framer.com`、`framer.com`、`framerusercontent.com` 与一个嵌入的 Google accounts 图标。详细 part 清单见 `archive/mhtml-manifest.json`。
-- **离线复现入口**：`archive/capture.js`（三档截图 / MHTML / DOM / computed style）、`archive/capture-design-evidence.js`（字体与动效证据）、`archive/capture-sections.js`（五个 2x 区块）、`archive/offline-browser-check.js`（离线 MHTML 打开、外网隔离与像素对比）、`archive/verification.py`（40 项机器校验）。
+- **离线复现入口**：`archive/capture.js`（三档截图 / MHTML / DOM / computed style）、`archive/capture-design-evidence.js`（字体与动效证据）、`archive/capture-sections.js`（五个 2x 区块）、`archive/offline-browser-check.js`（离线 MHTML 打开、外网隔离与像素对比）、`archive/verification.py`（最终项数见 verification.json）。
 - **离线核验**：MHTML `file://` 打开后 readyState complete，标题、H1、6 个 H2、11 个 stylesheet、90 张图片、7 个 video、152 个链接与 live DOM 一致；外网请求 0。首屏与 live 1440 基准 exact match 86.4419%，MAE 13.778，差异主要来自视频帧 / 运行时滚动状态；完整 PNG 仍是视觉基准。
 - **版权口径**：原站文本、图像、字体、产品 UI、Logo 与品牌资产版权归 Framer Software, Inc. / 相应权利人；本目录仅供本地学习留存，不二次分发、不商用、不对外发布，也不作为模型训练素材。

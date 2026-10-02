@@ -33,23 +33,27 @@ section_expected={'01-hero-headline-cta':(2880,616),'02-hero-product-video':(288
 for name,size in section_expected.items(): check('section '+name,png_size('sections/'+name+'.png')==size,f'{png_size("sections/"+name+".png")} expected {size}')
 section_manifest=load('archive/section-capture-manifest.json');check('section document coordinates',[round(x['cssRect']['y'],2) for x in section_manifest['sections']]==[64.0,372.0,1401.44,4655.06,8529.09])
 check('section assessments',all(x['assessment'] for x in section_manifest['sections']))
-check('security findings',security['findingCount']==0,'6 secret pattern classes, 0 findings')
+check('security findings',security['patternCount']==7 and security['findingCount']==0,'7 secret pattern classes, 0 findings')
 check('rights restrictions',rights['localUseOnly'] and not rights['redistribution'] and not rights['commercialUse'] and not rights['trainingUse'])
 check('essential contrast AA',color['minimumEssentialRatio']>=4.5 and sum(1 for x in color['pairs'] if x['usage']!='decorative metadata' and x['meetsAA'])==8)
 check('faint alpha isolated',next(x for x in color['pairs'] if x['name']=='text-faint')['ratio']<4.5 and next(x for x in color['pairs'] if x['name']=='text-faint')['usage']=='decorative metadata')
 notes=(ROOT/'notes.md').read_text();check('notes real computed evidence',all(x in notes for x in ['54px / 54px / 500 / -2.16px','44px / 48.4px / 500 / -1.76px','18px / 24.3px','rgb(0,0,238)','#4CD963','cubic-bezier(0.44, 0, 0.56, 1)']))
-tokens=load('tokens.json');check('tokens structured',all(k in tokens for k in ['color','typography','space','radius','shadow','motion','layout','components','archive']))
+tokens=load('tokens.json');audit=load('archive/token-evidence-audit.json');check('token evidence audit',audit['claimCount']==14 and audit['matchedClaims']==14,'14/14 structured claims traced to computed metrics')
+check('tokens structured',all(k in tokens for k in ['color','typography','space','radius','shadow','motion','layout','components','archive']))
 check('token CTA evidence',tokens['components']['primaryCta']['radius']=='8px' and tokens['components']['primaryCta']['background']=='#FFFFFF')
 check('token motion evidence',tokens['motion']['observedRunningAnimations']==3 and tokens['motion']['videoNodes']==7)
 check('JSON parse',all((ROOT/p).is_file() for p in ['archive/capture-manifest.json','archive/design-evidence.json','archive/offline-browser-check.json','tokens.json']))
 backlog=(ROOT.parents[1]/'BACKLOG.md').read_text();check('backlog closed',re.search(r'\[x\] framer\.com.*`clones/2026-10-02-framer/`',backlog) is not None)
-progress=(ROOT.parents[1]/'PROGRESS.md').read_text();check('progress updated','阶段4：`tokens.json`' in progress and 'Round 1 完成' in progress)
+progress=(ROOT.parents[1]/'PROGRESS.md').read_text();check('progress finalized','阶段4：`tokens.json`' in progress and '3/3 轮完成；无 P0 / P1' in progress)
+check('human browse index',(ROOT/'README.md').is_file() and '[1440 全页截图](screenshots/framer-home-1440-fullpage.png)' in (ROOT/'README.md').read_text())
+check('final honest assessment','距离“直接可用 / 发布”还差什么' in (ROOT/'review-log.md').read_text() and '商业字体' in (ROOT/'review-log.md').read_text())
+check('three review rounds',all(f'## Round {i}' in (ROOT/'review-log.md').read_text() for i in (1,2,3)))
 sha_ok=True;sha_count=0
 for line in (ROOT/'archive/SHA256SUMS').read_text().splitlines():
  digest,rel=line.split('  ',1);sha_count+=1;p=ROOT/rel
  if not p.is_file() or hashlib.sha256(p.read_bytes()).hexdigest()!=digest:sha_ok=False
 check('SHA256SUMS',sha_ok and sha_count>=46,f'{sha_count} files verified in Python')
-check('inventory nonempty',inventory['count']>=46 and inventory['totalBytes']>29_000_000)
+check('inventory nonempty',inventory['count']>=55 and inventory['totalBytes']>29_500_000)
 output={'generatedAt':'2026-10-02T04:05:00+08:00','checks':CHECKS,'passed':sum(x['passed'] for x in CHECKS),'failed':sum(not x['passed'] for x in CHECKS),'total':len(CHECKS)}
 (ROOT/'archive/verification.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps({'passed':output['passed'],'failed':output['failed'],'total':output['total'],'failures':[x for x in CHECKS if not x['passed']]},ensure_ascii=False,indent=2))

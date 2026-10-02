@@ -8,8 +8,9 @@ patterns={
  'privateKey':re.compile(r'-----BEGIN (?:RSA |EC |OPENSSH |PGP )?PRIVATE KEY-----'),
  'awsKey':re.compile(r'AKIA[0-9A-Z]{16}'),
  'openAIKey':re.compile(r'sk-(?:proj-)?[A-Za-z0-9_-]{20,}'),
+ 'credentialQuery':re.compile(r'[?&](?:access_token|refresh_token|client_secret|api[_-]?key|apikey|sig|signature)=([^&\s"\']{12,})',re.I),
 }
-skip={'archive/framer-home.mhtml','archive/framer-home.source.html','archive/live-dom.html','archive/design-evidence.json','archive/performance-resources.json','archive/mhtml-manifest.json'}
+skip=set()
 files=[]
 for p in sorted(root.rglob('*')):
  if not p.is_file() or '__pycache__' in p.parts: continue
@@ -22,6 +23,6 @@ for p in sorted(root.rglob('*')):
  for name,rx in patterns.items():
   if rx.search(text): hits.append(name)
  if hits: files.append({'file':rel,'findings':hits})
-output={'scope':'All Framer deliverable text/JSON/JS/MD/HTML files except raw live-site payloads, binaries, and downloaded media.','patternCount':len(patterns),'findings':files,'findingCount':sum(len(x['findings']) for x in files)}
+output={'scope':'All Framer deliverable text/JSON/JS/MD/HTML files except binaries and downloaded media; includes raw MHTML/DOM and resource URL manifests.','patternCount':len(patterns),'findings':files,'findingCount':sum(len(x['findings']) for x in files)}
 (root/'archive/security-scan.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
 print(json.dumps(output,ensure_ascii=False,indent=2))
