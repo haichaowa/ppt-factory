@@ -1,0 +1,208 @@
+{
+  "generatedAt": "2026-10-02T04:05:00+08:00",
+  "checks": [
+    {
+      "name": "capture source",
+      "passed": true,
+      "details": "canonical homepage URL"
+    },
+    {
+      "name": "capture status and title",
+      "passed": true,
+      "details": "all three viewport navigations"
+    },
+    {
+      "name": "robots allows homepage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "1440 screenshot geometry",
+      "passed": true,
+      "details": "(1440, 10741) expected (1440, 10741)"
+    },
+    {
+      "name": "1280 screenshot geometry",
+      "passed": true,
+      "details": "(1280, 10741) expected (1280, 10741)"
+    },
+    {
+      "name": "375 screenshot geometry",
+      "passed": true,
+      "details": "(375, 10861) expected (375, 10861)"
+    },
+    {
+      "name": "no horizontal overflow",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "responsive summary valid",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "MHTML size",
+      "passed": true,
+      "details": "stored bytes match manifest"
+    },
+    {
+      "name": "MHTML parts",
+      "passed": true,
+      "details": "79 Chromium resource parts"
+    },
+    {
+      "name": "MHTML domains",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "offline title/H1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "offline structure counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "offline no external requests",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "offline visual fidelity",
+      "passed": true,
+      "details": "exact 0.864, MAE 13.778"
+    },
+    {
+      "name": "supplemented video count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "video hash hero-design-agent.mp4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "video hash community-loop-a.mp4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "video hash community-loop-b.mp4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "video hash community-loop-c.mp4",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "section 01-hero-headline-cta",
+      "passed": true,
+      "details": "(2880, 616) expected (2880, 616)"
+    },
+    {
+      "name": "section 02-hero-product-video",
+      "passed": true,
+      "details": "(2880, 1348) expected (2880, 1348)"
+    },
+    {
+      "name": "section 03-agent-workflow",
+      "passed": true,
+      "details": "(2800, 4356) expected (2800, 4356)"
+    },
+    {
+      "name": "section 04-platform-interface",
+      "passed": true,
+      "details": "(2400, 2882) expected (2400, 2882)"
+    },
+    {
+      "name": "section 05-community-feed",
+      "passed": true,
+      "details": "(2400, 1682) expected (2400, 1682)"
+    },
+    {
+      "name": "section document coordinates",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "section assessments",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "security findings",
+      "passed": true,
+      "details": "6 secret pattern classes, 0 findings"
+    },
+    {
+      "name": "rights restrictions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "essential contrast AA",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "faint alpha isolated",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "notes real computed evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "tokens structured",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "token CTA evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "token motion evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "JSON parse",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "backlog closed",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "progress updated",
+      "passed": false,
+      "details": null
+    },
+    {
+      "name": "SHA256SUMS",
+      "passed": true,
+      "details": "57 files verified in Python"
+    },
+    {
+      "name": "inventory nonempty",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "passed": 39,
+  "failed": 1,
+  "total": 40
+}

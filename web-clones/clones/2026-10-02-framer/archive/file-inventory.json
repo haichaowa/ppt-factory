@@ -1,6 +1,6 @@
 {
-  "count": 47,
-  "totalBytes": 30020327,
+  "count": 57,
+  "totalBytes": 30177031,
   "files": [
     {
       "file": "archive/capture-design-evidence.js",
@@ -23,14 +23,24 @@
       "sha256": "4691d11b7d65ab05ce86319dcaa9c255849c078b67ed243db7e5bb6c2e7f80e7"
     },
     {
+      "file": "archive/color-accessibility.json",
+      "bytes": 2886,
+      "sha256": "aefa2b8fe42f50b5f9a33a72a90c106dc9ae758899e008146c6a676d60b25a56"
+    },
+    {
+      "file": "archive/color-accessibility.py",
+      "bytes": 2251,
+      "sha256": "fb0bd330be352a9625bec1832927680fff2dd5563ad6b47107bf4b13a334060e"
+    },
+    {
       "file": "archive/design-evidence.json",
       "bytes": 708896,
       "sha256": "f5dec9428e0b0afac6f70aefb57b42ad4f5c17ed20fe0746ca32b0338925ba14"
     },
     {
       "file": "archive/file-inventory.json",
-      "bytes": 7513,
-      "sha256": "65c3ac76121cde69c92ac70eec9a9f2edd38a1d270cb132583d4a3342405bfbd"
+      "bytes": 7823,
+      "sha256": "9119b14618ad9f050d80276d75700f298cc48f4b255627f90b94be1997e9a441"
     },
     {
       "file": "archive/file-inventory.py",
@@ -61,6 +71,26 @@
       "file": "archive/mhtml-manifest.py",
       "bytes": 1411,
       "sha256": "eb7500a46a0d9d0b2ab72d074206a14853b5e00272b8b47cbbbea0411a1473fb"
+    },
+    {
+      "file": "archive/offline-browser-check.js",
+      "bytes": 3818,
+      "sha256": "f1bd9fc3c3ea10177ed920eaad56d71a658781b8efd3049f584384715c78bab9"
+    },
+    {
+      "file": "archive/offline-browser-check.json",
+      "bytes": 1817,
+      "sha256": "ae4bbbfb2b879035d1255507f61dc6de7e5af5150bfab38029995e2231e709e2"
+    },
+    {
+      "file": "archive/offline-fidelity-diff.png",
+      "bytes": 66065,
+      "sha256": "1e369b64254ac240d2ea3bc8d789dc8b074414460938236574ba78415b6e2a59"
+    },
+    {
+      "file": "archive/offline-firstscreen.png",
+      "bytes": 58588,
+      "sha256": "3ed52ce557d1eb50b93cdf63cb9d179678e968b024b67ce91032ebc0b8613e69"
     },
     {
       "file": "archive/performance-resources.json",
@@ -98,6 +128,16 @@
       "sha256": "05d79feaa27a53f8d5aef85842b0d7c54b0a0e4a81ae1f029fac5615678faa18"
     },
     {
+      "file": "archive/responsive-metrics.json",
+      "bytes": 2378,
+      "sha256": "60f891818ba3e5d5aa4646e80badb01e4f939ddfd4bda94f5e5a7fc3c1a9625e"
+    },
+    {
+      "file": "archive/responsive-metrics.py",
+      "bytes": 1646,
+      "sha256": "4754e31b5f47f73d014a428f98deec6f0901ebb51e44da2cc720c3f59d361db3"
+    },
+    {
       "file": "archive/rights-inventory.json",
       "bytes": 1068,
       "sha256": "c904248335917d6af990b50fa89c640a33612150f3d2b90010683a68994996f3"
@@ -131,6 +171,16 @@
       "file": "archive/security-scan.py",
       "bytes": 1684,
       "sha256": "8302cac76a335f7172f70d0913b9969f74a5e77fc946b27bfccce754c70a1fd0"
+    },
+    {
+      "file": "archive/verification.json",
+      "bytes": 4413,
+      "sha256": "6cbcc240fe013d097346d141fd17f4bdc07f7bdbf4666f29534a2684b86a4c29"
+    },
+    {
+      "file": "archive/verification.py",
+      "bytes": 6240,
+      "sha256": "ecac9dda16eb1e7a07e630ceb8ffe265c48d06fccd3b60199f980beaec5c9378"
     },
     {
       "file": "archive/viewport-1280-firstscreen.png",
@@ -169,8 +219,8 @@
     },
     {
       "file": "meta.md",
-      "bytes": 2119,
-      "sha256": "ba48fbbd50ff116d48f1f204cebfb0189008a82eeef4e68f6c43ebe508fa4edc"
+      "bytes": 2828,
+      "sha256": "427cb3f6f5826033b6f2a82495cfc546d577679c3266f8e8235e886841d1fa6a"
     },
     {
       "file": "notes.md",
@@ -179,8 +229,8 @@
     },
     {
       "file": "review-log.md",
-      "bytes": 3435,
-      "sha256": "e4a3550669c1e9297aa3f9a1a55a0c826ef0c0af3d43cda77fed2ac16f250e0b"
+      "bytes": 6270,
+      "sha256": "df4aecb5a8da2707fabbc13ce989e8dcef8d13a430ffeeb60bf45e3778e94249"
     },
     {
       "file": "screenshots/README.md",
@@ -234,8 +284,8 @@
     },
     {
       "file": "tokens.json",
-      "bytes": 12582,
-      "sha256": "a34762de5681f27d7abefbc71cbe59db419ff37957ed3fe22b009417da3de789"
+      "bytes": 15330,
+      "sha256": "3853ecb07b7e9da74fd268309cec6ff96a2dc9c7f25f11f995ab537f13c9ef3a"
     }
   ]
 }

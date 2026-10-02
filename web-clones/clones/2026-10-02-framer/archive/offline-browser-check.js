@@ -1,0 +1,30 @@
+'use strict';
+const fs=require('node:fs');
+const path=require('node:path');
+const {chromium}=require('/Users/wanghaichao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+const {PNG}=require('/Users/wanghaichao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pngjs');
+const pixelmatch=require('/Users/wanghaichao/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/pixelmatch').default;
+const root=path.resolve(__dirname,'..');
+const browserPath='/Users/wanghaichao/Library/Caches/ms-playwright/chromium-1194/chrome-mac/Chromium.app/Contents/MacOS/Chromium';
+(async()=>{
+ const browser=await chromium.launch({executablePath:browserPath,headless:true});
+ const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:1,reducedMotion:'reduce',locale:'en-US'});
+ const external=[];
+ await context.route(/^(https?:)?\/\//,route=>{external.push(route.request().url());return route.abort();});
+ const page=await context.newPage();
+ const response=await page.goto('file://'+path.join(__dirname,'framer-home.mhtml'),{waitUntil:'load',timeout:90000}).catch(error=>({error:String(error)}));
+ await page.waitForTimeout(5000);
+ const dom=await page.evaluate(()=>({title:document.title,url:location.href,lang:document.lang,readyState:document.readyState,h1:[...document.querySelectorAll('h1')].map(x=>x.innerText.trim()),h2:[...document.querySelectorAll('h2')].map(x=>x.innerText.trim()).slice(0,20),stylesheets:[...document.styleSheets].length,images:document.images.length,videos:[...document.querySelectorAll('video')].length,links:[...document.querySelectorAll('a[href]')].length,scrollHeight:document.documentElement.scrollHeight,scrollWidth:document.documentElement.scrollWidth}));
+ const shot=path.join(__dirname,'offline-firstscreen.png');await page.screenshot({path:shot,animations:'disabled'});
+ await browser.close();
+ const live=PNG.sync.read(fs.readFileSync(path.join(__dirname,'viewport-1440-firstscreen.png')));
+ const offline=PNG.sync.read(fs.readFileSync(shot));
+ const diff=new PNG({width:1440,height:900});
+ const changed=pixelmatch(live.data,offline.data,diff.data,1440,900,{threshold:0.1,includeAA:false});
+ let absoluteError=0,maxAbsoluteError=0;
+ for(let i=0;i<live.data.length;i+=4){for(let c=0;c<3;c++){const delta=Math.abs(live.data[i+c]-offline.data[i+c]);absoluteError+=delta;maxAbsoluteError=Math.max(maxAbsoluteError,delta);}}
+ const diffPath=path.join(__dirname,'offline-fidelity-diff.png');fs.writeFileSync(diffPath,PNG.sync.write(diff));
+ const output={checkedAt:new Date().toISOString(),input:'archive/framer-home.mhtml',viewport:{width:1440,height:900},network:'All http/https routes intercepted and aborted',response,delayMsAfterLoad:5000,dom,externalRequestsAttempted:external.length,externalRequestUrls:[...new Set(external)].slice(0,50),screenshot:{path:'archive/offline-firstscreen.png',bytes:fs.statSync(shot).size,width:offline.width,height:offline.height},fidelity:{comparison:'archive/viewport-1440-firstscreen.png vs archive/offline-firstscreen.png',width:1440,height:900,changedPixels:changed,exactMatchPixels:1440*900-changed,exactMatchRatio:+((1440*900-changed)/(1440*900)).toFixed(6),changedRatio:+(changed/(1440*900)).toFixed(6),meanAbsoluteError:+(absoluteError/(1440*900*3)).toFixed(3),maxAbsoluteError,diffImage:'archive/offline-fidelity-diff.png'},assessment:'Offline MHTML preserves structure and embedded static assets; live video, scroll state, and some runtime-rendered UI can differ.'};
+ fs.writeFileSync(path.join(__dirname,'offline-browser-check.json'),JSON.stringify(output,null,2)+'\n');
+ console.log(JSON.stringify({dom,externalRequestsAttempted:external.length,fidelity:output.fidelity},null,2));
+})().catch(e=>{console.error(e);process.exit(1)});
