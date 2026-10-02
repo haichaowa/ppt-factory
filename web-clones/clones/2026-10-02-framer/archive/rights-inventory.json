@@ -1,0 +1,38 @@
+{
+  "source": "https://www.framer.com/",
+  "robots": {
+    "file": "archive/robots.txt",
+    "homepageAllowed": true,
+    "restrictedPathsNotVisited": [
+      "/api-proxy"
+    ]
+  },
+  "mhtml": {
+    "domains": [
+      "accounts.google.com",
+      "framer.com",
+      "framerusercontent.com",
+      "www.framer.com"
+    ],
+    "partCount": 79,
+    "bytes": 4724439
+  },
+  "supplementedMedia": {
+    "count": 4,
+    "domains": [
+      "framerusercontent.com"
+    ],
+    "bytes": 8745466
+  },
+  "rightsHolders": {
+    "siteCopyAndBrand": "Framer Software, Inc. / Framer brand rights holders",
+    "customerLogosAndQuotes": "Respective customers and rights holders",
+    "thirdPartyFontsAndAssets": "Respective font and media rights holders",
+    "productVideos": "Framer Software, Inc. / respective rights holders"
+  },
+  "localUseOnly": true,
+  "redistribution": false,
+  "commercialUse": false,
+  "trainingUse": false,
+  "remakePolicy": "If a future optional remake is made, use original copy and graphics only; do not reproduce the Framer logo or protected media."
+}

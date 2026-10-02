@@ -49,7 +49,7 @@ const videoMap = new Map([
     await page.waitForTimeout(700);
     const file=path.resolve(__dirname,'..','sections',`${name}.png`);
     await locator.screenshot({path:file,animations:'disabled'});
-    const box=await locator.boundingBox();
+    const box=await locator.evaluate(el=>{const r=el.getBoundingClientRect();return {x:+r.x.toFixed(3),y:+(r.y+window.scrollY).toFixed(3),width:+r.width.toFixed(3),height:+r.height.toFixed(3)};});
     const text=await locator.innerText().catch(()=>'');
     manifest.sections.push({name,selector,file:path.relative(path.resolve(__dirname,'..'),file),cssRect:box,text:text.trim().replace(/\s+/g,' ').slice(0,500),bytes:fs.statSync(file).size,assessment});
   }

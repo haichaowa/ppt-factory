@@ -16,7 +16,7 @@
 **功能色**
 - 品牌链接 / 主 CTA 文字：`rgb(0,0,238)` `#0000EE`
 - 信息蓝：`#0099FF`
-- 成功 / 性能绿：`#4CD931`、`#00BB88`
+- 成功 / 性能绿：`#4CD963`、`#00BB88`
 - 暖橘标注：`#D67A5C`
 - 半透明色底：`rgba(0,187,136,0.1)`、`rgba(34,34,34,0.8)`
 
@@ -97,7 +97,7 @@
 **可直接转成 patterns**
 - `dark-product-evidence`：左侧 H2 + 链接，右侧 1200px 产品视频 / 界面，每节 120px 上下留白
 - `glass-tool-panel`：`#111` 面板、18px 圆角、3–5px backdrop blur、1px 10% 白边
-- `metric-status-strip`：10px 胶囊标签 + 功能绿 `#4CD931`，旁边放 15px 灰白指标名
+- `metric-status-strip`：10px 胶囊标签 + 功能绿 `#4CD963`，旁边放 15px 灰白指标名
 - `community-terminal`：黑底内嵌社区 Feed / 搜索框 / 操作流，模拟正在运行的产品
 - `quiet-grain-motion`：750ms linear 背景位移，用于 PPT 可换成静态 2–3% 噪点或极慢视频
 
