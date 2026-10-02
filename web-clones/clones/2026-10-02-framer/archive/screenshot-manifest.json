@@ -1,0 +1,32 @@
+{
+  "viewport-1280-firstscreen.png": {
+    "width": 1280,
+    "height": 900,
+    "bytes": 306155
+  },
+  "viewport-1440-firstscreen.png": {
+    "width": 1440,
+    "height": 900,
+    "bytes": 319940
+  },
+  "viewport-375-firstscreen.png": {
+    "width": 375,
+    "height": 812,
+    "bytes": 80157
+  },
+  "framer-home-1280-fullpage.png": {
+    "width": 1280,
+    "height": 10741,
+    "bytes": 2444986
+  },
+  "framer-home-1440-fullpage.png": {
+    "width": 1440,
+    "height": 10741,
+    "bytes": 2498967
+  },
+  "framer-home-375-fullpage.png": {
+    "width": 375,
+    "height": 10861,
+    "bytes": 947381
+  }
+}
